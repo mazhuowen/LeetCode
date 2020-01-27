@@ -19,6 +19,7 @@ Given a sorted linked list, delete all nodes that have duplicate numbers, leavin
  */
 class Solution {
     public ListNode deleteDuplicates(ListNode head) {
+        
     }
 }
 ```

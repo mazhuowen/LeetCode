@@ -21,6 +21,7 @@ You may **not** modify the values in the list's nodes, only nodes itself may be 
  */
 class Solution {
     public ListNode swapPairs(ListNode head) {
+        
     }
 }
 ```
