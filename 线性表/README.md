@@ -24,9 +24,10 @@
 
 * 经典[#92 Reverse Linked List II](./#92 Reverse Linked List II.md)
 
-### 哑结点
+### 循环链表
 
-* 技巧[#19 Remove Nth Node From End of List](./#19 Remove Nth Node From End of List.md)
+* 简单[#141 Linked List Cycle](./#141 Linked List Cycle.md)
+* 技巧[#142 Linked List Cycle II](./#142 Linked List Cycle II.md)
 
 ### 双指针
 
@@ -35,6 +36,17 @@
 * 技巧[#61 Rotate List](./#61 Rotate List.md)
 * 中等[#82 Remove Duplicates from Sorted List II](./#82 Remove Duplicates from Sorted List II.md)
 
+### 链表综合操作
+
+* 中等[#143 Reorder List](./#143 Reorder List.md)
+
 ### 交叉领域
 
 * 二叉树 #109 todo
+* 中等-插入排序[#147 Insertion Sort List](./#147 Insertion Sort List.md)
+* 繁杂-归并排序[#148 Sort List](./#148 Sort List.md)
+
+### 进阶
+
+* 技巧[#138 Copy List with Random Pointer](./#138 Copy List with Random Pointer.md)
+
