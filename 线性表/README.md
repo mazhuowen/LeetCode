@@ -4,6 +4,10 @@
 
 
 
+简单[#1 Two Sum](./#1 Two Sum.md)   顺序表遍历
+
+$\bigstar$数学困难[#4 Median of Two Sorted Arrays](./#4 Median of Two Sorted Arrays.md)    中位数涉及双数组第$k$小值查找、二分法
+
 ## 链表
 
 &emsp;链表的基本操作有插入、删除、遍历；进阶的有链表反转、子链表的操作；在这些基础上又衍生出循环链表的判断、相交链表的判断。在这些操作中，普遍使用哑结点、双指针等技巧简化特殊情况。
