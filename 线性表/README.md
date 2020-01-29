@@ -85,8 +85,8 @@ while(A.next != next) {
 * $\bigstar$技巧[#19 Remove Nth Node From End of List](./#19 Remove Nth Node From End of List.md)    双指针定位倒数结点
 * $\clubs$技巧[#61 Rotate List](./#61 Rotate List.md)    双指针定位倒数链表，并拼接到链表头
 * $\clubs$简单[#160 Intersection of Two Linked Lists](./#160 Intersection of Two Linked Lists.md)    双指针判断相交结点
-
 * 中等[#143 Reorder List](./#143 Reorder List.md)    双指针定位中间结点，反转后半段并合并
+* 简单[#369 Plus One Linked List](./#369 Plus One Linked List.md)    递归或双指针确定子链表进行加一操作
 
 ### 交叉领域
 
