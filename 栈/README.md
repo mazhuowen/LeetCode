@@ -14,6 +14,8 @@
 * 中等[#636 Exclusive Time of Functions](./#636 Exclusive Time of Functions.md)    括号匹配的抽象
 
 * 简单[#682 Baseball Game](./#682 Baseball Game.md)    栈的基本操作
+* 繁杂[#726 Number of Atoms](./#726 Number of Atoms.md)    加入有序字典的栈基本操作
+* $\clubs$中等[#735 Asteroid Collision](./#735 Asteroid Collision.md)    栈的匹配
 
 ## 栈的应用
 
