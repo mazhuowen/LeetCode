@@ -6,9 +6,13 @@
 * 简单[#71 Simplify Path](./#71 Simplify Path.md)    利用栈将Linux系统绝对路径化简
 * $\clubs$简单[#155 Min Stack](./#155 Min Stack.md)    单链表实现改进的栈
 * 简单[#232 Implement Queue using Stacks](./#232 Implement Queue using Stacks.md)    栈的基本操作
+* 中等[#341 Flatten Nested List Iterator](./#341 Flatten Nested List Iterator.md)    反序遍历进行栈操作
 * 繁杂[#385 Mini Parser](./#385 Mini Parser.md)    括号配对的变形
 * 中等[#394 Decode String](./#394 Decode String.md)    括号配对变形
 * 中等[#439 Ternary Expression Parser](./#439 Ternary Expression Parser.md)    反序遍历进行栈操作
+* 繁杂[#591 Tag Validator](./#591 Tag Validator.md)    括号匹配的繁杂应用
+* 中等[#636 Exclusive Time of Functions](./#636 Exclusive Time of Functions.md)    括号匹配的抽象
+
 * 简单[#682 Baseball Game](./#682 Baseball Game.md)    栈的基本操作
 
 ## 栈的应用
