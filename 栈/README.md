@@ -2,6 +2,8 @@
 
 ## 栈的基本操作
 
+&emsp;栈的基本操作就是入栈、出栈。最典型的应用抽象就是括号匹配。经典应用就是计算器，主要涉及中缀表达式转后缀表达式、后缀表达式的计算；栈还衍生出直方图、字典序等问题。
+
 * 简单[#20 Valid Parentheses](./#20 Valid Parentheses.md)    括号匹配，出栈、入栈基础操作
 * 简单[#71 Simplify Path](./#71 Simplify Path.md)    利用栈将Linux系统绝对路径化简
 * $\clubs$简单[#155 Min Stack](./#155 Min Stack.md)    单链表实现改进的栈
@@ -28,7 +30,9 @@
 ### 计算器
 
 * $\clubs$简单[#150 Evaluate Reverse Polish Notation](./#150 Evaluate Reverse Polish Notation.md)    后缀表达式计算
-* $\clubs$中等[#224 Basic Calculator](./#224 Basic Calculator.md)    中缀转后缀表达式
+* $\clubs$中等[#224 Basic Calculator](./#224 Basic Calculator.md)    只有加减及括号的表达式计算
+* 中等[#227 Basic Calculator II](./#227 Basic Calculator II.md)    没有括号的表达式计算
+* 困难[#772 Basic Calculator III](./#772 Basic Calculator III.md)    存在负号的计算问题
 
 ### 字典序
 
@@ -37,4 +41,7 @@
 * $\clubs$中等[#456 132 Pattern](./#456 132 Pattern.md)    技巧
 * 简单[#496 Next Greater Element I](./#496 Next Greater Element I.md)    字典保存较大后继
 * 简单[#503 Next Greater Element II](./#503 Next Greater Element II.md)    #496的延续
+* 简单[#739 Daily Temperatures](./#739 Daily Temperatures.md)    遍历遇到较大值则出栈计算
+
+### 二叉树
 
