@@ -2,11 +2,18 @@
 
 ## 顺序表
 
+### 基本操作
 
+* 简单[#1 Two Sum](./#1 Two Sum.md)   顺序表遍历
 
-简单[#1 Two Sum](./#1 Two Sum.md)   顺序表遍历
+### 双指针
 
-$\bigstar$数学困难[#4 Median of Two Sorted Arrays](./#4 Median of Two Sorted Arrays.md)    中位数涉及双数组第$k$小值查找、二分法
+* 技巧[#11 Container With Most Water](./#11 Container With Most Water.md)    双指针
+* 中等[#15 3Sum](./#15 3Sum.md)    双指针
+
+### 数学
+
+* $\bigstar$数学困难[#4 Median of Two Sorted Arrays](./#4 Median of Two Sorted Arrays.md)    中位数涉及双数组第$k$小值查找、二分法
 
 ## 链表
 
@@ -68,6 +75,7 @@ while(A.next != next) {
 * 简单[#83 Remove Duplicates from Sorted List](./#83 Remove Duplicates from Sorted List.md)    遍历结点，删除相同值的后继节点
 * 中等[#86 Partition List](./#86 Partition List.md)    删除后半段小于阈值的结点，插入到前半部分链表
 * 简单[#237 Delete Node in a Linked List](./#237 Delete Node in a Linked List.md)    只给定待删除结点，复制后继结点值删除
+* $\clubs$技巧[#379 Design Phone Directory](./#379 Design Phone Directory.md)    基于特殊规则的插入操作
 
 ### 链表的反转
 

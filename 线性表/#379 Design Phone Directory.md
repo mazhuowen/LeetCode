@@ -10,7 +10,7 @@ Design a Phone Directory which supports the following operations:
 
 ## 题目解读
 
-&emsp;设计一个电话目录系统，支持分配号码、验证号码是否可分配、释放号码三个功能。号码有最大限制。题目对怎么分配号码没有详细说明，需要与面试官沟通确定。经过个人测试，目前的分配规则为：当历史分配号码不超过最大号码时，递增继续分配；当分配号码达到最大号码限制时，如果最大号码是释放过得，则分配这个最大号码，如果是有效的，则从前面寻找最小的释放号码，分配给这个号码。
+&emsp;设计一个电话目录系统，支持分配号码、验证号码是否可分配、释放号码三个功能。号码有最大限制。题目对怎么分配号码没有详细说明，需要与面试官沟通确定（非常重要）。
 
 ```java
 class PhoneDirectory {
@@ -49,7 +49,9 @@ class PhoneDirectory {
 
 ## 程序设计
 
-* 用链表来记录分配过的号码，对于释放的号码不需要删除，将有效标识置为无效即可。则结合上面分配规则可得到代码。
+* 用链表来记录分配过的号码，对于释放的号码不需要删除，将有效标识置为无效即可。则结合上面分配规则可得到代码。经过个人测试，目前的分配规则为：当历史分配号码不超过最大号码时，递增继续分配；当分配号码达到最大号码限制时，如果最大号码是释放过得，则分配这个最大号码，如果是有效的，则从前面寻找最小的释放号码，分配给这个号码。
+
+> 上述初步分析出的分配规则是错的，具体见下面。
 
 ```java
 class PhoneDirectory {
@@ -151,37 +153,23 @@ class Node {
 }
 ```
 
-测试样例：重点测试尾结点，当尾结点为最大号码时，尾结点有效和无效的情况下测试分配机制。
-
-## 性能分析
-
-&emsp;三个方法在最糟糕的情况下，时间复杂度为$O(N)$，空间复杂度为$O(N)$。
-
-执行用时：62ms，在所有java提交中击败了16.67%的用户。
-
-内存消耗：45.5MB，在所有java提交中击败了14.47%的用户。
-
-## 官方解题
-
-&emsp;暂无，密切关系。
-
-> 社区时间性能较高的方法，思路实际上就是分配号码前，先将之前释放过得最小的结点分配，否则才会按照顺序分配。实际上是错的，但能通过所有测试样例。经过测试，样例`["PhoneDirectory","get","get","get","get","release","release","get", "get"]
-> [[5],[],[],[],[],[3],[1],[], []]`该方法与预期方法不一致。该方法是错误的。
+* 上述方法可以通过测试用例，但在调试时还是会发现与预期不相符的样例。经过进一步的分析，得出分配规则为：下一个待分配结点不为空则分配，结点后移；释放结点接拼接到下一个待分配结点后，如果下一个待分配结点为空，则这个释放的结点就是下一个待分配点。如果连续释放结点，由上面分析可知，最后释放的结点在下一个分配结点后面，最先释放反倒最先分配。可见这是一个完全的链表问题。
+* 以最大号码为5为例，则初始链表为$0 \to 1 \to 2 \to 3 \to 4$，待分配结点指向0；连续分配四次，此时待分配结点指向4；如果此时释放号码1、3，则此时链表为$4 \to 3 \to1$，即1、3分别插入到4后面，下次分配从4开始，以此类推。若还是上述链表，连续分配五次，此时分配结点指向null，释放结点4、3，此时链表是$4 \to 3$，下次分配从4开始。
 
 ```java
 class PhoneDirectory {
     // 记录是否在在使用
     private boolean[] phoneDir;
-    // 记录下一个分配号码
-    private Node phoneNum;
+    // 哑结点指向待分配结点
+    private Node dummy;
 
     /** Initialize your data structure here
         @param maxNumbers - The maximum numbers that can be stored in the phone directory. */
     public PhoneDirectory(int maxNumbers) {
         phoneDir = new boolean[maxNumbers];
-        phoneNum = new Node(-1);
-        Node tail = phoneNum;
-        // 初始化链表，尾插法
+        dummy = new Node(-1);
+        Node tail = dummy;
+        // 初始化链表
         for (int i = 0; i < maxNumbers; i++) {
             tail.next = new Node(i);
             tail = tail.next;
@@ -192,13 +180,13 @@ class PhoneDirectory {
         @return - Return an available number. Return -1 if none is available. */
     public int get() {
         // 待分配结点为空
-        if (phoneNum.next==null) {
+        if (dummy.next==null) {
             return -1;
         }
         // 分配结点
-        int val = phoneNum.next.val;
+        int val = dummy.next.val;
         // 待分配指针指向下一个结点
-        phoneNum.next = phoneNum.next.next;
+        dummy.next = dummy.next.next;
         // 分配标识置为true
         phoneDir[val] = true;
         return val;
@@ -216,6 +204,7 @@ class PhoneDirectory {
     
     /** Recycle or release a number. */
     public void release(int number) {
+        // 无效号码不做操作
         if(number >= phoneDir.length) {
             return;
         }
@@ -225,10 +214,17 @@ class PhoneDirectory {
         }
         // 置为释放
         phoneDir[number] = false;
-        // 将释放的号码插入到phoneNum后
-        Node node = new Node(number);
-        node.next = phoneNum.next;
-        phoneNum.next = node;
+        // 待分配号码为空，直接拼接
+        if(dummy.next == null) {
+            dummy.next = new Node(number);
+        }
+        // 待分配号码不为空，则拼接在待分配号码后面
+        else {
+            Node temp = new Node(number);
+            temp.next = dummy.next.next;
+            dummy.next.next = temp;
+        }
+        
     }
 }
 
@@ -242,6 +238,24 @@ class Node {
 }
 ```
 
-执行用时：12ms，在所有java提交中击败了97.06%的用户。
+测试样例：重点测试尾结点，当尾结点为最大号码时，尾结点有效和无效的情况下测试分配机制。
 
-内存消耗：39.2MB，在所有java提交中击败了90.79%的用户。
+## 性能分析
+
+&emsp;第一个设计三个方法在最糟糕的情况下，时间复杂度为$O(N)$，空间复杂度为$O(N)$。
+
+执行用时：62ms，在所有java提交中击败了16.67%的用户。
+
+内存消耗：45.5MB，在所有java提交中击败了14.47%的用户。
+
+&emsp;第二个设计由于在构造函数中完成了链表的创建，三个操作时间复杂度为$O(1)$，空间复杂度为$O(N)$。
+
+执行用时：8ms，在所有java提交中击败了100.00%的用户。
+
+内存消耗：39.3MB，在所有java提交中击败了89.47%的用户。
+
+## 官方解题
+
+&emsp;暂无，密切关系。
+
+> 该题没有说明分配规则，也没有说明代码性能要求，需要与面试官沟通确认。
