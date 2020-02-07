@@ -184,7 +184,7 @@ class Solution {
                     // 每开始一个新的边界，重置临时面积
                     tempArea = 0;
                     for(int n = m; n < row; n++) {
-                        tempArea += compressRow[n];
+                        tempArea += compressCol[n];
                         // 如果已经满足，则直接返回
                         if(tempArea == k) {
                             return k;
