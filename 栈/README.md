@@ -20,10 +20,10 @@
 * 中等[#439 Ternary Expression Parser](./#439 Ternary Expression Parser.md)    反序遍历进行栈操作
 * 繁杂[#591 Tag Validator](./#591 Tag Validator.md)    括号匹配的繁杂应用
 * $\clubs$中等[#636 Exclusive Time of Functions](./#636 Exclusive Time of Functions.md)    括号匹配的抽象
-
 * 简单[#682 Baseball Game](./#682 Baseball Game.md)    栈的基本操作
 * 繁杂[#726 Number of Atoms](./#726 Number of Atoms.md)    加入有序字典的栈基本操作
 * $\clubs$中等[#735 Asteroid Collision](./#735 Asteroid Collision.md)    栈的匹配
+* 简单[#844 Backspace String Compare](./#844 Backspace String Compare.md)    括号匹配变形
 
 ## 栈的应用
 

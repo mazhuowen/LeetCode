@@ -5,11 +5,15 @@
 ### 基本操作
 
 * 简单[#1 Two Sum](./#1 Two Sum.md)   顺序表遍历
+* $\clubs$技巧[#26 Remove Duplicates from Sorted Arra](./#26 Remove Duplicates from Sorted Array.md)    有序顺序表的技巧删除
+* $\clubs$技巧[#27 Remove Element](./#27 Remove Element.md)    顺序表的技巧删除
 
 ### 双指针
 
 * 技巧[#11 Container With Most Water](./#11 Container With Most Water.md)    双指针
 * 中等[#15 3Sum](./#15 3Sum.md)    双指针
+* 中等[#16 3Sum Closest](./#16 3Sum Closest.md)    [#15 3Sum](./#15 3Sum.md)的变体
+* $\bigstar$中等[#18 4Sum](./#18 4Sum.md)    [#15 3Sum](./#15 3Sum.md)的延续
 
 ### 数学
 
@@ -66,6 +70,7 @@ while(A.next != next) {
 * $\bigstar$技巧[#23 Merge k Sorted Lists](./#23 Merge k Sorted Lists.md)    分治法，最后化为两个链表的合并
 * 简单[#203 Remove Linked List Elements](./#203 Remove Linked List Elements.md)    简单遍历删除操作
 * 简单[#328 Odd Even Linked List](./#328 Odd Even Linked List.md)    双指针遍历形成两链表，合并得到结果
+* 中等[#430 Flatten a Multilevel Doubly Linked List](./#430 Flatten a Multilevel Doubly Linked List.md)    多层双向链表遍历拼接为单层
 
 ### 链表的插入删除
 
