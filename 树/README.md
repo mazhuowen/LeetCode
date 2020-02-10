@@ -19,6 +19,9 @@
 * $\clubs$简单[#111 Minimum Depth of Binary Tree](./#111 Minimum Depth of Binary Tree.md)    树的最小深度
 * 简单[#112 Path Sum](./#112 Path Sum.md)    遍历计算路径之和
 * $\bigstar$[#113 Path Sum II](./#113 Path Sum II.md)    遍历找出所有符合条件的路径
+* $\clubs$中等[#114 Flatten Binary Tree to Linked List](./#114 Flatten Binary Tree to Linked List.md)    将树转换为前序序列的链表
+* $\bigstar$中等[#116 Populating Next Right Pointers in Each Node](./#116 Populating Next Right Pointers in Each Node.md)    层次遍历及巧妙的结构应用
+* $\bigstar$中等[#117 Populating Next Right Pointers in Each Node II](./#117 Populating Next Right Pointers in Each Node II.md)    [#116 Populating Next Right Pointers in Each Node](./#116 Populating Next Right Pointers in Each Node.md)的扩展
 
 ## 树与森林
 
