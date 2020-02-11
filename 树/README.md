@@ -5,6 +5,9 @@
 ### 基本操作
 
 * 简单[#104 Maximum Depth of Binary Tree](./#104 Maximum Depth of Binary Tree.md)    计算树的深度
+* $\bigstar$困难[#124 Binary Tree Maximum Path Sum](./#124 Binary Tree Maximum Path Sum.md)    递归计算树的最大路径之和
+* $\clubs$中等[#156 Binary Tree Upside Down](./#156 Binary Tree Upside Down.md)    上下翻转二叉树
+* $\bigstar$中等[#222 Count Complete Tree Nodes](./#222 Count Complete Tree Nodes.md)    完全二叉树的二分查找实现结点统计
 
 ### 遍历
 
@@ -22,6 +25,11 @@
 * $\clubs$中等[#114 Flatten Binary Tree to Linked List](./#114 Flatten Binary Tree to Linked List.md)    将树转换为前序序列的链表
 * $\bigstar$中等[#116 Populating Next Right Pointers in Each Node](./#116 Populating Next Right Pointers in Each Node.md)    层次遍历及巧妙的结构应用
 * $\bigstar$中等[#117 Populating Next Right Pointers in Each Node II](./#117 Populating Next Right Pointers in Each Node II.md)    [#116 Populating Next Right Pointers in Each Node](./#116 Populating Next Right Pointers in Each Node.md)的扩展
+* 中等[#129 Sum Root to Leaf Numbers](./#129 Sum Root to Leaf Numbers.md)    二叉树遍历求和
+* 简单[#144 Binary Tree Preorder Traversal](./#144 Binary Tree Preorder Traversal.md)    前序遍历
+* 中等[#145 Binary Tree Postorder Traversal](./#145 Binary Tree Postorder Traversal.md)    后序遍历
+* 中等[#199 Binary Tree Right Side View](./#199 Binary Tree Right Side View.md)   层次遍历实现树的右侧投影
+* 简单[#226 Invert Binary Tree](./#226 Invert Binary Tree.md)    遍历反转二叉树
 
 ## 树与森林
 
