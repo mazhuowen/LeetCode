@@ -8,6 +8,9 @@
 * $\bigstar$困难[#124 Binary Tree Maximum Path Sum](./#124 Binary Tree Maximum Path Sum.md)    递归计算树的最大路径之和
 * $\clubs$中等[#156 Binary Tree Upside Down](./#156 Binary Tree Upside Down.md)    上下翻转二叉树
 * $\bigstar$中等[#222 Count Complete Tree Nodes](./#222 Count Complete Tree Nodes.md)    完全二叉树的二分查找实现结点统计
+* $\bigstar$中等[#236 Lowest Common Ancestor of a Binary Tree](./#236 Lowest Common Ancestor of a Binary Tree.md)    二叉树寻找最近公共祖先
+* $\clubs$中等[#250 Count Univalue Subtrees](./#250 Count Univalue Subtrees.md)    同值子树统计
+* 中等[#298 Binary Tree Longest Consecutive Sequence](./#298 Binary Tree Longest Consecutive Sequence.md)    最大连续子序列长度
 
 ### 遍历
 
@@ -30,10 +33,12 @@
 * 中等[#145 Binary Tree Postorder Traversal](./#145 Binary Tree Postorder Traversal.md)    后序遍历
 * 中等[#199 Binary Tree Right Side View](./#199 Binary Tree Right Side View.md)   层次遍历实现树的右侧投影
 * 简单[#226 Invert Binary Tree](./#226 Invert Binary Tree.md)    遍历反转二叉树
+* 简单[#257 Binary Tree Paths](./#257 Binary Tree Paths.md)    前序遍历二叉树获得路径
 
 ## 树与森林
 
-
+* 繁杂[#428 Serialize and Deserialize N-ary Tree](./#428 Serialize and Deserialize N-ary Tree.md)    N叉树的序列化和反序列化设计
+* 中等[#429 N-ary Tree Level Order Traversal](./#429 N-ary Tree Level Order Traversal.md)    N叉树层次遍历
 
 ## 树的应用
 
