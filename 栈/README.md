@@ -52,4 +52,4 @@
 
 ### 二叉树
 
-todo
+* 中等[#331 Verify Preorder Serialization of a Binary Tree](./#331 Verify Preorder Serialization of a Binary Tree.md)    检测变形的前序序列是否有效

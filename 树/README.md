@@ -11,6 +11,8 @@
 * $\bigstar$中等[#236 Lowest Common Ancestor of a Binary Tree](./#236 Lowest Common Ancestor of a Binary Tree.md)    二叉树寻找最近公共祖先
 * $\clubs$中等[#250 Count Univalue Subtrees](./#250 Count Univalue Subtrees.md)    同值子树统计
 * 中等[#298 Binary Tree Longest Consecutive Sequence](./#298 Binary Tree Longest Consecutive Sequence.md)    最大连续子序列长度
+* $\bigstar$困难[#297 Serialize and Deserialize Binary Tree](./#297 Serialize and Deserialize Binary Tree.md)    前序序列变种序列化反序列化二叉树
+* $\bigstar$中等[#337 House Robber III](./#337 House Robber III.md)    递归与动态规划结合
 
 ### 遍历
 
@@ -34,11 +36,15 @@
 * 中等[#199 Binary Tree Right Side View](./#199 Binary Tree Right Side View.md)   层次遍历实现树的右侧投影
 * 简单[#226 Invert Binary Tree](./#226 Invert Binary Tree.md)    遍历反转二叉树
 * 简单[#257 Binary Tree Paths](./#257 Binary Tree Paths.md)    前序遍历二叉树获得路径
+* $\clubs$中等[#366 Find Leaves of Binary Tree](./#366 Find Leaves of Binary Tree.md)    后序遍历的变体
+* 简单[#404 Sum of Left Leaves](./#404 Sum of Left Leaves.md)    前序遍历的应用
+* $\clubs$中等[#437 Path Sum III](./#437 Path Sum III.md)    保存路径，深度遍历，向前计算路径和
 
 ## 树与森林
 
 * 繁杂[#428 Serialize and Deserialize N-ary Tree](./#428 Serialize and Deserialize N-ary Tree.md)    N叉树的序列化和反序列化设计
 * 中等[#429 N-ary Tree Level Order Traversal](./#429 N-ary Tree Level Order Traversal.md)    N叉树层次遍历
+* 繁杂[#431 Encode N-ary Tree to Binary Tree](./#431 Encode N-ary Tree to Binary Tree.md)    前序遍历转化N叉树为父子兄弟链表表示的二叉树
 
 ## 树的应用
 
