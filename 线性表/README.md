@@ -15,10 +15,6 @@
 * 中等[#16 3Sum Closest](./#16 3Sum Closest.md)    [#15 3Sum](./#15 3Sum.md)的变体
 * $\bigstar$中等[#18 4Sum](./#18 4Sum.md)    [#15 3Sum](./#15 3Sum.md)的延续
 
-### 数学
-
-* $\bigstar$数学困难[#4 Median of Two Sorted Arrays](./#4 Median of Two Sorted Arrays.md)    中位数涉及双数组第$k$小值查找、二分法
-
 ## 链表
 
 &emsp;链表的基本操作有插入、删除、遍历；进阶的有链表反转、子链表的操作；在这些基础上又衍生出循环链表的判断、相交链表的判断。在这些操作中，普遍使用哑结点、双指针等技巧简化特殊情况。
@@ -81,12 +77,14 @@ while(A.next != next) {
 * 中等[#86 Partition List](./#86 Partition List.md)    删除后半段小于阈值的结点，插入到前半部分链表
 * 简单[#237 Delete Node in a Linked List](./#237 Delete Node in a Linked List.md)    只给定待删除结点，复制后继结点值删除
 * $\clubs$技巧[#379 Design Phone Directory](./#379 Design Phone Directory.md)    基于特殊规则的插入操作
+* 中等[#707 Design Linked List](./#707 Design Linked List.md)    链表类的设计
 
 ### 链表的反转
 
 * $\clubs$经典[#92 Reverse Linked List II](./#92 Reverse Linked List II.md)    反转指定子段的子链表
 * 简单[#206 Reverse Linked List](./#206 Reverse Linked List.md)    反转整个链表，注意递归实现
 * $\clubs$技巧[#234 Palindrome Linked List](./#234 Palindrome Linked List.md)    回文判断，双指针查找中点，反转后半段
+* 中等[#445 Add Two Numbers II](./#445 Add Two Numbers II.md)    链表翻转计算
 
 ### 循环链表
 
