@@ -2,7 +2,7 @@
 
 ## 优先级队列
 
-
+&emsp;优先级队列主要用作动态排序。题目中纯二叉堆的应用主要有最小堆top-k问题，在这个基础上衍生出过滤频率、计数等进行排序的问题；除了最基本的应用，还有基于堆的扩展问题，如丑数求解等；剩下的一些问题需要非常深入的理解，堆往往是解决的一种思想，如[#621 Task Scheduler](./#621 Task Scheduler.md) 、[#407 Trapping Rain Water II](./#407 Trapping Rain Water II.md)等，需要理解和扩展思路。
 
 ### 二叉堆
 
@@ -13,6 +13,13 @@
 * 中等[#347 Top K Frequent Elements](./#347 Top K Frequent Elements.md)    最小堆实现top-k的问题
 * 繁杂[#355 Design Twitter](./#355 Design Twitter.md)    top-k问题
 * 困难[#358 Rearrange String k Distance Apart](./#358 Rearrange String k Distance Apart.md)    [#621 Task Scheduler](./#621 Task Scheduler.md)的延续
+* $\clubs$中等[#373 Find K Pairs with Smallest Sums](./#373 Find K Pairs with Smallest Sums.md)    最小堆top-k问题
+* 中等[#378 Kth Smallest Element in a Sorted Matrix](./#378 Kth Smallest Element in a Sorted Matrix.md)    [#373 Find K Pairs with Smallest Sums](./#373 Find K Pairs with Smallest Sums.md)的延续
+* $\bigstar$困难[#407 Trapping Rain Water II](./#407 Trapping Rain Water II.md)    通过围墙入最小堆迭代计算
+* 简单[#451 Sort Characters By Frequency](./#451 Sort Characters By Frequency.md)    统计频率top-k的基本应用
+* 繁杂[#502 IPO](./#502 IPO.md)    双堆，题目和常理不符，理解是关键
+* 中等[#692 Top K Frequent Words](./#692 Top K Frequent Words.md)    最小堆的top-k问题
+* 简单[#703 Kth Largest Element in a Stream](./#703 Kth Largest Element in a Stream.md)    最小堆top-k问题
 
 ### 最小最大堆
 
