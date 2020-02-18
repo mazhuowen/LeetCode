@@ -132,11 +132,11 @@ class Solution {
             if(nums[left] <= nums[mid]) {
                 // 如果target正好在这个区间则查找
                 if(target >= nums[left] && target <= nums[mid]) {
-                    right = mid-1;
+                    right = mid;
                 }
                 // 不在这个区间，向右查找
                 else {
-                    left = mid+1;
+                    left = mid + 1;
                 }
 
             }
@@ -144,11 +144,11 @@ class Solution {
             else {
                  // 如果target正好在这个区间则查找
                 if(target >= nums[mid] && target <= nums[right]) {
-                    left = mid +1;
+                    left = mid  + 1;
                 }
                 // 不在区间，向右查找
                 else{
-                    right = mid-1;
+                    right = mid - 1;
                 }
             }
         }
