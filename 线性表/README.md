@@ -67,6 +67,7 @@ while(A.next != next) {
 * 简单[#203 Remove Linked List Elements](./#203 Remove Linked List Elements.md)    简单遍历删除操作
 * 简单[#328 Odd Even Linked List](./#328 Odd Even Linked List.md)    双指针遍历形成两链表，合并得到结果
 * 中等[#430 Flatten a Multilevel Doubly Linked List](./#430 Flatten a Multilevel Doubly Linked List.md)    多层双向链表遍历拼接为单层
+* $\clubs$中等[#708 Insert into a Sorted Circular Linked List](./#708 Insert into a Sorted Circular Linked List.md)    表头非最小值的循环链表遍历插入
 
 ### 链表的插入删除
 
