@@ -143,12 +143,12 @@ class Solution {
             // 右边升序
             else {
                  // 如果target正好在这个区间则查找
-                if(target >= nums[mid] && target <= nums[right]) {
+                if(target > nums[mid] && target <= nums[right]) {
                     left = mid  + 1;
                 }
                 // 不在区间，向右查找
                 else{
-                    right = mid - 1;
+                    right = mid;
                 }
             }
         }

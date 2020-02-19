@@ -6,6 +6,8 @@
 * $\clubs$中等[#29 Divide Two Integers](./#29 Divide Two Integers.md)    整形的界限判断，移位逼近
 * $\clubs$中等[#31 Next Permutation](./#31 Next Permutation.md)    数字数组的字典序
 * $\bigstar$困难[#363 Max Sum of Rectangle No Larger Than K](./#363 Max Sum of Rectangle No Larger Than K.md)    二维数组压缩行或列计算矩形最大和
+* 中等[#50 Pow(x, n)](./#50 Pow(x, n).md)    递归求解指数运算
+* $\clubs$中等[#69 Sqrt(x)](./#69 Sqrt(x).md)    二分法、牛顿法求解平方根
 
 ## 规律
 
