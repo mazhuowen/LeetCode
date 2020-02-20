@@ -19,6 +19,11 @@
 * $\clubs$困难[#154 Find Minimum in Rotated Sorted Array II](./#154 Find Minimum in Rotated Sorted Array II.md)    [#153 Find Minimum in Rotated Sorted Array](./#153 Find Minimum in Rotated Sorted Array.md)的延续
 * $\clubs$中等[#162 Find Peak Element](./#162 Find Peak Element.md)    无序有规律数组的二分查找问题
 * 简单[#167 Two Sum II - Input array is sorted](./#167 Two Sum II - Input array is sorted.md)    双指针，可用二分法解答
+* $\bigstar$中等[#275 H-Index II](./#275 H-Index II.md)    二分查找变形应用
+* 简单[#278 First Bad Version](./#278 First Bad Version.md)    二分查找的数据溢出问题
+* $\bigstar$中等[#287 Find the Duplicate Number](./#287 Find the Duplicate Number.md)    对整数范围的二分查找（非最优解）
+* $\clubs$困难[#302 Smallest Rectangle Enclosing Black Pixels](./#302 Smallest Rectangle Enclosing Black Pixels.md)    二分查找区间
+* 简单[#374 Guess Number Higher or Lower](./#374 Guess Number Higher or Lower.md)    二分查找基础应用
 
 ### 插入查找
 
