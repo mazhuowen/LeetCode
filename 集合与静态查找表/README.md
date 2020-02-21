@@ -24,6 +24,9 @@
 * $\bigstar$中等[#287 Find the Duplicate Number](./#287 Find the Duplicate Number.md)    对整数范围的二分查找（非最优解）
 * $\clubs$困难[#302 Smallest Rectangle Enclosing Black Pixels](./#302 Smallest Rectangle Enclosing Black Pixels.md)    二分查找区间
 * 简单[#374 Guess Number Higher or Lower](./#374 Guess Number Higher or Lower.md)    二分查找基础应用
+* 中等[#436 Find Right Interval](./#436 Find Right Interval.md)    排序后利用二分查找
+* 简单[#441 Arranging Coins](./#441 Arranging Coins.md)    数学规律总结，二分查找可实现
+* 中等[#475 Heaters](./#475 Heaters.md)    排序后使用二分查找
 
 ### 插入查找
 
