@@ -47,6 +47,7 @@
 * $\clubs$中等[#437 Path Sum III](./#437 Path Sum III.md)    保存路径，深度遍历，向前计算路径和
 * $\clubs$中等[#536 Construct Binary Tree from String](./#536 Construct Binary Tree from String.md)    根据前序序列的变形恢复二叉树
 * 中等[#508 Most Frequent Subtree Sum](./#508 Most Frequent Subtree Sum.md)    前序遍历记录子树和
+* $\clubs$中等[#545 Boundary of Binary Tree](./#545 Boundary of Binary Tree.md)    前序遍历的变形结合后序遍历实现边界遍历
 
 ## 树与森林
 

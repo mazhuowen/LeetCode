@@ -4,6 +4,28 @@
 
 &emsp;静态查找表与动态查找表相对应，静态查找表用于查询不用于插入删除等，通常使用顺序表存储，查找涉及各种查找算法。对于无序表，只能使用顺序查找；对于有序表可以使用二分查找；对于分布均匀的有序表可以使用插入查找；对于分块分布于内存中的数据可以使用分块查找。
 
+&emsp;静态查找表最常用的是二分查找。原始二分查找形式伪代码如下：
+
+```java
+int left = 0, right = len - 1;
+while(left <= right) {
+    int mid = left + (right - left) / 2;
+    if(nums[mid] == target) {
+        return mid;
+    }
+    if(nums[mid] < target) {
+        left = mid + 1;
+    } else {
+        right = mid - 1;
+    }
+}
+return -1;
+```
+
+原始二分查找只用于查找，如果没有查找到`target`，整个数组小于`target`，则`right`在`len-1`的位置，而`left`在`len`的位置；如果整个数组大于`target`，则`left`在`0`的位置，`right`在`-1`的位置；除此之外最终`left`会落在大于`target`的第一个数上，`right`会落在小于`target`的第一个数上。利用二分查找的基本形式可以扩展出一系列变形，如查找存在重复数的有序数组的界限。通过改变循环内的`left`、`right`定位逻辑和外层循环的条件来达成不同的目的。
+
+&emsp;设计二分查找的变形形式时，需要注意`right=mid-1`和`right=mid`意义的不同，`mid-1`抛弃了`mid`，而`right=mid`包含了`mid`，根据`mid`含义和目标的不同做取舍。还要尽量避免`left=mid`的操作，容易造成死循环。最后外层循环条件`left<=right`和`left<right`也会因为任务的不用而不同，需要具体分析。
+
 ### 顺序查找
 
 
