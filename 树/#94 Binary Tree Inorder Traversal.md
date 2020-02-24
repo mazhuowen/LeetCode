@@ -138,3 +138,44 @@ public class Solution {
     }
 }
 ```
+
+&emsp;从二叉查找树再回首，Morris中序遍历可以做到时间复杂度为$O(N)$，空间复杂度为$O(1)$。主要思想是如果当前结点存在左子树，设置当前结点的前驱；第二次遍历当前结点时意味着左子树已经遍历过，只需遍历当前结点并进入右子树。如果不存在左子树，则直接遍历当前结点并进入右子树。关键点在于前驱的连接和断开。
+
+```java
+class Solution {
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> res = new LinkedList<>();
+        // 记录前驱结点
+        TreeNode pre;
+        while(root != null) {
+            // 存在左子树，设置前驱结点并进入左子树
+            if(root.left != null) {
+                pre = root.left;
+                while(pre.right != null && pre.right != root) {
+                    pre = pre.right;
+                }
+                // 设置前驱结点的后继指向root
+                if(pre.right == null) {
+                    pre.right = root;
+                    // 进入左子树
+                    root = root.left;
+                } 
+                //  已经设置过前驱结点，意味着第二次遍历，访问当前结点并进入右子树
+                else {
+                    res.add(root.val);
+                    // 断开前驱的链接
+                    pre.right = null;
+                    root = root.right;
+                }
+            }
+            // 没有左子树，则遍历当前结点，并进入右子树
+            else {
+                res.add(root.val);
+                root = root.right;
+            }
+        }
+        return res;
+    }
+}
+```
+
