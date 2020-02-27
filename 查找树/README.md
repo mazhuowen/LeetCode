@@ -2,6 +2,8 @@
 
 ## 二叉查找树
 
+&emsp;二叉查找树的 基本操作主要有查询、插入、删除，都可用递归和迭代方式实现；其中删除操作当待删除结点有两个子节点时还需要寻找替换结点删除。除了上述操作，二叉查找树最重要的性质是中序序列是增序的，可以利用这个性质实现很多功能。
+
 * $\bigstar$中等[#95 Unique Binary Search Trees II](./#95 Unique Binary Search Trees II.md)    查找树的递归生成
 * 中等[#96 Unique Binary Search Trees](./#96 Unique Binary Search Trees.md)    动态规划及数学知识的应用
 * 中等[#98 Validate Binary Search Tree](./#98 Validate Binary Search Tree.md)    二叉查找树的中序序列性质
@@ -28,23 +30,30 @@
 
 ## AVL树
 
+&emsp;平衡二叉树每个结点都需要维护一个属性记录高度，左右子树的高度之差不能超过2。若插入或删除打破了平衡，则需要单旋转和双旋转恢复平衡。
+
 * 简单[#110 Balanced Binary Tree](./#110 Balanced Binary Tree.md)    后序遍历计算高度并比对
 
 ## 红黑树
 
-
+&emsp;规定根节点到每个空结点路径上的黑结点数目一致，红结点的子节点不能是红结点。每个结点需要一个属性保存是红结点还是黑结点。若插入删除打破了平衡，则使用单旋转和双旋转恢复，这个过程还有重新着色的操作。
 
 ## AA树
 
-
+&emsp;红黑树操作复杂，AA树通过规定左子节点层数必须小于父节点，右子节点层数可以等于父节点，而对应到红黑树，红结点层数和父节点相同，黑结点层数必须低于父节点。操作仍然是单旋转和双旋转及层数操作。
 
 ## 伸展树
 
-
+&emsp;伸展树是为了频繁搜索的元素而发展的一种查找树，操作是变形的单旋转和双旋转。
 
 ## 线段树
 
+&emsp;对于一些区间问题，可以引入线段树，将二叉查找树的搜索操作变为区间的包含关系。线段树是一种非常灵活的数据结构，它可以用于解决多种范围查询问题，比如在对数时间内从数组中找到最小值、最大值、总和、最大公约数、最小公倍数等。
 
+* $\bigstar$中等[#307 Range Sum Query - Mutable](./#307 Range Sum Query - Mutable.md)    线段树区间和统计
+* $\bigstar$困难[#308 Range Sum Query 2D - Mutable](./#308 Range Sum Query 2D - Mutable.md)    二维数组的线段树区间统计
+* $\bigstar$繁杂[#699 Falling Squares](./#699 Falling Squares.md)    动态线段树延迟修改
 
 ## B和B+树
 
+&emsp;对于文件和索引系统，减少磁盘访问是关键，B和B+树就是典型代表。

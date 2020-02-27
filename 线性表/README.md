@@ -103,7 +103,7 @@ while(A.next != next) {
 
 ### 交叉领域
 
-* 二叉树 #109 todo
+* $\clubs$中等-二叉查找树[#109 Convert Sorted List to Binary Search Tree](./#109 Convert Sorted List to Binary Search Tree.md)    模拟中序遍历过程构建树
 * $\clubs$中等-插入排序[#147 Insertion Sort List](./#147 Insertion Sort List.md)    链表插入排序实现，结点删除插入遍历
 * $\bigstar$繁杂-归并排序[#148 Sort List](./#148 Sort List.md)    自底向上的归并排序实现，边界条件繁杂
 
