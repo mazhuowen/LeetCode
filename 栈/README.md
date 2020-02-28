@@ -26,6 +26,7 @@
 * 简单[#844 Backspace String Compare](./#844 Backspace String Compare.md)    括号匹配变形
 * 中等[#856 Score of Parentheses](./#856 Score of Parentheses.md)    括号匹配变形
 * $\clubs$技巧[#880 Decoded String at Index](./#880 Decoded String at Index.md)    理解规律逆向操作
+* 中等[#1190 Reverse Substrings Between Each Pair of Parentheses](./#1190 Reverse Substrings Between Each Pair of Parentheses.md)    栈保存括号索引
 
 ## 栈的应用
 
