@@ -53,6 +53,7 @@
 * $\bigstar$中等[#307 Range Sum Query - Mutable](./#307 Range Sum Query - Mutable.md)    线段树区间和统计
 * $\bigstar$困难[#308 Range Sum Query 2D - Mutable](./#308 Range Sum Query 2D - Mutable.md)    二维数组的线段树区间统计
 * $\bigstar$繁杂[#699 Falling Squares](./#699 Falling Squares.md)    动态线段树延迟修改
+* $\bigstar$困难[#850 Rectangle Area II](./#850 Rectangle Area II.md)    线段树的动态创建修改
 
 ## B和B+树
 
