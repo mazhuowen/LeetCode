@@ -4,6 +4,7 @@
 
 &emsp;队列作为非常常用的数据结构，单独考察队列的题目很少，主要考察循环队列及其队列的深度应用。队列分队首固定的顺序队列、队首不固定的顺序队列及其改进循环队列、链接队列；通常除了循环队列，考题中不需要设计队列，直接使用语言中的集合包。需要理解队列的先进先出思想，结合题目发掘队列的出队、入队规则。循环队列需要注意的是`front`为标志位，需要占用一位，后继是队首，`rear`为队尾标识，指向队尾，特别需要注意队列判空和判满的条件。
 
+* 简单[#3 Longest Substring Without Repeating Characters](./#3 Longest Substring Without Repeating Characters.md)    队列的基本应用
 * 简单[#225 Implement Stack using Queues](./#225 Implement Stack using Queues.md)    队列原理
 * 简单[#346 Moving Average from Data Stream](./#346 Moving Average from Data Stream.md)    循环队列
 * $\clubs$中等[#353 Design Snake Game](./#353 Design Snake Game.md)    队列模拟贪吃蛇的移动进食
