@@ -15,3 +15,4 @@
 
 * 中等[#41 First Missing Positive](./#41 First Missing Positive.md)    利用数组规律及数组索引
 * $\clubs$中等[#48 Rotate Image](./#48 Rotate Image.md)    正方形旋转规律
+* 简单[#12 Integer to Roman](./#12 Integer to Roman.md)    贪心算法
