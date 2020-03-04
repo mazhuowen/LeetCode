@@ -32,3 +32,7 @@
 * 中等[#244 Shortest Word Distance II](./#244 Shortest Word Distance II.md)    哈希表保存索引
 * 简单[#246 Strobogrammatic Number](./#246 Strobogrammatic Number.md)    中心对称数判断
 * 中等[#249 Group Shifted Strings](./#249 Group Shifted Strings.md)    同[#49 Group Anagrams](./#49 Group Anagrams.md)，分析同一组的特征，得到主键
+* 简单[#266 Palindrome Permutation](./#266 Palindrome Permutation.md)    哈希表存储字符计数
+* $\clubs$中等[#274 H-Index](./#274 H-Index.md)    数组保存论文引用数与计数关系
+* 简单[#288 Unique Word Abbreviation](./#288 Unique Word Abbreviation.md)    哈希表的应用
+* 简单[#290 Word Pattern](./#290 Word Pattern.md)    哈希表保存映射关系
