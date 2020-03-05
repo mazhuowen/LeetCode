@@ -50,6 +50,8 @@
 
 &emsp;对于一些区间问题，可以引入线段树，将二叉查找树的搜索操作变为区间的包含关系。线段树是一种非常灵活的数据结构，它可以用于解决多种范围查询问题，比如在对数时间内从数组中找到最小值、最大值、总和、最大公约数、最小公倍数等。
 
+&emsp;线段树的形式主要有四类，在已知叶节点（最小区间）的情况下通过数组构建完全二叉树、通过树对象构建二叉树，都属于静态线段树；另一类是动态线段树，如虽然已知叶节点，但是叶节点与次序有关，需要依次加入，此类的实现有基于数组的延迟传播和基于树对象的动态创建。
+
 * $\bigstar$中等[#307 Range Sum Query - Mutable](./#307 Range Sum Query - Mutable.md)    线段树区间和统计
 * $\bigstar$困难[#308 Range Sum Query 2D - Mutable](./#308 Range Sum Query 2D - Mutable.md)    二维数组的线段树区间统计
 * $\bigstar$中等[#673 Number of Longest Increasing Subsequence](./#673 Number of Longest Increasing Subsequence.md)    动态线段树

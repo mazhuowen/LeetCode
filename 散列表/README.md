@@ -16,6 +16,8 @@
 
 ## 应用
 
+&emsp;散列表的应用在字符串中主要是保存字符计数，结合队列等求解；在其他应用需要分析映射关系，巧妙应用这种关系。
+
 * $\clubs$困难[#30 Substring with Concatenation of All Words](./#30 Substring with Concatenation of All Words.md)    哈希表记录单词出现次数
 * 中等[#36 Valid Sudoku](./#36 Valid Sudoku.md)    数独有效性教校验
 * 中等[#49 Group Anagrams](./#49 Group Anagrams.md)    字母异位词分组
@@ -36,6 +38,8 @@
 * $\clubs$中等[#274 H-Index](./#274 H-Index.md)    数组保存论文引用数与计数关系
 * 简单[#288 Unique Word Abbreviation](./#288 Unique Word Abbreviation.md)    哈希表的应用
 * 简单[#290 Word Pattern](./#290 Word Pattern.md)    哈希表保存映射关系
+* 简单[#299 Bulls and Cows](./#299 Bulls and Cows.md)    哈希表保存计数
 * $\clubs$中等[#442 Find All Duplicates in an Array](./#442 Find All Duplicates in an Array.md)    数组下标作为键值
 * 中等[#454 4Sum II](./#454 4Sum II.md)    哈希表记录和和计数
 * $\bigstar$中等[#548 Split Array with Equal Sum](./#548 Split Array with Equal Sum.md)    集合巧妙化简循环
+* $\bigstar$中等[#1124 Longest Well-Performing Interval](./#1124 Longest Well-Performing Interval.md)    前缀和巧妙的二分查找和哈希表解法
