@@ -13,6 +13,7 @@
 * 中等[#56 Merge Intervals](./#56 Merge Intervals.md)    对起始区间排序
 * $\clubs$中等[#179 Largest Number](./#179 Largest Number.md)    将数字换变为字符串排序
 * 简单[#252 Meeting Rooms](./#252 Meeting Rooms.md)    根据起始时间排序
+* $\clubs$中等[#280 Wiggle Sort](./#280 Wiggle Sort.md)    摆动序列的排序
 
 ## 归并排序
 
