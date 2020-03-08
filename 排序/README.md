@@ -14,10 +14,14 @@
 * $\clubs$中等[#179 Largest Number](./#179 Largest Number.md)    将数字换变为字符串排序
 * 简单[#252 Meeting Rooms](./#252 Meeting Rooms.md)    根据起始时间排序
 * $\clubs$中等[#280 Wiggle Sort](./#280 Wiggle Sort.md)    摆动序列的排序
+* $\bigstar$困难[#296 Best Meeting Point](./#296 Best Meeting Point.md)    最佳会面点和会面者关系
+* $\clubs$中等[#324 Wiggle Sort II](./#324 Wiggle Sort II.md)    有序数组穿插
+* $\clubs$中等[#524 Longest Word in Dictionary through Deleting](./#524 Longest Word in Dictionary through Deleting.md)    对字符串排序比较
 
 ## 归并排序
 
-
+* $\bigstar$困难[#315 Count of Smaller Numbers After Self](./#315 Count of Smaller Numbers After Self.md)    归并排序的逆序对应用
+* 
 
 ## 线性排序
 
