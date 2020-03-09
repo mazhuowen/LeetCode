@@ -13,7 +13,7 @@ The length of all the strings in the input won't exceed 1,000.
 
 ## 题目解读
 
-
+&emsp;给定单词字典和一个字符串，查出能通过删除字符得到的最长单词。
 
 ```java
 class Solution {
@@ -25,7 +25,7 @@ class Solution {
 
 ## 程序设计
 
-
+* 判断单词是否是字符串的子串，可以采用归并排序遍历两个数组的思路进行。由于是最长子串，如果长度相等，则按照字典序。这样可以提前给字典中的单词排序，长的在前面，一样长则字典序小的在前面。
 
 ```java
 class Solution {
@@ -77,7 +77,7 @@ class Solution {
 
 ## 官方解题
 
-&emsp;官方还提供了不排序直接比较版本。
+&emsp;官方还提供了不排序直接比较版本。由于是字符串，排序不一定比直接比较快，具体问题具体对待，还要看数据是怎么样的。
 
 ```java
 class Solution {

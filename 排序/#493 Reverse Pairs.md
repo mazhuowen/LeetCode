@@ -13,7 +13,7 @@ Note:
 
 ## 题目解读
 
-&emsp;给定数组的重要翻转对的数目。
+&emsp;给定数组的重要翻转对的数目。重要翻转对的定义为索引在前的数值大于在后的数值的两倍。
 
 ```java
 class Solution {
@@ -25,7 +25,7 @@ class Solution {
 
 ## 程序设计
 
-
+* 是[#315 Count of Smaller Numbers After Self](./#315 Count of Smaller Numbers After Self.md)逆序对的变形，只是这次必不能和归并步骤合在一起。
 
 ```java
 class Solution {
@@ -36,7 +36,7 @@ class Solution {
         int count = mergeCount(nums, 0, nums.length - 1);
         return count;
     }
-
+	// 归并排序
     private int mergeCount(int[] nums, int start, int end) {
         if(start >= end) {
             return 0;
@@ -48,11 +48,12 @@ class Solution {
         mergeSort(nums, start, mid, end);
         return count;
     }
-
+	// 计数，将右半区间的值乘二与左半区间比较，转化为逆序对的问题
     private int merge(int[] nums, int start, int mid, int end) {
         int count = 0;
         int i = start, j = mid + 1;
         while(i <= mid && j <= end) {
+            // 需注意溢出
             if(nums[i] <= 2 * (long)nums[j]) {
                 count += j - mid - 1;
                 i++;
@@ -66,7 +67,7 @@ class Solution {
         }
         return count;
     }
-
+	// 归并阶段
     private void mergeSort(int[] nums, int start, int mid, int end) {
         int[] temp = new int[end - start + 1];
         int i = start, j = mid + 1, idx = 0;
@@ -90,11 +91,14 @@ class Solution {
 }
 ```
 
-
-
 ## 性能分析
 
+&emsp;时间复杂度为$O(N\log_2N)$，空间复杂度为$O(N)$。
 
+执行用时：57ms，在所有java提交中击败了70.51%的用户。
+
+内存消耗：53.5MB，在所有java提交中击败了21.57%的用户。
 
 ## 官方解题
 
+&emsp;除了归并思路，官方还提供了树状数组的思路。

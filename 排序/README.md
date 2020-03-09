@@ -17,11 +17,14 @@
 * $\bigstar$困难[#296 Best Meeting Point](./#296 Best Meeting Point.md)    最佳会面点和会面者关系
 * $\clubs$中等[#324 Wiggle Sort II](./#324 Wiggle Sort II.md)    有序数组穿插
 * $\clubs$中等[#524 Longest Word in Dictionary through Deleting](./#524 Longest Word in Dictionary through Deleting.md)    对字符串排序比较
+* $\clubs$中等[#853 Car Fleet](./#853 Car Fleet.md)    根据位置排序，比较时间
+* $\clubs$简单[#922 Sort Array By Parity II](./#922 Sort Array By Parity II.md)    双指针交换排序
 
 ## 归并排序
 
 * $\bigstar$困难[#315 Count of Smaller Numbers After Self](./#315 Count of Smaller Numbers After Self.md)    归并排序的逆序对应用
-* 
+* $\bigstar$困难[#327 Count of Range Sum](./#327 Count of Range Sum.md)    归并排序前缀和并计算区间值
+* $\bigstar$困难[#493 Reverse Pairs](./#493 Reverse Pairs.md)    [#315 Count of Smaller Numbers After Self](./#315 Count of Smaller Numbers After Self.md)的变形
 
 ## 线性排序
 

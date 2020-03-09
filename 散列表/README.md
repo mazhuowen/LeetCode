@@ -43,5 +43,6 @@
 * 简单[#350 Intersection of Two Arrays II](./#350 Intersection of Two Arrays II.md)    哈希表记录计数
 * $\clubs$中等[#442 Find All Duplicates in an Array](./#442 Find All Duplicates in an Array.md)    数组下标作为键值
 * 中等[#454 4Sum II](./#454 4Sum II.md)    哈希表记录和和计数
+* $\clubs$困难[#527 Word Abbreviation](./#527 Word Abbreviation.md)    利用字典保存缩写，解决碰撞
 * $\bigstar$中等[#548 Split Array with Equal Sum](./#548 Split Array with Equal Sum.md)    集合巧妙化简循环
 * $\bigstar$中等[#1124 Longest Well-Performing Interval](./#1124 Longest Well-Performing Interval.md)    前缀和巧妙的二分查找和哈希表解法
