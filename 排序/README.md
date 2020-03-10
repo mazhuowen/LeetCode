@@ -6,7 +6,7 @@
 
 ## 选择排序
 
-
+* $\bigstar$中等[#969 Pancake Sorting](./#969 Pancake Sorting.md)    煎饼排序
 
 ## 交换排序
 
