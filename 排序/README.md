@@ -19,6 +19,8 @@
 * $\clubs$中等[#524 Longest Word in Dictionary through Deleting](./#524 Longest Word in Dictionary through Deleting.md)    对字符串排序比较
 * $\clubs$中等[#853 Car Fleet](./#853 Car Fleet.md)    根据位置排序，比较时间
 * $\clubs$简单[#922 Sort Array By Parity II](./#922 Sort Array By Parity II.md)    双指针交换排序
+* 简单[#976 Largest Perimeter Triangle](./#976 Largest Perimeter Triangle.md)    排序边长，判断是否组成三角形
+* 简单[#1086 High Five](./#1086 High Five.md)    排序计算
 
 ## 归并排序
 

@@ -50,6 +50,7 @@ return -1;
 * 简单[#441 Arranging Coins](./#441 Arranging Coins.md)    数学规律总结，二分查找可实现
 * 中等[#475 Heaters](./#475 Heaters.md)    排序后使用二分查找
 * $\bigstar$困难[#644 Maximum Average Subarray II](./#644 Maximum Average Subarray II.md)    二分查找猜测平均值并验证
+* $\bigstar$困难[#710 Random Pick with Blacklist](./#710 Random Pick with Blacklist.md)    二分查找连续数值中的缺失值
 * $\bigstar$中等[#719 Find K-th Smallest Pair Distance](./#719 Find K-th Smallest Pair Distance.md)    对距离范围二分查找统计
 
 ### 插入查找

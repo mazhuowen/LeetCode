@@ -21,6 +21,7 @@
 * 中等[#692 Top K Frequent Words](./#692 Top K Frequent Words.md)    最小堆的top-k问题
 * 简单[#703 Kth Largest Element in a Stream](./#703 Kth Largest Element in a Stream.md)    最小堆top-k问题
 * $\clubs$中等[#759 Employee Free Time](./#759 Employee Free Time.md)    堆在时间区间的应用
+* 中等[#767 Reorganize String](./#767 Reorganize String.md)    [#621 Task Scheduler](./#621 Task Scheduler.md)思路的简化
 * $\clubs$中等[#778 Swim in Rising Water](./#778 Swim in Rising Water.md)    同[#407 Trapping Rain Water II](./#407 Trapping Rain Water II.md)思想，将边界入堆
 
 ### 最小最大堆
