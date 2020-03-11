@@ -90,6 +90,55 @@ class Solution {
 
 ## 官方解题
 
-&emsp;暂无，密切关注。社区时间性能较快的方法采用字典映射的方式。由于题目中限定距离小于等于2000，可以采用2000的的数组表示距离，其次由于遍历行列计算距离，如果距离已经相等，则计算的先后顺序就是按照要求：工人id小的在前，一样则自行车id小的在前。所以可以在上述数组中维护一个链表，遍历计算后插入即可。这样利用字典映射和链表解决了排序的花销，时间复杂度为$O(NM)$，空间复杂度为$O(NM)$。
+&emsp;暂无，密切关注。社区时间性能较快的方法采用字典映射的方式。由于题目中限定距离小于等于2000，可以采用2000的的数组表示距离，其次由于遍历行列计算距离，如果距离已经相等，则计算的先后顺序就是按照要求：工人id小的在前，一样则自行车id小的在前。所以可以在上述数组中维护一个链表，遍历计算后插入即可。这样利用字典映射和链表解决了排序的花销。
 
-todo
+```java
+class Solution {
+    public int[] assignBikes(int[][] workers, int[][] bikes) {
+        if(workers == null || workers.length == 0) {
+            return new int[]{};
+        }
+        if(bikes == null || workers.length > bikes.length) {
+            throw new IllegalArgumentException("invalid param");
+        }
+        // 最大曼哈顿距离小于2000，可以使用2000的数组映射
+        List<int[]>[] distance = new List[2000];
+        // 遍历计算
+        for (int i = 0; i < workers.length; i++) {
+            for (int j = 0; j < bikes.length; j++) {
+                int dis = Math.abs(workers[i][0] - bikes[j][0])
+                        + Math.abs(workers[i][1] - bikes[j][1]);
+                if(distance[dis] == null) {
+                    distance[dis] = new LinkedList<>();
+                }
+                // 距离相同，遍历计算的顺序就是有序的，直接加入
+                distance[dis].add(new int[]{i, j});
+            }
+        }
+        // 是否已分配标识
+        boolean[] workFlag = new boolean[workers.length];
+        boolean[] bikeFlag = new boolean[bikes.length];
+
+        int[] res = new int[workers.length];
+        for(int i = 0; i < distance.length; i++) {
+            if(distance[i] == null) continue;
+            for(int[] temp : distance[i]) {
+                // 未分配
+                if(!workFlag[temp[0]] && !bikeFlag[temp[1]]) {
+                    res[temp[0]] = temp[1];
+                    // 设置分配标识
+                    workFlag[temp[0]] = true;
+                    bikeFlag[temp[1]] = true;
+                }
+            }
+        }
+        return res;
+    }
+}
+```
+
+&emsp;时间复杂度为$O(NM)$，空间复杂度为$O(NM)$。
+
+执行耗时：93ms，击败了92.75%的java用户。
+
+内存消耗：101.9MB，击败了13.33%的java用户。

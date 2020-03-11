@@ -21,7 +21,7 @@
 * $\clubs$简单[#922 Sort Array By Parity II](./#922 Sort Array By Parity II.md)    双指针交换排序
 * 简单[#976 Largest Perimeter Triangle](./#976 Largest Perimeter Triangle.md)    排序边长，判断是否组成三角形
 * 中等[#1054 Distant Barcodes](./#1054 Distant Barcodes.md)    邻接元素不相等排序
-* 中等[#1057 Campus Bikes](./#1057 Campus Bikes.md)    todo巧妙利用距离计算的有序性
+* 中等[#1057 Campus Bikes](./#1057 Campus Bikes.md)    巧妙利用距离计算的有序性
 * 简单[#1086 High Five](./#1086 High Five.md)    排序计算
 * 简单todo1122
 * 繁杂[#1152 Analyze User Website Visit Pattern](./#1152 Analyze User Website Visit Pattern.md)    根据用户和时间戳排序
