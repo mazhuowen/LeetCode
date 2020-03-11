@@ -46,15 +46,17 @@
 * $\clubs$中等[#366 Find Leaves of Binary Tree](./#366 Find Leaves of Binary Tree.md)    后序遍历的变体
 * 简单[#404 Sum of Left Leaves](./#404 Sum of Left Leaves.md)    前序遍历的应用
 * $\clubs$中等[#437 Path Sum III](./#437 Path Sum III.md)    保存路径，深度遍历，向前计算路径和
-* $\clubs$中等[#536 Construct Binary Tree from String](./#536 Construct Binary Tree from String.md)    根据前序序列的变形恢复二叉树
 * 中等[#508 Most Frequent Subtree Sum](./#508 Most Frequent Subtree Sum.md)    前序遍历记录子树和
 * 简单[#513 Find Bottom Left Tree Value](./#513 Find Bottom Left Tree Value.md)    中序遍历或前序遍历记录最大层
 * 简单[#515 Find Largest Value in Each Tree Row](./#515 Find Largest Value in Each Tree Row.md)    中序遍历
+* $\clubs$中等[#536 Construct Binary Tree from String](./#536 Construct Binary Tree from String.md)    根据前序序列的变形恢复二叉树
 * 简单[#543 Diameter of Binary Tree](./#543 Diameter of Binary Tree.md)    计算路径和
 * $\clubs$中等[#545 Boundary of Binary Tree](./#545 Boundary of Binary Tree.md)    前序遍历的变形结合后序遍历实现边界遍历
 * $\clubs$中等[#549 Binary Tree Longest Consecutive Sequence II](./#549 Binary Tree Longest Consecutive Sequence II.md)    树的路径序列
 * $\clubs$中等[#652 Find Duplicate Subtrees](./#652 Find Duplicate Subtrees.md)    前序遍历字典记录子树
 * 中等[#662 Maximum Width of Binary Tree](./#662 Maximum Width of Binary Tree.md)    树的数组索引与层次遍历的结合
+* $\clubs$中等[#889 Construct Binary Tree from Preorder and Postorder Traversal](./#889 Construct Binary Tree from Preorder and Postorder Traversal.md)    根据前序序列和后序序列构建一棵树
+* $\clubs$中等[#968 Binary Tree Cameras](./#968 Binary Tree Cameras.md)    前序遍历巧妙返回状态
 
 ## 树与森林
 

@@ -2,13 +2,17 @@
 
 ## 插入排序
 
-
+&emsp;插入排序分直接插入、二分插入、希尔插入。
 
 ## 选择排序
+
+&emsp;选择排序分直接选择排序和堆排序。
 
 * $\bigstar$中等[#969 Pancake Sorting](./#969 Pancake Sorting.md)    煎饼排序
 
 ## 交换排序
+
+&emsp;交换排序分冒泡排序和快速排序。
 
 * 中等[#56 Merge Intervals](./#56 Merge Intervals.md)    对起始区间排序
 * $\clubs$中等[#179 Largest Number](./#179 Largest Number.md)    将数字换变为字符串排序
@@ -23,16 +27,20 @@
 * 中等[#1054 Distant Barcodes](./#1054 Distant Barcodes.md)    邻接元素不相等排序
 * 中等[#1057 Campus Bikes](./#1057 Campus Bikes.md)    巧妙利用距离计算的有序性
 * 简单[#1086 High Five](./#1086 High Five.md)    排序计算
-* 简单todo1122
+* 简单[#1122 Relative Sort Array](./#1122 Relative Sort Array.md)    统计计数，分配位置
 * 繁杂[#1152 Analyze User Website Visit Pattern](./#1152 Analyze User Website Visit Pattern.md)    根据用户和时间戳排序
 
 ## 归并排序
+
+&emsp;归并排序除了用于排序，其分治思想及左右区间有序性使得在逆序对问题中扮演重要角色。
 
 * $\bigstar$困难[#315 Count of Smaller Numbers After Self](./#315 Count of Smaller Numbers After Self.md)    归并排序的逆序对应用
 * $\bigstar$困难[#327 Count of Range Sum](./#327 Count of Range Sum.md)    归并排序前缀和并计算区间值
 * $\bigstar$困难[#493 Reverse Pairs](./#493 Reverse Pairs.md)    [#315 Count of Smaller Numbers After Self](./#315 Count of Smaller Numbers After Self.md)的变形
 
 ## 线性排序
+
+&emsp;线性排序主要分桶排序、基数排序和计数排序。在一些特定问题有重要应用。
 
 * $\bigstar$中等[#75 Sort Colors](./#75 Sort Colors.md)    计数排序（非最优解）与荷兰旗问题
 * $\bigstar$困难[#164 Maximum Gap](./#164 Maximum Gap.md)    基于计数排序的基数排序和桶思想

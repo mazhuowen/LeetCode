@@ -26,6 +26,7 @@
 * 简单[#844 Backspace String Compare](./#844 Backspace String Compare.md)    括号匹配变形
 * 中等[#856 Score of Parentheses](./#856 Score of Parentheses.md)    括号匹配变形
 * $\clubs$技巧[#880 Decoded String at Index](./#880 Decoded String at Index.md)    理解规律逆向操作
+* 简单[#921 Minimum Add to Make Parentheses Valid](./#921 Minimum Add to Make Parentheses Valid.md)    括号计数消除
 * 简单[#1021 Remove Outermost Parentheses](./#1021 Remove Outermost Parentheses.md)    通过计数实现栈的思想
 * 中等[#1190 Reverse Substrings Between Each Pair of Parentheses](./#1190 Reverse Substrings Between Each Pair of Parentheses.md)    栈保存括号索引
 
@@ -42,8 +43,8 @@
 * $\clubs$简单[#150 Evaluate Reverse Polish Notation](./#150 Evaluate Reverse Polish Notation.md)    后缀表达式计算
 * $\clubs$中等[#224 Basic Calculator](./#224 Basic Calculator.md)    只有加减及括号的表达式计算
 * 中等[#227 Basic Calculator II](./#227 Basic Calculator II.md)    没有括号的表达式计算
-* 困难[#772 Basic Calculator III](./#772 Basic Calculator III.md)    存在负号的计算问题
 * 繁杂[#770 Basic Calculator IV](./#770 Basic Calculator IV.md)    存在变量的计算问题，创建多项式对象
+* 困难[#772 Basic Calculator III](./#772 Basic Calculator III.md)    存在负号的计算问题
 
 ### 字典序
 

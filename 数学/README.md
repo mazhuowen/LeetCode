@@ -12,6 +12,7 @@
 * 简单[#367 Valid Perfect Square](./#367 Valid Perfect Square.md)    整数的平方根，需注意判断条件
 * $\bigstar$困难[#483 Smallest Good Base](./#483 Smallest Good Base.md)    $k$进制规律
 * 中等[#204 Count Primes](./#204 Count Primes.md)    统计质数数目
+* $\bigstar$困难[#878 Nth Magical Number](./#878 Nth Magical Number.md)    数学规律与二分查找结合
 
 ## 规律
 
