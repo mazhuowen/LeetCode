@@ -1,5 +1,29 @@
 [toc]
 
+A 2d grid map of m rows and n columns is initially filled with water. We may perform an addLand operation which turns the water at position (row, col) into a land. Given a list of positions to operate, **count the number of islands after each addLand operation**. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
+
+Follow up:
+
+Can you do it in time complexity $O(k\log_2mn)$, where $k$ is the length of the positions?
+
+
+
+## 题目解读
+
+&emsp;依次在方格中添加陆地，并输出每次添加后的岛屿个数。
+
+```java
+class Solution {
+    public List<Integer> numIslands2(int m, int n, int[][] positions) {
+
+    }
+}
+```
+
+## 程序设计
+
+* 由于是动态添加，使用深度优先遍历等思路显得不那么优雅。可以使用不相交集，每次加入陆地，则查找其上下左右的格子是否是陆地，是则合并，并返回此时的岛屿数。为了记录是否是陆地，可以使用矩形记录。
+
 ```java
 class Solution {
     public List<Integer> numIslands2(int m, int n, int[][] positions) {
@@ -9,6 +33,7 @@ class Solution {
         }
         // 水的数目
         int count = m * n;
+        // 记录陆地
         boolean[][] island = new boolean[m][n];
         DisJoint disJoint = new DisJoint(count);
         for(int[] cur : positions) {
@@ -74,3 +99,15 @@ class DisJoint {
     }
 }
 ```
+
+## 性能分析
+
+&emsp;时间复杂度为$O(M*N + K)$，空间复杂度为$O(N* M)$。
+
+执行用时：10ms，在所有java提交中击败了98.80%的用户。
+
+内存消耗：44.3MB，在所有java提交中击败了100.00%的用户。
+
+## 官方解题
+
+&emsp;除了上述思路，官方还提供了哈希表的实现。
