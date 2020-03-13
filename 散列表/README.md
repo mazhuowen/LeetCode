@@ -22,6 +22,7 @@
 * 中等[#36 Valid Sudoku](./#36 Valid Sudoku.md)    数独有效性教校验
 * 中等[#49 Group Anagrams](./#49 Group Anagrams.md)    字母异位词分组
 * $\clubs$中等[#76 Minimum Window Substring](./#76 Minimum Window Substring.md)    最小覆盖子串
+* $\clubs$技巧[#128 Longest Consecutive Sequence](./#128 Longest Consecutive Sequence.md)    集合巧妙记录数字序列
 * 简单[#136 Single Number](./#136 Single Number.md)    集合记录消解（非最优解）
 * 繁杂[#149 Max Points on a Line](./#149 Max Points on a Line.md)    哈希表记录斜率，注意浮点数运算的精度丢失
 * 中等[#159 Longest Substring with At Most Two Distinct Characters](./#159 Longest Substring with At Most Two Distinct Characters.md)    队列与哈希表的简单组合
