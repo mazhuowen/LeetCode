@@ -1,5 +1,35 @@
 [toc]
 
+Given a list `accounts`, each element `accounts[i]` is a list of strings, where the first element `accounts[i][0]` is a name, and the rest of the elements are emails representing `emails` of the account.
+
+Now, we would like to merge these accounts. Two accounts definitely belong to the same person if there is some email that is common to both accounts. Note that even if two accounts have the same name, they may belong to different people as people could have the same name. A person can have any number of accounts initially, but all of their accounts definitely have the same name.
+
+After merging the accounts, return the accounts in the following format: the first element of each account is the name, and the rest of the elements are emails **in sorted order**. The accounts themselves can be returned in any order.
+
+Note:
+
+* The length of `accounts` will be in the range `[1, 1000]`.
+* The length of `accounts[i]` will be in the range `[1, 10]`.
+* The length of `accounts[i][j]` will be in the range `[1, 30]`.
+
+
+
+## 题目解读
+
+&emsp;根据邮箱合并用户，返回用户和其邮箱列表，列表需要按照字母序排序。
+
+```java
+class Solution {
+    public List<List<String>> accountsMerge(List<List<String>> accounts) {
+
+    }
+}
+```
+
+## 程序设计
+
+* 首先利用字典将邮箱映射为索引，然后进行不相交集的合并操作，最后遍历邮箱，根据不相交集分组，排序后拼接为链表。
+
 ```java
 class Solution {
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
@@ -83,3 +113,15 @@ class DisJoint {
     }
 }
 ```
+
+## 性能分析
+
+&emsp;时间复杂度为$O(NM\log_2M)$，空间复杂度为$O(NM)$，其中$N$为账号数，$M$为平均邮箱长度。
+
+执行用时：44ms，在所有java提交中击败了85.91%的用户。
+
+内存消耗：45MB，在所有java提交中击败了54.55%的用户。
+
+## 官方解题
+
+&emsp;除了上述思路还介绍了深度优先遍历的思路。

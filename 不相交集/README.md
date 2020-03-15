@@ -12,4 +12,10 @@
 * 简单[#547 Friend Circles](./#547 Friend Circles.md)    不相交集基本操作
 * $\clubs$中等[#684 Redundant Connection](./#684 Redundant Connection.md)    不相交集在检测图的环路的应用
 * $\clubs$繁杂[#685 Redundant Connection II](./#685 Redundant Connection II.md)    由树和边构成的有向图的规律
+* 繁杂[#721 Accounts Merge](./#721 Accounts Merge.md)    不相交集及哈希表、排序的综合应用
+* 中等[#737 Sentence Similarity II](./#737 Sentence Similarity II.md)    不相交集保存近义词对
+* $\bigstar$困难[#765 Couples Holding Hands](./#765 Couples Holding Hands.md)    图的连通性
+* $\bigstar$困难[#803 Bricks Falling When Hit](./#803 Bricks Falling When Hit.md)    反向思路应用不相交集
+* $\clubs$繁杂[#839 Similar String Groups](./#839 Similar String Groups.md)    不相交集用于交换字符的单词分组
+* 
 
