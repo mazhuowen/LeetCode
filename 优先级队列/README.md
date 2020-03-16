@@ -24,6 +24,7 @@
 * 中等[#767 Reorganize String](./#767 Reorganize String.md)    [#621 Task Scheduler](./#621 Task Scheduler.md)思路的简化
 * $\clubs$中等[#778 Swim in Rising Water](./#778 Swim in Rising Water.md)    同[#407 Trapping Rain Water II](./#407 Trapping Rain Water II.md)思想，将边界入堆
 * $\clubs$困难[#786 K-th Smallest Prime Fraction](./#786 K-th Smallest Prime Fraction.md)    扩展堆及二分查找的应用
+* $\bigstar$困难[#857 Minimum Cost to Hire K Workers](./#857 Minimum Cost to Hire K Workers.md)    巧妙使用薪资效率比排序然后用堆筛选
 
 ### 最小最大堆
 

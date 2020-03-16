@@ -106,15 +106,78 @@ class DisJoint {
 }
 ```
 
-* 注意到数组规模达到20000，平方级别的方法必然不行。转换思路，如果计算每个数的所有质数，将质数作为关联连接两个数字。
+* 注意到数组规模达到20000，平方级别的方法必然不行。转换思路，如果计算每个数的所有质数，将质数作为关联连接两个数字。于是得到如下代码，由于集合中包含了数组中不存在的质数，故需要重新遍历计数。但是该方法仍然超时。
 
 ```java
+class Solution {
+    public int largestComponentSize(int[] A) {
+        if(A == null || A.length == 0) {
+            return 0;
+        }
 
+        DisJoint disJoint = new DisJoint(100_001);
+        for(int num : A) {
+            // 计算质因数
+            int prime = 2, temp = num;
+            while(prime <= temp) {
+                // 是一个因数
+                if(temp % prime == 0) {
+                    // 将质因数和当前数关联
+                    disJoint.union(disJoint.find(prime), disJoint.find(num));
+                    // 将该因数除尽（很关键，保证了迭代得到的数是质数）
+                    while (temp % prime == 0) temp /= prime;
+                }
+                prime++;
+            }
+        }
+        int max = 1;
+        // 计数不相交集和集合尺寸
+        int[] counter = new int[100_001];
+        for (int i = 0; i < A.length; i++) {
+            max = Math.max(max, ++counter[disJoint.find(A[i])]);
+        }
+        return max;
+    }
+}
+```
+
+* 上述思路求解质数导致超时，可以不用求解所有质数，而是将除数都加入集合，这样大大减少求解时间。
+
+```java
+class Solution {
+    public int largestComponentSize(int[] A) {
+        if(A == null || A.length == 0) {
+            return 0;
+        }
+
+        DisJoint disJoint = new DisJoint(100_001);
+        for(int num : A) {
+            for (int prime = (int)Math.sqrt(num); prime >= 2; prime--) {
+                if(num % prime == 0) {
+                    disJoint.union(disJoint.find(prime), disJoint.find(num));
+                    disJoint.union(disJoint.find(num / prime), disJoint.find(num));
+                }
+            }
+        }
+        int max = 1;
+        // 计数不相交集和集合尺寸
+        int[] counter = new int[100_001];
+        for (int i = 0; i < A.length; i++) {
+            max = Math.max(max, ++counter[disJoint.find(A[i])]);
+        }
+        return max;
+    }
+}
 ```
 
 ## 性能分析
 
+&emsp;时间复杂度为$O(N\sqrt{M})$，空间复杂度为$O(N)$，其中$M$为最大数字值。
 
+执行用时：137ms，在所有java提交中击败了81.94%的用户。
+
+内存消耗：42MB，在所有java提交中击败了64.71%的用户。
 
 ## 官方解题
 
+&emsp;官方解法更繁琐。

@@ -1,5 +1,38 @@
 [toc]
 
+In a $N \times N$ `grid` composed of $1 \times 1$ squares, each $1 \times 1$ square consists of a `/`, `\`, or blank space.  These characters divide the square into contiguous regions.
+
+(Note that backslash characters are escaped, so a `\` is represented as `"\\"`.)
+
+Return the number of regions.
+
+
+
+Note:
+
+* $1 \le \text{grid.length} == \text{grid[0].length} \le 30$
+* `grid[i][j]` is either `'/'`, `'\'`, or `' '`.
+
+
+
+## 题目解读
+
+&emsp;给定正方形，每个格子可以是斜线、反斜线、空格，分别代表当前格子的划分策略。最后返回划分的区域。
+
+```java
+class Solution {
+    public int regionsBySlashes(String[] grid) {
+
+    }
+}
+```
+
+## 程序设计
+
+* 将每个格子换分为四部分，这样每种划分就对应了相应的合并操作；而对于相邻的格子，需要合并的格子也是固定的。
+
+<img src="../images/#959.png" style="zoom:120%;" />
+
 ```java
 class Solution {
     public int regionsBySlashes(String[] grid) {
@@ -75,3 +108,15 @@ class DisJoint {
     }
 }
 ```
+
+## 性能分析
+
+&emsp;时间复杂度为$O(N^2)$，空间复杂度为$O(N^2)$。
+
+执行用时：5ms，在所有java提交中击败了90.00%的用户。
+
+内存消耗：37.7MB，在所有java提交中击败了12.00%的用户。
+
+## 官方解题
+
+&emsp;官方思路同上。社区还有一种思路就是将格子转化为$3 \times 3$的矩阵，斜线位置转化为1，其余元素转化为0，这样就转变为寻找0的连通分量数目。

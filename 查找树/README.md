@@ -27,6 +27,7 @@
 * 简单[#653 Two Sum IV - Input is a BST](./#653 Two Sum IV - Input is a BST.md)    中序遍历有序数组的两数之和
 * 简单[#700 Search in a Binary Search Tree](./#700 Search in a Binary Search Tree.md)    二叉查找树的搜索
 * 简单[#701 Insert into a Binary Search Tree](./#701 Insert into a Binary Search Tree.md)    二叉查找树的插入
+* $\clubs$中等[#1214 Two Sum BSTs](./#1214 Two Sum BSTs.md)    两棵树遍历查找
 
 ## AVL树
 

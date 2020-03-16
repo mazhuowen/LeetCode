@@ -2,6 +2,8 @@
 
 ## 不相交集
 
+&emsp;不相交集的应用和图的连通分量紧密挂钩，分析问题需要关注不相交集的三个特性。
+
 
 * 中等[#130 Surrounded Regions](./#130 Surrounded Regions.md)    可用不相交集实现（非最优）
 * 中等[#200 Number of Islands](./#200 Number of Islands.md)    不相交集、深度优先遍历
@@ -20,5 +22,8 @@
 * $\clubs$繁杂[#924 Minimize Malware Spread](./#924 Minimize Malware Spread.md)    图的连通分量
 * $\bigstar$困难[#928 Minimize Malware Spread II](./#928 Minimize Malware Spread II.md)    巧妙利用连通分量与恶意结点的计数
 * 中等[#947 Most Stones Removed with Same Row or Column](./#947 Most Stones Removed with Same Row or Column.md)    分析规律得到不相交集的传递性
-* 
+* 繁杂[#952 Largest Component Size by Common Factor](./#952 Largest Component Size by Common Factor.md)    通过除数来关联各分量
+* $\bigstar$困难[#959 Regions Cut By Slashes](./#959 Regions Cut By Slashes.md)    格子划分巧妙转化为图的问题
+* 简单[#990 Satisfiability of Equality Equations](./#990 Satisfiability of Equality Equations.md)    不相交集基本应用
+* 中等[#1061 Lexicographically Smallest Equivalent String](./#1061 Lexicographically Smallest Equivalent String.md)    改造合并策略
 

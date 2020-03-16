@@ -55,8 +55,10 @@
 * $\clubs$中等[#549 Binary Tree Longest Consecutive Sequence II](./#549 Binary Tree Longest Consecutive Sequence II.md)    树的路径序列
 * $\clubs$中等[#652 Find Duplicate Subtrees](./#652 Find Duplicate Subtrees.md)    前序遍历字典记录子树
 * 中等[#662 Maximum Width of Binary Tree](./#662 Maximum Width of Binary Tree.md)    树的数组索引与层次遍历的结合
+* 中等[#663 Equal Tree Partition](./#663 Equal Tree Partition.md)    树的遍历求和
 * $\clubs$中等[#889 Construct Binary Tree from Preorder and Postorder Traversal](./#889 Construct Binary Tree from Preorder and Postorder Traversal.md)    根据前序序列和后序序列构建一棵树
 * $\clubs$中等[#968 Binary Tree Cameras](./#968 Binary Tree Cameras.md)    前序遍历巧妙返回状态
+* 中等[#1257 Smallest Common Region](./#1257 Smallest Common Region.md)    最近公共父节点问题
 
 ## 树与森林
 
