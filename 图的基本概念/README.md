@@ -19,6 +19,7 @@
 ## 有向无环图拓扑排序
 
 * $\clubs$中等[#210 Course Schedule II](./#210 Course Schedule II.md)    [#207 Course Schedule](./#207 Course Schedule.md)的延续，有向无环图拓扑排序
+* 中等[#269 Alien Dictionary](./#269 Alien Dictionary.md)    拓扑排序
 * $\bigstar$中等[#310 Minimum Height Trees](./#310 Minimum Height Trees.md)    拓扑排序思想的扩展
 
 ## 有向图环路判断

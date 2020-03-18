@@ -1,5 +1,34 @@
 [toc]
 
+Given a list of airline tickets represented by pairs of departure and arrival airports `[from, to]`, reconstruct the itinerary in order. All of the tickets belong to a man who departs from `JFK`. Thus, the itinerary must begin with `JFK`.
+
+**Note:**
+
+* If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string. For example, the itinerary `["JFK", "LGA"]` has a smaller lexical order than `["JFK", "LGB"]`.
+* All airports are represented by three capital letters (IATA code).
+* You may assume all tickets form at least one valid itinerary.
+
+
+
+## 题目解读
+
+&emsp;给定飞机出发和降落的机场地点，对一些列行程进行重新规划排序。题目限定从`JFK`出发。
+
+> 需要向面试官咨询有向边是否存在多条，这是问题的关键。
+
+```java
+class Solution {
+    public List<String> findItinerary(List<List<String>> tickets) {
+
+    }
+}
+```
+
+## 程序设计
+
+* 首先想到的是机场就是顶点，行程是有向边，由于乘客不能瞬移，必须由一个地方到另一个地方，如果这些行程属于同一个人，意味着行程组成的图可以从`JFK`开始遍历，遍历完所有的边。
+* 根据这个思路，类似于顶点的深度优先搜索，通过将边标记为0实现边的深度优先搜索，代码如下：
+
 ```java
 class Solution {
     public List<String> findItinerary(List<List<String>> tickets) {
@@ -69,7 +98,7 @@ class Solution {
 }
 ```
 
-[["EZE","AXA"],["TIA","ANU"],["ANU","JFK"],["JFK","ANU"],["ANU","EZE"],["TIA","ANU"],["AXA","TIA"],["TIA","JFK"],["ANU","TIA"],["JFK","TIA"]]
+* 上述代码测试用例不通过，因为上述思路默认边是不重复的，测试用例`[["EZE","AXA"],["TIA","ANU"],["ANU","JFK"],["JFK","ANU"],["ANU","EZE"],["TIA","ANU"],["AXA","TIA"],["TIA","JFK"],["ANU","TIA"],["JFK","TIA"]]`不通过，思路不变，可以通过在邻接矩阵中的计数表示边的条数来实现，改动如下：
 
 ```java
 class Solution {
@@ -138,7 +167,7 @@ class Solution {
 }
 ```
 
-
+* 邻接表实现如下：
 
 ```java
 class Solution {
@@ -244,7 +273,7 @@ class Node {
 }
 ```
 
-
+* 事实上每条边走一遍，且走完全部的边，这是一道有向边的欧拉路径问题。无向图中欧拉回路满足条件为任意一个结点度为偶数，欧拉路径满足条件为有且只有两个结点度为奇数，分别为起始点和结束点，其它点都是偶数。应用到有向图中，可知如果存在欧拉回路，则必然每个结点的入度和出度一样，存在欧拉路径则起始点的出度比入度多一，结束点出度比入度少一，其它点出度、入度相同。自然而然想到使用求解欧拉回路的方法，即深度遍历并拼接环的方法，这是可行的，由于本题规定了一定存在路径，事实上要么有向图是欧拉回路，从起始点出发是由多个环构成；要么是欧拉路径，除了多个环，还有一个链通向结束结点。
 
 ```java
 class Solution {
@@ -268,8 +297,6 @@ class Solution {
             idxMap.put(verIdx[i], i);
         }
 
-        // 边数
-        int edgeNum = tickets.size();
         // 边集
         Node[] graph = new Node[verNum];
         for (List<String> ticket : tickets) {
@@ -288,40 +315,41 @@ class Solution {
                 pre.next = new Node(end, temp);
             }
         }
-        List<String> last = new LinkedList<>();
         int start = idxMap.get("JFK");
-        int count = 0;
-        // 从JFK出发深度优先搜索
-        while (graph[start] != null) {
-            int next = graph[start].val;
-            // 删除当前边
-            graph[start] = graph[start].next;
-            List<String> path = new LinkedList<>();
-            path.add(verIdx[start]);
-            dfs(next, start, graph, verIdx, path);
-            if (path.get(path.size() - 1).equals("JFK")) {
-                res.addAll(path.subList(0, path.size() - 1));
-            } else {
-                last.addAll(path);
+        // 拼接的链表，贪心从start开始遍历（由于遍历的路径是有序的，abba，如果a存在环，要拼接在第二个a上，所以为了方便遍历，采取倒序的形式）
+        Node head = dfs(start, graph, null);
+        // 倒序遍历当前路径上的结点，如果存在未访问的边，则遍历拼接
+        Node temp = head;
+        while (temp != null) {
+            // 存在环路，遍历拼接
+            if (graph[temp.val] != null) {
+                Node newHead = dfs(temp.val, graph, temp.next);
+                if (newHead.val != temp.val) throw new IllegalArgumentException("errror graph");
+
+                // 拼接
+                temp.next = newHead.next;
             }
+            temp = temp.next;
         }
-        if (last.isEmpty()) {
-            res.add(verIdx[start]);
-        } else {
-            res.addAll(last);
+        while (head != null) {
+            res.add(0, verIdx[head.val]);
+            head = head.next;
         }
         return res;
     }
 
-    private void dfs(int start, int end, Node[] graph, String[] verIdx, List<String> path) {
-        // 加入当前结点
-        path.add(verIdx[start]);
-        if (start != end && graph[start] != null) {
-            int next = graph[start].val;
-            // 删除边（由于是有序的，只需头结点后移）
-            graph[start] = graph[start].next;
-            dfs(next, end, graph, verIdx, path);
-        }
+    private Node dfs(int start, Node[] graph, Node head) {
+        // 拼接入路径（倒序插入）顺序后面的接在前面
+        head = new Node(start, head);
+        // 无节点可遍历
+        if (graph[start] == null) return head;
+        
+        // 由于已排序，当前结点字母序是最小的，贪心遍历
+        Node cur = graph[start];
+        // 删除当前点
+        graph[start] = graph[start].next;
+        // 移动到后面
+        return dfs(cur.val, graph, head);
     }
 }
 
@@ -329,13 +357,50 @@ class Node {
     int val;
     Node next;
 
-    Node(int val) {
-        this.val = val;
-    }
-
     Node(int val, Node next) {
         this.val = val;
         this.next = next;
+    }
+}
+```
+
+
+
+## 性能分析
+
+&emsp;暴力回溯法，邻接矩阵时间复杂度为$O(V^2M)$，空间复杂度为$O(V^2)$，$M$为回溯次数。邻接表时间复杂度为$O(EM)$，空间复杂度为$O(V + E)$。
+
+执行用时：11ms，在所有java提交中击败了48.71%的用户。
+
+内存消耗：42.1MB，在所有java提交中击败了60.92%的用户。
+
+## 官方解题
+
+&emsp;暂无，密切关注。
+
+```java
+class Solution {
+private Map<String, PriorityQueue<String>> map = new HashMap<>();
+    private List<String> resList = new LinkedList<>();
+    public List<String> findItinerary(List<List<String>> tickets) {
+        for (List<String> ticket : tickets) {
+            String src = ticket.get(0);
+            String dst = ticket.get(1);
+            if (!map.containsKey(src)) {
+                PriorityQueue<String> pq = new PriorityQueue<>();//按照字典顺序排列可能的后继机场
+                map.put(src, pq);
+            }
+            map.get(src).add(dst);
+        }
+        dfs("JFK");
+        return resList;
+    }
+
+    private void dfs(String src) {
+        PriorityQueue<String> pq = map.get(src);
+        while (pq != null && !pq.isEmpty())
+            dfs(pq.poll());
+        ((LinkedList<String>) resList).addFirst(src);//每次都加入头 因为递归从底至上
     }
 }
 ```

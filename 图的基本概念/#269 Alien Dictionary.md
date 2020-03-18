@@ -25,7 +25,7 @@ class Solution {
 
 ## 程序设计
 
-
+* 关键在于根据单词建立边的关联，其次需要注意不能忽视不存在边的结点的情况。
 
 ```java
 class Solution {
@@ -37,11 +37,10 @@ class Solution {
         // 标记存在的字母，记录结点集
         boolean[] flag = new boolean[26];
         for (String word : words) {
-            for (char c : word.toCharArray())
-                flag[c - 'a'] = true;
+            for (char c : word.toCharArray()) flag[c - 'a'] = true;
         }
 
-        // 图，记录边集
+        // 边集
         int[][] graph = new int[26][26];
         // 入度
         int[] degree = new int[26];
@@ -94,10 +93,14 @@ class Solution {
 }
 ```
 
-
-
 ## 性能分析
 
+&emsp;时间复杂度为$O(NM)$，空间复杂度为$O(1)$，其中$N$为单词数，$M$为单词平均长度。
 
+执行用时：3ms，在所有java提交中击败了96.63%的用户。
+
+内存消耗：37.5MB，在所有java提交中击败了5.13%的用户。
 
 ## 官方解题
+
+&emsp;暂无，密切关注。
