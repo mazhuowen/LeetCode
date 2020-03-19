@@ -10,7 +10,7 @@
 
 ## 无向图欧拉回路
 
-
+* $\bigstar$困难[#332 Reconstruct Itinerary](./#332 Reconstruct Itinerary.md)    有向图欧拉路径或回路的查找
 
 ## 有向图的连通性
 
