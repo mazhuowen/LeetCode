@@ -58,6 +58,7 @@
 * 中等[#663 Equal Tree Partition](./#663 Equal Tree Partition.md)    树的遍历求和
 * $\clubs$中等[#889 Construct Binary Tree from Preorder and Postorder Traversal](./#889 Construct Binary Tree from Preorder and Postorder Traversal.md)    根据前序序列和后序序列构建一棵树
 * $\clubs$中等[#968 Binary Tree Cameras](./#968 Binary Tree Cameras.md)    前序遍历巧妙返回状态
+* 简单[#1120 Maximum Average Subtree](./#1120 Maximum Average Subtree.md)    后序遍历计算
 * 中等[#1257 Smallest Common Region](./#1257 Smallest Common Region.md)    最近公共父节点问题
 
 ## 树与森林

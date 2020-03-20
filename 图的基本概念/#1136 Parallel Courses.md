@@ -1,5 +1,38 @@
 [toc]
 
+There are `N` courses, labelled from `1` to `N`.
+
+We are given `relations[i] = [X, Y]`, representing a prerequisite relationship between course `X` and course `Y`: course `X` has to be studied before course `Y`.
+
+In one semester you can study any number of courses as long as you have studied all the prerequisites for the course you are studying.
+
+Return the minimum number of semesters needed to study all courses. If there is no way to study all the courses, return `-1`.
+
+**Note:**
+
+* $1 \le N \le 5000$
+* $1 \le \text{relations.length} \le 5000$
+* $\text{relations[i][0]} != \text{relations[i][1]}$
+* There are no repeated relations in the input.
+
+
+
+## 题目解读
+
+&emsp;课程的拓扑排序问题，题目限定没有自环，没有重复边。
+
+```java
+class Solution {
+    public int minimumSemesters(int N, int[][] relations) {
+
+    }
+}
+```
+
+## 程序设计
+
+* 图的拓扑排序，只是每次出队同层结点，而不是一个一个出队。记录出队层数，每一层就是一个学期要学的课程。
+
 ```java
 class Solution {
     public int minimumSemesters(int N, int[][] relations) {
@@ -56,3 +89,15 @@ class Node {
     }
 }
 ```
+
+## 性能分析
+
+&emsp;时间复杂度为$O(V + E)$，空间复杂度为$O(V + E)$。
+
+执行用时：5ms，在所有java提交中击败了100.00%的用户。
+
+内存消耗：41.9MB，在所有java提交中击败了100.00%的用户。
+
+## 官方解题
+
+&emsp;同上。
