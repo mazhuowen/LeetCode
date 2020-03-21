@@ -36,4 +36,5 @@
 
 ## 有向图环路判断
 
-* $\bigstar$中等[#207 Course Schedule](./#207 Course Schedule.md)    深度优先、广度优先在环路判断中的应用。
+* $\bigstar$中等[#207 Course Schedule](./#207 Course Schedule.md)    深度优先、广度优先在环路判断中的应用
+* $\clubs$技巧[#1153 String Transforms Into Another String](./#1153 String Transforms Into Another String.md)    将字符串转换使用图来理解
