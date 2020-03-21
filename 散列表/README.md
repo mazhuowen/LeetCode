@@ -47,3 +47,4 @@
 * $\clubs$困难[#527 Word Abbreviation](./#527 Word Abbreviation.md)    利用字典保存缩写，解决碰撞
 * $\bigstar$中等[#548 Split Array with Equal Sum](./#548 Split Array with Equal Sum.md)    集合巧妙化简循环
 * $\bigstar$中等[#1124 Longest Well-Performing Interval](./#1124 Longest Well-Performing Interval.md)    前缀和巧妙的二分查找和哈希表解法
+* $\clubs$技巧[#1153 String Transforms Into Another String](./#1153 String Transforms Into Another String.md)    将字符串转换的知识使用图来理解
