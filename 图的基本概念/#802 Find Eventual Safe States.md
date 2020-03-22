@@ -6,7 +6,7 @@ Now, say our starting node is *eventually safe* if and only if we must eventuall
 
 Which nodes are eventually safe? Return them as an array in sorted order.
 
-The directed graph has `N` nodes with labels `0, 1, ..., N-1`, where `N` is the length of `graph`. The graph is given in the following form: `graph[i]` is a list of labels `j` such that `(i, j)` is a directed edge of the graph.
+The directed graph has `N` nodes with labels `0, 1, ..., N - 1`, where `N` is the length of `graph`. The graph is given in the following form: `graph[i]` is a list of labels `j` such that `(i, j)` is a directed edge of the graph.
 
 
 
@@ -42,7 +42,7 @@ class Solution {
         if(graph == null || graph.length == 0) return res;
 
         int n = graph.length;
-        // 标记访问，-1表示已遍历，无环，-2表示有环，0表示未遍历，1表示再遍历
+        // 标记访问，-1表示已遍历，无环，-2表示有环，0表示未遍历，1表示正在遍历
         int[] visited = new int[n];
 
         for (int i = 0; i < n; i++) {
