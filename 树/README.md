@@ -43,6 +43,7 @@
 * 中等[#199 Binary Tree Right Side View](./#199 Binary Tree Right Side View.md)   层次遍历实现树的右侧投影
 * 简单[#226 Invert Binary Tree](./#226 Invert Binary Tree.md)    遍历反转二叉树
 * 简单[#257 Binary Tree Paths](./#257 Binary Tree Paths.md)    前序遍历二叉树获得路径
+* $\clubs$中等[#314 Binary Tree Vertical Order Traversal](./#314 Binary Tree Vertical Order Traversal.md)    层次遍历实现“垂直遍历”
 * $\clubs$中等[#366 Find Leaves of Binary Tree](./#366 Find Leaves of Binary Tree.md)    后序遍历的变体
 * 简单[#404 Sum of Left Leaves](./#404 Sum of Left Leaves.md)    前序遍历的应用
 * $\clubs$中等[#437 Path Sum III](./#437 Path Sum III.md)    保存路径，深度遍历，向前计算路径和

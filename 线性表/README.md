@@ -69,6 +69,7 @@ while(A.next != next) {
 * 中等[#430 Flatten a Multilevel Doubly Linked List](./#430 Flatten a Multilevel Doubly Linked List.md)    多层双向链表遍历拼接为单层
 * $\clubs$中等[#708 Insert into a Sorted Circular Linked List](./#708 Insert into a Sorted Circular Linked List.md)    表头非最小值的循环链表遍历插入
 * 中等[#725 Split Linked List in Parts](./#725 Split Linked List in Parts.md)    链表的遍历重组
+* $\clubs$技巧[#817 Linked List Components](./#817 Linked List Components.md)    链表连续序列的判断
 
 ### 链表的插入删除
 
