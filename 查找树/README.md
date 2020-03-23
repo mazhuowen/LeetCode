@@ -28,6 +28,7 @@
 * 简单[#700 Search in a Binary Search Tree](./#700 Search in a Binary Search Tree.md)    二叉查找树的搜索
 * 简单[#701 Insert into a Binary Search Tree](./#701 Insert into a Binary Search Tree.md)    二叉查找树的插入
 * $\clubs$中等[#1214 Two Sum BSTs](./#1214 Two Sum BSTs.md)    两棵树遍历查找
+* 简单[#1305 All Elements in Two Binary Search Trees](./#1305 All Elements in Two Binary Search Trees.md)    中序遍历
 
 ## AVL树
 
