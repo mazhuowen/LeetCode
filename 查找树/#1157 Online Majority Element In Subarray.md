@@ -212,3 +212,162 @@ class MajorityChecker {
 
 ## 官方解题
 
+```java
+public class test {
+
+    public static void main(String[] args) {
+        int[] arr = new int[]{2,1,1,1,2,1,2,1,2,2,1,1,2};
+        MajorityChecker m = new MajorityChecker(arr);
+        System.out.println(m.query(3, 10, 6));
+    }
+}
+
+class MajorityChecker {
+    private Tree root;
+
+    public MajorityChecker(int[] arr) {
+        if (arr == null || arr.length < 1) throw new IllegalArgumentException("invalid param");
+        this.root = new Tree(0, arr.length - 1, arr);
+        for (int i = 0; i < arr.length; i++) {
+            root.update(i);
+        }
+    }
+
+    public int query(int left, int right, int threshold) {
+        int[] res = root.query(left, right);
+        if (res[1] >= threshold) return res[0];
+        return -1;
+    }
+}
+
+class Tree {
+    // 数组区间
+    int start, end;
+    // 超过数组一半的数和数目，如果存在必然只有一个，不存在则计数为-1
+    int num;
+    int count;
+    // 子区间
+    Tree left, right;
+
+    // 记录数组
+    int[] arr;
+
+    Tree(int start, int end, int[] arr) {
+        this.start = start;
+        this.end = end;
+        this.arr = arr;
+        // 初始化计数为-1
+        this.count = -1;
+    }
+
+    private int getMid() {
+        return start + (end - start) / 2;
+    }
+
+    private Tree left() {
+        if (left == null) left = new Tree(start, getMid(), arr);
+        return left;
+    }
+
+    private Tree right() {
+        if (right == null) right = new Tree(getMid() + 1, end, arr);
+        return right;
+    }
+
+    public void update(int idx) {
+        // 递归终止条件
+        if (start > idx || end < idx) return;
+        // 找到位置，该区间只有一个值就是本身，更新计数为1
+        if (start == idx && end == idx) {
+            num = arr[idx];
+            count = 1;
+            return;
+        }
+        // 递归
+        left().update(idx);
+        right().update(idx);
+        // 更新当前结点
+        // 左结点存在大于一半区间，在右区间查找该值并计数叠加
+        if (left().count != -1) {
+            int c = left().count;
+            for (int i = right().start; i <= right().end; i++) {
+                if (left().num == arr[i]) c++;
+            }
+            // 更新
+            if (c > count && c > (end - start + 1) / 2) {
+                count = c;
+                num = left().num;
+            }
+        }
+
+        // 同理，在左区间查找
+        if (right().count != -1) {
+            int c = right().count;
+            for (int i = left().start; i <= left().end; i++) {
+                if (right().num == arr[i]) c++;
+            }
+            // 更新
+            if (c > count && c > (end - start + 1) / 2) {
+                count = c;
+                num = right().num;
+            }
+        }
+    }
+
+    public int[] query(int s, int e) {
+        // 不包含区间
+        if (s > e) {
+            return null;
+        }
+        // 包含树的区间
+        if (start >= s && end <= e) {
+            return new int[]{num, count};
+        }
+        int mid = getMid();
+        // todo 3~3 -> 3 1 && 1 3
+        int[] l = left().query(s, mid);
+        int[] r = right().query(mid + 1, e);
+
+        // 不相交，返回另一个
+        if (l == null || r == null) return l == null ? r : l;
+
+
+        // 左右区间都没有超过半数的
+        if (l[1] < 0 && r[1] < 0) {
+            return new int[]{0, -1};
+        }
+        // 左右区间的超半数的数字相同，结果相加返回
+        if (l[1] > 0 && r[1] > 0 && l[0] == r[0]) {
+            return new int[]{l[0], l[1] + r[1]};
+        }
+        int lStart = Math.max(s, start);
+        int rEnd = Math.min(e, end);
+        int[] res = new int[]{0, -1};
+        if (l[1] != -1 && l[1] + rEnd - mid - r[1] > (rEnd - lStart + 1) / 2) {
+            int c = l[1];
+            for (int i = mid + 1; i <= rEnd; i++) {
+                if (l[0] == arr[i]) c++;
+            }
+            // 更新
+            if (c > res[1] && c > (rEnd - lStart + 1) / 2) {
+                res[1] = c;
+                res[0] = l[0];
+            }
+        }
+        // 同理，在左区间查找
+        if (r[1] != -1 && r[1] + rEnd - lStart - l[1] > (rEnd - lStart + 1) / 2) {
+            int c = r[1];
+            for (int i = lStart; i <= mid; i++) {
+                if (r[0] == arr[i]) c++;
+            }
+            // 更新
+            if (c > res[1] && c > (rEnd - lStart + 1) / 2) {
+                res[1] = c;
+                res[0] = r[0];
+            }
+        }
+        return res;
+    }
+}
+```
+
