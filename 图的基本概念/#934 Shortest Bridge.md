@@ -1,5 +1,36 @@
 [toc]
 
+In a given 2D binary array `A`, there are two islands.  (An island is a 4-directionally connected group of `1`s not connected to any other `1`s.)
+
+Now, we may change `0`s to `1`s so as to connect the two islands together to form 1 island.
+
+Return the smallest number of `0`s that must be flipped.  (It is guaranteed that the answer is at least 1.)
+
+
+
+**Note:**
+
+* $1 \le \text{A.length} = \text{A[0].length} \le 100$
+* $\text{A[i][j]} == 0$ or $\text{A[i][j]} == 1$
+
+
+
+## 题目解读
+
+&emsp;给定有两个小岛构成的图，找到连通需要的最少的数目。
+
+```java
+class Solution {
+    public int shortestBridge(int[][] A) {
+
+    }
+}
+```
+
+## 程序设计
+
+* 首先遍历其中一个岛屿，标记为2，然后从该岛屿广度优先遍历，直到遇到标记为1的岛屿，返回层数即可。
+
 ```java
 class Solution {
     public int shortestBridge(int[][] A) {
@@ -13,6 +44,7 @@ class Solution {
             for (int j = 0; j < n; j++) {
                 if (A[i][j] == 1) {
                     dfs(i, j, A, queue);
+                    // 不需要继续遍历，跳出
                     flag = true;
                     break;
                 }
@@ -25,14 +57,17 @@ class Solution {
         // 开始层次搜索
         int count = 0;
         while (!queue.isEmpty()) {
+            // 同一层出队
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 int[] cur = queue.poll();
-                // 到达另一个岛屿
+                // 到达另一个岛屿，返回
                 if (A[cur[0]][cur[1]] == 1) return count - 1;
 
+                // 入队下一层
                 for (int j = 0; j < 4; j++) {
                     int x = cur[0] + dx[j], y = cur[1] + dy[j];
+                    // 坐标不符合要求，或者路径是岛屿1内部的，无效
                     if (x < 0 || x >= n || y < 0 || y >= n || A[x][y] == 2) continue;
                     queue.add(new int[]{x, y});
                 }
@@ -54,3 +89,10 @@ class Solution {
     }
 }
 ```
+
+## 性能分析
+
+
+
+## 官方解题
+

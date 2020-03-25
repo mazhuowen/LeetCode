@@ -72,6 +72,7 @@ for (int i = 0; i < N; i++) {
 * $\bigstar$困难[#854 K-Similar Strings](./#854 K-Similar Strings.md)    将广度优先搜索应用到字符串的生成
 * 中等[#1059 All Paths from Source Lead to Destination](./#1059 All Paths from Source Lead to Destination.md)    图遍历的变种，巧妙利用访问标识
 * $\clubs$中等[#1042 Flower Planting With No Adjacent](./#1042 Flower Planting With No Adjacent.md)    深度遍历变形着色结点
+* 中等[#1236 Web Crawler](./#1236 Web Crawler.md)    从一个节点开始的图的遍历
 
 ## 图的搜索在其它领域的应用
 
