@@ -9,10 +9,12 @@
 * $\clubs$中等[#69 Sqrt(x)](./#69 Sqrt(x).md)    二分法、牛顿法求解平方根
 * $\clubs$中等[#166 Fraction to Recurring Decimal](./#166 Fraction to Recurring Decimal.md)    分数转小数形式
 * 中等[#204 Count Primes](./#204 Count Primes.md)    统计质数数目
+* 简单[#263 Ugly Number](./#263 Ugly Number.md)    丑数判断
 * $\bigstar$困难[#363 Max Sum of Rectangle No Larger Than K](./#363 Max Sum of Rectangle No Larger Than K.md)    二维数组压缩行或列计算矩形最大和
 * 简单[#367 Valid Perfect Square](./#367 Valid Perfect Square.md)    整数的平方根，需注意判断条件
 * $\bigstar$困难[#483 Smallest Good Base](./#483 Smallest Good Base.md)    $k$进制规律
 * $\bigstar$困难[#878 Nth Magical Number](./#878 Nth Magical Number.md)    数学规律与二分查找结合
+* $\clubs$中等[#1201 Ugly Number III](./#1201 Ugly Number III.md)    [#878 Nth Magical Number](./#878 Nth Magical Number.md) 的延续，周期化并二分查找
 
 ## 规律
 
