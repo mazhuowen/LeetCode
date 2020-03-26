@@ -1,5 +1,36 @@
 [toc]
 
+Given a matrix of integers `A` with R rows and C columns, find the **maximum** score of a path starting at `[0,0]` and ending at `[R-1,C-1]`.
+
+The score of a path is the **minimum** value in that path.  For example, the value of the path $8 \to  4 \to  5 \to  9$ is $4$.
+
+A path moves some number of times from one visited cell to any neighbouring unvisited cell in one of the 4 cardinal directions (north, east, west, south).
+
+
+
+**Note:**
+
+* $1 \le R, C \le 100$
+* $0 \le \text{A[i][j]} \le 10^9$
+
+
+
+## 题目解读
+
+&emsp;路径的得分是该路径上的最小值。找出所有路径中得分最高的那条路径，返回其得分。
+
+```java
+class Solution {
+    public int maximumMinimumPath(int[][] A) {
+
+    }
+}
+```
+
+## 程序设计
+
+* 最基本的解法是深度优先搜索，穷举遍历，但是会超时。
+
 ```java
 class Solution {
     public int maximumMinimumPath(int[][] A) {
@@ -38,3 +69,9 @@ class Solution {
     }
 }
 ```
+
+## 性能分析
+
+
+
+## 官方解题

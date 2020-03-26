@@ -1,5 +1,39 @@
 [toc]
 
+Consider a directed graph, with nodes labelled `0, 1, ..., n - 1`.  In this graph, each edge is either red or blue, and there could be self-edges or parallel edges.
+
+Each `[i, j]` in `red_edges` denotes a red directed edge from node `i` to node `j`.  Similarly, each `[i, j]` in `blue_edges` denotes a blue directed edge from node `i` to node `j`.
+
+Return an array `answer` of length n, where each `answer[X]` is the length of the shortest path from node `0` to node `X` such that the edge colors alternate along the path (or `-1` if such a path doesn't exist).
+
+
+
+Constraints:
+
+* $1 \le n \le 100$
+* $\text{red_edges.length} \le 400$
+* $\text{blue_edges.length} \le 400$
+* $\text{red_edges[i].length} == \text{blue_edges[i].length} == 2$
+* $0 \le \text{red_edges[i][j], blue_edges[i][j]} < n$
+
+
+
+## 题目解读
+
+&emsp;给定有向图，图中边分为红蓝两种颜色，且存在自环或平行边。路径只能是两种颜色交替出现，计算给出的点到其它结点的距离，如果不存在，则设为`-1`。
+
+```java
+class Solution {
+    public int[] shortestAlternatingPaths(int n, int[][] red_edges, int[][] blue_edges) {
+
+    }
+}
+```
+
+## 程序设计
+
+* 粗看是改进的有向图最短距离问题，在经典算法的结构上只需在更新距离时判断颜色是否交替，代码如下：
+
 ```java
 class Solution {
     public int[] shortestAlternatingPaths(int n, int[][] red_edges, int[][] blue_edges) {
@@ -69,18 +103,16 @@ class Node {
 }
 ```
 
+* 上述思路不通过，测试用例：红边`[[0,1],[1,2],[2,3],[3,4]]`，蓝边`[[1,2],[2,3],[3,1]]`报错，结点`4`的路径需要经过`1,2,3,`的循环链路，而经典有向图最短路径算法是基于图中的权重都是正数的前提，从而每次贪心选择最短距离更新；在此题中存在循环链路，则上述算法不再合适。
 
-
-[[0,1],[1,2],[2,3],[3,4]]
-					[[1,2],[2,3],[3,1]]
-
-
+* 联想到有向负权重图中采用穷举法遍历更新，本题可以采用相同思路。但是有向负权重图最短路径算法不能存在环，在本题中可以遍历完成后删除遍历的边，来解决环的问题。
 
 ```java
 class Solution {
     public int[] shortestAlternatingPaths(int n, int[][] red_edges, int[][] blue_edges) {
         if (n <= 0) throw new IllegalArgumentException("invalid param");
 
+        // 构建图
         Node[] graph = new Node[n];
         for (int[] edge : red_edges) {
             graph[edge[0]] = new Node(edge[1], 0, graph[edge[0]]);
@@ -105,9 +137,11 @@ class Solution {
             Node next = graph[cur[0]];
             Node pre = null;
             while (next != null) {
-                // 更新
+                // 颜色交替
                 if (color != next.color) {
+                    // 更新
                     if (distance[next.ver] == -1 || distance[next.ver] > cur[1] + 1) distance[next.ver] = cur[1] + 1;
+                    // 删除遍历过的边，避免死循环
                     if (pre == null) {
                         graph[cur[0]] = next.next;
                     } else {
@@ -137,3 +171,14 @@ class Node {
 }
 ```
 
+## 性能分析
+
+&emsp;时间复杂度为$O(V + E)$，空间复杂度为$O(V + E)$。
+
+执行用时：5ms，在所有java提交中击败了95.76%的用户。
+
+内存消耗：41.6MB，在所有java提交中击败了89.19%的用户。
+
+## 官方解题
+
+&emsp;暂无，密切关注。
