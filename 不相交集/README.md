@@ -26,5 +26,6 @@
 * $\bigstar$困难[#959 Regions Cut By Slashes](./#959 Regions Cut By Slashes.md)    格子划分巧妙转化为图的问题
 * 简单[#990 Satisfiability of Equality Equations](./#990 Satisfiability of Equality Equations.md)    不相交集基本应用
 * 中等[#1061 Lexicographically Smallest Equivalent String](./#1061 Lexicographically Smallest Equivalent String.md)    改造合并策略
+* $\bigstar$困难[#1102 Path With Maximum Minimum Value](./#1102 Path With Maximum Minimum Value.md)    不相交集的迷宫路径查找
 * 中等[#1267 Count Servers that Communicate](./#1267 Count Servers that Communicate.md)    巧妙使用不相交集统行列关联信息
 

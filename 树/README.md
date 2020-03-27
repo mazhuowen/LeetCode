@@ -61,6 +61,7 @@
 * $\clubs$中等[#968 Binary Tree Cameras](./#968 Binary Tree Cameras.md)    前序遍历巧妙返回状态
 * $\clubs$中等[#1110 Delete Nodes And Return Forest](./#1110 Delete Nodes And Return Forest.md)    后序遍历返回结点是否删除
 * 简单[#1120 Maximum Average Subtree](./#1120 Maximum Average Subtree.md)    后序遍历计算
+* 中等[#1145 Binary Tree Coloring Game](./#1145 Binary Tree Coloring Game.md)    发现规律，遍历统计左右子树
 * 中等[#1161 Maximum Level Sum of a Binary Tree](./#1161 Maximum Level Sum of a Binary Tree.md)    层次遍历
 * 中等[#1257 Smallest Common Region](./#1257 Smallest Common Region.md)    最近公共父节点问题
 

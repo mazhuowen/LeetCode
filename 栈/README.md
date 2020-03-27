@@ -54,6 +54,7 @@
 * 简单[#496 Next Greater Element I](./#496 Next Greater Element I.md)    字典保存较大后继
 * 简单[#503 Next Greater Element II](./#503 Next Greater Element II.md)    [#496 Next Greater Element I](./#496 Next Greater Element I.md)的延续
 * 简单[#739 Daily Temperatures](./#739 Daily Temperatures.md)    遍历遇到较大值则出栈计算
+* 中等[#1019 Next Greater Node In Linked List](./#1019 Next Greater Node In Linked List.md)    单调栈
 * $\clubs$困难[#1063 Number of Valid Subarrays](./#1063 Number of Valid Subarrays.md)    单调栈
 
 ### 二叉树
