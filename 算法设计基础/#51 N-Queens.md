@@ -1,5 +1,29 @@
 [toc]
 
+The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.
+
+<img src="../images/#51.png" style="zoom:120%;" />
+
+Given an integer n, return all distinct solutions to the n-queens puzzle.
+
+Each solution contains a distinct board configuration of the n-queens' placement, where `'Q'` and `'.'` both indicate a queen and an empty space respectively.
+
+## 题目解读
+
+&emsp;找出所有$n$皇后可能的位置。
+
+```java
+class Solution {
+    public List<List<String>> solveNQueens(int n) {
+
+    }
+}
+```
+
+## 程序设计
+
+* 典型回溯问题。
+
 ```java
 class Solution {
     public List<List<String>> solveNQueens(int n) {
@@ -25,6 +49,7 @@ class Solution {
             if (cols[col] || a[n - 1 - row + col] || b[row + col]) continue;
             // 标记占用
             cols[col] = a[n - 1 - row + col] = b[row + col] = true;
+            // 记录位置
             record[row] = col;
             // 找到满足条件的一个解
             if (row == n - 1) {
@@ -53,3 +78,15 @@ class Solution {
     }
 }
 ```
+
+## 性能分析
+
+&emsp;粗略分析，时间复杂度为$O(N!)$，空间复杂度为$O(N)$。
+
+执行用时：2ms，在所有java提交中击败了98.60%的用户。
+
+内存消耗：42.1MB，在所有java提交中击败了5.01%的用户。
+
+## 官方解题
+
+&emsp;同上。

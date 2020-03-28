@@ -1,5 +1,27 @@
 [toc]
 
+he n-queens puzzle is the problem of placing n queens on an $n \times n$ chessboard such that no two queens attack each other.
+
+Given an integer n, return the number of distinct solutions to the n-queens puzzle.
+
+
+
+## 题目解读
+
+&emsp;$n$皇后问题的简化。
+
+```java
+class Solution {
+    public int totalNQueens(int n) {
+
+    }
+}
+```
+
+## 程序设计
+
+* $n$皇后问题的简化。
+
 ```java
 class Solution {
     int count = 0;
@@ -39,3 +61,15 @@ class Solution {
     }
 }
 ```
+
+## 性能分析
+
+&emsp;粗略分析时间复杂度为$O(N!)$，空间复杂度为$O(N)$。
+
+执行用时：1ms，在所有java提交中击败了88.35%的用户。
+
+内存消耗：36.3MB，在所有java提交中击败了5.20%的用户。
+
+## 官方解题
+
+&emsp;思路同上。
