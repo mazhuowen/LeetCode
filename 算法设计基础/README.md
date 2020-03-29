@@ -14,7 +14,11 @@
 
 ## 动态规划
 
+* 简单[#64 Minimum Path Sum](./#64 Minimum Path Sum.md)    基本动态规划问题
+* $\bigstar$困难[#174 Dungeon Game](./#174 Dungeon Game.md)    [#64 Minimum Path Sum](./#64 Minimum Path Sum.md)的延伸，遍历方向很重要
+* 中等[#562 Longest Line of Consecutive One in Matrix](./#562 Longest Line of Consecutive One in Matrix.md)    记录之前位置的连续序列信息
 
+* $\clubs$困难[#1235 Maximum Profit in Job Scheduling](./#1235 Maximum Profit in Job Scheduling.md)    按结束时间动态规划
 
 ## 回溯法
 
