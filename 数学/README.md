@@ -23,4 +23,5 @@
 * 中等[#41 First Missing Positive](./#41 First Missing Positive.md)    利用数组规律及数组索引
 * $\clubs$中等[#48 Rotate Image](./#48 Rotate Image.md)    正方形旋转规律
 * $\bigstar$简单[#202 Happy Number](./#202 Happy Number.md)    泛链表结构的数学应用
+* $\clubs$中等[#240 Search a 2D Matrix II](./#240 Search a 2D Matrix II.md)    有序二维矩阵的遍历查找
 * 简单[#292 Nim Game](./#292 Nim Game.md)    `Nim`游戏
