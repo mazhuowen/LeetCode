@@ -29,6 +29,8 @@
 
 ## 回溯法
 
+* $\bigstar$困难[#10 Regular Expression Matching](./#10 Regular Expression Matching.md)    可动态规划优化的回溯解法
+
 * 中等[#17 Letter Combinations of a Phone Number](./#17 Letter Combinations of a Phone Number.md)    枚举回溯所有组合
 
 * $\bigstar$中等[#51 N-Queens](./#51 N-Queens.md)    经典回溯问题
