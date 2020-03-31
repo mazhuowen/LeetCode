@@ -8,6 +8,7 @@
 
 * $\clubs$困难[#45 Jump Game II](./#45 Jump Game II.md)    [#55 Jump Game](./#55 Jump Game.md)的进阶，巧妙的贪心思路及规律
 * 中等[#55 Jump Game](./#55 Jump Game.md)    发现规律从尾遍历
+* 中等[#57 Insert Interval](./#57 Insert Interval.md)    从头遍历判断区间
 * 简单[#122 Best Time to Buy and Sell Stock II](./#122 Best Time to Buy and Sell Stock II.md)    全局解由局部解组成，最基本的贪婪特征
 * $\clubs$中等[#134 Gas Station](./#134 Gas Station.md)    整体特征的分解总结
 
@@ -30,9 +31,9 @@
 ## 回溯法
 
 * $\bigstar$困难[#10 Regular Expression Matching](./#10 Regular Expression Matching.md)    可动态规划优化的回溯解法
-
 * 中等[#17 Letter Combinations of a Phone Number](./#17 Letter Combinations of a Phone Number.md)    枚举回溯所有组合
-
+* $\clubs$中等[#22 Generate Parentheses](./#22 Generate Parentheses.md)    根据括号组合特性进行回溯
+* $\bigstar$困难[#44 Wildcard Matching](./#44 Wildcard Matching.md)    经典的模式匹配问题，双字符串遍历回溯
 * $\bigstar$中等[#51 N-Queens](./#51 N-Queens.md)    经典回溯问题
 * 中等[#52 N-Queens II](./#52 N-Queens II.md)    $n$皇后的简化
 
