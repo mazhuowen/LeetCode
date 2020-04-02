@@ -30,6 +30,7 @@
 * 简单[#1086 High Five](./#1086 High Five.md)    排序计算
 * 简单[#1122 Relative Sort Array](./#1122 Relative Sort Array.md)    统计计数，分配位置
 * 繁杂[#1152 Analyze User Website Visit Pattern](./#1152 Analyze User Website Visit Pattern.md)    根据用户和时间戳排序
+* 中等[#1244 Design A Leaderboard](./#1244 Design A Leaderboard.md)    对分数排序
 
 ## 归并排序
 
