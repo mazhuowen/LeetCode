@@ -22,7 +22,9 @@
 * 中等[#63 Unique Paths II](./#63 Unique Paths II.md)    [#62 Unique Paths](./#62 Unique Paths.md)的变形
 * 简单[#64 Minimum Path Sum](./#64 Minimum Path Sum.md)    基本动态规划问题
 * 简单[#70 Climbing Stairs](./#70 Climbing Stairs.md)    经典动态规划问题
+* 中等[#91 Decode Ways](./#91 Decode Ways.md)    边角条件繁杂的动态规划应用
 * 中等[#120 Triangle](./#120 Triangle.md)    非矩形的动态规划
+* $\clubs$中等[#139 Word Break](./#139 Word Break.md)    字符串匹配的动态规划
 * $\bigstar$困难[#174 Dungeon Game](./#174 Dungeon Game.md)    [#64 Minimum Path Sum](./#64 Minimum Path Sum.md)的延伸，遍历方向很重要
 * $\clubs$简单[#198 House Robber](./#198 House Robber.md)    巧妙的动态规划简化
 * 中等[#562 Longest Line of Consecutive One in Matrix](./#562 Longest Line of Consecutive One in Matrix.md)    记录之前位置的连续序列信息
