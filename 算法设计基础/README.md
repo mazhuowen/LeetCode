@@ -35,6 +35,7 @@
 * $\bigstar$困难[#10 Regular Expression Matching](./#10 Regular Expression Matching.md)    可动态规划优化的回溯解法
 * 中等[#17 Letter Combinations of a Phone Number](./#17 Letter Combinations of a Phone Number.md)    枚举回溯所有组合
 * $\clubs$中等[#22 Generate Parentheses](./#22 Generate Parentheses.md)    根据括号组合特性进行回溯
+* 中等[#39 Combination Sum](./#39 Combination Sum.md)    通过排序去除重复组合，减少试探次数
 * $\bigstar$困难[#44 Wildcard Matching](./#44 Wildcard Matching.md)    经典的模式匹配问题，双字符串遍历回溯
 * $\bigstar$中等[#51 N-Queens](./#51 N-Queens.md)    经典回溯问题
 * 中等[#52 N-Queens II](./#52 N-Queens II.md)    $n$皇后的简化
