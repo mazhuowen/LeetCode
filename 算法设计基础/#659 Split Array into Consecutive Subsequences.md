@@ -93,9 +93,50 @@ class Solution {
 
 ## 官方解题
 
-&emsp;官方还提出了贪婪法思路，
+&emsp;官方还提出了贪婪法思路，首先对数字计数，然后遍历判断每个数字是否存在序列中，记录更新序列最后的数字。以`1,2,3,3,4,5`为例，遍历到1，在计数字典中检查后两位2、3是否存在，存在则更新序列字典，加入后一个需要的数字4，同时计数减一；遍历到2，发现计数为0，继续遍历；遍历到3，计数不为0，且没有需要3的序列，则以3为起点，加入4、5。最后得到答案。该思路的贪婪思想为如果存在序列，则大的序列要比小的序列更好，采用这个贪婪思路，遍历数字优先加入到需要该数字的序列，没有才会以该数字为起点，创建新序列。
 
 ```java
+class Solution {
+    public boolean isPossible(int[] nums) {
+        if (nums == null || nums.length < 3) return false;
 
+        // 对数字计数
+        Map<Integer, Integer> counter = new HashMap<>();
+        for (int num : nums) counter.put(num, counter.getOrDefault(num, 0) + 1);
+        // 记录连续序列所需的后一个元素
+        Map<Integer, Integer> record = new HashMap<>();
+
+        for (int num : nums) {
+            // 已经加入序列，继续遍历
+            if (counter.get(num) <= 0) continue;
+            // 加入所需的序列，并更新序列所需数字为后一个数字
+            if (record.getOrDefault(num, 0) > 0) {
+                // 更新下一个所需数字
+                record.put(num, record.get(num) - 1);
+                record.put(num + 1, record.getOrDefault(num + 1, 0) + 1);
+            }
+            // 没有所需当前数字的序列，则以当前数字为起点判断加入序列
+            else if (counter.getOrDefault(num + 1, 0) > 0 && counter.getOrDefault(num + 2, 0) > 0) {
+                // 减少计数
+                counter.put(num + 1, counter.get(num + 1) - 1);
+                counter.put(num + 2, counter.get(num + 2) - 1);
+                // 加入序列所需的下一个数字
+                record.put(num + 3, record.getOrDefault(num + 3, 0) + 1);
+            }
+            // 当前数字后续数字不足3个，返回
+            else {
+                return false;
+            }
+
+            counter.put(num, counter.get(num) - 1);
+        }
+        return true;
+    }
+}
 ```
 
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(N)$。
+
+执行用时：35ms，在所有java提交中击败了61.64%的用户。
+
+内存消耗：41.1MB，在所有java提交中击败了63.64%的用户。
