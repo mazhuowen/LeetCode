@@ -12,6 +12,7 @@
 * 简单[#122 Best Time to Buy and Sell Stock II](./#122 Best Time to Buy and Sell Stock II.md)    全局解由局部解组成，最基本的贪婪特征
 * $\clubs$中等[#134 Gas Station](./#134 Gas Station.md)    整体特征的分解总结
 * $\bigstar$技巧[#135 Candy](./#135 Candy.md)    峰顶值的处理
+* $\bigstar$困难[#321 Create Maximum Number](./#321 Create Maximum Number.md)    利用贪婪策略查询两个数组的最大组合
 * $\bigstar$困难[#659 Split Array into Consecutive Subsequences](./#659 Split Array into Consecutive Subsequences.md)    贪婪拼接连续数字
 
 ## 分治法
@@ -30,6 +31,7 @@
 * $\clubs$中等[#139 Word Break](./#139 Word Break.md)    字符串匹配的动态规划
 * $\bigstar$困难[#174 Dungeon Game](./#174 Dungeon Game.md)    [#64 Minimum Path Sum](./#64 Minimum Path Sum.md)的延伸，遍历方向很重要
 * $\clubs$简单[#198 House Robber](./#198 House Robber.md)    巧妙的动态规划简化
+* $\bigstar$中等[#376 Wiggle Subsequence](./#376 Wiggle Subsequence.md)    巧妙地规律总结
 * 中等[#562 Longest Line of Consecutive One in Matrix](./#562 Longest Line of Consecutive One in Matrix.md)    记录之前位置的连续序列信息
 * $\clubs$困难[#1235 Maximum Profit in Job Scheduling](./#1235 Maximum Profit in Job Scheduling.md)    按结束时间动态规划
 
