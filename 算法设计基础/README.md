@@ -17,6 +17,7 @@
 ## 分治法
 
 * $\bigstar$简单[#53 Maximum Subarray](./#53 Maximum Subarray.md)    最大连续子序列问题
+* $\bigstar$困难[#218 The Skyline Problem](./#218 The Skyline Problem.md)    归并排序的分治思路应用
 
 ## 动态规划
 
