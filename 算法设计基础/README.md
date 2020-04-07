@@ -19,6 +19,7 @@
 
 * $\bigstar$简单[#53 Maximum Subarray](./#53 Maximum Subarray.md)    最大连续子序列问题
 * $\bigstar$困难[#218 The Skyline Problem](./#218 The Skyline Problem.md)    归并排序的分治思路应用
+* $\clubs$中等[#241 Different Ways to Add Parentheses](./#241 Different Ways to Add Parentheses.md)    表达式根据操作符分治
 
 ## 动态规划
 
@@ -41,7 +42,10 @@
 * 中等[#17 Letter Combinations of a Phone Number](./#17 Letter Combinations of a Phone Number.md)    枚举回溯所有组合
 * $\clubs$中等[#22 Generate Parentheses](./#22 Generate Parentheses.md)    根据括号组合特性进行回溯
 * 中等[#39 Combination Sum](./#39 Combination Sum.md)    通过排序去除重复组合，减少试探次数
+* 中等[#40 Combination Sum II](./#40 Combination Sum II.md)    [#39 Combination Sum](./#39 Combination Sum.md)进阶，每个元素只能选一次
 * $\bigstar$困难[#44 Wildcard Matching](./#44 Wildcard Matching.md)    经典的模式匹配问题，双字符串遍历回溯
+* 中等[#46 Permutations](./#46 Permutations.md)    排列组合的回溯枚举
+* $\clubs$中等[#47 Permutations II](./#47 Permutations II.md)    [#46 Permutations](./#46 Permutations.md)的进阶，存在重复值的组合
 * $\bigstar$中等[#51 N-Queens](./#51 N-Queens.md)    经典回溯问题
 * 中等[#52 N-Queens II](./#52 N-Queens II.md)    $n$皇后的简化
 

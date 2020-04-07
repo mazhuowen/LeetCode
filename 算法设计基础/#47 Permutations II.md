@@ -1,5 +1,25 @@
 [toc]
 
+Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+
+
+
+## 题目解读
+
+&emsp;与[#46 Permutations](./#46 Permutations.md)不同，本题存在重复数字。
+
+```java
+class Solution {
+    public List<List<Integer>> permuteUnique(int[] nums) {
+
+    }
+}
+```
+
+## 程序设计
+
+* 先排序，在回溯时本轮不再遍历相同数字，避免造成重复。
+
 ```java
 class Solution {
     List<List<Integer>> res;
@@ -37,3 +57,15 @@ class Solution {
     }
 }
 ```
+
+## 性能分析
+
+&emsp;时间复杂度为$O(N!)$，空间复杂度为$O(N!)$。
+
+执行用时：2ms，在所有java提交中击败了87.81%的用户。
+
+内存消耗：40.1MB，在所有java提交中击败了26.19%的用户。
+
+## 官方解题
+
+&emsp;暂无，密切关注。
