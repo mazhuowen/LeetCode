@@ -11,6 +11,7 @@
 &emsp;对于字典序类问题，需要仔细分析序列中变与不变的关系。二叉树利用栈较多的是二叉树的前序、中序、后序遍历，及给定两个遍历，恢复二叉树结构等。
 
 * 简单[#20 Valid Parentheses](./#20 Valid Parentheses.md)    括号匹配，出栈、入栈基础操作
+* $\clubs$困难[#32 Longest Valid Parentheses](./#32 Longest Valid Parentheses.md)    有效括号序列判断计数，多思路
 * 简单[#71 Simplify Path](./#71 Simplify Path.md)    利用栈将Linux系统绝对路径化简
 * $\clubs$简单[#155 Min Stack](./#155 Min Stack.md)    单链表实现改进的栈
 * 简单[#232 Implement Queue using Stacks](./#232 Implement Queue using Stacks.md)    栈的基本操作
