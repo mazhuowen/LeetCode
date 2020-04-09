@@ -35,6 +35,7 @@
 * $\clubs$简单[#198 House Robber](./#198 House Robber.md)    巧妙的动态规划简化
 * $\bigstar$中等[#376 Wiggle Subsequence](./#376 Wiggle Subsequence.md)    巧妙地规律总结
 * 中等[#562 Longest Line of Consecutive One in Matrix](./#562 Longest Line of Consecutive One in Matrix.md)    记录之前位置的连续序列信息
+* $\bigstar$困难[#903 Valid Permutations for DI Sequence](./#903 Valid Permutations for DI Sequence.md)    繁杂的动态规划抽象
 * $\clubs$困难[#1235 Maximum Profit in Job Scheduling](./#1235 Maximum Profit in Job Scheduling.md)    按结束时间动态规划
 
 ## 回溯法
@@ -49,6 +50,8 @@
 * $\clubs$中等[#47 Permutations II](./#47 Permutations II.md)    [#46 Permutations](./#46 Permutations.md)的进阶，存在重复值的组合
 * $\bigstar$中等[#51 N-Queens](./#51 N-Queens.md)    经典回溯问题
 * 中等[#52 N-Queens II](./#52 N-Queens II.md)    $n$皇后的简化
+* 中等[#93 Restore IP Addresses](./#93 Restore IP Addresses.md)    条件判断减少回溯次数
+* $\clubs$繁杂[#282 Expression Add Operators](./#282 Expression Add Operators.md)    回溯插入操作符使得结果与目标值一致
 
 ## 随机算法
 

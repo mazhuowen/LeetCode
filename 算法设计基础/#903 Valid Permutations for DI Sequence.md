@@ -46,7 +46,7 @@ class Solution {
 class Solution {
     public int numPermsDISequence(String S) {
         int n = S.length(), mod = 1_000_000_007;
-        // 表示第i位数字为j（有n+1个数）
+        // 表示第i位数字为j（有i+1个数）
         int[][] dp = new int[n + 1][n + 1];
         // 初始化，字符串为空，此时只有一个数0在位置0
         dp[0][0] = 1;
@@ -176,11 +176,129 @@ class Solution {
 
 ## 官方解题
 
-&emsp;官方解题解释不清楚。社区有种不同的思路时间性能更好。
+&emsp;社区有种不同的思路时间性能更好。与上面`dp(i,j)`表示长度为`i+1`的序列，结尾为`j`，`j <= i`，然后每次拼接不同，`dp(i,j)`表示在`n+1`的任意排序序列中，前`i+1`个数字已满足要求，剩余未选择的数字里，有`j`个数字小于第`i`位的数字，剩余`n-i`个数字，j的取值为0到`n-i`，即`j <= n-i`。以`DID`为例，初始时`dp(0,0)`表示位置0的数字其后小于该数字的数为0，即位置0数字最小，为`0***`这一种选择；`dp(0,1)`表示位置0的数字其后小于该数字的数为1，选择第二小的数字即`1***`，只有一种选择；同理`dp(0,2)`、`dp(0,3)`分别选择`2***`、`3***`，都只有一种选择。
+
+&emsp;第二层为`D`，相比`i-1`位置的值需要减少，即从`dp(i-1,k)`中选择第`j+1`小的元素，从而变成`dp(i,j)`，可见`k >= j+1`，而`i-1`层`k <= n - (i-1)`。根据上述分析，`dp(1,0)`可以从`dp(0,1)`的序列`1`剩余的元素中选择第1小的元素，组成`1,0`，从`dp(0,2)`的序列`2`剩余的元素中选择第一小的元素，组成`2,0`，`dp(0,3)`中选择`3,0`，共3中；同理`dp(1,1)`、`dp(1,2)`选择第二小、第3小的元素。
+
+&emsp;第三层为`I`，相比`i-1`位置的值需要增加，即从`dp(i-1,k)`中选择除了`k`个元素之外的值，即选择剩余`n-i`个数中第`j+1`小的数从而转变为`dp(i,j)`，可知`k <= j`。根据上述分析，`dp(2,0)`从`dp(1,0)`序列`1,0`、`2,0`、`3,0`剩余元素中选择第1小的元素，组成`1,0,2`、`2,0,1`、`3,0,1`共3个；`dp(2,1)`从`dp(1,0)`序列剩余元素选择第二小的元素，组成`1,0,3`、`2,0,3`、`3,0,2`，从`dp(1,1)`的序列`3,1`、`2,1`剩余的序列中选择第二小的元素，组成`3,1,2`、`2,1,3`，共5个组合。全部过程如图（图中序列数字整体加一）。
 
 <img src="../images/#903.png" style="zoom: 67%;" />
 
 ```java
+class Solution {
+    public int numPermsDISequence(String S) {
+        if (S == null || S.isEmpty()) return 0;
 
+        int n = S.length(), mod = 1_000_000_007;
+        // 当前位置i后剩余的元素比i小的值有j
+        int[][] dp = new int[n + 1][n + 1];
+        // 初始0的位置为1
+        Arrays.fill(dp[0], 1);
+
+        for (int i = 1; i <= n; i++) {
+            // 随着n的增加，j每层都睡减少一个
+            for (int j = 0; j <= n - i; j++) {
+                if (S.charAt(i - 1) == 'D') {
+                    // 由于是减少，需从k个小于i-1位置的值中选择一个，k必须大于j，其次前一层比当前层多一列，k小于等于n-i+1
+                    for (int k = j + 1; k <= n - i + 1; k++) {
+                        dp[i][j] += dp[i - 1][k];
+                        dp[i][j] %= mod;
+                    }
+                } else {
+                    // 由于是增加，需要从后面位置选择大于i-1位置的值，
+                    for (int k = 0; k <= j; k++) {
+                        dp[i][j] += dp[i - 1][k];
+                        dp[i][j] %= mod;
+                    }
+                }
+            }
+        }
+		// 最后返回动态规划数组元素
+        return dp[n][0];
+    }
+}
 ```
 
+&emsp;时间复杂度为$O(N^3)$，空间复杂度为$O(N^2)$。
+
+执行用时：76ms，在所有java提交中击败了20.42%的用户。
+
+内存消耗：39.5MB，在所有java提交中击败了20.00%的用户。
+
+&emsp;同理可做循环和空间优化：
+
+```java
+class Solution {
+    public int numPermsDISequence(String S) {
+        if (S == null || S.isEmpty()) return 0;
+
+        int n = S.length(), mod = 1_000_000_007;
+        // 当前位置i后剩余的元素比i小的值有j
+        int[][] dp = new int[n + 1][n + 1];
+        // 初始0的位置为1
+        Arrays.fill(dp[0], 1);
+
+        for (int i = 1; i <= n; i++) {
+            if (S.charAt(i - 1) == 'D') {
+                for (int j = n - i; j >= 0; j--) {
+                    dp[i][j] = dp[i - 1][j + 1] + dp[i][j + 1];
+                    dp[i][j] %= mod;
+                }
+            } else {
+                dp[i][0] = dp[i - 1][0];
+                for (int j = 1; j <= n - i; j++) {
+                    dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
+                    dp[i][j] %= mod;
+                }
+            }
+        }
+
+        return dp[n][0];
+    }
+}
+```
+
+&emsp;时间复杂度为$O(N^2)$，空间复杂度为$O(N^2)$。
+
+执行用时：4ms，在所有java提交中击败了85.71%的用户。
+
+内存消耗：39.2MB，在所有java提交中击败了20.00%的用户。
+
+```java
+class Solution {
+    public int numPermsDISequence(String S) {
+        if (S == null || S.isEmpty()) return 0;
+
+        int n = S.length(), mod = 1_000_000_007;
+        // 当前位置i后剩余的元素比i小的值有j
+        int[] pre = new int[n + 1], cur = new int[n + 1];
+        // 初始0的位置为1
+        Arrays.fill(pre, 1);
+
+        for (int i = 1; i <= n; i++) {
+            if (S.charAt(i - 1) == 'D') {
+                for (int j = n - i; j >= 0; j--) {
+                    cur[j] = pre[j + 1] + cur[j + 1];
+                    cur[j] %= mod;
+                }
+            } else {
+                cur[0] = pre[0];
+                for (int j = 1; j <= n - i; j++) {
+                    cur[j] = pre[j] + cur[j - 1];
+                    cur[j] %= mod;
+                }
+            }
+            pre = Arrays.copyOf(cur, n + 1);
+            Arrays.fill(cur, 0);
+        }
+
+        return pre[0];
+    }
+}
+```
+
+&emsp;时间复杂度为$O(N^2)$，空间复杂度为$O(N)$。
+
+执行用时：4ms，在所有java提交中击败了85.71%的用户。
+
+内存消耗：39.4 MB，在所有java提交中击败了20.00%的用户。
