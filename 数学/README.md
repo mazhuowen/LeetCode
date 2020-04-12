@@ -21,6 +21,7 @@
 * 简单[#12 Integer to Roman](./#12 Integer to Roman.md)    贪心算法
 * 简单[#13 Roman to Integer](./#13 Roman to Integer.md)    关系映射
 * 中等[#41 First Missing Positive](./#41 First Missing Positive.md)    利用数组规律及数组索引
+* $\clubs$中等[#43 Multiply Strings](./#43 Multiply Strings.md)    乘法中位相乘的规律
 * $\clubs$中等[#48 Rotate Image](./#48 Rotate Image.md)    正方形旋转规律
 * $\bigstar$简单[#202 Happy Number](./#202 Happy Number.md)    泛链表结构的数学应用
 * $\clubs$中等[#240 Search a 2D Matrix II](./#240 Search a 2D Matrix II.md)    有序二维矩阵的遍历查找
