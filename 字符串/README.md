@@ -57,70 +57,79 @@
 > <img src="../images/BM5.jpg" style="zoom:50%;" />
 
 ```java
-    public int bm(String source, String pattern) {
-        char[] s = source.toCharArray();
-        char[] p = pattern.toCharArray();
-        int n = s.length, m = p.length;
-
-        // 构建坏字符索引表（假设全部由小写字母构成），初始化为-1，只记录每个字母最后出现的位置
-        int[] bc = new int[26];
-        Arrays.fill(bc, -1);
-        for (int i = 0; i < m; i++) {
-            bc[p[i] - 'a'] = i;
-        }
-
-        // 好后缀
+public int bm(String source, String pattern) {
+        int n = source.length(), m = pattern.length();
+        // 坏字符索引表
+        int[] bc = initBc(pattern);
+        // 好后缀索引表
         int[] suffix = new int[m];
         boolean[] prefix = new boolean[m];
-        Arrays.fill(suffix, -1);
-        // 初始化，求模式串子串0~i与模式串0~m-1的公共后缀子串，如果存在，若长度为k，则suffix[k] = 0~i中的子串起始索引
-        for (int i = 0; i < m - 1; ++i) {
-            // j从后往前遍历，k为公共后缀子串长度
-            int j = i, k = 0;
-            // 后缀相等，往前遍历
-            while (j >= 0 && p[j] == p[m - 1 - k]) {
-                suffix[k++] = j-- + 1;
-            }
-            // 如果公共后缀子串也是模式串的前缀子串
-            if (j == -1) prefix[k] = true;
-        }
+        initGs(pattern, m, suffix, prefix);
 
-        // 比较的主串起始索引
-        int i = 0;
-        while (i <= n - m) {
-            int j;
-            // 倒序比较
-            for (j = m - 1; j >= 0; j--) {
-                // 坏字符
-                if (s[i + j] != p[j]) break;
+        // 主串的匹配起始位置
+        int sIdx = 0;
+        // 从后往前匹配
+        while (sIdx <= n - m) {
+            // 主串匹配的尾部位置（对应的模式串索引为eIdx - sIdx）
+            int eIdx = sIdx + m - 1;
+            // 遍历查找坏字符
+            while (eIdx >= sIdx && source.charAt(eIdx) == pattern.charAt(eIdx - sIdx)) {
+                eIdx--;
             }
             // 匹配成功
-            if (j < 0) return i;
-            // 计算后移距离
-            int offset1 = j - bc[s[i + j] - 'a'];
-
-            // 如果有好后缀，则计算
-            int offset2 = 0;
-            if (j < m - 1) {
-                offset2 = moveByGS(j, m, suffix, prefix);
+            if (eIdx -sIdx < 0) return sIdx;
+            // 根据坏字符计算后移量（可能是负数）
+            int offset = Math.max(0, eIdx - sIdx - bc[source.charAt(eIdx) - 'a']);
+            // 根据好后缀计算后移量
+            if (eIdx -sIdx < m - 1) {
+                offset = Math.max(offset, offsetByGs(eIdx - sIdx, m, suffix, prefix));
             }
 
-            i += Math.max(offset1, offset2);
+            sIdx += offset;
         }
-        // 未匹配到
         return -1;
     }
 
-    private int moveByGS(int j, int m, int[] suffix, boolean[] prefix) {
-        // 好后缀长度
-        int k = m - 1 - j;
-        // 返回对齐所需偏移
-        if (suffix[k] != -1) return j - suffix[k] +1;
-        // 如果后缀与前缀重叠
-        for (int r = j + 2; r <= m-1; ++r) {
-            if (prefix[m - r]) return r;
+    // 初始化坏字符索引表
+    private int[] initBc(String pattern) {
+        // 假设全部由小写字母构成
+        int[] bc = new int[26];
+        Arrays.fill(bc, -1);
+        int idx = 0;
+        // 记录最后的位置
+        for (char c : pattern.toCharArray()) {
+            bc[c - 'a'] = idx++;
         }
-        // 好后缀不匹配
+        return bc;
+    }
+    // 初始化好后缀索引表
+    private void initGs(String pattern, int m, int[] suffix, boolean[] prefix) {
+        Arrays.fill(suffix, -1);
+        // 初始化填充，寻找0～i与0～m-1的公共后缀（由于好后缀在长度相等的情况下只记录位置较后的，故从头遍历）
+        for (int i = 0; i < m - 1; i++) {
+            // j为0～i的尾部索引，k为公共后缀子串长度
+            int j = i, k = 0;
+            while (j >= 0 && pattern.charAt(j) == pattern.charAt(m - 1 - k)) {
+                // 记录好后缀
+                suffix[++k] = j--;
+            }
+            // 公共后缀子串同时也是模式串前缀，标记为true
+            if (j == -1) prefix[k] = true;
+        }
+    }
+    // 计算好后缀偏移，bcIdx为坏字符在模式串中的索引
+    private int offsetByGs(int bcIdx, int m, int[] suffix, boolean[] prefix) {
+        // 好后缀长度
+        int k = m - 1 - bcIdx;
+        // 存在公共后缀，对齐（此段公共后缀的长度为j-suffix[k]+1，意味着主串后移这段长度）
+        if (suffix[k] != -1) return bcIdx + 1 - suffix[k];
+        // 不存在公共后缀，检索是否存在重叠
+        // 如模式串cabcab，公共后缀为bcab，此时suffix为-1，需要遍历检查长度小于4的prefix，此处长度为3时为true，表示将cab对齐
+        for (int i = bcIdx + 1; i < m; i++) {
+            // 此时表示0～i的串存在公共后缀且是模式串前缀，将主串后移i+1位，使得模式串起始位置cab与主串对齐
+            if (prefix[m - i + 1]) return i + 1;
+        }
+        // 整体后移
         return m;
     }
 ```
