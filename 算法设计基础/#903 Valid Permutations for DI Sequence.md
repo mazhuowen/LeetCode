@@ -196,7 +196,7 @@ class Solution {
         Arrays.fill(dp[0], 1);
 
         for (int i = 1; i <= n; i++) {
-            // 随着n的增加，j每层都睡减少一个
+            // 随着n的增加，j每层都减少一个
             for (int j = 0; j <= n - i; j++) {
                 if (S.charAt(i - 1) == 'D') {
                     // 由于是减少，需从k个小于i-1位置的值中选择一个，k必须大于j，其次前一层比当前层多一列，k小于等于n-i+1
