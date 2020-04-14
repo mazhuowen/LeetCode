@@ -11,7 +11,6 @@
 * 从某个初始解出发；
 * 采用迭代的过程，当可以向目标前进一步时，就根据局部最优策略，得到一个部分解，问题规模就缩小了；
 * 将所有解综合起来。
-
 * $\clubs$困难[#45 Jump Game II](./#45 Jump Game II.md)    [#55 Jump Game](./#55 Jump Game.md)的进阶，巧妙的贪心思路及规律
 * 中等[#55 Jump Game](./#55 Jump Game.md)    发现规律从尾遍历
 * 中等[#57 Insert Interval](./#57 Insert Interval.md)    从头遍历判断区间
@@ -20,6 +19,8 @@
 * $\bigstar$技巧[#135 Candy](./#135 Candy.md)    峰顶值的处理
 * $\bigstar$困难[#321 Create Maximum Number](./#321 Create Maximum Number.md)    利用贪婪策略查询两个数组的最大组合
 * $\bigstar$困难[#659 Split Array into Consecutive Subsequences](./#659 Split Array into Consecutive Subsequences.md)    贪婪拼接连续数字
+* $\clubs$中等[#910 Smallest Range II](./#910 Smallest Range II.md)    巧妙地数学规律发现
+* 中等[#955 Delete Columns to Make Sorted II](./#955 Delete Columns to Make Sorted II.md)    字符串移除字符使之变为字典序
 
 ## 分治法
 
@@ -55,6 +56,7 @@
 * $\clubs$困难[#629 K Inverse Pairs Array](./#629 K Inverse Pairs Array.md)    转移方程的归纳总结
 * $\bigstar$困难[#887 Super Egg Drop](./#887 Super Egg Drop.md)    动态规划经典问题双蛋问题
 * $\bigstar$困难[#903 Valid Permutations for DI Sequence](./#903 Valid Permutations for DI Sequence.md)    繁杂的动态规划抽象
+* $\clubs$中等[#1039 Minimum Score Triangulation of Polygon](./#1039 Minimum Score Triangulation of Polygon.md)    几何规律
 * $\clubs$困难[#1235 Maximum Profit in Job Scheduling](./#1235 Maximum Profit in Job Scheduling.md)    按结束时间动态规划
 
 ## 回溯法
