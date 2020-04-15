@@ -11,6 +11,7 @@
 <img src="../images/字符串1.jpg" style="zoom:50%;" />
 
 * 简单[#14 Longest Common Prefix](./#14 Longest Common Prefix.md)    字符串遍历匹配
+* 简单[#58 Length of Last Word](./#58 Length of Last Word.md)    倒序遍历返回最后一个单词长度
 * 简单[#392 Is Subsequence](./#392 Is Subsequence.md)    字符串遍历匹配
 * 繁杂[#408 Valid Word Abbreviation](./#408 Valid Word Abbreviation.md)    变形的字符串遍历匹配，[#320 Generalized Abbreviation](../算法设计基础/#320 Generalized Abbreviation.md)与[#411 Minimum Unique Word Abbreviation](../算法设计基础/#411 Minimum Unique Word Abbreviation.md)的相关主题
 
@@ -156,11 +157,11 @@ public int bm(String source, String pattern) {
 
 <img src="../images/KMP3.jpg" style="zoom: 50%;" />
 
-假设`b[0, i]`的最长可匹配后缀子串是`b[r, i]`。如果把最后一个字符去掉，`b[r, i-1]`肯定是`b[0, i-1]`的可匹配后缀子串，但不一定是最长可匹配后缀子串。所以既然`b[0, i-1]`最长可匹配后缀子串对应的模式串的前缀子串的下一个字符并不等于b[i]，那么就可以考察`b[0, i-1]`的次长可匹配后缀子串`b[x, i-1]`对应的可匹配前缀子串`b[0, i-1-x]`的下一个字符`b[i-x]`是否等于`b[i]`。如果等于`b[x, i]`就是`b[0, i]`的最长可匹配后缀子串。问题转化为查找`b[0, i-1]`的次长可匹配后缀子串。
+假设`b[0, i]`的最长可匹配后缀子串是`b[r, i]`。如果把最后一个字符去掉，`b[r, i-1]`肯定是`b[0, i-1]`的可匹配后缀子串，但不一定是最长可匹配后缀子串。所以既然`b[0, i-1]`最长可匹配后缀子串对应的模式串的前缀子串的下一个字符并不等于b[i]，那么就可以考察`b[0, i-1]`的次长可匹配后缀子串`b[x, i-1]`对应的可匹配前缀子串`b[0, i-1-x]`的下一个字符`b[i-x]`是否等于`b[i]`。如果等于`b[x, i]`就是`b[0, i]`的最长可匹配后缀子串，问题转化为查找`b[0, i-1]`的次长可匹配后缀子串。而注意到最长匹配前缀必然包含次长匹配后缀，是最长匹配前缀的最长匹配前缀。
 
 <img src="../images/KMP4.jpg" style="zoom: 50%;" />
 
-按照这个思路，可以考察完所有的`b[0, i-1]`的可匹配后缀子串`b[y, i-1]`，直到找到一个可匹配的后缀子串，它对应的前缀子串的下一个字符等于`b[i]`，则`b[y, i]`就是`b[0, i]`的最长可匹配后缀子串。
+这样问题就转化为考察$0 \sim i - 1$字符串的最长匹配前缀子串，不满足要求这考察该子串的最长匹配字符串，以此类推直到找到或未找到。
 
 ```java
     public int kmp(String source, String pattern) {
@@ -222,4 +223,6 @@ public int bm(String source, String pattern) {
 ## 其它
 
 * 简单[#38 Count and Say](./#38 Count and Say.md)    字符串递归计数
+* 简单[#67 Add Binary](./#67 Add Binary.md)    字符串遍历求和
+* 简单[#125 Valid Palindrome](./#125 Valid Palindrome.md)    双指针遍历比较字符串
 * $\clubs$技巧[#466 Count The Repetitions](./#466 Count The Repetitions.md)    循环节规律，周期化字符串
