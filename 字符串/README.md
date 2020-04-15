@@ -136,7 +136,35 @@ public int bm(String source, String pattern) {
 
 
 
-### KMP算法
+### KMP（Knuth Morris Pratt）算法
+
+&emsp;首先类似BM算法定义好前缀，把好前缀的所有后缀子串中，最长的可匹配前缀子串的后缀子串，叫作最长可匹配后缀子串；对应的前缀子串，叫作最长可匹配前缀子串。
+
+<img src="../images/KMP.jpg" style="zoom: 50%;" />
+
+<img src="../images/KMP1.jpg" style="zoom: 50%;" />
+
+求解好前缀只需通过模式串本身。类似BM算法中的`bc`、`suffix`、`prefix`数组，KMP算法也可以提前构建一个数组，用来存储模式串中每个前缀的最长可匹配前缀子串的结尾字符下标。把这个数组定义为`next`数组，也叫失效函数（failure function）。数组的下标是候选前缀在模式串中结尾字符下标，数组的值是这个候选前缀作为字符串的最长可以匹配前缀子串的结尾字符下标。如图，模式串`ababacd`的候选前缀`abab`结尾字符在模式串索引为3，而该字符串`ab`是最长后缀子串匹配的最长前缀子串，最长前缀子串为第一个`ab`，结尾索引为1。
+
+<img src="../images/KMP2.jpg" style="zoom: 50%;" />
+
+`next`数组的计算非常巧妙，如果 `next[i-1] = k-1`，也就是说子串`b[0, k-1]`是`b[0, i-1]`的最长可匹配前缀子串。如果子串`b[0, k-1]`的下一个字符`b[k]`与`b[0, i-1]`的下一个字符`b[i]`匹配，那子串`b[0, k]`就是`b[0, i]`的最长可匹配前缀子串。但是如果`b[0, k-1]`的下一字符`b[k]`跟`b[0, i-1]`的下一个字符`b[i]`不相等时就不能简单地通过`next[i-1]`得到`next[i]`。
+
+
+
+<img src="../images/KMP3.jpg" style="zoom: 50%;" />
+
+假设`b[0, i]`的最长可匹配后缀子串是`b[r, i]`。如果把最后一个字符去掉，`b[r, i-1]`肯定是`b[0, i-1]`的可匹配后缀子串，但不一定是最长可匹配后缀子串。所以既然`b[0, i-1]`最长可匹配后缀子串对应的模式串的前缀子串的下一个字符并不等于b[i]，那么就可以考察`b[0, i-1]`的次长可匹配后缀子串`b[x, i-1]`对应的可匹配前缀子串`b[0, i-1-x]`的下一个字符`b[i-x]`是否等于`b[i]`。如果等于`b[x, i]`就是`b[0, i]`的最长可匹配后缀子串。问题转化为查找`b[0, i-1]`的次长可匹配后缀子串。
+
+<img src="../images/KMP4.jpg" style="zoom: 50%;" />
+
+按照这个思路，可以考察完所有的`b[0, i-1]`的可匹配后缀子串`b[y, i-1]`，直到找到一个可匹配的后缀子串，它对应的前缀子串的下一个字符等于`b[i]`，则`b[y, i]`就是`b[0, i]`的最长可匹配后缀子串。
+
+```java
+
+```
+
+> KMP算法的时间复杂度是$O(m + n)$。
 
 
 
@@ -150,10 +178,7 @@ public int bm(String source, String pattern) {
 
 
 
-* $\clubs$技巧[#466 Count The Repetitions](./#466 Count The Repetitions.md)    循环节规律，周期化字符串
-
-
-
 ## 其它
 
 * 简单[#38 Count and Say](./#38 Count and Say.md)    字符串递归计数
+* $\clubs$技巧[#466 Count The Repetitions](./#466 Count The Repetitions.md)    循环节规律，周期化字符串
