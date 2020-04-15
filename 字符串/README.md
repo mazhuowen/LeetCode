@@ -77,11 +77,11 @@ public int bm(String source, String pattern) {
                 eIdx--;
             }
             // 匹配成功
-            if (eIdx -sIdx < 0) return sIdx;
+            if (eIdx - sIdx < 0) return sIdx;
             // 根据坏字符计算后移量（可能是负数）
             int offset = Math.max(0, eIdx - sIdx - bc[source.charAt(eIdx) - 'a']);
-            // 根据好后缀计算后移量
-            if (eIdx -sIdx < m - 1) {
+            // 根据好后缀计算后移量（当等于eIdx - sIdx时，即最后一个字符不匹配，好后缀为0不存在）
+            if (eIdx - sIdx < m - 1) {
                 offset = Math.max(offset, offsetByGs(eIdx - sIdx, m, suffix, prefix));
             }
 
@@ -110,7 +110,7 @@ public int bm(String source, String pattern) {
             // j为0～i的尾部索引，k为公共后缀子串长度
             int j = i, k = 0;
             while (j >= 0 && pattern.charAt(j) == pattern.charAt(m - 1 - k)) {
-                // 记录好后缀
+                // 记录长度为k+1的好后缀起始索引
                 suffix[++k] = j--;
             }
             // 公共后缀子串同时也是模式串前缀，标记为true
@@ -121,13 +121,15 @@ public int bm(String source, String pattern) {
     private int offsetByGs(int bcIdx, int m, int[] suffix, boolean[] prefix) {
         // 好后缀长度
         int k = m - 1 - bcIdx;
-        // 存在公共后缀，对齐（此段公共后缀的长度为j-suffix[k]+1，意味着主串后移这段长度）
+        // 存在公共后缀，需对齐，此时好后缀起始为j+1，而公共后缀起始为suffix[k]，需要将这两个位置对齐
+        // 移动距离为j+1-suffix[k]
         if (suffix[k] != -1) return bcIdx + 1 - suffix[k];
         // 不存在公共后缀，检索是否存在重叠
         // 如模式串cabcab，公共后缀为bcab，此时suffix为-1，需要遍历检查长度小于4的prefix，此处长度为3时为true，表示将cab对齐
-        for (int i = bcIdx + 1; i < m; i++) {
-            // 此时表示0～i的串存在公共后缀且是模式串前缀，将主串后移i+1位，使得模式串起始位置cab与主串对齐
-            if (prefix[m - i + 1]) return i + 1;
+        // 好后缀j+1～m-1不存在公共后缀，从j+2开始检查j+2～m-1是否是模式串起始段
+        for (int r = bcIdx + 2; r < m; i++) {
+            // 表示r～m-1后缀子串是模式串前缀，移动对齐，即0需要对齐到r，距离为r-0
+            if (prefix[m - r]) return r;
         }
         // 整体后移
         return m;
@@ -161,12 +163,51 @@ public int bm(String source, String pattern) {
 按照这个思路，可以考察完所有的`b[0, i-1]`的可匹配后缀子串`b[y, i-1]`，直到找到一个可匹配的后缀子串，它对应的前缀子串的下一个字符等于`b[i]`，则`b[y, i]`就是`b[0, i]`的最长可匹配后缀子串。
 
 ```java
+    public int kmp(String source, String pattern) {
+        int n = source.length(), m = pattern.length();
+        // 初始化next数组
+        int[] next = new int[m];
+        initNext(next, m, pattern);
 
+        // 从头遍历，i为主串索引，j为模式串索引
+        int j = 0;
+        for (int i = 0; i < n; i++) {
+            // 当前字符不相等，则通过好前缀持续查找，直到遇到相等的或查不到
+            while (j > 0 && source.charAt(i) != pattern.charAt(j)) {
+                // 将j定位到0～j-1的最长匹配前缀子串的后一位继续比较
+                j = next[j - 1] + 1;
+            }
+            // 成功则比较下一位
+            if (source.charAt(i) == pattern.charAt(j)) j++;
+            // 匹配完成，此时i为结束索引，减去长度得到起始索引
+            if (j == m) return i - m + 1;
+        }
+        return -1;
+    }
+
+    private void initNext(int[] next, int m, String pattern) {
+        // 首字符不存在最长匹配前缀字符
+        next[0] = -1;
+        // 假设当前序列为0～i，k表示0～i-1序列的最长匹配前缀结束索引
+        int k = -1;
+        for (int i = 1; i < m; i++) {
+            // 前一序列的最长匹配前缀构不成当前序列的最长匹配前缀，则查找次长……直到找到满足的前缀或查找不到
+            while (k != - 1 && pattern.charAt(k + 1) != pattern.charAt(i)) {
+                // 关键步骤，动态规划查找比当前序列次小的最长匹配前缀
+                k = next[k];
+            }
+            // 表示最终找到0～k的序列是0～i-1序列的匹配前缀子串（不一定是最长），然后的字符与当前字符一致，可以组成更长的匹配子串
+            // 可证明是当前0～i的最长匹配前缀，更新前缀结尾索引
+            if (pattern.charAt(k + 1) == pattern.charAt(i)) k++;
+            // 如果没找到匹配的，此处为-1
+            next[i] = k;
+        }
+    }
 ```
 
 > KMP算法的时间复杂度是$O(m + n)$。
 
-
+* $\bigstar$简单[#28 Implement strStr()](./#28 Implement strStr().md)    字符串匹配BF、RK、BM、KMP算法实现
 
 ## 多模式串匹配
 
