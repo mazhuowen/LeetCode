@@ -25,7 +25,7 @@ class Solution {
 
 ## 程序设计
 
-
+* 首先先到的是贪婪法，每次分割最大的正方形，但是显然不正确，不满足如图的情况。
 
 ```java
 class Solution {
@@ -37,11 +37,13 @@ class Solution {
 }
 ```
 
-
-
 <img src="../images/#1240.png" style="zoom: 50%;" />
 
+* 
 
+```java
+
+```
 
 ## 性能分析
 
