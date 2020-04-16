@@ -57,6 +57,8 @@
 * $\bigstar$困难[#887 Super Egg Drop](./#887 Super Egg Drop.md)    动态规划经典问题双蛋问题
 * $\bigstar$困难[#903 Valid Permutations for DI Sequence](./#903 Valid Permutations for DI Sequence.md)    繁杂的动态规划抽象
 * $\clubs$中等[#1039 Minimum Score Triangulation of Polygon](./#1039 Minimum Score Triangulation of Polygon.md)    几何规律
+* 中等[#1139 Largest 1-Bordered Square](./#1139 Largest 1-Bordered Square.md)    存储记录连续的左侧和上方结点数目
+* 中等[#1223 Dice Roll Simulation](./#1223 Dice Roll Simulation.md)    计数序列末尾值
 * $\clubs$困难[#1235 Maximum Profit in Job Scheduling](./#1235 Maximum Profit in Job Scheduling.md)    按结束时间动态规划
 
 ## 回溯法
@@ -79,6 +81,7 @@
 * $\clubs$中等[#351 Android Unlock Patterns](./#351 Android Unlock Patterns.md)    矩形回溯遍历的变形
 * 繁杂[#411 Minimum Unique Word Abbreviation](./#411 Minimum Unique Word Abbreviation.md)    [#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)  和[#408 Valid Word Abbreviation](../字符串/#408 Valid Word Abbreviation.md)的结合
 * $\bigstar$困难[#546 Remove Boxes](./#546 Remove Boxes.md)    存储计算结果的回溯
+* 繁杂[#1088 Confusing Number II](./#1088 Confusing Number II.md)    需注意边界及数值溢出的处理
 
 ## 随机算法
 
