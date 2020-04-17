@@ -60,6 +60,8 @@
 * 中等[#1139 Largest 1-Bordered Square](./#1139 Largest 1-Bordered Square.md)    存储记录连续的左侧和上方结点数目
 * 中等[#1223 Dice Roll Simulation](./#1223 Dice Roll Simulation.md)    计数序列末尾值
 * $\clubs$困难[#1235 Maximum Profit in Job Scheduling](./#1235 Maximum Profit in Job Scheduling.md)    按结束时间动态规划
+* 困难[#1246 Palindrome Removal](./#1246 Palindrome Removal.md)    回文字符串的动态规划规律
+* $\clubs$困难[#1259 Handshakes That Don't Cross](./#1259 Handshakes That Don't Cross.md)    巧妙的边角条件处理
 
 ## 回溯法
 
@@ -83,6 +85,7 @@
 * $\bigstar$困难[#546 Remove Boxes](./#546 Remove Boxes.md)    存储计算结果的回溯
 * 繁杂[#1088 Confusing Number II](./#1088 Confusing Number II.md)    需注意边界及数值溢出的处理
 * $\clubs$困难[#1240 Tiling a Rectangle with the Fewest Squares](./#1240 Tiling a Rectangle with the Fewest Squares.md)    暴力回溯填充矩形
+* $\clubs$繁杂[#1307 Verbal Arithmetic Puzzle](./#1307 Verbal Arithmetic Puzzle.md)    剪枝优化暴力回溯
 
 ## 随机算法
 
