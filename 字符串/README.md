@@ -214,7 +214,24 @@ public int bm(String source, String pattern) {
 
 ### Trie树
 
+&emsp;字典树是一种专门处理字符串匹配的数据结构，用来解决在一组字符串集合中快速查找某个字符串的问题。Trie树本质是利用字符串之间的公共前缀，将重复的前缀合并在一起。其中根节点不包含任何信息；每个节点表示一个字符串中的字符，从根节点到某个标识节点的路径表示一个字符串。字典树的本质是多叉树，对于只有26个小写字母单词的情况，数据结构可以简化为：
 
+```java
+class TrieNode {
+    // 是否是单词结尾字符，标识结点
+    boolean isEnding;
+    // 长度26的数组，每个索引对应一个字符，没有该字符则为null
+    TrieNode[] children;
+}
+```
+
+基本的插入查找都是树的常规操作，构建时间复杂度为$O(N)$，$N$为字符串总长；查询时间复杂度为$O(K)$，$K$为查询字符串长度。
+
+> Trie树如果遇到字符集太大、前缀重合不多的情况，空间消耗比较大。可以将子节点的数组结构替换为其它数据结构优化。在工程中，精确匹配查找更倾向于用散列表或者红黑树。Trie树比较适合的是查找前缀匹配的字符串。
+
+* $\clubs$中等[#208 Implement Trie (Prefix Tree)](./#208 Implement Trie (Prefix Tree).md)    字典树简单原理的实现
+* 中等[#211 Add and Search Word - Data structure design](./#211 Add and Search Word - Data structure design.md)    字典树与前序遍历的结合
+* $\clubs$中等[#421 Maximum XOR of Two Numbers in an Array](./#421 Maximum XOR of Two Numbers in an Array.md)    借鉴字典树前缀匹配寻找最大异或值
 
 ### AC自动机
 
