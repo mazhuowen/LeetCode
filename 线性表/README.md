@@ -78,6 +78,7 @@ while(A.next != next) {
 * $\bigstar$中等[#82 Remove Duplicates from Sorted List II](./#82 Remove Duplicates from Sorted List II.md)    双指针遍历比较，子链表删除
 * 简单[#83 Remove Duplicates from Sorted List](./#83 Remove Duplicates from Sorted List.md)    遍历结点，删除相同值的后继节点
 * 中等[#86 Partition List](./#86 Partition List.md)    删除后半段小于阈值的结点，插入到前半部分链表
+* $\clubs$中等[#146 LRU Cache](./#146 LRU Cache.md)    链表与哈希表结合实现`LRU`
 * 简单[#237 Delete Node in a Linked List](./#237 Delete Node in a Linked List.md)    只给定待删除结点，复制后继结点值删除
 * $\clubs$技巧[#379 Design Phone Directory](./#379 Design Phone Directory.md)    基于特殊规则的插入操作
 * 中等[#707 Design Linked List](./#707 Design Linked List.md)    链表类的设计
