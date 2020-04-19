@@ -10,6 +10,7 @@
 
 <img src="../images/字符串1.jpg" style="zoom:50%;" />
 
+* 中等[#5 Longest Palindromic Substring](./#5 Longest Palindromic Substring.md)    回文的中心字符扩展匹配
 * 简单[#14 Longest Common Prefix](./#14 Longest Common Prefix.md)    字符串遍历匹配
 * 简单[#58 Length of Last Word](./#58 Length of Last Word.md)    倒序遍历返回最后一个单词长度
 * 简单[#392 Is Subsequence](./#392 Is Subsequence.md)    字符串遍历匹配
@@ -239,6 +240,8 @@ class TrieNode {
 
 ## 其它
 
+* $\clubs$中等[#6 ZigZag Conversion](./#6 ZigZag Conversion.md)    Z字型周期规律遍历
+* 中等[#8 String to Integer (atoi)](./#8 String to Integer (atoi).md)    字符串数字转整数
 * 简单[#38 Count and Say](./#38 Count and Say.md)    字符串递归计数
 * 简单[#67 Add Binary](./#67 Add Binary.md)    字符串遍历求和
 * 简单[#125 Valid Palindrome](./#125 Valid Palindrome.md)    双指针遍历比较字符串

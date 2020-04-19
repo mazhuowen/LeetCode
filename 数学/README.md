@@ -18,6 +18,7 @@
 
 ## 规律
 
+* 简单[#9 Palindrome Number](./#9 Palindrome Number.md)    回文数字，数字翻转
 * 简单[#12 Integer to Roman](./#12 Integer to Roman.md)    贪心算法
 * 简单[#13 Roman to Integer](./#13 Roman to Integer.md)    关系映射
 * 中等[#41 First Missing Positive](./#41 First Missing Positive.md)    利用数组规律及数组索引
