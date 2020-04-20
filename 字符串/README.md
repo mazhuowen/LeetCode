@@ -234,6 +234,7 @@ class TrieNode {
 * 中等[#211 Add and Search Word - Data structure design](./#211 Add and Search Word - Data structure design.md)    字典树与前序遍历的结合
 * $\bigstar$困难[#212 Word Search II](./#212 Word Search II.md)    字典树与矩形深度优先搜索的结合
 * $\clubs$中等[#421 Maximum XOR of Two Numbers in an Array](./#421 Maximum XOR of Two Numbers in an Array.md)    借鉴字典树前缀匹配寻找最大异或值
+* $\bigstar$繁杂[#642 Design Search Autocomplete System](./#642 Design Search Autocomplete System.md)    将句子看做单词转化为字典树前缀匹配
 
 ### AC自动机
 
@@ -246,6 +247,7 @@ class TrieNode {
 * 简单[#38 Count and Say](./#38 Count and Say.md)    字符串递归计数
 * 简单[#67 Add Binary](./#67 Add Binary.md)    字符串遍历求和
 * 简单[#125 Valid Palindrome](./#125 Valid Palindrome.md)    双指针遍历比较字符串
-* 中等[#186 Reverse Words in a String II](./#186 Reverse Words in a String II.md)    翻转单词
+* 中等[#151 Reverse Words in a String](./#151 Reverse Words in a String.md)    翻转并格式化单词
+* 简单[#186 Reverse Words in a String II](./#186 Reverse Words in a String II.md)    翻转单词
 * $\clubs$中等[#273 Integer to English Words](./#273 Integer to English Words.md)    数字单位的周期分切
 * $\clubs$技巧[#466 Count The Repetitions](./#466 Count The Repetitions.md)    循环节规律，周期化字符串
