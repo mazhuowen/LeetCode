@@ -45,14 +45,67 @@ class Solution {
 
 ## 程序设计
 
-
+* 细节非常多，如行注释前可以有代码，而块注释前后都可以有代码；其次对于块注释，可以跨行，合并时需要把块注释前后的代码合并在一起。
+* 如果只考虑根据`/`来判断是行注释还是块注释，会陷入死胡同，因为根据`/`来判断块注释闭合区间`*/`，需要向前判断，除了这个，对于`/*/`、`/*.../*/`的情况根本不能为力；转变思路，块注释结束区间可根据`*`来判断，只需向后判断是否是`/`，而无需向前判断。
 
 ```java
+class Solution {
+    public List<String> removeComments(String[] source) {
+        List<String> res = new LinkedList<>();
 
+        // 是否在块注释内
+        boolean block = false;
+        StringBuffer sb = new StringBuffer();
+        // 遍历每行
+        for (String line : source) {
+            char[] token = line.toCharArray();
+
+            // 遍历寻找/
+            int idx = 0;
+            while (idx < token.length) {
+                // 行注释，后续不用遍历
+                if (!block && idx + 1 < token.length && token[idx] == '/' && token[idx + 1] == '/') {
+                    break;
+                }
+                // 块注释起始
+                else if (!block && idx + 1 < token.length && token[idx] == '/' && token[idx + 1] == '*') {
+                    block = true;
+                    idx += 2;
+                }
+                // 块注释结束
+                else if (block && idx + 1 < token.length && token[idx] == '*' && token[idx + 1] == '/') {
+                    block = false;
+                    idx += 2;
+                }
+                // 代码或/作为操作符
+                else if (!block) {
+                    sb.append(token[idx]);
+                    idx++;
+                }
+                // 块代码内部，忽略
+                else {
+                    idx++;
+                }
+            }
+
+            if (!block && sb.length() > 0) {
+                res.add(sb.toString());
+                sb = new StringBuffer();
+            }
+        }
+        return res;
+    }
+}
 ```
 
 ## 性能分析
 
+&emsp;时间复杂度为$O(NM)$，空间复杂度为$O(NM)$。
 
+执行用时：1ms，在所有java提交中击败了100.00%的用户。
+
+内存消耗：38.1MB，在所有java提交中击败了100.00%的用户。
 
 ## 官方解题
+
+&emsp;上述参考官方解题。

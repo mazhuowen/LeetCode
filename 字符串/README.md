@@ -15,6 +15,7 @@
 * 简单[#58 Length of Last Word](./#58 Length of Last Word.md)    倒序遍历返回最后一个单词长度
 * 简单[#392 Is Subsequence](./#392 Is Subsequence.md)    字符串遍历匹配
 * 繁杂[#408 Valid Word Abbreviation](./#408 Valid Word Abbreviation.md)    变形的字符串遍历匹配，[#320 Generalized Abbreviation](../算法设计基础/#320 Generalized Abbreviation.md)与[#411 Minimum Unique Word Abbreviation](../算法设计基础/#411 Minimum Unique Word Abbreviation.md)的相关主题
+* 繁杂[#722 Remove Comments](./#722 Remove Comments.md)    细节繁多，需理清
 
 ### RK（Rabin-Karp）算法
 
