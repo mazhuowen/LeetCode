@@ -125,4 +125,4 @@ class Solution {
 
 ## 官方解题
 
-&emsp;同上，密切关注。
+&emsp;同上。
