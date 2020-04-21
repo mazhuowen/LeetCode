@@ -9,6 +9,13 @@
 
 * $\clubs$中等[#277 Find the Celebrity](./#277 Find the Celebrity.md)    查找名人
 
+## 技巧
+
+* $\clubs$中等[#54 Spiral Matrix](./#54 Spiral Matrix.md)    螺旋矩阵
+* 中等[#59 Spiral Matrix II](./#59 Spiral Matrix II.md)    [#54 Spiral Matrix](./#54 Spiral Matrix.md)的变形
+* $\clubs$中等[#73 Set Matrix Zeroes](./#73 Set Matrix Zeroes.md)    利用矩形空间做标识
+* $\clubs$中等[#238 Product of Array Except Self](./#238 Product of Array Except Self.md)    前缀积
+
 ## 其它算法问题
 
 ### 一次线性扫描

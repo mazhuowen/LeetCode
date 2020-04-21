@@ -14,6 +14,12 @@
 * 中等[#15 3Sum](./#15 3Sum.md)    双指针
 * 中等[#16 3Sum Closest](./#16 3Sum Closest.md)    [#15 3Sum](./#15 3Sum.md)的变体
 * $\bigstar$中等[#18 4Sum](./#18 4Sum.md)    [#15 3Sum](./#15 3Sum.md)的延续
+* 简单[#121 Best Time to Buy and Sell Stock](./#121 Best Time to Buy and Sell Stock.md)    遍历记录区间最大值最小值
+
+### 数组交换
+
+* $\bigstar$中等[#189 Rotate Array](./#189 Rotate Array.md)    循环移位
+* 简单[#283 Move Zeroes](./#283 Move Zeroes.md)    交换0到最后
 
 ## 链表
 

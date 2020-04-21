@@ -36,6 +36,8 @@
 
 &emsp;归并排序除了用于排序，其分治思想及左右区间有序性使得在逆序对问题中扮演重要角色。
 
+* 简单[#88 Merge Sorted Array](./#88 Merge Sorted Array.md)    归并排序合并操作
+
 * $\bigstar$困难[#218 The Skyline Problem](../算法设计基础/#218 The Skyline Problem.md)    归并排序的分治思路应用
 * $\bigstar$困难[#315 Count of Smaller Numbers After Self](./#315 Count of Smaller Numbers After Self.md)    归并排序的逆序对应用
 * $\bigstar$困难[#327 Count of Range Sum](./#327 Count of Range Sum.md)    归并排序前缀和并计算区间值

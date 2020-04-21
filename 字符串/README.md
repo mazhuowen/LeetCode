@@ -249,6 +249,10 @@ class TrieNode {
 * 简单[#67 Add Binary](./#67 Add Binary.md)    字符串遍历求和
 * 简单[#125 Valid Palindrome](./#125 Valid Palindrome.md)    双指针遍历比较字符串
 * 中等[#151 Reverse Words in a String](./#151 Reverse Words in a String.md)    翻转并格式化单词
+* 中等[#165 Compare Version Numbers](./#165 Compare Version Numbers.md)    划分版本号区间，根据区间数字比较
 * 简单[#186 Reverse Words in a String II](./#186 Reverse Words in a String II.md)    翻转单词
 * $\clubs$中等[#273 Integer to English Words](./#273 Integer to English Words.md)    数字单位的周期分切
+* 简单[#344 Reverse String](./#344 Reverse String.md)    交换字符位置
+* 中等[#443 String Compression](./#443 String Compression.md)    压缩字符串
 * $\clubs$技巧[#466 Count The Repetitions](./#466 Count The Repetitions.md)    循环节规律，周期化字符串
+* 中等[#557 Reverse Words in a String III](./#557 Reverse Words in a String III.md)    翻转句子中的单词

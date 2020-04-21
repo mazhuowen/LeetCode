@@ -49,6 +49,7 @@
 * $\bigstar$困难[#174 Dungeon Game](./#174 Dungeon Game.md)    [#64 Minimum Path Sum](./#64 Minimum Path Sum.md)的延伸，遍历方向很重要
 * $\clubs$简单[#198 House Robber](./#198 House Robber.md)    巧妙的动态规划简化
 * $\bigstar$困难[#312 Burst Balloons](./#312 Burst Balloons.md)    逆向思维动态规划
+* 中等[#322 Coin Change](./#322 Coin Change.md)    经典动态规划问题
 * $\bigstar$中等[#376 Wiggle Subsequence](./#376 Wiggle Subsequence.md)    巧妙地规律总结
 * $\clubs$困难[#471 Encode String with Shortest Length](./#471 Encode String with Shortest Length.md)    字符串最短编码
 * $\bigstar$困难[#552 Student Attendance Record II](./#552 Student Attendance Record II.md)    发现递归规律使用动态规划实现（最优算法为状态机）
@@ -77,6 +78,8 @@
 * $\clubs$中等[#47 Permutations II](./#47 Permutations II.md)    [#46 Permutations](./#46 Permutations.md)的进阶，存在重复值的组合
 * $\bigstar$中等[#51 N-Queens](./#51 N-Queens.md)    经典回溯问题
 * 中等[#52 N-Queens II](./#52 N-Queens II.md)    $n$皇后的简化
+* $\clubs$中等[#78 Subsets](./#78 Subsets.md)    回溯查找所有子集和
+* 中等[#79 Word Search](./#79 Word Search.md)    字符串回溯比较
 * 中等[#93 Restore IP Addresses](./#93 Restore IP Addresses.md)    条件判断减少回溯次数
 * $\clubs$繁杂[#282 Expression Add Operators](./#282 Expression Add Operators.md)    回溯插入操作符使得结果与目标值一致
 * $\clubs$中等[#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)    字符串回溯

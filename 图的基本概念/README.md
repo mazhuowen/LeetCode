@@ -76,6 +76,7 @@ for (int i = 0; i < N; i++) {
 
 ## 图的搜索在其它领域的应用
 
+* $\clubs$中等[#127 Word Ladder](./#127 Word Ladder.md)    最短的词语接龙
 * 简单[#1030 Matrix Cells in Distance Order](./#1030 Matrix Cells in Distance Order.md)    图的广度优先搜索思想在矩形中的应用
 * 简单[#1306 Jump Game III](./#1306 Jump Game III.md)    图的遍历在数组的应用
 * $\clubs$中等[#934 Shortest Bridge](./#934 Shortest Bridge.md)    深度、广度优先搜索结合的贪心策略
