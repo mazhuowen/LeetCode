@@ -24,6 +24,8 @@ Note:
 
 &emsp;解数独。
 
+<img src="../images/#37.png"  />
+
 ```java
 class Solution {
     public void solveSudoku(char[][] board) {
