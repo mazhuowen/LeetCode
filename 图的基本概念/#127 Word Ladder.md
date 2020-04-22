@@ -87,4 +87,68 @@ class Solution {
 
 ## 官方解题
 
-&emsp;官方提出了双向广度优先搜索。
+&emsp;官方提出了双向广度优先搜索。借鉴社区时间性能较好的思路：
+
+```java
+class Solution {
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        if (beginWord == null || endWord == null || beginWord.length() != endWord.length() || beginWord.isEmpty() || wordList.isEmpty()) return 0;
+
+        Set<String> dict = new HashSet<>(wordList);
+        if (!dict.contains(endWord)) return 0;
+        // 使用集合代替队列，进行广度优先搜索
+        Set<String> start = new HashSet<>();
+        Set<String> end = new HashSet<>();
+        start.add(beginWord);
+        end.add(endWord);
+
+        return bfs(start, end, dict, 2, beginWord.length());
+    }
+
+    private int bfs(Set<String> start, Set<String> end, Set<String> dict, int dis, int len) {
+        // 一端不存在符合要求的值，不连通，返回0
+        if (start.isEmpty()) return 0;
+        // 从小的一端出发
+        if (start.size() > end.size()) return bfs(end, start, dict, dis, len);
+
+        // 删除已遍历点（必须放在此处，由于是两端广度优先搜索，start端到达这些点，如果
+        // 下次换从end端口遍历，删除可能会断开链接；而过上次是start端遍历这次又是start端遍历，则可删除
+        // 因为即使下次是end端遍历，这些旧的start点用不到）
+        dict.removeAll(start);
+        // 下一层
+        Set<String> next = new HashSet<>();
+
+        for (String t : start) {
+            for (String s : geneLadder(t)) {
+                if (dict.contains(s)) {
+                    // 连通，返回
+                    if (end.contains(s)) return dis;
+                    next.add(s);
+                }
+            }
+        }
+
+        return bfs(next, end, dict, dis + 1, len);
+    }
+
+    private List<String> geneLadder(String s) {
+        List<String> res = new ArrayList<>();
+
+        char[] strs = s.toCharArray();
+        for (int i = 0; i < s.length(); i++) {
+            char temp = strs[i];
+            for (char c = 'a'; c <= 'z'; c++) {
+                if (c == temp) continue;
+                strs[i] = c;
+                res.add(new String(strs));
+            }
+            strs[i] = temp;
+        }
+        return res;
+    }
+}
+```
+
+执行用时：16ms，在所有java提交中击败了95.61%的用户。
+
+内存消耗：40.3MB，在所有java提交中击败了33.33%的用户。
