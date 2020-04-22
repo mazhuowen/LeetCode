@@ -72,6 +72,7 @@
 * $\bigstar$困难[#10 Regular Expression Matching](./#10 Regular Expression Matching.md)    可动态规划优化的回溯解法
 * 中等[#17 Letter Combinations of a Phone Number](./#17 Letter Combinations of a Phone Number.md)    枚举回溯所有组合
 * $\clubs$中等[#22 Generate Parentheses](./#22 Generate Parentheses.md)    根据括号组合特性进行回溯
+* $\bigstar$困难[#37 Sudoku Solver](./#37 Sudoku Solver.md)    解数独，经典回溯问题
 * 中等[#39 Combination Sum](./#39 Combination Sum.md)    通过排序去除重复组合，减少试探次数
 * 中等[#40 Combination Sum II](./#40 Combination Sum II.md)    [#39 Combination Sum](./#39 Combination Sum.md)进阶，每个元素只能选一次
 * $\bigstar$困难[#44 Wildcard Matching](./#44 Wildcard Matching.md)    经典的模式匹配问题，双字符串遍历回溯
@@ -94,3 +95,7 @@
 ## 随机算法
 
 &emsp;随机算法，是指在算法中至少有一个地方使用随机数作决策。随机算法的时间复杂度一般用期望的运行时间来表示。一般假设随机数的选择是均匀分布的。
+
+* 中等[#382 Linked List Random Node](./#382 Linked List Random Node.md)    蓄水池抽样算法
+* $\clubs$中等[#384 Shuffle an Array](./#384 Shuffle an Array.md)    洗牌算法
+* $\clubs$中等[#398 Random Pick Index](./#398 Random Pick Index.md)    蓄水池抽样算法

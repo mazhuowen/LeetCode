@@ -122,3 +122,31 @@ class Solution {
 执行用时：3ms，在所有java提交中击败了53.80%的用户。
 
 内存消耗：42.7MB，在所有java提交中击败了18.23%的用户。
+
+&emsp;最优解是摩尔投票，将当前候选的计数与不同数字抵消，最后计数不为0的候选就是答案。
+
+```java
+class Solution {
+    public int majorityElement(int[] nums) {
+        if (nums == null || nums.length == 0) throw new IllegalArgumentException("invalid param");
+
+        // 候选和计数
+        int candidate = 0;
+        int count = 0;
+        for (int num : nums) {
+            // 旧的候选已被消除，设立新的候选
+            if (count == 0) candidate = num;
+            // 计数，相同则加一，不同则抵消减一
+            if (candidate == num) count++;
+            else count--;
+        }
+        return candidate;
+    }
+}
+```
+
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(1)$。
+
+执行用时：1ms，在所有java提交中击败了99.96%的用户。
+
+内存消耗：42.7MB，在所有java提交中击败了17.14%的用户。
