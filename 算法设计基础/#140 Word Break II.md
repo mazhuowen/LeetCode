@@ -113,4 +113,58 @@ class Solution {
 
 ## 官方解题
 
-&emsp;官方思路同上。正对动态规划超时的问题，社区提出保存前一节点而非完整字符串。
+&emsp;官方思路同上。社区对回溯尝试进行了剪枝，即遍历字符串长度不能超过字表最大单词长度。
+
+```java
+class Solution {
+    // 记录最长单词长度
+    int maxLen;
+    Set<String> set;
+    Map<Integer, List<String>> record;
+
+    public List<String> wordBreak(String s, List<String> wordDict) {
+        List<String> res = new ArrayList<String>();
+        if (s == null || wordDict == null || s.isEmpty() || wordDict.isEmpty()) return res;
+
+        this.set = new HashSet<>();
+        for (String t : wordDict) {
+            this.set.add(t);
+            this.maxLen = Math.max(this.maxLen, t.length());
+        }
+        this.record = new HashMap<>();
+
+        res = wordBreak(s, 0);
+        return res;
+    }
+
+    private List<String> wordBreak(String s, int idx) {
+        if (record.get(idx) != null) return record.get(idx);
+
+        List<String> res = new ArrayList<>();
+        if (idx >= s.length()) {
+            res.add("");
+            record.put(idx, res);
+            return res;
+        }
+
+        // 遍历不超过最大单词长度（剪枝，加速性能）
+        for (int i = idx + 1; i <= s.length() && i <= idx + maxLen; i++) {
+            String sub = s.substring(idx, i);
+            if (set.contains(sub)) {
+                for (String t : wordBreak(s, i)) {
+                    // 结尾空字符
+                    if (t.isEmpty()) res.add(sub);
+                    else res.add(sub + " " + t);
+                }
+                
+            }
+        }
+        record.put(idx, res);
+        return res;
+    }
+}
+```
+
+执行用时：7ms，在所有java提交中击败了89.03%的用户。
+
+内存消耗：39.7MB，在所有java提交中击败了7.14%的用户。

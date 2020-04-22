@@ -131,6 +131,7 @@ class Solution {
         return bfs(next, end, dict, dis + 1, len);
     }
 
+    // 生成下一个词语的集合
     private List<String> geneLadder(String s) {
         List<String> res = new ArrayList<>();
 
