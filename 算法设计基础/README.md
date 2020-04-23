@@ -52,6 +52,7 @@
 * $\bigstar$困难[#312 Burst Balloons](./#312 Burst Balloons.md)    逆向思维动态规划
 * 中等[#322 Coin Change](./#322 Coin Change.md)    经典动态规划问题
 * $\bigstar$中等[#376 Wiggle Subsequence](./#376 Wiggle Subsequence.md)    巧妙地规律总结
+* $\clubs$困难[#403 Frog Jump](./#403 Frog Jump.md)    非数组动态规划
 * $\clubs$困难[#471 Encode String with Shortest Length](./#471 Encode String with Shortest Length.md)    字符串最短编码
 * $\bigstar$困难[#552 Student Attendance Record II](./#552 Student Attendance Record II.md)    发现递归规律使用动态规划实现（最优算法为状态机）
 * 中等[#562 Longest Line of Consecutive One in Matrix](./#562 Longest Line of Consecutive One in Matrix.md)    记录之前位置的连续序列信息

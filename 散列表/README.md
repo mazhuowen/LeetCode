@@ -12,7 +12,7 @@
 
 ## 开散列表
 
-
+* 简单[#706 Design HashMap](./#706 Design HashMap.md)    开散列表简单设计
 
 ## 应用
 
