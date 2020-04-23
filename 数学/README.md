@@ -12,6 +12,7 @@
 * 简单[#263 Ugly Number](./#263 Ugly Number.md)    丑数判断
 * $\bigstar$困难[#363 Max Sum of Rectangle No Larger Than K](./#363 Max Sum of Rectangle No Larger Than K.md)    二维数组压缩行或列计算矩形最大和
 * 简单[#367 Valid Perfect Square](./#367 Valid Perfect Square.md)    整数的平方根，需注意判断条件
+* 简单[#415 Add Strings](./#415 Add Strings.md)    字符串加法
 * $\bigstar$困难[#483 Smallest Good Base](./#483 Smallest Good Base.md)    $k$进制规律
 * $\bigstar$困难[#878 Nth Magical Number](./#878 Nth Magical Number.md)    数学规律与二分查找结合
 * $\clubs$中等[#1201 Ugly Number III](./#1201 Ugly Number III.md)    [#878 Nth Magical Number](./#878 Nth Magical Number.md) 的延续，周期化并二分查找
@@ -22,12 +23,15 @@
 * 简单[#12 Integer to Roman](./#12 Integer to Roman.md)    贪心算法
 * 简单[#13 Roman to Integer](./#13 Roman to Integer.md)    关系映射
 * 中等[#41 First Missing Positive](./#41 First Missing Positive.md)    利用数组规律及数组索引
-* $\clubs$中等[#43 Multiply Strings](./#43 Multiply Strings.md)    乘法中位相乘的规律
+* $\clubs$中等[#43 Multiply Strings](./#43 Multiply Strings.md)    字符串乘法位相乘的规律
 * $\clubs$中等[#48 Rotate Image](./#48 Rotate Image.md)    正方形旋转规律
+* 简单[#118 Pascal's Triangle](./#118 Pascal's Triangle.md)    杨辉三角生成
 * $\clubs$简单[#168 Excel Sheet Column Title](./#168 Excel Sheet Column Title.md)    10进制转26进制
 * 简单[#171 Excel Sheet Column Number](./#171 Excel Sheet Column Number.md)    26进制字符转换
+* 简单[#191 Number of 1 Bits](./#191 Number of 1 Bits.md)    移位操作
 * $\bigstar$简单[#202 Happy Number](./#202 Happy Number.md)    泛链表结构的数学应用
 * 简单[#223 Rectangle Area](./#223 Rectangle Area.md)    矩形相交条件
 * $\clubs$中等[#240 Search a 2D Matrix II](./#240 Search a 2D Matrix II.md)    有序二维矩阵的遍历查找
 * 简单[#268 Missing Number](./#268 Missing Number.md)    异或的性质
 * 简单[#292 Nim Game](./#292 Nim Game.md)    `Nim`游戏
+* 简单[#836 Rectangle Overlap](./#836 Rectangle Overlap.md)    [#223 Rectangle Area](./#223 Rectangle Area.md)的简化问题

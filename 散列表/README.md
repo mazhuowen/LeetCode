@@ -44,6 +44,7 @@
 * 简单[#350 Intersection of Two Arrays II](./#350 Intersection of Two Arrays II.md)    哈希表记录计数
 * 中等[#356 Line Reflection](./#356 Line Reflection.md)    重写散列函数，利用哈希表记录坐标点
 * 简单[#359 Logger Rate Limiter](./#359 Logger Rate Limiter.md)    哈希表记录日志和打印时间
+* 简单[#387 First Unique Character in a String](./#387 First Unique Character in a String.md)    哈希表字符计数
 * $\clubs$中等[#442 Find All Duplicates in an Array](./#442 Find All Duplicates in an Array.md)    数组下标作为键值
 * 中等[#454 4Sum II](./#454 4Sum II.md)    哈希表记录和和计数
 * $\clubs$困难[#527 Word Abbreviation](./#527 Word Abbreviation.md)    利用字典保存缩写，解决碰撞
