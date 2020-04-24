@@ -44,11 +44,14 @@
 * 简单[#70 Climbing Stairs](./#70 Climbing Stairs.md)    经典动态规划问题
 * $\clubs$困难[#72 Edit Distance](./#72 Edit Distance.md)    经典动态规划的字符串应用
 * 中等[#91 Decode Ways](./#91 Decode Ways.md)    边角条件繁杂的动态规划应用
+* $\bigstar$困难[#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)    巧妙的状态转化
 * 中等[#120 Triangle](./#120 Triangle.md)    非矩形的动态规划
 * $\clubs$中等[#139 Word Break](./#139 Word Break.md)    字符串匹配的动态规划
 * 困难[#140 Word Break II](./#140 Word Break II.md)    [#139 Word Break](./#139 Word Break.md)的进阶
 * $\bigstar$困难[#174 Dungeon Game](./#174 Dungeon Game.md)    [#64 Minimum Path Sum](./#64 Minimum Path Sum.md)的延伸，遍历方向很重要
+* 困难[#188 Best Time to Buy and Sell Stock IV](./#188 Best Time to Buy and Sell Stock IV.md)    [#122 Best Time to Buy and Sell Stock II.md](./#122 Best Time to Buy and Sell Stock II.md)和[#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)的结合
 * $\clubs$简单[#198 House Robber](./#198 House Robber.md)    巧妙的动态规划简化
+* 中等[#309 Best Time to Buy and Sell Stock with Cooldown](./#309 Best Time to Buy and Sell Stock with Cooldown.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)无限制交易且存在冷冻期
 * $\bigstar$困难[#312 Burst Balloons](./#312 Burst Balloons.md)    逆向思维动态规划
 * 中等[#322 Coin Change](./#322 Coin Change.md)    经典动态规划问题
 * $\bigstar$中等[#376 Wiggle Subsequence](./#376 Wiggle Subsequence.md)    巧妙地规律总结
@@ -57,6 +60,7 @@
 * $\bigstar$困难[#552 Student Attendance Record II](./#552 Student Attendance Record II.md)    发现递归规律使用动态规划实现（最优算法为状态机）
 * 中等[#562 Longest Line of Consecutive One in Matrix](./#562 Longest Line of Consecutive One in Matrix.md)    记录之前位置的连续序列信息
 * $\clubs$困难[#629 K Inverse Pairs Array](./#629 K Inverse Pairs Array.md)    转移方程的归纳总结
+* 中等[#714 Best Time to Buy and Sell Stock with Transaction Fee](./#714 Best Time to Buy and Sell Stock with Transaction Fee.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)扣除手续费
 * $\bigstar$困难[#887 Super Egg Drop](./#887 Super Egg Drop.md)    动态规划经典问题双蛋问题
 * $\bigstar$困难[#903 Valid Permutations for DI Sequence](./#903 Valid Permutations for DI Sequence.md)    繁杂的动态规划抽象
 * $\clubs$中等[#1039 Minimum Score Triangulation of Polygon](./#1039 Minimum Score Triangulation of Polygon.md)    几何规律
@@ -81,6 +85,7 @@
 * $\clubs$中等[#47 Permutations II](./#47 Permutations II.md)    [#46 Permutations](./#46 Permutations.md)的进阶，存在重复值的组合
 * $\bigstar$中等[#51 N-Queens](./#51 N-Queens.md)    经典回溯问题
 * 中等[#52 N-Queens II](./#52 N-Queens II.md)    $n$皇后的简化
+* 中等[#77 Combinations](./#77 Combinations.md)    组合的回溯
 * $\clubs$中等[#78 Subsets](./#78 Subsets.md)    回溯查找所有子集和
 * 中等[#79 Word Search](./#79 Word Search.md)    字符串回溯比较
 * 中等[#93 Restore IP Addresses](./#93 Restore IP Addresses.md)    条件判断减少回溯次数

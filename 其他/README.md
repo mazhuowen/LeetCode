@@ -16,6 +16,7 @@
 * $\clubs$中等[#73 Set Matrix Zeroes](./#73 Set Matrix Zeroes.md)    利用矩形空间做标识
 * $\bigstar$中等[#152 Maximum Product Subarray](./#152 Maximum Product Subarray.md)    正向反向遍历计算最大值
 * $\clubs$中等[#238 Product of Array Except Self](./#238 Product of Array Except Self.md)    前缀积
+* 中等[#289 Game of Life](./#289 Game of Life.md)   新增状态巧妙利用空间
 
 ## 其它算法问题
 
