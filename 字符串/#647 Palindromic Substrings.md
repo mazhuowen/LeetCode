@@ -74,35 +74,41 @@ class Solution {
 
 ```java
 class Solution {
-    public int countSubstrings(String S) {
-        // 插入#，其中头尾各用特殊符号标记，头部为@#，尾部为$
-        // 加入#使得长度为偶数的回文化作奇数的情况
-        char[] A = new char[2 * S.length() + 3];
-        A[0] = '@';
-        A[1] = '#';
-        A[A.length - 1] = '$';
-        int t = 2;
-        for (char c: S.toCharArray()) {
-            A[t++] = c;
-            A[t++] = '#';
+    public int countSubstrings(String s) {
+        char[] T = new char[2 * s.length() + 3];
+        int idx = 0;
+        T[idx++] = '^';
+        T[idx++] = '#';
+        for (char c : s.toCharArray()) {
+            T[idx++] = c;
+            T[idx++] = '#';
         }
+        T[idx++] = '$';
 
-        int[] Z = new int[A.length];
+        int[] P = new int[T.length];
         int center = 0, right = 0;
-        for (int i = 1; i < Z.length - 1; ++i) {
-            if (i < right)
-                Z[i] = Math.min(right - i, Z[2 * center - i]);
-            while (A[i + Z[i] + 1] == A[i - Z[i] - 1])
-                Z[i]++;
-            if (i + Z[i] > right) {
+        int count = 0;
+        for (int i = 1; i < T.length - 1; i++) {
+            if (i < right) P[i] = Math.min(right - i, P[2 * center - i]);
+
+            while (T[i - P[i] - 1] == T[i + P[i] + 1]) {
+                P[i]++;
+            }
+            // 当前字符为中心的回文串数目为当前最大长度加一除以2
+            count += (1 + P[i]) / 2;
+            
+            if (i + P[i] > right) {
                 center = i;
-                right = i + Z[i];
+                right = i + P[i];
             }
         }
-        int ans = 0;
-        for (int v: Z) ans += (v + 1) / 2;
-        return ans;
+        return count;
     }
 }
 ```
 
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(N)$。
+
+执行用时：2ms，在所有java提交中击败了96.79%的用户。
+
+内存消耗：37.8MB，在所有java提交中击败了5.55%的用户。

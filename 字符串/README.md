@@ -10,11 +10,12 @@
 
 <img src="../images/字符串1.jpg" style="zoom:50%;" />
 
-* 中等[#5 Longest Palindromic Substring](./#5 Longest Palindromic Substring.md)    回文的中心字符扩展匹配
+* $\bigstar$中等[#5 Longest Palindromic Substring](./#5 Longest Palindromic Substring.md)    回文的中心字符扩展匹配（最优曼彻斯特）
 * 简单[#14 Longest Common Prefix](./#14 Longest Common Prefix.md)    字符串遍历匹配
 * 简单[#58 Length of Last Word](./#58 Length of Last Word.md)    倒序遍历返回最后一个单词长度
 * 简单[#392 Is Subsequence](./#392 Is Subsequence.md)    字符串遍历匹配
 * 繁杂[#408 Valid Word Abbreviation](./#408 Valid Word Abbreviation.md)    变形的字符串遍历匹配，[#320 Generalized Abbreviation](../算法设计基础/#320 Generalized Abbreviation.md)与[#411 Minimum Unique Word Abbreviation](../算法设计基础/#411 Minimum Unique Word Abbreviation.md)的相关主题
+* 中等[#647 Palindromic Substrings](./#647 Palindromic Substrings.md)    曼彻斯特算法
 * 繁杂[#722 Remove Comments](./#722 Remove Comments.md)    细节繁多，需理清
 
 ### RK（Rabin-Karp）算法

@@ -97,4 +97,62 @@ class Solution {
 
 ## 官方解题
 
-&emsp;官方还提供了动态规划的思路。
+&emsp;官方还提供了曼彻斯特算法。
+
+```java
+class Solution {
+    public String longestPalindrome(String s) {
+        // 初始化数组，将偶数回文长度转化为奇数长度，一般化
+        char[] T = new char[2 * s.length() + 3];
+        int idx = 0;
+        // 起始标志
+        T[idx++] = '^';
+        T[idx++] = '#';
+        for (char c : s.toCharArray()) {
+            T[idx++] = c;
+            T[idx++] = '#';
+        }
+        // 结尾标志
+        T[idx++] = '$';
+
+        // 记录最长回文串中心
+        int maxCenter = 0;
+        // 记录每个字符为中心的最长回文字符串长度
+        int[] P = new int[T.length];
+        // 中心和该中心最长回文串右侧边界
+        int center = 0, right = 0;
+        for (int i = 1; i < T.length - 1; i++) {
+            // i在当前最长回文串内部，i关于center的对称点为2*center-1，记为j
+            // 如果i在左侧，此时j处没更新到，故值为0；如果i在右侧，此时j已更新，
+            // i处的值为j处的值，注意i扩展不能超过right边界，j处可能中心扩展后长度超出i可扩展到right的长度，
+            // 如果超出right，则right-i个长度是i至少可覆盖的回文串长度，故选择这两个中的最小值。
+            if (i < right) P[i] = Math.min(right - i, P[2 * center - i]);
+
+            // 对应三种情况，1、i不在right范围；2、上面i扩展到边界right，则此处继续扩展；
+            // 3、i对应的位置j受左侧边界限制，如j是第一个字符，则j回文长度只能是1，而i显然可以继续扩展
+            // 初次之外的情况即i在右侧，测扩展未超过right，此处不走
+            while (T[i - P[i] - 1] == T[i + P[i] + 1]) {
+                P[i]++;
+            }
+            // 更新最大回文串中心点
+            if (P[maxCenter] < P[i]) maxCenter = i;
+
+            // 当前i扩展超过right，更新中心点及边界
+            if (i + P[i] > right) {
+                center = i;
+                right = i + P[i];
+            }
+        }
+        // 最大回文串的起始位置，原始回文串起始索引为中心下标减去回文长度，除以2
+        int start = (maxCenter - P[maxCenter]) / 2;
+        // 截取
+        return s.substring(start, start + P[maxCenter]);
+    }
+}
+```
+
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(N)$。
+
+执行用时：4ms，在所有java提交中击败了97.06%的用户。
+
+内存消耗：39.9MB，在所有java提交中击败了15.18%的用户。
