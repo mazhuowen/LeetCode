@@ -8,6 +8,7 @@
 * $\clubs中等$[#209 Minimum Size Subarray Sum](./#209 Minimum Size Subarray Sum.md)    队列双指针思想，可用二分法实现
 * 简单[#225 Implement Stack using Queues](./#225 Implement Stack using Queues.md)    队列原理
 * $\bigstar$困难[#239 Sliding Window Maximum](./#239 Sliding Window Maximum.md)    单调递减双向队列
+* $\clubs$困难[#340 Longest Substring with At Most K Distinct Characters](./#340 Longest Substring with At Most K Distinct Characters.md)    [#3 Longest Substring Without Repeating Characters](./#3 Longest Substring Without Repeating Characters.md)和[#159 Longest Substring with At Most Two Distinct Characters](../散列表/#159 Longest Substring with At Most Two Distinct Characters.md)的进阶
 * 简单[#346 Moving Average from Data Stream](./#346 Moving Average from Data Stream.md)    循环队列
 * $\clubs$中等[#353 Design Snake Game](./#353 Design Snake Game.md)    队列模拟贪吃蛇的移动进食
 * 简单[#362 Design Hit Counter](./#362 Design Hit Counter.md)    队列用于计时

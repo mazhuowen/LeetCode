@@ -57,6 +57,7 @@
 * $\bigstar$中等[#376 Wiggle Subsequence](./#376 Wiggle Subsequence.md)    巧妙地规律总结
 * $\clubs$困难[#403 Frog Jump](./#403 Frog Jump.md)    非数组动态规划
 * $\clubs$困难[#471 Encode String with Shortest Length](./#471 Encode String with Shortest Length.md)    字符串最短编码
+* 中等[#516 Longest Palindromic Subsequence](./#516 Longest Palindromic Subsequence.md)    回文子序列
 * $\bigstar$困难[#552 Student Attendance Record II](./#552 Student Attendance Record II.md)    发现递归规律使用动态规划实现（最优算法为状态机）
 * 中等[#562 Longest Line of Consecutive One in Matrix](./#562 Longest Line of Consecutive One in Matrix.md)    记录之前位置的连续序列信息
 * $\clubs$困难[#629 K Inverse Pairs Array](./#629 K Inverse Pairs Array.md)    转移方程的归纳总结
@@ -88,6 +89,7 @@
 * 中等[#77 Combinations](./#77 Combinations.md)    组合的回溯
 * $\clubs$中等[#78 Subsets](./#78 Subsets.md)    回溯查找所有子集和
 * 中等[#79 Word Search](./#79 Word Search.md)    字符串回溯比较
+* 中等[#89 Gray Code](./#89 Gray Code.md)    回溯尝试
 * 中等[#93 Restore IP Addresses](./#93 Restore IP Addresses.md)    条件判断减少回溯次数
 * $\clubs$繁杂[#282 Expression Add Operators](./#282 Expression Add Operators.md)    回溯插入操作符使得结果与目标值一致
 * $\clubs$中等[#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)    字符串回溯

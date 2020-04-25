@@ -47,6 +47,7 @@
 * 中等[#380 Insert Delete GetRandom O(1)](./#380 Insert Delete GetRandom O(1).md)    采用哈希表保存数组索引
 * 简单[#387 First Unique Character in a String](./#387 First Unique Character in a String.md)    哈希表字符计数
 * $\clubs$中等[#442 Find All Duplicates in an Array](./#442 Find All Duplicates in an Array.md)    数组下标作为键值
+* 中等[#448 Find All Numbers Disappeared in an Array](./#448 Find All Numbers Disappeared in an Array.md)    [#442 Find All Duplicates in an Array](./#442 Find All Duplicates in an Array.md)的延续
 * 中等[#454 4Sum II](./#454 4Sum II.md)    哈希表记录和和计数
 * $\clubs$困难[#527 Word Abbreviation](./#527 Word Abbreviation.md)    利用字典保存缩写，解决碰撞
 * $\bigstar$中等[#548 Split Array with Equal Sum](./#548 Split Array with Equal Sum.md)    集合巧妙化简循环

@@ -54,6 +54,7 @@
 * 简单[#543 Diameter of Binary Tree](./#543 Diameter of Binary Tree.md)    计算路径和
 * $\clubs$中等[#545 Boundary of Binary Tree](./#545 Boundary of Binary Tree.md)    前序遍历的变形结合后序遍历实现边界遍历
 * $\clubs$中等[#549 Binary Tree Longest Consecutive Sequence II](./#549 Binary Tree Longest Consecutive Sequence II.md)    树的路径序列
+* 简单[#572 Subtree of Another Tree.md](./#572 Subtree of Another Tree.md)    二叉树遍历判断子结构
 * 中等[#623 Add One Row to Tree](./#623 Add One Row to Tree.md)    树的遍历
 * $\clubs$中等[#652 Find Duplicate Subtrees](./#652 Find Duplicate Subtrees.md)    前序遍历字典记录子树
 * 中等[#662 Maximum Width of Binary Tree](./#662 Maximum Width of Binary Tree.md)    树的数组索引与层次遍历的结合

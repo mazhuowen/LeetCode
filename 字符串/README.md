@@ -255,4 +255,5 @@ class TrieNode {
 * 简单[#344 Reverse String](./#344 Reverse String.md)    交换字符位置
 * 中等[#443 String Compression](./#443 String Compression.md)    压缩字符串
 * $\clubs$技巧[#466 Count The Repetitions](./#466 Count The Repetitions.md)    循环节规律，周期化字符串
+* 繁杂[#468 Validate IP Address](./#468 Validate IP Address.md)    繁琐规律验证
 * 中等[#557 Reverse Words in a String III](./#557 Reverse Words in a String III.md)    翻转句子中的单词

@@ -76,7 +76,8 @@ for (int i = 0; i < N; i++) {
 
 ## 图的搜索在其它领域的应用
 
-* $\clubs$中等[#127 Word Ladder](./#127 Word Ladder.md)    最短的词语接龙
+* $\clubs$困难[#126 Word Ladder II](./#126 Word Ladder II.md)    [#127 Word Ladder](./#127 Word Ladder.md)的进阶
+* $\bigstar$中等[#127 Word Ladder](./#127 Word Ladder.md)    最短的词语接龙
 * 中等[#695 Max Area of Island](./#695 Max Area of Island.md)    矩形的深度优先搜索
 * 简单[#1030 Matrix Cells in Distance Order](./#1030 Matrix Cells in Distance Order.md)    图的广度优先搜索思想在矩形中的应用
 * 简单[#1306 Jump Game III](./#1306 Jump Game III.md)    图的遍历在数组的应用

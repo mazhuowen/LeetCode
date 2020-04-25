@@ -8,6 +8,7 @@
 ## 逻辑
 
 * $\clubs$中等[#277 Find the Celebrity](./#277 Find the Celebrity.md)    查找名人
+* 中等[#794 Valid Tic-Tac-Toe State](./#794 Valid Tic-Tac-Toe State.md)    井字棋是否有效验证
 
 ## 技巧
 
