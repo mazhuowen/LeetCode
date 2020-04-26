@@ -62,6 +62,7 @@
 * 中等[#562 Longest Line of Consecutive One in Matrix](./#562 Longest Line of Consecutive One in Matrix.md)    记录之前位置的连续序列信息
 * $\clubs$困难[#629 K Inverse Pairs Array](./#629 K Inverse Pairs Array.md)    转移方程的归纳总结
 * 中等[#714 Best Time to Buy and Sell Stock with Transaction Fee](./#714 Best Time to Buy and Sell Stock with Transaction Fee.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)扣除手续费
+* $\clubs$困难[#730 Count Different Palindromic Subsequences](./#730 Count Different Palindromic Subsequences.md)    不重复的回文子序列
 * $\bigstar$困难[#887 Super Egg Drop](./#887 Super Egg Drop.md)    动态规划经典问题双蛋问题
 * $\bigstar$困难[#903 Valid Permutations for DI Sequence](./#903 Valid Permutations for DI Sequence.md)    繁杂的动态规划抽象
 * $\clubs$中等[#1039 Minimum Score Triangulation of Polygon](./#1039 Minimum Score Triangulation of Polygon.md)    几何规律
