@@ -248,6 +248,7 @@ class TrieNode {
 * 中等[#8 String to Integer (atoi)](./#8 String to Integer (atoi).md)    字符串数字转整数
 * 简单[#38 Count and Say](./#38 Count and Say.md)    字符串递归计数
 * 简单[#67 Add Binary](./#67 Add Binary.md)    字符串遍历求和
+* 困难[#68 Text Justification](./#68 Text Justification.md)    文本左右对齐
 * 简单[#125 Valid Palindrome](./#125 Valid Palindrome.md)    双指针遍历比较字符串
 * 中等[#151 Reverse Words in a String](./#151 Reverse Words in a String.md)    翻转并格式化单词
 * 中等[#165 Compare Version Numbers](./#165 Compare Version Numbers.md)    划分版本号区间，根据区间数字比较

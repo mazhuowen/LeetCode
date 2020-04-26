@@ -1,5 +1,52 @@
 [toc]
 
+Design and implement a data structure for `Least Frequently Used (LFU)` cache. It should support the following operations: `get` and `put`.
+
+* `get(key)` - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
+* `put(key, value)` - Set or insert the value if the key is not already present. When the cache reaches its capacity, it should invalidate the least frequently used item before inserting a new item. For the purpose of this problem, when there is a tie (i.e., two or more keys that have the same frequency), the least **recently** used key would be evicted.
+
+Note that the number of times an item is used is the number of calls to the `get` and `put` functions for that item since it was inserted. This number is set to zero when the item is removed.
+
+ 
+
+Follow up:
+Could you do both operations in $O(1)$ time complexity?
+
+
+
+## 题目解读
+
+&emsp;设计最近最少使用策略，时间复杂度为常量级。
+
+```java
+class LFUCache {
+
+    public LFUCache(int capacity) {
+
+    }
+    
+    public int get(int key) {
+
+    }
+    
+    public void put(int key, int value) {
+
+    }
+}
+
+/**
+ * Your LFUCache object will be instantiated and called as such:
+ * LFUCache obj = new LFUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
+ */
+```
+
+## 程序设计
+
+* 使用哈希表保存使用计数和相应的链表，最久未使用的在链表尾，每次使用（`get`或`put`）将结点移动到新的计数链表的首部。使用另一个哈希表保存键值和链表结点的对应关系，由于是单链表，保存前驱。
+* 还需要记录最少的计数，如果当前最少计数链表被删除（由于`get`或`put`旧值原因计数更新），则最少计数加一；如果是`put`新值则最小计数为1。
+
 ```java
 class LFUCache {
     int capacity;
@@ -117,3 +164,15 @@ class Pair {
     }
 }
 ```
+
+## 性能分析
+
+&emsp;时间复杂度为$O(1)$，空间复杂度为$O(N)$。
+
+执行用时：25ms，在所有java提交中击败了73.77%的用户。
+
+内存消耗：47.7MB，在所有java提交中击败了100.00%的用户。
+
+## 官方解题
+
+&emsp;上述参考官方思路。社区使用双向链表，结构和代码复杂度均下降。

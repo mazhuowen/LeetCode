@@ -15,6 +15,7 @@
 * 中等[#16 3Sum Closest](./#16 3Sum Closest.md)    [#15 3Sum](./#15 3Sum.md)的变体
 * $\bigstar$中等[#18 4Sum](./#18 4Sum.md)    [#15 3Sum](./#15 3Sum.md)的延续
 * 简单[#121 Best Time to Buy and Sell Stock](./#121 Best Time to Buy and Sell Stock.md)    遍历记录区间最大值最小值
+* $\bigstar$中等[#457 Circular Array Loop](./#457 Circular Array Loop.md)    快慢指针检测环
 
 ### 数组交换
 

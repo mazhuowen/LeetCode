@@ -34,5 +34,7 @@
 * $\clubs$中等[#240 Search a 2D Matrix II](./#240 Search a 2D Matrix II.md)    有序二维矩阵的遍历查找
 * 简单[#268 Missing Number](./#268 Missing Number.md)    异或的性质
 * 简单[#292 Nim Game](./#292 Nim Game.md)    `Nim`游戏
+* 简单[#371 Sum of Two Integers](./#371 Sum of Two Integers.md)    异常或及与操作实现加法
 * 简单[#412 Fizz Buzz](./#412 Fizz Buzz.md)    填充数字
+* 简单[#509 Fibonacci Number](./#509 Fibonacci Number.md)    斐波那契数列
 * 简单[#836 Rectangle Overlap](./#836 Rectangle Overlap.md)    [#223 Rectangle Area](./#223 Rectangle Area.md)的简化问题
