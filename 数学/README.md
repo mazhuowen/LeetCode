@@ -28,6 +28,7 @@
 * 简单[#118 Pascal's Triangle](./#118 Pascal's Triangle.md)    杨辉三角生成
 * $\clubs$简单[#168 Excel Sheet Column Title](./#168 Excel Sheet Column Title.md)    10进制转26进制
 * 简单[#171 Excel Sheet Column Number](./#171 Excel Sheet Column Number.md)    26进制字符转换
+* $\clubs$简单[#172 Factorial Trailing Zeroes](./#172 Factorial Trailing Zeroes.md)    阶乘末尾0的数目与5的周期的关联
 * 简单[#191 Number of 1 Bits](./#191 Number of 1 Bits.md)    移位操作
 * $\bigstar$简单[#202 Happy Number](./#202 Happy Number.md)    泛链表结构的数学应用
 * 简单[#223 Rectangle Area](./#223 Rectangle Area.md)    矩形相交条件

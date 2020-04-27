@@ -1,5 +1,29 @@
 [toc]
 
+Given a string `s` and a **non-empty** string `p`, find all the start indices of `p`'s anagrams in `s`.
+
+Strings consists of lowercase English letters only and the length of both strings `s` and `p` will not be larger than `20100`.
+
+The order of output does not matter.
+
+
+
+## 题目解读
+
+&emsp;寻找异位词在字符串中的索引。
+
+```java
+class Solution {
+    public List<Integer> findAnagrams(String s, String p) {
+
+    }
+}
+```
+
+## 程序设计
+
+* 队列计数，进队出队。
+
 ```java
 class Solution {
     public List<Integer> findAnagrams(String s, String p) {
@@ -44,3 +68,15 @@ class Solution {
     }
 }
 ```
+
+## 性能分析
+
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(N)$。
+
+执行用时：5ms，在所有java提交中击败了96.96%的用户。
+
+内存消耗：40.8MB，在所有java提交中击败了5.88%的用户。
+
+## 官方解题
+
+&emsp;暂无，密切关注。

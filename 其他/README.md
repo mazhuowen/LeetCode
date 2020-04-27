@@ -18,6 +18,7 @@
 * $\bigstar$中等[#152 Maximum Product Subarray](./#152 Maximum Product Subarray.md)    正向反向遍历计算最大值
 * $\clubs$中等[#238 Product of Array Except Self](./#238 Product of Array Except Self.md)    前缀积
 * 中等[#289 Game of Life](./#289 Game of Life.md)   新增状态巧妙利用空间
+* $\clubs$中等[#304 Range Sum Query 2D - Immutable](./#304 Range Sum Query 2D - Immutable.md)    前缀和思想在二维数组的应用
 
 ## 其它算法问题
 
