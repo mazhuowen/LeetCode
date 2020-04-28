@@ -1,5 +1,32 @@
 [toc]
 
+Given two strings `s1` and `s2`, write a function to return true if `s2` contains the permutation of `s1`. In other words, one of the first string's permutations is the **substring** of the second string.
+
+
+
+Note:
+
+* The input strings only contain lower case letters.
+* The length of both given strings is in range `[1, 10,000]`.
+
+
+
+## 题目解读
+
+&emsp;判断字符串异位结构是否在另一个字符串中出现。
+
+```java
+class Solution {
+    public boolean checkInclusion(String s1, String s2) {
+
+    }
+}
+```
+
+## 程序设计
+
+* [#438 Find All Anagrams in a String](./#438 Find All Anagrams in a String.md)的简化。
+
 ```java
 class Solution {
     public boolean checkInclusion(String s1, String s2) {
@@ -35,3 +62,15 @@ class Solution {
     }
 }
 ```
+
+## 性能分析
+
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(1)$。
+
+执行用时：3ms，在所有java提交中击败了100.00%的用户。
+
+内存消耗：39.5MB，在所有java提交中击败了18.75%的用户。
+
+## 官方解题
+
+&emsp;同上。

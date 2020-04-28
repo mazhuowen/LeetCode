@@ -50,6 +50,7 @@
 * 中等[#448 Find All Numbers Disappeared in an Array](./#448 Find All Numbers Disappeared in an Array.md)    [#442 Find All Duplicates in an Array](./#442 Find All Duplicates in an Array.md)的延续
 * 中等[#454 4Sum II](./#454 4Sum II.md)    哈希表记录和和计数
 * $\clubs$繁杂[#460 LFU Cache](./#460 LFU Cache.md)    最近最少使用策略实现
+* $\clubs$技巧[#523 Continuous Subarray Sum](./#523 Continuous Subarray Sum.md)    利用哈希表存储取余后的值
 * $\clubs$困难[#527 Word Abbreviation](./#527 Word Abbreviation.md)    利用字典保存缩写，解决碰撞
 * $\bigstar$中等[#548 Split Array with Equal Sum](./#548 Split Array with Equal Sum.md)    集合巧妙化简循环
 * 中等[#560 Subarray Sum Equals K](./#560 Subarray Sum Equals K.md)    使用哈希表记录前缀和

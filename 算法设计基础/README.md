@@ -51,6 +51,7 @@
 * $\bigstar$困难[#174 Dungeon Game](./#174 Dungeon Game.md)    [#64 Minimum Path Sum](./#64 Minimum Path Sum.md)的延伸，遍历方向很重要
 * 困难[#188 Best Time to Buy and Sell Stock IV](./#188 Best Time to Buy and Sell Stock IV.md)    [#122 Best Time to Buy and Sell Stock II.md](./#122 Best Time to Buy and Sell Stock II.md)和[#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)的结合
 * $\clubs$简单[#198 House Robber](./#198 House Robber.md)    巧妙的动态规划简化
+* 中等[#221 Maximal Square](./#221 Maximal Square.md)    最大正方形
 * 中等[#309 Best Time to Buy and Sell Stock with Cooldown](./#309 Best Time to Buy and Sell Stock with Cooldown.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)无限制交易且存在冷冻期
 * $\bigstar$困难[#312 Burst Balloons](./#312 Burst Balloons.md)    逆向思维动态规划
 * 中等[#322 Coin Change](./#322 Coin Change.md)    经典动态规划问题
@@ -97,6 +98,7 @@
 * $\clubs$中等[#351 Android Unlock Patterns](./#351 Android Unlock Patterns.md)    矩形回溯遍历的变形
 * 繁杂[#411 Minimum Unique Word Abbreviation](./#411 Minimum Unique Word Abbreviation.md)    [#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)  和[#408 Valid Word Abbreviation](../字符串/#408 Valid Word Abbreviation.md)的结合
 * $\bigstar$困难[#546 Remove Boxes](./#546 Remove Boxes.md)    存储计算结果的回溯
+* $\clubs$中等[#698 Partition to K Equal Sum Subsets](./#698 Partition to K Equal Sum Subsets.md)    巧妙剪枝提升时间性能
 * 繁杂[#1088 Confusing Number II](./#1088 Confusing Number II.md)    需注意边界及数值溢出的处理
 * $\clubs$中等[#1239 Maximum Length of a Concatenated String with Unique Characters](./#1239 Maximum Length of a Concatenated String with Unique Characters.md)    字符串顺序无关的回溯
 * $\clubs$困难[#1240 Tiling a Rectangle with the Fewest Squares](./#1240 Tiling a Rectangle with the Fewest Squares.md)    暴力回溯填充矩形

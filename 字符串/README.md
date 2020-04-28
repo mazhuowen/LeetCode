@@ -260,3 +260,4 @@ class TrieNode {
 * $\clubs$技巧[#466 Count The Repetitions](./#466 Count The Repetitions.md)    循环节规律，周期化字符串
 * 繁杂[#468 Validate IP Address](./#468 Validate IP Address.md)    繁琐规律验证
 * 中等[#557 Reverse Words in a String III](./#557 Reverse Words in a String III.md)    翻转句子中的单词
+* 中等[#567 Permutation in String](./#567 Permutation in String.md)    [#438 Find All Anagrams in a String](./#438 Find All Anagrams in a String.md)的简化
