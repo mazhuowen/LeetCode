@@ -27,15 +27,41 @@ class Solution {
 
 ## 程序设计
 
-* 凑成总额的硬币组合不能有重复，如果按照常规以总额开始遍历，则不可避免的引入重复硬币组合；参考官方思路，采用币值遍历更新，避免重复。
+* 粗略分析似乎是完全背包问题的变形，每种币值可以有无限件，需要填满总额。现在问题变为这样得到的组合是否不是重复的；由于题目保证给定的币值不重复，这样`dp(i,j)`表示前$i$个币值可组成的总额$j$的组合数目，对于前$i + 1$个币值，选择加入或不加入，如果加入，由于币值不同，不会造成重复。
+* 首先问题为正好填满，故初始化需要将`dp(i,0)`初始化为与`dp(i,j)`不同的值；此处求解组合数，初始化为1，其他为0；其次是完全背包问题，由于求解的是组合数而非最少或最多零钱，故状态转移方程需要叠加而不是取最大最小。
+
+```java
+class Solution {
+    public int change(int amount, int[] coins) {
+        // 动态规划数组，表示前i个物品可恰好构成j的总额的组合数
+        int[][] dp = new int[coins.length + 1][amount + 1];
+        // 问题为正好填满，只初始化金额为0的组合数为1，其他为0
+        for (int i = 0; i <= coins.length; i++) dp[i][0] = 1;
+
+        for (int i = 1; i <= coins.length; i++) {
+            for (int j = amount; j >= 0; j--) {
+                dp[i][j] = dp[i - 1][j];
+                for (int k = 1; k * coins[i - 1] <= j; k++) {
+                    // 采用叠加
+                    dp[i][j] += dp[i - 1][j - k * coins[i - 1]];
+                }
+            }
+        }
+
+        return dp[coins.length][amount];
+    }
+}
+```
+
+* 优化动态规划数组为一维，得到如下形式：
 
 ```java
 class Solution {
     public int change(int amount, int[] coins) {
         int[] dp = new int[amount + 1];
         dp[0] = 1;
-        // 从币值开始遍历，避免造成重复，这样对于dp[i]当前的组合dp[i - coin]中没有coin，不会出现重复
         for (int coin : coins) {
+            // 顺序遍历，模拟k的叠加过程
             for (int i = coin; i <= amount; i++) {
                 dp[i] += dp[i - coin];
             }
@@ -56,4 +82,4 @@ class Solution {
 
 ## 官方解题
 
-&emsp;见上。
+&emsp;同上。

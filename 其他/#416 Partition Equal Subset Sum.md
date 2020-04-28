@@ -59,6 +59,8 @@ class Solution {
 }
 ```
 
+> 01背包问题敲好填充满背包的问题变形，初始化时只有`dp(i,0)`为`true`表示可以填满。
+
 * 优化空间得：
 
 ```java
@@ -114,13 +116,10 @@ class Solution {
         dp[0] = true;
 
         for (int i = 1; i <= n; i++) {
-            for (int j = sum; j >= 0; j--) {
-                // 背包剩余容量不足，则最大值等于前i-1个数字构成的最大值
-                // if (nums[i - 1] > j) dp[j] = dp[j]，不变，故略去
-                if (nums[i - 1] <= j) {
-                    // 不加入第j个和加入第j个，取或
-                    dp[j] = dp[j] || dp[j - nums[i - 1]];
-                }
+            // if (nums[i - 1] > j) dp[j] = dp[j]，不变，故略去，加入到循环条件
+            for (int j = sum; j >= nums[i - 1]; j--) {
+                // 不加入第j个和加入第j个，取或
+                dp[j] = dp[j] || dp[j - nums[i - 1]];
             }
         }
         return dp[sum];
@@ -170,8 +169,7 @@ class Solution {
 
         for (int i = 1; i <= n; i++) {
             for (int j = sum; j >= 0; j--) {
-                // 只要前i个可以组成sum值，返回
-                if (dp[sum]) return true;
+                
                 // 背包剩余容量不足，则最大值等于前i-1个数字构成的最大值
                 // if (nums[i - 1] > j) dp[j] = dp[j]，不变，故略去
                 if (nums[i - 1] <= j) {
@@ -183,8 +181,36 @@ class Solution {
         return false;
     }
 }
+
+class Solution {
+    public boolean canPartition(int[] nums) {
+        int sum = 0, n = nums.length;
+        for (int num : nums) sum += num;
+        
+        // 总的和为奇数，不能划分为两个相等的和的子集
+        if (sum % 2 != 0) return false;
+
+        // 转化为前n个数字是否可填满sum容量的包的问题
+        sum /= 2;
+        // 表示前i个数字可构成容量为j的包
+        boolean[] dp = new boolean[sum + 1];
+        // 第一行，也就是背包容量为0初始化为true
+        dp[0] = true;
+
+        for (int i = 1; i <= n; i++) {
+            // if (nums[i - 1] > j) dp[j] = dp[j]，不变，故略去，加入到循环条件
+            for (int j = sum; j >= nums[i - 1]; j--) {
+                // 只要前i个可以组成sum值，返回
+                if (dp[sum]) return true;
+                // 不加入第j个和加入第j个，取或
+                dp[j] = dp[j] || dp[j - nums[i - 1]];
+            }
+        }
+        return dp[sum];
+    }
+}
 ```
 
-执行用时：16ms，在所有java提交中击败了71.28%的用户。
+执行用时：15ms，在所有java提交中击败了73.16%的用户。
 
 内存消耗：39.5MB，在所有java提交中击败了5.88%的用户。

@@ -39,5 +39,50 @@
 
 &emsp;01背包问题为假设有$N$件物品和一个容量为$V$的背包。第$i$件物品的费用为$w_i$，价值为$v_i$，求装入背包使得总价值最大，其中每个物品只能使用1次。基本思想为`dp(i,j)`表示前$i$个物品放入$j$容量大小的背包的最大价值，则$dp(i,j) = max(dp(i-1,j), dp(i-1,j-w_i) + v_i)$，即当前最大值为不放入第$i$个物品和放入第$i$个物品后较大值。
 
+```java
+int[][] dp = new int[n + 1][c + 1];
+// 若问题为恰好填满背包，则需要初始化dp(i,0)为0，表示前i个物品恰好填满背包，其他设定为负无穷大，表示暂时填不满
+// ，更新只能在填满背包的基础上更新（负无穷大加有限的正数还是负数），这样最后得到的是敲好填满背包个的最大收益；
+// 若问题是填入背包的最大收益，则全部初始为0，表示初始状态各个背包收益为0，可加入背包，更新可以在所有背包更新。
+for (int i = 0; i <= n; i++) {
+    Arrays.fill(dp[i], Integer.MIN_VALUE);
+    dp[i][0] = 0;
+}
+
+for (int i = 1; i <= n && i <= w.length; i++) {
+    for (int j = c; j >= 0; j--) {
+        if (j < w[i - 1]) dp[i][j] = dp[i - 1][j];
+        else dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - w[i - 1]] + v[i - 1]);
+    }
+}
+```
+
+&emsp;当每件物品都有无限件时，就演变为完全背包问题。$dp(i,j) = max(dp(i-1,j-k*w_i) + k*v_i)$，其中$0 \le k*w_i \le j$。
+
+```java
+for (int i = 1; i <= n && i <= w.length; i++) {
+    for (int j = c; j >= 0; j--) {
+        dp[i][j] = dp[i - 1][j];
+        for (int k = 1; k * w[i - 1] <= j; k++) {
+            dp[i][j] = Math.max(dp[i][j], dp[i - 1][j - k * w[i - 1]] + k * v[i - 1]);
+        }
+    }
+}
+```
+
+可优化为一维数组，二层循环遍历方向为顺序，采取叠加的形式代替上面的第三个循环。
+
+```java
+for (int i = 1; i <= n && i <= w.length; i++) {
+    for (int j = w[i - 1]; j <= c; j++) {
+        dp[j] = Math.max(dp[j], dp[j - w[i - 1]] + v[i - 1]);
+    }
+}
+```
+
+&emsp;如果指定每个物品的使用次数为$M_i$，则转变为多重背包问题，转移方程不变：$dp(i,j) = max(dp(i-1,j-k*w_i) + k*v_i)$，只是条件为$0 \le k \le M_i$，基本形式修改第三层循环条件即可。
+
+> 上述三种模式混合，则可在内部循环判断使用哪种转移方程。
+
 * $\clubs$中等[#416 Partition Equal Subset Sum](./#416 Partition Equal Subset Sum.md)    01背包问题变形
-* todo 518
+* $\clubs$中等[#518 Coin Change 2](./#518 Coin Change 2.md)    完全背包问题变形
