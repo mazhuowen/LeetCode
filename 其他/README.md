@@ -20,6 +20,10 @@
 * 中等[#289 Game of Life](./#289 Game of Life.md)   新增状态巧妙利用空间
 * $\clubs$中等[#304 Range Sum Query 2D - Immutable](./#304 Range Sum Query 2D - Immutable.md)    前缀和思想在二维数组的应用
 
+## 数据库
+
+* 简单[#176 Second Highest Salary](./#176 Second Highest Salary.md)    LIMIT和OFFSET的组合
+
 ## 其它算法问题
 
 ### 一次线性扫描
