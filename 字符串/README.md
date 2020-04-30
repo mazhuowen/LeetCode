@@ -239,7 +239,124 @@ class TrieNode {
 * $\clubs$中等[#421 Maximum XOR of Two Numbers in an Array](./#421 Maximum XOR of Two Numbers in an Array.md)    借鉴字典树前缀匹配寻找最大异或值
 * $\bigstar$繁杂[#642 Design Search Autocomplete System](./#642 Design Search Autocomplete System.md)    将句子看做单词转化为字典树前缀匹配
 
-### AC自动机
+### AC自动机（Aho-Corasick）
+
+&emsp;AC自动机的构建，包含两个操作：将多个模式串构建成Trie树；在Trie树上构建失败指针（相当于KMP中的失效函数next数组）。譬如紫色结点的失败指针指向其它模式串的最长可匹配前缀字符串的最后一个字符。失败指针的构建过程，是一个按层遍历树的过程。
+
+<img src="../images/AC.jpg" style="zoom: 50%;" />
+
+&emsp;同KMP算法，假设节点`p`的失败指针指向节点`q`，如果`p`的子节点`pc`对应的字符与`q`的一个子节点`qc`相等，则将节点`pc`的失败指针指向节点`qc`。
+
+<img src="../images/AC1.jpg" style="zoom:50%;" />
+
+如果节点`q`中没有子节点的字符等于节点`pc`包含的字符，则在`q`的失败指针结点中继续查找，直到`q`是`root`为止，如果还没有找到相同字符的子节点，就让节点`pc`的失败指针指向`root`。这个过程类似KMP的next数组过程，只是在树中是按层构建。
+
+<img src="../images/AC2.jpg" style="zoom:50%;" />
+
+<img src="../images/AC3.jpg" style="zoom:50%;" />
+
+&emsp;主串匹配，若当前匹配不到主串字符，则通过失败指针遍历查找，直到匹配到；匹配到后需要遍历失败指针判断结尾字符，将匹配到的词语放入链表。
+
+```java
+class AC {
+    ACNode root;
+
+    // 构建AC树
+    AC(String[] patterns) {
+        this.root = new ACNode(' ');
+        for (String pattern : patterns) {
+            ACNode temp = root;
+            for (char c : pattern.toCharArray()) {
+                if (temp.children[c - 'a'] == null) temp.children[c - 'a'] = new ACNode(c);
+
+                temp = temp.children[c - 'a'];
+            }
+            temp.isEnding = true;
+            temp.length = pattern.length();
+        }
+        // 构建失败指针
+        buildFailPointer();
+    }
+
+    private void buildFailPointer() {
+        Queue<ACNode> queue = new LinkedList<>();
+        queue.add(root);
+
+        while (!queue.isEmpty()) {
+            ACNode p = queue.poll();
+            for (int i = 0; i < 26; i++) {
+                ACNode pc = p.children[i];
+                if (pc == null) continue;
+
+                // 首字符没有最长前缀匹配串，统一指向根节点
+                if (p == this.root) pc.fail = root;
+                // 匹配最长前缀
+                else {
+                    ACNode q = p.fail;
+                    // 遍历找到qc
+                    while (q != null && q.children[pc.c - 'a'] == null) {
+                        q = q.fail;
+                    }
+                    // 未找到
+                    if (q == null) pc.fail = root;
+                    // 找到，则设置pc的失败指针为qc
+                    else pc.fail = q.children[pc.c - 'a'];
+                }
+                // 加入队列，处理下一层结点
+                queue.add(pc);
+            }
+        }
+    }
+
+    public List<String> match(String source) {
+        List<String> res = new LinkedList<>();
+        char[] str = source.toCharArray();
+        int n = str.length;
+
+        ACNode p = root;
+        for (int i = 0; i < n; i++) {
+            int idx = str[i] - 'a';
+            // 当前模式串子字符不匹配主串，则通过失败指针寻找最长匹配前缀继续比较
+            while (p.children[idx] == null && p != root) {
+                p = p.fail;
+            }
+            // 迭代
+            p = p.children[idx];
+            // 未找到匹配当前字符的模式串，则重新定位到根结点，下一轮继续比较
+            if (p == null) p = root;
+            // 通过失败指针遍历所有字符串，将结尾的字符串（即匹配成功）放入链表
+            ACNode temp = p;
+            while (temp != root) {
+                if (temp.isEnding) {
+                    res.add(source.substring(i - temp.length + 1, i + 1));
+                }
+                // 迭代
+                temp = temp.fail;
+            }
+        }
+        return res;
+    }
+}
+
+class ACNode {
+    // 字符
+    char c;
+    // 结尾字符标识
+    boolean isEnding = false;
+    // 字符串长度（结尾字符属性）
+    int length = -1;
+
+    ACNode[] children = new ACNode[26];
+    // 失败指针
+    ACNode fail;
+
+    ACNode(char c) {
+        this.c = c;
+    }
+}
+```
+
+&emsp;AC自动机构建的粗略时间复杂度为$O(L)$，匹配时间复杂度为$O(N)$。
 
 
 
