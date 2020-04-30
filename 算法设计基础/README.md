@@ -62,6 +62,7 @@
 * $\bigstar$困难[#552 Student Attendance Record II](./#552 Student Attendance Record II.md)    发现递归规律使用动态规划实现（最优算法为状态机）
 * 中等[#562 Longest Line of Consecutive One in Matrix](./#562 Longest Line of Consecutive One in Matrix.md)    记录之前位置的连续序列信息
 * $\clubs$困难[#629 K Inverse Pairs Array](./#629 K Inverse Pairs Array.md)    转移方程的归纳总结
+* 中等[#688 Knight Probability in Chessboard](./#688 Knight Probability in Chessboard.md)    国际象棋马在棋盘内的概率
 * 中等[#714 Best Time to Buy and Sell Stock with Transaction Fee](./#714 Best Time to Buy and Sell Stock with Transaction Fee.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)扣除手续费
 * $\clubs$困难[#730 Count Different Palindromic Subsequences](./#730 Count Different Palindromic Subsequences.md)    不重复的回文子序列
 * $\bigstar$困难[#887 Super Egg Drop](./#887 Super Egg Drop.md)    动态规划经典问题双蛋问题
@@ -97,6 +98,7 @@
 * $\clubs$中等[#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)    字符串回溯
 * $\clubs$中等[#351 Android Unlock Patterns](./#351 Android Unlock Patterns.md)    矩形回溯遍历的变形
 * 繁杂[#411 Minimum Unique Word Abbreviation](./#411 Minimum Unique Word Abbreviation.md)    [#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)  和[#408 Valid Word Abbreviation](../字符串/#408 Valid Word Abbreviation.md)的结合
+* $\clubs$中等[#490 The Maze](./#490 The Maze.md)    拐点只能访问一次
 * $\bigstar$困难[#546 Remove Boxes](./#546 Remove Boxes.md)    存储计算结果的回溯
 * $\clubs$中等[#698 Partition to K Equal Sum Subsets](./#698 Partition to K Equal Sum Subsets.md)    巧妙剪枝提升时间性能
 * 繁杂[#1088 Confusing Number II](./#1088 Confusing Number II.md)    需注意边界及数值溢出的处理
