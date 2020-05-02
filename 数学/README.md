@@ -38,4 +38,5 @@
 * 简单[#371 Sum of Two Integers](./#371 Sum of Two Integers.md)    异常或及与操作实现加法
 * 简单[#412 Fizz Buzz](./#412 Fizz Buzz.md)    填充数字
 * 简单[#509 Fibonacci Number](./#509 Fibonacci Number.md)    斐波那契数列
+* $\clubs$繁杂[#564 Find the Closest Palindrome](./#564 Find the Closest Palindrome.md)    镜像回文的下一个较大或较小回文
 * 简单[#836 Rectangle Overlap](./#836 Rectangle Overlap.md)    [#223 Rectangle Area](./#223 Rectangle Area.md)的简化问题

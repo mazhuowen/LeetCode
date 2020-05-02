@@ -100,6 +100,7 @@
 * 繁杂[#411 Minimum Unique Word Abbreviation](./#411 Minimum Unique Word Abbreviation.md)    [#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)  和[#408 Valid Word Abbreviation](../字符串/#408 Valid Word Abbreviation.md)的结合
 * $\clubs$中等[#490 The Maze](./#490 The Maze.md)    拐点只能访问一次
 * $\bigstar$困难[#546 Remove Boxes](./#546 Remove Boxes.md)    存储计算结果的回溯
+* $\clubs$困难[#679 24 Game](./#679 24 Game.md)    表达式的配列组合特征
 * $\clubs$中等[#698 Partition to K Equal Sum Subsets](./#698 Partition to K Equal Sum Subsets.md)    巧妙剪枝提升时间性能
 * 繁杂[#1088 Confusing Number II](./#1088 Confusing Number II.md)    需注意边界及数值溢出的处理
 * $\clubs$中等[#1239 Maximum Length of a Concatenated String with Unique Characters](./#1239 Maximum Length of a Concatenated String with Unique Characters.md)    字符串顺序无关的回溯
