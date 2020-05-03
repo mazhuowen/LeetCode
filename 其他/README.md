@@ -22,6 +22,7 @@
 
 ## 数据库
 
+* 简单[#175 Combine Two Tables](./#175 Combine Two Tables.md)    LEFT JOIN语句
 * 简单[#176 Second Highest Salary](./#176 Second Highest Salary.md)    LIMIT和OFFSET的组合
 
 ## 其它算法问题
@@ -29,6 +30,7 @@
 ### 一次线性扫描
 
 * 简单[#419 Battleships in a Board](./#419 Battleships in a Board.md)    一次遍历计数战列舰船首
+* 简单[#463 Island Perimeter](./#463 Island Perimeter.md)    一次遍历计算岛屿周长
 
 ### 摩尔投票
 
@@ -90,3 +92,34 @@ for (int i = 1; i <= n && i <= w.length; i++) {
 
 * $\clubs$中等[#416 Partition Equal Subset Sum](./#416 Partition Equal Subset Sum.md)    01背包问题变形
 * $\clubs$中等[#518 Coin Change 2](./#518 Coin Change 2.md)    完全背包问题变形
+
+### 位图
+
+```java
+
+public class BitMap { // Java中char类型占16bit，也即是2个字节
+  private char[] bytes;
+  private int nbits;
+  
+  public BitMap(int nbits) {
+    this.nbits = nbits;
+    this.bytes = new char[nbits/16+1];
+  }
+
+  public void set(int k) {
+    if (k > nbits) return;
+    int byteIndex = k / 16;
+    int bitIndex = k % 16;
+    bytes[byteIndex] |= (1 << bitIndex);
+  }
+
+  public boolean get(int k) {
+    if (k > nbits) return false;
+    int byteIndex = k / 16;
+    int bitIndex = k % 16;
+    return (bytes[byteIndex] & (1 << bitIndex)) != 0;
+  }
+}
+```
+
+todo 布隆过滤器

@@ -47,7 +47,7 @@
 
 &emsp;线性排序主要分桶排序、基数排序和计数排序。在一些特定问题有重要应用。
 
-* $\bigstar$中等[#75 Sort Colors](./#75 Sort Colors.md)    计数排序（非最优解）与荷兰旗问题
+* $\clubs$中等[#75 Sort Colors](./#75 Sort Colors.md)    计数排序（非最优解）与荷兰旗问题
 * $\bigstar$困难[#164 Maximum Gap](./#164 Maximum Gap.md)    基于计数排序的基数排序和桶思想
 * $\clubs$中等[#220 Contains Duplicate III](./#220 Contains Duplicate III.md)    桶排序思想的应用
 

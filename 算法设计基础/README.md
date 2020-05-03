@@ -52,6 +52,7 @@
 * 困难[#188 Best Time to Buy and Sell Stock IV](./#188 Best Time to Buy and Sell Stock IV.md)    [#122 Best Time to Buy and Sell Stock II.md](./#122 Best Time to Buy and Sell Stock II.md)和[#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)的结合
 * $\clubs$简单[#198 House Robber](./#198 House Robber.md)    巧妙的动态规划简化
 * 中等[#221 Maximal Square](./#221 Maximal Square.md)    最大正方形
+* 中等[#279 Perfect Squares](./#279 Perfect Squares.md)    动态规划（非最优）
 * 中等[#309 Best Time to Buy and Sell Stock with Cooldown](./#309 Best Time to Buy and Sell Stock with Cooldown.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)无限制交易且存在冷冻期
 * $\bigstar$困难[#312 Burst Balloons](./#312 Burst Balloons.md)    逆向思维动态规划
 * 中等[#322 Coin Change](./#322 Coin Change.md)    经典动态规划问题
