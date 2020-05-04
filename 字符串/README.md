@@ -13,6 +13,7 @@
 * $\bigstar$中等[#5 Longest Palindromic Substring](./#5 Longest Palindromic Substring.md)    回文的中心字符扩展匹配（最优曼彻斯特）
 * 简单[#14 Longest Common Prefix](./#14 Longest Common Prefix.md)    字符串遍历匹配
 * 简单[#58 Length of Last Word](./#58 Length of Last Word.md)    倒序遍历返回最后一个单词长度
+* 中等[#161 One Edit Distance](./#161 One Edit Distance.md)    遍历匹配
 * 困难[#214 Shortest Palindrome](./#214 Shortest Palindrome.md)    曼彻斯特算法应用
 * 简单[#392 Is Subsequence](./#392 Is Subsequence.md)    字符串遍历匹配
 * 繁杂[#408 Valid Word Abbreviation](./#408 Valid Word Abbreviation.md)    变形的字符串遍历匹配，[#320 Generalized Abbreviation](../算法设计基础/#320 Generalized Abbreviation.md)与[#411 Minimum Unique Word Abbreviation](../算法设计基础/#411 Minimum Unique Word Abbreviation.md)的相关主题

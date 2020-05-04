@@ -9,6 +9,7 @@
 * $\clubs$中等[#69 Sqrt(x)](./#69 Sqrt(x).md)    二分法、牛顿法求解平方根
 * $\clubs$中等[#166 Fraction to Recurring Decimal](./#166 Fraction to Recurring Decimal.md)    分数转小数形式
 * 中等[#204 Count Primes](./#204 Count Primes.md)    统计质数数目
+* 简单[#231 Power of Two](./#231 Power of Two.md)    与操作比较
 * 简单[#263 Ugly Number](./#263 Ugly Number.md)    丑数判断
 * $\bigstar$困难[#363 Max Sum of Rectangle No Larger Than K](./#363 Max Sum of Rectangle No Larger Than K.md)    二维数组压缩行或列计算矩形最大和
 * 简单[#367 Valid Perfect Square](./#367 Valid Perfect Square.md)    整数的平方根，需注意判断条件
@@ -25,6 +26,7 @@
 * 中等[#41 First Missing Positive](./#41 First Missing Positive.md)    利用数组规律及数组索引
 * $\clubs$中等[#43 Multiply Strings](./#43 Multiply Strings.md)    字符串乘法位相乘的规律
 * $\clubs$中等[#48 Rotate Image](./#48 Rotate Image.md)    正方形旋转规律
+* 简单[#66 Plus One](./#66 Plus One.md)    进位处理
 * 简单[#118 Pascal's Triangle](./#118 Pascal's Triangle.md)    杨辉三角生成
 * $\clubs$简单[#168 Excel Sheet Column Title](./#168 Excel Sheet Column Title.md)    10进制转26进制
 * 简单[#171 Excel Sheet Column Number](./#171 Excel Sheet Column Number.md)    26进制字符转换
