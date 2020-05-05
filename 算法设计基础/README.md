@@ -98,6 +98,7 @@
 * $\clubs$繁杂[#282 Expression Add Operators](./#282 Expression Add Operators.md)    回溯插入操作符使得结果与目标值一致
 * $\clubs$中等[#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)    字符串回溯
 * $\clubs$中等[#351 Android Unlock Patterns](./#351 Android Unlock Patterns.md)    矩形回溯遍历的变形
+* $\clubs$中等[#386 Lexicographical Numbers](./#386 Lexicographical Numbers.md)    经典回溯题目
 * 繁杂[#411 Minimum Unique Word Abbreviation](./#411 Minimum Unique Word Abbreviation.md)    [#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)  和[#408 Valid Word Abbreviation](../字符串/#408 Valid Word Abbreviation.md)的结合
 * $\clubs$中等[#490 The Maze](./#490 The Maze.md)    拐点只能访问一次
 * $\bigstar$困难[#546 Remove Boxes](./#546 Remove Boxes.md)    存储计算结果的回溯
