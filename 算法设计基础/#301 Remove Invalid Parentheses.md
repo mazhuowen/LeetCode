@@ -1,6 +1,27 @@
 [toc]
 
+Remove the minimum number of invalid parentheses in order to make the input string valid. Return all possible results.
 
+Note: The input string may contain letters other than the parentheses `(` and `)`.
+
+
+
+## 题目解读
+
+&emsp;移除最少的括号，使得字符串括号匹配。
+
+```java
+class Solution {
+    public List<String> removeInvalidParentheses(String s) {
+
+    }
+}
+```
+
+## 程序设计
+
+* 首先对于任意一个不匹配括号串都可以划分为前部分闭括号多出，后部分开括号多出的情况。首先受用栈来找出这个划分点，然后尝试删除多余的括号。
+* 在得到划分点和每个区段待删除括号数目后，回溯尝试删除。
 
 ```java
 class Solution {
@@ -90,7 +111,7 @@ class Solution {
 }
 ```
 
-
+* 不使用栈，直接遍历计数判断：
 
 ```java
 class Solution {
@@ -177,3 +198,20 @@ class Solution {
 }
 ```
 
+## 性能分析
+
+&emsp;原始算法性能如下：
+
+执行用时：6ms，在所有java提交中击败了77.07%的用户。
+
+内存消耗：40MB，在所有java提交中击败了66.67%的用户。
+
+&emsp;改进算法性能如下：
+
+执行用时：5ms，在所有java提交中击败了82.12%的用户。
+
+内存消耗：40.3MB，在所有java提交中击败了66.67%的用户。
+
+## 官方解题
+
+&emsp;官方思路同上，实现不同，在统计得到所有删除括号后，整体进行尝试回溯，不分开。
