@@ -20,6 +20,7 @@
 * $\bigstar$困难[#297 Serialize and Deserialize Binary Tree](./#297 Serialize and Deserialize Binary Tree.md)    前序序列变种序列化反序列化二叉树
 * $\bigstar$中等[#337 House Robber III](./#337 House Robber III.md)    递归与动态规划结合
 * 中等[#654 Maximum Binary Tree](./#654 Maximum Binary Tree.md)    递归创建树
+* $\clubs$中等[#958 Check Completeness of a Binary Tree](./#958 Check Completeness of a Binary Tree.md)    判断是否是完全二叉树
 
 ### 遍历
 

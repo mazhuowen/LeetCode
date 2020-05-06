@@ -58,6 +58,7 @@
 * 中等[#322 Coin Change](./#322 Coin Change.md)    经典动态规划问题
 * $\bigstar$中等[#376 Wiggle Subsequence](./#376 Wiggle Subsequence.md)    巧妙地规律总结
 * $\clubs$困难[#403 Frog Jump](./#403 Frog Jump.md)    非数组动态规划
+* 中等[#413 Arithmetic Slices](./#413 Arithmetic Slices.md)    等差序列子数组计数
 * $\clubs$困难[#471 Encode String with Shortest Length](./#471 Encode String with Shortest Length.md)    字符串最短编码
 * 中等[#516 Longest Palindromic Subsequence](./#516 Longest Palindromic Subsequence.md)    回文子序列
 * $\bigstar$困难[#552 Student Attendance Record II](./#552 Student Attendance Record II.md)    发现递归规律使用动态规划实现（最优算法为状态机）
