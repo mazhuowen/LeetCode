@@ -10,6 +10,7 @@
 * $\clubs$中等[#166 Fraction to Recurring Decimal](./#166 Fraction to Recurring Decimal.md)    分数转小数形式
 * 中等[#204 Count Primes](./#204 Count Primes.md)    统计质数数目
 * 简单[#231 Power of Two](./#231 Power of Two.md)    与操作比较
+* 简单[#258 Add Digits](./#258 Add Digits.md)    按位加
 * 简单[#263 Ugly Number](./#263 Ugly Number.md)    丑数判断
 * $\bigstar$困难[#363 Max Sum of Rectangle No Larger Than K](./#363 Max Sum of Rectangle No Larger Than K.md)    二维数组压缩行或列计算矩形最大和
 * 简单[#367 Valid Perfect Square](./#367 Valid Perfect Square.md)    整数的平方根，需注意判断条件
