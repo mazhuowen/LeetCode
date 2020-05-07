@@ -79,6 +79,7 @@ for (int i = 0; i < N; i++) {
 * $\clubs$困难[#126 Word Ladder II](./#126 Word Ladder II.md)    [#127 Word Ladder](./#127 Word Ladder.md)的进阶
 * $\bigstar$中等[#127 Word Ladder](./#127 Word Ladder.md)    最短的词语接龙
 * 中等[#286 Walls and Gates](./#286 Walls and Gates.md)    矩形的广度优先搜索
+* $\bigstar$中等[#329 Longest Increasing Path in a Matrix](./#329 Longest Increasing Path in a Matrix.md)    深度优先搜索及拓扑排序的应用
 * 中等[#417 Pacific Atlantic Water Flow](./#417 Pacific Atlantic Water Flow.md)    两次广度优先搜索
 * 中等[#529 Minesweeper](./#529 Minesweeper.md)    图的深度优先搜索在扫雷中的应用
 * 简单[#733 Flood Fill](./#733 Flood Fill.md)    深度优先搜索渲染像素
