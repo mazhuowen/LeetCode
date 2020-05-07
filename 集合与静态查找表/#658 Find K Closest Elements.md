@@ -81,31 +81,30 @@ class Solution {
 
 ## 官方解题
 
-&emsp;同上。社区还有思路不是查最接近的值，而是查`k`个数的起点，由于题目限定，起点与目标值之差绝对值必然小于等于终点。
+&emsp;同上。社区还有思路不是查最接近的值，而是查`k`个数的潜在起点终点，通过对比起点终点的优劣来缩小范围。
 
 ```java
 class Solution {
     public List<Integer> findClosestElements(int[] arr, int k, int x) {
-        List<Integer> res = new ArrayList<>();
 
-        // k个数的起始位置只会在0-arr.length-k
+        List<Integer> res = new LinkedList<>();
+        // left、right为k个元素序列的起始索引范围
         int left = 0, right = arr.length - k;
-
         while (left < right) {
-            int mid = (left+right) >> 1;
-            
-            // 起始位置left的特点: 要比left+k位置与x差距小或等
+            int mid = left + (right - left) / 2;
+            // mid为k-1个序列的前一个，mid+k为k-1个序列的后一个
+            // 类似队列出队入队操作，如果mid比mid+k更优，前移
             if (x - arr[mid] <= arr[mid + k] - x) {
                 right = mid;
-            } else {
+            }
+            // mid+k比mid更优，后移
+            else {
                 left = mid + 1;
             }
         }
-
-        for (int i = left; i < left + k; i++) {
-            res.add(arr[i]);
+        for (int i = 0; i < k; i++) {
+            res.add(arr[i + left]);
         }
-
         return res;
     }
 }
