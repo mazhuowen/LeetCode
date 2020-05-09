@@ -23,6 +23,7 @@
 * $\clubs$中等[#524 Longest Word in Dictionary through Deleting](./#524 Longest Word in Dictionary through Deleting.md)    对字符串排序比较
 * 简单[#628 Maximum Product of Three Numbers](./#628 Maximum Product of Three Numbers.md)    乘积最大与最大最小值的关系
 * $\clubs$中等[#853 Car Fleet](./#853 Car Fleet.md)    根据位置排序，比较时间
+* 简单[#905 Sort Array By Parity](./#905 Sort Array By Parity.md)    快速排序中的双指针交换
 * $\clubs$简单[#922 Sort Array By Parity II](./#922 Sort Array By Parity II.md)    双指针交换排序
 * $\bigstar$中等[#973 K Closest Points to Origin](./#973 K Closest Points to Origin.md)    快速排序中分治思想的巧妙应用
 * 简单[#976 Largest Perimeter Triangle](./#976 Largest Perimeter Triangle.md)    排序边长，判断是否组成三角形

@@ -99,6 +99,7 @@
 * 中等[#79 Word Search](./#79 Word Search.md)    字符串回溯比较
 * 中等[#89 Gray Code](./#89 Gray Code.md)    回溯尝试
 * 中等[#93 Restore IP Addresses](./#93 Restore IP Addresses.md)    条件判断减少回溯次数
+* 中等[#216 Combination Sum III](./#216 Combination Sum III.md)    回溯数字组合
 * $\clubs$繁杂[#282 Expression Add Operators](./#282 Expression Add Operators.md)    回溯插入操作符使得结果与目标值一致
 * $\clubs$困难[#301 Remove Invalid Parentheses](./#301 Remove Invalid Parentheses.md)    统计删除括号数，回溯删除
 * $\clubs$中等[#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)    字符串回溯
@@ -121,3 +122,4 @@
 * 中等[#382 Linked List Random Node](./#382 Linked List Random Node.md)    蓄水池抽样算法
 * $\clubs$中等[#384 Shuffle an Array](./#384 Shuffle an Array.md)    洗牌算法
 * $\clubs$中等[#398 Random Pick Index](./#398 Random Pick Index.md)    蓄水池抽样算法
+* $\clubs$中等[#470 Implement Rand10() Using Rand7()](./#470 Implement Rand10() Using Rand7().md)    拒绝采样

@@ -51,6 +51,7 @@ return -1;
 * 简单[#441 Arranging Coins](./#441 Arranging Coins.md)    数学规律总结，二分查找可实现
 * 中等[#475 Heaters](./#475 Heaters.md)    排序后使用二分查找
 * 中等[#528 Random Pick with Weight](./#528 Random Pick with Weight.md)    前缀和与二分查找结合
+* 中等[#540 Single Element in a Sorted Array](./#540 Single Element in a Sorted Array.md)    根据索引规律进行二分查找
 * $\bigstar$困难[#644 Maximum Average Subarray II](./#644 Maximum Average Subarray II.md)    二分查找猜测平均值并验证
 * $\clubs$中等[#658 Find K Closest Elements](./#658 Find K Closest Elements.md)    对称区间使用二分查找
 * 中等[#668 Kth Smallest Number in Multiplication Table](./#668 Kth Smallest Number in Multiplication Table.md)    二分缩小统计范围
