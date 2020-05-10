@@ -369,6 +369,7 @@ class ACNode {
 * $\clubs$中等[#6 ZigZag Conversion](./#6 ZigZag Conversion.md)    Z字型周期规律遍历
 * 中等[#8 String to Integer (atoi)](./#8 String to Integer (atoi).md)    字符串数字转整数
 * 简单[#38 Count and Say](./#38 Count and Say.md)    字符串递归计数
+* $\bigstar$困难[#65 Valid Number](./#65 Valid Number.md)    有限状态机
 * 简单[#67 Add Binary](./#67 Add Binary.md)    字符串遍历求和
 * 困难[#68 Text Justification](./#68 Text Justification.md)    文本左右对齐
 * 简单[#125 Valid Palindrome](./#125 Valid Palindrome.md)    双指针遍历比较字符串

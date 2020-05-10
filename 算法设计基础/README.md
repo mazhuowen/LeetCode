@@ -94,10 +94,12 @@
 * $\clubs$中等[#47 Permutations II](./#47 Permutations II.md)    [#46 Permutations](./#46 Permutations.md)的进阶，存在重复值的组合
 * $\bigstar$中等[#51 N-Queens](./#51 N-Queens.md)    经典回溯问题
 * 中等[#52 N-Queens II](./#52 N-Queens II.md)    $n$皇后的简化
+* $\clubs$中等[#60 Permutation Sequence](./#60 Permutation Sequence.md)    寻找第$k$个组合
 * 中等[#77 Combinations](./#77 Combinations.md)    组合的回溯
 * $\clubs$中等[#78 Subsets](./#78 Subsets.md)    回溯查找所有子集和
 * 中等[#79 Word Search](./#79 Word Search.md)    字符串回溯比较
 * 中等[#89 Gray Code](./#89 Gray Code.md)    回溯尝试
+* 中等[#90 Subsets II](./#90 Subsets II.md)    排列排序消除重复
 * 中等[#93 Restore IP Addresses](./#93 Restore IP Addresses.md)    条件判断减少回溯次数
 * 中等[#216 Combination Sum III](./#216 Combination Sum III.md)    回溯数字组合
 * $\clubs$繁杂[#282 Expression Add Operators](./#282 Expression Add Operators.md)    回溯插入操作符使得结果与目标值一致

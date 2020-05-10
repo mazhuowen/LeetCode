@@ -7,6 +7,7 @@
 * 简单[#1 Two Sum](./#1 Two Sum.md)   顺序表遍历
 * $\clubs$技巧[#26 Remove Duplicates from Sorted Arra](./#26 Remove Duplicates from Sorted Array.md)    有序顺序表的技巧删除
 * $\clubs$技巧[#27 Remove Element](./#27 Remove Element.md)    顺序表的技巧删除
+* 简单[#80 Remove Duplicates from Sorted Array II](./#80 Remove Duplicates from Sorted Array II.md)    数组移动覆盖
 
 ### 双指针
 
