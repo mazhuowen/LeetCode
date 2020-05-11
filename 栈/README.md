@@ -19,6 +19,7 @@
 * $\bigstar$繁杂[#385 Mini Parser](./#385 Mini Parser.md)    括号配对的变形
 * 中等[#394 Decode String](./#394 Decode String.md)    括号配对变形
 * 中等[#439 Ternary Expression Parser](./#439 Ternary Expression Parser.md)    反序遍历进行栈操作
+* 简单[#581 Shortest Unsorted Continuous Subarray](./#581 Shortest Unsorted Continuous Subarray.md)    单调栈
 * 繁杂[#591 Tag Validator](./#591 Tag Validator.md)    括号匹配的繁杂应用
 * $\clubs$中等[#636 Exclusive Time of Functions](./#636 Exclusive Time of Functions.md)    括号匹配的抽象
 * 简单[#682 Baseball Game](./#682 Baseball Game.md)    栈的基本操作

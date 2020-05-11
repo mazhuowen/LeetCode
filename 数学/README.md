@@ -32,6 +32,7 @@
 * $\clubs$简单[#168 Excel Sheet Column Title](./#168 Excel Sheet Column Title.md)    10进制转26进制
 * 简单[#171 Excel Sheet Column Number](./#171 Excel Sheet Column Number.md)    26进制字符转换
 * $\clubs$简单[#172 Factorial Trailing Zeroes](./#172 Factorial Trailing Zeroes.md)    阶乘末尾0的数目与5的周期的关联
+* 简单[#190 Reverse Bits](./#190 Reverse Bits.md)    位操作
 * 简单[#191 Number of 1 Bits](./#191 Number of 1 Bits.md)    移位操作
 * $\bigstar$简单[#202 Happy Number](./#202 Happy Number.md)    泛链表结构的数学应用
 * 简单[#223 Rectangle Area](./#223 Rectangle Area.md)    矩形相交条件
@@ -41,8 +42,12 @@
 * 简单[#292 Nim Game](./#292 Nim Game.md)    `Nim`游戏
 * 简单[#371 Sum of Two Integers](./#371 Sum of Two Integers.md)    异常或及与操作实现加法
 * 中等[#400 Nth Digit](./#400 Nth Digit.md)    数字位数关系
+* 简单[#405 Convert a Number to Hexadecimal](./#405 Convert a Number to Hexadecimal.md)    掩码位操作
 * 简单[#412 Fizz Buzz](./#412 Fizz Buzz.md)    填充数字
+* 简单[#414 Third Maximum Number](./#414 Third Maximum Number.md)    记录前三大的值
 * 中等[#498 Diagonal Traverse](./#498 Diagonal Traverse.md)    对角线遍历
 * 简单[#509 Fibonacci Number](./#509 Fibonacci Number.md)    斐波那契数列
 * $\clubs$繁杂[#564 Find the Closest Palindrome](./#564 Find the Closest Palindrome.md)    镜像回文的下一个较大或较小回文
+* 简单[#717 1-bit and 2-bit Characters](./#717 1-bit and 2-bit Characters.md)    结尾1的数目决定编码规律
 * 简单[#836 Rectangle Overlap](./#836 Rectangle Overlap.md)    [#223 Rectangle Area](./#223 Rectangle Area.md)的简化问题
+* 简单[#1185 Day of the Week](./#1185 Day of the Week.md)    计算任意一天的星期

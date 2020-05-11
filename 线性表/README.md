@@ -8,6 +8,7 @@
 * $\clubs$技巧[#26 Remove Duplicates from Sorted Arra](./#26 Remove Duplicates from Sorted Array.md)    有序顺序表的技巧删除
 * $\clubs$技巧[#27 Remove Element](./#27 Remove Element.md)    顺序表的技巧删除
 * 简单[#80 Remove Duplicates from Sorted Array II](./#80 Remove Duplicates from Sorted Array II.md)    数组移动覆盖
+* 简单[#228 Summary Ranges](./#228 Summary Ranges.md)    连续数值区间判断
 
 ### 双指针
 
@@ -22,6 +23,7 @@
 
 * $\bigstar$中等[#189 Rotate Array](./#189 Rotate Array.md)    循环移位
 * 简单[#283 Move Zeroes](./#283 Move Zeroes.md)    交换0到最后
+* 简单[#832 Flipping an Image](./#832 Flipping an Image.md)    交换并翻转值
 
 ## 链表
 

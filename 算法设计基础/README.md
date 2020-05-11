@@ -45,6 +45,7 @@
 * $\clubs$困难[#72 Edit Distance](./#72 Edit Distance.md)    经典动态规划的字符串应用
 * 中等[#91 Decode Ways](./#91 Decode Ways.md)    边角条件繁杂的动态规划应用
 * $\clubs$困难[#97 Interleaving String](./#97 Interleaving String.md)    交错字符串组成判断
+* 简单[#119 Pascal's Triangle II](./#119 Pascal's Triangle II.md)    经典动态规划问题
 * $\bigstar$困难[#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)    巧妙的状态转化
 * 中等[#120 Triangle](./#120 Triangle.md)    非矩形的动态规划
 * $\clubs$中等[#139 Word Break](./#139 Word Break.md)    字符串匹配的动态规划
@@ -112,6 +113,7 @@
 * $\bigstar$困难[#546 Remove Boxes](./#546 Remove Boxes.md)    存储计算结果的回溯
 * $\clubs$困难[#679 24 Game](./#679 24 Game.md)    表达式的配列组合特征
 * $\clubs$中等[#698 Partition to K Equal Sum Subsets](./#698 Partition to K Equal Sum Subsets.md)    巧妙剪枝提升时间性能
+* 简单[#784 Letter Case Permutation](./#784 Letter Case Permutation.md)    回溯尝试大小写
 * 繁杂[#1088 Confusing Number II](./#1088 Confusing Number II.md)    需注意边界及数值溢出的处理
 * $\clubs$中等[#1239 Maximum Length of a Concatenated String with Unique Characters](./#1239 Maximum Length of a Concatenated String with Unique Characters.md)    字符串顺序无关的回溯
 * $\clubs$困难[#1240 Tiling a Rectangle with the Fewest Squares](./#1240 Tiling a Rectangle with the Fewest Squares.md)    暴力回溯填充矩形
