@@ -2,6 +2,8 @@
 
 ## 设计
 
+* 简单[#157 Read N Characters Given Read4](./#157 Read N Characters Given Read4.md)    循环查询
+* 困难[#158 Read N Characters Given Read4 II - Call multiple times](./#158 Read N Characters Given Read4 II - Call multiple times.md)    寄存查询剩余的结果
 * 简单[#348 Design Tic-Tac-Toe](./#348 Design Tic-Tac-Toe.md)    矩形行、列、对角线的表示
 * 中等[#535 Encode and Decode TinyURL](./#535 Encode and Decode TinyURL.md)    短链系统设计
 

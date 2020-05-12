@@ -91,6 +91,7 @@ while(A.next != next) {
 * $\clubs$中等[#146 LRU Cache](./#146 LRU Cache.md)    链表与哈希表结合实现`LRU`
 * 简单[#237 Delete Node in a Linked List](./#237 Delete Node in a Linked List.md)    只给定待删除结点，复制后继结点值删除
 * $\clubs$技巧[#379 Design Phone Directory](./#379 Design Phone Directory.md)    基于特殊规则的插入操作
+* 繁杂[#432 All O`one Data Structure](./#432 All O`one Data Structure.md)    哈希表记录维护链表有序性
 * 中等[#707 Design Linked List](./#707 Design Linked List.md)    链表类的设计
 * $\clubs$中等[#1171 Remove Zero Sum Consecutive Nodes from Linked List](./#1171 Remove Zero Sum Consecutive Nodes from Linked List.md)    前缀和在链表总的应用
 
