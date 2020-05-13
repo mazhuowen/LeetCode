@@ -18,6 +18,7 @@
 * $\clubs$中等[#134 Gas Station](./#134 Gas Station.md)    整体特征的分解总结
 * $\bigstar$技巧[#135 Candy](./#135 Candy.md)    峰顶值的处理
 * $\bigstar$困难[#321 Create Maximum Number](./#321 Create Maximum Number.md)    利用贪婪策略查询两个数组的最大组合
+* $\clubs$中等[#406 Queue Reconstruction by Height](./#406 Queue Reconstruction by Height.md)    身高降序计数增序
 * $\bigstar$困难[#659 Split Array into Consecutive Subsequences](./#659 Split Array into Consecutive Subsequences.md)    贪婪拼接连续数字
 * $\clubs$中等[#910 Smallest Range II](./#910 Smallest Range II.md)    巧妙地数学规律发现
 * 中等[#955 Delete Columns to Make Sorted II](./#955 Delete Columns to Make Sorted II.md)    字符串移除字符使之变为字典序

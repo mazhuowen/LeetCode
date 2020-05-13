@@ -82,8 +82,10 @@ for (int i = 0; i < N; i++) {
 * $\bigstar$中等[#329 Longest Increasing Path in a Matrix](./#329 Longest Increasing Path in a Matrix.md)    深度优先搜索及拓扑排序的应用
 * 中等[#417 Pacific Atlantic Water Flow](./#417 Pacific Atlantic Water Flow.md)    两次广度优先搜索
 * 中等[#529 Minesweeper](./#529 Minesweeper.md)    图的深度优先搜索在扫雷中的应用
-* 简单[#733 Flood Fill](./#733 Flood Fill.md)    深度优先搜索渲染像素
+* 中等[#694 Number of Distinct Islands](./#694 Number of Distinct Islands.md)    深度优先搜索路径
 * 中等[#695 Max Area of Island](./#695 Max Area of Island.md)    矩形的深度优先搜索
+* $\clubs$困难[#711 Number of Distinct Islands II](./#711 Number of Distinct Islands II.md)    [#694 Number of Distinct Islands](./#694 Number of Distinct Islands.md)的进阶
+* 简单[#733 Flood Fill](./#733 Flood Fill.md)    深度优先搜索渲染像素
 * $\clubs$中等[#934 Shortest Bridge](./#934 Shortest Bridge.md)    深度、广度优先搜索结合的贪心策略
 * 简单[#1030 Matrix Cells in Distance Order](./#1030 Matrix Cells in Distance Order.md)    图的广度优先搜索思想在矩形中的应用
 * $\clubs$中等[#1162 As Far from Land as Possible](./#1162 As Far from Land as Possible.md)    广度优先搜索从外层向中心遍历
