@@ -379,6 +379,7 @@ class ACNode {
 * $\clubs$中等[#273 Integer to English Words](./#273 Integer to English Words.md)    数字单位的周期分切
 * 简单[#344 Reverse String](./#344 Reverse String.md)    交换字符位置
 * 简单[#345 Reverse Vowels of a String](./#345 Reverse Vowels of a String.md)    交换元音字符位置
+* 中等[#393 UTF-8 Validation](./#393 UTF-8 Validation.md)    位操作校验编码字符
 * 简单[#409 Longest Palindrome](./#409 Longest Palindrome.md)    字符统计
 * $\clubs$中等[#438 Find All Anagrams in a String](./#438 Find All Anagrams in a String.md)    计数字符出现次数，队列出队入队
 * 中等[#443 String Compression](./#443 String Compression.md)    压缩字符串
