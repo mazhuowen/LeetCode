@@ -50,6 +50,7 @@
 * 简单[#509 Fibonacci Number](./#509 Fibonacci Number.md)    斐波那契数列
 * 中等[#556 Next Greater Element III](./#556 Next Greater Element III.md)    最大最小问题
 * $\clubs$繁杂[#564 Find the Closest Palindrome](./#564 Find the Closest Palindrome.md)    镜像回文的下一个较大或较小回文
+* 中等[#611 Valid Triangle Number](./#611 Valid Triangle Number.md)    排序计算三角形组合数
 * 简单[#717 1-bit and 2-bit Characters](./#717 1-bit and 2-bit Characters.md)    结尾1的数目决定编码规律
 * 简单[#836 Rectangle Overlap](./#836 Rectangle Overlap.md)    [#223 Rectangle Area](./#223 Rectangle Area.md)的简化问题
 * 简单[#1185 Day of the Week](./#1185 Day of the Week.md)    计算任意一天的星期

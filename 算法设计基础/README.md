@@ -54,6 +54,7 @@
 * $\bigstar$困难[#174 Dungeon Game](./#174 Dungeon Game.md)    [#64 Minimum Path Sum](./#64 Minimum Path Sum.md)的延伸，遍历方向很重要
 * 困难[#188 Best Time to Buy and Sell Stock IV](./#188 Best Time to Buy and Sell Stock IV.md)    [#122 Best Time to Buy and Sell Stock II.md](./#122 Best Time to Buy and Sell Stock II.md)和[#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)的结合
 * $\clubs$简单[#198 House Robber](./#198 House Robber.md)    巧妙的动态规划简化
+* 中等[#213 House Robber II](./#213 House Robber II.md)    [#198 House Robber](./#198 House Robber.md)思路的延续
 * 中等[#221 Maximal Square](./#221 Maximal Square.md)    最大正方形
 * 中等[#279 Perfect Squares](./#279 Perfect Squares.md)    动态规划（非最优）
 * 中等[#309 Best Time to Buy and Sell Stock with Cooldown](./#309 Best Time to Buy and Sell Stock with Cooldown.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)无限制交易且存在冷冻期
