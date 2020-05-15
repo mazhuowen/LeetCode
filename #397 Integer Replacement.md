@@ -26,7 +26,28 @@ class Solution {
 
 
 ```java
+class Solution {
+    public int integerReplacement(int n) {
+        if (n <= 0) throw new IllegalArgumentException("invalid param");
 
+        if (n == Integer.MAX_VALUE) return 32;
+
+        int count = 0;
+        while (n > 1) {
+            // 奇数
+            if ((n & 1) == 1) {
+                if (n > 3 && (n & 3) == 3) n += 1;
+                else n -= 1;
+            }
+            // 偶数除二
+            else {
+                n >>= 1;
+            }
+            count++;
+        }
+        return count;
+    }
+}
 ```
 
 ## 性能分析
