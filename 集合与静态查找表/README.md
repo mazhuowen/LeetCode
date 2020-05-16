@@ -44,8 +44,9 @@ return -1;
 * $\bigstar$中等[#275 H-Index II](./#275 H-Index II.md)    二分查找变形应用
 * 简单[#278 First Bad Version](./#278 First Bad Version.md)    二分查找的数据溢出问题
 * $\bigstar$中等[#287 Find the Duplicate Number](./#287 Find the Duplicate Number.md)    对整数范围的二分查找（非最优解）
-* $\clubs$技巧[#300 Longest Increasing Subsequence](./#300 Longest Increasing Subsequence.md)    二分查找辅助维护升序序列
+* $\bigstar$技巧[#300 Longest Increasing Subsequence](./#300 Longest Increasing Subsequence.md)    最长递增子序列，二分查找辅助维护升序序列
 * $\clubs$困难[#302 Smallest Rectangle Enclosing Black Pixels](./#302 Smallest Rectangle Enclosing Black Pixels.md)    二分查找区间
+* $\bigstar$困难[#354 Russian Doll Envelopes](./#354 Russian Doll Envelopes.md)    [#300 Longest Increasing Subsequence](./#300 Longest Increasing Subsequence.md)的进阶抽象
 * 简单[#374 Guess Number Higher or Lower](./#374 Guess Number Higher or Lower.md)    二分查找基础应用
 * 中等[#436 Find Right Interval](./#436 Find Right Interval.md)    排序后利用二分查找
 * 简单[#441 Arranging Coins](./#441 Arranging Coins.md)    数学规律总结，二分查找可实现

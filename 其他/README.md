@@ -8,6 +8,7 @@
 * 简单[#284 Peeking Iterator](./#284 Peeking Iterator.md)    设计支持预取的迭代器
 * 简单[#348 Design Tic-Tac-Toe](./#348 Design Tic-Tac-Toe.md)    矩形行、列、对角线的表示
 * 中等[#535 Encode and Decode TinyURL](./#535 Encode and Decode TinyURL.md)    短链系统设计
+* $\clubs$困难[#843 Guess the Word](./#843 Guess the Word.md)    启发式极小极大算法
 
 ## 逻辑
 
