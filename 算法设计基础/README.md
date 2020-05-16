@@ -105,6 +105,7 @@
 * 中等[#89 Gray Code](./#89 Gray Code.md)    回溯尝试
 * 中等[#90 Subsets II](./#90 Subsets II.md)    排列排序消除重复
 * 中等[#93 Restore IP Addresses](./#93 Restore IP Addresses.md)    条件判断减少回溯次数
+* $\clubs$中等[#131 Palindrome Partitioning](./#131 Palindrome Partitioning.md)    回溯尝试所有回文子串
 * 中等[#216 Combination Sum III](./#216 Combination Sum III.md)    回溯数字组合
 * $\clubs$繁杂[#282 Expression Add Operators](./#282 Expression Add Operators.md)    回溯插入操作符使得结果与目标值一致
 * $\clubs$困难[#301 Remove Invalid Parentheses](./#301 Remove Invalid Parentheses.md)    统计删除括号数，回溯删除

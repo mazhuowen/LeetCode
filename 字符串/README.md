@@ -26,7 +26,7 @@
 
 <img src="../images/字符串2.jpg" style="zoom:50%;" />
 
-
+* $\bigstar$困难[#1044 Longest Duplicate Substring](./#1044 Longest Duplicate Substring.md)    二分查找与`RK`编码结合
 
 ### BM（Boyer-Moore）算法
 

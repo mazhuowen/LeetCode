@@ -24,12 +24,14 @@
 * 中等[#289 Game of Life](./#289 Game of Life.md)   新增状态巧妙利用空间
 * $\clubs$中等[#304 Range Sum Query 2D - Immutable](./#304 Range Sum Query 2D - Immutable.md)    前缀和思想在二维数组的应用
 * 简单[#724 Find Pivot Index](./#724 Find Pivot Index.md)    前缀和
+* $\clubs$中等[#885 Spiral Matrix III](./#885 Spiral Matrix III.md)    [#54 Spiral Matrix](./#54 Spiral Matrix.md)的进阶，从内往外旋转
 * 简单[#1375 Bulb Switcher III](./#1375 Bulb Switcher III.md)    编号求和比较
 
 ## 数据库
 
 * 简单[#175 Combine Two Tables](./#175 Combine Two Tables.md)    LEFT JOIN语句
 * 简单[#176 Second Highest Salary](./#176 Second Highest Salary.md)    LIMIT和OFFSET的组合
+* 简单[#182 Duplicate Emails](./#182 Duplicate Emails.md)    GROUP BY和HAVING的组合
 
 ## 其它算法问题
 
