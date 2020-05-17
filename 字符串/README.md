@@ -19,6 +19,7 @@
 * 繁杂[#408 Valid Word Abbreviation](./#408 Valid Word Abbreviation.md)    变形的字符串遍历匹配，[#320 Generalized Abbreviation](../算法设计基础/#320 Generalized Abbreviation.md)与[#411 Minimum Unique Word Abbreviation](../算法设计基础/#411 Minimum Unique Word Abbreviation.md)的相关主题
 * 中等[#647 Palindromic Substrings](./#647 Palindromic Substrings.md)    曼彻斯特算法
 * 繁杂[#722 Remove Comments](./#722 Remove Comments.md)    细节繁多，需理清
+* $\bigstar$困难[#727 Minimum Window Subsequence](./#727 Minimum Window Subsequence.md)    正反向匹配查找最短子序列
 
 ### RK（Rabin-Karp）算法
 
