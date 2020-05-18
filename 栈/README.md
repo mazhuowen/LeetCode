@@ -59,6 +59,7 @@
 * 简单[#739 Daily Temperatures](./#739 Daily Temperatures.md)    遍历遇到较大值则出栈计算
 * 中等[#1019 Next Greater Node In Linked List](./#1019 Next Greater Node In Linked List.md)    单调栈
 * $\clubs$困难[#1063 Number of Valid Subarrays](./#1063 Number of Valid Subarrays.md)    单调栈
+* 中等[#1081 Smallest Subsequence of Distinct Characters](./#1081 Smallest Subsequence of Distinct Characters.md)    [#316 Remove Duplicate Letters](./#316 Remove Duplicate Letters.md)的变形
 
 ### 二叉树
 

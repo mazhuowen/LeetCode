@@ -1,6 +1,24 @@
 [toc]
 
+Return the lexicographically smallest subsequence of `text` that contains all the distinct characters of `text` exactly once.
 
+
+
+## 题目解读
+
+&emsp;给定字符串，求不重复且字典序最小的子序列。
+
+```java
+class Solution {
+    public String smallestSubsequence(String text) {
+
+    }
+}
+```
+
+## 程序设计
+
+* 同[#316 Remove Duplicate Letters](./#316 Remove Duplicate Letters.md)。
 
 ```java
 class Solution {
@@ -39,3 +57,14 @@ class Solution {
 }
 ```
 
+## 性能分析
+
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(N)$。
+
+执行用时：3ms，在所有java提交中击败了95.64%的用户。
+
+内存消耗：37.7MB，在所有java提交中击败了100.00%的用户。
+
+## 官方解题
+
+&emsp;同[#316 Remove Duplicate Letters](./#316 Remove Duplicate Letters.md)。
