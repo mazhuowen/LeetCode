@@ -162,16 +162,20 @@ class Solution {
 
 内存消耗：36.9MB，在所有java提交中击败了25.00%的用户。
 
-
+&emsp;官方提供了最优解，利用巧妙的动态规划思路解题
 
 ```java
 class Solution {
     public int rotatedDigits(int N) {
         char[] nums = Integer.toString(N).toCharArray();
         int len = nums.length;
+        // 表示i后（不包含i）的数字是否与N的后部分相同（j），
+        // 数字最高位到当前位置前移位置是否包含2、5、6、9（k），整体表示小于等于M的数字包含的好数数目
         int[][][] dp = new int[len + 1][2][2];
+        // 初始化
         dp[len][0][1] = dp[len][1][1] = 1;
 
+        // 从尾部，也就是低位开始
         for (int i = len - 1; i >= 0; i--) {
             for (int j = 0; j <= 1; j++) {
                 for (int k = 0; k <= 1; k++) {
@@ -181,14 +185,22 @@ class Solution {
                         // 当前是否存在２、５、６、９，存在则说明是好数
                         boolean diff = a == '2' || a == '5' || a == '6' || a == '9';
 
+                        // 如果j=1，则当前字符等于N中字符时dp(i,1) += dp(i + 1,1)；如果当前
+                        // 字符不等于N中字符，则当前尝试数字必然小于i到N结尾的数字，dp(i,1) += dp(i + 1, 0)；j = 0则dp(i,0) += dp(i + 1, 0)。
+                        // 若当前位包含2\5\6\9，则dp(k) += dp(0)，若不包含则dp(k) += dp(k)
                         dp[i][j][k] += dp[i + 1][a == nums[i] ? j : 0][diff ? 1 : k];
                     }
-
                 }
             }
         }
+        // 最后答案就是左侧所有数字等于N并且左侧没有2\5\6\9的数字
         return dp[0][1][0];
     }
 }
 ```
 
+&emsp;时间复杂度为$O(\log_{10}N)$，空间复杂度为$O(N)$。
+
+执行用时：1ms，在所有java提交中击败了98.06%的用户。
+
+内存消耗：36.4MB，在所有java提交中击败了50.00%的用户。
