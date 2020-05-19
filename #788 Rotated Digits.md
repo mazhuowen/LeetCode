@@ -165,6 +165,30 @@ class Solution {
 
 
 ```java
+class Solution {
+    public int rotatedDigits(int N) {
+        char[] nums = Integer.toString(N).toCharArray();
+        int len = nums.length;
+        int[][][] dp = new int[len + 1][2][2];
+        dp[len][0][1] = dp[len][1][1] = 1;
 
+        for (int i = len - 1; i >= 0; i--) {
+            for (int j = 0; j <= 1; j++) {
+                for (int k = 0; k <= 1; k++) {
+                    for (char a = '0'; a <= (j == 1 ? nums[i] : '9'); a++) {
+                        // 存在３、４、７必然不是好数
+                        if (a == '3' || a == '4' || a == '7') continue;
+                        // 当前是否存在２、５、６、９，存在则说明是好数
+                        boolean diff = a == '2' || a == '5' || a == '6' || a == '9';
+
+                        dp[i][j][k] += dp[i + 1][a == nums[i] ? j : 0][diff ? 1 : k];
+                    }
+
+                }
+            }
+        }
+        return dp[0][1][0];
+    }
+}
 ```
 
