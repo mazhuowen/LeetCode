@@ -30,6 +30,7 @@
 * $\clubs$中等[#48 Rotate Image](./#48 Rotate Image.md)    正方形旋转规律
 * 简单[#66 Plus One](./#66 Plus One.md)    进位处理
 * 简单[#118 Pascal's Triangle](./#118 Pascal's Triangle.md)    杨辉三角生成
+* [#137 Single Number II](./#137 Single Number II.md)
 * $\clubs$简单[#168 Excel Sheet Column Title](./#168 Excel Sheet Column Title.md)    10进制转26进制
 * 简单[#171 Excel Sheet Column Number](./#171 Excel Sheet Column Number.md)    26进制字符转换
 * $\clubs$简单[#172 Factorial Trailing Zeroes](./#172 Factorial Trailing Zeroes.md)    阶乘末尾0的数目与5的周期的关联
