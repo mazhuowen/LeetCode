@@ -2,12 +2,15 @@
 
 Suppose we have a class:
 
+```java
 public class Foo {
   public void first() { print("first"); }
   public void second() { print("second"); }
   public void third() { print("third"); }
 }
-The same instance of Foo will be passed to three different threads. Thread A will call first(), thread B will call second(), and thread C will call third(). Design a mechanism and modify the program to ensure that second() is executed after first(), and third() is executed after second().
+```
+
+The same instance of `Foo` will be passed to three different threads. Thread `A` will call `first()`, thread `B` will call `second()`, and thread `C` will call `third()`. Design a mechanism and modify the program to ensure that `second()` is executed after `first()`, and `third()` is executed after `second()`.
 
 
 
@@ -17,9 +20,9 @@ We do not know how the threads will be scheduled in the operating system, even t
 
 
 
-##
+## 题目解读
 
-
+&emsp;三个线程分别调用三个方法，需要保证三个方法调用的有序性。
 
 ```java
 class Foo {
@@ -48,9 +51,9 @@ class Foo {
 }
 ```
 
-##
+## 程序设计
 
-* 
+* 由于三个线程固定调用三个方法，可以使用`volatile`关键字作为状态，三个方法根据关键字判断是否是当前方法调用。
 
 ```java
 class Foo {
@@ -83,12 +86,12 @@ class Foo {
 }
 ```
 
-##
+## 性能分析
 
+执行用时：14ms，在所有java提交中击败了45.09%的用户。
 
+内存消耗：39.2MB，在所有java提交中击败了6.98%的用户。
 
-执行用时 :14 ms, 在所有 Java 提交中击败了45.09%的用户
+## 官方解题
 
-内存消耗 :39.2 MB, 在所有 Java 提交中击败了6.98%的用户
-
-##
+&emsp;官方使用原子变量代替`volatile`关键字。

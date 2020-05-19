@@ -17,4 +17,5 @@
 * 中等[#641 Design Circular Deque](./#641 Design Circular Deque.md)    设计双向循环队列
 * $\bigstar$困难[#862 Shortest Subarray with Sum at Least K](./#862 Shortest Subarray with Sum at Least K.md)    双向队列结合前缀和
 * 简单[#933 Number of Recent Calls](./#933 Number of Recent Calls.md)    队列基本操作
+* $\clubs$中等[#950 Reveal Cards In Increasing Order](./#950 Reveal Cards In Increasing Order.md)    队列模拟牌的顺序
 * 中等[#1004 Max Consecutive Ones III](./#1004 Max Consecutive Ones III.md)    队列出队入队关系

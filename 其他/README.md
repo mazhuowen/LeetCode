@@ -29,6 +29,10 @@
 * $\clubs$中等[#885 Spiral Matrix III](./#885 Spiral Matrix III.md)    [#54 Spiral Matrix](./#54 Spiral Matrix.md)的进阶，从内往外旋转
 * 简单[#1375 Bulb Switcher III](./#1375 Bulb Switcher III.md)    编号求和比较
 
+## 多线程
+
+* 简单[#1114 Print in Order](./#1114 Print in Order.md)    线程间变量共享通信
+
 ## 数据库
 
 * 简单[#175 Combine Two Tables](./#175 Combine Two Tables.md)    LEFT JOIN语句
