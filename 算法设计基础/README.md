@@ -60,6 +60,7 @@
 * 中等[#309 Best Time to Buy and Sell Stock with Cooldown](./#309 Best Time to Buy and Sell Stock with Cooldown.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)无限制交易且存在冷冻期
 * $\bigstar$困难[#312 Burst Balloons](./#312 Burst Balloons.md)    逆向思维动态规划
 * 中等[#322 Coin Change](./#322 Coin Change.md)    经典动态规划问题
+* 中等[#343 Integer Break](./#343 Integer Break.md)    动态规划（非最优）
 * $\bigstar$中等[#376 Wiggle Subsequence](./#376 Wiggle Subsequence.md)    巧妙地规律总结
 * $\clubs$困难[#403 Frog Jump](./#403 Frog Jump.md)    非数组动态规划
 * 中等[#413 Arithmetic Slices](./#413 Arithmetic Slices.md)    等差序列子数组计数
