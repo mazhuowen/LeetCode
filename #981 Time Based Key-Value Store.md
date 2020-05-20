@@ -56,7 +56,50 @@ class TimeMap {
 * 
 
 ```java
+class TimeMap {
+    Map<String, List<Pair>> map;
 
+    /** Initialize your data structure here. */
+    public TimeMap() {
+        this.map = new HashMap<>();
+    }
+    
+    public void set(String key, String value, int timestamp) {
+        if (!map.containsKey(key)) map.put(key, new ArrayList<>());
+        map.get(key).add(new Pair(timestamp, value));
+    }
+    
+    public String get(String key, int timestamp) {
+        List<Pair> l = map.get(key);
+        if (l == null || l.size() == 0) return "";
+
+        int idx = binarySearch(l, timestamp, 0, l.size() - 1);
+        return idx == -1 ? "" : l.get(idx).val;
+    }
+
+    private int binarySearch(List<Pair> l, int target, int left, int right) {
+        while (left < right) {
+            int mid = left + (right - left) / 2 + 1;
+            if (l.get(mid).timestamp <= target) {
+                left = mid;
+            } else {
+                right = mid - 1;
+            }
+        }
+        if (left == 0 && l.get(0).timestamp > target) return -1;
+        return left;
+    }
+}
+
+class Pair {
+    int timestamp;
+    String val;
+
+    public Pair(int timestamp, String val) {
+        this.timestamp = timestamp;
+        this.val = val;
+    }
+}
 ```
 
 ## 性能分析

@@ -30,7 +30,33 @@ class Solution {
 * 
 
 ```java
+class Solution {
+    public int scheduleCourse(int[][] courses) {
+        if (courses == null || courses.length == 0) return 0;
 
+        Arrays.sort(courses, (a, b) -> a[1] - b[1]);
+
+        // 起始时间
+        int times = 0;
+        // 最大堆
+        PriorityQueue<Integer> queue = new PriorityQueue<>((a, b) -> b - a);
+        for (int[] course : courses) {
+            // 当前课程满足要求
+            if (times + course[0] <= course[1]) {
+                times += course[0];
+                queue.add(course[0]);
+            }
+            // 当前课程不满足要求，检查时长最长的课是否比当前课长
+            else if (!queue.isEmpty() && queue.peek() > course[0]) {
+                // 时长较长的课程出队
+                times += course[0] - queue.poll();
+                queue.add(course[0]);
+            }
+            // 当前课程不满足要求
+        }
+        return queue.size();
+    }
+}
 ```
 
 ## 性能分析
