@@ -62,6 +62,7 @@ return -1;
 * $\bigstar$中等[#719 Find K-th Smallest Pair Distance](./#719 Find K-th Smallest Pair Distance.md)    对距离范围二分查找统计
 * 简单[#852 Peak Index in a Mountain Array](./#852 Peak Index in a Mountain Array.md)    二分查找爬坡
 * 中等[#875 Koko Eating Bananas](./#875 Koko Eating Bananas.md)    利用二分查找遍历判断
+* 中等[#981 Time Based Key-Value Store](./#981 Time Based Key-Value Store.md)    设计时间递增的时间戳字典
 * $\clubs$中等[#1060 Missing Element in Sorted Array](./#1060 Missing Element in Sorted Array.md)    查找第k个值问题
 
 ### 插入查找

@@ -32,6 +32,7 @@
 ## 多线程
 
 * 简单[#1114 Print in Order](./#1114 Print in Order.md)    线程间变量共享通信
+* 中等[#1115 Print FooBar Alternately](./#1115 Print FooBar Alternately.md)    `ReentrantLock`线程互相唤醒
 
 ## 数据库
 

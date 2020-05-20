@@ -24,7 +24,7 @@ Note:
 
 ## 题目解读
 
-&emsp;
+&emsp;设计时间辍字典，根据键值和时间戳返回最近的时间辍的值。题目限定时间戳是递增的。
 
 ```java
 class TimeMap {
@@ -53,7 +53,7 @@ class TimeMap {
 
 ## 程序设计
 
-* 
+* 由于时间戳是递增的，字典可维护有序链表，采用二分查找。
 
 ```java
 class TimeMap {
@@ -66,6 +66,7 @@ class TimeMap {
     
     public void set(String key, String value, int timestamp) {
         if (!map.containsKey(key)) map.put(key, new ArrayList<>());
+        // 由于时间戳递增，直接放到数组末尾
         map.get(key).add(new Pair(timestamp, value));
     }
     
@@ -73,6 +74,7 @@ class TimeMap {
         List<Pair> l = map.get(key);
         if (l == null || l.size() == 0) return "";
 
+        // 采用二分查找
         int idx = binarySearch(l, timestamp, 0, l.size() - 1);
         return idx == -1 ? "" : l.get(idx).val;
     }
@@ -104,10 +106,12 @@ class Pair {
 
 ## 性能分析
 
-&emsp;
+&emsp;插入时间复杂度为$O(1)$，查找时间复杂度为$O(\log_2N)$；空间复杂度为$O(N)$。
 
+执行用时：175ms，在所有java提交中击败了83.82%的用户。
 
+内存消耗：113.7MB，在所有java提交中击败了100.00%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;官方提供了红黑树的思路。

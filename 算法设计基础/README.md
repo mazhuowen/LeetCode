@@ -11,6 +11,9 @@
 * 从某个初始解出发；
 * 采用迭代的过程，当可以向目标前进一步时，就根据局部最优策略，得到一个部分解，问题规模就缩小了；
 * 将所有解综合起来。
+
+
+
 * $\clubs$困难[#45 Jump Game II](./#45 Jump Game II.md)    [#55 Jump Game](./#55 Jump Game.md)的进阶，巧妙的贪心思路及规律
 * 中等[#55 Jump Game](./#55 Jump Game.md)    发现规律从尾遍历
 * 中等[#57 Insert Interval](./#57 Insert Interval.md)    从头遍历判断区间
@@ -21,6 +24,7 @@
 * $\clubs$中等[#406 Queue Reconstruction by Height](./#406 Queue Reconstruction by Height.md)    身高降序计数增序
 * $\bigstar$困难[#659 Split Array into Consecutive Subsequences](./#659 Split Array into Consecutive Subsequences.md)    贪婪拼接连续数字
 * $\clubs$中等[#910 Smallest Range II](./#910 Smallest Range II.md)    巧妙地数学规律发现
+* $\bigstar$困难[#630 Course Schedule III](./#630 Course Schedule III.md)    课程时长的贪婪思路
 * 中等[#955 Delete Columns to Make Sorted II](./#955 Delete Columns to Make Sorted II.md)    字符串移除字符使之变为字典序
 
 ## 分治法
