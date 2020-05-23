@@ -390,3 +390,4 @@ class ACNode {
 * 中等[#567 Permutation in String](./#567 Permutation in String.md)    [#438 Find All Anagrams in a String](./#438 Find All Anagrams in a String.md)的简化
 * 简单[#680 Valid Palindrome II](./#680 Valid Palindrome II.md)    双指针遍历
 * 简单[#917 Reverse Only Letters](./#917 Reverse Only Letters.md)    字符交换
+* $\clubs$中等[#1371 Find the Longest Substring Containing Vowels in Even Counts](./#1371 Find the Longest Substring Containing Vowels in Even Counts.md)    借鉴前缀思路和和状态压缩

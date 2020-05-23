@@ -21,6 +21,7 @@
 * $\bigstar$困难[#296 Best Meeting Point](./#296 Best Meeting Point.md)    最佳会面点和会面者关系
 * $\clubs$中等[#324 Wiggle Sort II](./#324 Wiggle Sort II.md)    有序数组穿插
 * $\clubs$中等[#524 Longest Word in Dictionary through Deleting](./#524 Longest Word in Dictionary through Deleting.md)    对字符串排序比较
+* 简单[#532 K-diff Pairs in an Array](./#532 K-diff Pairs in an Array.md)    排序后双指针计算
 * 简单[#628 Maximum Product of Three Numbers](./#628 Maximum Product of Three Numbers.md)    乘积最大与最大最小值的关系
 * $\clubs$中等[#853 Car Fleet](./#853 Car Fleet.md)    根据位置排序，比较时间
 * 简单[#905 Sort Array By Parity](./#905 Sort Array By Parity.md)    快速排序中的双指针交换

@@ -22,6 +22,7 @@
 * 简单[#581 Shortest Unsorted Continuous Subarray](./#581 Shortest Unsorted Continuous Subarray.md)    单调栈
 * 繁杂[#591 Tag Validator](./#591 Tag Validator.md)    括号匹配的繁杂应用
 * $\clubs$中等[#636 Exclusive Time of Functions](./#636 Exclusive Time of Functions.md)    括号匹配的抽象
+* $\clubs$中等[#678 Valid Parenthesis String](./#678 Valid Parenthesis String.md)    带有通配符的括号匹配
 * 简单[#682 Baseball Game](./#682 Baseball Game.md)    栈的基本操作
 * 简单[#716 Max Stack](./#716 Max Stack.md)    辅助栈
 * 繁杂[#726 Number of Atoms](./#726 Number of Atoms.md)    加入有序字典的栈基本操作

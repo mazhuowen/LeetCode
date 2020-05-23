@@ -19,3 +19,4 @@
 * 简单[#933 Number of Recent Calls](./#933 Number of Recent Calls.md)    队列基本操作
 * $\clubs$中等[#950 Reveal Cards In Increasing Order](./#950 Reveal Cards In Increasing Order.md)    队列模拟牌的顺序
 * 中等[#1004 Max Consecutive Ones III](./#1004 Max Consecutive Ones III.md)    队列出队入队关系
+* 繁杂[#1156 Swap For Longest Repeated Character Substring](./#1156 Swap For Longest Repeated Character Substring.md)    可替换单字符最大重复子串

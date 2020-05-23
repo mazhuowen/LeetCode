@@ -39,6 +39,7 @@
 * 简单[#175 Combine Two Tables](./#175 Combine Two Tables.md)    LEFT JOIN语句
 * 简单[#176 Second Highest Salary](./#176 Second Highest Salary.md)    LIMIT和OFFSET的组合
 * 简单[#182 Duplicate Emails](./#182 Duplicate Emails.md)    GROUP BY和HAVING的组合
+* 中等[#184 Department Highest Salary](./#184 Department Highest Salary.md)    IN技巧
 
 ## SHELL
 
