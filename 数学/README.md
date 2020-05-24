@@ -57,5 +57,6 @@
 * 中等[#611 Valid Triangle Number](./#611 Valid Triangle Number.md)    排序计算三角形组合数
 * 简单[#717 1-bit and 2-bit Characters](./#717 1-bit and 2-bit Characters.md)    结尾1的数目决定编码规律
 * 简单[#836 Rectangle Overlap](./#836 Rectangle Overlap.md)    [#223 Rectangle Area](./#223 Rectangle Area.md)的简化问题
+* $\bigstar$困难[#1067 Digit Count in Range](./#1067 Digit Count in Range.md)    [#233 Number of Digit One](./#233 Number of Digit One.md)的进阶
 * 简单[#1185 Day of the Week](./#1185 Day of the Week.md)    计算任意一天的星期
 * 简单[#1304 Find N Unique Integers Sum up to Zero](./#1304 Find N Unique Integers Sum up to Zero.md)    创建数组其和为0

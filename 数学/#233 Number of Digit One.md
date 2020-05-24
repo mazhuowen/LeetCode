@@ -64,4 +64,29 @@ class Solution {
 
 ## 官方解题
 
-&emsp;思路同上。
+&emsp;官方思路从数学规律的角度出发。首先个位上的1每隔10次出现一次，可得规律$n / 10 + (n \% 10 \ne 0)$；十位上的1每隔100次连续出现10次，可得$n / 100 * 10 + \min(\max(n\%100 - 10 + 1, 0), 10)$；百位等依次类推。有了这一系列规律，可从个位开始累积计算1的出现次数。
+
+<img src="../images/#233.png" style="zoom: 67%;" />
+
+```java
+class Solution {
+    public int countDigitOne(int n) {
+        if (n < 0) return 0;
+
+        // 注意数值溢出，使用long
+        long res = 0;
+        for (long digit = 1; digit <= n; digit *= 10) {
+            long base = digit * 10;
+            // 计算当前位1的数目
+            res += n / base * digit + (int)Math.min(Math.max(n % base - digit + 1, 0), digit);
+        }
+        return (int)res;
+    }
+}
+```
+
+&emsp;时间复杂度为$O(\log_{10}N)$，空间复杂度为$O(1)$。
+
+执行用时：0ms，在所有java提交中击败了100.00%的用户。
+
+内存消耗：36.3MB，在所有java提交中击败了33.33%的用户。
