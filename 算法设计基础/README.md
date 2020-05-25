@@ -48,6 +48,7 @@
 * 简单[#64 Minimum Path Sum](./#64 Minimum Path Sum.md)    基本动态规划问题
 * 简单[#70 Climbing Stairs](./#70 Climbing Stairs.md)    经典动态规划问题
 * $\clubs$困难[#72 Edit Distance](./#72 Edit Distance.md)    经典动态规划的字符串应用
+* $\clubs$困难[#87 Scramble String](./#87 Scramble String.md)    从回溯到动态规划
 * 中等[#91 Decode Ways](./#91 Decode Ways.md)    边角条件繁杂的动态规划应用
 * $\clubs$困难[#97 Interleaving String](./#97 Interleaving String.md)    交错字符串组成判断
 * 简单[#119 Pascal's Triangle II](./#119 Pascal's Triangle II.md)    经典动态规划问题
