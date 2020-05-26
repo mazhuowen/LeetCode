@@ -27,6 +27,7 @@
 * $\clubs$中等[#304 Range Sum Query 2D - Immutable](./#304 Range Sum Query 2D - Immutable.md)    前缀和思想在二维数组的应用
 * 简单[#724 Find Pivot Index](./#724 Find Pivot Index.md)    前缀和
 * $\clubs$中等[#885 Spiral Matrix III](./#885 Spiral Matrix III.md)    [#54 Spiral Matrix](./#54 Spiral Matrix.md)的进阶，从内往外旋转
+* 中等[#939 Minimum Area Rectangle](./#939 Minimum Area Rectangle.md)    拟对角线遍历验证
 * 简单[#1375 Bulb Switcher III](./#1375 Bulb Switcher III.md)    编号求和比较
 
 ## 多线程
