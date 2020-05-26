@@ -93,6 +93,7 @@ for (int i = 0; i < N; i++) {
 * 中等[#994 Rotting Oranges](./#994 Rotting Oranges.md)    广度优先搜索
 * 简单[#1030 Matrix Cells in Distance Order](./#1030 Matrix Cells in Distance Order.md)    图的广度优先搜索思想在矩形中的应用
 * $\clubs$中等[#1162 As Far from Land as Possible](./#1162 As Far from Land as Possible.md)    广度优先搜索从外层向中心遍历
+* $\clubs$中等[#1197 Minimum Knight Moves](./#1197 Minimum Knight Moves.md)    快速逼近加剪枝的广度优先搜索
 * 简单[#1306 Jump Game III](./#1306 Jump Game III.md)    图的遍历在数组的应用
 
 ## 无向图的连通性
