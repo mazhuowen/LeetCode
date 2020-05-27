@@ -26,8 +26,10 @@
 * 中等[#289 Game of Life](./#289 Game of Life.md)   新增状态巧妙利用空间
 * $\clubs$中等[#304 Range Sum Query 2D - Immutable](./#304 Range Sum Query 2D - Immutable.md)    前缀和思想在二维数组的应用
 * 简单[#724 Find Pivot Index](./#724 Find Pivot Index.md)    前缀和
+* $\clubs$困难[#828 Count Unique Characters of All Substrings of a Given String](./#828 Count Unique Characters of All Substrings of a Given String.md)    计数每个字符不重复区间组合
 * $\clubs$中等[#885 Spiral Matrix III](./#885 Spiral Matrix III.md)    [#54 Spiral Matrix](./#54 Spiral Matrix.md)的进阶，从内往外旋转
 * 中等[#939 Minimum Area Rectangle](./#939 Minimum Area Rectangle.md)    拟对角线遍历验证
+* 中等[#1292 Maximum Side Length of a Square with Sum Less than or Equal to Threshold](./#1292 Maximum Side Length of a Square with Sum Less than or Equal to Threshold.md)    矩形前缀和优化
 * 简单[#1375 Bulb Switcher III](./#1375 Bulb Switcher III.md)    编号求和比较
 
 ## 多线程
@@ -44,7 +46,8 @@
 
 ## SHELL
 
-
+* $\clubs$中等[#192 Word Frequency](./#192 Word Frequency.md)    `tr -s`替换分隔
+* 简单[#193 Valid Phone Numbers](./#193 Valid Phone Numbers.md)    `grep -P`正则匹配
 
 ## 其它算法问题
 
