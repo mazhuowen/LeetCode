@@ -41,6 +41,10 @@
 
 * 简单[#175 Combine Two Tables](./#175 Combine Two Tables.md)    LEFT JOIN语句
 * 简单[#176 Second Highest Salary](./#176 Second Highest Salary.md)    LIMIT和OFFSET的组合
+* $\clubs$中等[#177 Nth Highest Salary](./#177 Nth Highest Salary.md)    LIMIT的使用
+* $\bigstar$中等[#178 Rank Scores](./#178 Rank Scores.md)    DENSE_RANK函数应用
+* 中等[#180 Consecutive Numbers](./#180 Consecutive Numbers.md)    自连接查询
+* 简单[#181 Employees Earning More Than Their Managers](./#181 Employees Earning More Than Their Managers.md)    自连接查询
 * 简单[#182 Duplicate Emails](./#182 Duplicate Emails.md)    GROUP BY和HAVING的组合
 * 中等[#184 Department Highest Salary](./#184 Department Highest Salary.md)    IN技巧
 
