@@ -8,6 +8,7 @@
 * $\clubs$技巧[#26 Remove Duplicates from Sorted Arra](./#26 Remove Duplicates from Sorted Array.md)    有序顺序表的技巧删除
 * $\clubs$技巧[#27 Remove Element](./#27 Remove Element.md)    顺序表的技巧删除
 * 简单[#80 Remove Duplicates from Sorted Array II](./#80 Remove Duplicates from Sorted Array II.md)    数组移动覆盖
+* 中等[#163 Missing Ranges](./#163 Missing Ranges.md)    数组遍历比较相邻值
 * 简单[#228 Summary Ranges](./#228 Summary Ranges.md)    连续数值区间判断
 
 ### 双指针
