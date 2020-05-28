@@ -46,6 +46,7 @@
 * 中等[#180 Consecutive Numbers](./#180 Consecutive Numbers.md)    自连接查询
 * 简单[#181 Employees Earning More Than Their Managers](./#181 Employees Earning More Than Their Managers.md)    自连接查询
 * 简单[#182 Duplicate Emails](./#182 Duplicate Emails.md)    GROUP BY和HAVING的组合
+* 简单[#183 Customers Who Never Order](./#183 Customers Who Never Order.md)    NOT IN使用
 * 中等[#184 Department Highest Salary](./#184 Department Highest Salary.md)    IN技巧
 
 ## SHELL

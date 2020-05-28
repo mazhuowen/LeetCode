@@ -86,6 +86,7 @@
 * 中等[#935 Knight Dialer](./#935 Knight Dialer.md)    有限状态机
 * 中等[#1035 Uncrossed Lines](./#1035 Uncrossed Lines.md)    最长公共子序列的应用
 * $\clubs$中等[#1039 Minimum Score Triangulation of Polygon](./#1039 Minimum Score Triangulation of Polygon.md)    几何规律
+* 困难[#1092 Shortest Common Supersequence](./#1092 Shortest Common Supersequence.md)    最长公共子序列的应用
 * 中等[#1139 Largest 1-Bordered Square](./#1139 Largest 1-Bordered Square.md)    存储记录连续的左侧和上方结点数目
 * 中等[#1143 Longest Common Subsequence](./#1143 Longest Common Subsequence.md)    最长公共子序列
 * $\clubs$困难[#1187 Make Array Strictly Increasing](./#1187 Make Array Strictly Increasing.md)    动态规划记录递增序列末尾值
