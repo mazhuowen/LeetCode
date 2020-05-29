@@ -134,6 +134,7 @@
 * 繁杂[#1088 Confusing Number II](./#1088 Confusing Number II.md)    需注意边界及数值溢出的处理
 * $\clubs$中等[#1239 Maximum Length of a Concatenated String with Unique Characters](./#1239 Maximum Length of a Concatenated String with Unique Characters.md)    字符串顺序无关的回溯
 * $\clubs$困难[#1240 Tiling a Rectangle with the Fewest Squares](./#1240 Tiling a Rectangle with the Fewest Squares.md)    暴力回溯填充矩形
+* 中等[#1255 Maximum Score Words Formed by Letters](./#1255 Maximum Score Words Formed by Letters.md)    回溯尝试单词组合
 * $\clubs$繁杂[#1307 Verbal Arithmetic Puzzle](./#1307 Verbal Arithmetic Puzzle.md)    剪枝优化暴力回溯
 
 ## 随机算法
