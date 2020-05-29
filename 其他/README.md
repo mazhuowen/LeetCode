@@ -48,11 +48,15 @@
 * 简单[#182 Duplicate Emails](./#182 Duplicate Emails.md)    GROUP BY和HAVING的组合
 * 简单[#183 Customers Who Never Order](./#183 Customers Who Never Order.md)    NOT IN使用
 * 中等[#184 Department Highest Salary](./#184 Department Highest Salary.md)    IN技巧
+* 简单[#196 Delete Duplicate Emails](./#196 Delete Duplicate Emails.md)    自连接
+* 简单[#197 Rising Temperature](./#197 Rising Temperature.md)    DATEDIFF函数应用
 
 ## SHELL
 
 * $\clubs$中等[#192 Word Frequency](./#192 Word Frequency.md)    `tr -s`替换分隔
 * 简单[#193 Valid Phone Numbers](./#193 Valid Phone Numbers.md)    `grep -P`正则匹配
+* $\bigstar$中等[#194 Transpose File](./#194 Transpose File.md)    `awk`函数编程
+* 简单[#195 Tenth Line](./#195 Tenth Line.md)    `awk`命令`$0`整行打印
 
 ## 其它算法问题
 
