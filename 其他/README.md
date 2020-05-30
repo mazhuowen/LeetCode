@@ -9,6 +9,7 @@
 * 简单[#348 Design Tic-Tac-Toe](./#348 Design Tic-Tac-Toe.md)    矩形行、列、对角线的表示
 * 中等[#535 Encode and Decode TinyURL](./#535 Encode and Decode TinyURL.md)    短链系统设计
 * $\clubs$困难[#843 Guess the Word](./#843 Guess the Word.md)    启发式极小极大算法
+* $\clubs$困难[#855 Exam Room](./#855 Exam Room.md)    红黑数动态保存区间长度
 
 ## 逻辑
 
@@ -26,6 +27,7 @@
 * 中等[#289 Game of Life](./#289 Game of Life.md)   新增状态巧妙利用空间
 * $\clubs$中等[#304 Range Sum Query 2D - Immutable](./#304 Range Sum Query 2D - Immutable.md)    前缀和思想在二维数组的应用
 * 简单[#724 Find Pivot Index](./#724 Find Pivot Index.md)    前缀和
+* 中等[#769 Max Chunks To Make Sorted](./#769 Max Chunks To Make Sorted.md)    连续数组前缀和规律
 * $\clubs$困难[#828 Count Unique Characters of All Substrings of a Given String](./#828 Count Unique Characters of All Substrings of a Given String.md)    计数每个字符不重复区间组合
 * $\clubs$中等[#885 Spiral Matrix III](./#885 Spiral Matrix III.md)    [#54 Spiral Matrix](./#54 Spiral Matrix.md)的进阶，从内往外旋转
 * 中等[#939 Minimum Area Rectangle](./#939 Minimum Area Rectangle.md)    拟对角线遍历验证
@@ -50,6 +52,7 @@
 * 中等[#184 Department Highest Salary](./#184 Department Highest Salary.md)    IN技巧
 * 简单[#196 Delete Duplicate Emails](./#196 Delete Duplicate Emails.md)    自连接
 * 简单[#197 Rising Temperature](./#197 Rising Temperature.md)    DATEDIFF函数应用
+* 简单[#1179 Reformat Department Table](./#1179 Reformat Department Table.md)    CASE语句行转列
 
 ## SHELL
 
