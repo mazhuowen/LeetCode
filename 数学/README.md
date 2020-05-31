@@ -44,6 +44,7 @@
 * 简单[#223 Rectangle Area](./#223 Rectangle Area.md)    矩形相交条件
 * $\bigstar$困难[#233 Number of Digit One](./#233 Number of Digit One.md)    数字中1的数目
 * $\clubs$中等[#240 Search a 2D Matrix II](./#240 Search a 2D Matrix II.md)    有序二维矩阵的遍历查找
+* 中等[#260 Single Number III](./#260 Single Number III.md)    [#136 Single Number](../散列表/#136 Single Number.md)的进阶，存在两个单独数
 * 简单[#268 Missing Number](./#268 Missing Number.md)    异或的性质
 * 简单[#292 Nim Game](./#292 Nim Game.md)    `Nim`游戏
 * 简单[#371 Sum of Two Integers](./#371 Sum of Two Integers.md)    异常或及与操作实现加法

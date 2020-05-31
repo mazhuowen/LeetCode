@@ -95,6 +95,7 @@
 * $\clubs$困难[#1235 Maximum Profit in Job Scheduling](./#1235 Maximum Profit in Job Scheduling.md)    按结束时间动态规划
 * 困难[#1246 Palindrome Removal](./#1246 Palindrome Removal.md)    回文字符串的动态规划规律
 * $\clubs$困难[#1259 Handshakes That Don't Cross](./#1259 Handshakes That Don't Cross.md)    巧妙的边角条件处理
+* 困难[#1312 Minimum Insertion Steps to Make a String Palindrome](./#1312 Minimum Insertion Steps to Make a String Palindrome.md)    区间动态规划
 
 ## 回溯法
 
@@ -146,3 +147,4 @@
 * $\clubs$中等[#384 Shuffle an Array](./#384 Shuffle an Array.md)    洗牌算法
 * $\clubs$中等[#398 Random Pick Index](./#398 Random Pick Index.md)    蓄水池抽样算法
 * $\clubs$中等[#470 Implement Rand10() Using Rand7()](./#470 Implement Rand10() Using Rand7().md)    拒绝采样
+* $\bigstar$困难[#1206 Design Skiplist](./#1206 Design Skiplist.md)    设计跳表
