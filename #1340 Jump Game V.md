@@ -40,7 +40,32 @@ class Solution {
 * 
 
 ```java
+class Solution {
+    public int maxJumps(int[] arr, int d) {
+        if (arr == null || arr.length == 0 || d < 1) return 0;
 
+        int maxStep = 0;
+        for (int i = 0; i < arr.length; i++) {
+            maxStep = Math.max(maxStep, maxJumps(arr, i, d));
+        }
+        return maxStep;
+    }
+
+    private int maxJumps(int[] arr, int start, int d) {
+        int maxStep = 1;
+        for (int i = start + 1; i < arr.length && i <= start + d; i++) {
+            // 存在不低于起始的点，后续无法跳过到达
+            if (arr[i] >= arr[start]) break;
+            maxStep = Math.max(maxStep, maxJumps(arr, i, d) + 1);
+        }
+
+        for (int i = start - 1; i >= 0 && i >= start - d; i--) {
+            if (arr[i] >= arr[start]) break;
+            maxStep = Math.max(maxStep, maxJumps(arr, i, d) + 1);
+        }
+        return maxStep;
+    }
+}
 ```
 
 ## 性能分析
