@@ -138,6 +138,7 @@
 * $\clubs$困难[#1240 Tiling a Rectangle with the Fewest Squares](./#1240 Tiling a Rectangle with the Fewest Squares.md)    暴力回溯填充矩形
 * 中等[#1255 Maximum Score Words Formed by Letters](./#1255 Maximum Score Words Formed by Letters.md)    回溯尝试单词组合
 * $\clubs$繁杂[#1307 Verbal Arithmetic Puzzle](./#1307 Verbal Arithmetic Puzzle.md)    剪枝优化暴力回溯
+* 困难[#1340 Jump Game V](./#1340 Jump Game V.md)    记忆化回溯
 
 ## 随机算法
 

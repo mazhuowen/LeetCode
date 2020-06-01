@@ -56,6 +56,7 @@
 * 简单[#197 Rising Temperature](./#197 Rising Temperature.md)    DATEDIFF函数应用
 * 简单[#1179 Reformat Department Table](./#1179 Reformat Department Table.md)    CASE语句行转列
 * 中等[#1205 Monthly Transactions II](./#1205 Monthly Transactions II.md)    UNION ALL和DATE_FORMAT函数
+* $\clubs$中等[#1454 Active Users](./#1454 Active Users.md)    连续时间复杂查询
 
 ## SHELL
 
