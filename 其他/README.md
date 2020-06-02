@@ -52,10 +52,12 @@
 * 简单[#182 Duplicate Emails](./#182 Duplicate Emails.md)    GROUP BY和HAVING的组合
 * 简单[#183 Customers Who Never Order](./#183 Customers Who Never Order.md)    NOT IN使用
 * 中等[#184 Department Highest Salary](./#184 Department Highest Salary.md)    IN技巧
+* $\clubs$困难[#185 Department Top Three Salaries](./#185 Department Top Three Salaries.md)    自连接
 * 简单[#196 Delete Duplicate Emails](./#196 Delete Duplicate Emails.md)    自连接
 * 简单[#197 Rising Temperature](./#197 Rising Temperature.md)    DATEDIFF函数应用
 * 简单[#1179 Reformat Department Table](./#1179 Reformat Department Table.md)    CASE语句行转列
 * 中等[#1205 Monthly Transactions II](./#1205 Monthly Transactions II.md)    UNION ALL和DATE_FORMAT函数
+* 困难[#1369 Get the Second Most Recent Activity](./#1369 Get the Second Most Recent Activity.md)    HAVING条件应用
 * $\clubs$中等[#1454 Active Users](./#1454 Active Users.md)    连续时间复杂查询
 
 ## SHELL

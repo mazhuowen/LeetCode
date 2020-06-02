@@ -53,20 +53,25 @@ Bob only has one record, we just take that one.
 
 ## 题目解读
 
-&emsp;
+&emsp;查询最近的第二次活动，没有则返回最近的第一次活动。
 
 ## 程序设计
 
-* 
+* 使用`HAVING`条件筛选。
 
 ```mysql
-
+SELECT b.* FROM UserActivity a, UserActivity b
+WHERE a.username = b.username GROUP BY b.username, b.endDate
+# 第二次活动或只有一次活动
+HAVING sum(a.endDate > b.endDate) = 1 or count(1) = 1;
 ```
 
 ## 性能分析
 
+执行用时：237ms, 在所有MySQL提交中击败了46.07%的用户。
 
+内存消耗：0B，在所有MySQL提交中击败了100.00%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;暂无，密切关注。

@@ -22,6 +22,7 @@
 * $\clubs$中等[#810 Chalkboard XOR Game](./#810 Chalkboard XOR Game.md)    偶数长数组亦或性质
 * 简单[#867 Transpose Matrix](./#867 Transpose Matrix.md)    矩阵转置
 * $\bigstar$困难[#878 Nth Magical Number](./#878 Nth Magical Number.md)    数学规律与二分查找结合
+* $\bigstar$困难[#972 Equal Rational Numbers](./#972 Equal Rational Numbers.md)    有理数的分数形式表达
 * $\clubs$中等[#1201 Ugly Number III](./#1201 Ugly Number III.md)    [#878 Nth Magical Number](./#878 Nth Magical Number.md) 的延续，周期化并二分查找
 
 ## 规律
