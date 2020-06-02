@@ -21,6 +21,7 @@
 * 中等[#647 Palindromic Substrings](./#647 Palindromic Substrings.md)    曼彻斯特算法
 * 繁杂[#722 Remove Comments](./#722 Remove Comments.md)    细节繁多，需理清
 * $\bigstar$困难[#727 Minimum Window Subsequence](./#727 Minimum Window Subsequence.md)    正反向匹配查找最短子序列
+* $\clubs$中等[#833 Find And Replace in String](./#833 Find And Replace in String.md)    先标记后替换
 
 ### RK（Rabin-Karp）算法
 

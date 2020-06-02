@@ -65,3 +65,4 @@
 * $\bigstar$困难[#1067 Digit Count in Range](./#1067 Digit Count in Range.md)    [#233 Number of Digit One](./#233 Number of Digit One.md)的进阶
 * 简单[#1185 Day of the Week](./#1185 Day of the Week.md)    计算任意一天的星期
 * 简单[#1304 Find N Unique Integers Sum up to Zero](./#1304 Find N Unique Integers Sum up to Zero.md)    创建数组其和为0
+* 简单[#1360 Number of Days Between Two Dates](./#1360 Number of Days Between Two Dates.md)    计算日期之差
