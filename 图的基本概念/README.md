@@ -84,6 +84,7 @@ for (int i = 0; i < N; i++) {
 * 中等[#417 Pacific Atlantic Water Flow](./#417 Pacific Atlantic Water Flow.md)    两次广度优先搜索
 * 中等[#529 Minesweeper](./#529 Minesweeper.md)    图的深度优先搜索在扫雷中的应用
 * 中等[#542 01 Matrix](./#542 01 Matrix.md)    广度优先搜索计算最短距离
+* $\clubs$困难[#675 Cut Off Trees for Golf Event](./#675 Cut Off Trees for Golf Event.md)    广度优先搜索计算两点间最短距离
 * 中等[#694 Number of Distinct Islands](./#694 Number of Distinct Islands.md)    深度优先搜索路径
 * 中等[#695 Max Area of Island](./#695 Max Area of Island.md)    矩形的深度优先搜索
 * $\clubs$困难[#711 Number of Distinct Islands II](./#711 Number of Distinct Islands II.md)    [#694 Number of Distinct Islands](./#694 Number of Distinct Islands.md)的进阶
