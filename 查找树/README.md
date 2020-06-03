@@ -32,6 +32,7 @@
 * $\clubs$中等[#1214 Two Sum BSTs](./#1214 Two Sum BSTs.md)    两棵树遍历查找
 * 简单[#1305 All Elements in Two Binary Search Trees](./#1305 All Elements in Two Binary Search Trees.md)    中序遍历
 * 简单[#1038 Binary Search Tree to Greater Sum Tree](./#1038 Binary Search Tree to Greater Sum Tree.md)    反序中序遍历，同[#538 Convert BST to Greater Tree](./#538 Convert BST to Greater Tree.md)
+* 困难[#1373 Maximum Sum BST in Binary Tree](./#1373 Maximum Sum BST in Binary Tree.md)    后序遍历
 
 ## AVL树
 
