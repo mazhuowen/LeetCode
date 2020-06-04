@@ -64,6 +64,7 @@ return -1;
 * 中等[#875 Koko Eating Bananas](./#875 Koko Eating Bananas.md)    利用二分查找遍历判断
 * 中等[#981 Time Based Key-Value Store](./#981 Time Based Key-Value Store.md)    设计时间递增的时间戳字典
 * $\clubs$中等[#1060 Missing Element in Sorted Array](./#1060 Missing Element in Sorted Array.md)    查找第k个值问题
+* 中等[#1095 Find in Mountain Array](./#1095 Find in Mountain Array.md)    山峰数组二分查找
 
 ### 插入查找
 
