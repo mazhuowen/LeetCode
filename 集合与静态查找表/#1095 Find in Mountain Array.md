@@ -106,4 +106,4 @@ class Solution {
 
 ## 官方解题
 
-&emsp;
+&emsp;同上。

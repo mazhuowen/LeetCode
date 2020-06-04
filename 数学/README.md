@@ -19,7 +19,7 @@
 * 简单[#367 Valid Perfect Square](./#367 Valid Perfect Square.md)    整数的平方根，需注意判断条件
 * 简单[#415 Add Strings](./#415 Add Strings.md)    字符串加法
 * $\bigstar$困难[#483 Smallest Good Base](./#483 Smallest Good Base.md)    $k$进制规律
-* $\clubs$中等[#810 Chalkboard XOR Game](./#810 Chalkboard XOR Game.md)    偶数长数组亦或性质
+* $\clubs$中等[#810 Chalkboard XOR Game](./#810 Chalkboard XOR Game.md)    偶数长数组异或性质
 * 简单[#867 Transpose Matrix](./#867 Transpose Matrix.md)    矩阵转置
 * $\bigstar$困难[#878 Nth Magical Number](./#878 Nth Magical Number.md)    数学规律与二分查找结合
 * $\bigstar$困难[#972 Equal Rational Numbers](./#972 Equal Rational Numbers.md)    有理数的分数形式表达
@@ -48,7 +48,7 @@
 * 中等[#260 Single Number III](./#260 Single Number III.md)    [#136 Single Number](../散列表/#136 Single Number.md)的进阶，存在两个单独数
 * 简单[#268 Missing Number](./#268 Missing Number.md)    异或的性质
 * 简单[#292 Nim Game](./#292 Nim Game.md)    `Nim`游戏
-* 简单[#371 Sum of Two Integers](./#371 Sum of Two Integers.md)    异常或及与操作实现加法
+* 简单[#371 Sum of Two Integers](./#371 Sum of Two Integers.md)    异或及与操作实现加法
 * 中等[#396 Rotate Function](./#396 Rotate Function.md)    数组索引与数值乘积和的规律
 * 中等[#397 Integer Replacement](./#397 Integer Replacement.md)    整数替换的位操作
 * 中等[#400 Nth Digit](./#400 Nth Digit.md)    数字位数关系

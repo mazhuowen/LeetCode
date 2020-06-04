@@ -132,6 +132,7 @@
 * $\clubs$困难[#679 24 Game](./#679 24 Game.md)    表达式的配列组合特征
 * $\clubs$中等[#698 Partition to K Equal Sum Subsets](./#698 Partition to K Equal Sum Subsets.md)    巧妙剪枝提升时间性能
 * 简单[#784 Letter Case Permutation](./#784 Letter Case Permutation.md)    回溯尝试大小写
+* $\clubs$困难[#805 Split Array With Same Average](./#805 Split Array With Same Average.md)    剪枝回溯
 * 困难[#980 Unique Paths III](./#980 Unique Paths III.md)    记忆化回溯，路径二进制压缩
 * 中等[#1087 Brace Expansion](./#1087 Brace Expansion.md)    回溯尝试所有组合
 * 繁杂[#1088 Confusing Number II](./#1088 Confusing Number II.md)    需注意边界及数值溢出的处理
