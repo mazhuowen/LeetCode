@@ -33,6 +33,7 @@
 * $\clubs$中等[#885 Spiral Matrix III](./#885 Spiral Matrix III.md)    [#54 Spiral Matrix](./#54 Spiral Matrix.md)的进阶，从内往外旋转
 * 中等[#939 Minimum Area Rectangle](./#939 Minimum Area Rectangle.md)    拟对角线遍历验证
 * 中等[#1292 Maximum Side Length of a Square with Sum Less than or Equal to Threshold](./#1292 Maximum Side Length of a Square with Sum Less than or Equal to Threshold.md)    矩形前缀和优化
+* 中等[#1352 Product of the Last K Numbers](./#1352 Product of the Last K Numbers.md)    前缀积变型
 * 简单[#1375 Bulb Switcher III](./#1375 Bulb Switcher III.md)    编号求和比较
 * $\clubs$困难[#面试题17.24 最大子矩阵](./#面试题17.24 最大子矩阵.md)    列前缀和状态压缩
 
@@ -58,6 +59,7 @@
 * 简单[#196 Delete Duplicate Emails](./#196 Delete Duplicate Emails.md)    自连接
 * 简单[#197 Rising Temperature](./#197 Rising Temperature.md)    DATEDIFF函数应用
 * 中等[#262 Trips and Users](./#262 Trips and Users.md)    自连接统计计数
+* 困难[#569 Median Employee Salary](./#569 Median Employee Salary.md)    SQL变量应用
 * 简单[#1179 Reformat Department Table](./#1179 Reformat Department Table.md)    CASE语句行转列
 * 中等[#1205 Monthly Transactions II](./#1205 Monthly Transactions II.md)    UNION ALL和DATE_FORMAT函数
 * 困难[#1369 Get the Second Most Recent Activity](./#1369 Get the Second Most Recent Activity.md)    HAVING条件应用
@@ -136,6 +138,7 @@ for (int i = 1; i <= n && i <= w.length; i++) {
 > 上述三种模式混合，则可在内部循环判断使用哪种转移方程。
 
 * $\clubs$中等[#416 Partition Equal Subset Sum](./#416 Partition Equal Subset Sum.md)    01背包问题变形
+* $\clubs$中等[#474 Ones and Zeroes](./#474 Ones and Zeroes.md)    二维背包问题
 * $\clubs$中等[#518 Coin Change 2](./#518 Coin Change 2.md)    完全背包问题变形
 
 ### 位图

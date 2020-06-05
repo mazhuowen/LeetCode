@@ -90,6 +90,7 @@
 * 困难[#1092 Shortest Common Supersequence](./#1092 Shortest Common Supersequence.md)    最长公共子序列的应用
 * 中等[#1139 Largest 1-Bordered Square](./#1139 Largest 1-Bordered Square.md)    存储记录连续的左侧和上方结点数目
 * 中等[#1143 Longest Common Subsequence](./#1143 Longest Common Subsequence.md)    最长公共子序列
+* 中等[#1155 Number of Dice Rolls With Target Sum](./#1155 Number of Dice Rolls With Target Sum.md)    动态规划记录目标和数目
 * $\clubs$困难[#1187 Make Array Strictly Increasing](./#1187 Make Array Strictly Increasing.md)    动态规划记录递增序列末尾值
 * 中等[#1223 Dice Roll Simulation](./#1223 Dice Roll Simulation.md)    计数序列末尾值
 * $\clubs$困难[#1235 Maximum Profit in Job Scheduling](./#1235 Maximum Profit in Job Scheduling.md)    按结束时间动态规划
