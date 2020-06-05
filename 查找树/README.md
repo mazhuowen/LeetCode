@@ -44,6 +44,7 @@
 
 &emsp;规定根节点到每个空结点路径上的黑结点数目一致，红结点的子节点不能是红结点。每个结点需要一个属性保存是红结点还是黑结点。若插入删除打破了平衡，则使用单旋转和双旋转恢复，这个过程还有重新着色的操作。
 
+* 困难[#352 Data Stream as Disjoint Intervals](./#352 Data Stream as Disjoint Intervals.md)    红黑树保存区间
 * 中等[#729 My Calendar I](./#729 My Calendar I.md)    平衡树保存区间
 
 ## AA树
