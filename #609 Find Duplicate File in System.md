@@ -57,14 +57,60 @@ class Solution {
 * 
 
 ```java
+class Solution {
+    public List<List<String>> findDuplicate(String[] paths) {
+        List<List<String>> res = new LinkedList<>();
+        if (paths == null || paths.length == 0) return res;
 
+        // 记录文件内容及文件路径
+        Map<String, List<String>> record = new HashMap<>();
+        for (String path : paths) {
+            String[][] files = transfer(path);
+            for (String[] file : files) {
+                String dir = file[0], content = file[1];
+
+                if (record.get(content) == null) record.put(content, new LinkedList<>());
+                record.get(content).add(dir);
+            }
+        }
+
+        for (Map.Entry<String, List<String>> entry : record.entrySet()) {
+            // 不重复，则跳过
+            if (entry.getValue().size() <= 1) continue;
+            res.add(entry.getValue());
+        }
+
+        return res;
+    }
+
+    // 拼接当前目录下的文件内容和目录
+    private String[][] transfer(String path) {
+        if (path == null || path.isEmpty()) return new String[0][2];
+
+        String[] split = path.split(" ");
+        // 目录
+        String parent = split[0];
+        String[][] res = new String[split.length - 1][2];
+        for (int i = 1; i < split.length; i++) {
+            String str = split[i];
+            if (str == null || str.isEmpty()) continue;
+            // 分割文件名及内容
+            String[] file =str.split("[()]");
+            if (file.length != 2) throw new IllegalArgumentException("invalid param");
+            res[i - 1] = new String[]{parent + "/" + file[0], file[1]};
+        }
+        return res;
+    }
+}
 ```
 
 ## 性能分析
 
 &emsp;
 
+执行用时 :71 ms, 在所有 Java 提交中击败了13.35%的用户
 
+内存消耗 :48.1 MB, 在所有 Java 提交中击败了100.00%的用户
 
 ## 官方解题
 
