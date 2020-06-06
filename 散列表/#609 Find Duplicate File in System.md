@@ -42,7 +42,7 @@ The **output** is a list of group of duplicate file paths. For each group, it co
 
 ## 题目解读
 
-&emsp;
+&emsp;返回重复文件的路径列表。
 
 ```java
 class Solution {
@@ -54,7 +54,7 @@ class Solution {
 
 ## 程序设计
 
-* 
+* 使用哈希表记录文件内容和文件路径。
 
 ```java
 class Solution {
@@ -106,12 +106,12 @@ class Solution {
 
 ## 性能分析
 
-&emsp;
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(N)$。
 
-执行用时 :71 ms, 在所有 Java 提交中击败了13.35%的用户
+执行用时：71ms，在所有java提交中击败了13.35%的用户。
 
-内存消耗 :48.1 MB, 在所有 Java 提交中击败了100.00%的用户
+内存消耗：48.1MB，在所有java提交中击败了100.00%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;思路同上。社区时间性能较高的方法思路都一致，只是截取字符串的方式略有不同。
