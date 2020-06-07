@@ -67,3 +67,4 @@
 * 简单[#1304 Find N Unique Integers Sum up to Zero](./#1304 Find N Unique Integers Sum up to Zero.md)    创建数组其和为0
 * 中等[#1344 Angle Between Hands of a Clock](.#1344 Angle Between Hands of a Clock.md)   时针分针的规律
 * 简单[#1360 Number of Days Between Two Dates](./#1360 Number of Days Between Two Dates.md)    计算日期之差
+* 中等[#1404 Number of Steps to Reduce a Number in Binary Representation to One](./#1404 Number of Steps to Reduce a Number in Binary Representation to One.md)    二进制数操作的规律
