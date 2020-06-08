@@ -42,6 +42,7 @@
 * 简单[#1114 Print in Order](./#1114 Print in Order.md)    线程间变量共享通信
 * 中等[#1115 Print FooBar Alternately](./#1115 Print FooBar Alternately.md)    `ReentrantLock`线程互相唤醒
 * $\clubs$中等[#1116 Print Zero Even Odd](./#1116 Print Zero Even Odd.md)    信号量的应用
+* $\clubs$中等[#1242 Web Crawler Multithreaded](./#1242 Web Crawler Multithreaded.md)    独占锁细化锁粒度
 * 简单[#1279 Traffic Light Controlled Intersection](./#1279 Traffic Light Controlled Intersection.md)    独占锁
 
 ## 数据库
@@ -64,6 +65,7 @@
 * 中等[#1205 Monthly Transactions II](./#1205 Monthly Transactions II.md)    UNION ALL和DATE_FORMAT函数
 * 困难[#1369 Get the Second Most Recent Activity](./#1369 Get the Second Most Recent Activity.md)    HAVING条件应用
 * $\clubs$中等[#1454 Active Users](./#1454 Active Users.md)    连续时间复杂查询
+* 中等[#1468 Calculate Salaries](./#1468 Calculate Salaries.md)    统计部门最大薪资并计算税率
 
 ## SHELL
 

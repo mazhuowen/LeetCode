@@ -53,7 +53,7 @@ Constraints:
 
 ## 题目解读
 
-&emsp;
+&emsp;多线程爬取网页链接。
 
 ```java
 /**
@@ -72,18 +72,98 @@ class Solution {
 
 ## 程序设计
 
-* 
+* 最基本的，考虑使用并发集合类记录是否已爬取，但是查询是否爬取及加入集合两步操作并不是原子的，必须加入锁，如上分析，锁的粒度只需覆盖这两步即可。
 
 ```java
+class Solution {
 
+    public List<String> crawl(String startUrl, HtmlParser htmlParser) {
+        // 记录链接是否爬取过
+        Set<String> record = new HashSet<>();
+        // 独占锁
+        ReentrantLock lock = new ReentrantLock();
+        
+        Thread thread = new Worker(startUrl, htmlParser, record, lock);
+        thread.start();
+
+        try{
+            thread.join();
+        } catch(InterruptedException e){
+        
+        }
+
+        List<String> res = new LinkedList<>(record);
+        return res;
+    }
+}
+
+class Worker extends Thread {
+    String url;
+    HtmlParser htmlParser;
+    Set<String> record;
+    ReentrantLock lock;
+
+    Worker(String url, HtmlParser htmlParser, Set<String> record, ReentrantLock lock) {
+        this.url = url;
+        this.htmlParser = htmlParser;
+        this.record = record;
+        this.lock = lock;
+    }
+
+    @Override
+    public void run() {
+        // 加锁维护是否爬取关系
+        lock.lock();
+        try {
+            // 已经被其他线程爬取
+            if (record.contains(url)) return;
+            // 当前线程爬取当前链接
+            record.add(url);
+        } finally {
+            lock.unlock();
+        }
+        
+        String curHost = getHost(url);
+        List<Thread> threads = new LinkedList<>();
+        for (String nextUrl : htmlParser.getUrls(url)) {
+            // 已爬取或域名不相等
+            if (record.contains(nextUrl) || !curHost.equals(getHost(nextUrl))) continue;
+            Thread thread = new Worker(nextUrl, htmlParser, record, lock);
+            thread.start();
+            threads.add(thread);
+        }
+
+        // 等待子线程结束
+        for (Thread thread : threads) {
+            try{
+                thread.join();
+            } catch(InterruptedException e){
+
+            }
+        }
+    }
+
+    private String getHost(String url) {
+        if (url.startsWith("http://")) {
+            url = url.substring(7);
+        } else if (url.startsWith("https://")) {
+            url = url.substring(8);
+
+        } else throw new IllegalArgumentException("invalid param");
+        
+        int end = url.indexOf("/");
+        if (end != -1) url = url.substring(0, end);
+        return url;
+    }
+}
 ```
 
 ## 性能分析
 
-&emsp;
+执行用时：5ms，在所有java提交中击败了98.75%的用户。
 
-
+内存消耗：55.6MB，在所有java提交中击败了100.00%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;暂无，密切关注。
