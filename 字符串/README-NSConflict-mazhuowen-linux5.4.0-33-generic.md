@@ -241,7 +241,6 @@ class TrieNode {
 * 中等[#211 Add and Search Word - Data structure design](./#211 Add and Search Word - Data structure design.md)    字典树与前序遍历的结合
 * $\bigstar$困难[#212 Word Search II](./#212 Word Search II.md)    字典树与矩形深度优先搜索的结合
 * $\clubs$中等[#421 Maximum XOR of Two Numbers in an Array](./#421 Maximum XOR of Two Numbers in an Array.md)    借鉴字典树前缀匹配寻找最大异或值
-* $\clubs$困难[#472 Concatenated Words](./#472 Concatenated Words.md)    字典树多次匹配识别组合词
 * 困难[#588 Design In-Memory File System](./#588 Design In-Memory File System.md)    前缀匹配思想设计文件系统
 * $\bigstar$繁杂[#642 Design Search Autocomplete System](./#642 Design Search Autocomplete System.md)    将句子看做单词转化为字典树前缀匹配
 * 中等[#648 Replace Words](./#648 Replace Words.md)    前缀匹配替换
