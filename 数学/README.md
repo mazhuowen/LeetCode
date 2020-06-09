@@ -20,6 +20,7 @@
 * 简单[#415 Add Strings](./#415 Add Strings.md)    字符串加法
 * $\bigstar$困难[#483 Smallest Good Base](./#483 Smallest Good Base.md)    $k$进制规律
 * $\clubs$中等[#810 Chalkboard XOR Game](./#810 Chalkboard XOR Game.md)    偶数长数组异或性质
+* $\bigstar$困难[#829 Consecutive Numbers Sum](./#829 Consecutive Numbers Sum.md)    质因数分解
 * 简单[#867 Transpose Matrix](./#867 Transpose Matrix.md)    矩阵转置
 * $\bigstar$困难[#878 Nth Magical Number](./#878 Nth Magical Number.md)    数学规律与二分查找结合
 * $\bigstar$困难[#972 Equal Rational Numbers](./#972 Equal Rational Numbers.md)    有理数的分数形式表达
