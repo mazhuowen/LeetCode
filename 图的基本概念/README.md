@@ -90,6 +90,7 @@ for (int i = 0; i < N; i++) {
 * $\clubs$困难[#711 Number of Distinct Islands II](./#711 Number of Distinct Islands II.md)    [#694 Number of Distinct Islands](./#694 Number of Distinct Islands.md)的进阶
 * 简单[#733 Flood Fill](./#733 Flood Fill.md)    深度优先搜索渲染像素
 * $\clubs$困难[#773 Sliding Puzzle](./#773 Sliding Puzzle.md)    滑板游戏抽象为广度优先搜索遍历
+* $\bigstar$困难[#847 Shortest Path Visiting All Nodes](./#847 Shortest Path Visiting All Nodes.md)    无向连通图遍历所有顶点的最短路径
 * $\clubs$中等[#909 Snakes and Ladders](./#909 Snakes and Ladders.md)    蛇梯棋广度优先搜索
 * $\clubs$中等[#934 Shortest Bridge](./#934 Shortest Bridge.md)    深度、广度优先搜索结合的贪心策略
 * 中等[#994 Rotting Oranges](./#994 Rotting Oranges.md)    广度优先搜索
