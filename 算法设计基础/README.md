@@ -26,6 +26,7 @@
 * $\clubs$中等[#910 Smallest Range II](./#910 Smallest Range II.md)    巧妙地数学规律发现
 * $\bigstar$困难[#630 Course Schedule III](./#630 Course Schedule III.md)    课程时长的贪婪思路
 * 中等[#955 Delete Columns to Make Sorted II](./#955 Delete Columns to Make Sorted II.md)    字符串移除字符使之变为字典序
+* $\clubs$困难[#1326 Minimum Number of Taps to Open to Water a Garden](./#1326 Minimum Number of Taps to Open to Water a Garden.md)    区间嵌套可达的抽象
 
 ## 分治法
 
