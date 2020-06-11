@@ -240,6 +240,7 @@ class TrieNode {
 * $\clubs$中等[#208 Implement Trie (Prefix Tree)](./#208 Implement Trie (Prefix Tree).md)    字典树简单原理的实现
 * 中等[#211 Add and Search Word - Data structure design](./#211 Add and Search Word - Data structure design.md)    字典树与前序遍历的结合
 * $\bigstar$困难[#212 Word Search II](./#212 Word Search II.md)    字典树与矩形深度优先搜索的结合
+* $\clubs$繁杂[#336 Palindrome Pairs](./#336 Palindrome Pairs.md)    字典树保存翻转字符串
 * $\clubs$中等[#421 Maximum XOR of Two Numbers in an Array](./#421 Maximum XOR of Two Numbers in an Array.md)    借鉴字典树前缀匹配寻找最大异或值
 * $\clubs$困难[#472 Concatenated Words](./#472 Concatenated Words.md)    字典树多次匹配识别组合词
 * 困难[#588 Design In-Memory File System](./#588 Design In-Memory File System.md)    前缀匹配思想设计文件系统
