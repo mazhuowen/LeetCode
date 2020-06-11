@@ -49,7 +49,7 @@ If the number of students is odd, there is no need to change the last one's seat
 
 ## 程序设计
 
-* 使用`CASE WHEN`语句，对奇数`id`加一，偶数`id`减一。需要统计最大`id`比较
+* 使用`CASE WHEN`语句，对奇数`id`加一，偶数`id`减一。需要统计最大`id`比较。
 
 ```mysql
 SELECT 
@@ -72,10 +72,10 @@ ORDER BY id
 
 ## 性能分析
 
-执行用时 :217 ms, 在所有 MySQL 提交中击败了39.71%的用户
+执行用时：198ms，在所有MySQL提交中击败了52.07%的用户。
 
-内存消耗 :0B, 在所有 MySQL 提交中击败了100.00%的用户
+内存消耗：0B，在所有MySQL提交中击败了100.00%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;同上。

@@ -61,6 +61,7 @@
 * 简单[#197 Rising Temperature](./#197 Rising Temperature.md)    DATEDIFF函数应用
 * 中等[#262 Trips and Users](./#262 Trips and Users.md)    自连接统计计数
 * 困难[#569 Median Employee Salary](./#569 Median Employee Salary.md)    SQL变量应用
+* 中等[#626 Exchange Seats](./#626 Exchange Seats.md)    交换位置
 * 简单[#1179 Reformat Department Table](./#1179 Reformat Department Table.md)    CASE语句行转列
 * 中等[#1205 Monthly Transactions II](./#1205 Monthly Transactions II.md)    UNION ALL和DATE_FORMAT函数
 * 困难[#1369 Get the Second Most Recent Activity](./#1369 Get the Second Most Recent Activity.md)    HAVING条件应用

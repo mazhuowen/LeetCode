@@ -18,7 +18,7 @@ Find the minimum cost to merge all piles of stones into one pile.  If it is impo
 
 ## 题目解读
 
-&emsp;
+&emsp;每次合并连续的$K$堆石头，求将这些石头合并为$1$堆的最少的代价。
 
 ```java
 class Solution {
