@@ -10,6 +10,8 @@
 * 简单[#80 Remove Duplicates from Sorted Array II](./#80 Remove Duplicates from Sorted Array II.md)    数组移动覆盖
 * 中等[#163 Missing Ranges](./#163 Missing Ranges.md)    数组遍历比较相邻值
 * 简单[#228 Summary Ranges](./#228 Summary Ranges.md)    连续数值区间判断
+* 简单[#243 Shortest Word Distance](./#243 Shortest Word Distance.md)    数组遍历比较
+* 中等[#245 Shortest Word Distance III](./#245 Shortest Word Distance III.md)    [#243 Shortest Word Distance](./#243 Shortest Word Distance.md)进阶
 
 ### 双指针
 

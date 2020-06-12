@@ -33,6 +33,7 @@
 * 简单[#921 Minimum Add to Make Parentheses Valid](./#921 Minimum Add to Make Parentheses Valid.md)    括号计数消除
 * 简单[#1021 Remove Outermost Parentheses](./#1021 Remove Outermost Parentheses.md)    通过计数实现栈的思想
 * 中等[#1190 Reverse Substrings Between Each Pair of Parentheses](./#1190 Reverse Substrings Between Each Pair of Parentheses.md)    栈保存括号索引
+* 中等[#1249 Minimum Remove to Make Valid Parentheses](./#1249 Minimum Remove to Make Valid Parentheses.md)    栈匹配括号对
 
 ## 栈的应用
 
