@@ -62,3 +62,4 @@
 * 简单[#771 Jewels and Stones](./#771 Jewels and Stones.md)    哈希表计数字符
 * 简单[#819 Most Common Word](./#819 Most Common Word.md)    哈希表单词计数
 * $\bigstar$中等[#1124 Longest Well-Performing Interval](./#1124 Longest Well-Performing Interval.md)    前缀和巧妙的二分查找和哈希表解法
+* 困难[#面试题17.26 Sparse Similarity LCCI](./#面试题17.26 Sparse Similarity LCCI.md)    哈希表记录单词与文档关系

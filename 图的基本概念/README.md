@@ -82,6 +82,7 @@ for (int i = 0; i < N; i++) {
 * $\clubs$困难[#317 Shortest Distance from All Buildings](./#317 Shortest Distance from All Buildings.md)    从建筑开始广度优先遍历
 * $\bigstar$中等[#329 Longest Increasing Path in a Matrix](./#329 Longest Increasing Path in a Matrix.md)    深度优先搜索及拓扑排序的应用
 * 中等[#417 Pacific Atlantic Water Flow](./#417 Pacific Atlantic Water Flow.md)    两次广度优先搜索
+* 困难[#489 Robot Room Cleaner](./#489 Robot Room Cleaner.md)    未知图的分布情况下的深度优先搜索
 * 中等[#529 Minesweeper](./#529 Minesweeper.md)    图的深度优先搜索在扫雷中的应用
 * 中等[#542 01 Matrix](./#542 01 Matrix.md)    广度优先搜索计算最短距离
 * $\clubs$困难[#675 Cut Off Trees for Golf Event](./#675 Cut Off Trees for Golf Event.md)    广度优先搜索计算两点间最短距离
