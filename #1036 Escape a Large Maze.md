@@ -21,7 +21,7 @@ Note:
 
 ## 题目解读
 
-&emsp;
+&emsp;给定非常大的迷宫中的障碍物，判断是否可从起始点到达目标点。
 
 ```java
 class Solution {
