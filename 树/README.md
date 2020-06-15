@@ -68,6 +68,7 @@
 * $\clubs$中等[#979 Distribute Coins in Binary Tree](./#979 Distribute Coins in Binary Tree.md)    后序遍历返回额外信息
 * 中等[#987 Vertical Order Traversal of a Binary Tree](./#987 Vertical Order Traversal of a Binary Tree.md)    [#314 Binary Tree Vertical Order Traversal](./#314 Binary Tree Vertical Order Traversal.md)的进阶，增加同增顺序要求
 * 简单[#993 Cousins in Binary Tree](./#993 Cousins in Binary Tree.md)    层次遍历
+* $\clubs$中等[#1104 Path In Zigzag Labelled Binary Tree](./#1104 Path In Zigzag Labelled Binary Tree.md)    树的数组索引表示
 * $\clubs$中等[#1110 Delete Nodes And Return Forest](./#1110 Delete Nodes And Return Forest.md)    后序遍历返回结点是否删除
 * 简单[#1120 Maximum Average Subtree](./#1120 Maximum Average Subtree.md)    后序遍历计算
 * 中等[#1145 Binary Tree Coloring Game](./#1145 Binary Tree Coloring Game.md)    发现规律，遍历统计左右子树

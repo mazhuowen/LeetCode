@@ -60,6 +60,7 @@
 * 简单[#503 Next Greater Element II](./#503 Next Greater Element II.md)    [#496 Next Greater Element I](./#496 Next Greater Element I.md)的延续
 * 简单[#739 Daily Temperatures](./#739 Daily Temperatures.md)    遍历遇到较大值则出栈计算
 * $\clubs$困难[#768 Max Chunks To Make Sorted II](./#768 Max Chunks To Make Sorted II.md)    单调栈记录分块的最大值
+* $\bigstar$中等[#907 Sum of Subarray Minimums](./#907 Sum of Subarray Minimums.md)    单调栈计数左侧连续区间
 * 中等[#1019 Next Greater Node In Linked List](./#1019 Next Greater Node In Linked List.md)    单调栈
 * $\clubs$困难[#1063 Number of Valid Subarrays](./#1063 Number of Valid Subarrays.md)    单调栈
 * 中等[#1081 Smallest Subsequence of Distinct Characters](./#1081 Smallest Subsequence of Distinct Characters.md)    [#316 Remove Duplicate Letters](./#316 Remove Duplicate Letters.md)的变形

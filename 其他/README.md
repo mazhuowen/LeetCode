@@ -60,6 +60,7 @@
 * 简单[#196 Delete Duplicate Emails](./#196 Delete Duplicate Emails.md)    自连接
 * 简单[#197 Rising Temperature](./#197 Rising Temperature.md)    DATEDIFF函数应用
 * 中等[#262 Trips and Users](./#262 Trips and Users.md)    自连接统计计数
+* 中等[#550 Game Play Analysis IV](./#550 Game Play Analysis IV.md)    AVG函数应用
 * 困难[#569 Median Employee Salary](./#569 Median Employee Salary.md)    SQL变量应用
 * 中等[#626 Exchange Seats](./#626 Exchange Seats.md)    交换位置
 * 简单[#1179 Reformat Department Table](./#1179 Reformat Department Table.md)    CASE语句行转列
