@@ -18,6 +18,7 @@
 * $\clubs$中等[#365 Water and Jug Problem](./#365 Water and Jug Problem.md)    贝祖定理
 * 简单[#367 Valid Perfect Square](./#367 Valid Perfect Square.md)    整数的平方根，需注意判断条件
 * 简单[#415 Add Strings](./#415 Add Strings.md)    字符串加法
+* $\bigstar$困难[#458 Poor Pigs](./#458 Poor Pigs.md)    信息熵与$n$进制应用
 * $\clubs$简单[#461 Hamming Distance](./#461 Hamming Distance.md)    数字异或截取最右侧的$1$
 * $\bigstar$困难[#483 Smallest Good Base](./#483 Smallest Good Base.md)    $k$进制规律
 * $\clubs$中等[#810 Chalkboard XOR Game](./#810 Chalkboard XOR Game.md)    偶数长数组异或性质

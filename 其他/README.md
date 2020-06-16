@@ -42,6 +42,7 @@
 * 简单[#1114 Print in Order](./#1114 Print in Order.md)    线程间变量共享通信
 * 中等[#1115 Print FooBar Alternately](./#1115 Print FooBar Alternately.md)    `ReentrantLock`线程互相唤醒
 * $\clubs$中等[#1116 Print Zero Even Odd](./#1116 Print Zero Even Odd.md)    信号量的应用
+* $\clubs$中等[#1188 Design Bounded Blocking Queue](./#1188 Design Bounded Blocking Queue.md)    入队出队间通信
 * $\clubs$中等[#1242 Web Crawler Multithreaded](./#1242 Web Crawler Multithreaded.md)    独占锁细化锁粒度
 * 简单[#1279 Traffic Light Controlled Intersection](./#1279 Traffic Light Controlled Intersection.md)    独占锁
 
