@@ -22,7 +22,7 @@ Note:
 
 ## 题目解读
 
-&emsp;
+&emsp;给定数字第一个数字表示后继数字出现的次数，设计迭代器。
 
 ```java
 class RLEIterator {
@@ -45,18 +45,55 @@ class RLEIterator {
 
 ## 程序设计
 
-* 
+* 数据结构中引入当前数字和剩余计数，如果不足则迭代到下个数字，否则扣除计数返回当前数字。
+* 注意计数的清零。
 
 ```java
+class RLEIterator {
+    // 当前值及其计数
+    int idx;
+    int count;
+    int[] A;
 
+    public RLEIterator(int[] A) {
+        if (A == null || A.length % 2 == 1) throw new IllegalArgumentException("invalid param");
+        this.A = A;
+        this.idx = -1;
+        this.count = 0;
+    }
+    
+    public int next(int n) {
+        if (n < 0) throw new IllegalArgumentException("invalid param");
+
+        while (n > count && idx + 1 < A.length) {
+            n -= count;
+            // 消耗尽上一个序列，进入下一个序列
+            count = A[idx + 1];
+            idx += 2;
+        }
+
+        // 迭代结束
+        if (n > count) {
+            // 注意计数清零
+            count = -1;
+            return -1;
+        }
+
+        // 更新计数并返回
+        count -= n;
+        return A[idx];
+    }
+}
 ```
 
 ## 性能分析
 
-&emsp;
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(N)$。
 
+执行用时：6ms，在所有java提交中击败了94.69%的用户。
 
+内存消耗：39.7MB，在所有java提交中击败了100.00%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;同上，实现细节不同。

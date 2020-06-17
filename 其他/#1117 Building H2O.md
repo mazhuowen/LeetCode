@@ -23,7 +23,7 @@ Write synchronization code for oxygen and hydrogen molecules that enforces these
 
 ## 题目解读
 
-&emsp;
+&emsp;设计协调多个线程，使得每次打印两个`H`一个`O`。
 
 ```java
 class H2O {
@@ -48,18 +48,40 @@ class H2O {
 
 ## 程序设计
 
-* 
+* 使用信号量，为了节省判断，`O`的信号量设为$2$。
 
 ```java
+class H2O {
+    Semaphore H2;
+    Semaphore O;
 
+    public H2O() {
+        this.H2 = new Semaphore(0);
+        this.O = new Semaphore(2);
+    }
+
+    public void hydrogen(Runnable releaseHydrogen) throws InterruptedException {
+        H2.acquire();
+        // releaseHydrogen.run() outputs "H". Do not change or remove this line.
+        releaseHydrogen.run();
+        O.release();
+    }
+
+    public void oxygen(Runnable releaseOxygen) throws InterruptedException {
+        O.acquire(2);
+        // releaseOxygen.run() outputs "O". Do not change or remove this line.
+		releaseOxygen.run();
+        H2.release(2);
+    }
+}
 ```
 
 ## 性能分析
 
-&emsp;
+执行用时：19ms，在所有java提交中击败了51.49%的用户。
 
-
+内存消耗：41.3MB，在所有java提交中击败了14.29%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;暂无，密切关注。
