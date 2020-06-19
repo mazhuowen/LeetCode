@@ -20,7 +20,7 @@ Submissions making **more than 400 calls** to `hasShips` will be judged Wrong An
 
 ## 题目解读
 
-&emsp;
+&emsp;调用外部接口来确认战列舰的数目。
 
 ```java
 /**
@@ -40,7 +40,7 @@ class Solution {
 
 ## 程序设计
 
-* 
+* 由于不超过$10$艘，属于稀疏矩阵，可以采用分治思想缩小范围。
 
 ```java
 class Solution {
@@ -48,12 +48,11 @@ class Solution {
         int a = topRight[0], b = topRight[1];
         int c = bottomLeft[0], d = bottomLeft[1];
 
-        System.out.println(a + "==" + b);
-        System.out.println(c + "==" + d);
         if (a < c || b < d || !sea.hasShips(topRight, bottomLeft)) return 0;
         if (a == c && b == d) return 1;
 
         int midX = (a + c) / 2, midY = (b + d) / 2;
+        // 四等分
         return countShips(sea, new int[]{midX, midY}, new int[]{c, d}) +
                 countShips(sea, new int[]{a, midY}, new int[]{midX + 1, d}) +
                 countShips(sea, new int[]{midX, b}, new int[]{c, midY + 1}) +
@@ -64,12 +63,36 @@ class Solution {
 
 ## 性能分析
 
-&emsp;
+执行用时：1ms，在所有java提交中击败了100.00%的用户。
 
-执行用时：42 ms, 在所有 Java 提交中击败了100.00%的用户
-
-内存消耗：39.7 MB, 在所有 Java 提交中击败了100.00%的用户
+内存消耗：37.4MB，在所有java提交中击败了100.00%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;官方为了进一步减少调用次数，采用二分而不是四分，快速过滤不存在船只的区域。
+
+```java
+class Solution {
+    public int countShips(Sea sea, int[] topRight, int[] bottomLeft) {
+        int a = topRight[0], b = topRight[1];
+        int c = bottomLeft[0], d = bottomLeft[1];
+
+        if (a < c || b < d || !sea.hasShips(topRight, bottomLeft)) return 0;
+        if (a == c && b == d) return 1;
+
+        if (a == c) {
+            int midY = (b + d) / 2;
+            return countShips(sea, new int[]{a, midY}, new int[]{a, d}) +
+                countShips(sea, new int[]{a, b}, new int[]{a, midY + 1});
+        } else {
+            int midX = (a + c) / 2;
+            return countShips(sea, new int[]{midX, b}, new int[]{c, d}) +
+                countShips(sea, new int[]{a, b}, new int[]{midX + 1, d});
+        }
+    }
+}
+```
+
+执行用时：1ms，在所有java提交中击败了100.00%的用户。
+
+内存消耗：37.6MB，在所有java提交中击败了100.00%的用户。
