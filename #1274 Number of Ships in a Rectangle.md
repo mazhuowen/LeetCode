@@ -43,14 +43,32 @@ class Solution {
 * 
 
 ```java
+class Solution {
+    public int countShips(Sea sea, int[] topRight, int[] bottomLeft) {
+        int a = topRight[0], b = topRight[1];
+        int c = bottomLeft[0], d = bottomLeft[1];
 
+        System.out.println(a + "==" + b);
+        System.out.println(c + "==" + d);
+        if (a < c || b < d || !sea.hasShips(topRight, bottomLeft)) return 0;
+        if (a == c && b == d) return 1;
+
+        int midX = (a + c) / 2, midY = (b + d) / 2;
+        return countShips(sea, new int[]{midX, midY}, new int[]{c, d}) +
+                countShips(sea, new int[]{a, midY}, new int[]{midX + 1, d}) +
+                countShips(sea, new int[]{midX, b}, new int[]{c, midY + 1}) +
+                countShips(sea, new int[]{a, b}, new int[]{midX + 1, midY + 1});
+    }
+}
 ```
 
 ## 性能分析
 
 &emsp;
 
+执行用时：42 ms, 在所有 Java 提交中击败了100.00%的用户
 
+内存消耗：39.7 MB, 在所有 Java 提交中击败了100.00%的用户
 
 ## 官方解题
 

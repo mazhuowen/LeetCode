@@ -66,6 +66,7 @@ for (int i = 0; i < N; i++) {
 &emsp;图的遍历有很多变体应用，如着色问题，图中是否存在路径等，这些都只是在上述基本遍历结构基础上做改动；如访问标识上面是布尔型，只表示是否访问过，完全可以变为整形，定义更多的状态，如正在遍历、已遍历无环、已遍历有环、未遍历等；除了访问标识，递归函数返回值也是一个改动点，可以返回布尔型，如果图不满足某些条件，提前返回，方便判断，也可以返回其它类型，如后继结点的颜色等。
 
 * 中等[#133 Clone Graph](./#133 Clone Graph.md)    图的遍历拷贝
+* $\clubs$困难[#631 Design Excel Sum Formula](./#631 Design Excel Sum Formula.md)    图的深度优先搜索的应用
 * $\clubs$中等[#785 Is Graph Bipartite?](./#785 Is Graph Bipartite?.md)    图遍历的变种，巧妙利用访问标识
 * $\clubs$中等[#802 Find Eventual Safe States](./#802 Find Eventual Safe States.md)    图遍历的变种，巧妙利用访问标识
 * 简单[#841 Keys and Rooms](./#841 Keys and Rooms.md)    图的遍历
