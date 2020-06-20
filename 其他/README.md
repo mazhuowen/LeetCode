@@ -44,6 +44,7 @@
 * $\clubs$中等[#1116 Print Zero Even Odd](./#1116 Print Zero Even Odd.md)    信号量的应用
 * 中等[#1117 Building H2O](./#1117 Building H2O.md)    信号量协调通信
 * $\clubs$中等[#1188 Design Bounded Blocking Queue](./#1188 Design Bounded Blocking Queue.md)    入队出队间通信
+* $\bigstar$中等[#1226 The Dining Philosophers](./#1226 The Dining Philosophers.md)    哲学家就餐问题
 * $\clubs$中等[#1242 Web Crawler Multithreaded](./#1242 Web Crawler Multithreaded.md)    独占锁细化锁粒度
 * 简单[#1279 Traffic Light Controlled Intersection](./#1279 Traffic Light Controlled Intersection.md)    独占锁
 
