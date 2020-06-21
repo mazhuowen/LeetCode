@@ -35,6 +35,7 @@
 * 繁杂[#1152 Analyze User Website Visit Pattern](./#1152 Analyze User Website Visit Pattern.md)    根据用户和时间戳排序
 * 中等[#1244 Design A Leaderboard](./#1244 Design A Leaderboard.md)    对分数排序
 * 中等[#1288 Remove Covered Intervals](./#1288 Remove Covered Intervals.md)    对区间起始值排序
+* 中等[#1329 Sort the Matrix Diagonally](./#1329 Sort the Matrix Diagonally.md)    矩形对角线快速排序
 
 ## 归并排序
 

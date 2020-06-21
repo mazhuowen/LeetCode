@@ -74,6 +74,7 @@
 * 中等[#1145 Binary Tree Coloring Game](./#1145 Binary Tree Coloring Game.md)    发现规律，遍历统计左右子树
 * 中等[#1161 Maximum Level Sum of a Binary Tree](./#1161 Maximum Level Sum of a Binary Tree.md)    层次遍历
 * 中等[#1257 Smallest Common Region](./#1257 Smallest Common Region.md)    最近公共父节点问题
+* 中等[#1372 Longest ZigZag Path in a Binary Tree](./#1372 Longest ZigZag Path in a Binary Tree.md)    前序遍历统计交替路径
 
 ## 树与森林
 
