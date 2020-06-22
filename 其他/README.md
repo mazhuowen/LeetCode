@@ -44,6 +44,7 @@
 * $\clubs$中等[#1116 Print Zero Even Odd](./#1116 Print Zero Even Odd.md)    信号量的应用
 * 中等[#1117 Building H2O](./#1117 Building H2O.md)    信号量协调通信
 * $\clubs$中等[#1188 Design Bounded Blocking Queue](./#1188 Design Bounded Blocking Queue.md)    入队出队间通信
+* 中等[#1195 Fizz Buzz Multithreaded](./#1195 Fizz Buzz Multithreaded.md)    多线程同步通信问题
 * $\bigstar$中等[#1226 The Dining Philosophers](./#1226 The Dining Philosophers.md)    哲学家就餐问题
 * $\clubs$中等[#1242 Web Crawler Multithreaded](./#1242 Web Crawler Multithreaded.md)    独占锁细化锁粒度
 * 简单[#1279 Traffic Light Controlled Intersection](./#1279 Traffic Light Controlled Intersection.md)    独占锁
@@ -65,6 +66,7 @@
 * 中等[#262 Trips and Users](./#262 Trips and Users.md)    自连接统计计数
 * 中等[#550 Game Play Analysis IV](./#550 Game Play Analysis IV.md)    AVG函数应用
 * 困难[#569 Median Employee Salary](./#569 Median Employee Salary.md)    SQL变量应用
+* $\clubs$困难[#601 Human Traffic of Stadium](./#601 Human Traffic of Stadium.md)    复杂逻辑自连接查询
 * 中等[#626 Exchange Seats](./#626 Exchange Seats.md)    交换位置
 * 简单[#1179 Reformat Department Table](./#1179 Reformat Department Table.md)    CASE语句行转列
 * 中等[#1205 Monthly Transactions II](./#1205 Monthly Transactions II.md)    UNION ALL和DATE_FORMAT函数

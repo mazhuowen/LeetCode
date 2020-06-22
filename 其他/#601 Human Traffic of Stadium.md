@@ -43,20 +43,33 @@ Each day only have one row record, and the dates are increasing with id increasi
 
 ## 题目解读
 
-
+&emsp;查询连续三天以上人流量大于100的记录。
 
 ## 程序设计
 
-* 
+* 参考官方解题，采用自连接过滤并查询表`s1`中天数分别在第一个、第二个、第三个的数据，注意连续超过三天的都可以拆解为三天。
 
 ```mysql
-
+SELECT DISTINCT s1.*
+FROM stadium s1, stadium s2, stadium s3
+WHERE s1.people >= 100 AND s2.people >= 100 AND s3.people >= 100
+AND (
+    (s2.id - s1.id = 1 AND s3.id - s2.id = 1)
+    OR
+    (s1.id - s2.id = 1 AND s3.id - s1.id = 1)
+    OR
+    (s2.id - s3.id = 1 AND s1.id - s2.id = 1)
+)
+ORDER BY s1.id
+;
 ```
 
 ## 性能分析
 
+执行用时：251ms，在所有MySQL提交中击败了41.68%的用户。
 
+内存消耗：0B，在所有MySQL提交中击败了100.00%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;见上。

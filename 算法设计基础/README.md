@@ -150,6 +150,7 @@
 * 中等[#1255 Maximum Score Words Formed by Letters](./#1255 Maximum Score Words Formed by Letters.md)    回溯尝试单词组合
 * $\clubs$繁杂[#1307 Verbal Arithmetic Puzzle](./#1307 Verbal Arithmetic Puzzle.md)    剪枝优化暴力回溯
 * 困难[#1340 Jump Game V](./#1340 Jump Game V.md)    记忆化回溯
+* 中等[#面试题08.02 Robot in a Grid LCCI](./#面试题08.02 Robot in a Grid LCCI.md)    回溯剪枝优化
 
 ## 随机算法
 
