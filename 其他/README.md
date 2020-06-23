@@ -149,6 +149,7 @@ for (int i = 1; i <= n && i <= w.length; i++) {
 * $\clubs$中等[#416 Partition Equal Subset Sum](./#416 Partition Equal Subset Sum.md)    01背包问题变形
 * $\clubs$中等[#474 Ones and Zeroes](./#474 Ones and Zeroes.md)    二维背包问题
 * $\clubs$中等[#518 Coin Change 2](./#518 Coin Change 2.md)    完全背包问题变形
+* $\bigstar$困难[#1449 Form Largest Integer With Digits That Add up to Target](./#1449 Form Largest Integer With Digits That Add up to Target.md)    完全背包问题内层循环优化
 
 ### 位图
 
