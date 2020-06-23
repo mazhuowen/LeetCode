@@ -59,6 +59,7 @@
 * 简单[#617 Merge Two Binary Trees](./#617 Merge Two Binary Trees.md)    前序遍历
 * 中等[#623 Add One Row to Tree](./#623 Add One Row to Tree.md)    树的遍历
 * $\clubs$中等[#652 Find Duplicate Subtrees](./#652 Find Duplicate Subtrees.md)    前序遍历字典记录子树
+* 中等[#655 Print Binary Tree](./#655 Print Binary Tree.md)    将二叉树打印为列表形式
 * 中等[#662 Maximum Width of Binary Tree](./#662 Maximum Width of Binary Tree.md)    树的数组索引与层次遍历的结合
 * 中等[#663 Equal Tree Partition](./#663 Equal Tree Partition.md)    树的遍历求和
 * $\clubs$中等[#742 Closest Leaf in a Binary Tree](./#742 Closest Leaf in a Binary Tree.md)    后序遍历记录状态

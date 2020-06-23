@@ -14,6 +14,7 @@
 ## 逻辑
 
 * $\clubs$中等[#277 Find the Celebrity](./#277 Find the Celebrity.md)    查找名人
+* 简单[#598 Range Addition II](./#598 Range Addition II.md)    多次操作的重叠区域
 * $\clubs$中等[#681 Next Closest Time](./#681 Next Closest Time.md)    最近的时间
 * 中等[#794 Valid Tic-Tac-Toe State](./#794 Valid Tic-Tac-Toe State.md)    井字棋是否有效验证
 * $\clubs$困难[#927 Three Equal Parts](./#927 Three Equal Parts.md)    三等份数组
