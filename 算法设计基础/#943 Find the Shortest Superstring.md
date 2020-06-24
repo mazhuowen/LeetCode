@@ -78,12 +78,100 @@ class Solution {
 }
 ```
 
+* 如果把回溯中的访问状态压缩为二进制数字，每次拼接都只关当前字符和上一个字符，可用动态规划数组`dp(i,j)`表示路径为`i`，结尾字符串为$j$时的最短字符串。
+* 得到动态规划数组后可知最终最短字符串的结尾字符串，然后可倒推出整个序列。
+
+```java
+class Solution {
+
+    public String shortestSuperstring(String[] A) {
+        if (A == null || A.length == 0) return "";
+
+        int n = A.length;
+        int[][] overland = overland(A);
+        // 动态规划数组表示路径为i，结尾字符串为j的最短长度
+        int[][] dp = new int[1 << n][n];
+        // 记录路径
+        int[][] parent = new int[1 << n][n];
+
+        for (int path = 1; path < (1 << n); path++) {
+            for (int i = 0; i < n; i++) {
+                // 当前路径不存在第i个字符串，跳过
+                if (((path >> i) & 1) == 0) continue;
+
+                // 递归更新
+                int prePath = path ^ (1 << i);
+                // 首字符串，长度为自身
+                if (prePath == 0) {
+                    dp[path][i] = A[i].length();
+                    parent[path][i] = -1;
+                    continue;
+                }
+
+                for (int j = 0; j < n; j++) {
+                    if (((prePath >> j) & 1) == 0) continue;
+
+                    // 前一序列以j结尾，加上当前的i构成当前路径
+                    if (dp[path][i] == 0 || dp[path][i] > dp[prePath][j] + A[i].length() - overland[j][i]) {
+                        dp[path][i] = dp[prePath][j] + A[i].length() - overland[j][i];
+                        parent[path][i] = j;
+                    }
+                }
+            }
+        }
+
+        // 最短长度对应的结尾字符串
+        int cur = 0, path = (1 << n) - 1;
+        for (int i = 1; i < n; i++) {
+            if (dp[path][i] < dp[path][cur]) cur = i;
+        }
+
+        // 拼接
+        StringBuffer sb = new StringBuffer();
+        while (path > 0) {
+            int pre = parent[path][cur];
+            int overLen = pre == -1 ? 0 : overland[pre][cur];
+            sb.insert(0, A[cur].substring(overLen));
+            path = path ^ (1 << cur);
+            cur = pre;
+        }
+
+        return sb.toString();
+    }
+
+    // 提前计算覆盖长度
+    private int[][] overland(String[] strs) {
+        int[][] overland = new int[strs.length][strs.length];
+
+        for (int i = 0; i < strs.length; i++) {
+            for (int j = 0; j < strs.length; j++) {
+                if (i == j) overland[i][j] = strs.length;
+                overland[i][j] = overland(strs[i], strs[j]);
+            }
+        }
+        return overland;
+    }
+
+    // 返回字符串一包含的字符串二最大长度
+    private int overland(String str1, String str2) {
+        int len = Math.min(str1.length(), str2.length());
+
+        for (int i = len; i >= 1; i--) {
+            if (str1.endsWith(str2.substring(0, i))) return i;
+        }
+        return 0;
+    }
+}
+```
+
 ## 性能分析
 
-&emsp;
+&emsp;计算覆盖长度时间复杂度为$O(N^2)$，动态规划时间复杂度为$O(N^22^N)$，空间复杂度为$O(N2^N)$。
 
+执行用时：28ms，在所有java提交中击败了58.75%的用户。
 
+内存消耗：40.1MB，在所有java提交中击败了100.00%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;上述思路参考官方解题。

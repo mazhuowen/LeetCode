@@ -90,6 +90,7 @@
 * $\bigstar$困难[#887 Super Egg Drop](./#887 Super Egg Drop.md)    动态规划经典问题双蛋问题
 * $\bigstar$困难[#903 Valid Permutations for DI Sequence](./#903 Valid Permutations for DI Sequence.md)    繁杂的动态规划抽象
 * 中等[#935 Knight Dialer](./#935 Knight Dialer.md)    有限状态机
+* $\clubs$困难[#943 Find the Shortest Superstring](./#943 Find the Shortest Superstring.md)    路径压缩
 * $\clubs$困难[#956 Tallest Billboard](./#956 Tallest Billboard.md)    动态规划数组表示支架差距
 * $\bigstar$困难[#1000 Minimum Cost to Merge Stones](./#1000 Minimum Cost to Merge Stones.md)    区间动态规划
 * 中等[#1035 Uncrossed Lines](./#1035 Uncrossed Lines.md)    最长公共子序列的应用
