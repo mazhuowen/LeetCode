@@ -76,6 +76,7 @@
 * 中等[#1161 Maximum Level Sum of a Binary Tree](./#1161 Maximum Level Sum of a Binary Tree.md)    层次遍历
 * 中等[#1257 Smallest Common Region](./#1257 Smallest Common Region.md)    最近公共父节点问题
 * 中等[#1372 Longest ZigZag Path in a Binary Tree](./#1372 Longest ZigZag Path in a Binary Tree.md)    前序遍历统计交替路径
+* $\clubs$中等[#面试题04.12 Paths with Sum LCCI](./#面试题04.12 Paths with Sum LCCI.md)    数组记录路径和
 
 ## 树与森林
 
