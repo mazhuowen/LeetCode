@@ -22,7 +22,7 @@ Return the length of the shortest such clear path from top-left to bottom-right.
 
 ## 题目解读
 
-&emsp;
+&emsp;查找二进制矩阵中最短路径的节点数，`0`表示可以通过，`1`表示障碍物。
 
 ```java
 class Solution {
@@ -34,7 +34,7 @@ class Solution {
 
 ## 程序设计
 
-* 
+* 采用广度优先搜索，需要注意起始点或结束点如果不是`0`，则无法通过。
 
 ```java
 class Solution {
@@ -46,7 +46,6 @@ class Solution {
         int m = grid.length, n = grid[0].length;
         if (grid[0][0] != 0 || grid[m - 1][n - 1] != 0) return -1;
         boolean[] visited = new boolean[m * n];
-
         Queue<Integer> queue = new LinkedList<>();
 
         int level = 0;
@@ -57,13 +56,16 @@ class Solution {
             int size = queue.size();
             for (int i = 0; i < size; i++) {
                 int cur = queue.poll();
+                // 到达终点
                 if (cur == m * n - 1) return level;
 
+                // 八个方向尝试，坐标不合法或是障碍物或已遍历则跳过
                 int x = cur / n, y = cur % n;
                 for (int j = 0; j < 8; j++) {
                     int newX = x + delta[j], newY = y + delta[j + 1];
                     if (newX < 0 || newX >= m || newY < 0 || newY >= n 
                         || grid[newX][newY] != 0 || visited[newX * n + newY]) continue;
+                    // 加入队列
                     visited[newX * n + newY] = true;
                     queue.add(newX * n + newY);
                 }
@@ -76,12 +78,12 @@ class Solution {
 
 ## 性能分析
 
-&emsp;
+&emsp;时间复杂度为$O(MN)$，空间复杂度为$O(MN)$。
 
-执行用时：19 ms, 在所有 Java 提交中击败了60.76%的用户
+执行用时：19ms，在所有java提交中击败了60.76%的用户。
 
-内存消耗：41 MB, 在所有 Java 提交中击败了100.00%的用户
+内存消耗：41MB，在所有java提交中击败了100.00%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;暂无，密切关注。社区性能较好的方法直接在矩阵中标记是否已遍历。

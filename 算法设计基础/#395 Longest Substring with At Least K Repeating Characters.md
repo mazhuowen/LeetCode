@@ -18,7 +18,7 @@ class Solution {
 
 ## 程序设计
 
-* 
+* 参考社区思路，采用分治的思路，首先统计字符计数，如果存在不满足要求的字符，则将该字符作为划分区间，继续递归子区间。
 
 ```java
 class Solution {
@@ -33,9 +33,11 @@ class Solution {
         int maxLen = 0;
         if (end - start + 1 < k) return maxLen;
 
+        // 计数
         int[] counter = new int[26];
         for (int i = start; i <= end; i++) counter[strs[i] - 'a']++;
 
+        // 划分
         int left = start, right = start;
         while (right <= end) {
             // 当前字符不够k个
@@ -46,7 +48,9 @@ class Solution {
             right++;
         }
 
+        // 当前区间全部满足要求
         if (left == start) maxLen = end - start + 1;
+        // 遍历结尾部分
         else maxLen = Math.max(maxLen, longestSubstring(strs, left, end, k));
         return maxLen;
     }
@@ -55,12 +59,12 @@ class Solution {
 
 ## 性能分析
 
-&emsp;
+&emsp;时间复杂度为$O(LN)$，空间复杂度为$O(L)$，其中$L$为递归深度。
 
-执行用时：0 ms, 在所有 Java 提交中击败了100.00%的用户
+执行用时：0ms，在所有java提交中击败了100.00%的用户。
 
-内存消耗：37.5 MB, 在所有 Java 提交中击败了25.00%的用户
+内存消耗：37.5MB，在所有java提交中击败了25.00%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;暂无，密切关注。

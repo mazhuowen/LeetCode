@@ -37,6 +37,7 @@
 * $\bigstar$简单[#53 Maximum Subarray](./#53 Maximum Subarray.md)    最大连续子序列问题
 * $\bigstar$困难[#218 The Skyline Problem](./#218 The Skyline Problem.md)    归并排序的分治思路应用
 * $\clubs$中等[#241 Different Ways to Add Parentheses](./#241 Different Ways to Add Parentheses.md)    表达式根据操作符分治
+* 中等[#395 Longest Substring with At Least K Repeating Characters](./#395 Longest Substring with At Least K Repeating Characters.md)    分治遍历判断子串
 * 中等[#1274 Number of Ships in a Rectangle](./#1274 Number of Ships in a Rectangle.md)    二等分矩形区间分别判断
 
 ## 动态规划

@@ -29,6 +29,7 @@
 * 简单[#700 Search in a Binary Search Tree](./#700 Search in a Binary Search Tree.md)    二叉查找树的搜索
 * 简单[#701 Insert into a Binary Search Tree](./#701 Insert into a Binary Search Tree.md)    二叉查找树的插入
 * 简单[#938 Range Sum of BST](./#938 Range Sum of BST.md)    二叉树区间遍历
+* $\clubs$中等[#1008 Construct Binary Search Tree from Preorder Traversal](./#1008 Construct Binary Search Tree from Preorder Traversal.md)    二叉查找树根据前序序列唯一构建一棵树
 * $\clubs$中等[#1214 Two Sum BSTs](./#1214 Two Sum BSTs.md)    两棵树遍历查找
 * 简单[#1305 All Elements in Two Binary Search Trees](./#1305 All Elements in Two Binary Search Trees.md)    中序遍历
 * 简单[#1038 Binary Search Tree to Greater Sum Tree](./#1038 Binary Search Tree to Greater Sum Tree.md)    反序中序遍历，同[#538 Convert BST to Greater Tree](./#538 Convert BST to Greater Tree.md)
