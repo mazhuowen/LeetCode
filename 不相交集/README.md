@@ -19,6 +19,7 @@
 * $\bigstar$困难[#765 Couples Holding Hands](./#765 Couples Holding Hands.md)    图的连通性
 * $\bigstar$困难[#803 Bricks Falling When Hit](./#803 Bricks Falling When Hit.md)    反向思路应用不相交集
 * $\clubs$繁杂[#839 Similar String Groups](./#839 Similar String Groups.md)    不相交集用于交换字符的单词分组
+* $\clubs$中等[#886 Possible Bipartition](./#886 Possible Bipartition.md)    不相交集的灵活应用
 * $\clubs$繁杂[#924 Minimize Malware Spread](./#924 Minimize Malware Spread.md)    图的连通分量
 * $\bigstar$困难[#928 Minimize Malware Spread II](./#928 Minimize Malware Spread II.md)    巧妙利用连通分量与恶意结点的计数
 * 中等[#947 Most Stones Removed with Same Row or Column](./#947 Most Stones Removed with Same Row or Column.md)    分析规律得到不相交集的传递性

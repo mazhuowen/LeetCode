@@ -96,3 +96,51 @@ class Solution {
 | signed    | end   | end    | in_number | end   |
 | in_number | end   | end    | in_number | end   |
 | end       | end   | end    | end       | end   |
+
+```java
+class Solution {
+    public int strToInt(String str) {
+        // 有限状态机
+        int[][] status = new int[][] {
+            {0, 1, 2, 3},
+            {3, 3, 2, 3},
+            {3, 3, 2, 3},
+            {3, 3, 3, 3}
+        };
+
+        int cur = 0;
+        int sigh = 1, num = 0;
+        for (char c : str.toCharArray()) {
+            int col = getCol(c);
+            cur = status[cur][col];
+            // 结束返回
+            if (cur == 3) return sigh * num;
+            else {
+                // 符号位
+                if (col == 1 && c == '-') sigh = -1;
+                else if (col == 2) {
+                    // 判断是否超出范围
+                    int val = c - '0', limit = (Integer.MAX_VALUE - val) / 10;
+                    // limit是小数截取后的整数，故此处不取等
+                    if (num > limit) return sigh > 0 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+                    num = num * 10 + val;
+                }
+            }
+        }
+        return sigh * num;
+    }
+
+    private int getCol(char c) {
+        if (c == ' ') return 0;
+        else if (c == '-' || c == '+') return 1;
+        else if (c >= '0' && c <= '9') return 2;
+        else return 3;
+    }
+}
+```
+
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(1)$。
+
+执行用时：3ms，在所有java提交中击败了39.91%的用户。
+
+内存消耗：39.6MB，在所有java提交中击败了100.00%的用户。

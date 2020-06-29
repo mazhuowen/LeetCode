@@ -77,3 +77,5 @@
 * 中等[#1344 Angle Between Hands of a Clock](.#1344 Angle Between Hands of a Clock.md)   时针分针的规律
 * 简单[#1360 Number of Days Between Two Dates](./#1360 Number of Days Between Two Dates.md)    计算日期之差
 * 中等[#1404 Number of Steps to Reduce a Number in Binary Representation to One](./#1404 Number of Steps to Reduce a Number in Binary Representation to One.md)    二进制数操作的规律
+* 繁杂[#1453 Maximum Number of Darts Inside of a Circular Dartboard](./#1453 Maximum Number of Darts Inside of a Circular Dartboard)    圆心的几何学计算
+* 简单[#面试题16.01 Swap Numbers LCCI](./#面试题16.01 Swap Numbers LCCI.md)    亦或应用

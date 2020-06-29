@@ -22,6 +22,7 @@
 * $\bigstar$技巧[#135 Candy](./#135 Candy.md)    峰顶值的处理
 * $\bigstar$困难[#321 Create Maximum Number](./#321 Create Maximum Number.md)    利用贪婪策略查询两个数组的最大组合
 * $\clubs$中等[#406 Queue Reconstruction by Height](./#406 Queue Reconstruction by Height.md)    身高降序计数增序
+* 中等[#452 Minimum Number of Arrows to Burst Balloons](./#452 Minimum Number of Arrows to Burst Balloons)    贪婪发统计区间交集数目
 * $\bigstar$困难[#659 Split Array into Consecutive Subsequences](./#659 Split Array into Consecutive Subsequences.md)    贪婪拼接连续数字
 * $\clubs$中等[#910 Smallest Range II](./#910 Smallest Range II.md)    巧妙地数学规律发现
 * $\bigstar$困难[#630 Course Schedule III](./#630 Course Schedule III.md)    课程时长的贪婪思路
@@ -107,6 +108,7 @@
 * 困难[#1246 Palindrome Removal](./#1246 Palindrome Removal.md)    回文字符串的动态规划规律
 * $\clubs$困难[#1259 Handshakes That Don't Cross](./#1259 Handshakes That Don't Cross.md)    巧妙的边角条件处理
 * 困难[#1312 Minimum Insertion Steps to Make a String Palindrome](./#1312 Minimum Insertion Steps to Make a String Palindrome.md)    区间动态规划
+* 中等[#1458 Max Dot Product of Two Subsequences](./#1458 Max Dot Product of Two Subsequences.md)    最大子序列点积和
 
 ## 回溯法
 
