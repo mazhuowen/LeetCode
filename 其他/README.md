@@ -68,6 +68,7 @@
 * 中等[#262 Trips and Users](./#262 Trips and Users.md)    自连接统计计数
 * 中等[#550 Game Play Analysis IV](./#550 Game Play Analysis IV.md)    AVG函数应用
 * 困难[#569 Median Employee Salary](./#569 Median Employee Salary.md)    SQL变量应用
+* 困难[#579 Find Cumulative Salary of an Employee](./#579 Find Cumulative Salary of an Employee.md)    自连接查询近三个月的薪资和
 * $\clubs$困难[#601 Human Traffic of Stadium](./#601 Human Traffic of Stadium.md)    复杂逻辑自连接查询
 * 中等[#626 Exchange Seats](./#626 Exchange Seats.md)    交换位置
 * 简单[#1179 Reformat Department Table](./#1179 Reformat Department Table.md)    CASE语句行转列

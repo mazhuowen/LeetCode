@@ -84,6 +84,7 @@
 * 中等[#562 Longest Line of Consecutive One in Matrix](./#562 Longest Line of Consecutive One in Matrix.md)    记录之前位置的连续序列信息
 * $\clubs$困难[#629 K Inverse Pairs Array](./#629 K Inverse Pairs Array.md)    转移方程的归纳总结
 * 中等[#651 4 Keys Keyboard](./#651 4 Keys Keyboard.md)    数学方式优化
+* 困难[#568 Maximum Vacation Days](./#568 Maximum Vacation Days.md)    动态规划复杂应用
 * 中等[#688 Knight Probability in Chessboard](./#688 Knight Probability in Chessboard.md)    国际象棋马在棋盘内的概率
 * 中等[#714 Best Time to Buy and Sell Stock with Transaction Fee](./#714 Best Time to Buy and Sell Stock with Transaction Fee.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)扣除手续费
 * $\clubs$中等[#718 Maximum Length of Repeated Subarray](./#718 Maximum Length of Repeated Subarray.md)    动态规划求最大子数组长度（非最优）
@@ -99,6 +100,7 @@
 * 中等[#1035 Uncrossed Lines](./#1035 Uncrossed Lines.md)    最长公共子序列的应用
 * $\clubs$中等[#1039 Minimum Score Triangulation of Polygon](./#1039 Minimum Score Triangulation of Polygon.md)    几何规律
 * 困难[#1092 Shortest Common Supersequence](./#1092 Shortest Common Supersequence.md)    最长公共子序列的应用
+* 困难[#1125 Smallest Sufficient Team](./#1125 Smallest Sufficient Team)    路径动态规划与倒推
 * 中等[#1139 Largest 1-Bordered Square](./#1139 Largest 1-Bordered Square.md)    存储记录连续的左侧和上方结点数目
 * 中等[#1143 Longest Common Subsequence](./#1143 Longest Common Subsequence.md)    最长公共子序列
 * 中等[#1155 Number of Dice Rolls With Target Sum](./#1155 Number of Dice Rolls With Target Sum.md)    动态规划记录目标和数目
@@ -140,6 +142,7 @@
 * $\clubs$中等[#351 Android Unlock Patterns](./#351 Android Unlock Patterns.md)    矩形回溯遍历的变形
 * $\clubs$中等[#386 Lexicographical Numbers](./#386 Lexicographical Numbers.md)    经典回溯题目
 * 繁杂[#411 Minimum Unique Word Abbreviation](./#411 Minimum Unique Word Abbreviation.md)    [#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)  和[#408 Valid Word Abbreviation](../字符串/#408 Valid Word Abbreviation.md)的结合
+* 困难[#465 Optimal Account Balancing](./#465 Optimal Account Balancing.md)    NP难问题，回溯暴力尝试
 * $\clubs$中等[#490 The Maze](./#490 The Maze.md)    拐点只能访问一次
 * $\bigstar$困难[#546 Remove Boxes](./#546 Remove Boxes.md)    存储计算结果的回溯
 * $\clubs$困难[#679 24 Game](./#679 24 Game.md)    表达式的配列组合特征

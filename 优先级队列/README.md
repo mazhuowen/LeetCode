@@ -19,6 +19,7 @@
 * 简单[#451 Sort Characters By Frequency](./#451 Sort Characters By Frequency.md)    统计频率top-k的基本应用
 * 繁杂[#480 Sliding Window Median](./#480 Sliding Window Median.md)    [#295 Find Median from Data Stream](./#295 Find Median from Data Stream.md)的进阶
 * 繁杂[#502 IPO](./#502 IPO.md)    双堆，题目和常理不符，理解是关键
+* 困难[#632 Smallest Range Covering Elements from K Lists](./#632 Smallest Range Covering Elements from K Lists.md)    多路遍历并用堆动态排序
 * 中等[#692 Top K Frequent Words](./#692 Top K Frequent Words.md)    最小堆的top-k问题
 * 简单[#703 Kth Largest Element in a Stream](./#703 Kth Largest Element in a Stream.md)    最小堆top-k问题
 * $\clubs$中等[#759 Employee Free Time](./#759 Employee Free Time.md)    堆在时间区间的应用
