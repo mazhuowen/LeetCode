@@ -136,6 +136,8 @@
 * 中等[#93 Restore IP Addresses](./#93 Restore IP Addresses.md)    条件判断减少回溯次数
 * $\clubs$中等[#131 Palindrome Partitioning](./#131 Palindrome Partitioning.md)    回溯尝试所有回文子串
 * 中等[#216 Combination Sum III](./#216 Combination Sum III.md)    回溯数字组合
+* 中等[#247 Strobogrammatic Number II](./#247 Strobogrammatic Number II.md)    中心对称数字回溯生成
+* 繁杂[#248 Strobogrammatic Number III](./#248 Strobogrammatic Number III.md)    [#247 Strobogrammatic Number II](./#247 Strobogrammatic Number II.md)进阶统计区间内的对称数
 * $\clubs$繁杂[#282 Expression Add Operators](./#282 Expression Add Operators.md)    回溯插入操作符使得结果与目标值一致
 * $\clubs$困难[#301 Remove Invalid Parentheses](./#301 Remove Invalid Parentheses.md)    统计删除括号数，回溯删除
 * $\clubs$中等[#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)    字符串回溯

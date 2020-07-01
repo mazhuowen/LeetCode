@@ -66,6 +66,7 @@
 * $\bigstar$困难[#308 Range Sum Query 2D - Mutable](./#308 Range Sum Query 2D - Mutable.md)    二维数组的线段树区间统计
 * $\bigstar$中等[#673 Number of Longest Increasing Subsequence](./#673 Number of Longest Increasing Subsequence.md)    动态线段树
 * $\bigstar$繁杂[#699 Falling Squares](./#699 Falling Squares.md)    动态数组线段树延迟传播
+* $\clubs$困难[#732 My Calendar III](./#732 My Calendar III.md)    动态线段树延迟更新
 * $\bigstar$困难[#850 Rectangle Area II](./#850 Rectangle Area II.md)    线段树的动态创建修改
 * $\bigstar$困难[#1157 Online Majority Element In Subarray](./#1157 Online Majority Element In Subarray.md)    保存数字出现索引使用线段树指导统计
 
