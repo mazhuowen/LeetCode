@@ -89,6 +89,8 @@
 
 ### 一次线性扫描
 
+* $\bigstar$困难[#335 Self Crossing](./#335 Self Crossing.md)    模拟螺旋
+
 * 简单[#419 Battleships in a Board](./#419 Battleships in a Board.md)    一次遍历计数战列舰船首
 * 简单[#463 Island Perimeter](./#463 Island Perimeter.md)    一次遍历计算岛屿周长
 
