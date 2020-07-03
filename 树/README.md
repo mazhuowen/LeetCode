@@ -88,6 +88,7 @@
 * 中等[#429 N-ary Tree Level Order Traversal](./#429 N-ary Tree Level Order Traversal.md)    N叉树层次遍历
 * 繁杂[#431 Encode N-ary Tree to Binary Tree](./#431 Encode N-ary Tree to Binary Tree.md)    前序遍历转化N叉树为父子兄弟链表表示的二叉树
 * $\bigstar$困难[#440 K-th Smallest in Lexicographical Order](./#440 K-th Smallest in Lexicographical Order.md)    N叉树的抽象
+* 中等[#558 Logical OR of Two Binary Grids Represented as Quad-Trees](./#558 Logical OR of Two Binary Grids Represented as Quad-Trees.md)    四叉树表示二进制矩阵
 * 简单[#589 N-ary Tree Preorder Traversal](./#589 N-ary Tree Preorder Traversal.md)    前序遍历
 * $\bigstar$困难[#834 Sum of Distances in Tree](./#834 Sum of Distances in Tree.md)    通过指定根将无向图转化为树，通过根节点和子树关系计算路径和
 
