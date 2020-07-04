@@ -4,6 +4,7 @@
 
 * 简单[#157 Read N Characters Given Read4](./#157 Read N Characters Given Read4.md)    循环查询
 * 困难[#158 Read N Characters Given Read4 II - Call multiple times](./#158 Read N Characters Given Read4 II - Call multiple times.md)    寄存查询剩余的结果
+* 中等[#251 Flatten 2D Vector](./#251 Flatten 2D Vector.md)    设计二维数组迭代器
 * 简单[#281 Zigzag Iterator](./#281 Zigzag Iterator.md)    锯齿迭代器
 * 简单[#284 Peeking Iterator](./#284 Peeking Iterator.md)    设计支持预取的迭代器
 * 简单[#348 Design Tic-Tac-Toe](./#348 Design Tic-Tac-Toe.md)    矩形行、列、对角线的表示

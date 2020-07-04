@@ -46,6 +46,7 @@ return -1;
 * $\bigstar$中等[#287 Find the Duplicate Number](./#287 Find the Duplicate Number.md)    对整数范围的二分查找（非最优解）
 * $\bigstar$技巧[#300 Longest Increasing Subsequence](./#300 Longest Increasing Subsequence.md)    最长递增子序列，二分查找辅助维护升序序列
 * $\clubs$困难[#302 Smallest Rectangle Enclosing Black Pixels](./#302 Smallest Rectangle Enclosing Black Pixels.md)    二分查找区间
+* 中等[#334 Increasing Triplet Subsequence](./#334 Increasing Triplet Subsequence.md)    [#300 Longest Increasing Subsequence](./#300 Longest Increasing Subsequence.md)的简化
 * $\bigstar$困难[#354 Russian Doll Envelopes](./#354 Russian Doll Envelopes.md)    [#300 Longest Increasing Subsequence](./#300 Longest Increasing Subsequence.md)的进阶抽象
 * 简单[#374 Guess Number Higher or Lower](./#374 Guess Number Higher or Lower.md)    二分查找基础应用
 * $\bigstar$困难[#410 Split Array Largest Sum](./#410 Split Array Largest Sum.md)    二分查找子数组和

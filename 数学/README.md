@@ -53,6 +53,7 @@
 * 中等[#260 Single Number III](./#260 Single Number III.md)    [#136 Single Number](../散列表/#136 Single Number.md)的进阶，存在两个单独数
 * 简单[#268 Missing Number](./#268 Missing Number.md)    异或的性质
 * 简单[#292 Nim Game](./#292 Nim Game.md)    `Nim`游戏
+* 简单[#326 Power of Three](./#326 Power of Three.md)    判断是否是$3$的幂次方
 * $\clubs$中等[#338 Counting Bits](./#338 Counting Bits.md)    巧妙的位操作和动态规划
 * 简单[#371 Sum of Two Integers](./#371 Sum of Two Integers.md)    异或及与操作实现加法
 * 中等[#396 Rotate Function](./#396 Rotate Function.md)    数组索引与数值乘积和的规律
