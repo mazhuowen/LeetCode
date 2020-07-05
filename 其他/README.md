@@ -22,6 +22,7 @@
 * $\bigstar$困难[#782 Transform to Chessboard](./#782 Transform to Chessboard.md)    行列交换规律
 * 中等[#794 Valid Tic-Tac-Toe State](./#794 Valid Tic-Tac-Toe State.md)    井字棋是否有效验证
 * $\clubs$困难[#927 Three Equal Parts](./#927 Three Equal Parts.md)    三等份数组
+* 困难[#1121 Divide Array Into Increasing Sequences](./#1121 Divide Array Into Increasing Sequences.md)    相同数字最大数目
 
 ## 技巧
 

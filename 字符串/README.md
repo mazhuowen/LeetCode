@@ -218,6 +218,7 @@ public int bm(String source, String pattern) {
 > KMP算法的时间复杂度是$O(m + n)$。
 
 * $\bigstar$简单[#28 Implement strStr()](./#28 Implement strStr().md)    字符串匹配BF、RK、BM、KMP算法实现
+* 简单[#459 Repeated Substring Pattern](./#459 Repeated Substring Pattern.md)    KMP算法`next`数组的应用
 
 ## 多模式串匹配
 
@@ -249,6 +250,7 @@ class TrieNode {
 * 中等[#648 Replace Words](./#648 Replace Words.md)    前缀匹配替换
 * 中等[#676 Implement Magic Dictionary](./#676 Implement Magic Dictionary.md)    字典树检索遍历
 * $\bigstar$中等[#745 Prefix and Suffix Search](./#745 Prefix and Suffix Search.md)    将后缀和单词组合为新的字符串
+* $\clubs$中等[#758 Bold Words in String](./#758 Bold Words in String.md)    加粗字体
 
 ### AC自动机（Aho-Corasick）
 
