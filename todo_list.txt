@@ -7,3 +7,6 @@
 267. Palindrome Permutation II
 1006. Clumsy Factorial
 1469. Find All The Lonely Nodes
+427. Construct Quad Tree
+1053. Previous Permutation With One Swap
+1151. Minimum Swaps to Group All 1's Together
