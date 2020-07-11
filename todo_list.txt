@@ -10,3 +10,5 @@
 427. Construct Quad Tree
 1053. Previous Permutation With One Swap
 1151. Minimum Swaps to Group All 1's Together
+325. Maximum Size Subarray Sum Equals k
+731. My Calendar II

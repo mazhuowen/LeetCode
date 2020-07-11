@@ -146,7 +146,6 @@
 * 繁杂[#411 Minimum Unique Word Abbreviation](./#411 Minimum Unique Word Abbreviation.md)    [#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)  和[#408 Valid Word Abbreviation](../字符串/#408 Valid Word Abbreviation.md)的结合
 * 困难[#465 Optimal Account Balancing](./#465 Optimal Account Balancing.md)    NP难问题，回溯暴力尝试
 * $\clubs$困难[#488 Zuma Game](./#488 Zuma Game.md)    NP难问题，暴力回溯
-* $\clubs$中等[#490 The Maze](./#490 The Maze.md)    拐点只能访问一次
 * $\bigstar$困难[#546 Remove Boxes](./#546 Remove Boxes.md)    存储计算结果的回溯
 * $\clubs$困难[#679 24 Game](./#679 24 Game.md)    表达式的配列组合特征
 * $\clubs$中等[#698 Partition to K Equal Sum Subsets](./#698 Partition to K Equal Sum Subsets.md)    巧妙剪枝提升时间性能
