@@ -147,6 +147,7 @@
 * 困难[#465 Optimal Account Balancing](./#465 Optimal Account Balancing.md)    NP难问题，回溯暴力尝试
 * $\clubs$困难[#488 Zuma Game](./#488 Zuma Game.md)    NP难问题，暴力回溯
 * $\bigstar$困难[#546 Remove Boxes](./#546 Remove Boxes.md)    存储计算结果的回溯
+* 中等[#638 Shopping Offers](./#638 Shopping Offers.md)    背包问题回溯
 * $\clubs$困难[#679 24 Game](./#679 24 Game.md)    表达式的配列组合特征
 * $\clubs$中等[#698 Partition to K Equal Sum Subsets](./#698 Partition to K Equal Sum Subsets.md)    巧妙剪枝提升时间性能
 * 简单[#784 Letter Case Permutation](./#784 Letter Case Permutation.md)    回溯尝试大小写

@@ -12,3 +12,7 @@
 1151. Minimum Swaps to Group All 1's Together
 325. Maximum Size Subarray Sum Equals k
 731. My Calendar II
+604. Design Compressed String Iterator
+481. Magical String
+612. Shortest Distance in a Plane
+1415. The k-th Lexicographical String of All Happy Strings of Length N
