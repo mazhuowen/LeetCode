@@ -16,3 +16,6 @@
 481. Magical String
 612. Shortest Distance in a Plane
 1415. The k-th Lexicographical String of All Happy Strings of Length N
+616. Add Bold Tag in String
+635. Design Log Storage System
+1056. Confusing Number
