@@ -1,5 +1,6 @@
 390. Elimination Game
 1093. Statistics from a Large Sample
+1186. Maximum Subarray Sum with One Deletion
 1285. Find the Start and End Number of Continuous Ranges
 672. Bulb Switcher II
 271. Encode and Decode Strings
@@ -22,3 +23,5 @@
 1056. Confusing Number
 1026. Maximum Difference Between Node and Ancestor
 1031. Maximum Sum of Two Non-Overlapping Subarrays
+1027. Longest Arithmetic Sequence
+1339. Maximum Product of Splitted Binary Tree
