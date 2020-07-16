@@ -25,3 +25,6 @@
 1031. Maximum Sum of Two Non-Overlapping Subarrays
 1027. Longest Arithmetic Sequence
 1339. Maximum Product of Splitted Binary Tree
+666. Path Sum IV
+1180. Count Substrings with Only One Distinct Letter
+1429. First Unique Number
