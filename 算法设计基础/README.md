@@ -171,4 +171,5 @@
 * $\clubs$中等[#384 Shuffle an Array](./#384 Shuffle an Array.md)    洗牌算法
 * $\clubs$中等[#398 Random Pick Index](./#398 Random Pick Index.md)    蓄水池抽样算法
 * $\clubs$中等[#470 Implement Rand10() Using Rand7()](./#470 Implement Rand10() Using Rand7().md)    拒绝采样
+* $\clubs$中等[#478 Generate Random Point in a Circle](./#478 Generate Random Point in a Circle.md)    拒绝采样
 * $\bigstar$困难[#1206 Design Skiplist](./#1206 Design Skiplist.md)    设计跳表
