@@ -30,3 +30,6 @@
 1429. First Unique Number
 1016. Binary String With Substrings Representing 1 To N
 1167. Minimum Cost to Connect Sticks
+1474. Delete N Nodes After M Nodes of a Linked List
+1364. Number of Trusted Contacts of a Customer
+467. Unique Substrings in Wraparound String
