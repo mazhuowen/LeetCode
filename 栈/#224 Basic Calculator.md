@@ -202,33 +202,27 @@ class Solution {
         int sign = 1;  // 1 means positive, -1 means negative
 
         for (int i = 0; i < s.length(); i++) {
-
             char ch = s.charAt(i);
             if (Character.isDigit(ch)) {
-
                 // Forming operand, since it could be more than one digit
                 operand = 10 * operand + (int) (ch - '0');
 
             } else if (ch == '+') {
-
                 // Evaluate the expression to the left,
                 // with result, sign, operand
                 result += sign * operand;
 
                 // Save the recently encountered '+' sign
                 sign = 1;
-
                 // Reset operand
                 operand = 0;
 
             } else if (ch == '-') {
-
                 result += sign * operand;
                 sign = -1;
                 operand = 0;
 
             } else if (ch == '(') {
-
                 // Push the result and sign on to the stack, for later
                 // We push the result first, then sign
                 stack.push(result);
@@ -239,7 +233,6 @@ class Solution {
                 result = 0;
 
             } else if (ch == ')') {
-
                 // Evaluate the expression to the left
                 // with result, sign and operand
                 result += sign * operand;

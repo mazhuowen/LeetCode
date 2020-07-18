@@ -103,7 +103,7 @@ while(A.next != next) {
 * $\clubs$技巧[#379 Design Phone Directory](./#379 Design Phone Directory.md)    基于特殊规则的插入操作
 * 繁杂[#432 All O`one Data Structure](./#432 All O`one Data Structure.md)    哈希表记录维护链表有序性
 * 中等[#707 Design Linked List](./#707 Design Linked List.md)    链表类的设计
-* $\clubs$中等[#1171 Remove Zero Sum Consecutive Nodes from Linked List](./#1171 Remove Zero Sum Consecutive Nodes from Linked List.md)    前缀和在链表总的应用
+* $\clubs$中等[#1171 Remove Zero Sum Consecutive Nodes from Linked List](./#1171 Remove Zero Sum Consecutive Nodes from Linked List.md)    前缀和在链表中的应用
 
 ### 链表的反转
 

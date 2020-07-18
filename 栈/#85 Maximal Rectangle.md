@@ -6,7 +6,7 @@ Given a 2D binary matrix filled with 0's and 1's, find the largest rectangle con
 
 ## 题目截图
 
-&emsp;给定一个二维矩阵，只包含0和1，需要找出最大的矩形区域。是[#84 Largest Rectangle in Histogram](./#84 Largest Rectangle in Histogram.md)的扩展。
+&emsp;给定一个二维矩阵，只包含$0$和$1$，需要找出最大的矩形区域。是[#84 Largest Rectangle in Histogram](./#84 Largest Rectangle in Histogram.md)的扩展。
 
 ```java
 class Solution {
@@ -21,7 +21,7 @@ class Solution {
 * 最直接的使用暴力法求解，遍历每个点，每遍历一个点就开始检查遍历对角线点是否为1，然后对对角结点所在列及行继续遍历判断是否为1。该方法时间复杂度为$O(N^3M^3)$。
 * 一种优化的暴力法统计每一行连续的1的个数，如图，在遍历的过程中每行连续的1都记为其编号；当前结点，比如图中的4表示在第三行以4结尾的矩阵面积为4，然后4向上扩展，也就是第二行的点2，发现点2连续结点只有两个，故组成的矩形就是图中圈起来的区域；继续向上扩展，发现第一行结点是0，没有连续点，无法组成矩阵，则当前点4可以组成的矩形最大面积就是4。以此类推，遍历结束选取最大面积返回即可。
 
-<img src="/project/LeetCode/images/#85_1.png"  />
+<img src="../images/#85_1.png"  />
 
 ```java
 class Solution {
@@ -74,7 +74,7 @@ class Solution {
 
 &emsp;如果把矩形按每一行逐次划分，如下，可以发现矩形最大的问题就是[#84 Largest Rectangle in Histogram](./#84 Largest Rectangle in Histogram.md)中查找直方图矩形最大的问题。
 
-<img src="/project/LeetCode/images/#85_2.png" style="zoom:110%;" />
+<img src="../images/#85_2.png" style="zoom:110%;" />
 
 ```java
 class Solution {

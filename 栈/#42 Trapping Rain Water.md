@@ -2,7 +2,7 @@
 
 Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
 
-<img src="/project/LeetCode/images/#42.png"  />
+<img src="../images/#42.png"  />
 
 The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped. 
 
@@ -25,7 +25,7 @@ class Solution {
 * 最直接的，按行计算雨水量，即从第一行开始遍历，中间为0，两侧有不为0的挡板的区域可以存储雨水；然后遍历第二行，即两侧有高度为2以上的挡板，中间区域高度低于1，可以存储雨水；依次类推，直到遍历最高层，假设为$M$，则总的时间复杂度为$O(MN)$。
 * 更易于理解的，如果按列计算雨水量，当前列的雨水量取决于两侧最高挡板中的较低的那个挡板，最后当前列存储雨水量就是较低挡板减去当前列的高度。两侧挡板可理解为河岸，当前列可理解为河床。
 
-<img src="/project/LeetCode/images/#42_1.png"  />
+<img src="../images/#42_1.png"  />
 
 ```java
 class Solution {
@@ -149,7 +149,7 @@ class Solution {
 
 &emsp;除了上述思路，官方提供了栈的思路。如果当前挡板的高度小于等于栈顶挡板的高度，说明会有积水，入栈继续遍历；如果当前挡板的高度大于栈顶挡板高度，积水不会漫过这个挡板，出栈计算积水，并将挡板入栈。
 
-<img src="/project/LeetCode/images/#42_2.png"  />
+<img src="../images/#42_2.png"  />
 
 ```java
 class Solution {
@@ -178,7 +178,7 @@ class Solution {
                      int high = Math.min(height[i], height[stack.peek()]);
                      // 距离，中间为积水区域（由于涉及出栈，i与stack.peek()不一定紧跟，即多个列的情况）
                      int distance = i - stack.peek() - 1;
-                     sum += (high - height[index])*distance;
+                     sum += (high - height[index]) * distance;
                 }
                 stack.push(i);
             }

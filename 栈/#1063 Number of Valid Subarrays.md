@@ -15,7 +15,7 @@ The leftmost element of the subarray is not larger than other elements in the su
 
 ## 题目解读
 
-&emsp;给定一个整数数组，返回满足下面条件的**非空**、**连续** 子数组的数目：子数组中最左侧的元素不大于其他元素。
+&emsp;给定一个整数数组，返回满足下面条件的**非空**、**连续**子数组的数目：子数组中最左侧的元素不大于其他元素。
 
 ```java
 class Solution {

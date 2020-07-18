@@ -53,7 +53,7 @@ class Solution {
 
 &emsp;除了上述的暴力法，官方还提供了分治法。分治法每次寻找最低的bar，计算最低bar为边长的矩形面积，并和左右两边的最大矩形面积比较。其核心思想是当前挡板所能延伸的的最大面积在其两侧的矩形区域即其本身延伸的矩形区域之中的最大者。
 
-<img src="/project/LeetCode/images/#84_1.png"  />
+<img src="../images/#84_1.png"  />
 
 ```java
 class Solution {
@@ -62,7 +62,7 @@ class Solution {
     }
 
     // 分治法计算矩形面积
-    private int  calculateArea(int[] heights, int start, int end) {
+    private int calculateArea(int[] heights, int start, int end) {
         // 递归终止条件
         if(start > end) {
             return 0;
@@ -77,7 +77,7 @@ class Solution {
         // 计算
         int curArea = heights[minIndex] * (end - start + 1);
         // 分治递归
-        int   leftArea = calculateArea(heights, start, minIndex - 1);
+        int leftArea = calculateArea(heights, start, minIndex - 1);
         int rightArea = calculateArea(heights, minIndex + 1, end);
         return Math.max(curArea, Math.max(leftArea, rightArea));
     }
@@ -133,4 +133,4 @@ class Solution {
 >
 > 通过上面分析可知，每次计算都是较低挡板索引减去当前栈中挡板的前一个挡板的索引减1，即$heights[stack.pop()] * (i - stack.peek() - 1))$，其中peek就是pop的前一个挡板索引。需考虑到特殊情况，比如栈空了，以下图中的1为例，此时$i - stack.peek() - 1$会报错，为了处理这种情况，上面算法中栈会预先放入-1，这样挡板1到前面的挡板数$2 - (-1) -1 = 2$，计算出挡板的面积为2。
 
-<img src="/project/LeetCode/images/#84.png"  />
+<img src="../images/#84.png"  />

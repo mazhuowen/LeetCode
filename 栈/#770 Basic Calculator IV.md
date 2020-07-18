@@ -52,10 +52,10 @@ class Poly {
     char opera;
     // 多项式，每个变量以List的形式保存，键值为变量系数
     Map<List<String>, Integer> count;
-    /**
+    /*
     * 初始创建时，无非是操作符、单变量、整数
     * 在后续计算中逐渐形成多项式，故构造函数只有这三类
-    **/
+    */
     // 操作符的构建方法
     Poly(char opera) {
         // 操作符的表示：操作符属性

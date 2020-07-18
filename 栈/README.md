@@ -49,7 +49,7 @@
 * $\clubs$简单[#150 Evaluate Reverse Polish Notation](./#150 Evaluate Reverse Polish Notation.md)    后缀表达式计算
 * $\clubs$中等[#224 Basic Calculator](./#224 Basic Calculator.md)    只有加减及括号的表达式计算
 * 中等[#227 Basic Calculator II](./#227 Basic Calculator II.md)    没有括号的表达式计算
-* 繁杂[#770 Basic Calculator IV](./#770 Basic Calculator IV.md)    存在变量的计算问题，创建多项式对象
+* $\bigstar$繁杂[#770 Basic Calculator IV](./#770 Basic Calculator IV.md)    存在变量的计算问题，创建多项式对象
 * 困难[#772 Basic Calculator III](./#772 Basic Calculator III.md)    存在负号的计算问题
 
 ### 字典序
@@ -68,4 +68,4 @@
 
 ### 二叉树
 
-* 中等[#331 Verify Preorder Serialization of a Binary Tree](./#331 Verify Preorder Serialization of a Binary Tree.md)    检测变形的前序序列是否有效
+* $\bigstar$中等[#331 Verify Preorder Serialization of a Binary Tree](./#331 Verify Preorder Serialization of a Binary Tree.md)    检测变形的前序序列是否有效
