@@ -67,7 +67,7 @@ for (int i = 0; i < N; i++) {
 
 * 中等[#133 Clone Graph](./#133 Clone Graph.md)    图的遍历拷贝
 * $\clubs$困难[#631 Design Excel Sum Formula](./#631 Design Excel Sum Formula.md)    图的深度优先搜索的应用
-* $\clubs$中等[#785 Is Graph Bipartite?](./#785 Is Graph Bipartite?.md)    图遍历的变种，巧妙利用访问标识
+* $\clubs$中等[#785 Is Graph Bipartite?](./#785 Is Graph Bipartite.md)    图遍历的变种，巧妙利用访问标识
 * $\clubs$中等[#802 Find Eventual Safe States](./#802 Find Eventual Safe States.md)    图遍历的变种，巧妙利用访问标识
 * 简单[#841 Keys and Rooms](./#841 Keys and Rooms.md)    图的遍历
 * $\bigstar$困难[#854 K-Similar Strings](./#854 K-Similar Strings.md)    将广度优先搜索应用到字符串的生成

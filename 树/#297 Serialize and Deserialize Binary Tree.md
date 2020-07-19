@@ -6,7 +6,7 @@ Design an algorithm to serialize and deserialize a binary tree. There is no rest
 
 
 
-Note: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should be stateless.
+**Note**: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should be stateless.
 
 
 

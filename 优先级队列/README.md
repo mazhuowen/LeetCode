@@ -8,7 +8,6 @@
 
 * 中等[#215 Kth Largest Element in an Array](./#215 Kth Largest Element in an Array.md)    top-k问题堆的应用
 * $\clubs$中等[#253 Meeting Rooms II](./#253 Meeting Rooms II.md)    会议结束时间做优先级队列
-* $\bigstar$困难[#621 Task Scheduler](./#621 Task Scheduler.md)    根据任务数入队判断
 * $\clubs$中等[#295 Find Median from Data Stream](./#295 Find Median from Data Stream.md)    双堆保存前后数字判断中位数
 * 中等[#347 Top K Frequent Elements](./#347 Top K Frequent Elements.md)    最小堆实现top-k的问题
 * 繁杂[#355 Design Twitter](./#355 Design Twitter.md)    top-k问题
@@ -19,6 +18,7 @@
 * 简单[#451 Sort Characters By Frequency](./#451 Sort Characters By Frequency.md)    统计频率top-k的基本应用
 * 繁杂[#480 Sliding Window Median](./#480 Sliding Window Median.md)    [#295 Find Median from Data Stream](./#295 Find Median from Data Stream.md)的进阶
 * 繁杂[#502 IPO](./#502 IPO.md)    双堆，题目和常理不符，理解是关键
+* $\bigstar$困难[#621 Task Scheduler](./#621 Task Scheduler.md)    根据任务数入队判断
 * 困难[#632 Smallest Range Covering Elements from K Lists](./#632 Smallest Range Covering Elements from K Lists.md)    多路遍历并用堆动态排序
 * 中等[#692 Top K Frequent Words](./#692 Top K Frequent Words.md)    最小堆的top-k问题
 * 简单[#703 Kth Largest Element in a Stream](./#703 Kth Largest Element in a Stream.md)    最小堆top-k问题

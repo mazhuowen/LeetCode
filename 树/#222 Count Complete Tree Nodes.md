@@ -2,6 +2,8 @@
 
 Given a **complete** binary tree, count the number of nodes.
 
+
+
 **Note**:
 
 Definition of a complete binary tree from Wikipedia:
@@ -49,7 +51,7 @@ class Solution {
 
 * 可利用完全二叉树的性质来计算最后一层的结点数，从而得到所有的节点数。查找最后一层结点可以使用树的二分查找。如图，完全二叉树的中间点是根节点，最接近根节点的就是根节点的右子节点的支路末端叶节点。
 
-![](../images/#222.jpeg)
+<img src="../images/#222.jpeg" style="zoom: 40%;" />
 
 ```java
 class Solution {

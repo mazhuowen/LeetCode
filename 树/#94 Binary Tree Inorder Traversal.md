@@ -119,8 +119,8 @@ class Solution {
 ```java
 public class Solution {
     public List < Integer > inorderTraversal(TreeNode root) {
-        List < Integer > res = new ArrayList < > ();
-        Stack < TreeNode > stack = new Stack < > ();
+        List <Integer> res = new ArrayList<>();
+        Stack <TreeNode> stack = new Stack<>();
         TreeNode curr = root;
         while (curr != null || !stack.isEmpty()) {
             // 将当前结点的左支路入栈

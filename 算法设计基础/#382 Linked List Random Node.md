@@ -9,7 +9,7 @@ What if the linked list is extremely large and its length is unknown to you? Cou
 
 ## 题目解读
 
-
+&emsp;均匀抽样链表中的节点。
 
 ```java
 /**

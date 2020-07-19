@@ -68,7 +68,7 @@ return -1;
 * $\clubs$中等[#1011 Capacity To Ship Packages Within D Days](./#1011 Capacity To Ship Packages Within D Days.md)    二分查找统计容量
 * $\clubs$中等[#1060 Missing Element in Sorted Array](./#1060 Missing Element in Sorted Array.md)    查找第k个值问题
 * 中等[#1095 Find in Mountain Array](./#1095 Find in Mountain Array.md)    山峰数组二分查找
-* $\clubs$中等[#1198 Find Smallest Common Element in All Rows](./#1198 Find Smallest Common Element in All Rows)    二分查找多路遍历
+* $\clubs$中等[#1198 Find Smallest Common Element in All Rows](./#1198 Find Smallest Common Element in All Rows.md)    二分查找多路遍历
 
 ### 插入查找
 
