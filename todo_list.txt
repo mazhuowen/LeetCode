@@ -1,3 +1,5 @@
+5466. Maximum Number of Non-Overlapping Substrings
+5467. Find a Value of a Mysterious Function Closest to Target
 390. Elimination Game
 1093. Statistics from a Large Sample
 1186. Maximum Subarray Sum with One Deletion
@@ -33,3 +35,5 @@
 1474. Delete N Nodes After M Nodes of a Linked List
 1364. Number of Trusted Contacts of a Customer
 467. Unique Substrings in Wraparound String
+5464. Water Bottles
+5465. Number of Nodes in the Sub-Tree With the Same Label
