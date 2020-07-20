@@ -38,3 +38,5 @@
 467. Unique Substrings in Wraparound String
 5464. Water Bottles
 5465. Number of Nodes in the Sub-Tree With the Same Label
+485. Max Consecutive Ones
+876. Middle of the Linked List
