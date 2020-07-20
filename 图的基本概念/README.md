@@ -70,7 +70,6 @@ for (int i = 0; i < N; i++) {
 * $\clubs$中等[#785 Is Graph Bipartite?](./#785 Is Graph Bipartite.md)    图遍历的变种，巧妙利用访问标识
 * $\clubs$中等[#802 Find Eventual Safe States](./#802 Find Eventual Safe States.md)    图遍历的变种，巧妙利用访问标识
 * 简单[#841 Keys and Rooms](./#841 Keys and Rooms.md)    图的遍历
-* $\bigstar$困难[#854 K-Similar Strings](./#854 K-Similar Strings.md)    将广度优先搜索应用到字符串的生成
 * 中等[#797 All Paths From Source to Target](./#797 All Paths From Source to Target.md)    深度优先搜索遍历路径
 * 中等[#1059 All Paths from Source Lead to Destination](./#1059 All Paths from Source Lead to Destination.md)    图遍历的变种，巧妙利用访问标识
 * $\clubs$中等[#1042 Flower Planting With No Adjacent](./#1042 Flower Planting With No Adjacent.md)    深度遍历变形着色结点
@@ -98,6 +97,7 @@ for (int i = 0; i < N; i++) {
 * $\clubs$中等[#752 Open the Lock](./#752 Open the Lock.md)    双向广度优先遍历
 * $\clubs$困难[#773 Sliding Puzzle](./#773 Sliding Puzzle.md)    滑板游戏抽象为广度优先搜索遍历
 * $\bigstar$困难[#847 Shortest Path Visiting All Nodes](./#847 Shortest Path Visiting All Nodes.md)    无向连通图遍历所有顶点的最短路径
+* $\bigstar$困难[#854 K-Similar Strings](./#854 K-Similar Strings.md)    将广度优先搜索应用到字符串的生成
 * $\clubs$中等[#909 Snakes and Ladders](./#909 Snakes and Ladders.md)    蛇梯棋广度优先搜索
 * $\clubs$中等[#934 Shortest Bridge](./#934 Shortest Bridge.md)    深度、广度优先搜索结合的贪心策略
 * 中等[#994 Rotting Oranges](./#994 Rotting Oranges.md)    广度优先搜索
