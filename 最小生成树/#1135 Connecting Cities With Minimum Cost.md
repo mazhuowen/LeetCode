@@ -107,3 +107,151 @@ class DisJoint {
 ## 官方解题
 
 &emsp;官方解题还提供了`Prim`算法的思路，但该题适合使用`Kruskal`。
+
+```java
+class Solution {
+    public int minimumCost(int N, int[][] connections) {
+        // 无合法或组不成树
+        if (N <= 0 || connections.length < N - 1) return -1;
+
+        // 建图
+        Node[] graph = new Node[N];
+        for (int[] connection : connections) {
+            int v1 = connection[0] - 1, v2 = connection[1] - 1, weight = connection[2];
+            graph[v1] = new Node(v2, weight, graph[v1]);
+            graph[v2] = new Node(v1, weight, graph[v2]);
+        } 
+
+        // 是否加入最小生成树
+        boolean[] visited = new boolean[N];
+        int[] weights = new int[N];
+        Arrays.fill(weights, Integer.MAX_VALUE);
+        int[] startNode = new int[N];
+        
+        int start = 0, weight = 0;
+        weights[start] = 0;
+        // 只需N-1次，次数由于weight += weights[start]操作，需要加入N个点
+        for (int accept = 0; accept < N; accept++) {
+            boolean flag = false;
+            for (Node tmp = graph[start]; tmp != null; tmp = tmp.next) {
+                if (visited[tmp.ver] || tmp.weight >= weights[tmp.ver]) continue;
+
+                flag = true;
+                weights[tmp.ver] = tmp.weight;
+                startNode[tmp.ver] = start;
+            }
+
+            // 加入start
+            visited[start] = true;
+            weight += weights[start];
+            weights[start] = Integer.MAX_VALUE;
+
+            // 迭代更新下一个start
+            for (int i = 0; i < N; i++) {
+                if (weights[i] < weights[start]) start = i;
+            }
+        }
+        
+        // 最后再次判断是否所有点加入生成树
+        for (boolean visit : visited) {
+            if (!visit) return -1;
+        }
+        return weight;
+    }
+}
+
+class Node {
+    int ver;
+    int weight;
+    Node next;
+
+    Node(int ver, int weight, Node next) {
+        this.ver = ver;
+        this.weight = weight;
+        this.next = next;
+    }
+}
+```
+
+&emsp;时间复杂度为$O(V^2)$，空间复杂度为$O(V)$。
+
+执行用时：265ms，在所有java提交中击败了8.96%的用户。
+
+内存消耗：48.3MB，在所有java提交中击败了100.00%的用户。
+
+&emsp;引入优先级队列优化查找最小边。
+
+```java
+class Solution {
+    public int minimumCost(int N, int[][] connections) {
+        // 无合法或组不成树
+        if (N <= 0 || connections.length < N - 1) return -1;
+
+        // 建图
+        Node[] graph = new Node[N];
+        for (int[] connection : connections) {
+            int v1 = connection[0] - 1, v2 = connection[1] - 1, weight = connection[2];
+            graph[v1] = new Node(v2, weight, graph[v1]);
+            graph[v2] = new Node(v1, weight, graph[v2]);
+        } 
+
+        // 是否加入最小生成树
+        boolean[] visited = new boolean[N];
+        int[] weights = new int[N];
+        Arrays.fill(weights, Integer.MAX_VALUE);
+        int[] startNode = new int[N];
+        PriorityQueue<int[]> queue = new PriorityQueue<>((a, b) -> a[2] - b[2]);
+        
+        int start = 0, weight = 0;
+        weights[start] = 0;
+        // 只需N-1次，次数由于weight += weights[start]操作，需要加入N个点
+        for (int accept = 0; accept < N; accept++) {
+            boolean flag = false;
+            for (Node tmp = graph[start]; tmp != null; tmp = tmp.next) {
+                if (visited[tmp.ver] || tmp.weight >= weights[tmp.ver]) continue;
+
+                flag = true;
+                weights[tmp.ver] = tmp.weight;
+                startNode[tmp.ver] = start;
+                queue.add(new int[]{start, tmp.ver, tmp.weight});
+            }
+
+            // 加入start
+            visited[start] = true;
+            weight += weights[start];
+            weights[start] = Integer.MAX_VALUE;
+
+            // 迭代更新下一个start
+            while (!queue.isEmpty() && visited[queue.peek()[1]]) {
+                queue.poll();
+            }
+            if (!queue.isEmpty()) start = queue.poll()[1];
+            else break;
+        }
+        
+        // 最后再次判断是否所有点加入生成树
+        for (boolean visit : visited) {
+            if (!visit) return -1;
+        }
+        return weight;
+    }
+}
+
+class Node {
+    int ver;
+    int weight;
+    Node next;
+
+    Node(int ver, int weight, Node next) {
+        this.ver = ver;
+        this.weight = weight;
+        this.next = next;
+    }
+}
+```
+
+&emsp;时间复杂度为$O(V\log_2E)$，空间复杂度为$O(\max(V, E))$。
+
+执行用时：19ms，在所有java提交中击败了99.53%的用户。
+
+内存消耗：45.8MB，在所有java提交中击败了100.00%的用户。

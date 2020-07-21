@@ -177,4 +177,64 @@ class Solution {
 
 ## 官方解题
 
-&emsp;暂无，密切关注。
+&emsp;官方将所有的水井抽象为节点`0`，则屋子中自建水井转化为一条边，这样化特殊为普通，处理后使用常规最小生成树即可。
+
+```java
+class Solution {
+    public int minCostToSupplyWater(int n, int[] wells, int[][] pipes) {
+        PriorityQueue<int[]> queue = new PriorityQueue<>((a, b) -> a[2] - b[2]);
+        // 关键，将房屋打井看作是一条连接房屋的边，所有的井编号为0
+        for (int i = 0; i < wells.length; i++) queue.add(new int[]{0, i + 1, wells[i]});
+        // 再加入管道
+        for (int[] pipe : pipes) queue.add(pipe);
+
+        DisJoint disJoint = new DisJoint(n + 1);
+        int accept = 0, weight = 0;
+        while (accept <= n && !queue.isEmpty()) {
+            int[] edge = queue.poll();
+            int root1 = disJoint.find(edge[0]);
+            int root2 = disJoint.find(edge[1]);
+            if (root1 != root2) {
+                disJoint.union(root1, root2);
+                accept++;
+                weight += edge[2];
+            }
+        }
+        return accept == n ? weight : -1;
+    }
+}
+
+class DisJoint {
+    private int[] parent;
+
+    DisJoint(int size) {
+        this.parent = new int[size];
+        Arrays.fill(parent, -1);
+    }
+
+    public void union(int root1, int root2) {
+        if (parent[root1] >= 0 || parent[root2] >= 0) throw new IllegalArgumentException("invalid param");
+        if (root1 == root2) return;
+		
+        // 合并两个集合并更新新的根节点所在集合最小水井开销
+        if (parent[root1] <= parent[root2]) {
+            parent[root1] += parent[root2];
+            parent[root2] = root1;
+        } else {
+            parent[root2] += parent[root1];
+            parent[root1] = root2;
+        }
+    }
+
+    public int find(int idx) {
+        if (parent[idx] < 0) return idx;
+        return parent[idx] = find(parent[idx]);
+    }
+}
+```
+
+&emsp;时间复杂度为$O(V\log_2(V + E))$，空间复杂度为$O(V + E)$。
+
+执行用时：37ms，在所有java提交中击败了47.83%的用户。
+
+内存消耗：45.3MB，在所有java提交中击败了100.00%的用户。

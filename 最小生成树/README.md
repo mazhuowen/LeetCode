@@ -7,13 +7,14 @@
 ```java
 int accept = 0;
 // 选择n - 1条边
-while (accept < n - 1) {
+while (!queue.isEmpty() && accept < n - 1) {
     int[] edge = queue.poll();
     if (disJoint.find(edge[0]) != disJoint.find(edge[1])) {
         disJoint.union(disJoint.find(edge[0]), disJoint.find(edge[1]));
         accept++;
     }
 }
+// 若连通存在最小树，则accept == n - 1
 ```
 
 &emsp;从顶点的角度出发得到的是`Prim`算法。初始点集为空，每个结点的最短边数组除了起始点都为无穷大，同时需要记录是否加入最短生成树的标识数组和最短边的另一端点数组；每次循环选择最短边，并迭代下一轮端点。
@@ -38,7 +39,7 @@ for (int i = 1; i < n; i++) {
         }
     }
     // 标记
-    flag[start] = 0;
+    flag[start] = true;
     // 从当前权重选择最小值，并加入点
     for (int i = 0; i < n; i++) {
         记录最小权重min和下次遍历的起始点start
