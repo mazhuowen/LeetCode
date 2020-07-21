@@ -41,3 +41,5 @@
 485. Max Consecutive Ones
 876. Middle of the Linked List
 面试题 04.01. Route Between Nodes LCCI
+303. Range Sum Query - Immutable
+912. Sort an Array
