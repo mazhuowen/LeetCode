@@ -43,3 +43,6 @@
 面试题 04.01. Route Between Nodes LCCI
 303. Range Sum Query - Immutable
 912. Sort an Array
+1514. Path with Maximum Probability
+1013. Partition Array Into Three Parts With Equal Sum
+473. Matchsticks to Square
