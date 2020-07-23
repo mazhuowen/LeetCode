@@ -46,3 +46,5 @@
 1514. Path with Maximum Probability
 1013. Partition Array Into Three Parts With Equal Sum
 473. Matchsticks to Square
+953. Verifying an Alien Dictionary
+1043. Partition Array for Maximum Sum
