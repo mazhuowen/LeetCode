@@ -102,6 +102,7 @@ for (int i = 0; i < N; i++) {
 * $\clubs$中等[#934 Shortest Bridge](./#934 Shortest Bridge.md)    深度、广度优先搜索结合的贪心策略
 * 中等[#994 Rotting Oranges](./#994 Rotting Oranges.md)    广度优先搜索
 * 简单[#1030 Matrix Cells in Distance Order](./#1030 Matrix Cells in Distance Order.md)    图的广度优先搜索思想在矩形中的应用
+* $\clubs$繁杂[#1036 Escape a Large Maze](./#1036 Escape a Large Maze.md)    采用有限制步数的双向广度、深度搜索确定是否存在包围圈
 * 中等[#1091 Shortest Path in Binary Matrix](./#1091 Shortest Path in Binary Matrix.md)    矩阵的广度优先搜索
 * $\clubs$中等[#1162 As Far from Land as Possible](./#1162 As Far from Land as Possible.md)    广度优先搜索从外层向中心遍历
 * $\clubs$中等[#1197 Minimum Knight Moves](./#1197 Minimum Knight Moves.md)    快速逼近加剪枝的广度优先搜索
