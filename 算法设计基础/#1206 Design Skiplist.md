@@ -2,9 +2,9 @@
 
 Design a Skiplist without using any built-in libraries.
 
-A Skiplist is a data structure that takes $O(log(n))$ time to `add`, `erase` and `search`. Comparing with treap and red-black tree which has the same function and performance, the code length of Skiplist can be comparatively short and the idea behind Skiplists are just simple linked lists.
+A Skiplist is a data structure that takes $O(\log(n))$ time to `add`, `erase` and `search`. Comparing with treap and red-black tree which has the same function and performance, the code length of Skiplist can be comparatively short and the idea behind Skiplists are just simple linked lists.
 
-You can see there are many layers in the Skiplist. Each layer is a sorted linked list. With the help of the top layers, `add` , `erase` and `search` can be faster than $O(n)$. It can be proven that the average time complexity for each operation is $O(log(n))$ and space complexity is $O(n)$.
+You can see there are many layers in the Skiplist. Each layer is a sorted linked list. With the help of the top layers, `add` , `erase` and `search` can be faster than $O(n)$. It can be proven that the average time complexity for each operation is $O(\log(n))$ and space complexity is $O(n)$.
 
 To be specific, your design should include these functions:
 
@@ -18,7 +18,7 @@ Note that duplicates may exist in the Skiplist, your code needs to handle this s
 
 
 
-Constraints:
+**Constraints**:
 
 * $0 \le \text{num, target} \le 20000$
 * At most $50000$ calls will be made to `search`, `add`, and `erase`.

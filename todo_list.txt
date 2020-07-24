@@ -1,6 +1,7 @@
 5466. Maximum Number of Non-Overlapping Substrings
 5467. Find a Value of a Mysterious Function Closest to Target
 390. Elimination Game
+1494. Parallel Courses II
 1093. Statistics from a Large Sample
 1462. Course Schedule IV
 1186. Maximum Subarray Sum with One Deletion
@@ -49,3 +50,7 @@
 953. Verifying an Alien Dictionary
 1043. Partition Array for Maximum Sum
 1510. Stone Game IV
+1448. Count Good Nodes in Binary Tree
+795. Number of Subarrays with Bounded Maximum
+791. Custom Sort String
+1387. Sort Integers by The Power Value
