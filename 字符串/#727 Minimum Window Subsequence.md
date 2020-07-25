@@ -6,7 +6,7 @@ If there is no such window in `S` that covers all characters in `T`, return the 
 
 
 
-Note:
+**Note**:
 
 * All the strings in the input will only contain lowercase letters.
 * The length of `S` will be in the range `[1, 20000]`.
@@ -16,7 +16,7 @@ Note:
 
 ## 题目解读
 
-&emsp;给定字符串`S`and`T`，找出`S`中最短的（连续）**子串**`W` ，使得`T`是`W`的**子序列** 。
+&emsp;给定字符串`S`和`T`，找出`S`中最短的（连续）**子串**`W` ，使得`T`是`W`的**子序列** 。
 
 ```java
 class Solution {
