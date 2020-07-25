@@ -54,3 +54,6 @@
 795. Number of Subarrays with Bounded Maximum
 791. Custom Sort String
 1387. Sort Integers by The Power Value
+890. Find and Replace Pattern
+1017. Convert to Base -2
+790. Domino and Tromino Tiling
