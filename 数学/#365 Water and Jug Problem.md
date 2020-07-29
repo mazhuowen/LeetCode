@@ -35,8 +35,6 @@ class Solution {
 
 * 根据贝祖定理，$ax + by = z$有解当且仅当$z$是$x, y$的最大公约数的倍数。因此只需要找到最大公约数并判断$z$是否是它的倍数。
 
-
-
 ```java
 class Solution {
     public boolean canMeasureWater(int x, int y, int z) {

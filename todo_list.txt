@@ -4,6 +4,7 @@
 390. Elimination Game
 1494. Parallel Courses II
 1093. Statistics from a Large Sample
+1049. Last Stone Weight II
 1462. Course Schedule IV
 1186. Maximum Subarray Sum with One Deletion
 1285. Find the Start and End Number of Continuous Ranges
@@ -27,6 +28,7 @@
 1415. The k-th Lexicographical String of All Happy Strings of Length N
 面试题 17.18. Shortest Supersequence LCCI
 616. Add Bold Tag in String
+1386. Cinema Seat Allocation
 635. Design Log Storage System
 1056. Confusing Number
 1026. Maximum Difference Between Node and Ancestor
@@ -68,3 +70,7 @@
 5472. Shuffle String
 5473. Bulb Switcher IV
 5474. Number of Good Leaf Nodes Pairs
+254. Factor Combinations
+593. Valid Square
+1318. Minimum Flips to Make a OR b Equal to c
+1041. Robot Bounded In Circle

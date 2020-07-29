@@ -13,7 +13,7 @@
 * 简单[#258 Add Digits](./#258 Add Digits.md)    按位加
 * 简单[#263 Ugly Number](./#263 Ugly Number.md)    丑数判断
 * 中等[#311 Sparse Matrix Multiplication](./#311 Sparse Matrix Multiplication.md)    稀疏矩阵乘法
-* $\clubs$中等[#319 Bulb Switcher](./#319 Bulb Switcher.md)    平方数的因子有偶数个
+* $\clubs$中等[#319 Bulb Switcher](./#319 Bulb Switcher.md)    平方数的约数有奇数个
 * $\bigstar$困难[#363 Max Sum of Rectangle No Larger Than K](./#363 Max Sum of Rectangle No Larger Than K.md)    二维数组压缩行或列计算矩形最大和
 * $\clubs$中等[#365 Water and Jug Problem](./#365 Water and Jug Problem.md)    贝祖定理
 * 简单[#367 Valid Perfect Square](./#367 Valid Perfect Square.md)    整数的平方根，需注意判断条件
