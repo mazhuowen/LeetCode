@@ -40,13 +40,13 @@ class Solution {
         for (int i = 2; i < 32; i++) f[i] = f[i - 1] + f[i - 2];
 
         int res = 0;
-        // 最高位
+        // 最高位位数
         int bit = 31 - Integer.numberOfLeadingZeros(num);
         // 前一位是否是1
         boolean pre = false;
         while (bit >= 0) {
             // 当前位为1
-            if ((num & (1 << bit)) != 0) {
+            if ((num & (1 << bit)) == 1) {
                 // (0,100...0)区间内的数目，需要减去0，避免重复计算
                 if (bit > 0) res += f[bit - 1] - 1;
                 // 前一数值为0，还需加上100...0本身

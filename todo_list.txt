@@ -72,5 +72,8 @@
 5474. Number of Good Leaf Nodes Pairs
 254. Factor Combinations
 593. Valid Square
+1473. Paint House III
 1318. Minimum Flips to Make a OR b Equal to c
 1041. Robot Bounded In Circle
+372. Super Pow
+775. Global and Local Inversions

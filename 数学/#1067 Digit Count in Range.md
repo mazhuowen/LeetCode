@@ -25,7 +25,7 @@ class Solution {
 
 ## 程序设计
 
-* 类似[#233 Number of Digit One](./#233 Number of Digit One.md)，在d不为0的情况下，仍可用如下思路完成，但当d为0时，该思路不再适合。
+* 类似[#233 Number of Digit One](./#233 Number of Digit One.md)，在$d$不为$0$的情况下，仍可用如下思路完成，但当$d$为$0$时，该思路不再适合。
 
 ```java
 private int digitsCount(int d, int num) {
