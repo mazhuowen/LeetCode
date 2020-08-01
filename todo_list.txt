@@ -77,3 +77,9 @@
 1041. Robot Bounded In Circle
 372. Super Pow
 775. Global and Local Inversions
+949. Largest Time for Given Digits
+974. Subarray Sums Divisible by K
+1007. Minimum Domino Rotations For Equal Row
+368. Largest Divisible Subset
+845. Longest Mountain in Array
+874. Walking Robot Simulation
