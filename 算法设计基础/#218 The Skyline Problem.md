@@ -39,12 +39,12 @@ class Solution {
 
 <img src="../images/#218_2.png" style="zoom: 67%;" />
 
-* 终点在于归并，首先对于一个建筑，起始坐标加高度表示起始，结束坐标加0表示结束；归并时左右两侧的区间各自不想交且是有序的，每次从左右两侧选择坐标在前面的边界，但是只有边界，没法判断该边界是起始边界还是结束边界；考虑到单个有序的边界序列不存在连续的高度一致的坐标，连续坐标高度必然不一致，而高度大于前面的高度则表示前面的高度在当前高度截止，小于前面的高度也表示前面的高度在当前高度截止。即坐标和前一个坐标组成了完整的边界信息。这样我们在归并时不仅要记录当前坐标，还要维护前一个坐标的高度。
-* 以`[2,10],[9,0]`和`[3,15],[7,0]`为例，左边前一坐标记为`leftHigh`，右侧为`rightHigh`，初始化为0；选择最前面的坐标，即左侧的`[2,10]`，`leftHigh=10`，此时当前高度10不等于之前的高度0，加入并更新合并后的高度10；然后选择右侧`[3,15]`，`rightHigh=15`，此时当前高度15不等于之前高度10，加入并更新合并后的高度为15；继续选择右侧`[7,0]`，此时`leftHigh=10`而`rightHigh=0`，表示当前高度为10，而10不等于15，加入并更新合并后的高度为10；最后选择左侧的`[9,0]`，此时`leftHigh=0`，当前高度也为0，不等于之前高度10，加入并更新合并后的高度为0。
+* 终点在于归并，首先对于一个建筑，起始坐标加高度表示起始，结束坐标加$0$表示结束；归并时左右两侧的区间各自不想交且是有序的，每次从左右两侧选择坐标在前面的边界，但是只有边界，没法判断该边界是起始边界还是结束边界；考虑到单个有序的边界序列不存在连续的高度一致的坐标，连续坐标高度必然不一致，而高度大于前面的高度则表示前面的高度在当前高度截止，小于前面的高度也表示前面的高度在当前高度截止。即坐标和前一个坐标组成了完整的边界信息。这样我们在归并时不仅要记录当前坐标，还要维护前一个坐标的高度。
+* 以`[2,10],[9,0]`和`[3,15],[7,0]`为例，左边前一坐标记为`leftHigh`，右侧为`rightHigh`，初始化为0；选择最前面的坐标，即左侧的`[2,10]`，`leftHigh=10`，此时当前高度$10$不等于之前的高度$0$，加入并更新合并后的高度$10$；然后选择右侧`[3,15]`，`rightHigh=15`，此时当前高度$15$不等于之前高度$10$，加入并更新合并后的高度为$15$；继续选择右侧`[7,0]`，此时`leftHigh=10`而`rightHigh=0`，表示当前高度为$10$，而$10$不等于$15$，加入并更新合并后的高度为$10$；最后选择左侧的`[9,0]`，此时`leftHigh=0`，当前高度也为$0$，不等于之前高度$10$，加入并更新合并后的高度为$0$。
 
 <img src="../images/#218_3.png" style="zoom:67%;" />
 
-* 上述没有讨论特殊情况，如`[0,2,3],[2,5,3]`两段是连续的，高度相等，在左侧边界`[2,0]`和右侧边界`[2,3]`中要先选择哪个归并是个问题。若先选择`[2,0]`，则当前高度是0，和之前高度3不一致，会加入`[2,0]`，这显然是不对的。如果先选择`[2,3]`，则当前高度是3，而之前高度是3，不会更新，再选择`[2,0]`，此时当前高度还是3，之前高度也是3，不会更新，结果正确。即坐标相等的情况下优先选择起始坐标，即高度不等于0的坐标。
+* 上述没有讨论特殊情况，如`[0,2,3],[2,5,3]`两段是连续的，高度相等，在左侧边界`[2,0]`和右侧边界`[2,3]`中要先选择哪个归并是个问题。若先选择`[2,0]`，则当前高度是$0$，和之前高度$3$不一致，会加入`[2,0]`，这显然是不对的。如果先选择`[2,3]`，则当前高度是$3$，而之前高度是$3$，不会更新，再选择`[2,0]`，此时当前高度还是$3$，之前高度也是$3$，不会更新，结果正确。即坐标相等的情况下优先选择起始坐标，即高度不等于$0$的坐标。
 
 ```java
 class Solution {
@@ -65,7 +65,7 @@ class Solution {
         return mergeSkyLine(left, right, res);
     }
 
-    private List<List<Integer>> mergeSkyLine(List<List<Integer>>  left, List<List<Integer>> right, List<List<Integer>>  res) {
+    private List<List<Integer>> mergeSkyLine(List<List<Integer>> left, List<List<Integer>> right, List<List<Integer>> res) {
       int leftLen = left.size(), rightLen = right.size();
       // 遍历索引
       int leftIdx = 0, rightIdx = 0;
@@ -74,7 +74,7 @@ class Solution {
 
       // 归并
       while (leftIdx < leftLen && rightIdx < rightLen) {
-        List<Integer> l = left.get(leftIdx);
+      	List<Integer> l = left.get(leftIdx);
         List<Integer> r = right.get(rightIdx);
 
         // 当前的横坐标
@@ -121,15 +121,15 @@ class Solution {
       return res;
     }
 
-    private void update(List<List<Integer>>  res, int curX, int curHigh) {
-      // 末尾的坐标不相等，则直接加入更新
-          if (res.isEmpty() || res.get(res.size() - 1).get(0) != curX) {
-            res.add(new ArrayList<>(){{add(curX); add(curHigh);}});
-          }
-          // 坐标相等，则更新（此处curHigh选择最大的，重复更新每次只会更新为最大的，若第一次就是最大，后续也会设置最大的这个值）
-          else {
+    private void update(List<List<Integer>> res, int curX, int curHigh) {
+    	// 末尾的坐标不相等，则直接加入更新
+        if (res.isEmpty() || res.get(res.size() - 1).get(0) != curX) {
+        	res.add(new ArrayList<>(){{add(curX); add(curHigh);}});
+        }
+        // 坐标相等，则更新（此处curHigh选择最大的，重复更新每次只会更新为最大的，若第一次就是最大，后续也会设置最大的这个值）
+        else {
             res.get(res.size() - 1).set(1, curHigh);
-          }
+        }
     }
 }
 ```

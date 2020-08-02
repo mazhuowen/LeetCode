@@ -121,7 +121,7 @@ class Solution {
 
 ```java
 class Solution {
-    // ０表示未关联，１表示可以匹配，－１表示不可匹配
+    // 0表示未关联，1表示可以匹配，-1表示不可匹配
     int[][] dp;
 
     public boolean isMatch(String s, String p) {

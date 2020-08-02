@@ -10,6 +10,7 @@
 1285. Find the Start and End Number of Continuous Ranges
 672. Bulb Switcher II
 792. Number of Matching Subsequences
+5477. Minimum Swaps to Arrange a Binary Grid
 271. Encode and Decode Strings
 1062. Longest Repeating Substring
 1071. Greatest Common Divisor of Strings
@@ -83,3 +84,7 @@
 368. Largest Divisible Subset
 845. Longest Mountain in Array
 874. Walking Robot Simulation
+5475. Count Good Triplets
+5476. Find the Winner of an Array Game
+5478. Get the Maximum Score
+面试题 08.06. Hanota LCCI
