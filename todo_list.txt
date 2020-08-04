@@ -90,3 +90,6 @@
 面试题 08.06. Hanota LCCI
 686. Repeated String Match
 1282. Group the People Given the Group Size They Belong To
+809. Expressive Words
+869. Reordered Power of 2
+1268. Search Suggestions System
