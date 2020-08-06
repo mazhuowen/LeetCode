@@ -65,6 +65,7 @@ while (!queue.isEmpty()) {
 }
 ```
 
+* $\clubs$中等[#787 Cheapest Flights Within K Stops](.\#787 Cheapest Flights Within K Stops.md)    限定路径节点数目的最短距离，负权问题变形
 * $\clubs$中等[#1129 Shortest Path with Alternating Colors](./#1129 Shortest Path with Alternating Colors.md)    负权无环图穷举法思想的应用
 
 ### 有向无环图最短路径

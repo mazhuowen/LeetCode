@@ -28,6 +28,7 @@
 612. Shortest Distance in a Plane
 1415. The k-th Lexicographical String of All Happy Strings of Length N
 面试题 17.18. Shortest Supersequence LCCI
+486. Predict the Winner
 616. Add Bold Tag in String
 1386. Cinema Seat Allocation
 635. Design Log Storage System
@@ -93,3 +94,7 @@
 809. Expressive Words
 869. Reordered Power of 2
 1268. Search Suggestions System
+643. Maximum Average Subarray I
+807. Max Increase to Keep City Skyline
+848. Shifting Letters
+916. Word Subsets

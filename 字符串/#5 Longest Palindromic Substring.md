@@ -122,7 +122,7 @@ class Solution {
         // 中心和该中心最长回文串右侧边界
         int center = 0, right = 0;
         for (int i = 1; i < T.length - 1; i++) {
-            // i在当前最长回文串内部，i关于center的对称点为2*center-1，记为j
+            // i在当前最长回文串内部，i关于center的对称点为2*center-i，记为j
             // 如果i在左侧，此时j处没更新到，故值为0；如果i在右侧，此时j已更新，
             // i处的值为j处的值，注意i扩展不能超过right边界，j处可能中心扩展后长度超出i可扩展到right的长度，
             // 如果超出right，则right-i个长度是i至少可覆盖的回文串长度，故选择这两个中的最小值。
