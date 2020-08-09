@@ -98,3 +98,9 @@
 807. Max Increase to Keep City Skyline
 848. Shifting Letters
 916. Word Subsets
+5468. Kth Missing Positive Number
+5469. Can Convert String in K Moves
+5470. Minimum Insertions to Balance a Parentheses String
+5483. Make The String Great
+5471. Maximum Number of Non-Overlapping Subarrays With Su
+5484. Find Kth Bit in Nth Binary String
