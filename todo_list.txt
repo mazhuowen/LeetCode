@@ -53,6 +53,7 @@
 303. Range Sum Query - Immutable
 912. Sort an Array
 1514. Path with Maximum Probability
+978. Longest Turbulent Subarray
 1013. Partition Array Into Three Parts With Equal Sum
 473. Matchsticks to Square
 953. Verifying an Alien Dictionary

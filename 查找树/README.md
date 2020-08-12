@@ -63,7 +63,7 @@
 
 &emsp;线段树的形式主要有四类，在已知叶节点（最小区间）的情况下通过数组构建完全二叉树、通过树对象构建二叉树，都属于静态线段树；另一类是动态线段树，如虽然已知叶节点，但是叶节点与次序有关，需要依次加入，此类的实现有基于数组的延迟传播和基于树对象的动态创建。
 
-* $\bigstar$中等[#307 Range Sum Query - Mutable](./#307 Range Sum Query - Mutable.md)    线段树区间和统计
+* $\bigstar$中等[#307 Range Sum Query - Mutable](./#307 Range Sum Query - Mutable.md)    静态线段树区间和统计
 * $\bigstar$困难[#308 Range Sum Query 2D - Mutable](./#308 Range Sum Query 2D - Mutable.md)    二维数组的线段树区间统计
 * $\bigstar$中等[#673 Number of Longest Increasing Subsequence](./#673 Number of Longest Increasing Subsequence.md)    动态线段树
 * $\bigstar$繁杂[#699 Falling Squares](./#699 Falling Squares.md)    动态数组线段树延迟传播
