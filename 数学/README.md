@@ -71,6 +71,7 @@
 * 中等[#611 Valid Triangle Number](./#611 Valid Triangle Number.md)    排序计算三角形组合数
 * 简单[#717 1-bit and 2-bit Characters](./#717 1-bit and 2-bit Characters.md)    结尾1的数目决定编码规律
 * 中等[#738 Monotone Increasing Digits](./#738 Monotone Increasing Digits.md)    最接近给定数字的递增数字
+* 中等[#754 Reach a Number](./#754 Reach a Number.md)    等差数列正反向规律
 * 简单[#836 Rectangle Overlap](./#836 Rectangle Overlap.md)    [#223 Rectangle Area](./#223 Rectangle Area.md)的简化问题
 * 困难[#906 Super Palindromes](./#906 Super Palindromes.md)    遍历可能回文的前半部分
 * 简单[#1018 Binary Prefix Divisible By 5](./#1018 Binary Prefix Divisible By 5.md)    根据最后一位判断是否被5整除
