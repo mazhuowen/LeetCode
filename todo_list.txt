@@ -28,6 +28,7 @@
 612. Shortest Distance in a Plane
 1415. The k-th Lexicographical String of All Happy Strings of Length N
 面试题 17.18. Shortest Supersequence LCCI
+801. Minimum Swaps To Make Sequences Increasing
 486. Predict the Winner
 616. Add Bold Tag in String
 1386. Cinema Seat Allocation
@@ -99,6 +100,7 @@
 807. Max Increase to Keep City Skyline
 848. Shifting Letters
 916. Word Subsets
+462. Minimum Moves to Equal Array Elements II
 5468. Kth Missing Positive Number
 5469. Can Convert String in K Moves
 5470. Minimum Insertions to Balance a Parentheses String
@@ -106,3 +108,4 @@
 5471. Maximum Number of Non-Overlapping Subarrays With Su
 5484. Find Kth Bit in Nth Binary String
 670. Maximum Swap
+306. Additive Number
