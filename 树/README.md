@@ -30,7 +30,7 @@
 * 中等[#102 Binary Tree Level Order Traversal](./#102 Binary Tree Level Order Traversal.md)    层次遍历的变形
 * 中等[#103 Binary Tree Zigzag Level Order Traversal](./#103 Binary Tree Zigzag Level Order Traversal.md)    锯齿层次遍历，[#102 Binary Tree Level Order Traversal](./#102 Binary Tree Level Order Traversal.md)的延续
 * $\bigstar$中等[#105 Construct Binary Tree from Preorder and Inorder Traversal](./#105 Construct Binary Tree from Preorder and Inorder Traversal.md)    从中序、前序遍历构建二叉树
-* 中等[#106 Construct Binary Tree from Inorder and Postorder Traversal](./#106 Construct Binary Tree from Inorder and Postorder Traversal.md)    从中序遍历、后序遍历构造二叉树
+* 中等[#106 Construct Binary Tree from Inorder and Postorder Traversal](./#106 Construct Binary Tree from Inorder and Postorder Traversal.md)    从中序、后序遍历构造二叉树
 * 简单[#107 Binary Tree Level Order Traversal II](./#107 Binary Tree Level Order Traversal II.md)    从底到顶的层次遍历，[#102 Binary Tree Level Order Traversal](./#102 Binary Tree Level Order Traversal.md)的延续
 * $\clubs$简单[#111 Minimum Depth of Binary Tree](./#111 Minimum Depth of Binary Tree.md)    树的最小深度
 * 简单[#112 Path Sum](./#112 Path Sum.md)    遍历计算路径之和

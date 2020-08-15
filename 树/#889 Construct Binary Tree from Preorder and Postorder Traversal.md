@@ -48,9 +48,7 @@ class Solution {
 
     private TreeNode constructFromPrePost(int[] pre, int s1, int e1, int[] post, int s2, int e2) {
         // 根节点值不一样，抛异常
-        if(pre[s1] != post[e2]) {
-            throw new IllegalArgumentException("invalid param");
-        }
+        if(pre[s1] != post[e2]) throw new IllegalArgumentException("invalid param");
         TreeNode root = new TreeNode(pre[s1]);
 
         // 叶节点，返回

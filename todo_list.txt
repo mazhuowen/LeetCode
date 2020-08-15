@@ -100,6 +100,7 @@
 807. Max Increase to Keep City Skyline
 848. Shifting Letters
 916. Word Subsets
+1024. Video Stitching
 462. Minimum Moves to Equal Array Elements II
 5468. Kth Missing Positive Number
 5469. Can Convert String in K Moves
@@ -109,3 +110,4 @@
 5484. Find Kth Bit in Nth Binary String
 670. Maximum Swap
 306. Additive Number
+423. Reconstruct Original Digits from English

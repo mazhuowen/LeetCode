@@ -74,5 +74,78 @@ class Solution {
 
 ## 官方解题
 
-&emsp;暂无，密切关注。
+&emsp;官方思路同上，加入记录中序遍历节点值与位置的哈希表来优化递归中的循环查找；除了上述思路还提供了迭代法。由于题目说明每个节点值都是唯一的，可利用前序遍历的特性，即相邻两个节点$p$、$s$，要么$s$是$p$的左子节点，要么是$p$祖先路径上某个节点的右子节点；而是左是右可通过中序遍历判断。
 
+```java
+class Solution {
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        if (preorder == null || inorder == null || preorder.length == 0 || inorder.length == 0) return null;
+
+        TreeNode root = new TreeNode(preorder[0]);
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(root);
+        int idx = 0;
+        for (int i = 1; i < preorder.length; i++) {
+            TreeNode cur = new TreeNode(preorder[i]), pre = stack.peek();
+            // 栈顶值与中序遍历值不同，表明左分支还未遍历完
+            if (pre.val != inorder[idx]) {
+                pre.left = cur;
+                stack.push(cur);
+            } 
+            // 栈顶值与中序遍历值相等，表明栈顶节点的左子树已维护完成
+            else {
+                // 将维护完的节点出栈
+                while (!stack.isEmpty() && stack.peek().val == inorder[idx]) {
+                    pre = stack.pop();
+                    idx++;
+                }
+                pre.right = cur;
+                stack.push(cur);
+            }
+        }
+        return root;
+    }
+}
+```
+
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(N)$。
+
+执行用时：3ms，在所有java提交中击败了76.49%的用户。
+
+内存消耗：39.6MB，在所有java提交中击败了99.02%的用户。
+
+&emsp;社区巧妙的采用递归实现上述思路：
+
+```java
+class Solution {
+    // 前序遍历、中序遍历索引
+    int pre = 0, in = 0;
+
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
+        if (preorder == null || inorder == null || preorder.length == 0 || inorder.length == 0) return null;
+
+        return buildTree(preorder, inorder, Integer.MAX_VALUE);
+    }
+
+    // stop为中序数组遍历的结束点
+    private TreeNode buildTree(int[] preorder, int[] inorder, int stop) {
+        if (pre >= preorder.length) return null;
+        if (inorder[in] == stop) {
+            in++;
+            return null;
+        }
+
+        TreeNode root = new TreeNode(preorder[pre++]);
+        // 左子树的结束点为当前根节点
+        root.left = buildTree(preorder, inorder, root.val);
+        root.right = buildTree(preorder, inorder, stop);
+        return root;
+    }
+}
+```
+
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(N)$。
+
+执行用时：1ms，在所有java提交中击败了100.00%的用户。
+
+内存消耗：39.8MB，在所有java提交中击败了90.81%的用户。
