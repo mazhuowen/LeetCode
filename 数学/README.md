@@ -28,6 +28,7 @@
 * $\bigstar$困难[#972 Equal Rational Numbers](./#972 Equal Rational Numbers.md)    有理数的分数形式表达
 * $\clubs$中等[#1201 Ugly Number III](./#1201 Ugly Number III.md)    [#878 Nth Magical Number](./#878 Nth Magical Number.md) 的延续，周期化并二分查找
 * $\clubs$困难[#1330 Reverse Subarray To Maximize Array Value](./#1330 Reverse Subarray To Maximize Array Value.md)    绝对值方程的拆分
+* $\bigstar$技巧[#1521 Find a Value of a Mysterious Function Closest to Target](./#1521 Find a Value of a Mysterious Function Closest to Target.md)    区间按位与的递减性
 * 简单[#LCP02 Deep Dark Fraction](./#LCP02 Deep Dark Fraction.md)    极简分数规律
 * $\bigstar$繁杂[#LCP16 游乐园的游览计划](./#LCP16 游乐园的游览计划.md)    图论无向图有向化及三角形组合的逻辑优化
 

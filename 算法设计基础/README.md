@@ -29,6 +29,7 @@
 * $\clubs$中等[#870 Advantage Shuffle](./#870 Advantage Shuffle.md)    排序遍历，贪婪搭配
 * 中等[#955 Delete Columns to Make Sorted II](./#955 Delete Columns to Make Sorted II.md)    字符串移除字符使之变为字典序
 * $\clubs$困难[#1326 Minimum Number of Taps to Open to Water a Garden](./#1326 Minimum Number of Taps to Open to Water a Garden.md)    区间嵌套可达的抽象
+* $\clubs$技巧[#1520 Maximum Number of Non-Overlapping Substrings](./#1520 Maximum Number of Non-Overlapping Substrings.md)    根据起始字符统计子字符串区间并贪婪搜索最大不相交区间数目
 
 ## 分治法
 
@@ -112,6 +113,7 @@
 * $\clubs$困难[#1259 Handshakes That Don't Cross](./#1259 Handshakes That Don't Cross.md)    巧妙的边角条件处理
 * 困难[#1312 Minimum Insertion Steps to Make a String Palindrome](./#1312 Minimum Insertion Steps to Make a String Palindrome.md)    区间动态规划
 * 中等[#1458 Max Dot Product of Two Subsequences](./#1458 Max Dot Product of Two Subsequences.md)    最大子序列点积和
+* $\bigstar$困难[#1531 String Compression II](./#1531 String Compression II.md)    最多删除$k$个字符后的最短压缩编码
 * 中等[#1547 Minimum Cost to Cut a Stick](./#1547 Minimum Cost to Cut a Stick.md)    区间动态规划
 
 ## 回溯法

@@ -1,11 +1,9 @@
-5466. Maximum Number of Non-Overlapping Substrings
-5467. Find a Value of a Mysterious Function Closest to Target
-5462. String Compression II
 390. Elimination Game
 1494. Parallel Courses II
 1093. Statistics from a Large Sample
 1049. Last Stone Weight II
 1462. Course Schedule IV
+5490. Minimum Number of Days to Eat N Oranges
 1186. Maximum Subarray Sum with One Deletion
 1285. Find the Start and End Number of Continuous Ranges
 672. Bulb Switcher II
@@ -111,3 +109,6 @@
 670. Maximum Swap
 306. Additive Number
 423. Reconstruct Original Digits from English
+5185. Three Consecutive Odds
+5488. Minimum Operations to Make Array Equal
+5489. Magnetic Force Between Two Balls
