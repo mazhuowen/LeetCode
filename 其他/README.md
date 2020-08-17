@@ -156,10 +156,15 @@ for (int i = 1; i <= n && i <= w.length; i++) {
 
 > 上述三种模式混合，则可在内部循环判断使用哪种转移方程。
 
+&emsp;背包问题的变形，求排列组合的问题只需调换内外层循环即可，动态规划数组也要相应的变化。
+
+* $\clubs$中等[#322 Coin Change](./#322 Coin Change.md)    完全背包问题变形的组合问题
+* $\bigstar$中等[#377 Combination Sum IV](./#377 Combination Sum IV.md)    完全背包变形的排列问题
 * $\clubs$中等[#416 Partition Equal Subset Sum](./#416 Partition Equal Subset Sum.md)    01背包问题变形
 * $\clubs$中等[#474 Ones and Zeroes](./#474 Ones and Zeroes.md)    二维背包问题
-* $\clubs$中等[#518 Coin Change 2](./#518 Coin Change 2.md)    完全背包问题变形
+* $\clubs$中等[#518 Coin Change 2](./#518 Coin Change 2.md)    完全背包问题变形的组合问题
 * $\bigstar$困难[#1449 Form Largest Integer With Digits That Add up to Target](./#1449 Form Largest Integer With Digits That Add up to Target.md)    完全背包问题内层循环优化
+* 中等[#面试题08.11 Coin LCCI](./#面试题08.11 Coin LCCI.md)    [#322 Coin Change](./#322 Coin Change.md)
 
 ### 位图
 

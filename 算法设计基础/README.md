@@ -74,7 +74,6 @@
 * 中等[#279 Perfect Squares](./#279 Perfect Squares.md)    动态规划（非最优）
 * 中等[#309 Best Time to Buy and Sell Stock with Cooldown](./#309 Best Time to Buy and Sell Stock with Cooldown.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)无限制交易且存在冷冻期
 * $\bigstar$困难[#312 Burst Balloons](./#312 Burst Balloons.md)    逆向思维动态规划
-* 中等[#322 Coin Change](./#322 Coin Change.md)    经典动态规划问题
 * 中等[#343 Integer Break](./#343 Integer Break.md)    动态规划（非最优）
 * $\bigstar$中等[#376 Wiggle Subsequence](./#376 Wiggle Subsequence.md)    巧妙地规律总结
 * $\clubs$困难[#403 Frog Jump](./#403 Frog Jump.md)    非数组动态规划
@@ -108,6 +107,7 @@
 * 中等[#1155 Number of Dice Rolls With Target Sum](./#1155 Number of Dice Rolls With Target Sum.md)    动态规划记录目标和数目
 * $\clubs$困难[#1187 Make Array Strictly Increasing](./#1187 Make Array Strictly Increasing.md)    动态规划记录递增序列末尾值
 * 中等[#1223 Dice Roll Simulation](./#1223 Dice Roll Simulation.md)    计数序列末尾值
+* 中等[#1230 Toss Strange Coins](./#1230 Toss Strange Coins.md)    概率的动态规划问题
 * $\clubs$困难[#1235 Maximum Profit in Job Scheduling](./#1235 Maximum Profit in Job Scheduling.md)    按结束时间动态规划
 * 困难[#1246 Palindrome Removal](./#1246 Palindrome Removal.md)    回文字符串的动态规划规律
 * $\clubs$困难[#1259 Handshakes That Don't Cross](./#1259 Handshakes That Don't Cross.md)    巧妙的边角条件处理

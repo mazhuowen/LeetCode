@@ -4,7 +4,7 @@ You are given coins of different denominations and a total amount of money. Writ
 
 
 
-Note:
+**Note**:
 
 * $0 \le amount \le 5000$
 * $1 \le coin \le 5000$
@@ -53,7 +53,7 @@ class Solution {
 }
 ```
 
-* 优化动态规划数组为一维，得到如下形式：
+* 由于本体是组合问题，使用上述原始背包思路可以得到正确答案；利用排列组合问题的变形优化动态规划数组为一维，由于本题实际上是组合问题，不能调换内外层循环：
 
 ```java
 class Solution {
