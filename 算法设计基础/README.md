@@ -92,6 +92,7 @@
 * $\clubs$困难[#730 Count Different Palindromic Subsequences](./#730 Count Different Palindromic Subsequences.md)    不重复的回文子序列
 * $\clubs$技巧[#788 Rotated Digits](./#788 Rotated Digits.md)    巧妙的动态规划思路
 * $\clubs$中等[#818 Race Car](./#818 Race Car.md)    赛车最短指令
+* $\clubs$中等[#837 New 21 Game](./#837 New 21 Game.md)    概率逆向更新的动态规划
 * $\bigstar$困难[#887 Super Egg Drop](./#887 Super Egg Drop.md)    动态规划经典问题双蛋问题
 * $\bigstar$困难[#903 Valid Permutations for DI Sequence](./#903 Valid Permutations for DI Sequence.md)    繁杂的动态规划抽象
 * 中等[#935 Knight Dialer](./#935 Knight Dialer.md)    有限状态机
@@ -113,6 +114,7 @@
 * $\clubs$困难[#1259 Handshakes That Don't Cross](./#1259 Handshakes That Don't Cross.md)    巧妙的边角条件处理
 * 困难[#1312 Minimum Insertion Steps to Make a String Palindrome](./#1312 Minimum Insertion Steps to Make a String Palindrome.md)    区间动态规划
 * 中等[#1458 Max Dot Product of Two Subsequences](./#1458 Max Dot Product of Two Subsequences.md)    最大子序列点积和
+* $\bigstar$困难[#1494 Parallel Courses II](./#1494 Parallel Courses II.md)    状态压缩与位运算结合的动态规划
 * $\bigstar$困难[#1531 String Compression II](./#1531 String Compression II.md)    最多删除$k$个字符后的最短压缩编码
 * 中等[#1547 Minimum Cost to Cut a Stick](./#1547 Minimum Cost to Cut a Stick.md)    区间动态规划
 
