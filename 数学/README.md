@@ -58,6 +58,7 @@
 * 简单[#326 Power of Three](./#326 Power of Three.md)    判断是否是$3$的幂次方
 * $\clubs$中等[#338 Counting Bits](./#338 Counting Bits.md)    巧妙的位操作和动态规划
 * 简单[#371 Sum of Two Integers](./#371 Sum of Two Integers.md)    异或及与操作实现加法
+* 中等[#390 Elimination Game](./#390 Elimination Game.md)    等差移除概率
 * 中等[#396 Rotate Function](./#396 Rotate Function.md)    数组索引与数值乘积和的规律
 * 中等[#397 Integer Replacement](./#397 Integer Replacement.md)    整数替换的位操作
 * 中等[#400 Nth Digit](./#400 Nth Digit.md)    数字位数关系
