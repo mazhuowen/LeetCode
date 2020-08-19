@@ -1,4 +1,3 @@
-1553. Minimum Number of Days to Eat N Oranges
 390. Elimination Game
 1093. Statistics from a Large Sample
 1049. Last Stone Weight II
@@ -97,6 +96,7 @@
 807. Max Increase to Keep City Skyline
 848. Shifting Letters
 916. Word Subsets
+1300. Sum of Mutated Array Closest to Target
 1024. Video Stitching
 462. Minimum Moves to Equal Array Elements II
 5468. Kth Missing Positive Number
