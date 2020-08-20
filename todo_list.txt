@@ -1,7 +1,5 @@
-390. Elimination Game
 1093. Statistics from a Large Sample
 1049. Last Stone Weight II
-1462. Course Schedule IV
 1186. Maximum Subarray Sum with One Deletion
 1285. Find the Start and End Number of Continuous Ranges
 672. Bulb Switcher II

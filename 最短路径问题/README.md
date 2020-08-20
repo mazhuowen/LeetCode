@@ -95,3 +95,4 @@ for (int k = 0; k < n; k++) {
 ```
 
 * $\clubs$中等[#1334 Find the City With the Smallest Number of Neighbors at a Threshold Distance](./#1334 Find the City With the Smallest Number of Neighbors at a Threshold Distance.md)    经典`Floyd`算法应用
+* $\bigstar$中等[#1462 Course Schedule IV](./#1462 Course Schedule IV.md)    `Floyd`算法的顶点对可达应用
