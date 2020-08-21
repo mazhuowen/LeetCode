@@ -85,10 +85,9 @@ class Solution {
 
     private boolean dfs(Node[] graph, int i, boolean[] visited, int[] matched) {
         for (Node temp = graph[i]; temp != null; temp = temp.next) {
-            // 尝试增广路径节点遍历记录
             if (visited[temp.ver]) continue;
-
             visited[temp.ver] = true;
+            
             // 若遇到未匹配点，则匹配；若遇到匹配点则进行增广路径拓展，如果可以拓展，则翻转沿途的匹配边
             if (matched[temp.ver] == -1 || dfs(graph, matched[temp.ver], visited, matched)) {
                 matched[temp.ver] = i;

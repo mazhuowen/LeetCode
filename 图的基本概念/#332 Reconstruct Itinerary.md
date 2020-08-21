@@ -2,6 +2,8 @@
 
 Given a list of airline tickets represented by pairs of departure and arrival airports `[from, to]`, reconstruct the itinerary in order. All of the tickets belong to a man who departs from `JFK`. Thus, the itinerary must begin with `JFK`.
 
+
+
 **Note:**
 
 * If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string. For example, the itinerary `["JFK", "LGA"]` has a smaller lexical order than `["JFK", "LGB"]`.
@@ -27,7 +29,7 @@ class Solution {
 ## 程序设计
 
 * 首先想到的是机场就是顶点，行程是有向边，由于乘客不能瞬移，必须由一个地方到另一个地方，如果这些行程属于同一个人，意味着行程组成的图可以从`JFK`开始遍历，遍历完所有的边。
-* 根据这个思路，类似于顶点的深度优先搜索，通过将边标记为0实现边的深度优先搜索，代码如下：
+* 根据这个思路，类似于顶点的深度优先搜索，通过将边标记为$0$实现边的深度优先搜索，代码如下：
 
 ```java
 class Solution {

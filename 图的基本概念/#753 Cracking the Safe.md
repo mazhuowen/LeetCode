@@ -10,7 +10,7 @@ Return any password of minimum length that is guaranteed to open the box at some
 
 
 
-Note:
+**Note**:
 
 * `n` will be in the range `[1, 4]`.
 * `k` will be in the range `[1, 10]`.
@@ -32,10 +32,10 @@ class Solution {
 
 ## 程序设计
 
-* 由于共$k^n$个密码，如果使用回溯必然超时。转变思路，对于$n$位的密码，可看作是$n-1$位的状态后拼接$0 \sim k-1$的数字组成新的密码的过程，状态有$k^{n - 1}$个，而每个状态有出边$k$个，入边$k$个，即共$k^n$个边。问题转化位从起始状态出发的欧拉回路问题，由于每个状态入度与出度相等，必然存在欧拉回路。
+* 由于共$k^n$个密码，如果使用回溯必然超时。转变思路，对于$n$位的密码，可看作是$n-1$位的状态后拼接$0 \sim k-1$的数字组成新的密码的过程，$n-1$位的状态有$k^{n - 1}$个，可看作是节点，而每个状态节点有出边$k$个，入边$k$个，即共$k^n$个边。问题转化位从起始状态出发的欧拉回路问题，由于每个状态入度与出度相等，必然存在欧拉回路。
 * 以$n=3$，$k = 2$为例，状态分别是$00$、$01$、$10$、$11$，边共计$8$条。
 
-<img src="D:\Github\LeetCode\images\#753.png" style="zoom:120%;" />
+<img src="..\images\#753.png" style="zoom:120%;" />
 
 ```java
 class Solution {

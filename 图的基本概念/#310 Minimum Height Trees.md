@@ -7,6 +7,8 @@ The graph contains `n` nodes which are labeled from `0` to `n - 1`. You will be 
 
 You can assume that no duplicate edges will appear in `edges`. Since all edges are undirected, `[0, 1]` is the same as `[1, 0]` and thus will not appear together in `edges`.
 
+
+
 **Note**:
 
 - According to the definition of tree on Wikipedia: “a tree is an undirected graph in which any two vertices are connected by *exactly* one path. In other words, any connected graph without simple cycles is a tree.”

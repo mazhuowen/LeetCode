@@ -78,6 +78,8 @@
 * 困难[#906 Super Palindromes](./#906 Super Palindromes.md)    遍历可能回文的前半部分
 * 简单[#1018 Binary Prefix Divisible By 5](./#1018 Binary Prefix Divisible By 5.md)    根据最后一位判断是否被5整除
 * $\bigstar$困难[#1067 Digit Count in Range](./#1067 Digit Count in Range.md)    [#233 Number of Digit One](./#233 Number of Digit One.md)的进阶
+* 中等[#1093 Statistics from a Large Sample](./#1093 Statistics from a Large Sample.md)    统计中位数
+* 简单[#1103 Distribute Candies to People](./#1103 Distribute Candies to People.md)    糖果等差分派规律
 * 简单[#1185 Day of the Week](./#1185 Day of the Week.md)    计算任意一天的星期
 * 简单[#1304 Find N Unique Integers Sum up to Zero](./#1304 Find N Unique Integers Sum up to Zero.md)    创建数组其和为0
 * 中等[#1344 Angle Between Hands of a Clock](.#1344 Angle Between Hands of a Clock.md)   时针分针的规律
