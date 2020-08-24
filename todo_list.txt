@@ -1,8 +1,10 @@
+5498. Stone Game V
 1049. Last Stone Weight II
 1186. Maximum Subarray Sum with One Deletion
 1285. Find the Start and End Number of Continuous Ranges
 672. Bulb Switcher II
 792. Number of Matching Subsequences
+5495. Most Visited Sector in  a Circular Track
 5477. Minimum Swaps to Arrange a Binary Grid
 271. Encode and Decode Strings
 1062. Longest Repeating Substring
@@ -83,12 +85,14 @@
 5475. Count Good Triplets
 5476. Find the Winner of an Array Game
 5478. Get the Maximum Score
+5496. Maximum Number of Coins You Can Get
 面试题 08.06. Hanota LCCI
 686. Repeated String Match
 1282. Group the People Given the Group Size They Belong To
 809. Expressive Words
 869. Reordered Power of 2
 1268. Search Suggestions System
+5482. Detect Cycles in 2D Grid
 643. Maximum Average Subarray I
 807. Max Increase to Keep City Skyline
 848. Shifting Letters
@@ -108,3 +112,6 @@
 5185. Three Consecutive Odds
 5488. Minimum Operations to Make Array Equal
 5489. Magnetic Force Between Two Balls
+5479. Thousand Separator
+5480. Minimum Number of Vertices to Reach All Nodes
+5481. Minimum Numbers of Function Calls to Make Target Array

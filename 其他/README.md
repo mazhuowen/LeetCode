@@ -194,3 +194,11 @@ public class BitMap {
   	}
 }
 ```
+
+
+
+### 数位动态规划
+
+&emsp;todo
+
+* $\clubs$困难[#1012 Numbers With Repeated Digits](./#1012 Numbers With Repeated Digits.md)    数位动态规划计算非重复数字（非最优）
