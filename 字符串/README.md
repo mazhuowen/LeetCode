@@ -162,8 +162,6 @@ public int bm(String source, String pattern) {
 
 `next`数组的计算非常巧妙，如果 `next[i-1] = k-1`，也就是说子串`b[0, k-1]`是`b[0, i-1]`的最长可匹配前缀子串。如果子串`b[0, k-1]`的下一个字符`b[k]`与`b[0, i-1]`的下一个字符`b[i]`匹配，那子串`b[0, k]`就是`b[0, i]`的最长可匹配前缀子串。但是如果`b[0, k-1]`的下一字符`b[k]`跟`b[0, i-1]`的下一个字符`b[i]`不相等时就不能简单地通过`next[i-1]`得到`next[i]`。
 
-
-
 <img src="../images/KMP3.jpg" style="zoom: 50%;" />
 
 假设`b[0, i]`的最长可匹配后缀子串是`b[r, i]`。如果把最后一个字符去掉，`b[r, i-1]`肯定是`b[0, i-1]`的可匹配后缀子串，但不一定是最长可匹配后缀子串。所以既然`b[0, i-1]`最长可匹配后缀子串对应的模式串的前缀子串的下一个字符并不等于b[i]，那么就可以考察`b[0, i-1]`的次长可匹配后缀子串`b[x, i-1]`对应的可匹配前缀子串`b[0, i-1-x]`的下一个字符`b[i-x]`是否等于`b[i]`。如果等于`b[x, i]`就是`b[0, i]`的最长可匹配后缀子串，问题转化为查找`b[0, i-1]`的次长可匹配后缀子串。而注意到最长匹配前缀必然包含次长匹配后缀，是最长匹配前缀的最长匹配前缀。
@@ -218,7 +216,8 @@ public int bm(String source, String pattern) {
 > KMP算法的时间复杂度是$O(m + n)$。
 
 * $\bigstar$简单[#28 Implement strStr()](./#28 Implement strStr().md)    字符串匹配BF、RK、BM、KMP算法实现
-* 简单[#459 Repeated Substring Pattern](./#459 Repeated Substring Pattern.md)    KMP算法`next`数组的应用
+* 简单[#459 Repeated Substring Pattern](./#459 Repeated Substring Pattern.md)    `KMP`算法`next`数组的应用
+* 困难[#1392 Longest Happy Prefix](./#1392 Longest Happy Prefix.md)    `KMP`算法`next`数组的应用
 
 ## 多模式串匹配
 

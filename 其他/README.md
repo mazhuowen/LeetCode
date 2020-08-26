@@ -202,3 +202,4 @@ public class BitMap {
 &emsp;todo
 
 * $\clubs$困难[#1012 Numbers With Repeated Digits](./#1012 Numbers With Repeated Digits.md)    数位动态规划计算非重复数字（非最优）
+* $\bigstar$技巧[#1397 Find All Good Strings](./#1397 Find All Good Strings.md)    状态为`KMP`匹配的数位动态规划
