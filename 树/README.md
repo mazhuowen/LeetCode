@@ -77,6 +77,7 @@
 * 中等[#1257 Smallest Common Region](./#1257 Smallest Common Region.md)    最近公共父节点问题
 * 中等[#1315 Sum of Nodes with Even-Valued Grandparent](./#1315 Sum of Nodes with Even-Valued Grandparent)    后序遍历返回子孙节点和
 * 中等[#1372 Longest ZigZag Path in a Binary Tree](./#1372 Longest ZigZag Path in a Binary Tree.md)    前序遍历统计交替路径
+* 简单[#1469 Find All The Lonely Nodes](./#1469 Find All The Lonely Nodes.md)    后序遍历
 * 中等[#面试题04.10 Check SubTree LCCI](./#面试题04.10 Check SubTree LCCI.md)    前序遍历
 * $\clubs$中等[#面试题04.12 Paths with Sum LCCI](./#面试题04.12 Paths with Sum LCCI.md)    数组记录路径和
 
@@ -84,6 +85,7 @@
 
 &emsp;树的主要知识点在于树的表示。树可以表示为父子链表表示法、父子兄弟链表表示法、双亲表示法。但其中最通用的是父子兄弟链表表示法，因为可以将树表示为二叉树的形式；同理，森林也可以利用这种思想，将森林表示为二叉树的形式。
 
+* 中等[#427 Construct Quad Tree](./#427 Construct Quad Tree.md)    四叉树构建
 * 繁杂[#428 Serialize and Deserialize N-ary Tree](./#428 Serialize and Deserialize N-ary Tree.md)    N叉树的序列化和反序列化设计
 * 中等[#429 N-ary Tree Level Order Traversal](./#429 N-ary Tree Level Order Traversal.md)    N叉树层次遍历
 * 繁杂[#431 Encode N-ary Tree to Binary Tree](./#431 Encode N-ary Tree to Binary Tree.md)    前序遍历转化N叉树为父子兄弟链表表示的二叉树

@@ -79,6 +79,7 @@
 * 中等[#754 Reach a Number](./#754 Reach a Number.md)    等差数列正反向规律
 * 简单[#836 Rectangle Overlap](./#836 Rectangle Overlap.md)    [#223 Rectangle Area](./#223 Rectangle Area.md)的简化问题
 * 困难[#906 Super Palindromes](./#906 Super Palindromes.md)    遍历可能回文的前半部分
+* 中等[#1006 Clumsy Factorial](./#1006 Clumsy Factorial.md)    笨阶乘
 * 简单[#1018 Binary Prefix Divisible By 5](./#1018 Binary Prefix Divisible By 5.md)    根据最后一位判断是否被5整除
 * $\bigstar$困难[#1067 Digit Count in Range](./#1067 Digit Count in Range.md)    [#233 Number of Digit One](./#233 Number of Digit One.md)的进阶
 * 中等[#1093 Statistics from a Large Sample](./#1093 Statistics from a Large Sample.md)    统计中位数
