@@ -26,6 +26,8 @@
 * 简单[#867 Transpose Matrix](./#867 Transpose Matrix.md)    矩阵转置
 * $\bigstar$困难[#878 Nth Magical Number](./#878 Nth Magical Number.md)    数学规律与二分查找结合
 * $\bigstar$困难[#972 Equal Rational Numbers](./#972 Equal Rational Numbers.md)    有理数的分数形式表达
+* $\bigstar$中等[#1071 Greatest Common Divisor of Strings](./#1071 Greatest Common Divisor of Strings.md)    字符串最大公因子
+* $\clubs$中等[#1131 Maximum of Absolute Value Expression](./#1131 Maximum of Absolute Value Expression.md)    绝对值拆解
 * $\clubs$中等[#1201 Ugly Number III](./#1201 Ugly Number III.md)    [#878 Nth Magical Number](./#878 Nth Magical Number.md) 的延续，周期化并二分查找
 * $\clubs$困难[#1330 Reverse Subarray To Maximize Array Value](./#1330 Reverse Subarray To Maximize Array Value.md)    绝对值方程的拆分
 * $\bigstar$技巧[#1521 Find a Value of a Mysterious Function Closest to Target](./#1521 Find a Value of a Mysterious Function Closest to Target.md)    区间按位与的递减性
@@ -71,6 +73,7 @@
 * $\clubs$繁杂[#564 Find the Closest Palindrome](./#564 Find the Closest Palindrome.md)    镜像回文的下一个较大或较小回文
 * $\bigstar$困难[#600 Non-negative Integers without Consecutive Ones](./#600 Non-negative Integers without Consecutive Ones.md)    二进制形式递归规律
 * 中等[#611 Valid Triangle Number](./#611 Valid Triangle Number.md)    排序计算三角形组合数
+* 中等[#672 Bulb Switcher II](./#672 Bulb Switcher II.md)    灯泡开关的规律
 * 简单[#717 1-bit and 2-bit Characters](./#717 1-bit and 2-bit Characters.md)    结尾1的数目决定编码规律
 * 中等[#738 Monotone Increasing Digits](./#738 Monotone Increasing Digits.md)    最接近给定数字的递增数字
 * 中等[#754 Reach a Number](./#754 Reach a Number.md)    等差数列正反向规律

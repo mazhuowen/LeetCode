@@ -62,6 +62,7 @@ return -1;
 * 简单[#704 Binary Search](./#704 Binary Search.md)    二分查找
 * $\bigstar$困难[#710 Random Pick with Blacklist](./#710 Random Pick with Blacklist.md)    二分查找连续数值中的缺失值
 * $\bigstar$中等[#719 Find K-th Smallest Pair Distance](./#719 Find K-th Smallest Pair Distance.md)    对距离范围二分查找统计
+* 困难[#774 Minimize Max Distance to Gas Station](./#774 Minimize Max Distance to Gas Station.md)    二分查找判断加油站距离
 * 简单[#852 Peak Index in a Mountain Array](./#852 Peak Index in a Mountain Array.md)    二分查找爬坡
 * 中等[#875 Koko Eating Bananas](./#875 Koko Eating Bananas.md)    利用二分查找遍历判断
 * 中等[#981 Time Based Key-Value Store](./#981 Time Based Key-Value Store.md)    设计时间递增的时间戳字典
@@ -69,6 +70,7 @@ return -1;
 * $\clubs$中等[#1060 Missing Element in Sorted Array](./#1060 Missing Element in Sorted Array.md)    查找第k个值问题
 * 中等[#1095 Find in Mountain Array](./#1095 Find in Mountain Array.md)    山峰数组二分查找
 * $\clubs$中等[#1198 Find Smallest Common Element in All Rows](./#1198 Find Smallest Common Element in All Rows.md)    二分查找多路遍历
+* 技巧[#1228 Missing Number In Arithmetic Progression](./#1228 Missing Number In Arithmetic Progression.md)    二分查找左右数字
 
 ### 插入查找
 

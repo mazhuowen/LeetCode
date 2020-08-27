@@ -31,6 +31,7 @@
 * $\clubs$技巧[#1247 Minimum Swaps to Make Strings Equal](./#1247 Minimum Swaps to Make Strings Equal.md)    不匹配对交换情况贪婪选择
 * $\clubs$困难[#1326 Minimum Number of Taps to Open to Water a Garden](./#1326 Minimum Number of Taps to Open to Water a Garden.md)    区间嵌套可达的抽象
 * $\clubs$技巧[#1520 Maximum Number of Non-Overlapping Substrings](./#1520 Maximum Number of Non-Overlapping Substrings.md)    根据起始字符统计子字符串区间并贪婪搜索最大不相交区间数目
+* $\clubs$中等[#1536 Minimum Swaps to Arrange a Binary Grid](./#1536 Minimum Swaps to Arrange a Binary Grid.md)    最小交换行的次数使得矩阵为上三角
 
 ## 分治法
 
@@ -66,8 +67,8 @@
 * 困难[#140 Word Break II](./#140 Word Break II.md)    [#139 Word Break](./#139 Word Break.md)的进阶
 * $\bigstar$困难[#174 Dungeon Game](./#174 Dungeon Game.md)    [#64 Minimum Path Sum](./#64 Minimum Path Sum.md)的延伸，遍历方向很重要
 * 困难[#188 Best Time to Buy and Sell Stock IV](./#188 Best Time to Buy and Sell Stock IV.md)    [#122 Best Time to Buy and Sell Stock II.md](./#122 Best Time to Buy and Sell Stock II.md)和[#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)的结合
-* $\clubs$简单[#198 House Robber](./#198 House Robber.md)    巧妙的动态规划简化
-* 中等[#213 House Robber II](./#213 House Robber II.md)    [#198 House Robber](./#198 House Robber.md)思路的延续
+* 简单[#198 House Robber](./#198 House Robber.md)    巧妙的动态规划简化
+* $\clubs$中等[#213 House Robber II](./#213 House Robber II.md)    [#198 House Robber](./#198 House Robber.md)思路的延续
 * 中等[#221 Maximal Square](./#221 Maximal Square.md)    最大正方形
 * 简单[#256 Paint House](./#256 Paint House.md)    房子染色最小代价
 * $\clubs$困难[#265 Paint House II](./#265 Paint House II.md)    [#256 Paint House](./#256 Paint House.md)普遍情况
@@ -108,6 +109,7 @@
 * 中等[#1139 Largest 1-Bordered Square](./#1139 Largest 1-Bordered Square.md)    存储记录连续的左侧和上方结点数目
 * 中等[#1143 Longest Common Subsequence](./#1143 Longest Common Subsequence.md)    最长公共子序列
 * 中等[#1155 Number of Dice Rolls With Target Sum](./#1155 Number of Dice Rolls With Target Sum.md)    动态规划记录目标和数目
+* $\clubs$中等[#1186 Maximum Subarray Sum with One Deletion](./#1186 Maximum Subarray Sum with One Deletion.md)    动态规划记录删除一个数的最大值
 * $\clubs$困难[#1187 Make Array Strictly Increasing](./#1187 Make Array Strictly Increasing.md)    动态规划记录递增序列末尾值
 * 中等[#1223 Dice Roll Simulation](./#1223 Dice Roll Simulation.md)    计数序列末尾值
 * 中等[#1230 Toss Strange Coins](./#1230 Toss Strange Coins.md)    概率的动态规划问题
@@ -115,10 +117,12 @@
 * 困难[#1246 Palindrome Removal](./#1246 Palindrome Removal.md)    回文字符串的动态规划规律
 * $\clubs$困难[#1259 Handshakes That Don't Cross](./#1259 Handshakes That Don't Cross.md)    巧妙的边角条件处理
 * 困难[#1312 Minimum Insertion Steps to Make a String Palindrome](./#1312 Minimum Insertion Steps to Make a String Palindrome.md)    区间动态规划
+* 困难[#1388 Pizza With 3n Slices](./#1388 Pizza With 3n Slices.md)    [#213 House Robber II](./#213 House Robber II.md)的变形
 * 中等[#1458 Max Dot Product of Two Subsequences](./#1458 Max Dot Product of Two Subsequences.md)    最大子序列点积和
 * $\bigstar$困难[#1494 Parallel Courses II](./#1494 Parallel Courses II.md)    状态压缩与位运算结合的动态规划
 * $\bigstar$困难[#1531 String Compression II](./#1531 String Compression II.md)    最多删除$k$个字符后的最短压缩编码
 * 中等[#1547 Minimum Cost to Cut a Stick](./#1547 Minimum Cost to Cut a Stick.md)    区间动态规划
+* $\bigstar$困难[#1563 Stone Game V](./#1563 Stone Game V.md)    动态规划的深层优化
 
 ## 回溯法
 
@@ -146,6 +150,7 @@
 * 中等[#216 Combination Sum III](./#216 Combination Sum III.md)    回溯数字组合
 * 中等[#247 Strobogrammatic Number II](./#247 Strobogrammatic Number II.md)    中心对称数字回溯生成
 * 繁杂[#248 Strobogrammatic Number III](./#248 Strobogrammatic Number III.md)    [#247 Strobogrammatic Number II](./#247 Strobogrammatic Number II.md)进阶统计区间内的对称数
+* 中等[#267 Palindrome Permutation II](./#267 Palindrome Permutation II.md)    回溯生成字符串
 * $\clubs$繁杂[#282 Expression Add Operators](./#282 Expression Add Operators.md)    回溯插入操作符使得结果与目标值一致
 * $\clubs$困难[#301 Remove Invalid Parentheses](./#301 Remove Invalid Parentheses.md)    统计删除括号数，回溯删除
 * $\clubs$中等[#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)    字符串回溯

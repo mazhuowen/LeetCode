@@ -23,6 +23,7 @@
 * 中等[#794 Valid Tic-Tac-Toe State](./#794 Valid Tic-Tac-Toe State.md)    井字棋是否有效验证
 * $\clubs$困难[#927 Three Equal Parts](./#927 Three Equal Parts.md)    三等份数组
 * 困难[#1121 Divide Array Into Increasing Sequences](./#1121 Divide Array Into Increasing Sequences.md)    相同数字最大数目
+* 简单[#1560 Most Visited Sector in  a Circular Track](./#1560 Most Visited Sector in  a Circular Track.md)    经过最多的扇区
 
 ## 技巧
 
@@ -78,6 +79,7 @@
 * 简单[#1179 Reformat Department Table](./#1179 Reformat Department Table.md)    CASE语句行转列
 * 中等[#1205 Monthly Transactions II](./#1205 Monthly Transactions II.md)    UNION ALL和DATE_FORMAT函数
 * 中等[#1212 Team Scores in Football Tournament](./#1212 Team Scores in Football Tournament.md)    CASE WHEN语句统计分数
+* 中等[#1285 Find the Start and End Number of Continuous Ranges](./#1285 Find the Start and End Number of Continuous Ranges.md)    SQL变量应用
 * 困难[#1369 Get the Second Most Recent Activity](./#1369 Get the Second Most Recent Activity.md)    HAVING条件应用
 * $\clubs$中等[#1454 Active Users](./#1454 Active Users.md)    连续时间复杂查询
 * 中等[#1468 Calculate Salaries](./#1468 Calculate Salaries.md)    统计部门最大薪资并计算税率
@@ -163,6 +165,7 @@ for (int i = 1; i <= n && i <= w.length; i++) {
 * $\clubs$中等[#416 Partition Equal Subset Sum](./#416 Partition Equal Subset Sum.md)    01背包问题变形
 * $\clubs$中等[#474 Ones and Zeroes](./#474 Ones and Zeroes.md)    二维背包问题
 * $\clubs$中等[#518 Coin Change 2](./#518 Coin Change 2.md)    完全背包问题变形的组合问题
+* 中等[#1049 Last Stone Weight II](./#1049 Last Stone Weight II.md)    巧妙转化为背包问题
 * $\bigstar$困难[#1449 Form Largest Integer With Digits That Add up to Target](./#1449 Form Largest Integer With Digits That Add up to Target.md)    完全背包问题内层循环优化
 * 中等[#面试题08.11 Coin LCCI](./#面试题08.11 Coin LCCI.md)    [#322 Coin Change](./#322 Coin Change.md)
 

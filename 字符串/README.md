@@ -31,6 +31,7 @@
 <img src="../images/字符串2.jpg" style="zoom:50%;" />
 
 * $\bigstar$困难[#1044 Longest Duplicate Substring](./#1044 Longest Duplicate Substring.md)    二分查找与`RK`编码结合
+* 中等[#1062 Longest Repeating Substring](./#1062 Longest Repeating Substring.md)    二分查找与`RK`编码结合
 
 ### BM（Boyer-Moore）算法
 
@@ -384,6 +385,7 @@ class ACNode {
 * 中等[#151 Reverse Words in a String](./#151 Reverse Words in a String.md)    翻转并格式化单词
 * 中等[#165 Compare Version Numbers](./#165 Compare Version Numbers.md)    划分版本号区间，根据区间数字比较
 * 简单[#186 Reverse Words in a String II](./#186 Reverse Words in a String II.md)    翻转单词
+* $\bigstar$中等[#271 Encode and Decode Strings](./#271 Encode and Decode Strings.md)    字符串分块编码
 * $\clubs$中等[#273 Integer to English Words](./#273 Integer to English Words.md)    数字单位的周期分切
 * 简单[#344 Reverse String](./#344 Reverse String.md)    交换字符位置
 * 简单[#345 Reverse Vowels of a String](./#345 Reverse Vowels of a String.md)    交换元音字符位置
