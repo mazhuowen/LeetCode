@@ -116,6 +116,7 @@
 * $\clubs$困难[#1235 Maximum Profit in Job Scheduling](./#1235 Maximum Profit in Job Scheduling.md)    按结束时间动态规划
 * 困难[#1246 Palindrome Removal](./#1246 Palindrome Removal.md)    回文字符串的动态规划规律
 * $\clubs$困难[#1259 Handshakes That Don't Cross](./#1259 Handshakes That Don't Cross.md)    巧妙的边角条件处理
+* 中等[#1278 Palindrome Partitioning III](./#1278 Palindrome Partitioning III.md)    改变字符使之变为回文的最少次数
 * 困难[#1312 Minimum Insertion Steps to Make a String Palindrome](./#1312 Minimum Insertion Steps to Make a String Palindrome.md)    区间动态规划
 * 困难[#1388 Pizza With 3n Slices](./#1388 Pizza With 3n Slices.md)    [#213 House Robber II](./#213 House Robber II.md)的变形
 * 中等[#1458 Max Dot Product of Two Subsequences](./#1458 Max Dot Product of Two Subsequences.md)    最大子序列点积和
