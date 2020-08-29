@@ -92,6 +92,7 @@
 * 中等[#714 Best Time to Buy and Sell Stock with Transaction Fee](./#714 Best Time to Buy and Sell Stock with Transaction Fee.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)扣除手续费
 * $\clubs$中等[#718 Maximum Length of Repeated Subarray](./#718 Maximum Length of Repeated Subarray.md)    动态规划求最大子数组长度（非最优）
 * $\clubs$困难[#730 Count Different Palindromic Subsequences](./#730 Count Different Palindromic Subsequences.md)    不重复的回文子序列
+* 中等[#764 Largest Plus Sign](./#764 Largest Plus Sign.md)    矩形遍历有关的动态规划
 * $\clubs$技巧[#788 Rotated Digits](./#788 Rotated Digits.md)    巧妙的动态规划思路
 * $\clubs$中等[#818 Race Car](./#818 Race Car.md)    赛车最短指令
 * $\clubs$中等[#837 New 21 Game](./#837 New 21 Game.md)    概率逆向更新的动态规划
