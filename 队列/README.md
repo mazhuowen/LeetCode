@@ -22,5 +22,6 @@
 * $\clubs$中等[#950 Reveal Cards In Increasing Order](./#950 Reveal Cards In Increasing Order.md)    队列模拟牌的顺序
 * $\clubs$中等[#992 Subarrays with K Different Integers](./#992 Subarrays with K Different Integers.md)    队列统计数字种数
 * 中等[#1004 Max Consecutive Ones III](./#1004 Max Consecutive Ones III.md)    队列出队入队关系
+* 中等[#1151 Minimum Swaps to Group All 1's Together](./#1151 Minimum Swaps to Group All 1's Together.md)    交换数字与窗口的关系
 * 繁杂[#1156 Swap For Longest Repeated Character Substring](./#1156 Swap For Longest Repeated Character Substring.md)    可替换单字符最大重复子串
 * 中等[#1358 Number of Substrings Containing All Three Characters](./#1358 Number of Substrings Containing All Three Characters.md)    每个位置结尾的最短子串

@@ -40,6 +40,7 @@
 * 简单[#288 Unique Word Abbreviation](./#288 Unique Word Abbreviation.md)    哈希表的应用
 * 简单[#290 Word Pattern](./#290 Word Pattern.md)    哈希表保存映射关系
 * 简单[#299 Bulls and Cows](./#299 Bulls and Cows.md)    哈希表保存计数
+* 中等[#325 Maximum Size Subarray Sum Equals k](./#325 Maximum Size Subarray Sum Equals k.md)    哈希表记录第一次出现的前缀和
 * 简单[#349 Intersection of Two Arrays](./#349 Intersection of Two Arrays.md)    集合去重
 * 简单[#350 Intersection of Two Arrays II](./#350 Intersection of Two Arrays II.md)    哈希表记录计数
 * 中等[#356 Line Reflection](./#356 Line Reflection.md)    重写散列函数，利用哈希表记录坐标点
