@@ -121,6 +121,7 @@
 * 困难[#1312 Minimum Insertion Steps to Make a String Palindrome](./#1312 Minimum Insertion Steps to Make a String Palindrome.md)    区间动态规划
 * 困难[#1388 Pizza With 3n Slices](./#1388 Pizza With 3n Slices.md)    [#213 House Robber II](./#213 House Robber II.md)的变形
 * 中等[#1458 Max Dot Product of Two Subsequences](./#1458 Max Dot Product of Two Subsequences.md)    最大子序列点积和
+* $\clubs$困难[#1478 Allocate Mailboxes](./#1478 Allocate Mailboxes.md)    分配$k$个邮箱最短距离和
 * $\bigstar$困难[#1494 Parallel Courses II](./#1494 Parallel Courses II.md)    状态压缩与位运算结合的动态规划
 * $\bigstar$困难[#1531 String Compression II](./#1531 String Compression II.md)    最多删除$k$个字符后的最短压缩编码
 * 中等[#1547 Minimum Cost to Cut a Stick](./#1547 Minimum Cost to Cut a Stick.md)    区间动态规划
