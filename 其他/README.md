@@ -9,6 +9,7 @@
 * 简单[#284 Peeking Iterator](./#284 Peeking Iterator.md)    设计支持预取的迭代器
 * 简单[#348 Design Tic-Tac-Toe](./#348 Design Tic-Tac-Toe.md)    矩形行、列、对角线的表示
 * 中等[#535 Encode and Decode TinyURL](./#535 Encode and Decode TinyURL.md)    短链系统设计
+* 简单[#604 Design Compressed String Iterator](./#604 Design Compressed String Iterator.md)    设计压缩字符串迭代器
 * $\clubs$困难[#843 Guess the Word](./#843 Guess the Word.md)    启发式极小极大算法
 * $\clubs$困难[#855 Exam Room](./#855 Exam Room.md)    红黑数动态保存区间长度
 * $\bigstar$困难[#895 Maximum Frequency Stack](./#895 Maximum Frequency Stack.md)    字典加栈的组合巧妙设计频率栈
@@ -16,6 +17,7 @@
 ## 逻辑
 
 * $\clubs$中等[#277 Find the Celebrity](./#277 Find the Celebrity.md)    查找名人
+* 中等[#481 Magical String](./#481 Magical String.md)    模拟神奇字符串
 * $\bigstar$困难[#517 Super Washing Machines](./#517 Super Washing Machines.md)    最少操作次数
 * 简单[#598 Range Addition II](./#598 Range Addition II.md)    多次操作的重叠区域
 * $\clubs$中等[#681 Next Closest Time](./#681 Next Closest Time.md)    最近的时间
@@ -24,6 +26,7 @@
 * $\clubs$困难[#927 Three Equal Parts](./#927 Three Equal Parts.md)    三等份数组
 * 困难[#1121 Divide Array Into Increasing Sequences](./#1121 Divide Array Into Increasing Sequences.md)    相同数字最大数目
 * 简单[#1560 Most Visited Sector in  a Circular Track](./#1560 Most Visited Sector in  a Circular Track.md)    经过最多的扇区
+* $\clubs$中等[#1562 Find Latest Group of Size M](./#1562 Find Latest Group of Size M.md)    记录合并过程中的线段端点和长度
 
 ## 技巧
 
