@@ -65,6 +65,7 @@
 * $\clubs$中等[#742 Closest Leaf in a Binary Tree](./#742 Closest Leaf in a Binary Tree.md)    后序遍历记录状态
 * 中等[#863 All Nodes Distance K in Binary Tree](./#863 All Nodes Distance K in Binary Tree.md)    [#742 Closest Leaf in a Binary Tree](./#742 Closest Leaf in a Binary Tree.md)一般化的题目
 * $\clubs$中等[#889 Construct Binary Tree from Preorder and Postorder Traversal](./#889 Construct Binary Tree from Preorder and Postorder Traversal.md)    根据前序序列和后序序列构建一棵树
+* 中等[#919 Complete Binary Tree Inserter](./#919 Complete Binary Tree Inserter.md)    完全二叉树的插入
 * $\clubs$中等[#968 Binary Tree Cameras](./#968 Binary Tree Cameras.md)    前序遍历巧妙返回状态
 * $\clubs$中等[#979 Distribute Coins in Binary Tree](./#979 Distribute Coins in Binary Tree.md)    后序遍历返回额外信息
 * 中等[#987 Vertical Order Traversal of a Binary Tree](./#987 Vertical Order Traversal of a Binary Tree.md)    [#314 Binary Tree Vertical Order Traversal](./#314 Binary Tree Vertical Order Traversal.md)的进阶，增加同增顺序要求

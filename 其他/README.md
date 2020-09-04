@@ -78,6 +78,7 @@
 * 困难[#569 Median Employee Salary](./#569 Median Employee Salary.md)    SQL变量应用
 * 困难[#579 Find Cumulative Salary of an Employee](./#579 Find Cumulative Salary of an Employee.md)    自连接查询近三个月的薪资和
 * $\clubs$困难[#601 Human Traffic of Stadium](./#601 Human Traffic of Stadium.md)    复杂逻辑自连接查询
+* 中等[#612 Shortest Distance in a Plane](./#612 Shortest Distance in a Plane.md)    自连接查询计算距离
 * 中等[#626 Exchange Seats](./#626 Exchange Seats.md)    交换位置
 * 简单[#1179 Reformat Department Table](./#1179 Reformat Department Table.md)    CASE语句行转列
 * 中等[#1205 Monthly Transactions II](./#1205 Monthly Transactions II.md)    UNION ALL和DATE_FORMAT函数

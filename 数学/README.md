@@ -85,10 +85,12 @@
 * 中等[#1093 Statistics from a Large Sample](./#1093 Statistics from a Large Sample.md)    统计中位数
 * 简单[#1103 Distribute Candies to People](./#1103 Distribute Candies to People.md)    糖果等差分派规律
 * 简单[#1185 Day of the Week](./#1185 Day of the Week.md)    计算任意一天的星期
+* 简单[#1275 Find Winner on a Tic Tac Toe Game](./#1275 Find Winner on a Tic Tac Toe Game.md)    使用二进制数表示棋盘状态
 * 简单[#1304 Find N Unique Integers Sum up to Zero](./#1304 Find N Unique Integers Sum up to Zero.md)    创建数组其和为0
 * 中等[#1344 Angle Between Hands of a Clock](.#1344 Angle Between Hands of a Clock.md)   时针分针的规律
 * 简单[#1360 Number of Days Between Two Dates](./#1360 Number of Days Between Two Dates.md)    计算日期之差
 * 中等[#1404 Number of Steps to Reduce a Number in Binary Representation to One](./#1404 Number of Steps to Reduce a Number in Binary Representation to One.md)    二进制数操作的规律
+* 中等[#1415 The k-th Lexicographical String of All Happy Strings of Length n](./#1415 The k-th Lexicographical String of All Happy Strings of Length n.md)    排列组合规律
 * 繁杂[#1453 Maximum Number of Darts Inside of a Circular Dartboard](./#1453 Maximum Number of Darts Inside of a Circular Dartboard)    圆心的几何学计算
 * $\bigstar$技巧[#1542 Find Longest Awesome Substring](./#1542 Find Longest Awesome Substring.md)    前缀和思想在奇偶状态中的巧妙应用
 * 简单[#面试题16.01 Swap Numbers LCCI](./#面试题16.01 Swap Numbers LCCI.md)    亦或应用

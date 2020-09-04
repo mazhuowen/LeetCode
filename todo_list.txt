@@ -1,6 +1,4 @@
 5502. Number of Ways to Reorder Array to Get Same BST
-612. Shortest Distance in a Plane
-1415. The k-th Lexicographical String of All Happy Strings of Length N
 面试题 17.18. Shortest Supersequence LCCI
 801. Minimum Swaps To Make Sequences Increasing
 486. Predict the Winner

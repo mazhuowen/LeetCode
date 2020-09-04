@@ -15,6 +15,7 @@
 * $\clubs$中等[#373 Find K Pairs with Smallest Sums](./#373 Find K Pairs with Smallest Sums.md)    最小堆top-k问题
 * 中等[#378 Kth Smallest Element in a Sorted Matrix](./#378 Kth Smallest Element in a Sorted Matrix.md)    [#373 Find K Pairs with Smallest Sums](./#373 Find K Pairs with Smallest Sums.md)的延续
 * $\bigstar$困难[#407 Trapping Rain Water II](./#407 Trapping Rain Water II.md)    通过围墙入最小堆迭代计算
+* 繁杂[#420 Strong Password Checker](./#420 Strong Password Checker.md)    字符串删除连续相等字符规律
 * 简单[#451 Sort Characters By Frequency](./#451 Sort Characters By Frequency.md)    统计频率top-k的基本应用
 * 繁杂[#480 Sliding Window Median](./#480 Sliding Window Median.md)    [#295 Find Median from Data Stream](./#295 Find Median from Data Stream.md)的进阶
 * 繁杂[#502 IPO](./#502 IPO.md)    双堆，题目和常理不符，理解是关键
