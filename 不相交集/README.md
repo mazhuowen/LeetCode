@@ -30,4 +30,5 @@
 * $\bigstar$困难[#1102 Path With Maximum Minimum Value](./#1102 Path With Maximum Minimum Value.md)    不相交集的迷宫路径查找
 * 繁杂[#1258 Synonymous Sentences](./#1258 Synonymous Sentences.md)    保存每个不相交集元素
 * 中等[#1267 Count Servers that Communicate](./#1267 Count Servers that Communicate.md)    巧妙使用不相交集统行列关联信息
+* 困难[#1568 Minimum Number of Days to Disconnect Island](./#1568 Minimum Number of Days to Disconnect Island.md)    不相交集联合岛屿
 
