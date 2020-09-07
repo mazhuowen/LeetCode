@@ -34,6 +34,7 @@
 * 简单[#1305 All Elements in Two Binary Search Trees](./#1305 All Elements in Two Binary Search Trees.md)    中序遍历
 * 简单[#1038 Binary Search Tree to Greater Sum Tree](./#1038 Binary Search Tree to Greater Sum Tree.md)    反序中序遍历，同[#538 Convert BST to Greater Tree](./#538 Convert BST to Greater Tree.md)
 * 困难[#1373 Maximum Sum BST in Binary Tree](./#1373 Maximum Sum BST in Binary Tree.md)    后序遍历
+* $\clubs$困难[#1569 Number of Ways to Reorder Array to Get Same BST](./#1569 Number of Ways to Reorder Array to Get Same BST.md)    二叉查找树插入的组合问题
 
 ## AVL树
 
