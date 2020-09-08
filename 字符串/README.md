@@ -246,11 +246,12 @@ class TrieNode {
 * $\clubs$中等[#421 Maximum XOR of Two Numbers in an Array](./#421 Maximum XOR of Two Numbers in an Array.md)    借鉴字典树前缀匹配寻找最大异或值
 * $\clubs$困难[#472 Concatenated Words](./#472 Concatenated Words.md)    字典树多次匹配识别组合词
 * 困难[#588 Design In-Memory File System](./#588 Design In-Memory File System.md)    前缀匹配思想设计文件系统
+* $\clubs$中等[#616 Add Bold Tag in String](./#616 Add Bold Tag in String.md)    加粗字体
 * $\bigstar$繁杂[#642 Design Search Autocomplete System](./#642 Design Search Autocomplete System.md)    将句子看做单词转化为字典树前缀匹配
 * 中等[#648 Replace Words](./#648 Replace Words.md)    前缀匹配替换
 * 中等[#676 Implement Magic Dictionary](./#676 Implement Magic Dictionary.md)    字典树检索遍历
 * $\bigstar$中等[#745 Prefix and Suffix Search](./#745 Prefix and Suffix Search.md)    将后缀和单词组合为新的字符串
-* $\clubs$中等[#758 Bold Words in String](./#758 Bold Words in String.md)    加粗字体
+* 中等[#758 Bold Words in String](./#758 Bold Words in String.md)    与[#616 Add Bold Tag in String](./#616 Add Bold Tag in String.md)完全一致
 
 ### AC自动机（Aho-Corasick）
 

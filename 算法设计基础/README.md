@@ -30,6 +30,7 @@
 * 中等[#955 Delete Columns to Make Sorted II](./#955 Delete Columns to Make Sorted II.md)    字符串移除字符使之变为字典序
 * $\clubs$技巧[#1247 Minimum Swaps to Make Strings Equal](./#1247 Minimum Swaps to Make Strings Equal.md)    不匹配对交换情况贪婪选择
 * $\clubs$困难[#1326 Minimum Number of Taps to Open to Water a Garden](./#1326 Minimum Number of Taps to Open to Water a Garden.md)    区间嵌套可达的抽象
+* 中等[#1386 Cinema Seat Allocation](./#1386 Cinema Seat Allocation.md)    二进制表示座位状态，贪婪匹配
 * $\clubs$技巧[#1520 Maximum Number of Non-Overlapping Substrings](./#1520 Maximum Number of Non-Overlapping Substrings.md)    根据起始字符统计子字符串区间并贪婪搜索最大不相交区间数目
 * $\clubs$中等[#1536 Minimum Swaps to Arrange a Binary Grid](./#1536 Minimum Swaps to Arrange a Binary Grid.md)    最小交换行的次数使得矩阵为上三角
 
@@ -81,6 +82,7 @@
 * $\clubs$困难[#403 Frog Jump](./#403 Frog Jump.md)    非数组动态规划
 * 中等[#413 Arithmetic Slices](./#413 Arithmetic Slices.md)    等差序列子数组计数
 * $\clubs$困难[#471 Encode String with Shortest Length](./#471 Encode String with Shortest Length.md)    字符串最短编码
+* $\clubs$中等[#486 Predict the Winner](./#486 Predict the Winner.md)    得分差构成状态转移
 * 中等[#494 Target Sum](./#494 Target Sum.md)    从回溯到动态规划
 * 中等[#516 Longest Palindromic Subsequence](./#516 Longest Palindromic Subsequence.md)    回文子序列
 * $\bigstar$困难[#552 Student Attendance Record II](./#552 Student Attendance Record II.md)    发现递归规律使用动态规划实现（最优算法为状态机）
@@ -94,15 +96,18 @@
 * $\clubs$困难[#730 Count Different Palindromic Subsequences](./#730 Count Different Palindromic Subsequences.md)    不重复的回文子序列
 * 中等[#764 Largest Plus Sign](./#764 Largest Plus Sign.md)    矩形遍历有关的动态规划
 * $\clubs$技巧[#788 Rotated Digits](./#788 Rotated Digits.md)    巧妙的动态规划思路
+* $\clubs$中等[#801 Minimum Swaps To Make Sequences Increasing](./#801 Minimum Swaps To Make Sequences Increasing.md)    保持或交换两个动态规划数组
 * $\clubs$中等[#818 Race Car](./#818 Race Car.md)    赛车最短指令
 * $\clubs$中等[#837 New 21 Game](./#837 New 21 Game.md)    概率逆向更新的动态规划
 * $\bigstar$中等[#873 Length of Longest Fibonacci Subsequence](./#873 Length of Longest Fibonacci Subsequence.md)    最长斐波那契子序列
+* 中等[#877 Stone Game](./#877 Stone Game.md)    [#486 Predict the Winner](./#486 Predict the Winner.md)的限制简化
 * $\bigstar$困难[#887 Super Egg Drop](./#887 Super Egg Drop.md)    动态规划经典问题双蛋问题
 * $\bigstar$困难[#903 Valid Permutations for DI Sequence](./#903 Valid Permutations for DI Sequence.md)    繁杂的动态规划抽象
 * 中等[#935 Knight Dialer](./#935 Knight Dialer.md)    有限状态机
 * $\clubs$困难[#943 Find the Shortest Superstring](./#943 Find the Shortest Superstring.md)    路径压缩
 * $\clubs$困难[#956 Tallest Billboard](./#956 Tallest Billboard.md)    动态规划数组表示支架差距
 * $\bigstar$困难[#1000 Minimum Cost to Merge Stones](./#1000 Minimum Cost to Merge Stones.md)    区间动态规划
+* $\clubs$中等[#1027 Longest Arithmetic Subsequence](./#1027 Longest Arithmetic Subsequence.md)    最大等差子序列
 * 中等[#1035 Uncrossed Lines](./#1035 Uncrossed Lines.md)    最长公共子序列的应用
 * $\clubs$中等[#1039 Minimum Score Triangulation of Polygon](./#1039 Minimum Score Triangulation of Polygon.md)    几何规律
 * 困难[#1092 Shortest Common Supersequence](./#1092 Shortest Common Supersequence.md)    最长公共子序列的应用
@@ -171,6 +176,7 @@
 * 简单[#784 Letter Case Permutation](./#784 Letter Case Permutation.md)    回溯尝试大小写
 * $\clubs$困难[#805 Split Array With Same Average](./#805 Split Array With Same Average.md)    剪枝回溯
 * 困难[#980 Unique Paths III](./#980 Unique Paths III.md)    记忆化回溯，路径二进制压缩
+* 困难[#996 Number of Squareful Arrays](./#996 Number of Squareful Arrays.md)    排序去重组合数
 * $\clubs$中等[#1079 Letter Tile Possibilities](./#1079 Letter Tile Possibilities.md)    回溯中去重技巧
 * 中等[#1087 Brace Expansion](./#1087 Brace Expansion.md)    回溯尝试所有组合
 * 繁杂[#1088 Confusing Number II](./#1088 Confusing Number II.md)    需注意边界及数值溢出的处理
