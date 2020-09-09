@@ -25,5 +25,6 @@
 * $\bigstar$中等[#1031 Maximum Sum of Two Non-Overlapping Subarrays](./#1031 Maximum Sum of Two Non-Overlapping Subarrays.md)    两个不重叠窗口最大值
 * 中等[#1151 Minimum Swaps to Group All 1's Together](./#1151 Minimum Swaps to Group All 1's Together.md)    交换数字与窗口的关系
 * 繁杂[#1156 Swap For Longest Repeated Character Substring](./#1156 Swap For Longest Repeated Character Substring.md)    可替换单字符最大重复子串
+* 简单[#1180 Count Substrings with Only One Distinct Letter](./#1180 Count Substrings with Only One Distinct Letter.md)    滑动窗口统计字符串
 * 中等[#1358 Number of Substrings Containing All Three Characters](./#1358 Number of Substrings Containing All Three Characters.md)    每个位置结尾的最短子串
 * 中等[#面试题17.18 Shortest Supersequence LCCI](./#面试题17.18 Shortest Supersequence LCCI.md)    队列左右缩进缩小队列长度

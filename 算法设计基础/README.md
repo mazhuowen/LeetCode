@@ -126,6 +126,7 @@
 * 困难[#1312 Minimum Insertion Steps to Make a String Palindrome](./#1312 Minimum Insertion Steps to Make a String Palindrome.md)    区间动态规划
 * 困难[#1388 Pizza With 3n Slices](./#1388 Pizza With 3n Slices.md)    [#213 House Robber II](./#213 House Robber II.md)的变形
 * 困难[#1411 Number of Ways to Paint N × 3 Grid](./#1411 Number of Ways to Paint N × 3 Grid.md)    抽象每行填充状态
+* $\clubs$困难[#1420 Build Array Where You Can Find The Maximum Exactly K Comparisons](./#1420 Build Array Where You Can Find The Maximum Exactly K Comparisons.md)    最大数字及插入位置
 * 中等[#1458 Max Dot Product of Two Subsequences](./#1458 Max Dot Product of Two Subsequences.md)    最大子序列点积和
 * $\clubs$困难[#1478 Allocate Mailboxes](./#1478 Allocate Mailboxes.md)    分配$k$个邮箱最短距离和
 * $\bigstar$困难[#1494 Parallel Courses II](./#1494 Parallel Courses II.md)    状态压缩与位运算结合的动态规划

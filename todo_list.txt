@@ -2,8 +2,6 @@
 1056. Confusing Number
 
 1339. Maximum Product of Splitted Binary Tree
-666. Path Sum IV
-1180. Count Substrings with Only One Distinct Letter
 1429. First Unique Number
 1016. Binary String With Substrings Representing 1 To N
 1167. Minimum Cost to Connect Sticks
