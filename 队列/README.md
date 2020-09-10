@@ -27,4 +27,5 @@
 * 繁杂[#1156 Swap For Longest Repeated Character Substring](./#1156 Swap For Longest Repeated Character Substring.md)    可替换单字符最大重复子串
 * 简单[#1180 Count Substrings with Only One Distinct Letter](./#1180 Count Substrings with Only One Distinct Letter.md)    滑动窗口统计字符串
 * 中等[#1358 Number of Substrings Containing All Three Characters](./#1358 Number of Substrings Containing All Three Characters.md)    每个位置结尾的最短子串
+* 中等[#1567 Maximum Length of Subarray With Positive Product](./#1567 Maximum Length of Subarray With Positive Product.md)    队列统计负数个数
 * 中等[#面试题17.18 Shortest Supersequence LCCI](./#面试题17.18 Shortest Supersequence LCCI.md)    队列左右缩进缩小队列长度

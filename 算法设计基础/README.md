@@ -81,6 +81,7 @@
 * $\bigstar$中等[#376 Wiggle Subsequence](./#376 Wiggle Subsequence.md)    巧妙地规律总结
 * $\clubs$困难[#403 Frog Jump](./#403 Frog Jump.md)    非数组动态规划
 * 中等[#413 Arithmetic Slices](./#413 Arithmetic Slices.md)    等差序列子数组计数
+* $\clubs$技巧[#467 Unique Substrings in Wraparound String](./#467 Unique Substrings in Wraparound String.md)    统计首、尾字符起始的最大长度
 * $\clubs$困难[#471 Encode String with Shortest Length](./#471 Encode String with Shortest Length.md)    字符串最短编码
 * $\clubs$中等[#486 Predict the Winner](./#486 Predict the Winner.md)    得分差构成状态转移
 * 中等[#494 Target Sum](./#494 Target Sum.md)    从回溯到动态规划

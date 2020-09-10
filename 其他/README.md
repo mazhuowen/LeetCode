@@ -13,6 +13,7 @@
 * $\clubs$困难[#843 Guess the Word](./#843 Guess the Word.md)    启发式极小极大算法
 * $\clubs$困难[#855 Exam Room](./#855 Exam Room.md)    红黑数动态保存区间长度
 * $\bigstar$困难[#895 Maximum Frequency Stack](./#895 Maximum Frequency Stack.md)    字典加栈的组合巧妙设计频率栈
+* 中等[#1146 Snapshot Array](./#1146 Snapshot Array.md)    设计支持快照的类数组数据结构
 
 ## 逻辑
 
