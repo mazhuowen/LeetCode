@@ -62,5 +62,7 @@
 * 简单[#705 Design HashSet](./#705 Design HashSet.md)    设计集合
 * 简单[#771 Jewels and Stones](./#771 Jewels and Stones.md)    哈希表计数字符
 * 简单[#819 Most Common Word](./#819 Most Common Word.md)    哈希表单词计数
+* 中等[#846 Hand of Straights](./#846 Hand of Straights.md)    哈希表计数判断连续值
 * $\bigstar$中等[#1124 Longest Well-Performing Interval](./#1124 Longest Well-Performing Interval.md)    前缀和巧妙的二分查找和哈希表解法
+* 中等[#1296 Divide Array in Sets of K Consecutive Numbers](./#1296 Divide Array in Sets of K Consecutive Numbers.md)    同[#846 Hand of Straights](./#846 Hand of Straights.md)
 * 困难[#面试题17.26 Sparse Similarity LCCI](./#面试题17.26 Sparse Similarity LCCI.md)    哈希表记录单词与文档关系

@@ -32,7 +32,7 @@ class Solution {
 
 ## 程序设计
 
-* 
+* 采用动态规划结合滑动窗口判断。
 
 ```java
 class Solution {
