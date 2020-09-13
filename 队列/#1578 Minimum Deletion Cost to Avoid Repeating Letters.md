@@ -49,7 +49,9 @@ class Solution {
                 // 重置窗口参数
                 sum = maxCost = cost[right];
                 left = right;
-            } else {
+            } 
+            // 队列求和及最大值
+            else {
                 sum += cost[right];
                 maxCost = Math.max(maxCost, cost[right]);
             }
@@ -68,8 +70,10 @@ class Solution {
 
 &emsp;时间复杂度为$O(N)$，空间复杂度为$O(1)$。
 
+执行用时：10ms，在所有java提交中击败了62.90%的用户。
 
+内存消耗：56.6MB，在所有java提交中击败了52.49%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;暂无，密切关注。

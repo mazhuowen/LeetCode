@@ -14,6 +14,8 @@
 * 中等[#245 Shortest Word Distance III](./#245 Shortest Word Distance III.md)    [#243 Shortest Word Distance](./#243 Shortest Word Distance.md)进阶
 * 中等[#900 RLE Iterator](./#900 RLE Iterator.md)    数组计数迭代
 * $\clubs$中等[#1094 Car Pooling](./#1094 Car Pooling.md)    转化为上下车人数变化数组并遍历
+* 简单[#1576 Replace All 's to Avoid Consecutive Repeating Characters](./#1576 Replace All 's to Avoid Consecutive Repeating Characters.md)    遍历判断
+* 简单[#1572 Matrix Diagonal Sum](./#1572 Matrix Diagonal Sum.md)    二维数组遍历
 * 简单[#LCP17 速算机器人](./#LCP17 速算机器人.md)    简单遍历计算
 
 ### 双指针
@@ -28,6 +30,7 @@
 * 简单[#849 Maximize Distance to Closest Person](./#849 Maximize Distance to Closest Person.md)    双指针记录非空位置
 * 中等[#986 Interval List Intersections](./#986 Interval List Intersections.md)    双指针遍历两个数组
 * 中等[#1229 Meeting Scheduler](./#1229 Meeting Scheduler.md)    双指针遍历迭代数组
+* $\clubs$中等[#1574 Shortest Subarray to be Removed to Make Array Sorted](./#1574 Shortest Subarray to be Removed to Make Array Sorted.md)    双指针拼接非递减数组
 
 ### 数组交换
 
