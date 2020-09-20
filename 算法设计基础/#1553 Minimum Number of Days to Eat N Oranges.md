@@ -72,7 +72,7 @@ class Solution {
 
 ## 性能分析
 
-&emsp;时间复杂度为$O(N)$，空间复杂度为$O(N)$。
+&emsp;时间复杂度为$O((\log_{10}N)^2$，空间复杂度为$O((\log_{10}N)^2$。
 
 执行用时：4ms，在所有java提交中击败了90.03%的用户。
 
@@ -80,4 +80,40 @@ class Solution {
 
 ## 官方解题
 
-&emsp;暂无，密切关注。
+&emsp;官方将上述思路巧妙的转化为求图的最短路径问题。即橘子数为节点，而边的权重就是两个节点转化所需天数，这样问题转化为节点$n$到$0$的最短距离，又由于该图的特殊性，可使用类似于拓扑排序的遍历方式，结合图的最短距离算法得到如下代码：
+
+```java
+class Solution {
+    public int minDays(int n) {
+        Set<Integer> visited = new HashSet<>();
+        // 最小堆，元素数组表示所花天数和剩余橘子
+        PriorityQueue<int[]> queue = new PriorityQueue<>((a, b) -> a[0] == b[0] ? (a[1] - b[1]) : (a[0] - b[0]));
+        queue.add(new int[]{0, n});
+
+        int res = 0;
+        while (!queue.isEmpty()) {
+            int[] cur = queue.poll();
+            int days = cur[0], rest = cur[1];
+            // 已访问过该节点
+            if (visited.contains(rest)) continue;
+            visited.add(rest);
+
+            if (rest == 1) {
+                res = days + 1;
+                break;
+            }
+
+            // 向下拓展（图的特殊性）
+            queue.add(new int[]{days + 1 + rest % 3, rest / 3});
+            queue.add(new int[]{days + 1 + rest % 2, rest / 2});
+        }
+        return res;
+    }
+}
+```
+
+&emsp;时间复杂度为$O((\log_{10}N)^2\log_2\log_2N)$，空间复杂度为$(\log_{10}N)^2$。
+
+执行用时：13ms，在所有java提交中击败了22.34%的用户。
+
+内存消耗：39.1MB，在所有java提交中击败了29.24%的用户。

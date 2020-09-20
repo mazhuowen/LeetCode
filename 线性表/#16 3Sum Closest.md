@@ -45,7 +45,7 @@ class Solution {
                     high--;
                 }
                 // 更新diff
-                 if(Math.abs(target - temp) < Math.abs(diff)) {
+                if(Math.abs(target - temp) < Math.abs(diff)) {
                     diff = temp - target;
                 }
             }

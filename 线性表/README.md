@@ -5,7 +5,7 @@
 ### 基本操作
 
 * 简单[#1 Two Sum](./#1 Two Sum.md)   顺序表遍历
-* $\clubs$技巧[#26 Remove Duplicates from Sorted Arra](./#26 Remove Duplicates from Sorted Array.md)    有序顺序表的技巧删除
+* 技巧[#26 Remove Duplicates from Sorted Arra](./#26 Remove Duplicates from Sorted Array.md)    有序顺序表的技巧删除
 * $\clubs$技巧[#27 Remove Element](./#27 Remove Element.md)    顺序表的技巧删除
 * 简单[#80 Remove Duplicates from Sorted Array II](./#80 Remove Duplicates from Sorted Array II.md)    数组移动覆盖
 * 中等[#163 Missing Ranges](./#163 Missing Ranges.md)    数组遍历比较相邻值
@@ -16,6 +16,7 @@
 * $\clubs$中等[#1094 Car Pooling](./#1094 Car Pooling.md)    转化为上下车人数变化数组并遍历
 * 简单[#1576 Replace All 's to Avoid Consecutive Repeating Characters](./#1576 Replace All 's to Avoid Consecutive Repeating Characters.md)    遍历判断
 * 简单[#1572 Matrix Diagonal Sum](./#1572 Matrix Diagonal Sum.md)    二维数组遍历
+* 简单[#1582 Special Positions in a Binary Matrix](./#1582 Special Positions in a Binary Matrix.md)    二维数组遍历
 * 简单[#LCP17 速算机器人](./#LCP17 速算机器人.md)    简单遍历计算
 
 ### 双指针

@@ -66,4 +66,5 @@
 * $\bigstar$中等[#1124 Longest Well-Performing Interval](./#1124 Longest Well-Performing Interval.md)    前缀和巧妙的二分查找和哈希表解法
 * 中等[#1296 Divide Array in Sets of K Consecutive Numbers](./#1296 Divide Array in Sets of K Consecutive Numbers.md)    同[#846 Hand of Straights](./#846 Hand of Straights.md)
 * 中等[#1577 Number of Ways Where Square of Number Is Equal to Product of Two Numbers](./#1577 Number of Ways Where Square of Number Is Equal to Product of Two Numbers.md)    哈希表记录乘积（非最优）
+* $\clubs$中等[#1583 Count Unhappy Friends](./#1583 Count Unhappy Friends.md)    数组哈希表维护关系亲密度
 * 困难[#面试题17.26 Sparse Similarity LCCI](./#面试题17.26 Sparse Similarity LCCI.md)    哈希表记录单词与文档关系

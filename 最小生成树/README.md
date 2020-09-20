@@ -50,3 +50,4 @@ for (int i = 1; i < n; i++) {
 
 * $\clubs$中等[#1135 Connecting Cities With Minimum Cost](./#1135 Connecting Cities With Minimum Cost.md)    最小生成树基本问题
 * $\bigstar$困难[#1168 Optimize Water Distribution in a Village](./#1168 Optimize Water Distribution in a Village.md)    最小生成树变形问题
+* 中等[#1584 Min Cost to Connect All Points](./#1584 Min Cost to Connect All Points.md)    最小生成树的变形

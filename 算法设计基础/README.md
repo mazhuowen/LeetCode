@@ -8,9 +8,11 @@
 
 &emsp;&emsp;贪婪法是一种不追求最优解，只希望得到较为满意的解的方法。因为它省去了为找最优解而穷尽所有可能所需的时间，因而贪婪法一般可以快速得到满意的解。贪婪法在求解过程的每一步都选取一个局部最优的策略，把问题规模缩小，最后把每一步的结果合并起来形成一个全局解。贪婪法的基本步骤为：
 
-* 从某个初始解出发；
-* 采用迭代的过程，当可以向目标前进一步时，就根据局部最优策略，得到一个部分解，问题规模就缩小了；
-* 将所有解综合起来。
+1. 从某个初始解出发；
+
+2. 采用迭代的过程，当可以向目标前进一步时，就根据局部最优策略，得到一个部分解，问题规模就缩小了；
+
+3. 将所有解综合起来。
 
 
 
@@ -134,6 +136,7 @@
 * $\bigstar$困难[#1531 String Compression II](./#1531 String Compression II.md)    最多删除$k$个字符后的最短压缩编码
 * 中等[#1547 Minimum Cost to Cut a Stick](./#1547 Minimum Cost to Cut a Stick.md)    区间动态规划
 * $\bigstar$困难[#1563 Stone Game V](./#1563 Stone Game V.md)    动态规划的深层优化
+* $\clubs$中等[#LCP19 秋叶收藏集](./#LCP19 秋叶收藏集.md)    状态的抽象
 
 ## 回溯法
 
@@ -187,8 +190,9 @@
 * 中等[#1255 Maximum Score Words Formed by Letters](./#1255 Maximum Score Words Formed by Letters.md)    回溯尝试单词组合
 * $\clubs$繁杂[#1307 Verbal Arithmetic Puzzle](./#1307 Verbal Arithmetic Puzzle.md)    剪枝优化暴力回溯
 * 困难[#1340 Jump Game V](./#1340 Jump Game V.md)    记忆化回溯
-* 中等[#1553 Minimum Number of Days to Eat N Oranges](./#1553 Minimum Number of Days to Eat N Oranges.md)    回溯的剪枝优化
+* $\clubs$中等[#1553 Minimum Number of Days to Eat N Oranges](./#1553 Minimum Number of Days to Eat N Oranges.md)    回溯的剪枝优化
 * $\clubs$困难[#1575 Count All Possible Routes](./#1575 Count All Possible Routes.md)    无终止的回溯
+* $\bigstar$困难[#LCP20 快速公交](./#LCP20 快速公交.md)    [#1553 Minimum Number of Days to Eat N Oranges](./#1553 Minimum Number of Days to Eat N Oranges.md)的进阶
 * 中等[#面试题08.02 Robot in a Grid LCCI](./#面试题08.02 Robot in a Grid LCCI.md)    回溯剪枝优化
 
 ## 随机算法

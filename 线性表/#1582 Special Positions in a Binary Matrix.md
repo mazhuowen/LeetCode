@@ -35,6 +35,7 @@ class Solution {
 class Solution {
     public int numSpecial(int[][] mat) {
         int n = mat.length, m = mat[0].length;
+        // 遍历计算行列1的数目
         int[] row = new int[n], col = new int[m];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
@@ -45,6 +46,7 @@ class Solution {
             }
         }
         
+        // 遍历判断
         int res = 0;
         point: for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
@@ -65,8 +67,10 @@ class Solution {
 
 &emsp;时间复杂度为$O(N^2)$，空间复杂度为$O(N)$。
 
+执行用时：2ms，在所有java提交中击败了94.97%的用户。
 
+内存消耗：39.1MB，在所有java提交中击败了58.50%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;暂无，密切关注。
