@@ -152,6 +152,7 @@ for (int i = 0; i < N; i++) {
 * 中等[#1136 Parallel Courses](./#1136 Parallel Courses.md)    拓扑排序求层数
 * $\clubs$繁杂[#1203 Sort Items by Groups Respecting Dependencies](./#1203 Sort Items by Groups Respecting Dependencies.md)    父子图的拓扑排序
 * 中等[#1273 Delete Tree Nodes](./#1273 Delete Tree Nodes.md)    拓扑排序思想后序遍历树的父子节点表示
+* $\clubs$困难[#1591 Strange Printer II](./#1591 Strange Printer II.md)    抽象为图的拓扑排序
 
 ## 有向图环路判断
 

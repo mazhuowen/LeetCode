@@ -32,8 +32,10 @@
 * $\clubs$困难[#1330 Reverse Subarray To Maximize Array Value](./#1330 Reverse Subarray To Maximize Array Value.md)    绝对值方程的拆分
 * $\bigstar$技巧[#1521 Find a Value of a Mysterious Function Closest to Target](./#1521 Find a Value of a Mysterious Function Closest to Target.md)    区间按位与的递减性
 * 中等[#1573 Number of Ways to Split a String](./#1573 Number of Ways to Split a String.md)    排列组合问题
+* 简单[#1588 Sum of All Odd Length Subarrays](./#1588 Sum of All Odd Length Subarrays.md)    排列组合问题
 * 简单[#LCP02 Deep Dark Fraction](./#LCP02 Deep Dark Fraction.md)    极简分数规律
 * $\bigstar$繁杂[#LCP16 游乐园的游览计划](./#LCP16 游乐园的游览计划.md)    图论无向图有向化及三角形组合的逻辑优化
+* 简单[#LCP22 黑白方格画](./#LCP22 黑白方格画.md)    遍历尝试排列组合问题
 
 ## 规律
 
@@ -95,3 +97,4 @@
 * 繁杂[#1453 Maximum Number of Darts Inside of a Circular Dartboard](./#1453 Maximum Number of Darts Inside of a Circular Dartboard)    圆心的几何学计算
 * $\bigstar$技巧[#1542 Find Longest Awesome Substring](./#1542 Find Longest Awesome Substring.md)    前缀和思想在奇偶状态中的巧妙应用
 * 简单[#面试题16.01 Swap Numbers LCCI](./#面试题16.01 Swap Numbers LCCI.md)    亦或应用
+* 简单[#LCP11 期望个数统计](./#LCP11 期望个数统计.md)    概率期望计算

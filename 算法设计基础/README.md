@@ -136,6 +136,7 @@
 * $\bigstar$困难[#1531 String Compression II](./#1531 String Compression II.md)    最多删除$k$个字符后的最短压缩编码
 * 中等[#1547 Minimum Cost to Cut a Stick](./#1547 Minimum Cost to Cut a Stick.md)    区间动态规划
 * $\bigstar$困难[#1563 Stone Game V](./#1563 Stone Game V.md)    动态规划的深层优化
+* $\clubs$困难[#1595 Minimum Cost to Connect Two Groups of Points](./#1595 Minimum Cost to Connect Two Groups of Points.md)    状压动态规划
 * $\clubs$中等[#LCP19 秋叶收藏集](./#LCP19 秋叶收藏集.md)    状态的抽象
 
 ## 回溯法
@@ -192,6 +193,8 @@
 * 困难[#1340 Jump Game V](./#1340 Jump Game V.md)    记忆化回溯
 * $\clubs$中等[#1553 Minimum Number of Days to Eat N Oranges](./#1553 Minimum Number of Days to Eat N Oranges.md)    回溯的剪枝优化
 * $\clubs$困难[#1575 Count All Possible Routes](./#1575 Count All Possible Routes.md)    无终止的回溯
+* 中等[#1593 Split a String Into the Max Number of Unique Substrings](./#1593 Split a String Into the Max Number of Unique Substrings.md)    回溯试探
+* 中等[#1594 Maximum Non Negative Product in a Matrix](./#1594 Maximum Non Negative Product in a Matrix.md)    记忆化回溯
 * $\bigstar$困难[#LCP20 快速公交](./#LCP20 快速公交.md)    [#1553 Minimum Number of Days to Eat N Oranges](./#1553 Minimum Number of Days to Eat N Oranges.md)的进阶
 * 中等[#面试题08.02 Robot in a Grid LCCI](./#面试题08.02 Robot in a Grid LCCI.md)    回溯剪枝优化
 

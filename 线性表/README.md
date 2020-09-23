@@ -18,6 +18,7 @@
 * 简单[#1572 Matrix Diagonal Sum](./#1572 Matrix Diagonal Sum.md)    二维数组遍历
 * 简单[#1582 Special Positions in a Binary Matrix](./#1582 Special Positions in a Binary Matrix.md)    二维数组遍历
 * 简单[#LCP17 速算机器人](./#LCP17 速算机器人.md)    简单遍历计算
+* 中等[#LCP23 魔术排列](./#LCP23 魔术排列.md)    模拟洗牌过程
 
 ### 双指针
 

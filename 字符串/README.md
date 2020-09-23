@@ -404,3 +404,4 @@ class ACNode {
 * 繁杂[#1096 Brace Expansion II](./#1096 Brace Expansion II.md)    字符串截取递归匹配
 * 中等[#1324 Print Words Vertically](./#1324 Print Words Vertically.md)    按列输出字符串
 * $\clubs$中等[#1371 Find the Longest Substring Containing Vowels in Even Counts](./#1371 Find the Longest Substring Containing Vowels in Even Counts.md)    借鉴前缀思路和和状态压缩
+* 简单[#1592 Rearrange Spaces Between Words](./#1592 Rearrange Spaces Between Words.md)    字符串拼接
