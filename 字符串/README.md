@@ -400,6 +400,7 @@ class ACNode {
 * 中等[#557 Reverse Words in a String III](./#557 Reverse Words in a String III.md)    翻转句子中的单词
 * 中等[#567 Permutation in String](./#567 Permutation in String.md)    [#438 Find All Anagrams in a String](./#438 Find All Anagrams in a String.md)的简化
 * 简单[#680 Valid Palindrome II](./#680 Valid Palindrome II.md)    双指针遍历
+* 繁杂[#736 Parse Lisp Expression](./#736 Parse Lisp Expression.md)    字符串遍历解析
 * 简单[#917 Reverse Only Letters](./#917 Reverse Only Letters.md)    字符交换
 * 繁杂[#1096 Brace Expansion II](./#1096 Brace Expansion II.md)    字符串截取递归匹配
 * 中等[#1324 Print Words Vertically](./#1324 Print Words Vertically.md)    按列输出字符串
