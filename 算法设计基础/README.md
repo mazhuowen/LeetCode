@@ -24,6 +24,7 @@
 * $\bigstar$技巧[#135 Candy](./#135 Candy.md)    峰顶值的处理
 * $\bigstar$困难[#321 Create Maximum Number](./#321 Create Maximum Number.md)    利用贪婪策略查询两个数组的最大组合
 * $\clubs$中等[#406 Queue Reconstruction by Height](./#406 Queue Reconstruction by Height.md)    身高降序计数增序
+* 中等[#435 Non-overlapping Intervals](./#435 Non-overlapping Intervals.md)    根据区间结束值贪婪判断
 * 中等[#452 Minimum Number of Arrows to Burst Balloons](./#452 Minimum Number of Arrows to Burst Balloons)    贪婪发统计区间交集数目
 * $\bigstar$困难[#659 Split Array into Consecutive Subsequences](./#659 Split Array into Consecutive Subsequences.md)    贪婪拼接连续数字
 * $\clubs$中等[#910 Smallest Range II](./#910 Smallest Range II.md)    巧妙地数学规律发现
@@ -196,6 +197,7 @@
 * $\clubs$困难[#1575 Count All Possible Routes](./#1575 Count All Possible Routes.md)    无终止的回溯
 * 中等[#1593 Split a String Into the Max Number of Unique Substrings](./#1593 Split a String Into the Max Number of Unique Substrings.md)    回溯试探
 * 中等[#1594 Maximum Non Negative Product in a Matrix](./#1594 Maximum Non Negative Product in a Matrix.md)    记忆化回溯
+* $\clubs$繁杂[#LCP13 寻宝](./#LCP13 寻宝.md)    结合图距离的路径压缩动态规划
 * $\bigstar$困难[#LCP20 快速公交](./#LCP20 快速公交.md)    [#1553 Minimum Number of Days to Eat N Oranges](./#1553 Minimum Number of Days to Eat N Oranges.md)的进阶
 * 中等[#面试题08.02 Robot in a Grid LCCI](./#面试题08.02 Robot in a Grid LCCI.md)    回溯剪枝优化
 

@@ -39,6 +39,7 @@
 * $\bigstar$困难[#1585 Check If String Is Transformable With Substring Sort Operations](./#1585 Check If String Is Transformable With Substring Sort Operations.md)    冒泡排序的进阶抽象
 * 中等[#1589 Maximum Sum Obtained of Any Permutation](./#1589 Maximum Sum Obtained of Any Permutation.md)    重叠区间分派较大值
 * 简单[#LCP18 早餐组合](./#LCP18 早餐组合.md)    排序后双指针遍历
+* 中等[#剑指Offer45 把数组排成最小的数](./#剑指Offer45 把数组排成最小的数.md)    同[#179 Largest Number](./#179 Largest Number.md)
 
 ## 归并排序
 
