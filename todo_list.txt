@@ -1,5 +1,3 @@
-635. Design Log Storage System
-
 1339. Maximum Product of Splitted Binary Tree
 1429. First Unique Number
 1016. Binary String With Substrings Representing 1 To N
