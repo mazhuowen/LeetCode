@@ -14,6 +14,9 @@
 * $\clubs$困难[#855 Exam Room](./#855 Exam Room.md)    红黑数动态保存区间长度
 * $\bigstar$困难[#895 Maximum Frequency Stack](./#895 Maximum Frequency Stack.md)    字典加栈的组合巧妙设计频率栈
 * 中等[#1146 Snapshot Array](./#1146 Snapshot Array.md)    设计支持快照的类数组数据结构
+* 中等[#1166 Design File System](./#1166 Design File System.md)    设计文件系统
+* 中等[#1396 Design Underground System](./#1396 Design Underground System.md)    设计地铁统计系统
+* 中等[#1500 Design a File Sharing System](./#1500 Design a File Sharing System.md)    设计文件共享系统
 
 ## 逻辑
 
