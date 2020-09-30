@@ -22,6 +22,7 @@
 * $\bigstar$困难[#458 Poor Pigs](./#458 Poor Pigs.md)    信息熵与$n$进制应用
 * $\clubs$简单[#461 Hamming Distance](./#461 Hamming Distance.md)    数字异或截取最右侧的$1$
 * $\bigstar$困难[#483 Smallest Good Base](./#483 Smallest Good Base.md)    $k$进制规律
+* $\clubs$中等[#650 2 Keys Keyboard](./#650 2 Keys Keyboard.md)    整数素因子分解
 * $\clubs$中等[#810 Chalkboard XOR Game](./#810 Chalkboard XOR Game.md)    偶数长数组异或性质
 * $\bigstar$困难[#829 Consecutive Numbers Sum](./#829 Consecutive Numbers Sum.md)    质因数分解
 * 简单[#867 Transpose Matrix](./#867 Transpose Matrix.md)    矩阵转置
