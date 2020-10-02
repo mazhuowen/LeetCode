@@ -68,10 +68,75 @@ class Solution {
 
 ## 性能分析
 
-&emsp;
+&emsp;时间复杂度为$O(N2^N)$，空间复杂度为$O(N)$。
 
+执行用时：133ms，在所有java提交中击败了39.05%的用户。
 
+内存消耗：39.2MB，在所有java提交中击败了8.60%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;暂无，密切关注。社区采用回溯尝试，其思路为尝试删除入度为负，即存在多余出边的点的某个边，优化策略主要有剪纸和尝试中的`return`，即遍历第一个入度为负数的点，然后尝试删除，本轮不再尝试其它入度为负数的点，因为入度为负数的点其后必然会尝试删除，从而避免大量的重复尝试，达到大大加速算法的功能。
+
+```java
+class Solution {
+    int res = 0;
+    public int maximumRequests(int n, int[][] requests) {
+        // 构图并统计入度
+        Node[] graph = new Node[n];
+        int[] degree = new int[n];
+        for (int[] request : requests) {
+            if (request[0] == request[1]) continue;
+            degree[request[0]]--;
+            degree[request[1]]++;
+            graph[request[0]] = new Node(request[1], graph[request[0]]);
+        }
+        backTracing(requests.length, graph, degree);
+        return res;
+    }
+    
+    private void backTracing(int cur, Node[] graph, int[] degree) {
+        // 剪枝
+        if (cur <= res) return;
+        // 选择一个度非负的点，删除条件
+        for (int i = 0; i < degree.length; i++) {
+            if (degree[i] >= 0) continue;
+            // 删除一条出边
+            degree[i]++;
+            for (Node tmp = graph[i], pre = null; tmp != null; pre = tmp, tmp = tmp.next) {
+                if (tmp.ver == -1) continue;
+                degree[tmp.ver]--;
+                // 试探删除当前边
+                int ver = tmp.ver;
+                tmp.ver  = -1;
+                backTracing(cur - 1, graph, degree);
+                // 回溯
+                tmp.ver = ver;
+                degree[tmp.ver]++;
+            }
+            // 回溯
+            degree[i]--;
+            // 避免重复删除，加速回溯
+            return;
+        }
+        // 所有点入度都如零，符合条件
+        res = cur;
+    }
+}
+
+class Node {
+    int ver;
+    Node next;
+    
+    Node(int ver, Node next) {
+        this.ver = ver;
+        this.next = next;
+    }
+}
+```
+
+&emsp;时间复杂度为$O(NM)$，空间复杂度为$O(N + M)$。
+
+执行用时：1ms，在所有java提交中击败了100.00%的用户。
+
+内存消耗：36.8MB，在所有java提交中击败了68.47%的用户。

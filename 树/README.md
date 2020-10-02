@@ -97,6 +97,7 @@
 * 简单[#589 N-ary Tree Preorder Traversal](./#589 N-ary Tree Preorder Traversal.md)    前序遍历
 * $\bigstar$困难[#834 Sum of Distances in Tree](./#834 Sum of Distances in Tree.md)    通过指定根将无向图转化为树，通过根节点和子树关系计算路径和
 * 中等[#1519 Number of Nodes in the Sub-Tree With the Same Label](./#1519 Number of Nodes in the Sub-Tree With the Same Label.md)    通过无向图表示树
+* 中等[#1600 Throne Inheritance](./#1600 Throne Inheritance.md)    树的儿子兄弟链表示
 
 ## 树的应用
 

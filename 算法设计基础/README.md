@@ -29,6 +29,7 @@
 * $\bigstar$困难[#659 Split Array into Consecutive Subsequences](./#659 Split Array into Consecutive Subsequences.md)    贪婪拼接连续数字
 * $\clubs$中等[#910 Smallest Range II](./#910 Smallest Range II.md)    巧妙地数学规律发现
 * $\bigstar$困难[#630 Course Schedule III](./#630 Course Schedule III.md)    课程时长的贪婪思路
+* 中等[#763 Partition Labels](./#763 Partition Labels.md)    贪婪合并区间
 * $\clubs$中等[#870 Advantage Shuffle](./#870 Advantage Shuffle.md)    排序遍历，贪婪搭配
 * 中等[#955 Delete Columns to Make Sorted II](./#955 Delete Columns to Make Sorted II.md)    字符串移除字符使之变为字典序
 * 中等[#1029 Two City Scheduling](./#1029 Two City Scheduling.md)    排序后贪婪划分
@@ -198,6 +199,7 @@
 * $\clubs$困难[#1575 Count All Possible Routes](./#1575 Count All Possible Routes.md)    无终止的回溯
 * 中等[#1593 Split a String Into the Max Number of Unique Substrings](./#1593 Split a String Into the Max Number of Unique Substrings.md)    回溯试探
 * 中等[#1594 Maximum Non Negative Product in a Matrix](./#1594 Maximum Non Negative Product in a Matrix.md)    记忆化回溯
+* 困难[#1601 Maximum Number of Achievable Transfer Requests](./#1601 Maximum Number of Achievable Transfer Requests.md)    回溯中巧妙避免重复尝试
 * $\clubs$繁杂[#LCP13 寻宝](./#LCP13 寻宝.md)    结合图距离的路径压缩动态规划
 * $\bigstar$困难[#LCP20 快速公交](./#LCP20 快速公交.md)    [#1553 Minimum Number of Days to Eat N Oranges](./#1553 Minimum Number of Days to Eat N Oranges.md)的进阶
 * 中等[#面试题08.02 Robot in a Grid LCCI](./#面试题08.02 Robot in a Grid LCCI.md)    回溯剪枝优化
