@@ -30,6 +30,7 @@
 * 中等[#794 Valid Tic-Tac-Toe State](./#794 Valid Tic-Tac-Toe State.md)    井字棋是否有效验证
 * $\clubs$困难[#927 Three Equal Parts](./#927 Three Equal Parts.md)    三等份数组
 * 困难[#1121 Divide Array Into Increasing Sequences](./#1121 Divide Array Into Increasing Sequences.md)    相同数字最大数目
+* 中等[#1538 Guess the Majority in a Hidden Array](./#1538 Guess the Majority in a Hidden Array.md)    查找基准类并检测
 * 简单[#1560 Most Visited Sector in  a Circular Track](./#1560 Most Visited Sector in  a Circular Track.md)    经过最多的扇区
 * $\clubs$中等[#1562 Find Latest Group of Size M](./#1562 Find Latest Group of Size M.md)    记录合并过程中的线段端点和长度
 * 中等[#1599 Maximum Profit of Operating a Centennial Wheel](./#1599 Maximum Profit of Operating a Centennial Wheel.md)    按照题意模拟
