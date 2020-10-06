@@ -38,6 +38,7 @@
 * 中等[#1386 Cinema Seat Allocation](./#1386 Cinema Seat Allocation.md)    二进制表示座位状态，贪婪匹配
 * $\clubs$技巧[#1520 Maximum Number of Non-Overlapping Substrings](./#1520 Maximum Number of Non-Overlapping Substrings.md)    根据起始字符统计子字符串区间并贪婪搜索最大不相交区间数目
 * $\clubs$中等[#1536 Minimum Swaps to Arrange a Binary Grid](./#1536 Minimum Swaps to Arrange a Binary Grid.md)    最小交换行的次数使得矩阵为上三角
+* $\clubs$中等[#1605 Find Valid Matrix Given Row and Column Sums](./#1605 Find Valid Matrix Given Row and Column Sums.md)    贪婪填充矩阵
 
 ## 分治法
 

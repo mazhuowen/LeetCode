@@ -17,6 +17,7 @@
 * 中等[#1166 Design File System](./#1166 Design File System.md)    设计文件系统
 * 中等[#1396 Design Underground System](./#1396 Design Underground System.md)    设计地铁统计系统
 * 中等[#1500 Design a File Sharing System](./#1500 Design a File Sharing System.md)    设计文件共享系统
+* 简单[#1603 Design Parking System](./#1603 Design Parking System.md)    计数停车
 
 ## 逻辑
 

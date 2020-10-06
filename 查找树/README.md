@@ -73,6 +73,7 @@
 * $\clubs$困难[#732 My Calendar III](./#732 My Calendar III.md)    动态线段树延迟更新
 * $\bigstar$困难[#850 Rectangle Area II](./#850 Rectangle Area II.md)    线段树的动态创建修改
 * $\bigstar$困难[#1157 Online Majority Element In Subarray](./#1157 Online Majority Element In Subarray.md)    保存数字出现索引使用线段树指导统计
+* $\bigstar$困难[#1606 Find Servers That Handled Most Number of Requests](./#1606 Find Servers That Handled Most Number of Requests.md)    线段树保存区间内最小值
 
 ## B和B+树
 
