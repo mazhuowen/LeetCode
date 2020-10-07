@@ -23,6 +23,7 @@
 * $\bigstar$困难[#727 Minimum Window Subsequence](./#727 Minimum Window Subsequence.md)    正反向匹配查找最短子序列
 * $\clubs$中等[#833 Find And Replace in String](./#833 Find And Replace in String.md)    先标记后替换
 * 中等[#面试题01.05 One Away LCCI](./#面试题01.05 One Away LCCI.md)    字符串前后遍历匹配
+* 中等[#面试题16.18 Pattern Matching LCCI](./#面试题16.18 Pattern Matching LCCI.md)    枚举模式串的匹配长度
 
 ### RK（Rabin-Karp）算法
 
@@ -373,6 +374,7 @@ class ACNode {
 &emsp;AC自动机构建的粗略时间复杂度为$O(L)$，匹配时间复杂度为$O(N)$。
 
 * $\bigstar$困难[#1032 Stream of Characters](./#1032 Stream of Characters.md)    AC自动机对字符流判断
+* 中等[#面试题17.17 Multi Search LCCI](./#面试题17.17 Multi Search LCCI.md)    AC自动机匹配多模式串
 
 ## 其它
 

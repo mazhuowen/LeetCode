@@ -113,8 +113,21 @@ ORDER BY s.seller_name;
 
 ## 性能分析
 
+执行用时：603ms，在所有MySQL提交中击败了52.63%的用户。
 
+内存消耗：0B，在所有MySQL提交中击败了100.00%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;暂无，密切关注。社区还有采用`LEFT JOIN`的思路。
+
+```mysql
+SELECT a.seller_name FROM Seller a
+LEFT JOIN Orders b ON a.seller_id=b.seller_id AND b.sale_date >= '2020-01-01'
+WHERE b.seller_id is null
+ORDER BY a.seller_name
+```
+
+执行用时：577ms，在所有MySQL提交中击败了94.74%的用户。
+
+内存消耗：0B，在所有MySQL提交中击败了100.00%的用户。

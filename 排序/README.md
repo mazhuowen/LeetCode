@@ -38,6 +38,7 @@
 * 中等[#1329 Sort the Matrix Diagonally](./#1329 Sort the Matrix Diagonally.md)    矩形对角线快速排序
 * $\bigstar$困难[#1585 Check If String Is Transformable With Substring Sort Operations](./#1585 Check If String Is Transformable With Substring Sort Operations.md)    冒泡排序的进阶抽象
 * 中等[#1589 Maximum Sum Obtained of Any Permutation](./#1589 Maximum Sum Obtained of Any Permutation.md)    重叠区间分派较大值
+* $\clubs$简单[#1608 Special Array With X Elements Greater Than or Equal X](./#1608 Special Array With X Elements Greater Than or Equal X.md)    排序比较
 * 简单[#LCP18 早餐组合](./#LCP18 早餐组合.md)    排序后双指针遍历
 * 中等[#剑指Offer45 把数组排成最小的数](./#剑指Offer45 把数组排成最小的数.md)    同[#179 Largest Number](./#179 Largest Number.md)
 
