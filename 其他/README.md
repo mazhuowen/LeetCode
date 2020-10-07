@@ -94,6 +94,7 @@
 * 困难[#1369 Get the Second Most Recent Activity](./#1369 Get the Second Most Recent Activity.md)    HAVING条件应用
 * $\clubs$中等[#1454 Active Users](./#1454 Active Users.md)    连续时间复杂查询
 * 中等[#1468 Calculate Salaries](./#1468 Calculate Salaries.md)    统计部门最大薪资并计算税率
+* 中等[#1555 Bank Account Summary](./#1555 Bank Account Summary.md)    UNION ALL合并并统计
 
 ## SHELL
 
