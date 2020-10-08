@@ -57,6 +57,7 @@
 * $\clubs$技巧[#525 Contiguous Array](./#525 Contiguous Array.md)    哈希表存储第一次出现的索引
 * $\clubs$困难[#527 Word Abbreviation](./#527 Word Abbreviation.md)    利用字典保存缩写，解决碰撞
 * $\bigstar$中等[#548 Split Array with Equal Sum](./#548 Split Array with Equal Sum.md)    集合巧妙化简循环
+* 中等[#554 Brick Wall](./#554 Brick Wall.md)    哈希表记录砖缝
 * 中等[#560 Subarray Sum Equals K](./#560 Subarray Sum Equals K.md)    使用哈希表记录前缀和
 * 中等[#609 Find Duplicate File in System](./#609 Find Duplicate File in System.md)    哈希表记录文件内容及路径
 * 简单[#705 Design HashSet](./#705 Design HashSet.md)    设计集合
