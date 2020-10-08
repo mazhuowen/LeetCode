@@ -79,11 +79,12 @@
 * 中等[#1161 Maximum Level Sum of a Binary Tree](./#1161 Maximum Level Sum of a Binary Tree.md)    层次遍历
 * 中等[#1257 Smallest Common Region](./#1257 Smallest Common Region.md)    最近公共父节点问题
 * 中等[#1315 Sum of Nodes with Even-Valued Grandparent](./#1315 Sum of Nodes with Even-Valued Grandparent)    后序遍历返回子孙节点和
+* 中等[#1367 Linked List in Binary Tree](./#1367 Linked List in Binary Tree.md)    [#面试题04.10 Check SubTree LCCI](./#面试题04.10 Check SubTree LCCI.md)的变形
 * 中等[#1372 Longest ZigZag Path in a Binary Tree](./#1372 Longest ZigZag Path in a Binary Tree.md)    前序遍历统计交替路径
 * 简单[#1469 Find All The Lonely Nodes](./#1469 Find All The Lonely Nodes.md)    后序遍历
 * 中等[#1602 Find Nearest Right Node in Binary Tree](./#1602 Find Nearest Right Node in Binary Tree.md)    层次遍历
 * 中等[#1609 Even Odd Tree](./#1609 Even Odd Tree.md)    层次遍历
-* 中等[#面试题04.10 Check SubTree LCCI](./#面试题04.10 Check SubTree LCCI.md)    前序遍历
+* $\clubs$中等[#面试题04.10 Check SubTree LCCI](./#面试题04.10 Check SubTree LCCI.md)    前序遍历
 * $\clubs$中等[#面试题04.12 Paths with Sum LCCI](./#面试题04.12 Paths with Sum LCCI.md)    数组记录路径和
 
 ## 树与森林

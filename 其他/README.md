@@ -49,6 +49,7 @@
 * $\clubs$困难[#828 Count Unique Characters of All Substrings of a Given String](./#828 Count Unique Characters of All Substrings of a Given String.md)    计数每个字符不重复区间组合
 * $\clubs$中等[#885 Spiral Matrix III](./#885 Spiral Matrix III.md)    [#54 Spiral Matrix](./#54 Spiral Matrix.md)的进阶，从内往外旋转
 * 中等[#939 Minimum Area Rectangle](./#939 Minimum Area Rectangle.md)    拟对角线遍历验证
+* $\bigstar$技巧[#1177 Can Make Palindrome from Substring](./#1177 Can Make Palindrome from Substring.md)    二进制统计奇偶并利用前缀和的思路求区间统计值
 * 中等[#1292 Maximum Side Length of a Square with Sum Less than or Equal to Threshold](./#1292 Maximum Side Length of a Square with Sum Less than or Equal to Threshold.md)    矩形前缀和优化
 * 中等[#1352 Product of the Last K Numbers](./#1352 Product of the Last K Numbers.md)    前缀积变型
 * 简单[#1375 Bulb Switcher III](./#1375 Bulb Switcher III.md)    编号求和比较

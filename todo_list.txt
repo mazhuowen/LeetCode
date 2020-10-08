@@ -1,14 +1,3 @@
-1177. Can Make Palindrome from Substring
-1367. Linked List in Binary Tree
-1497. Check If Array Pairs Are Divisible by k
-1262. Greatest Sum Divisible by Three
-1466. Reorder Routes to Make All Paths Lead to the City Zero
-962. Maximum Width Ramp
-842. Split Array into Fibonacci Sequence
-957. Prison Cells After N Days
-779. K-th Symbol in Grammar
-554. Brick Wall
-424. Longest Repeating Character Replacement
 866. Prime Palindrome
 881. Boats to Save People
 777. Swap Adjacent in LR String

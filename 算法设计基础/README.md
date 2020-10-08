@@ -186,6 +186,7 @@
 * $\clubs$中等[#698 Partition to K Equal Sum Subsets](./#698 Partition to K Equal Sum Subsets.md)    巧妙剪枝提升时间性能
 * 简单[#784 Letter Case Permutation](./#784 Letter Case Permutation.md)    回溯尝试大小写
 * $\clubs$困难[#805 Split Array With Same Average](./#805 Split Array With Same Average.md)    剪枝回溯
+* 中等[#842 Split Array into Fibonacci Sequence](./#842 Split Array into Fibonacci Sequence.md)    回溯剪枝优化
 * 困难[#980 Unique Paths III](./#980 Unique Paths III.md)    记忆化回溯，路径二进制压缩
 * 困难[#996 Number of Squareful Arrays](./#996 Number of Squareful Arrays.md)    排序去重组合数
 * $\clubs$中等[#1079 Letter Tile Possibilities](./#1079 Letter Tile Possibilities.md)    回溯中去重技巧

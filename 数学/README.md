@@ -32,7 +32,9 @@
 * $\bigstar$中等[#1071 Greatest Common Divisor of Strings](./#1071 Greatest Common Divisor of Strings.md)    字符串最大公因子
 * $\clubs$中等[#1131 Maximum of Absolute Value Expression](./#1131 Maximum of Absolute Value Expression.md)    绝对值拆解
 * $\clubs$中等[#1201 Ugly Number III](./#1201 Ugly Number III.md)    [#878 Nth Magical Number](./#878 Nth Magical Number.md) 的延续，周期化并二分查找
+* 中等[#1262 Greatest Sum Divisible by Three](./#1262 Greatest Sum Divisible by Three.md)    加法的余数规律
 * $\clubs$困难[#1330 Reverse Subarray To Maximize Array Value](./#1330 Reverse Subarray To Maximize Array Value.md)    绝对值方程的拆分
+* 中等[#1497 Check If Array Pairs Are Divisible by k](./#1497 Check If Array Pairs Are Divisible by k.md)    两数相加能被整除的规律
 * $\bigstar$技巧[#1521 Find a Value of a Mysterious Function Closest to Target](./#1521 Find a Value of a Mysterious Function Closest to Target.md)    区间按位与的递减性
 * 中等[#1573 Number of Ways to Split a String](./#1573 Number of Ways to Split a String.md)    排列组合问题
 * 简单[#1588 Sum of All Odd Length Subarrays](./#1588 Sum of All Odd Length Subarrays.md)    排列组合问题
@@ -86,6 +88,7 @@
 * 中等[#754 Reach a Number](./#754 Reach a Number.md)    等差数列正反向规律
 * 简单[#836 Rectangle Overlap](./#836 Rectangle Overlap.md)    [#223 Rectangle Area](./#223 Rectangle Area.md)的简化问题
 * 困难[#906 Super Palindromes](./#906 Super Palindromes.md)    遍历可能回文的前半部分
+* $\clubs$中等[#957 Prison Cells After N Days](./#957 Prison Cells After N Days.md)    有限状态的周期查找
 * 中等[#1006 Clumsy Factorial](./#1006 Clumsy Factorial.md)    笨阶乘
 * 简单[#1018 Binary Prefix Divisible By 5](./#1018 Binary Prefix Divisible By 5.md)    根据最后一位判断是否被5整除
 * $\bigstar$困难[#1067 Digit Count in Range](./#1067 Digit Count in Range.md)    [#233 Number of Digit One](./#233 Number of Digit One.md)的进阶
