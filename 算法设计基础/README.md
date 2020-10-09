@@ -31,6 +31,7 @@
 * $\bigstar$困难[#630 Course Schedule III](./#630 Course Schedule III.md)    课程时长的贪婪思路
 * 中等[#763 Partition Labels](./#763 Partition Labels.md)    贪婪合并区间
 * $\clubs$中等[#870 Advantage Shuffle](./#870 Advantage Shuffle.md)    排序遍历，贪婪搭配
+* 中等[#881 Boats to Save People](./#881 Boats to Save People.md)    贪婪法选择乘客
 * 中等[#955 Delete Columns to Make Sorted II](./#955 Delete Columns to Make Sorted II.md)    字符串移除字符使之变为字典序
 * 中等[#1029 Two City Scheduling](./#1029 Two City Scheduling.md)    排序后贪婪划分
 * $\clubs$技巧[#1247 Minimum Swaps to Make Strings Equal](./#1247 Minimum Swaps to Make Strings Equal.md)    不匹配对交换情况贪婪选择
@@ -187,6 +188,7 @@
 * 简单[#784 Letter Case Permutation](./#784 Letter Case Permutation.md)    回溯尝试大小写
 * $\clubs$困难[#805 Split Array With Same Average](./#805 Split Array With Same Average.md)    剪枝回溯
 * 中等[#842 Split Array into Fibonacci Sequence](./#842 Split Array into Fibonacci Sequence.md)    回溯剪枝优化
+* 中等[#866 Prime Palindrome](./#866 Prime Palindrome.md)    回溯遍历判断回文素数
 * 困难[#980 Unique Paths III](./#980 Unique Paths III.md)    记忆化回溯，路径二进制压缩
 * 困难[#996 Number of Squareful Arrays](./#996 Number of Squareful Arrays.md)    排序去重组合数
 * $\clubs$中等[#1079 Letter Tile Possibilities](./#1079 Letter Tile Possibilities.md)    回溯中去重技巧

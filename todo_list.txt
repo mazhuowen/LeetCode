@@ -1,14 +1,8 @@
-866. Prime Palindrome
-881. Boats to Save People
-777. Swap Adjacent in LR String
-
 1339. Maximum Product of Splitted Binary Tree
 1429. First Unique Number
 1016. Binary String With Substrings Representing 1 To N
 1167. Minimum Cost to Connect Sticks
-1474. Delete N Nodes After M Nodes of a Linked List
 1364. Number of Trusted Contacts of a Customer
-5464. Water Bottles
 485. Max Consecutive Ones
 876. Middle of the Linked List
 

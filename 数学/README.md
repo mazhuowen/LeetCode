@@ -102,6 +102,7 @@
 * 中等[#1404 Number of Steps to Reduce a Number in Binary Representation to One](./#1404 Number of Steps to Reduce a Number in Binary Representation to One.md)    二进制数操作的规律
 * 中等[#1415 The k-th Lexicographical String of All Happy Strings of Length n](./#1415 The k-th Lexicographical String of All Happy Strings of Length n.md)    排列组合规律
 * 繁杂[#1453 Maximum Number of Darts Inside of a Circular Dartboard](./#1453 Maximum Number of Darts Inside of a Circular Dartboard)    圆心的几何学计算
+* 简单[#1518 Water Bottles](./#1518 Water Bottles.md)    模拟
 * $\bigstar$技巧[#1542 Find Longest Awesome Substring](./#1542 Find Longest Awesome Substring.md)    前缀和思想在奇偶状态中的巧妙应用
 * 简单[#面试题16.01 Swap Numbers LCCI](./#面试题16.01 Swap Numbers LCCI.md)    亦或应用
 * $\clubs$中等[#LCP03 机器人大冒险](./#LCP03 机器人大冒险.md)    利用周期性减少计算

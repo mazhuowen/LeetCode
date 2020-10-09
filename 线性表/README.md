@@ -114,6 +114,7 @@ while(A.next != next) {
 * 繁杂[#432 All O`one Data Structure](./#432 All O`one Data Structure.md)    哈希表记录维护链表有序性
 * 中等[#707 Design Linked List](./#707 Design Linked List.md)    链表类的设计
 * $\clubs$中等[#1171 Remove Zero Sum Consecutive Nodes from Linked List](./#1171 Remove Zero Sum Consecutive Nodes from Linked List.md)    前缀和在链表中的应用
+* 中等[#1474 Delete N Nodes After M Nodes of a Linked List](./#1474 Delete N Nodes After M Nodes of a Linked List.md)    隔$m$个节点删除$n$个点
 
 ### 链表的反转
 

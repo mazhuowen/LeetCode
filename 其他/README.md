@@ -26,6 +26,7 @@
 * $\bigstar$困难[#517 Super Washing Machines](./#517 Super Washing Machines.md)    最少操作次数
 * 简单[#598 Range Addition II](./#598 Range Addition II.md)    多次操作的重叠区域
 * $\clubs$中等[#681 Next Closest Time](./#681 Next Closest Time.md)    最近的时间
+* $\clubs$中等[#777 Swap Adjacent in LR String](./#777 Swap Adjacent in LR String.md)    字符的交换规律
 * $\bigstar$困难[#782 Transform to Chessboard](./#782 Transform to Chessboard.md)    行列交换规律
 * 中等[#794 Valid Tic-Tac-Toe State](./#794 Valid Tic-Tac-Toe State.md)    井字棋是否有效验证
 * $\clubs$困难[#927 Three Equal Parts](./#927 Three Equal Parts.md)    三等份数组
