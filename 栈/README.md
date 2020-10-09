@@ -52,6 +52,7 @@
 * 中等[#227 Basic Calculator II](./#227 Basic Calculator II.md)    没有括号的表达式计算
 * $\bigstar$繁杂[#770 Basic Calculator IV](./#770 Basic Calculator IV.md)    存在变量的计算问题，创建多项式对象
 * 困难[#772 Basic Calculator III](./#772 Basic Calculator III.md)    存在负号的计算问题
+* 困难[#1597 Build Binary Expression Tree From Infix Expression](./#1597 Build Binary Expression Tree From Infix Expression.md)    中缀转后缀生成计算树
 
 ### 字典序
 

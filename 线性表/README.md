@@ -12,6 +12,7 @@
 * 简单[#228 Summary Ranges](./#228 Summary Ranges.md)    连续数值区间判断
 * 简单[#243 Shortest Word Distance](./#243 Shortest Word Distance.md)    数组遍历比较
 * 中等[#245 Shortest Word Distance III](./#245 Shortest Word Distance III.md)    [#243 Shortest Word Distance](./#243 Shortest Word Distance.md)进阶
+* 简单[#485 Max Consecutive Ones](./#485 Max Consecutive Ones.md)    遍历判断前驱
 * 简单[#495 Teemo Attacking](./#495 Teemo Attacking.md)    遍历扩展
 * 中等[#665 Non-decreasing Array](./#665 Non-decreasing Array.md)    遍历判断不符合要求的数据
 * 中等[#900 RLE Iterator](./#900 RLE Iterator.md)    数组计数迭代
@@ -135,6 +136,7 @@ while(A.next != next) {
 * $\clubs$简单[#160 Intersection of Two Linked Lists](./#160 Intersection of Two Linked Lists.md)    双指针判断相交结点
 * 中等[#143 Reorder List](./#143 Reorder List.md)    双指针定位中间结点，反转后半段并合并
 * 简单[#369 Plus One Linked List](./#369 Plus One Linked List.md)    递归或双指针确定子链表进行加一操作
+* 简单[#876 Middle of the Linked List](./#876 Middle of the Linked List.md)    快慢指针查找中点
 
 ### 交叉领域
 

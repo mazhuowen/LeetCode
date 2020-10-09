@@ -22,6 +22,7 @@
 * 繁杂[#722 Remove Comments](./#722 Remove Comments.md)    细节繁多，需理清
 * $\bigstar$困难[#727 Minimum Window Subsequence](./#727 Minimum Window Subsequence.md)    正反向匹配查找最短子序列
 * $\clubs$中等[#833 Find And Replace in String](./#833 Find And Replace in String.md)    先标记后替换
+* 中等[#1016 Binary String With Substrings Representing 1 To N](./#1016 Binary String With Substrings Representing 1 To N.md)    暴力匹配
 * 中等[#面试题01.05 One Away LCCI](./#面试题01.05 One Away LCCI.md)    字符串前后遍历匹配
 * 中等[#面试题16.18 Pattern Matching LCCI](./#面试题16.18 Pattern Matching LCCI.md)    枚举模式串的匹配长度
 

@@ -93,6 +93,7 @@
 * 中等[#1205 Monthly Transactions II](./#1205 Monthly Transactions II.md)    UNION ALL和DATE_FORMAT函数
 * 中等[#1212 Team Scores in Football Tournament](./#1212 Team Scores in Football Tournament.md)    CASE WHEN语句统计分数
 * 中等[#1285 Find the Start and End Number of Continuous Ranges](./#1285 Find the Start and End Number of Continuous Ranges.md)    SQL变量应用
+* 中等[#1364 Number of Trusted Contacts of a Customer](./#1364 Number of Trusted Contacts of a Customer.md)    LEFT JOIN联表查询
 * 困难[#1369 Get the Second Most Recent Activity](./#1369 Get the Second Most Recent Activity.md)    HAVING条件应用
 * $\clubs$中等[#1454 Active Users](./#1454 Active Users.md)    连续时间复杂查询
 * 中等[#1468 Calculate Salaries](./#1468 Calculate Salaries.md)    统计部门最大薪资并计算税率
