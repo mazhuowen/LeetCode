@@ -72,6 +72,7 @@ return -1;
 * 中等[#1095 Find in Mountain Array](./#1095 Find in Mountain Array.md)    山峰数组二分查找
 * $\clubs$中等[#1198 Find Smallest Common Element in All Rows](./#1198 Find Smallest Common Element in All Rows.md)    二分查找多路遍历
 * 技巧[#1228 Missing Number In Arithmetic Progression](./#1228 Missing Number In Arithmetic Progression.md)    二分查找左右数字
+* 中等[#面试题17.08 Circus Tower LCCI](./#面试题17.08 Circus Tower LCCI.md)    [#300 Longest Increasing Subsequence](./#300 Longest Increasing Subsequence.md)的应用
 * 中等[#LCP08 剧情触发时间](./#LCP08 剧情触发时间.md)    二分查找有序数组
 * 中等[#LCP12 小张刷题计划](./#LCP12 小张刷题计划.md)    [#410 Split Array Largest Sum](./#410 Split Array Largest Sum.md)的变形
 
