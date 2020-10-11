@@ -205,9 +205,10 @@
 * 中等[#1593 Split a String Into the Max Number of Unique Substrings](./#1593 Split a String Into the Max Number of Unique Substrings.md)    回溯试探
 * 中等[#1594 Maximum Non Negative Product in a Matrix](./#1594 Maximum Non Negative Product in a Matrix.md)    记忆化回溯
 * 困难[#1601 Maximum Number of Achievable Transfer Requests](./#1601 Maximum Number of Achievable Transfer Requests.md)    回溯中巧妙避免重复尝试
+* 中等[#面试题08.02 Robot in a Grid LCCI](./#面试题08.02 Robot in a Grid LCCI.md)    回溯剪枝优化
+* 困难[#面试题17.25 Word Rectangle LCCI](./#面试题17.25 Word Rectangle LCCI.md)    字典树加速回溯
 * $\clubs$繁杂[#LCP13 寻宝](./#LCP13 寻宝.md)    结合图距离的路径压缩动态规划
 * $\bigstar$困难[#LCP20 快速公交](./#LCP20 快速公交.md)    [#1553 Minimum Number of Days to Eat N Oranges](./#1553 Minimum Number of Days to Eat N Oranges.md)的进阶
-* 中等[#面试题08.02 Robot in a Grid LCCI](./#面试题08.02 Robot in a Grid LCCI.md)    回溯剪枝优化
 
 ## 随机算法
 

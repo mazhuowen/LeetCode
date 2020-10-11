@@ -113,6 +113,7 @@
 
 
 * 困难[#1597 Build Binary Expression Tree From Infix Expression](../栈/#1597 Build Binary Expression Tree From Infix Expression.md)    中缀转后缀生成计算树
+* 简单[#1612 Check If Two Expression Trees are Equivalent](./#1612 Check If Two Expression Trees are Equivalent.md)    表达树的计算
 
 ### 霍夫曼树
 

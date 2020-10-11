@@ -64,7 +64,7 @@
 * 简单[#223 Rectangle Area](./#223 Rectangle Area.md)    矩形相交条件
 * $\bigstar$困难[#233 Number of Digit One](./#233 Number of Digit One.md)    数字中1的数目
 * $\clubs$中等[#240 Search a 2D Matrix II](./#240 Search a 2D Matrix II.md)    有序二维矩阵的遍历查找
-* 中等[#260 Single Number III](./#260 Single Number III.md)    [#136 Single Number](../散列表/#136 Single Number.md)的进阶，存在两个单独数
+* $\clubs$中等[#260 Single Number III](./#260 Single Number III.md)    [#136 Single Number](../散列表/#136 Single Number.md)的进阶，存在两个单独数
 * 简单[#268 Missing Number](./#268 Missing Number.md)    异或的性质
 * 简单[#292 Nim Game](./#292 Nim Game.md)    `Nim`游戏
 * 简单[#326 Power of Three](./#326 Power of Three.md)    判断是否是$3$的幂次方
@@ -107,6 +107,7 @@
 * $\bigstar$技巧[#1542 Find Longest Awesome Substring](./#1542 Find Longest Awesome Substring.md)    前缀和思想在奇偶状态中的巧妙应用
 * 简单[#面试题16.01 Swap Numbers LCCI](./#面试题16.01 Swap Numbers LCCI.md)    亦或应用
 * 中等[#面试题16.08 English Int LCCI](./#面试题16.08 English Int LCCI.md)    每隔三位转化数字
+* 中等[#面试题17.19 Missing Two LCCI](./#面试题17.19 Missing Two LCCI.md)    [#260 Single Number III](./#260 Single Number III.md)的变形
 * $\clubs$中等[#LCP03 机器人大冒险](./#LCP03 机器人大冒险.md)    利用周期性减少计算
 * 简单[#LCP06 拿硬币](./#LCP06 拿硬币.md)    最少拿取次数
 * 简单[#LCP11 期望个数统计](./#LCP11 期望个数统计.md)    概率期望计算
