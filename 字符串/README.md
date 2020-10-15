@@ -400,6 +400,8 @@ class ACNode {
 * 中等[#443 String Compression](./#443 String Compression.md)    压缩字符串
 * $\clubs$技巧[#466 Count The Repetitions](./#466 Count The Repetitions.md)    循环节规律，周期化字符串
 * 繁杂[#468 Validate IP Address](./#468 Validate IP Address.md)    繁琐规律验证
+* 简单[#521 Longest Uncommon Subsequence I](./#521 Longest Uncommon Subsequence I.md)    最长特殊子序列
+* 中等[#522 Longest Uncommon Subsequence II](./#522 Longest Uncommon Subsequence II.md)    逐个循环判断
 * 中等[#557 Reverse Words in a String III](./#557 Reverse Words in a String III.md)    翻转句子中的单词
 * 中等[#567 Permutation in String](./#567 Permutation in String.md)    [#438 Find All Anagrams in a String](./#438 Find All Anagrams in a String.md)的简化
 * 简单[#680 Valid Palindrome II](./#680 Valid Palindrome II.md)    双指针遍历

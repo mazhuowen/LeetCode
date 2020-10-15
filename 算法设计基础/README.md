@@ -85,6 +85,7 @@
 * 中等[#309 Best Time to Buy and Sell Stock with Cooldown](./#309 Best Time to Buy and Sell Stock with Cooldown.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)无限制交易且存在冷冻期
 * $\bigstar$困难[#312 Burst Balloons](./#312 Burst Balloons.md)    逆向思维动态规划
 * 中等[#343 Integer Break](./#343 Integer Break.md)    动态规划（非最优）
+* 中等[#375 Guess Number Higher or Lower II](./#375 Guess Number Higher or Lower II.md)    区间动态规划
 * $\bigstar$中等[#376 Wiggle Subsequence](./#376 Wiggle Subsequence.md)    巧妙地规律总结
 * $\clubs$困难[#403 Frog Jump](./#403 Frog Jump.md)    非数组动态规划
 * 中等[#413 Arithmetic Slices](./#413 Arithmetic Slices.md)    等差序列子数组计数
@@ -182,6 +183,7 @@
 * 中等[#464 Can I Win](./#464 Can I Win.md)    状态压缩记忆化回溯
 * 困难[#465 Optimal Account Balancing](./#465 Optimal Account Balancing.md)    NP难问题，回溯暴力尝试
 * $\clubs$困难[#488 Zuma Game](./#488 Zuma Game.md)    NP难问题，暴力回溯
+* 困难[#514 Freedom Trail](./#514 Freedom Trail.md)    记忆化回溯
 * $\bigstar$困难[#546 Remove Boxes](./#546 Remove Boxes.md)    存储计算结果的回溯
 * 中等[#638 Shopping Offers](./#638 Shopping Offers.md)    背包问题回溯
 * $\clubs$困难[#679 24 Game](./#679 24 Game.md)    表达式的配列组合特征
