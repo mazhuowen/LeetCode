@@ -95,6 +95,7 @@ for (int i = 0; i < N; i++) {
 * 中等[#695 Max Area of Island](./#695 Max Area of Island.md)    矩形的深度优先搜索
 * $\clubs$困难[#711 Number of Distinct Islands II](./#711 Number of Distinct Islands II.md)    [#694 Number of Distinct Islands](./#694 Number of Distinct Islands.md)的进阶
 * 简单[#733 Flood Fill](./#733 Flood Fill.md)    深度优先搜索渲染像素
+* 困难[#749 Contain Virus](./#749 Contain Virus.md)    深度优先搜索统计模拟病毒传播
 * $\clubs$中等[#752 Open the Lock](./#752 Open the Lock.md)    双向广度优先遍历
 * $\clubs$困难[#773 Sliding Puzzle](./#773 Sliding Puzzle.md)    滑板游戏抽象为广度优先搜索遍历
 * $\bigstar$困难[#847 Shortest Path Visiting All Nodes](./#847 Shortest Path Visiting All Nodes.md)    无向连通图遍历所有顶点的最短路径
@@ -140,6 +141,7 @@ for (int i = 0; i < N; i++) {
 
 * $\bigstar$困难[#1192 Critical Connections in a Network](./#1192 Critical Connections in a Network.md)    `Tarjan`算法在无向图桥中的应用
 * 中等[#1361 Validate Binary Tree Nodes](./#1361 Validate Binary Tree Nodes.md)    图的特例树的图像特征
+* 中等[#1615 Maximal Network Rank](./#1615 Maximal Network Rank.md)    网络秩的求解
 
 ## 有向无环图拓扑排序
 

@@ -254,6 +254,7 @@ class TrieNode {
 * 中等[#676 Implement Magic Dictionary](./#676 Implement Magic Dictionary.md)    字典树检索遍历
 * $\bigstar$中等[#745 Prefix and Suffix Search](./#745 Prefix and Suffix Search.md)    将后缀和单词组合为新的字符串
 * 中等[#758 Bold Words in String](./#758 Bold Words in String.md)    与[#616 Add Bold Tag in String](./#616 Add Bold Tag in String.md)完全一致
+* 中等[#820 Short Encoding of Words](./#820 Short Encoding of Words.md)    后缀字典树
 
 ### AC自动机（Aho-Corasick）
 
@@ -411,3 +412,4 @@ class ACNode {
 * 中等[#1324 Print Words Vertically](./#1324 Print Words Vertically.md)    按列输出字符串
 * $\clubs$中等[#1371 Find the Longest Substring Containing Vowels in Even Counts](./#1371 Find the Longest Substring Containing Vowels in Even Counts.md)    借鉴前缀思路和和状态压缩
 * 简单[#1592 Rearrange Spaces Between Words](./#1592 Rearrange Spaces Between Words.md)    字符串拼接
+* 中等[#1616 Split Two Strings to Make Palindrome](./#1616 Split Two Strings to Make Palindrome.md)    中心扩展检测回文
