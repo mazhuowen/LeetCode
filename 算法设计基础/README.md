@@ -115,6 +115,7 @@
 * 中等[#935 Knight Dialer](./#935 Knight Dialer.md)    有限状态机
 * $\clubs$困难[#943 Find the Shortest Superstring](./#943 Find the Shortest Superstring.md)    路径压缩
 * $\clubs$困难[#956 Tallest Billboard](./#956 Tallest Billboard.md)    动态规划数组表示支架差距
+* 中等[#983 Minimum Cost For Tickets](./#983 Minimum Cost For Tickets.md)    简单动态规划
 * $\bigstar$困难[#1000 Minimum Cost to Merge Stones](./#1000 Minimum Cost to Merge Stones.md)    区间动态规划
 * $\clubs$中等[#1027 Longest Arithmetic Subsequence](./#1027 Longest Arithmetic Subsequence.md)    最大等差子序列
 * 中等[#1035 Uncrossed Lines](./#1035 Uncrossed Lines.md)    最长公共子序列的应用

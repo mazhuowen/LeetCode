@@ -31,6 +31,7 @@
 * 简单[#867 Transpose Matrix](./#867 Transpose Matrix.md)    矩阵转置
 * $\bigstar$困难[#878 Nth Magical Number](./#878 Nth Magical Number.md)    数学规律与二分查找结合
 * $\bigstar$困难[#972 Equal Rational Numbers](./#972 Equal Rational Numbers.md)    有理数的分数形式表达
+* $\clubs$中等[#1015 Smallest Integer Divisible by K](./#1015 Smallest Integer Divisible by K.md)    数字乘积组合的余数规律
 * $\bigstar$中等[#1071 Greatest Common Divisor of Strings](./#1071 Greatest Common Divisor of Strings.md)    字符串最大公因子
 * $\clubs$中等[#1131 Maximum of Absolute Value Expression](./#1131 Maximum of Absolute Value Expression.md)    绝对值拆解
 * $\clubs$中等[#1201 Ugly Number III](./#1201 Ugly Number III.md)    [#878 Nth Magical Number](./#878 Nth Magical Number.md) 的延续，周期化并二分查找

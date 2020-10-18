@@ -16,6 +16,7 @@
 * 简单[#495 Teemo Attacking](./#495 Teemo Attacking.md)    遍历扩展
 * 中等[#665 Non-decreasing Array](./#665 Non-decreasing Array.md)    遍历判断不符合要求的数据
 * 中等[#900 RLE Iterator](./#900 RLE Iterator.md)    数组计数迭代
+* 简单[#1002 Find Common Characters](./#1002 Find Common Characters.md)    遍历计数
 * $\clubs$中等[#1094 Car Pooling](./#1094 Car Pooling.md)    转化为上下车人数变化数组并遍历
 * 简单[#1576 Replace All 's to Avoid Consecutive Repeating Characters](./#1576 Replace All 's to Avoid Consecutive Repeating Characters.md)    遍历判断
 * 简单[#1572 Matrix Diagonal Sum](./#1572 Matrix Diagonal Sum.md)    二维数组遍历
@@ -32,6 +33,7 @@
 * 简单[#121 Best Time to Buy and Sell Stock](./#121 Best Time to Buy and Sell Stock.md)    遍历记录区间最大值最小值
 * 中等[#360 Sort Transformed Array](./#360 Sort Transformed Array.md)    先计算再双指针遍历
 * $\bigstar$中等[#457 Circular Array Loop](./#457 Circular Array Loop.md)    快慢指针检测环
+* 中等[#838 Push Dominoes](./#838 Push Dominoes.md)    双指针标记左右指令
 * 简单[#849 Maximize Distance to Closest Person](./#849 Maximize Distance to Closest Person.md)    双指针记录非空位置
 * 中等[#986 Interval List Intersections](./#986 Interval List Intersections.md)    双指针遍历两个数组
 * 简单[#1056 Confusing Number](./#1056 Confusing Number.md)    双指针遍历字符串两端
