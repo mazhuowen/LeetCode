@@ -52,6 +52,7 @@
 * 中等[#939 Minimum Area Rectangle](./#939 Minimum Area Rectangle.md)    拟对角线遍历验证
 * 中等[#1014 Best Sightseeing Pair](./#1014 Best Sightseeing Pair.md)    分解公式遍历
 * $\bigstar$技巧[#1177 Can Make Palindrome from Substring](./#1177 Can Make Palindrome from Substring.md)    二进制统计奇偶并利用前缀和的思路求区间统计值
+* 中等[#1191 K-Concatenation Maximum Sum](./#1191 K-Concatenation Maximum Sum.md)    遍历计算前缀和求最大子数组和
 * 中等[#1292 Maximum Side Length of a Square with Sum Less than or Equal to Threshold](./#1292 Maximum Side Length of a Square with Sum Less than or Equal to Threshold.md)    矩形前缀和优化
 * 中等[#1352 Product of the Last K Numbers](./#1352 Product of the Last K Numbers.md)    前缀积变型
 * 简单[#1375 Bulb Switcher III](./#1375 Bulb Switcher III.md)    编号求和比较
