@@ -1,13 +1,14 @@
 [toc]
 
-Given a list of words and two words word1 and word2, return the shortest distance between these two words in the list.
+Given a list of words and two words `word1` and `word2`, return the shortest distance between these two words in the list.
 
-word1 and word2 may be the same and they represent two individual words in the list.
+`word1` and `word2` may be the same and they represent two individual words in the list.
 
 
 
 **Note:**
-You may assume *word1* and *word2* are both in the list.
+
+* You may assume `word1` and `word2` are both in the list.
 
 
 
@@ -25,7 +26,7 @@ class Solution {
 
 ## 程序设计
 
-* 使用两个变量保存字符串索引。需要注意两个字符串相等的情况，此时两个变量不能同时更新，否则距离总是0；当距离相等时，变量1保存变量2的值，变量2更新即可。
+* 使用两个变量保存字符串索引。需要注意两个字符串相等的情况，此时两个变量不能同时更新，否则距离总是$0$；当距离相等时，变量1保存变量2的值，变量2更新即可。
 
 ```java
 class Solution {

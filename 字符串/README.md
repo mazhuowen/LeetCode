@@ -34,6 +34,7 @@
 
 * $\bigstar$困难[#1044 Longest Duplicate Substring](./#1044 Longest Duplicate Substring.md)    二分查找与`RK`编码结合
 * 中等[#1062 Longest Repeating Substring](./#1062 Longest Repeating Substring.md)    二分查找与`RK`编码结合
+* 中等[#1316 Distinct Echo Substrings](./#1316 Distinct Echo Substrings.md)    `RK`编码类似前缀和计算子字符串哈希值
 
 ### BM（Boyer-Moore）算法
 
