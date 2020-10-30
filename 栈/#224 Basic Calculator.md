@@ -6,7 +6,7 @@ The expression string may contain open `(` and closing parentheses `)`, the plus
 
 
 
-Note:
+**Note**:
 
 * You may assume that the given expression is always valid.
 * Do not use the eval built-in library function.
@@ -195,7 +195,6 @@ class Solution {
 ```java
 class Solution {
     public int calculate(String s) {
-
         Stack<Integer> stack = new Stack<Integer>();
         int operand = 0;
         int result = 0; // For the on-going result

@@ -4,7 +4,7 @@ Given an $m \times n$ matrix of positive integers representing the height of eac
 
 
 
-Note:
+**Note**:
 
 Both m and n are less than 110. The height of each unit cell is greater than 0 and is less than 20,000.
 
@@ -12,7 +12,7 @@ Both m and n are less than 110. The height of each unit cell is greater than 0 a
 
 Example:
 
-Given the following 3x6 height map:
+Given the following $3 \times 6$ height map:
 `[
   [1,4,3,1,3,2],
   [3,2,1,3,2,4],
@@ -51,7 +51,7 @@ class Solution {
         boolean[][] visit = new boolean[m][n];
         // 最小堆记录围墙
         PriorityQueue<int[]> queue = new PriorityQueue<>((a, b) -> a[2] - b[2]);
-        // 入队外围
+        // 入队围墙
         // 最外两行
         for(int col = 0; col < n; col++) {
             queue.add(new int[]{0, col, heightMap[0][col]});

@@ -8,7 +8,7 @@ You always start to construct the left child node of the parent first if it exis
 
 
 
-Note:
+**Note**:
 
 * There will only be `(`, `)`, `-` and`0~9`in the input string.
 * An empty tree is represented by `""` instead of `"()"`.

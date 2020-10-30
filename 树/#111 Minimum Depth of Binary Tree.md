@@ -4,7 +4,7 @@ Given a binary tree, find its minimum depth.
 
 The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
 
-Note: A leaf is a node with no children.
+**Note**: A leaf is a node with no children.
 
 
 
@@ -142,6 +142,6 @@ class Solution {
 
 &emsp;最坏的情况是完全二叉树，需要遍历到最后一层，时间复杂度为$O(N)$，空间复杂度为$O(N)$。
 
-执行用时 :1 ms, 在所有 Java 提交中击败了35.59%的用户
+执行用时 :1ms，在所有java提交中击败了35.59%的用户
 
-内存消耗 :39.5 MB, 在所有 Java 提交中击败了5.07%的用户
+内存消耗 :39.5MB，在所有java提交中击败了5.07%的用户

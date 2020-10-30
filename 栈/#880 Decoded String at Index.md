@@ -9,7 +9,7 @@ Now for some encoded string `S`, and an index `K`, find and return the `K`-th le
 
 
 
-Note:
+**Note**:
 
 * $2 \le \text{S.length} \le 100$
 * `S` will only contain lowercase letters and digits `2` through `9`.
@@ -157,8 +157,8 @@ class Solution {
                 size /= c - '0';
             }
         }
-        // 一般不会走这里
-        return "";
+        // 不会走这里
+        throw null;
     }
 }
 ```

@@ -4,7 +4,7 @@ Given an array of n positive integers and a positive integer s, find the minimal
 
 
 
-Follow up:
+**Follow up**:
 If you have figured out the $O(n)$ solution, try coding another solution of which the time complexity is $O(n\log_2n)$. 
 
 

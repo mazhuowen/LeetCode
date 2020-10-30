@@ -10,7 +10,7 @@ Return the list of finite intervals representing **common, positive-length free 
 
 
 
-Constraints:
+**Constraints**:
 
 * $1 \le \text{schedule.length , schedule[i].length} \le 50$
 * $0 \le \text{schedule[i].start} < \text{schedule[i].end} \le 10^8$

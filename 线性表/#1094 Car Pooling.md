@@ -20,7 +20,7 @@ Return `true` if and only if it is possible to pick up and drop off all passenge
 
 ## 题目解读
 
-&emsp;给定旅客站下车位置和人数，求车辆是否可将沿路所有旅客载到下车位置。
+&emsp;给定旅客下车位置和人数，求车辆是否可将沿路所有旅客载到下车位置。
 
 ```java
 class Solution {

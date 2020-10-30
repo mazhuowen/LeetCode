@@ -28,7 +28,7 @@ class Solution {
 
 ## 程序设计
 
-* 可参考[#26 Remove Duplicates from Sorted Array](./#26 Remove Duplicates from Sorted Array.md)的思路，`start`表示下一个数值需要插入的位置，`end`则遍历数组，当不是`val`时，拼接到`start`位置，`strat`加一；当`end`是`val`值时，继续遍历。
+* 可参考[#26 Remove Duplicates from Sorted Array](./#26 Remove Duplicates from Sorted Array.md)的思路，`start`表示下一个数值需要插入的位置，`end`则遍历数组，当不是`val`时，拼接到`start`位置，`strat`加$1$；当`end`是`val`值时，继续遍历。
 
 ```java
 class Solution {

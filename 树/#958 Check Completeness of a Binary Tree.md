@@ -15,7 +15,7 @@ In a complete binary tree every level, except possibly the last, is completely f
 
 ## 题目解读
 
-&emsp;判断一棵二叉树是不是完全二叉树。
+&emsp;判断一棵二叉树是不是满二叉树。
 
 ```java
 /**
@@ -36,7 +36,7 @@ class Solution {
 
 ## 程序设计
 
-* 参考官方解题，对树结构进行编号，最后编号的最大值就是结点数目，如果不满足条件就不是完全二叉树。
+* 参考官方解题，对树结构进行编号，最后编号的最大值就是结点数目，如果不满足条件就不是满二叉树。
 
 ```java
 class Solution {

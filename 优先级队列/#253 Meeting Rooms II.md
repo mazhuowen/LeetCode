@@ -2,7 +2,9 @@
 
 Given an array of meeting time intervals consisting of start and end times `[[s1,e1],[s2,e2],...]` $(s_i < e_i)$, find the minimum number of conference rooms required.
 
-NOTE: input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.
+
+
+**Note**: input types have been changed on April 15, 2019. Please reset to default code definition to get new method signature.
 
 
 

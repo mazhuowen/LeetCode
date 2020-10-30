@@ -112,6 +112,7 @@ for (int i = 0; i < N; i++) {
 * $\clubs$困难[#1293 Shortest Path in a Grid with Obstacles Elimination](./#1293 Shortest Path in a Grid with Obstacles Elimination)    拓展的广度优先搜索
 * 简单[#1306 Jump Game III](./#1306 Jump Game III.md)    图的遍历在数组的应用
 * 困难[#1345 Jump Game IV](./#1345 Jump Game IV.md)    广度优先搜索前数据处理
+* $\clubs$中等[#1625 Lexicographically Smallest String After Applying Operations](./#1625 Lexicographically Smallest String After Applying Operations.md)    广度优先搜索枚举所有结果
 
 ## 无向图的连通性
 

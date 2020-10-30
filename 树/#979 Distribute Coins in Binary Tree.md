@@ -17,7 +17,7 @@ Return the number of moves required to make every node have exactly one coin.
 
 ## 题目解读
 
-&emsp;将二叉树结点中的硬币均匀移动到哥各个顶点，返回移动次数。
+&emsp;将二叉树结点中的硬币均匀移动到各个顶点，返回移动次数。
 
 ```java
 /**
@@ -47,7 +47,7 @@ class Solution {
         return res[1];
     }
 
-    // 返回数组表示多余的硬币即移动到当前根节点所需的步数
+    // 返回数组表示多余的硬币及移动到当前根节点所需的步数
     private int[] moveCoins(TreeNode root) {
         if (root == null) return new int[]{0, 0};
 

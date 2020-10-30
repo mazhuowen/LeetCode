@@ -9,7 +9,9 @@ The Linked List is represented in the input/output as a list of `n` nodes. Each 
 * `val`: an integer representing `Node.val`
 * `random_index`: the index of the node (range from `0` to `n-1`) where random pointer points to, or `null` if it does not point to any node.
 
-Constraints:
+
+
+**Constraints**:
 
 * -10000 <= `Node.val` <= 10000
 * `Node.random` is null or pointing to a node in the linked list.

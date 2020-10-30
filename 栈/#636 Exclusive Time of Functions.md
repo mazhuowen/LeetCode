@@ -14,7 +14,7 @@ Return the exclusive time of each function, sorted by their function id.
 
 
 
-Note:
+**Note**:
 
 * $1 \le n \le 100$
 * Two functions won't start or end at the same time.

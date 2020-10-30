@@ -1,10 +1,18 @@
 [toc]
 
+Given a binary tree, you need to find the length of Longest Consecutive Path in Binary Tree.
+
+Especially, this path can be either increasing or decreasing. For example, [1,2,3,4] and [4,3,2,1] are both considered valid, but the path [1,2,4,3] is not valid. On the other hand, the path can be in the child-Parent-child order, where not necessarily be parent-child order.
+
+
+
+**Note:** All the values of tree nodes are in the range of [-1e7, 1e7].
+
 
 
 ## 题目解读
 
-
+&emsp;查找二叉树中最长的连续序列长度，序列只能是递增或递减。
 
 ```java
 /**
@@ -25,7 +33,7 @@ class Solution {
 
 ## 程序设计
 
-
+* 返回当前节点起始的递增、递减最长序列，需注意父节点与两个子结点构成递增、递减序列的情况。
 
 ```java
 class Solution {

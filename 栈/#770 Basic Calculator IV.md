@@ -18,7 +18,7 @@ The format of the output is as follows:
 
 
 
-Note:
+**Note**:
 
 * expression will have length in range `[1, 250]`.
 * evalvars, evalints will have equal lengths in range `[0, 100]`.

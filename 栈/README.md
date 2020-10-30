@@ -44,7 +44,7 @@
 
 * $\bigstar$困难[#42 Trapping Rain Water](./#42 Trapping Rain Water.md)    积水计算，涉及双指针、栈
 * $\bigstar$困难[#84 Largest Rectangle in Histogram](./#84 Largest Rectangle in Histogram.md)    直方图最大矩形，分治法、栈实现的分治思想
-* $\bigstar$困难[#85 Maximal Rectangle](./#85 Maximal Rectangle.md)    转化为#84
+* $\bigstar$困难[#85 Maximal Rectangle](./#85 Maximal Rectangle.md)    转化为[#84 Largest Rectangle in Histogram](./#84 Largest Rectangle in Histogram.md) 
 
 ### 计算器
 

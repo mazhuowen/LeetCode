@@ -8,7 +8,7 @@ If the list is empty (i.e., given node is null), you should create a new single 
 
 
 
-Constraints:
+**Constraints**:
 
 * $0 \le \text{Number of Nodes} \le 5 * 10^4$
 * $-10^6 \le \text{Node.val} \le 10^6$

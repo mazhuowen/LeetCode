@@ -6,7 +6,7 @@ Given a string which contains only lowercase letters, remove duplicate letters s
 
 ## 题目解读
 
-&emsp;要求去除给定小写字母序列中的重复元素，且最后的顺序是在不打乱原来的相对位置的情况下的字典序。
+&emsp;要求去除给定小写字母序列中的重复元素，且最后的顺序是在不打乱原来的相对位置的情况下的最小字典序。
 
 ```java
 class Solution {

@@ -414,3 +414,4 @@ class ACNode {
 * $\clubs$中等[#1371 Find the Longest Substring Containing Vowels in Even Counts](./#1371 Find the Longest Substring Containing Vowels in Even Counts.md)    借鉴前缀思路和和状态压缩
 * 简单[#1592 Rearrange Spaces Between Words](./#1592 Rearrange Spaces Between Words.md)    字符串拼接
 * 中等[#1616 Split Two Strings to Make Palindrome](./#1616 Split Two Strings to Make Palindrome.md)    中心扩展检测回文
+* 简单[#1624 Largest Substring Between Two Equal Characters](./#1624 Largest Substring Between Two Equal Characters.md)    记录字符出现位置

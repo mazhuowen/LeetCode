@@ -1,13 +1,15 @@
 [toc]
 
-Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
+Given a linked list, reverse the nodes of a linked list $k$ at a time and return its modified list.
 
-k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes in the end should remain as it is.
+$k$ is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of $k$ then left-out nodes in the end should remain as it is.
 
-Note:
 
-Only constant extra memory is allowed.
-You may not alter the values in the list's nodes, only nodes itself may be changed.
+
+**Note**:
+
+* Only constant extra memory is allowed.
+* You may not alter the values in the list's nodes, only nodes itself may be changed.
 
 
 
@@ -117,7 +119,7 @@ class Solution {
         ListNode end = start;
         // 遍历
         for(counter = k - 1; counter > 0 && end != null; counter--) {
-                end = end.next;
+            end = end.next;
         }
         // 不满足k个元素，直接返回
         if(counter != 0 || end == null){

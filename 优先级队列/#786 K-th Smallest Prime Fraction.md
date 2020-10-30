@@ -4,7 +4,9 @@ A sorted list `A` contains 1, plus some number of primes.  Then, for every $p < 
 
 What is the `K`-th smallest fraction considered?  Return your answer as an array of ints, where `answer[0] = p` and `answer[1] = q`.
 
-Note:
+
+
+**Note**:
 
 * A will have length between `2` and `2000`.
 * Each `A[i]` will be between `1` and `30000`.
@@ -68,8 +70,8 @@ class Solution {
 ```java
 class Solution {
     public int[] kthSmallestPrimeFraction(int[] A, int K) {
-        //采用积来比较
-        PriorityQueue<int[]> pq = new PriorityQueue<int[]>((a,b)->A[a[0]] * A[b[1]] - A[a[1]] * A[b[0]]);
+        // 采用积来比较
+        PriorityQueue<int[]> pq = new PriorityQueue<int[]>((a,b) -> A[a[0]] * A[b[1]] - A[a[1]] * A[b[0]]);
         // 加入最小数和所有的分母组合
         for (int i = 1; i < A.length; ++i) pq.add(new int[]{0, i});
         while (--K > 0) {
@@ -106,6 +108,7 @@ class Solution {
         double low = 0D, high = 1D;
         while(high - low > 1e-9) {
             double mid = low + (high - low) / 2;
+            // 统计小于等于mid的分数数目及最接近mid的分数
             int[] count = counter(A, mid);
             // 当前分数mid大于超过K个数组中可组合的分数
             if(count[0] >= K) {

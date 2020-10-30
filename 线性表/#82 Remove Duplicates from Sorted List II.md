@@ -64,7 +64,7 @@ class Solution {
         if(firstNode.next != secondNode){
             firstNode.next = null;
         }
-         return dummy.next;
+        return dummy.next;
     }
 }
 ```

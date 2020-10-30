@@ -2,13 +2,15 @@
 
 Given a sequence of n integers $a_1, a_2, \dots, a_n$, a 132 pattern is a subsequence $a_i, a_j, a_k$ such that $i < j < k$ and $a_i < a_k < a_j$. Design an algorithm that takes a list of n numbers as input and checks whether there is a 132 pattern in the list.
 
-Note: n will be less than 15,000.
+
+
+**Note**: $n$ will be less than $15000$.
 
 
 
 ## 题目解读
 
-&emsp;根据给定的链表，判断是否有132模式，即三个值，第一个最小，第三个最大，这三个值不必相邻，但相对位置必须遵守链表顺序。
+&emsp;根据给定的链表，判断是否有132模式，即三个值，第一个最小，第二个最大，这三个值不必相邻，但相对位置必须遵守链表顺序。
 
 ```java
 class Solution {

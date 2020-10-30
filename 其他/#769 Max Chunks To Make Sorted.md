@@ -6,7 +6,7 @@ What is the most number of chunks we could have made?
 
 
 
-Note:
+**Note**:
 
 * `arr` will have length in range `[1, 10]`.
 * `arr[i]` will be a permutation of `[0, 1, ..., arr.length - 1]`.

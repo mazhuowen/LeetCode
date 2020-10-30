@@ -6,7 +6,7 @@ Here, nearest to a leaf means the least number of edges travelled on the binary 
 
 
 
-Note:
+**Note**:
 
 * `root` represents a binary tree with at least 1 node and at most `1000` nodes.
 * Every node has a unique `node.val` in range `[1, 1000]`.

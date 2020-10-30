@@ -6,7 +6,9 @@ However, there is a non-negative cooling interval **n** that means between two *
 
 You need to return the **least** number of intervals the CPU will take to finish all the given tasks.
 
-Note:
+
+
+**Note**:
 
 * The number of tasks is in the range [1, 10000].
 * The integer n is in the range [0, 100].
@@ -33,10 +35,9 @@ class Solution {
 class Solution {
     public int leastInterval(char[] tasks, int n) {
         int[] counter = new int[26];
-        for(char c : tasks) {
-            counter[c - 'A'] +=1;
-        }
+        for(char c : tasks) counter[c - 'A']++;
         Arrays.sort(counter);
+        
         int time = 0;
         // counter[25]为最大任务数
         while(counter[25] > 0) {
@@ -73,15 +74,13 @@ class Solution {
         // 26个字母统计技术
         int[] counter = new int[26];
         for(char c : tasks) {
-            counter[c - 'A'] += 1;
+            counter[c - 'A']++;
         }
         // 最大堆
         PriorityQueue<Integer> queue = new PriorityQueue<>(26, (a, b) -> b - a);
         // 入队
         for(int count : counter) {
-            if(count > 0) {
-                queue.add(count);
-            }
+            if(count > 0) queue.add(count);
         }
         int time = 0;
         while(!queue.isEmpty()) {
@@ -149,10 +148,9 @@ class Solution {
 class Solution {
     public int leastInterval(char[] tasks, int n) {
         int[] counter = new int[26];
-        for(char c : tasks) {
-            counter[c - 'A'] += 1;
-        }
+        for(char c : tasks) counter[c - 'A']++;
         Arrays.sort(counter);
+        
         // p - 1及待分配的空闲位置数
         int p1 = counter[25] - 1, free = p1 * n;
         int a = 1;

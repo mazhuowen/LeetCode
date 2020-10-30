@@ -9,7 +9,7 @@ Return the number of good subarrays of `A`.
 
 
 
-Note:
+**Note**:
 
 * $1 \le \text{A.length} \le 20000$
 * $1 \le \text{A[i]} \le \text{A.length}$

@@ -13,7 +13,7 @@ In a complete binary tree every level, except possibly the last, is completely f
 
 ## 题目解读
 
-&emsp;给定完全二叉树，计算树的结点。
+&emsp;给定满二叉树，计算树的结点。
 
 ```java
 /**

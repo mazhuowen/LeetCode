@@ -8,7 +8,7 @@ Return the maximum number of events you can attend.
 
 
 
-Constraints:
+**Constraints**:
 
 * $1 \le \text{events.length} \le 10^5$
 * $\text{events[i].length} == 2$

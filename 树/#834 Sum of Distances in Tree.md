@@ -75,7 +75,7 @@ class Solution {
     public int[] sumOfDistancesInTree(int N, int[][] edges) {
         // 记录距离和
         int[] res = new int[N];
-        // 记录子树的结点树
+        // 记录子树的结点数
         int[] count = new int[N];
         Arrays.fill(count, 1);
         // 记录子节点（由于是无向图，记录邻接结点）
@@ -99,10 +99,8 @@ class Solution {
     private void countSubTree(int cur, int parent, List<Set<Integer>> graph, int[] res, int[] count) {
         Set<Integer> children = graph.get(cur);
         for(int child : children) {
-            // 邻接结点包含父节点，排除
-            if(child == parent) {
-                continue;
-            }
+            // 排除邻接结点包含父节点，避免回去
+            if(child == parent) continue;
             countSubTree(child, cur, graph, res, count);
             // 更新以父节点为根的子树结点值
             count[cur] += count[child];
@@ -111,17 +109,16 @@ class Solution {
             res[cur] += res[child] + count[child];
         }
     }
+    
     // 更新子树与子树之间的路径和
     private void countTreeByTree(int cur, int parent, List<Set<Integer>> graph, int[] res, int[] count) {
         Set<Integer> children = graph.get(cur);
         // 更新子树间的路径和
         for(int child : children) {
-            if(child == parent) {
-                continue;
-            }
-            // 除了child的根节点和其它子树组成的子树的路径和为：
+            if(child == parent) continue;
+            // 除去child的根节点和其它子树组成的子树的路径和为：
             int sum = res[cur] - res[child] - count[child];
-            // 除了child的叶节点为：
+            // 除去child的节点数
             int num = res.length - count[child];
             // 更新child到其它子树的路径和
             res[child] += sum + num;

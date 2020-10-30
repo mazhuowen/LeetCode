@@ -8,7 +8,7 @@ Calculate the minimum number of cameras needed to monitor all nodes of the tree.
 
 
 
-Note:
+**Note**:
 
 * The number of nodes in the given tree will be in the range `[1, 1000]`.
 * **Every** node has value 0.

@@ -6,7 +6,7 @@ After doing so, return the head of the final linked list.  You may return any su
 
  
 
-Constraints:
+**Constraints**:
 
 * The given linked list will contain between `1` and `1000` nodes.
 * Each node in the linked list has $-1000 \le \text{node.val} \le 1000$.
@@ -15,7 +15,7 @@ Constraints:
 
 ## 题目解读
 
-&emsp;给定链表，删除和是0的子序列。
+&emsp;给定链表，删除和是$0$的子序列。
 
 ```java
 /**
@@ -74,7 +74,7 @@ class Solution {
 
 ## 官方解题
 
-&emsp;暂无，密切关注。社区采用了一种很巧妙的方法，采用字典记录前缀和和结点，如果存在序列为0，则必然存在前缀和为同一个的不同结点，这样字典保存的是最后一个前缀和为`val`的结点。继续遍历，计算前缀和`val`，若存在0序列，则字典中保存最后一个结点，进行删除操作即可，如果不存在0序列，则字典中保存的是其本身。
+&emsp;暂无，密切关注。社区采用了一种很巧妙的方法，采用字典记录前缀和和结点，如果存在序列为$0$，则必然存在前缀和为同一个的不同结点，这样字典保存的是最后一个前缀和为`val`的结点。继续遍历，计算前缀和`val`，若存在$0$序列，则字典中保存最后一个结点，进行删除操作即可，如果不存在0序列，则字典中保存的是其本身。
 
 ```java
 class Solution {

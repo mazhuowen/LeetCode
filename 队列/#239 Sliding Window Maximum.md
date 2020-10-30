@@ -4,12 +4,12 @@ Given an array `nums`, there is a sliding window of size $k$ which is moving fro
 
 
 
-Follow up:
+**Follow up**:
 Could you solve it in linear time?
 
 
 
-Constraints:
+**Constraints**:
 
 * $1 \le \text{nums.length} \le 10^5$
 * $-10^4 \le \text{nums[i]} \le 10^4$

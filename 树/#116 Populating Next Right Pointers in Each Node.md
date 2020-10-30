@@ -22,7 +22,7 @@ Initially, all next pointers are set to NULL.
 * You may only use constant extra space.
 * Recursive approach is fine, you may assume implicit stack space does not count as extra space for this problem.
 
-Constraints:
+**Constraints**:
 
 * The number of nodes in the given tree is less than 4096.
 * $-1000 \le \text{node.val} \le 1000$
@@ -31,7 +31,7 @@ Constraints:
 
 ## 题目解读
 
-&emsp;给定满二叉树，将同层结点`next`指针指向右侧相邻的结点，每一层最后一个结点`next`指向`null`。
+&emsp;给定完全二叉树，将同层结点`next`指针指向右侧相邻的结点，每一层最后一个结点`next`指向`null`。
 
 ```java
 /*

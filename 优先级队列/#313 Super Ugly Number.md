@@ -4,9 +4,11 @@ Write a program to find the `n-th` super ugly number.
 
 Super ugly numbers are positive numbers whose all prime factors are in the given prime list primes of size k.
 
-Note:
 
-* 1 is a super ugly number for any given `primes`.
+
+**Note**:
+
+* $1$ is a super ugly number for any given `primes`.
 * The given numbers in `primes` are in ascending order.
 * $0 < k \le 100$, $0 < n \le 106$, $0 < \text{primes[i]} < 1000$.
 * The `n-th` super ugly number is guaranteed to fit in a 32-bit signed integer.
@@ -15,7 +17,7 @@ Note:
 
 ## 题目解读
 
-&emsp;题目定义超级丑数为所有质因数为给定列表的中的数。其中1是任何给定的质因数的超级丑数。
+&emsp;题目定义超级丑数为所有质因数为给定列表的中的数，其中$1$是任何给定的质因数的超级丑数。求第$n$个丑数。
 
 ```java
 class Solution {

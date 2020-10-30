@@ -11,7 +11,7 @@ Return the least amount of money needed to form a paid group satisfying the abov
 
 
 
-Note:
+**Note**:
 
 * $1 \le K \le N \le 10000$, where $N = \text{quality.length} = \text{wage.length}$
 * $1 \le \text{quality[i]} \le 10000$

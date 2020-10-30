@@ -23,9 +23,9 @@ Initially, all next pointers are set to `NULL`.
 * You may only use constant extra space.
 * Recursive approach is fine, you may assume implicit stack space does not count as extra space for this problem.
 
-Constraints:
+**Constraints**:
 
-* The number of nodes in the given tree is less than 6000.
+* The number of nodes in the given tree is less than $6000$.
 * $-100 \le \text{node.val} \le 100$
 
 
@@ -66,7 +66,7 @@ class Solution {
 
 ## 程序设计
 
-* 空间复杂度不是常量级别的方法，层次遍历可以很好的解决。这儿只考虑常量界别的方法。参考[#116 Populating Next Right Pointers in Each Node](./#116 Populating Next Right Pointers in Each Node.md)中的思路，在本题中情况更加复杂，首先满二叉树发起操作的结点都在左支路，也就是最左边的边界，对于一般的二叉树需要确定最左边的边界；最左边的边界应该是：当存在左子节点则遍历左子节点，不存在则遍历右子节点，若右子节点不存在，则遍历`next`结点然后重复上述操作，这样就确定了每一层第一个发起`next`操作的结点。
+* 空间复杂度不是常量级别的方法，层次遍历可以很好的解决。这儿只考虑常量界别的方法。参考[#116 Populating Next Right Pointers in Each Node](./#116 Populating Next Right Pointers in Each Node.md)中的思路，在本题中情况更加复杂，首先完全二叉树发起操作的结点都在左支路，也就是最左边的边界，对于一般的二叉树需要确定最左边的边界；最左边的边界应该是：当存在左子节点则遍历左子节点，不存在则遍历右子节点，若右子节点不存在，则遍历`next`结点然后重复上述操作，这样就确定了每一层第一个发起`next`操作的结点。
 * 对于`next`操作，如果存在两个子节点，则左子节点指向右子节点，右子节点指向后继结点；若存在一个子节点，则这个子节点指向后继结点；若不存在子节点则遍历后继结点。
 * 后继结点的父结点就是当前父结点向后遍历遇到的第一个有子节点的结点，然后根据子节点数目判断左儿子还是右儿子是后继结点。得到后继结点后连接即可。
 
@@ -132,7 +132,7 @@ class Solution {
 
 ## 官方解题
 
-&emsp;暂无，密切关注。社区有参考层次遍历但不实用队列，非常巧妙的使用哑结点串联同层结点的解法，空间复杂度是$O(1)$。
+&emsp;暂无，密切关注。社区有参考层次遍历但不使用队列，非常巧妙的使用哑结点串联同层结点的解法，空间复杂度是$O(1)$。
 
 ```java
 class Solution {

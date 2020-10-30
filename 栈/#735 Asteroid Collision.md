@@ -8,10 +8,10 @@ Find out the state of the asteroids after all collisions. If two asteroids meet,
 
 
 
-Note:
+**Note**:
 
-The length of asteroids will be at most 10000.
-Each asteroid will be a non-zero integer in the range [-1000, 1000].
+* The length of asteroids will be at most $10000$.
+* Each asteroid will be a non-zero integer in the range $[-1000, 1000]$.
 
 
 

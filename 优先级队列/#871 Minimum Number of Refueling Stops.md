@@ -14,7 +14,7 @@ Note that if the car reaches a gas station with 0 fuel left, the car can still r
 
 
 
-Note:
+**Note**:
 
 * $1 \le \text{target, startFuel, stations[i][1]} \le 10^9$
 * $0 \le \text{stations.length} \le 500$

@@ -8,7 +8,7 @@ What is the most number of chunks we could have made?
 
 
 
-Note:
+**Note**:
 
 * `arr` will have length in range `[1, 2000]`.
 * `arr[i]` will be an integer in range `[0, 10**8]`.

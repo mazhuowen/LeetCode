@@ -4,7 +4,7 @@ Given a non-negative integer num represented as a string, remove k digits from t
 
 
 
-Note:
+**Note**:
 
 * The length of num is less than 10002 and will be ≥ k.
 * The given num does not contain any leading zero.
@@ -26,7 +26,7 @@ class Solution {
 ## 程序设计
 
 * 分析`1432219`，$k=3$，也就是说删除三个数字后剩余四个数字，剩余的数字相对位置不变，高位仍然是高位。假设开始第一次选择，由于需要剩余4位，目前在选择第一位，可知第一位的选择区间`219`之前的子字符串，这样最极端的情况，高位最小值在区间末尾，也能保证最后的结果是4位；公式化的，对于要删除$k$的字符串，第一次选择区间为`0～k`的闭区间，即在前$k + 1$个元素中选择，由于数组索引缘故就是`0~k`；在得到第一个区间最小值后，这个值就是最优的高位，假设索引为`minIndex`，在`0~k`的闭区间内，则第二次选择的区间为`minIndex+1~k+1`；依次类推，直到选择完需要的位数。
-* 特别需要注意高位全部是0的情况，需要拼接字符串时特殊处理。
+* 特别需要注意高位全部是$0$的情况，需要拼接字符串时特殊处理。
 
 ```java
 class Solution {
