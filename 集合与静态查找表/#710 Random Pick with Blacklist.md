@@ -4,7 +4,9 @@ Given a blacklist `B` containing unique integers from `[0, N)`, write a function
 
 Optimize it such that it minimizes the call to system’s `Math.random()`.
 
-Note:
+
+
+**Note**:
 
 * $1 \le N \le 1000000000$
 * $0 \le \text{B.length} < \text{min}(100000, N)$

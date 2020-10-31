@@ -2,7 +2,9 @@
 
 Given an integer array, return the k-th smallest **distance** among all the pairs. The distance of a pair `(A, B)` is defined as the absolute difference between A and B.
 
-Note:
+
+
+**Note**:
 
 * $2 \le \text{len(nums)} \le 10000$.
 * $0 \le \text{nums[i]} < 1000000$.
@@ -12,9 +14,15 @@ Note:
 
 ## 题目解读
 
+&emsp;给定整数数组，返回第$k$小的距离。
 
+```java
+class Solution {
+    public int smallestDistancePair(int[] nums, int k) {
 
-
+    }
+}
+```
 
 ## 程序设计
 

@@ -4,7 +4,9 @@ Two elements of a binary search tree (BST) are swapped by mistake.
 
 Recover the tree without changing its structure.
 
-Follow up:
+
+
+**Follow up**:
 
 * A solution using $O(n)$ space is pretty straight forward.
 * Could you devise a constant space solution?
@@ -53,16 +55,13 @@ class Solution {
 
     private void inorderTraverse(TreeNode root) {
         // 递归终止条件
-        if(root == null) {
-            return;
-        }
+        if(root == null) return;
+        
         inorderTraverse(root.left);
         // pre记录上一个结点
         if(pre != null && root.val < pre.val) {
             // 第一个违法结点为pre
-             if(first == null) {
-                first = pre;
-            }
+            if(first == null) first = pre;
             // root可能是第二个违法结点，这一步很关键
             // 这种情况一般是两个违规结点相邻的情况，如果不是这种情况后续会更新覆盖
             second = root;
@@ -171,7 +170,7 @@ class Solution {
             second = root;
           }
           pre = root;
-		      // 中序结点已访问完，断开前驱指向中序结点链接
+		  // 中序结点已访问完，断开前驱指向中序结点链接
           predecessor.right = null;
           // 进入右子树遍历
           root = root.right;
@@ -186,7 +185,7 @@ class Solution {
         }
         // 迭代
         pre = root;
-		    // 遍历右子树。
+		// 遍历右子树。
         root = root.right;
       }
     }

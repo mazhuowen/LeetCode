@@ -4,7 +4,7 @@ Given a sorted array, two integers `k` and `x`, find the `k` closest elements to
 
 
 
-Note:
+**Note**:
 
 * The value `k` is positive and will always be smaller than the length of the sorted array.
 * Length of the given array is positive and will not exceed $10^4$

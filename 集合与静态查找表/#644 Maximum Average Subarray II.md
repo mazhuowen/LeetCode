@@ -2,7 +2,9 @@
 
 Given an array consisting of n integers, find the contiguous subarray whose length is **greater than or equal** to k that has the maximum average value. And you need to output the maximum average value.
 
-Note:
+
+
+**Note**:
 
 * $1 \le k \le n \le 10000$.
 * Elements of the given array will be in range `[-10,000, 10,000]`.
@@ -12,7 +14,7 @@ Note:
 
 ## 题目解读
 
-&emsp;给定数组，找到子序列长度大于等于$k$且平均值最大，输出这个平均值。
+&emsp;给定数组，找到子数组长度大于等于$k$且平均值最大，输出这个平均值。
 
 ```java
 class Solution {

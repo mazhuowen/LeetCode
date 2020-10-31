@@ -6,7 +6,9 @@ Design an algorithm to serialize and deserialize a **binary search tree**. There
 
 **The encoded string should be as compact as possible**.
 
-Note: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should be stateless.
+
+
+**Note**: Do not use class member/global/static variables to store states. Your serialize and deserialize algorithms should be stateless.
 
 
 

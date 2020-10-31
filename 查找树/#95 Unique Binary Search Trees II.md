@@ -1,6 +1,6 @@
 [toc]
 
-Given an integer n, generate all structurally unique BST's (binary search trees) that store values 1 ... n.
+Given an integer n, generate all structurally unique BST's (binary search trees) that store values $1 \dots n$.
 
 
 
@@ -32,9 +32,7 @@ class Solution {
 ```java
 class Solution {
     public List<TreeNode> generateTrees(int n) {
-        if(n <= 0) {
-            return new LinkedList<>();
-        }
+        if(n <= 0) return new LinkedList<>();
         return generateTrees(1, n);
     }
 

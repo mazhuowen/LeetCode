@@ -4,7 +4,7 @@ Given an unsorted array of integers, find the length of longest increasing subse
 
 
 
-Note:
+**Note**:
 
 * There may be more than one LIS combination, it is only necessary for you to return the length.
 * Your algorithm should run in $O(n^2)$ complexity.

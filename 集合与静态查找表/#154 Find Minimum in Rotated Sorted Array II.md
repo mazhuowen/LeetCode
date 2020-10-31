@@ -10,7 +10,7 @@ The array may contain duplicates.
 
 
 
-Note:
+**Note**:
 
 * This is a follow up problem to Find Minimum in Rotated Sorted Array.
 * Would allow duplicates affect the run-time complexity? How and why?
@@ -88,11 +88,11 @@ class Solution {
         while(left <= right) {
             int mid = (left + right) / 2;
             // mid与right是顺序的，较小值在前面（需注意mid可能是第一个值，所以right = mid，不需要减一，避免走出范围）
-            if(nums[mid] < nums[right]) {
+            if (nums[mid] < nums[right]) {
                 right = mid;
             } 
             // 临界点在mid和right区间
-            else if(nums[mid] > nums[right]) {
+            else if (nums[mid] > nums[right]) {
                 left = mid + 1;
             } 
             // mid所在值等于right所在值

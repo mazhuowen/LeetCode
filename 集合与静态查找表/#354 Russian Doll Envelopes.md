@@ -4,7 +4,9 @@ You have a number of envelopes with widths and heights given as a pair of intege
 
 What is the maximum number of envelopes can you Russian doll? (put one inside other)
 
-Note:
+
+
+**Note**:
 Rotation is not allowed.
 
 

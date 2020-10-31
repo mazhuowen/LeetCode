@@ -10,7 +10,7 @@ If the target is not found in the array, return `[-1, -1]`.
 
 ## 题目解读
 
-&emsp;给定已排序的数组，数值有重复，在排序数组中查找元素的第一个和最后一个位置。没有则返回-1。
+&emsp;给定已排序的数组，数值有重复，在排序数组中查找元素的第一个和最后一个位置。没有则返回$-1$。
 
 ```java
 class Solution {

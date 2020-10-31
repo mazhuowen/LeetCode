@@ -8,6 +8,8 @@ The array may contain multiple peaks, in that case return the index to any one o
 
 You may imagine that `nums[-1] = nums[n] = -∞`.
 
+
+
 **Note:**
 
 Your solution should be in logarithmic complexity.
@@ -34,15 +36,15 @@ class Solution {
 class Solution {
     public int findPeakElement(int[] nums) {
         int left = 0, right = nums.length - 1;
-        while(left <= right) {
+        while (left <= right) {
             int mid = (left + right) / 2;
             // 比左边小，不符合要求，左边可能是更好的选择
-            if(mid - 1 >= 0 && nums[mid] < nums[mid - 1]) {
+            if (mid - 1 >= 0 && nums[mid] < nums[mid - 1]) {
                 right = mid - 1;
                 continue;
             }
             // 比右边小，不符合要求，右边可能是更好的选择
-            if(mid + 1 < nums.length && nums[mid] < nums[mid + 1]) {
+            if (mid + 1 < nums.length && nums[mid] < nums[mid + 1]) {
                 left = mid + 1;
                 continue;
             }
@@ -78,7 +80,7 @@ public class Solution {
 }
 ```
 
-该算法时间复杂度不满足要求，官方提供了二分查找的思路更具有几何意义，由于数组两端结尾设定为最小值，而数组中相邻数字不相等，必然存在峰值。这样`left`、`right`必然包含至少一个山峰，二分查找的问题就转化为`left`、`right`从左右爬坡，最后在山顶相遇的问题：
+该算法时间复杂度不满足要求，官方提供了二分查找的思路更具有几何意义，由于数组两端$-1$、$n$设定为最小值，而数组中相邻数字不相等，必然存在峰值。这样`left`、`right`必然包含至少一个山峰，二分查找的问题就转化为`left`、`right`从左右爬坡，最后在山顶相遇的问题：
 
 ```java
 class Solution {
@@ -87,7 +89,7 @@ class Solution {
         while(left < right) {
             int mid = (left + right) / 2;
             // mid左边存在山峰(可能是mid，故right=mid)
-            if(nums[mid] > nums[mid + 1]) {
+            if (nums[mid] > nums[mid + 1]) {
                 right = mid;
             } 
             // mid右边存在山峰(肯定不是mid，故left=mid+1)

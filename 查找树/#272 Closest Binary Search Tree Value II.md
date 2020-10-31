@@ -2,13 +2,15 @@
 
 Given a non-empty binary search tree and a target value, find $k$ values in the BST that are closest to the target.
 
-Note:
+
+
+**Note**:
 
 * Given target value is a floating point.
 * You may assume $k$ is always valid, that is: $k ≤ \text{total nodes}$.
 * You are guaranteed to have only one unique set of $k$ values in the BST that are closest to the target.
 
-Follow up:
+**Follow up**:
 Assume that the BST is balanced, could you solve it in less than $O(n)$ runtime (where n = total nodes)?
 
 
@@ -94,19 +96,15 @@ class Solution {
     }
 	// 中序遍历递归
     private void closestKValues(TreeNode root, double target, int k, List<Integer> queue) {
-        if(root == null) {
-            return;
-        }
+        if (root == null) return;
+        
         closestKValues(root.left, target, k, queue);
         // 窗口已满，且当前值不符合要求，根据后面的有序性后面结点也不符合要求，直接返回
-        if(queue.size() == k && Math.abs((long)root.val - target) >= Math.abs((long)queue.get(0) - target)) {
-            return;
-        }
+        if(queue.size() == k && Math.abs((long)root.val - target) >= Math.abs((long)queue.get(0) - target)) return;
+        
         // 入队尾，如果满了，则出队队头
         queue.add(root.val);
-        if(queue.size() > k) {
-            queue.remove(0);
-        }
+        if(queue.size() > k) queue.remove(0);
         closestKValues(root.right, target, k, queue);
     }
 }

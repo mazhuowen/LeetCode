@@ -6,7 +6,7 @@ The successor of a node p is the node with the smallest key greater than p.val.
 
 
 
-Note:
+**Note**:
 
 * If the given node has no in-order successor in the tree, return `null`.
 * It's guaranteed that the values of the tree are unique.

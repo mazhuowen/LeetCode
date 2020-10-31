@@ -2,6 +2,8 @@
 
 Given a sorted array A of **unique** numbers, find the `K-th` missing number starting from the leftmost number of the array.
 
+
+
 **Note:**
 
 * $1 \le \text{A.length} \le 50000$

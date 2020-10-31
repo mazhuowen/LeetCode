@@ -8,7 +8,7 @@ You are given a target value to search. If found in the array return its index, 
 
 You may assume no duplicate exists in the array.
 
-Your algorithm's runtime complexity must be in the order of O(log n).
+Your algorithm's runtime complexity must be in the order of $O(\log_2 n)$.
 
 
 
@@ -61,43 +61,31 @@ class Solution {
         int start = 0;
         int end  = nums.length - 1;
         // 有序数组，未发生截断拼接
-        if(nums[start] < nums[end]) {
-            return -1;
-        }
+        if(nums[start] < nums[end]) return -1;
+        
         // 二分查找边界
         while(start <= end) {
             int boundary = (start + end) / 2;
             // 找到划分点
-            if(nums[boundary] > nums[boundary + 1]) {
-                return boundary;
-            }
+            if(nums[boundary] > nums[boundary + 1]) return boundary;
             // 在前半段，向后迭代
-            if(nums[boundary] >= nums[start]) {
-                start = boundary + 1;
-            } 
+            if(nums[boundary] >= nums[start]) start = boundary + 1;
             // 在后半段，向前迭代
-            else {
-                end = boundary - 1;
-            }
+            else end = boundary - 1;
         }
         // 不会走到这儿
-        return 0;
+        throw null;
     }
 
     private int binarySearch(int[] nums, int target, int start, int end) {
         // 未找到
-        if(start > end) {
-            return -1;
-        }
+        if(start > end) return -1;
+        
         int mid = (start + end) / 2;
-        if(nums[mid] == target) {
-            return mid;
-        }
-        if(target > nums[mid]) {
-            return binarySearch(nums, target, mid + 1, end);
-        } else {
-            return binarySearch(nums, target, start, mid - 1);
-        }
+        if(nums[mid] == target) return mid;
+        
+        if(target > nums[mid]) return binarySearch(nums, target, mid + 1, end);
+        else return binarySearch(nums, target, start, mid - 1);
     }
 }
 ```
@@ -124,32 +112,21 @@ class Solution {
         while(left <= right) {
             int mid =  (left + right) / 2;
             // 找到返回
-            if(nums[mid] == target){
-                return mid;
-            }
+            if(nums[mid] == target) return mid;
 
             // 左边升序
             if(nums[left] <= nums[mid]) {
                 // 如果target正好在这个区间则查找
-                if(target >= nums[left] && target <= nums[mid]) {
-                    right = mid;
-                }
+                if(target >= nums[left] && target <= nums[mid]) right = mid;
                 // 不在这个区间，向右查找
-                else {
-                    left = mid + 1;
-                }
-
+                else left = mid + 1;
             }
             // 右边升序
             else {
                  // 如果target正好在这个区间则查找
-                if(target > nums[mid] && target <= nums[right]) {
-                    left = mid  + 1;
-                }
+                if(target > nums[mid] && target <= nums[right]) left = mid  + 1;
                 // 不在区间，向右查找
-                else{
-                    right = mid;
-                }
+                else right = mid;
             }
         }
         // 空数组、未找到

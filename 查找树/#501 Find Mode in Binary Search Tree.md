@@ -10,9 +10,9 @@ Assume a BST is defined as follows:
 
 
 
-Note: If a tree has more than one mode, you can return them in any order.
+**Note**: If a tree has more than one mode, you can return them in any order.
 
-Follow up: Could you do that without using any extra space? (Assume that the implicit stack space incurred due to recursion does not count).
+**Follow up**: Could you do that without using any extra space? (Assume that the implicit stack space incurred due to recursion does not count).
 
 
 
@@ -58,9 +58,8 @@ class Solution {
     }
 
     private void inorderCount(TreeNode root, List<Integer> list) {
-        if(root == null) {
-            return;
-        }
+        if(root == null) return;
+        
         inorderCount(root.left, list);
         // 当前结点与前驱值一致
         if(root.val == pre) {

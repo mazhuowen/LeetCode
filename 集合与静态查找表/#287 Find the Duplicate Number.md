@@ -2,7 +2,9 @@
 
 Given an array `nums` containing $n + 1$ integers where each integer is between 1 and $n$ (inclusive), prove that at least one duplicate number must exist. Assume that there is only one duplicate number, find the duplicate one.
 
-Note:
+
+
+**Note**:
 
 * You must not modify the array (assume the array is read only).
 * You must use only constant, $O(1)$ extra space.
@@ -13,7 +15,7 @@ Note:
 
 ## 题目解读
 
-&emsp;给定长度为$n + 1$的数组，里面有至多$n$个数，且只有一个数重复最多$n$次，其它数都是唯一的。需要找到重复的数。题目限定时间复杂度和空间复杂度，且不能改变数组结构。
+&emsp;给定长度为$n + 1$的数组，范围为$1 \sim n$，且只有一个数重复且不止重复一次，其它数都是唯一的。需要找到重复的数。题目限定时间复杂度和空间复杂度，且不能改变数组结构。
 
 ```java
 class Solution {

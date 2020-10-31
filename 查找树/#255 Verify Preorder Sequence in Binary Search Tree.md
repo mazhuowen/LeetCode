@@ -34,9 +34,8 @@ class Solution {
     }
 
     private boolean verifyPreorder(int[] preorder, int start, int end) {
-        if(start > end) {
-            return true;
-        }
+        if(start > end) return true;
+        
         // 头结点
         int root = preorder[start];
         // 左右子树划分位置
@@ -84,9 +83,8 @@ class Solution {
         int head = Integer.MIN_VALUE;
         for(int val : preorder) {
             // 大于头结点值，否则不合法（初始时头结点为最小值，这使得前序遍历的左链路可以进栈）
-            if(val < head) {
-                return false;
-            }
+            if(val < head) return false;
+            
             // 待入栈值比栈顶大，意味着从左子树跨到了右子树，更新head（后续的值都要大于head否则违法）
             while(!stack.isEmpty() && val > stack.peek()) {
                 head = stack.pop();
