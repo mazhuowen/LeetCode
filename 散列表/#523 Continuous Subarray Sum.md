@@ -4,7 +4,7 @@ Given a list of **non-negative** numbers and a target **integer** k, write a fun
 
 
 
-Note:
+**Note**:
 
 * The length of the array won't exceed $10000$.
 * You may assume the sum of all the numbers is in the range of a signed 32-bit integer.
@@ -13,7 +13,7 @@ Note:
 
 ## 题目解读
 
-&emsp;判断数组中长度大于2的子数组之和是否是$k$的倍数。
+&emsp;判断数组中是否存在长度大于$2$的子数组之和是$k$的倍数。
 
 ```java
 class Solution {

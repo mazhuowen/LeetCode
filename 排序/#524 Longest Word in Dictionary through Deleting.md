@@ -4,10 +4,11 @@ Given a string and a string dictionary, find the longest string in the dictionar
 
 
 
-Note:
-All the strings in the input will only contain lower-case letters.
-The size of the dictionary won't exceed 1,000.
-The length of all the strings in the input won't exceed 1,000.
+**Note**:
+
+* All the strings in the input will only contain lower-case letters.
+* The size of the dictionary won't exceed $1000$.
+* The length of all the strings in the input won't exceed $1000$.
 
 
 

@@ -10,7 +10,7 @@ Given a binary array, find the maximum length of a contiguous subarray with equa
 
 ## 题目解读
 
-&emsp;计算子数组中`0`与`1`数目相等的最长长度。
+&emsp;计算最长的`0`与`1`数目相等的子数组长度。
 
 ```java
 class Solution {
@@ -22,7 +22,7 @@ class Solution {
 
 ## 程序设计
 
-* 每次遍历遇到`0`则减一，遇到`1`则加一，每次判断之前是否也存在相等的值，存在说明这之间的序列是平衡的。
+* 每次遍历遇到`0`则减$1$，遇到`1`则加$1$，每次判断之前是否也存在相等的值，存在说明这之间的序列是平衡的。
 
 ```java
 class Solution {

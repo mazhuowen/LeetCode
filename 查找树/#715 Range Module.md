@@ -6,6 +6,8 @@ A Range Module is a module that tracks ranges of numbers. Your task is to design
 * `queryRange(int left, int right)` Returns true if and only if every real number in the interval `[left, right)` is currently being tracked.
 * `removeRange(int left, int right)` Stops tracking every real number currently being tracked in the interval `[left, right)`.
 
+
+
 **Note**:
 
 * A half open interval `[left, right)` denotes all real numbers $\text{left} \le x < \text{right}$.

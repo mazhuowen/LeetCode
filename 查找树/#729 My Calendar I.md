@@ -10,9 +10,9 @@ For each call to the method `MyCalendar.book`, return true if the event can be a
 
 
 
-Note:
+**Note**:
 
-* The number of calls to `MyCalendar.book` per test case will be at most 1000.
+* The number of calls to `MyCalendar.book` per test case will be at most $1000$.
 * In calls to `MyCalendar.book(start, end)`, `start` and `end` are integers in the range $[0, 10^9]$.
 
 

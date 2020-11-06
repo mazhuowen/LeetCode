@@ -24,13 +24,13 @@ class Solution {
 class Solution {
     public List<Integer> countSmaller(int[] nums) {
         List<Integer> res = new LinkedList<>();
-        if(nums == null || nums.length == 0) {
+        if (nums == null || nums.length == 0) {
             return res;
         }
-        for(int i = 0; i < nums.length - 1; i++) {
+        for (int i = 0; i < nums.length - 1; i++) {
             int count = 0;
-            for(int j = i + 1; j < nums.length; j++) {
-                if(nums[j] < nums[i]) {
+            for (int j = i + 1; j < nums.length; j++) {
+                if (nums[j] < nums[i]) {
                     count++;
                 }
             }
@@ -55,7 +55,7 @@ class Solution {
 
     public List<Integer> countSmaller(int[] nums) {
         List<Integer> res = new LinkedList<>();
-        if(nums == null || nums.length == 0) {
+        if (nums == null || nums.length == 0) {
             return res;
         }
         // 记录索引并排序索引（不动数据）
@@ -64,18 +64,18 @@ class Solution {
         counter = new int[nums.length];
         // 临时排序数组
         temp = new int[nums.length];
-        for(int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             idx[i] = i;
         }
         mergeCount(nums, 0, nums.length - 1);
-        for(int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             res.add(counter[i]);
         }
         return res;
     }
 
     private void mergeCount(int[] nums, int start, int end) {
-        if(start >= end) {
+        if (start >= end) {
             return;
         }
         //划分点
@@ -90,9 +90,9 @@ class Solution {
         int i = start, j = mid + 1;
         // 记录当前点大于后半部分点的数目
         int count = 0;
-        while(i <= mid && j <= end) {
+        while (i <= mid && j <= end) {
             // 有序，i加上之前无序的数目即（start～i）大于（mid+1～j）的数目
-            if(nums[idx[i]] <= nums[idx[j]]) {
+            if (nums[idx[i]] <= nums[idx[j]]) {
                 // 更新计数，此处保证了后半部分不再有值小于当前值，避免叠加更新
                 counter[idx[i]] += count;
                 // 放入temp中
@@ -105,17 +105,17 @@ class Solution {
             }
         }
         // 后面的序列已遍历完，前面还没遍历完，即前面的这部分大于后面所有的元素值
-        while(i <= mid) {
+        while (i <= mid) {
             // 此时count肯定等于end-mid
             counter[idx[i]] += count;
             temp[index++] = idx[i++];
         }
         // 前面的已遍历完成，后面的还未完成，加入temp
-        while(j <= end) {
+        while (j <= end) {
             temp[index++] = idx[j++];
         }
         // 复制到idx
-        for(int k = start; k <= end; k++) {
+        for (int k = start; k <= end; k++) {
             idx[k] = temp[k];
         }
     }
@@ -135,7 +135,7 @@ class Solution {
 
     public List<Integer> countSmaller(int[] nums) {
         List<Integer> res = new LinkedList<>();
-        if(nums == null || nums.length == 0) {
+        if (nums == null || nums.length == 0) {
             return res;
         }
         // 记录索引并排序索引（不动数据）
@@ -144,18 +144,18 @@ class Solution {
         counter = new int[nums.length];
         // 临时排序数组
         temp = new int[nums.length];
-        for(int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             idx[i] = i;
         }
         mergeCount(nums, 0, nums.length - 1);
-        for(int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < nums.length; i++) {
             res.add(counter[i]);
         }
         return res;
     }
 
     private void mergeCount(int[] nums, int start, int end) {
-        if(start >= end) {
+        if (start >= end) {
             return;
         }
         //划分点
@@ -164,16 +164,16 @@ class Solution {
         mergeCount(nums, start, mid);
         mergeCount(nums, mid + 1, end);
         // 合并，（如果是有序的则直接返回）
-        if(nums[idx[mid]] <= nums[idx[mid + 1]]) {
+        if (nums[idx[mid]] <= nums[idx[mid + 1]]) {
             return;
         }
         // 记录起始索引
         int index = start;
         // 两个区间已排序，归并，更新前一个区间的数值的右侧较小数
         int i = start, j = mid + 1;
-        while(i <= mid && j <= end) {
+        while (i <= mid && j <= end) {
             // 有序，i加上之前无序的数目即（start～i）大于（mid+1～j）的数目
-            if(nums[idx[i]] <= nums[idx[j]]) {
+            if (nums[idx[i]] <= nums[idx[j]]) {
                 // 更新计数，此处保证了后半部分不再有值小于当前值，避免叠加更新
                 counter[idx[i]] += j - mid - 1;
                 // 放入temp中
@@ -185,17 +185,17 @@ class Solution {
             }
         }
         // 后面的序列已遍历完，前面还没遍历完，即前面的这部分大于后面所有的元素值
-        while(i <= mid) {
+        while (i <= mid) {
             // 此时count肯定等于end-mid
             counter[idx[i]] += end - mid;
             temp[index++] = idx[i++];
         }
         // 前面的已遍历完成，后面的还未完成，加入temp
-        while(j <= end) {
+        while (j <= end) {
             temp[index++] = idx[j++];
         }
         // 复制到idx
-        for(int k = start; k <= end; k++) {
+        for (int k = start; k <= end; k++) {
             idx[k] = temp[k];
         }
     }

@@ -8,7 +8,9 @@ Together, these form two connected groups by similarity: `{"tars", "rats", "arts
 
 We are given a list `A` of strings.  Every string in `A` is an anagram of every other string in `A`.  How many groups are there?
 
-Constraints:
+
+
+**Constraints**:
 
 * $1 \le \text{A.length} \le 2000$
 * $1 \le \text{A[i].length} \le 1000$

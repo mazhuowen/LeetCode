@@ -8,7 +8,9 @@ The resulting graph is given as a 2D-array of `edges`. Each element of `edges` i
 
 Return an edge that can be removed so that the resulting graph is a tree of N nodes. If there are multiple answers, return the answer that occurs last in the given 2D-array. The answer edge `[u, v]` should be in the same format, with `u < v`.
 
-Note:
+
+
+**Note**:
 
 * The size of the input 2D-array will be between `3` and `1000`.
 * Every integer represented in the 2D-array will be between `1` and `N`, where `N` is the size of the input array.
@@ -34,7 +36,7 @@ class Solution {
 ```java
 class Solution {
     public int[] findRedundantConnection(int[][] edges) {
-        if(edges == null || edges.length == 0) {
+        if (edges == null || edges.length == 0) {
             throw new IllegalArgumentException("invalid param");
         }
         int n = edges.length;
@@ -42,7 +44,7 @@ class Solution {
         for (int i = 0; i < n; i++) {
             int[] edge = edges[i];
             // 已经是连通的，若加上这条边形成环路
-            if(disJoint.find(edge[0]) == disJoint.find(edge[1])) {
+            if (disJoint.find(edge[0]) == disJoint.find(edge[1])) {
                 return edge;
             }
             disJoint.union(disJoint.find(edge[0]), disJoint.find(edge[1]));

@@ -79,14 +79,13 @@ class Solution {
         }
 
         int longestStreak = 0;
-
         for (int num : set) {
             // 当前数字是不连续的最小值
-            if (!set.contains(num-1)) {
+            if (!set.contains(num - 1)) {
                 int currentNum = num;
                 int currentStreak = 1;
                 // 以该值为起点遍历大的数
-                while (set.contains(currentNum+1)) {
+                while (set.contains(currentNum + 1)) {
                     currentNum += 1;
                     currentStreak += 1;
                 }

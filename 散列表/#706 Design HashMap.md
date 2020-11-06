@@ -4,13 +4,13 @@ Design a HashMap without using any built-in hash table libraries.
 
 To be specific, your design should include these functions:
 
-* `put(key, value)` : Insert a (key, value) pair into the HashMap. If the value already exists in the HashMap, update the value.
+* `put(key, value)` : Insert a `(key, value)` pair into the HashMap. If the value already exists in the HashMap, update the value.
 * `get(key)`: Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key.
 * `remove(key)` : Remove the mapping for the value key if this map contains the mapping for the key.
 
 
 
-Note:
+**Note**:
 
 * All keys and values will be in the range of `[0, 1000000]`.
 * The number of operations will be in the range of `[1, 10000]`.
@@ -136,7 +136,7 @@ class MyHashMap {
 }
 ```
 
-* 事实上考虑复杂了，不考虑重散列，初始化时指定尺寸为2069
+* 事实上考虑复杂了，不考虑重散列，初始化时指定尺寸为2069：
 
 ```java
 class MyHashMap {

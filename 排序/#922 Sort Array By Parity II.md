@@ -6,6 +6,8 @@ Sort the array so that whenever `A[i]` is odd, `i` is odd; and whenever `A[i]` i
 
 You may return any answer array that satisfies this condition.
 
+
+
 **Note:**
 
 * $2 \le \text{A.length} \le 20000$

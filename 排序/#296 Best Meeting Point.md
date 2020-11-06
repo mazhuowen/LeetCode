@@ -1,6 +1,6 @@
 [toc]
 
-A group of two or more people wants to meet and minimize the total travel distance. You are given a 2D grid of values 0 or 1, where each 1 marks the home of someone in the group. The distance is calculated using `Manhattan Distance`, where distance$(p1, p2) = \vert p2.x - p1.x\vert + \vert p2.y - p1.y\vert$.
+A group of two or more people wants to meet and minimize the total travel distance. You are given a 2D grid of values 0 or 1, where each 1 marks the home of someone in the group. The distance is calculated using `Manhattan Distance`, where distance$(p_1, p_2) = \vert p_2.x - p_1.x\vert + \vert p_2.y - p_1.y\vert$.
 
 
 
@@ -23,13 +23,13 @@ class Solution {
 ```java
 class Solution {
     public int minTotalDistance(int[][] grid) {
-        if(grid == null || grid.length == 0) {
+        if (grid == null || grid.length == 0) {
             return 0;
         }
         int res = Integer.MAX_VALUE;
         // 遍历每个可能的会面点，然后计算距离
-        for(int row = 0; row < grid.length; row++) {
-            for(int col = 0; col < grid[0].length; col++) {
+        for (int row = 0; row < grid.length; row++) {
+            for (int col = 0; col < grid[0].length; col++) {
                 int dis = search(grid, row, col);
                 res = Math.min(res, dis);
             }
@@ -43,17 +43,17 @@ class Solution {
         Queue<int[]> queue = new LinkedList<>();
         // 初始化当前点到会面点距离为0
         queue.add(new int[]{row, col, 0});
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             int[] cur = queue.poll();
             int r  =cur[0];
             int c = cur[1];
             int d = cur[2];
-            if(r < 0 || r >= grid.length || c < 0 || c >= grid[0].length || visit[r][c]) {
+            if (r < 0 || r >= grid.length || c < 0 || c >= grid[0].length || visit[r][c]) {
                 continue;
             }
             visit[r][c] = true;
             // 当前点是人，更新距离
-            if(grid[r][c] == 1) {
+            if (grid[r][c] == 1) {
                 dis += d;
             }
             // 由于是曼哈顿距离，前后左右距离加一
@@ -72,13 +72,13 @@ class Solution {
 ```java
 class Solution {
     public int minTotalDistance(int[][] grid) {
-        if(grid == null || grid.length == 0) {
+        if (grid == null || grid.length == 0) {
             return 0;
         }
         int res = Integer.MAX_VALUE;
         // 遍历每个可能的会面点，然后计算距离
-        for(int row = 0; row < grid.length; row++) {
-            for(int col = 0; col < grid[0].length; col++) {
+        for (int row = 0; row < grid.length; row++) {
+            for (int col = 0; col < grid[0].length; col++) {
                 int dis = calcuDistance(grid, row, col);
                 res = Math.min(res, dis);
             }
@@ -88,9 +88,9 @@ class Solution {
 	// 直接遍历计算
     private int calcuDistance(int[][] grid, int row, int col) {
         int dis = 0;
-        for(int i = 0; i < grid.length; i++) {
-            for(int j = 0; j < grid[0].length; j++) {
-                if(grid[i][j] == 1) {
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 1) {
                     dis += Math.abs(i - row) + Math.abs(j - col);
                 }
             }
@@ -106,21 +106,21 @@ class Solution {
 ```java
 class Solution {
     public int minTotalDistance(int[][] grid) {
-        if(grid == null || grid.length == 0) {
+        if (grid == null || grid.length == 0) {
             return 0;
         }
         List<Integer> rows = new ArrayList<>();
         List<Integer> cols = new ArrayList<>();
         // 统计行列坐标
-        for(int row = 0; row < grid.length; row++) {
-            for(int col = 0; col < grid[0].length; col++) {
-                if(grid[row][col] == 1) {
+        for (int row = 0; row < grid.length; row++) {
+            for (int col = 0; col < grid[0].length; col++) {
+                if (grid[row][col] == 1) {
                     rows.add(row);
                     cols.add(col);
                 }
             }
         }
-        if(rows.size() == 0) {
+        if (rows.size() == 0) {
             return 0;
         }
         // 行坐标是有序的，无需排序
@@ -163,13 +163,13 @@ class Solution {
 ```java
 class Solution {
     public int minTotalDistance(int[][] grid) {
-        if(grid == null || grid.length == 0) {
+        if (grid == null || grid.length == 0) {
             return 0;
         }
         // 分别按行、列计算
         List<Integer> rows = collectRows(grid);
         List<Integer> cols = collectCols(grid);
-        if(rows.size() == 0) {
+        if (rows.size() == 0) {
             return 0;
         }
         int row = rows.get(rows.size() / 2);
@@ -221,7 +221,7 @@ class Solution {
         }
         List<Integer> rows = collectRows(grid);
         List<Integer> cols = collectCols(grid);
-        if(rows.size() == 0) {
+        if (rows.size() == 0) {
             return 0;
         }
         return minDistance1D(rows) + minDistance1D(cols);
@@ -231,7 +231,7 @@ class Solution {
         int distance = 0;
         int start = 0, end = points.size() - 1;
         // 使用双指针计算
-        while(start < end) {
+        while (start < end) {
             distance += points.get(end--) - points.get(start++);
         }
         return distance;

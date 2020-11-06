@@ -2,7 +2,9 @@
 
 Design a data structure that supports all following operations in average $O(1)$ time.
 
-Note: Duplicate elements are allowed.
+
+
+**Note**: Duplicate elements are allowed.
 
 * `insert(val)`: Inserts an item val to the collection.
 * `remove(val)`: Removes an item val from the collection if present.

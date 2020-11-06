@@ -8,7 +8,7 @@ Return the number of regions.
 
 
 
-Note:
+**Note**:
 
 * $1 \le \text{grid.length} == \text{grid[0].length} \le 30$
 * `grid[i][j]` is either `'/'`, `'\'`, or `' '`.

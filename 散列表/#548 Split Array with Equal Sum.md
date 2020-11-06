@@ -7,7 +7,9 @@ Given an array with n integers, you need to find if there are triplets (i, j, k)
 
 where we define that subarray $(L, R)$ represents a slice of the original array starting from the element indexed L to the element indexed R.
 
-Note:
+
+
+**Note**:
 
 * $1 \le n \le 2000$.
 * Elements in the given array will be in range `[-1,000,000, 1,000,000]`.

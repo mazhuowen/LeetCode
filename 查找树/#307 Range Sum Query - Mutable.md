@@ -4,7 +4,9 @@ Given an integer array `nums`, find the sum of the elements between indices $i$ 
 
 The update$(i, val)$ function modifies `nums` by updating the element at index $i$ to $val$.
 
-Note:
+
+
+**Note**:
 
 * The array is only modifiable by the `update` function.
 * You may assume the number of calls to `update` and `sumRange` function is distributed evenly.
@@ -217,25 +219,22 @@ class NumArray {
     
     public void update(int i, int val) {
         // 索引不合法
-        if(i >= index || i < 0) {
-            return;
-        }
+        if(i >= index || i < 0) return;
+        
         // 差值
         int diff = val - tree[i + index];
         // 更新叶节点
         tree[i + index] = val;
         // 更新父节点
-        int p = (i + index) / 2;
-        for(; p > 0; p /= 2) {
+        for(int p = (i + index) / 2; p > 0; p /= 2) {
             tree[p] += diff;
         }
     }
     
     public int sumRange(int i, int j) {
         // 索引不合法
-        if(i >= index || j < 0) {
-            return 0;
-        }
+        if(i >= index || j < 0) return 0;
+        
         i += index;
         j += index;
         int sum = 0;

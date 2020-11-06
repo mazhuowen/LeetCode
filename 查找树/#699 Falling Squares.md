@@ -13,7 +13,7 @@ Return a list `ans` of heights. Each height `ans[i]` represents the current high
 
 
 
-Note:
+**Note**:
 
 * $1 \le \text{positions.length} \le 1000$.
 * $1 \le \text{positions[i][0]} \le 10^8$.
@@ -41,9 +41,8 @@ class Solution {
 class Solution {
     public List<Integer> fallingSquares(int[][] positions) {
         List<Integer> res = new LinkedList<>();
-        if(positions.length == 0) {
-            return res;
-        }
+        if(positions.length == 0) return res;
+        
         // 计算每一轮正方形堆叠后的最大高度
         int[] height = new int[positions.length];
         for(int i = 0; i < positions.length; i++) {
@@ -57,15 +56,9 @@ class Solution {
                 int left1 = positions[j][0];
                 int size1 = positions[j][1];
                 int right1 = left1 + size1;
-                // 和后续轮次的正方形没有交叉，不做处理
-                if(right1 <= left || left1 >= right) {
-
-                } 
                 // 有交叉，将当前高度和之前更新的高度作对比，选择高的那个
                 // 相当于在j轮正方形下有前面几轮的不相交的正方形，此时叠加只能叠加在最高的正方形上，此处相当于更新基础高度，在j轮直接叠加j轮正方形高度即可
-                else {
-                    height[j] = Math.max(height[j], height[i]);
-                }
+                if(right1 > left && left1 < right) height[j] = Math.max(height[j], height[i]);
             }
         }
         // height维护了每一轮正方形叠加后的高度，最后需统计每一轮的最高高度
@@ -85,9 +78,8 @@ class Solution {
 class Solution {
     public List<Integer> fallingSquares(int[][] positions) {
         List<Integer> res = new LinkedList<>();
-        if(positions.length == 0) {
-            return res;
-        }
+        if(positions.length == 0) return res;
+        
         int[] height = new int[2 * positions.length];
         // 记录正方形边界和数组索引的关系
         Map<Integer, Integer> index = new HashMap<>();
@@ -183,9 +175,8 @@ class Tree {
 
     // 更新区间值
     public void update(int left, int right, int val) {
-        if(left < 0 || right >= idx || left > right) {
-            return;
-        }
+        if(left < 0 || right >= idx || left > right) return;
+        
         left += idx;
         right += idx;
         int tempL = left, tempR = right;
@@ -193,25 +184,22 @@ class Tree {
             if(left % 2 == 1) {
                 tree[left] = Math.max(tree[left], val);
                 // 表示更新的是父节点，子节点未更新，则保存到lazy数组
-                if(left < idx) {
-                    lazy[left] = Math.max(lazy[left], val);
-                }
+                if(left < idx) lazy[left] = Math.max(lazy[left], val);
                 left++;
             }
             if(right % 2 == 0) {
                 tree[right] = Math.max(tree[right], val);
                 // 表示更新的是父节点，子节点未更新，则保存到lazy数组
-                if(left < idx) {
-                    lazy[right] = Math.max(lazy[right], val);
-                }
+                if(left < idx) lazy[right] = Math.max(lazy[right], val);
                 right--;
             }
             left /= 2;
             right /= 2;
         }
+        
         // 上述操作极有可能更新了内部结点，但没有更新到根节点及两条边界路径，还需要更新
         // 左路径
-         while (tempL > 1) {
+        while (tempL > 1) {
             tempL /= 2;
             // 根据子节点更新父节点
             tree[tempL] = Math.max(tree[tempL * 2], tree[tempL * 2 + 1]);
@@ -229,9 +217,8 @@ class Tree {
     }
 
     public int query(int left, int right) {
-        if(left < 0 || right >= idx || left > right) {
-            return 0;
-        }
+        if(left < 0 || right >= idx || left > right) return 0;
+        
         left += idx;
         right += idx;
         // 从lazy更新left和right路径，update只更新父节点和路径结点，子节点未更新
@@ -242,10 +229,8 @@ class Tree {
                 tree[2 * leftP] = Math.max(lazy[leftP], tree[2 * leftP]);
                 tree[2 * leftP + 1] = Math.max(lazy[leftP], tree[2 * leftP + 1]);
                 // 将当前lazy值更新到子结点lazy中，方便迭代更新
-                if(2 * leftP < idx)
-                    lazy[2 * leftP] = Math.max(lazy[2 * leftP], lazy[leftP]);
-                if(2 * leftP + 1 < idx)
-                    lazy[2 * leftP + 1] = Math.max(lazy[2 * leftP + 1], lazy[leftP]);
+                if(2 * leftP < idx) lazy[2 * leftP] = Math.max(lazy[2 * leftP], lazy[leftP]);
+                if(2 * leftP + 1 < idx) lazy[2 * leftP + 1] = Math.max(lazy[2 * leftP + 1], lazy[leftP]);
                 lazy[leftP] = 0;
             }
         }
@@ -255,10 +240,8 @@ class Tree {
                 tree[2 * rightP] = Math.max(lazy[rightP], tree[2 * rightP]);
                 tree[2 * rightP + 1] = Math.max(lazy[rightP], tree[2 * rightP + 1]);
                 // 将当前lazy值更新到子结点lazy中，方便迭代更新
-                if(2 * rightP < idx)
-                    lazy[2 * rightP] = Math.max(lazy[2 * rightP], lazy[rightP]);
-                if(2 * rightP + 1 < idx)
-                    lazy[2 * rightP + 1] = Math.max(lazy[2 * rightP + 1], lazy[rightP]);
+                if(2 * rightP < idx) lazy[2 * rightP] = Math.max(lazy[2 * rightP], lazy[rightP]);
+                if(2 * rightP + 1 < idx) lazy[2 * rightP + 1] = Math.max(lazy[2 * rightP + 1], lazy[rightP]);
                 lazy[rightP] = 0;
             }
         }

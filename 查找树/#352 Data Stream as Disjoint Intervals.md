@@ -55,20 +55,20 @@ class SummaryRanges {
 
 ```java
 class SummaryRanges {
+    // 保存开闭区间的映射
     TreeMap<Integer, Integer> start2end;
     TreeMap<Integer, Integer> end2start;
-
-    /** Initialize your data structure here. */
+    
     public SummaryRanges() {
         this.start2end = new TreeMap<>();
         this.end2start = new TreeMap<>();
     }
     
     public void addNum(int val) {
-        // 带插入值包含在区间内
+        // 待插入值包含在区间内
         Integer prevStart = start2end.floorKey(val);
         if (prevStart != null && start2end.get(prevStart) >= val) return;
-
+        
         boolean mergeFlag = false;
         // 合并后继区间
         Integer nextStart = start2end.ceilingKey(val);
@@ -129,10 +129,8 @@ class SummaryRanges {
 
 ```java
 class SummaryRanges {
-
     List<int[]> intervals;
-
-    /** Initialize your data structure here. */
+    
     public SummaryRanges() {
         this.intervals = new LinkedList<>();
     }
@@ -195,3 +193,4 @@ class SummaryRanges {
 执行用时：84ms，在所有java提交中击败了91.75%的用户。
 
 内存消耗：44.2MB，在所有java提交中击败了100.00%的用户。
+

@@ -46,7 +46,6 @@ class Solution {
         int maxCount = 0;
         for (int i = 0; i < arrival.length; i++) {
             int idx = i % k;
-            System.out.println(i + "==" + idx);
             // 查找空闲服务器
             if (times[idx] > arrival[i]) {
                 do {

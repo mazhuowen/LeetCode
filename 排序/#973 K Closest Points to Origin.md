@@ -6,7 +6,9 @@ We have a list of `points` on the plane.  Find the `K` closest points to the ori
 
 You may return the answer in any order.  The answer is guaranteed to be unique (except for the order that it is in.)
 
- Note:
+
+
+**Note**:
 
 * $1 \le K <= \text{points.length} \le 10000$
 * $-10000 < \text{points[i][0]} < 10000$
@@ -77,13 +79,10 @@ class Solution {
         int[] basePoint = point[start];
         int dis = distance(basePoint);
         while (start < end) {
-            while (start < end && distance(point[end]) >= dis)
-                end--;
-
+            while (start < end && distance(point[end]) >= dis) end--;
             if (start < end) point[start++] = point[end];
-            while (start < end && distance(point[start]) < dis)
-                start++;
             
+            while (start < end && distance(point[start]) < dis)start++;
             if (start < end) point[end--] = point[start];
         }
         point[start] = basePoint;
@@ -91,13 +90,9 @@ class Solution {
         // 正好划分了K个，不必继续排序
         if (start == K - 1) return;
         // 左半部分超过K个，只排序左半部分
-        if (start >= K) {
-            quickSort(point, K, left, start - 1);
-        } 
+        if (start >= K) quickSort(point, K, left, start - 1);
         // 左半部分少于k个，左半部分已满足要求，切分右半部分
-        else {
-            quickSort(point, K, start + 1, right);
-        }
+        else quickSort(point, K, start + 1, right);
     }
 
     private int distance(int[] point) {

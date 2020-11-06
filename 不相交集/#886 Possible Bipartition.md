@@ -60,8 +60,6 @@ class Solution {
         }
         return true;
     }
-
-
 }
 
 class DisJoint {

@@ -6,7 +6,7 @@ Return 0 if the array contains less than 2 elements.
 
 
 
-Note:
+**Note**:
 
 * You may assume all elements in the array are non-negative integers and fit in the 32-bit signed integer range.
 * Try to solve it in linear time/space.
@@ -203,7 +203,7 @@ class Solution {
 
 时间、空间复杂度不变。
 
-&emsp;除了上述思路，官方还提供了最优的桶的思路。元素之间的间距考虑最好情况，假设元素排好序且两两之间间距相同。这意味着任意相邻元素都有恒定的差值。所以$n$个元素有$n - 1$个间距，假设为$t$，显然可以得到$t = (\text{max} - \text{min})/(n-1)$，其中$max$和$min$是数组中最大和最小的元素。这个间距就是相邻元素间最大间距。现在考虑间距不相等的情况，假设其它元素间距仍然是$t$，元素$i-1$和$i$之间把间距变为$t-p$，则相应的$i$和$i+1$之间间距变为$t + p$，从而最大间距是$t+p$。
+&emsp;除了上述思路，官方还提供了最优的桶的思路。元素之间的间距考虑最好情况，假设元素排好序且两两之间间距相同。这意味着任意相邻元素都有恒定的差值。所以$n$个元素有$n - 1$个间距，假设为$t$，显然可以得到$t = (\text{max} - \text{min})/(n-1)$，其中$\max$和$\min$是数组中最大和最小的元素。这个间距就是相邻元素间最大间距。现在考虑间距不相等的情况，假设其它元素间距仍然是$t$，元素$i-1$和$i$之间把间距变为$t-p$，则相应的$i$和$i+1$之间间距变为$t + p$，从而最大间距是$t+p$。
 
 &emsp;如果将上述思想应用到相邻的等距离区间，每个区间都是相邻的开闭区间，如`6,9,21,102`有三个区间`[6,9)`，`[9,21)`，`[21,102)`，但是不等距，可以将这三个区间等距化，变为`[6,38)`，`[38,70)`，`[70,102)`，将原先的元素分配到这些新的区间，并记录每个区间的最小和最大值。未平均前每个区间都有同一个值（多个或一个），平均后有的区间有多个不重复值或没有。根据之前的分析，这些距离减少，必然有距离增大，故最大距离肯定不是桶内非边界值的值。这样我们只需遍历计算桶之间的距离和桶最大最小值的距离即可。
 
@@ -230,9 +230,8 @@ class Solution {
         // 初始化桶
         for(int i = 0; i < nums.length; i++) {
             int idx = (nums[i] - min) / bucketSize;
-            if(bucket[idx] == null) {
-                bucket[idx] = new Bucket();
-            }
+            if(bucket[idx] == null) bucket[idx] = new Bucket();
+            
             bucket[idx].min = Math.min(bucket[idx].min, nums[i]);
             bucket[idx].max = Math.max(bucket[idx].max, nums[i]);
         }

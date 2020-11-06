@@ -8,7 +8,7 @@ Given an array of n distinct non-empty strings, you need to generate **minimal**
 
 
 
-Note:
+**Note**:
 
 * Both n and the length of each word will not exceed 400.
 * The length of each word is greater than 1.
@@ -112,9 +112,9 @@ class Solution {
             while (true) {
                 Set<Integer> dupes = new HashSet<>();
                 // 遍历以后存在重复的单词，并加入集合
-                for (int j = i+1; j < N; ++j)
-                    if (ans[i].equals(ans[j]))
-                        dupes.add(j);
+                for (int j = i + 1; j < N; j++) {
+                    if (ans[i].equals(ans[j])) dupes.add(j);
+                }
                 // 不存在重复，就是当前缩写
                 if (dupes.isEmpty()) break;
                 dupes.add(i);
@@ -130,7 +130,7 @@ class Solution {
     public String abbrev(String word, int i) {
         int N = word.length();
         if (N - i <= 3) return word;
-        return word.substring(0, i+1) + (N - i - 2) + word.charAt(N-1);
+        return word.substring(0, i + 1) + (N - i - 2) + word.charAt(N - 1);
     }
 }
 ```
@@ -150,10 +150,9 @@ class Solution {
         String[] ans = new String[words.size()];
         // 初始缩写，有冲突则放入同一个链表
         int index = 0;
-        for (String word: words) {
+        for (String word : words) {
             String ab = abbrev(word, 0);
-            if (!groups.containsKey(ab))
-                groups.put(ab, new ArrayList<>());
+            if (!groups.containsKey(ab)) groups.put(ab, new ArrayList<>());
             groups.get(ab).add(new IndexedWord(word, index));
             index++;
         }
@@ -163,14 +162,15 @@ class Solution {
             Collections.sort(group, (a, b) -> a.word.compareTo(b.word));
             // 查找最短公共前缀
             int[] lcp = new int[group.size()];
-            for (int i = 1; i < group.size(); ++i) {
-                int p = longestCommonPrefix(group.get(i-1).word, group.get(i).word);
+            for (int i = 1; i < group.size(); i++) {
+                int p = longestCommonPrefix(group.get(i - 1).word, group.get(i).word);
                 lcp[i] = p;
-                lcp[i-1] = Math.max(lcp[i-1], p);
+                lcp[i - 1] = Math.max(lcp[i - 1], p);
             }
             // 得到最短公共前缀后，重新计算
-            for (int i = 0; i < group.size(); ++i)
+            for (int i = 0; i < group.size(); i++) {
                 ans[group.get(i).index] = abbrev(group.get(i).word, lcp[i]);
+            }
         }
 
         return Arrays.asList(ans);
@@ -179,7 +179,7 @@ class Solution {
     public String abbrev(String word, int i) {
         int N = word.length();
         if (N - i <= 3) return word;
-        return word.substring(0, i+1) + (N - i - 2) + word.charAt(N-1);
+        return word.substring(0, i + 1) + (N - i - 2) + word.charAt(N - 1);
     }
 	// 计算相同前缀字符数
     public int longestCommonPrefix(String word1, String word2) {
@@ -194,6 +194,7 @@ class Solution {
 class IndexedWord {
     String word;
     int index;
+    
     IndexedWord(String w, int i) {
         word = w;
         index = i;

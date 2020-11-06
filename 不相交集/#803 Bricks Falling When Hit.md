@@ -6,7 +6,9 @@ We will do some erasures sequentially. Each time we want to do the erasure at th
 
 Return an array representing the number of bricks that will drop after each erasure in sequence.
 
-Note:
+
+
+**Note**:
 
 * The number of rows and columns in the grid will be in the range `[1, 200]`.
 * The number of erasures will not exceed the area of the grid.
@@ -34,30 +36,30 @@ class Solution {
 ```java
 class Solution {
     public int[] hitBricks(int[][] grid, int[][] hits) {
-        if(grid == null || grid.length == 0) {
+        if (grid == null || grid.length == 0) {
             return new int[hits.length];
         }
         int row = grid.length, col = grid[0].length;
         // 移除待删除点，标识为-1（如果本来不是砖，则不变化）
         for(int[] hit : hits) {
-            if(grid[hit[0]][hit[1]] == 1) grid[hit[0]][hit[1]] = -1;
+            if (grid[hit[0]][hit[1]] == 1) grid[hit[0]][hit[1]] = -1;
         }
         // 不相交集（设置0为连通顶部的点集合）
         DisJoint disJoint = new DisJoint(col * row + 1);
         for(int r = 0; r < row; r++) {
             for (int c = 0; c < col; c++) {
-                if(grid[r][c] == 1) {
+                if (grid[r][c] == 1) {
                     int idx = r * col + c + 1;
                     // 顶部元素，与边界合并
-                    if(r == 0) {
+                    if (r == 0) {
                         disJoint.union(disJoint.find(0), disJoint.find(idx));
                     }
                     // 前面元素
-                    if(c - 1 >= 0 && grid[r][c - 1] == 1) {
+                    if (c - 1 >= 0 && grid[r][c - 1] == 1) {
                         disJoint.union(disJoint.find(idx - 1), disJoint.find(idx));
                     }
-                    // 顶部元素
-                    if(r - 1 >= 0 && grid[r - 1][c] == 1) {
+                    // 上面元素
+                    if (r - 1 >= 0 && grid[r - 1][c] == 1) {
                         disJoint.union(disJoint.find(idx - col), disJoint.find(idx));
                     }
                 }
@@ -70,28 +72,28 @@ class Solution {
         while (t >= 0) {
             int r = hits[t][0], c = hits[t][1], idx = r * col + c + 1;
             // 当前点本来没有砖，不会有砖掉落
-            if(grid[r][c] == 0) {
+            if (grid[r][c] == 0) {
                 res[t] = 0;
             } else {
                 // 加入当前消除点
                 grid[r][c] = 1;
                 // 如果当前点是顶部砖，加入
-                if(r == 0) {
+                if (r == 0) {
                     disJoint.union(disJoint.find(0), disJoint.find(idx));
                 }
                 // 维护前后左右的集合
                 // 前后元素
-                if(c - 1 >= 0 && grid[r][c - 1] == 1) {
+                if (c - 1 >= 0 && grid[r][c - 1] == 1) {
                     disJoint.union(disJoint.find(idx - 1), disJoint.find(idx));
                 }
-                if(c + 1 < col && grid[r][c + 1] == 1) {
+                if (c + 1 < col && grid[r][c + 1] == 1) {
                     disJoint.union(disJoint.find(idx + 1), disJoint.find(idx));
                 }
                 // 上下元素
-                if(r - 1 >= 0 && grid[r - 1][c] == 1) {
+                if (r - 1 >= 0 && grid[r - 1][c] == 1) {
                     disJoint.union(disJoint.find(idx - col), disJoint.find(idx));
                 }
-                if(r + 1 < row && grid[r + 1][c] == 1) {
+                if (r + 1 < row && grid[r + 1][c] == 1) {
                     disJoint.union(disJoint.find(idx + col), disJoint.find(idx));
                 }
 

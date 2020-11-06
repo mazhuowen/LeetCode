@@ -2,7 +2,9 @@
 
 Given an unsorted array of integers, find the number of longest increasing subsequence.
 
-Note: Length of the given array will be not exceed 2000 and the answer is guaranteed to be fit in 32-bit signed int.
+
+
+**Note**: Length of the given array will be not exceed 2000 and the answer is guaranteed to be fit in 32-bit signed int.
 
 
 
@@ -86,6 +88,7 @@ class Tree {
         this.start  = start;
         this.end = end;
     }
+    
     // 返回区间范围中间值
     private int getMid() {
         return start + (end - start) / 2;
@@ -104,6 +107,7 @@ class Tree {
         }
         return right;
     }
+    
     // 合并（序列长度一致，则计数相加，不一致选择长的序列）
     private int[] merge(int[] val1, int[] val2) {
         if(val1[0] == val2[0]) {
@@ -116,7 +120,7 @@ class Tree {
             return val1[0] > val2[0] ? val1 : val2;
         }
     }
-
+    
     // 查询小于high的区间的最大序列长度和数目
     public int[] query(int high) {
         // 当前范围小于high，返回值
@@ -133,7 +137,7 @@ class Tree {
         // 合并子树结果
         return merge(leftVal, rightVal);
     }
-
+    
     // 更新小于等于区间high的序列长度和计数
     public void update(int high, int len, int c) {
         // 递归终止条件（即high结点对应的最长序列）

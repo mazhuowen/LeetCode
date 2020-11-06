@@ -9,14 +9,14 @@ Note that the number of times an item is used is the number of calls to the `get
 
  
 
-Follow up:
+**Follow up**:
 Could you do both operations in $O(1)$ time complexity?
 
 
 
 ## 题目解读
 
-&emsp;设计最近最少使用策略，时间复杂度为常量级。
+&emsp;设计最不常使用策略，时间复杂度为常量级。
 
 ```java
 class LFUCache {
@@ -45,14 +45,14 @@ class LFUCache {
 ## 程序设计
 
 * 使用哈希表保存使用计数和相应的链表，最久未使用的在链表尾，每次使用（`get`或`put`）将结点移动到新的计数链表的首部。使用另一个哈希表保存键值和链表结点的对应关系，由于是单链表，保存前驱。
-* 还需要记录最少的计数，如果当前最少计数链表被删除（由于`get`或`put`旧值原因计数更新），则最少计数加一；如果是`put`新值则最小计数为1。
+* 还需要记录最少的计数，如果当前最少计数链表被删除（由于`get`或`put`旧值原因计数更新），则最少计数加1；如果是`put`新值则最小计数为1。
 
 ```java
 class LFUCache {
     int capacity;
     // 记录最少计数
     int minCount = 0;
-    // 记录使用次数链表，链表末尾为最久未使用的，
+    // 记录使用次数链表，链表末尾为最久未使用
     Map<Integer, Node> head;
     Map<Integer, Node> tail;
     // 记录键值在次数表中的索引

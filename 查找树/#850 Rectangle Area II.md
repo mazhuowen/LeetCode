@@ -94,7 +94,7 @@ class Solution {
         // 存放矩形水平边
         int[][] edges = new int[2 * n][];
         int idx = 0;
-        for(int[] rectangle : rectangles) {
+        for (int[] rectangle : rectangles) {
             // 分别存放边的高度、底还是高、边的左右坐标
             edges[idx++] = new int[]{rectangle[1], 0, rectangle[0], rectangle[2]};
             edges[idx++] = new int[]{rectangle[3], 1, rectangle[0], rectangle[2]};
@@ -107,12 +107,12 @@ class Solution {
         int baseY = 0;
         long area = 0L;
         // 从低到高计算
-        for(int[] edge : edges) {
+        for (int[] edge : edges) {
             // 计算x轴的长度
             int lenX = 0;
             // 记录上一次计算的x坐标
             int lastX = 0;
-            for(int[] axisX : baseX) {
+            for (int[] axisX : baseX) {
                 // 避免重复计算，取最大的
                 lastX = Math.max(lastX, axisX[0]);
                 // 长度更新
@@ -124,15 +124,15 @@ class Solution {
             area += (long)lenX * (edge[0] - baseY);
 
             // 底边，将新的x坐标更新入baseX
-            if(edge[1] == 0) {
+            if (edge[1] == 0) {
                 baseX.add(new int[]{edge[2], edge[3]});
                 // 按照起始坐标排序
                 Collections.sort(baseX, (a, b) -> a[0] - b[0]);
             }
             // 顶边，意味着这个矩形已计算完成，移除baseX中的坐标
             else {
-                for(int i = 0; i < baseX.size(); i++) {
-                    if(baseX.get(i)[0] == edge[2] && baseX.get(i)[1] == edge[3]) {
+                for (int i = 0; i < baseX.size(); i++) {
+                    if (baseX.get(i)[0] == edge[2] && baseX.get(i)[1] == edge[3]) {
                         baseX.remove(i);
                         break;
                     }
@@ -189,24 +189,19 @@ class Tree {
     }
 
     private Tree left() {
-        if(left == null) {
-            left = new Tree(start, getRangeMid(), axisX);
-        }
+        if(left == null) left = new Tree(start, getRangeMid(), axisX);
         return left;
     }
 
     private Tree right() {
-        if(right == null) {
-            right = new Tree(getRangeMid(), end, axisX);
-        }
+        if(right == null) right = new Tree(getRangeMid(), end, axisX);
         return right;
     }
 
     public long update(int i, int j, int val) {
         //区间为点不是线段，x轴长度返回0
-        if(i >= j) {
-            return 0;
-        }
+        if(i >= j) return 0;
+        
         // 找到要更新的区间
         if(start == i && end == j) {
             // 底边加入加一，顶边加入减一

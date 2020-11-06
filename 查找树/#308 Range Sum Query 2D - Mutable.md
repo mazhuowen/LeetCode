@@ -4,7 +4,7 @@ Given a 2D matrix matrix, find the sum of the elements inside the rectangle defi
 
 
 
-Note:
+**Note**:
 
 * The matrix is only modifiable by the update function.
 * You may assume the number of calls to `update` and `sumRegion` function is distributed evenly.

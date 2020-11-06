@@ -4,7 +4,9 @@ Given an array `nums`, we call $(i, j)$ an **important reverse pair** if $i < j$
 
 You need to return the number of important reverse pairs in the given array.
 
-Note:
+
+
+**Note**:
 
 * The length of the given array will not exceed `50,000`.
 * All the numbers in the input array are in the range of 32-bit integer.
@@ -38,7 +40,7 @@ class Solution {
     }
 	// 归并排序
     private int mergeCount(int[] nums, int start, int end) {
-        if(start >= end) {
+        if (start >= end) {
             return 0;
         }
         int mid = start + (end - start) / 2;
@@ -52,9 +54,9 @@ class Solution {
     private int merge(int[] nums, int start, int mid, int end) {
         int count = 0;
         int i = start, j = mid + 1;
-        while(i <= mid && j <= end) {
+        while (i <= mid && j <= end) {
             // 需注意溢出
-            if(nums[i] <= 2 * (long)nums[j]) {
+            if (nums[i] <= 2 * (long)nums[j]) {
                 count += j - mid - 1;
                 i++;
             } else {
@@ -71,8 +73,8 @@ class Solution {
     private void mergeSort(int[] nums, int start, int mid, int end) {
         int[] temp = new int[end - start + 1];
         int i = start, j = mid + 1, idx = 0;
-        while(i <= mid && j <= end) {
-            if(nums[i] <= nums[j]) {
+        while (i <= mid && j <= end) {
+            if (nums[i] <= nums[j]) {
                 temp[idx++] = nums[i++];
             } else {
                 temp[idx++] = nums[j++];
@@ -84,7 +86,7 @@ class Solution {
         while (j <= end) {
             temp[idx++] = nums[j++];
         }
-        for(idx = 0; idx < temp.length; idx++) {
+        for (idx = 0; idx < temp.length; idx++) {
             nums[start + idx] = temp[idx];
         }
     }

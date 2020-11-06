@@ -104,7 +104,7 @@ class TreeNode {
             // 延迟更新完成，清空
             this.delayTime = 0;
 
-            // 自下向上更新最大次数
+            // 自底向上更新最大次数
             this.maxTime = Math.max(this.maxTime, Math.max(this.left().insert(s, e), this.right().insert(s, e)));
         }
 

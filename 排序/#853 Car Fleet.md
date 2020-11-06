@@ -17,12 +17,12 @@ How many car fleets will arrive at the destination?
 
 
 
-Note:
+**Note**:
 
 * $0 \le N \le 10^4$
 * $0 < \text{target} \le 10^6$
 * $0 < \text{speed[i]} \le 10^6$
-* $0 \le \text{position[i]} < \text{target}
+* $0 \le \text{position[i]} < \text{target}$
 * All initial positions are different.
 
 

@@ -6,7 +6,9 @@ The people and seats are represented by an integer from `0` to `2N-1`, the coupl
 
 The couples' initial seating is given by `row[i]` being the value of the person who is initially sitting in the i-th seat.
 
-Note:
+
+
+**Note**:
 
 * `len(row)` is even and in the range of `[4, 60]`.
 * `row` is guaranteed to be a permutation of `0...len(row)-1`.

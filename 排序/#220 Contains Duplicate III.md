@@ -59,9 +59,7 @@ class Solution {
             // 将当前值加入集合
             set.add(nums[i]);
             // 始终将窗口维护在k
-            if(set.size() > k) {
-                set.remove(nums[i - k]);
-            }
+            if(set.size() > k) set.remove(nums[i - k]);
         }
         return false;
     }

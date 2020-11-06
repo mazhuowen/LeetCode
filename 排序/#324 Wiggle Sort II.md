@@ -2,10 +2,12 @@
 
 Given an unsorted array `nums`, reorder it such that `nums[0] < nums[1] > nums[2] < nums[3]....`
 
-Note:
+
+
+**Note**:
 You may assume all input has valid answer.
 
-Follow Up:
+**Follow Up**:
 Can you do it in $O(n)$ time and/or in-place with $O(1)$ extra space?
 
 
@@ -84,7 +86,7 @@ class Solution {
         if(nums == null || nums.length < 2) {
             return;
         }
-        Arrays.sort(nums);
+        radixSort(nums);
         int[] temp = Arrays.copyOf(nums, nums.length);
         int smaIdx = (nums.length + 1) / 2 - 1;
         int bigIdx = nums.length - 1;
@@ -116,13 +118,13 @@ class Solution {
         int[] counter = new int[10];
         int[] temp = new int[nums.length];
         for(int num : nums) {
-            counter[num / base % 10] += 1;
+            counter[num / base % 10]++;
         }
         for(int i = 1; i < counter.length; i++) {
             counter[i] += counter[i - 1];
         }
         for(int i = nums.length - 1; i >= 0; i--) {
-            temp[counter[nums[i] / base % 10] - 1] = nums[i];
+            temp[--counter[nums[i] / base % 10]] = nums[i];
         }
         for(int i = 0; i < nums.length; i++) {
             nums[i] = temp[i];
@@ -140,6 +142,10 @@ class Solution {
 内存消耗：44.3MB，在所有java提交中击败了5.07%的用户。
 
 &emsp;基于基数排序的时间复杂度为$O(N)$，空间复杂度为$O(N)$。
+
+执行用时：7ms，在所有java提交中击败了34.39%的用户。
+
+内存消耗：41MB，在所有java提交中击败了92.90%的用户。
 
 ## 官方解题
 

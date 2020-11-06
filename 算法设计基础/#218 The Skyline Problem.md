@@ -12,7 +12,9 @@ The output is a list of "key points" (red dots in Figure B) in the format of `[ 
 
 For instance, the skyline in Figure B should be represented as:`[ [2 10], [3 15], [7 12], [12 0], [15 10], [20 8], [24, 0] ]`.
 
-Notes:
+
+
+**Notes**:
 
 * The number of buildings in any input list is guaranteed to be in the range `[0, 10000]`.
 * The input list is already sorted in ascending order by the left `x` position `Li`.
@@ -53,7 +55,7 @@ class Solution {
         // 递归终止条件
         if (buildings == null || buildings.length == 0) return res;
         if (buildings.length == 1) {
-          // 一个建筑起点为高度，终点为0，表示结束
+          // 只有一个建筑，起点为高度终点为0
           res.add(new ArrayList<>(){{add(buildings[0][0]); add(buildings[0][2]);}});
           res.add(new ArrayList<>(){{add(buildings[0][1]); add(0);}});
           return res;
@@ -74,49 +76,49 @@ class Solution {
 
       // 归并
       while (leftIdx < leftLen && rightIdx < rightLen) {
-      	List<Integer> l = left.get(leftIdx);
-        List<Integer> r = right.get(rightIdx);
-
-        // 当前的横坐标
-        int curX;
-        // 选择坐标在前面的，若坐标一致，则选择高度不是0的
-        if (l.get(0) < r.get(0) || (l.get(0) == r.get(0) && l.get(1) != 0)) {
-          curX = l.get(0);
-          leftHigh = l.get(1);
-          leftIdx++;
-        } else {
-          curX = r.get(0);
-          rightHigh = r.get(1);
-          rightIdx++;
-        }
-        // 上一次合并后的高度不等于当前的最高高度，说明高度发生了变化，需要记录当前点
-        // 高度相同则无需记录
-        if (curHigh != Math.max(leftHigh, rightHigh)) {
-          curHigh = Math.max(leftHigh, rightHigh);
-          update(res, curX, curHigh);
-        }
+          List<Integer> l = left.get(leftIdx);
+          List<Integer> r = right.get(rightIdx);
+          
+          // 当前的横坐标
+          int curX;
+          // 选择坐标在前面的，若坐标一致，则选择高度不是0的
+          if (l.get(0) < r.get(0) || (l.get(0) == r.get(0) && l.get(1) != 0)) {
+              curX = l.get(0);
+              leftHigh = l.get(1);
+              leftIdx++;
+          } else {
+              curX = r.get(0);
+              rightHigh = r.get(1);
+              rightIdx++;
+          }
+          // 上一次合并后的高度不等于当前的最高高度，说明高度发生了变化，需要记录当前点
+          // 高度相同则无需记录
+          if (curHigh != Math.max(leftHigh, rightHigh)) {
+              curHigh = Math.max(leftHigh, rightHigh);
+              update(res, curX, curHigh);
+          }
       }
 
       while (leftIdx < leftLen) {
-        List<Integer> l = left.get(leftIdx);
-        int curX = l.get(0);
-        leftHigh = l.get(1);
-        if (curHigh != leftHigh) {
-          curHigh = leftHigh;
-          update(res, curX, curHigh);
-        }
-        leftIdx++;
+          List<Integer> l = left.get(leftIdx);
+          int curX = l.get(0);
+          leftHigh = l.get(1);
+          if (curHigh != leftHigh) {
+              curHigh = leftHigh;
+              update(res, curX, curHigh);
+          }
+          leftIdx++;
       }
 
       while (rightIdx < rightLen) {
-        List<Integer> r = right.get(rightIdx);
-        int curX = r.get(0);
-        rightHigh = r.get(1);
-        if (curHigh != rightHigh) {
-          curHigh = rightHigh;
-          update(res, curX, curHigh);
-        }
-        rightIdx++;
+          List<Integer> r = right.get(rightIdx);
+          int curX = r.get(0);
+          rightHigh = r.get(1);
+          if (curHigh != rightHigh) {
+              curHigh = rightHigh;
+              update(res, curX, curHigh);
+          }
+          rightIdx++;
       }
       return res;
     }
@@ -171,17 +173,17 @@ class Solution {
     int preHigh = 0;
     // 遍历
     for (Integer[] cur : axis) {
-      // 起始边界，加入
-      if (cur[1] < 0) queue.add(-cur[1]);
-      // 结束边界，删除起始边界
-      else queue.remove(cur[1]);
-      // 获取当前区域的最高高度，如果为空则为0
-      Integer high = queue.isEmpty() ? 0 : queue.peek();
-      // 高度发生变化，则加入链表
-      if (preHigh != high) {
-        res.add(new ArrayList<Integer>() {{add(cur[0]); add(high);}});
-        preHigh = high;
-      }
+      	// 起始边界，加入
+      	if (cur[1] < 0) queue.add(-cur[1]);
+      	// 结束边界，删除起始边界
+      	else queue.remove(cur[1]);
+      	// 获取当前区域的最高高度，如果为空则为0
+      	Integer high = queue.isEmpty() ? 0 : queue.peek();
+      	// 高度发生变化，则加入链表
+      	if (preHigh != high) {
+        	res.add(new ArrayList<Integer>() {{add(cur[0]); add(high);}});
+        	preHigh = high;
+      	}
     }
     return res;
   }
