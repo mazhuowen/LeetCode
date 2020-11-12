@@ -19,7 +19,7 @@ Return the minimum number of steps to walk from the upper left corner `(0, 0)` t
 
 ## 题目解读
 
-&emsp;在做多可移除$k$个障碍物的情况下，求到达终点的最短路径。
+&emsp;在最多可移除$k$个障碍物的情况下，求到达终点的最短路径。
 
 ```java
 class Solution {

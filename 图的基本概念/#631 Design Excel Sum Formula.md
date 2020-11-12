@@ -2,7 +2,7 @@
 
 Your task is to design the basic function of Excel and implement the function of sum formula. Specifically, you need to implement the following functions:
 
-* `Excel(int H, char W)`: This is the constructor. The inputs represents the height and width of the Excel form. **H** is a positive integer, range from 1 to 26. It represents the height. **W** is a character range from `'A'` to `'Z'`. It represents that the width is the number of characters from `'A'` to **W**. The Excel form content is represented by a height * width 2D integer array **C**, it should be initialized to zero. You should assume that the first row of **C** starts from 1, and the first column of **C** starts from `'A'`.
+* `Excel(int H, char W)`: This is the constructor. The inputs represents the height and width of the Excel form. **H** is a positive integer, range from $1$ to $26$. It represents the height. **W** is a character range from `'A'` to `'Z'`. It represents that the width is the number of characters from `'A'` to **W**. The Excel form content is represented by a height * width 2D integer array **C**, it should be initialized to zero. You should assume that the first row of **C** starts from $1$, and the first column of **C** starts from `'A'`.
 
 * `void Set(int row, char column, int val)`: Change the value at `C(row, column)` to be val.
 
@@ -97,7 +97,6 @@ class Excel {
         if (excel[i][j] != null) {
             // 覆盖之前的和，需要将之前的依赖关系删除
             if (excel[i][j].isSum) excel[i][j].isOverland = true;
-
             ceil.dependency = excel[i][j].dependency;
         }
 

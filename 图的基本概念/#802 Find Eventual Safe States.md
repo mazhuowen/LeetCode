@@ -2,11 +2,11 @@
 
 In a directed graph, we start at some node and every turn, walk along a directed edge of the graph. If we reach a node that is terminal (that is, it has no outgoing directed edges), we stop.
 
-Now, say our starting node is *eventually safe* if and only if we must eventually walk to a terminal node. More specifically, there exists a natural number `K` so that for any choice of where to walk, we must have stopped at a terminal node in less than `K` steps.
+Now, say our starting node is **eventually safe** if and only if we must eventually walk to a terminal node. More specifically, there exists a natural number $K$ so that for any choice of where to walk, we must have stopped at a terminal node in less than $K$ steps.
 
 Which nodes are eventually safe? Return them as an array in sorted order.
 
-The directed graph has `N` nodes with labels `0, 1, ..., N - 1`, where `N` is the length of `graph`. The graph is given in the following form: `graph[i]` is a list of labels `j` such that `(i, j)` is a directed edge of the graph.
+The directed graph has $N$ nodes with labels $0, 1, \dots, N - 1$, where $N$ is the length of `graph`. The graph is given in the following form: `graph[i]` is a list of labels `j` such that `(i, j)` is a directed edge of the graph.
 
 
 
@@ -57,13 +57,10 @@ class Solution {
 
     private int dfs(int start, int[][] graph, int[] visited) {
         // 有环
-        if (visited[start] == 1) {
-            visited[start] = -2;
-        }
+        if (visited[start] == 1) visited[start] = -2;
         // 已经有遍历结果，返回
-        if (visited[start] != 0) {
-            return visited[start];
-        }
+        if (visited[start] != 0) return visited[start];
+        
         // 标记为已访问
         visited[start] = 1;
         // 访问后继结点
@@ -71,9 +68,7 @@ class Solution {
             int cur = graph[start][i];
             int result = dfs(cur, graph, visited);
             // 如果存在环，则设置当前路径状态为-2，不结束遍历，继续其他分支遍历
-            if (result != -1) {
-                visited[start] = result;
-            }
+            if (result != -1) visited[start] = result;
         }
         // 完成遍历，后续路径不存在环，故此处还是i，赋值为-1，返回
         if (visited[start] == 1) visited[start] = -1;

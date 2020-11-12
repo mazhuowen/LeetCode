@@ -2,7 +2,7 @@
 
 In a given 2D binary array `A`, there are two islands.  (An island is a 4-directionally connected group of `1`s not connected to any other `1`s.)
 
-Now, we may change `0`s to `1`s so as to connect the two islands together to form 1 island.
+Now, we may change `0`s to `1`s so as to connect the two islands together to form $1$ island.
 
 Return the smallest number of `0`s that must be flipped.  (It is guaranteed that the answer is at least 1.)
 
@@ -29,9 +29,9 @@ class Solution {
 
 ## 程序设计
 
-* 首先遍历其中一个岛屿，标记为2，然后从该岛屿广度优先遍历，直到遇到标记为1的岛屿，返回层数即可。
+* 首先遍历其中一个岛屿，标记为$2$，然后从该岛屿广度优先遍历，直到遇到标记为$1$的岛屿，返回层数即可。
 * 在层次遍历时需要注意不要重复遍历，因为当前位置需要经过之前遍历过的路径，如果当前点能到另一个岛屿，必然之前那个点也能到另一个岛屿且路径更短，如果不标识已经遍历过的点，会造成超时。
-* 综上，标记一个岛屿为2，从该岛屿出发向外层遍历，遍历位置标记为2，直到遇到另一个岛屿，也就是1的点，停止遍历并返回结果。
+* 综上，标记一个岛屿为$2$，从该岛屿出发向外层遍历，遍历位置标记为$2$，直到遇到另一个岛屿，也就是$1$的点，停止遍历并返回结果。
 
 ```java
 class Solution {

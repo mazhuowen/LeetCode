@@ -8,7 +8,9 @@ Given the total number of courses and a list of prerequisite **pairs**, return t
 
 There may be multiple correct orders, you just need to return one of them. If it is impossible to finish all courses, return an empty array.
 
-Note:
+
+
+**Note**:
 
 * The input prerequisites is a graph represented by **a list of edges**, not adjacency matrices. Read more about how a graph is represented.
 * You may assume that there are no duplicate edges in the input prerequisites.
@@ -53,7 +55,7 @@ class Solution {
         // 记录深度遍历结点
         List<Integer> list = new LinkedList<>();
         for (int i = 0; i < numCourses; i++) {
-            if(visited[i] != -1) {
+            if (visited[i] != -1) {
                 // 有环，返回空
                 if (!isDAG(i, graph, visited, list)) return new int[]{};
                 // 标记为已访问且无环
@@ -74,7 +76,7 @@ class Solution {
         // 遍历后继顶点
         while (temp != null) {
             // 已访问无环，则直接遍历下一个
-            if(visited[temp.val] == -1) {
+            if (visited[temp.val] == -1) {
                 temp = temp.next;
                 continue;
             }

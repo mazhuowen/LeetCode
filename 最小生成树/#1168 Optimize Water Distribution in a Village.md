@@ -8,7 +8,7 @@ Find the minimum total cost to supply water to all houses.
 
 
 
-Constraints:
+**Constraints**:
 
 * $1 \le n \le 10000$
 * $\text{wells.length} == n$

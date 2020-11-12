@@ -8,7 +8,7 @@ Return an array `answer` of length n, where each `answer[X]` is the length of th
 
 
 
-Constraints:
+**Constraints**:
 
 * $1 \le n \le 100$
 * $\text{red_edges.length} \le 400$

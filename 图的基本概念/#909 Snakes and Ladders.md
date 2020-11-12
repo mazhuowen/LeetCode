@@ -18,7 +18,7 @@ Return the least number of moves required to reach square $N*N$.  If it is not p
 
 
 
-Note:
+**Note**:
 
 * $2 \le \text{board.length} = \text{board[0].length} \le 20$
 * `board[i][j]` is between $1$ and $N*N$ or is equal to `-1`.

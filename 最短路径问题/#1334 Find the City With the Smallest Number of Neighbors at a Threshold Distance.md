@@ -8,7 +8,7 @@ Notice that the distance of a path connecting cities i and j is equal to the sum
 
 
 
-Constraints:
+**Constraints**:
 
 * $2 \le n \le 100$
 * $1 \le \text{edges.length} \le n * (n - 1) / 2$

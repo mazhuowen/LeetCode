@@ -8,7 +8,7 @@ Return `true` if and only if it is possible to reach the target square through a
 
 
 
-Note:
+**Note**:
 
 * $0 \le \text{blocked.length} \le 200$
 * $\text{blocked[i].length} == 2$
@@ -77,6 +77,7 @@ class Solution {
                     start.add(new int[]{newX, newY});
                 }
             }
+            
             // 结束端
             size = end.size();
             for (int i = 0; i < size; i++) {

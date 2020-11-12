@@ -8,7 +8,7 @@ Return all critical connections in the network in any order.
 
 
 
-Constraints:
+**Constraints**:
 
 * $1 \le n \le 10^5$
 * $n-1 \le \text{connections.length} \le 10^5$

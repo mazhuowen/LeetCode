@@ -16,7 +16,7 @@ You are guaranteed that no two `trees` have the same height and there is at leas
 
 
 
-Constraints:
+**Constraints**:
 
 * $1 \le \text{forest.length} \le 50$
 * $1 \le \text{forest[i].length} \le 50$
@@ -39,7 +39,7 @@ class Solution {
 ## 程序设计
 
 * 参考官方解题，由于需要按照树的高度从低到高砍树，首先将树的高度排序，然后从起点开始计算到树的最短距离，计算距离使用广度优先算法。
-* 对于高度相同的树，砍树的顺序部分先后，可以证明不论先砍哪棵树，距离都是相等的（如果连通的话）。
+* 由于没有两棵树的高度相同，可直接根据排序的高度遍历计算下一棵树的距离。
 
 ```java
 class Solution {

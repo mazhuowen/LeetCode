@@ -109,7 +109,7 @@ for (int i = 0; i < N; i++) {
 * 中等[#1091 Shortest Path in Binary Matrix](./#1091 Shortest Path in Binary Matrix.md)    矩阵的广度优先搜索
 * $\clubs$中等[#1162 As Far from Land as Possible](./#1162 As Far from Land as Possible.md)    广度优先搜索从外层向中心遍历
 * $\clubs$中等[#1197 Minimum Knight Moves](./#1197 Minimum Knight Moves.md)    快速逼近加剪枝的广度优先搜索
-* $\clubs$困难[#1293 Shortest Path in a Grid with Obstacles Elimination](./#1293 Shortest Path in a Grid with Obstacles Elimination)    拓展的广度优先搜索
+* $\clubs$困难[#1293 Shortest Path in a Grid with Obstacles Elimination](./#1293 Shortest Path in a Grid with Obstacles Elimination.md)    拓展的广度优先搜索
 * 简单[#1306 Jump Game III](./#1306 Jump Game III.md)    图的遍历在数组的应用
 * 困难[#1345 Jump Game IV](./#1345 Jump Game IV.md)    广度优先搜索前数据处理
 * $\clubs$中等[#1625 Lexicographically Smallest String After Applying Operations](./#1625 Lexicographically Smallest String After Applying Operations.md)    广度优先搜索枚举所有结果
@@ -126,7 +126,7 @@ for (int i = 0; i < N; i++) {
 
 连通分量就是最外层循环里符合`if`要求的数目，可以加一个计数统计即可。相比来说不相交集的做法更优雅，因为省去了由边构建图的过程（当然如果图直接给出的话，性能都一样）。
 
-&emsp;除了整个图的连通性，还有从一个结点出发的连通性，仍然是上述思路，不相交集最后统计集合数目是否是1，而`dfs`和`bfs`去除最外层循环，从指定起点出发，最后遍历访问标识数组，查看是否全部遍历完即可。
+&emsp;除了整个图的连通性，还有从一个结点出发的连通性，仍然是上述思路，不相交集最后统计集合数目是否是$1$，而`dfs`和`bfs`去除最外层循环，从指定起点出发，最后遍历访问标识数组，查看是否全部遍历完即可。
 
 * $\clubs$困难[#1579 Remove Max Number of Edges to Keep Graph Fully Traversable](./#1579 Remove Max Number of Edges to Keep Graph Fully Traversable.md)    无向图连通性
 
@@ -147,7 +147,7 @@ for (int i = 0; i < N; i++) {
 
 ## 有向无环图拓扑排序
 
-&emsp;有向图的拓扑排序用于依赖关系的分析排序，根据思想不同分两种实现方式：入度优先思想，即入度为0的点是依赖性最高的点，采用广度优先搜索来实现；出度优先思想，即出度为0的点是依赖性最低的点，采用深度优先搜索实现。广度优先的实现需要统计入度，每次将入度为0的点加入队列；深度优先的实现基本形式与`dfs`一致，只是遍历完后继结点，需要记录当前结点到序列。拓扑排序需要根据题意具体分析关系，一般都是相同的问题，小的改动，拓扑排序衍生问题比如[#310 Minimum Height Trees](./#310 Minimum Height Trees.md)，采用从图的边缘结点层层向中心逼近，[#1203 Sort Items by Groups Respecting Dependencies](./#1203 Sort Items by Groups Respecting Dependencies.md)父子图拓扑排序，需要关注了解。
+&emsp;有向图的拓扑排序用于依赖关系的分析排序，根据思想不同分两种实现方式：入度优先思想，即入度为$0$的点是依赖性最高的点，采用广度优先搜索来实现；出度优先思想，即出度为$0$的点是依赖性最低的点，采用深度优先搜索实现。广度优先的实现需要统计入度，每次将入度为$0$的点加入队列；深度优先的实现基本形式与`dfs`一致，只是遍历完后继结点，需要记录当前结点到序列。拓扑排序需要根据题意具体分析关系，一般都是相同的问题，小的改动，拓扑排序衍生问题比如[#310 Minimum Height Trees](./#310 Minimum Height Trees.md)，采用从图的边缘结点层层向中心逼近，[#1203 Sort Items by Groups Respecting Dependencies](./#1203 Sort Items by Groups Respecting Dependencies.md)父子图拓扑排序，需要关注了解。
 
 * $\clubs$中等[#210 Course Schedule II](./#210 Course Schedule II.md)    [#207 Course Schedule](./#207 Course Schedule.md)的延续，有向无环图拓扑排序
 * 中等[#269 Alien Dictionary](./#269 Alien Dictionary.md)    拓扑排序
@@ -161,7 +161,7 @@ for (int i = 0; i < N; i++) {
 
 ## 有向图环路判断
 
-&emsp;有向图是否存在环的判断是图遍历的改进，可使用`dfs`、`bfs`实现，也可以使用拓扑排序实现。`dfs`实现需要改进访问数组，增加标识状态；拓扑排序的实现无需改动结构，只需最后判断是否所有的结点入度为0即可。
+&emsp;有向图是否存在环的判断是图遍历的改进，可使用`dfs`、`bfs`实现，也可以使用拓扑排序实现。`dfs`实现需要改进访问数组，增加标识状态；拓扑排序的实现无需改动结构，只需最后判断是否所有的结点入度为$0$即可。
 
 * $\bigstar$中等[#207 Course Schedule](./#207 Course Schedule.md)    深度优先、广度优先在环路判断中的应用
 * $\clubs$技巧[#1153 String Transforms Into Another String](./#1153 String Transforms Into Another String.md)    将字符串转换使用图来理解

@@ -7,9 +7,9 @@ Given two words (`beginWord` and `endWord`), and a dictionary's word list, find 
 
 
 
-Note:
+**Note**:
 
-* Return 0 if there is no such transformation sequence.
+* Return $0$ if there is no such transformation sequence.
 * All words have the same length.
 * All words contain only lowercase alphabetic characters.
 * You may assume no duplicates in the word list.

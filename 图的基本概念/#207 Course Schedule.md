@@ -8,11 +8,11 @@ Given the total number of courses and a list of prerequisite **pairs**, is it po
 
 
 
-Constraints:
+**Constraints**:
 
 * The input prerequisites is a graph represented by **a list of edges**, not adjacency matrices. Read more about how a graph is represented.
 * You may assume that there are no duplicate edges in the input prerequisites.
-* $1 \le numCourses \le 10^5$
+* $1 \le \text{numCourses} \le 10^5$
 
 
 
@@ -200,7 +200,7 @@ class Node {
 
 ## 官方解题
 
-&emsp;暂无，密切关注。社区有思路利用拓扑排序入度统计，如果存在环，则有结点入度永远不为0，利用这个性质拓扑排序，如果所有结点都已经排序完，则说明无环，否则有环。
+&emsp;暂无，密切关注。社区有思路利用拓扑排序入度统计，如果存在环，则有结点入度永远不为$0$，利用这个性质拓扑排序，如果所有结点都已经排序完，则说明无环，否则有环。
 
 ```java
 class Solution {

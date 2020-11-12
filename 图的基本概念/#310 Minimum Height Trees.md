@@ -1,18 +1,23 @@
 [toc]
 
-For an undirected graph with tree characteristics, we can choose any node as the root. The result graph is then a rooted tree. Among all possible rooted trees, those with minimum height are called minimum height trees (MHTs). Given such a graph, write a function to find all the MHTs and return a list of their root labels.
+A tree is an undirected graph in which any two vertices are connected by exactly one path. In other words, any connected graph without simple cycles is a tree.
 
-**Format**
-The graph contains `n` nodes which are labeled from `0` to `n - 1`. You will be given the number `n` and a list of undirected `edges` (each edge is a pair of labels).
+Given a tree of $n$ nodes labelled from $0$ to $n - 1$, and an array of $n - 1$ edges where `edges[i] = [ai, bi]` indicates that there is an undirected edge between the two nodes `ai` and `bi` in the tree, you can choose any node of the tree as the root. When you select a node `x` as the root, the result tree has height `h`. Among all possible rooted trees, those with minimum height (i.e. `min(h)`)  are called **minimum height trees** (MHTs).
 
-You can assume that no duplicate edges will appear in `edges`. Since all edges are undirected, `[0, 1]` is the same as `[1, 0]` and thus will not appear together in `edges`.
+Return a list of all **MHTs**' root labels. You can return the answer in **any order**.
+
+The **height** of a rooted tree is the number of edges on the longest downward path between the root and a leaf.
 
 
 
-**Note**:
+**Constraints**:
 
-- According to the definition of tree on Wikipedia: “a tree is an undirected graph in which any two vertices are connected by *exactly* one path. In other words, any connected graph without simple cycles is a tree.”
-- The height of a rooted tree is the number of edges on the longest downward path between the root and a leaf.
+* $1 \le n \le 2 * 10^4$
+* $\text{edges.length} == n - 1$
+* $0 \le a_i, b_i < n$
+* $a_i \ne b_i$
+* All the pairs `(ai, bi)` are distinct.
+* The given input is **guaranteed** to be a tree and there will be **no repeated** edges.
 
 
 
@@ -102,7 +107,7 @@ class Node {
 }
 ```
 
-* 仔细观察，树根选择在图的中心时，树的整体高度较低；而对于一个无环无向图，总是会存在度为1的结点；度为1的结点对应叶节点，可以利用拓扑排序的思路，统计所有结点的度，然后将度为1的结点入队，此时表示这是同一层结点遍历这层结点的邻接点，如果删除这个结点，邻接点度为变为1，则入队；重复直到队列为空。
+* 仔细观察，树根选择在图的中心时，树的整体高度较低；而对于一个无环无向图，总是会存在度为$1$的结点；度为$1$的结点对应叶节点，可以利用拓扑排序的思路，统计所有结点的度，然后将度为$1$的结点入队，此时表示这是同一层结点遍历这层结点的邻接点，如果删除这个结点，邻接点度为变为$1$，则入队；重复直到队列为空。
 
 > 最后的根只能是１个或２个，如果大于２个则存在环路。
 
@@ -114,9 +119,7 @@ class Solution {
         if (n <= 0) return res;
         // 无边图，每个结点都是最小高度树
         if (edges == null || edges.length == 0) {
-            for (int i = 0; i < n; i++) {
-                res.add(i);
-            }
+            for (int i = 0; i < n; i++) res.add(i);
             return res;
         }
 

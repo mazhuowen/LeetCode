@@ -8,7 +8,7 @@ Now, we send a signal from a certain node `K`. How long will it take for all nod
 
 
 
-Note:
+**Note**:
 
 * `N` will be in the range `[1, 100]`.
 * `K` will be in the range `[1, N]`.

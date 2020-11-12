@@ -400,11 +400,8 @@ class Solution {
         // 使用堆来维护后继结点的有序性
         Map<String, PriorityQueue<String>> graph = new HashMap<>();
         for (List<String> ticket : tickets) {
-            String from = ticket.get(0);
-            String to = ticket.get(1);
-            if(graph.get(from) == null) {
-                graph.put(from, new PriorityQueue<>());
-            }
+            String from = ticket.get(0), to = ticket.get(1);
+            if(graph.get(from) == null) graph.put(from, new PriorityQueue<>());
             graph.get(from).add(to);
         }
 

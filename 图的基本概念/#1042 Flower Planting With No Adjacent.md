@@ -1,6 +1,6 @@
 [toc]
 
-You have `N` gardens, labelled `1` to `N`. In each garden, you want to plant one of 4 types of flowers.
+You have $N$ gardens, labelled $1$ to $N$. In each garden, you want to plant one of 4 types of flowers.
 
 `paths[i] = [x, y]` describes the existence of a bidirectional path from garden `x` to garden `y`.
 
@@ -23,7 +23,7 @@ Return **any** such a choice as an array `answer`, where `answer[i]` is the type
 
 ## 题目解读
 
-&emsp;有`N`个花园，每个花园可以种四种颜色中的一种花。题目需要给出种花方案，使得相邻的两个花园花不一样。题目限定每个点最多有三个边，且肯定存在答案。
+&emsp;有$N$个花园，每个花园可以种四种颜色中的一种花。题目需要给出任意一种种花方案，使得相邻的两个花园花不一样。题目限定每个点最多有三个边，且肯定存在答案。
 
 ```java
 class Solution {
@@ -60,13 +60,10 @@ class Solution {
 
     private int dfs(int start, Node[] graph, int[] color) {
         // 当前结点存在环，则在当前结点随意设置一个颜色并返回
-        if (color[start] == -1) {
-            color[start] = 1;
-        }
+        if (color[start] == -1) color[start] = 1;
         // 当前结点已有颜色，直接返回
-        if (color[start] != 0) {
-            return color[start];
-        }
+        if (color[start] != 0) return color[start];
+        
         // 标记为正在遍历
         color[start] = -1;
         Node temp = graph[start];

@@ -25,7 +25,7 @@ Return the maximum number of edges you can remove, or return $-1$ if it's imposs
 
 ## 题目解读
 
-&emsp;给定无向图三种边，编号$1$、$2$分别只能被Alice和Bob遍历，编号$3$可被两个人遍历；求删除的最少的边，使得Alice和Bob都可以遍历所有节点。
+&emsp;给定无向图三种边，编号$1$、$2$分别只能被Alice和Bob遍历，编号$3$可被两个人遍历；求删除的最多的边，使得Alice和Bob都可以遍历所有节点。
 
 ```java
 class Solution {

@@ -1,8 +1,8 @@
 [toc]
 
-There is a box protected by a password. The password is a sequence of n digits where each digit can be one of the first `k` digits $0, 1, \cdots, k-1$.
+There is a box protected by a password. The password is a sequence of n digits where each digit can be one of the first $k$ digits $0, 1, \dots, k-1$.
 
-While entering a password, the last `n` digits entered will automatically be matched against the correct password.
+While entering a password, the last $n$ digits entered will automatically be matched against the correct password.
 
 For example, assuming the correct password is `"345"`, if you type `"012345"`, the box will open because the correct password matches the suffix of the entered password.
 

@@ -6,6 +6,8 @@ Recall that a graph is *bipartite* if we can split it's set of nodes into two in
 
 The graph is given in the following form: `graph[i]` is a list of indexes `j` for which the edge between nodes `i` and `j` exists. Each node is an integer between `0` and `graph.length - 1`. There are no self edges or parallel edges: `graph[i]` does not contain `i`, and it doesn't contain any element twice.
 
+
+
 **Note:**
 
 - `graph` will have length in range `[1, 100]`.
@@ -48,9 +50,8 @@ class Solution {
 
     private boolean dfs(int start, int[][] graph, int[] color, int col) {
         // 遍历点已被访问，颜色不相符则返回false，相符返回true
-        if (color[start] != 0) {
-            return color[start] == col;
-        }
+        if (color[start] != 0) return color[start] == col;
+        
         // 标记颜色
         color[start] = col;
         // 遍历后继
