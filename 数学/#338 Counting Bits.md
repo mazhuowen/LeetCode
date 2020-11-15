@@ -4,7 +4,7 @@ Given a non negative integer number `num`. For every numbers i in the range $0 \
 
 
 
-Follow up:
+**Follow up**:
 
 * It is very easy to come up with a solution with run time $O(n*\text{sizeof}(\text{integer}))$. But can you do it in linear time $O(n)$ possibly in a single pass?
 * Space complexity should be $O(n)$.

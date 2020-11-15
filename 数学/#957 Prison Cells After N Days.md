@@ -1,6 +1,6 @@
 [toc]
 
-There are 8 prison cells in a row, and each cell is either occupied or vacant.
+There are $8$ prison cells in a row, and each cell is either occupied or vacant.
 
 Each day, whether the cell is occupied or vacant changes according to the following rules:
 
@@ -25,7 +25,7 @@ Given the initial state of the prison, return the state of the prison after $N$ 
 
 ## 题目解读
 
-&emsp;给定起始状态，求$N$天后的状态。如果牢房相邻的房子被占用或控制，则当前牢房被占用；否则空置。
+&emsp;给定起始状态，求$N$天后的状态。如果牢房相邻的房子被占用或空置，则当前牢房被占用；否则空置。
 
 ```java
 class Solution {

@@ -16,7 +16,7 @@ Both 0.1(6) or 0.1666(6) or 0.166(66) are correct representations of 1 / 6.
 
 
 
-Note:
+**Note**:
 
 * Each part consists only of digits.
 * The `<IntegerPart>` will not begin with 2 or more zeros.  (There is no other restriction on the digits of each part.)
@@ -41,10 +41,9 @@ class Solution {
 ## 程序设计
 
 * 主要难点在于有理数的表达形式，任何有理数都可以用分数形式表达；对于`aaa.bb(cc)`的形式，可以分别转化为分数形式；
-  * 整数部分`aaa`就是分子为`aaa`，分母为1的分数；
+  * 整数部分`aaa`就是分子为`aaa`，分母为$1$的分数；
   * 固定小数部分`0.bb`就是分子为`bb`，分母为$10^{len}$的分数；
-  * 关键的，对于重复小数部分`cc`，可以看做是`0.00cc`、`0.0000cc`、……的叠加，可表示为$\frac{val}{10^{len1}}(\frac{1}{10^{len2}} + \frac{1}{10^{2*len2}} + \cdots + \frac{1}{10^\infty})$，令$r = \frac{1}{10^{len2}}$，根据等比数列求和公式，
-  可得$\frac{val}{10^{len1}}(r + r^2 + \cdots) = \frac{val}{10^{len1}}(\frac{r}{1 - r}) = \frac{val}{10^{len1}(10^{len2} - 1)}$，其中$len1$为固定小数长度，$len2$为重复小数长度。
+  * 关键的，对于重复小数部分`cc`，可以看做是`0.00cc`、`0.0000cc`、……的叠加，可表示为$\frac{val}{10^{len1}}(\frac{1}{10^{len2}} + \frac{1}{10^{2*len2}} + \cdots + \frac{1}{10^\infty})$，令$r = \frac{1}{10^{len2}}$，根据等比数列求和公式，可得$\frac{val}{10^{len1}}(r + r^2 + \cdots) = \frac{val}{10^{len1}}(\frac{r}{1 - r}) = \frac{val}{10^{len1}(10^{len2} - 1)}$，其中$len1$为固定小数长度，$len2$为重复小数长度。
 * 将上述三个分数相加就得到了有理数的分数形式；通过分子分母化简约分，可得到最终形式。两个有理数的比较转化为分数形式分子分母的比较。
 
 ```java

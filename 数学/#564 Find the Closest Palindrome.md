@@ -6,7 +6,7 @@ The 'closest' is defined as absolute difference minimized between two integers.
 
 
 
-Note:
+**Note**:
 
 * The input $n$ is a positive integer represented by string, whose length will not exceed 18.
 * If there is a tie, return the smaller one as answer.
@@ -28,7 +28,7 @@ class Solution {
 ## 程序设计
 
 * 参考官方解题思路，首先原字符串镜像为回文串，将高位复制到低位，明显比将低位复制到高位的代价小；以`132954`为例。镜像回文串为`132231`，可见很接近最佳答案`133331`，在得到镜像字符串后可以求出其上一个回文串`133331`和下一个回文串`132231`，通过比对这三个值得到答案。
-* 因此奇数长字符串只需考虑中间字符，偶数长需考虑中间两个字符；需要注意当中间字符是0或9时需要继续遍历到第一个非0或非9的数字，然后进行相关操作。其次如果操作后得到的结果高位为0，则不合法，需特殊处理。
+* 因此奇数长字符串只需考虑中间字符，偶数长需考虑中间两个字符；需要注意当中间字符是$0$或$9$时需要继续遍历到第一个非$0$或非$9$的数字，然后进行相关操作。其次如果操作后得到的结果高位为$0$，则不合法，需特殊处理。
 
 ```java
 class Solution {
@@ -109,7 +109,7 @@ class Solution {
                 // 与中心相连的9替换为0
                 while (idx >= 0 && strs[idx] == '9') {
                     strs[idx] = strs[strs.length - 1 - idx] = '0';
-                     idx--;
+                    idx--;
                 }
                 // 若全是9，则较大的回文数是长度加一的10……01格式数字
                 if (idx < 0) {

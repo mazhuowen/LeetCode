@@ -6,7 +6,7 @@ Ugly numbers are **positive integers** which are divisible by `a` **or** `b` **o
 
 
 
-Constraints:
+**Constraints**:
 
 * $1 \le n, a, b, c \le 10^9$
 * $1 \le a * b * c \le 10^18$

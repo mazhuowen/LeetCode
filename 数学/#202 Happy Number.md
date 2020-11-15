@@ -8,7 +8,7 @@ A happy number is a number defined by the following process: Starting with any p
 
 ## 题目解读
 
-&emsp;判断一个数是不是快乐数。一个快乐数定义为：对于一个正整数，每一次将该数替换为它每个位置上的数字的平方和，然后重复这个过程直到这个数变为1，也可能是无限循环但始终变不到1。如果可以变为1，那么这个数就是快乐数。
+&emsp;判断一个数是不是快乐数。一个快乐数定义为：对于一个正整数，每一次将该数替换为它每个位置上的数字的平方和，然后重复这个过程直到这个数变为$1$，也可能是无限循环但始终变不到$1$。如果可以变为$1$，那么这个数就是快乐数。
 
 ```java
 class Solution {
@@ -65,15 +65,14 @@ class Solution {
 ```java
 class Solution {
     public boolean isHappy(int n) {
-        if(n <= 0) {
-            return false;
-        }
+        if(n <= 0) return false;
+        
         int slow = n, fast = n;
         do {
             // 快慢指针
             slow = squareSum(slow);
             fast = squareSum(squareSum(fast));
-        } while(slow != fast);
+        } while (slow != fast);
         // 存在环路，且环的交叉点不是1，表示不是欢乐数，是1表示是欢乐数
         return slow == 1;
     }

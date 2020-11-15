@@ -31,7 +31,7 @@ class Solution {
 
 * 首先分析可知，反转子数组只影响子数组边界的值，其他位置相邻数字差的绝对值不变；假设边界位置数字分别为$a$、$b$、$c$、$d$，$b \sim c$为待反转的子数组，则原先边界位置的值为$\vert a - b \vert + \vert c - d \vert$，反转后为$\vert a - c\vert + \vert b - d\vert$，如果根据这四个数字的大小拆分绝对值，则情况变得很复杂。
 * 换个思路，考虑$a$、$c$组成的区间与$b$、$d$组成的区间的关系：
-  * 如果$c$在$a$、$b$（即$[a,b]$或$[b,a]$）构成的区间内，即两个区间相交，则$\Delta = \vert a - c\vert + \vert b - d\vert - \vert a - b \vert - \vert c - d \vert$，$\vert a - b\vert = \vert a - c \vert + \vert c - b \vert$，$\vert b - d \vert = \vert b - c \vert + \vert c - d \vert$，带入得$\Delta = 0$，即区间相交的情况下反转的值不变；
+  * 如果$c$在$a$、$b$（即$[a,b]$或$[b,a]$）构成的区间内，即两个区间相交，则$\Delta = \vert a - c\vert + \vert b - d\vert - \vert a - b \vert - \vert c - d \vert$，由于$\vert a - b\vert = \vert a - c \vert + \vert c - b \vert$，$\vert b - d \vert = \vert b - c \vert + \vert c - d \vert$，代入得$\Delta = 0$，即区间相交的情况下反转的值不变；
   * 如果不相交，假设$c$、$d$是较大的区间，则$\vert a - c \vert = \vert a - b \vert + \vert b - c \vert$，$\vert b - d \vert = \vert b - c \vert + \vert c - d \vert$，带入得$\Delta = 2 * (c - b)$。
 * 经上述分析可知，需要选择所有不相交区间中差值最大的情况，即较小区间中的较大值$b$和较大区间中的较小值$c$之差的最大值。
 * 还需要考虑反转子数组是数组开头或结尾的情况。

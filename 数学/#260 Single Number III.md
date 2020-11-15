@@ -4,7 +4,7 @@ Given an array of numbers `nums`, in which exactly two elements appear only once
 
 
 
-Note:
+**Note**:
 
 * The order of the result is not important. So in the above example, `[5, 3]` is also correct.
 * Your algorithm should run in linear runtime complexity. Could you implement it using only constant space complexity?
@@ -25,7 +25,7 @@ class Solution {
 
 ## 程序设计
 
-* 首先亦或得到这两个数的亦或值，取第一个1，即这两个数不相同的位数，将数组拆分为两半，然后亦或得到答案。
+* 首先亦或得到这两个数的亦或值，取第一个$1$，即这两个数不相同的位数，将数组拆分为两半，然后亦或得到答案。
 
 ```java
 class Solution {

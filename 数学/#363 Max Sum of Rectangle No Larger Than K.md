@@ -2,7 +2,9 @@
 
 Given a non-empty 2D matrix matrix and an integer $k$, find the max sum of a rectangle in the matrix such that its sum is no larger than $k$.
 
-Note:
+
+
+**Note**:
 
 * The rectangle inside the matrix must have an area > 0.
 * What if the number of rows is much larger than the number of columns?
@@ -112,7 +114,7 @@ class Solution {
                         maxArea = tempArea;
                     }
                 }
-                // 得到压缩数组后，计算边界不是左边的情况，即边界从m开始的任意矩形
+                // 得到压缩数组后，计算边界不是左边的情况，即k边界从m开始的任意矩形
                 for(int m = 1; m < col; m++) {
                     // 每开始一个新的边界，重置临时面积
                     tempArea = 0;
@@ -127,7 +129,6 @@ class Solution {
                     }
                 }
             }
-
         }
         return maxArea;
     }

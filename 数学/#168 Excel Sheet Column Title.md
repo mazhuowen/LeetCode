@@ -6,7 +6,7 @@ Given a positive integer, return its corresponding column title as appear in an 
 
 ## 题目解读
 
-&emsp;10进制转26进制。
+&emsp;$10$进制转$26$进制。
 
 ```java
 class Solution {
@@ -18,7 +18,7 @@ class Solution {
 
 ## 程序设计
 
-* 在26进制字符串转10进制时，每次都需要乘26并加上字符值并加一，`num1 = num2 * 26 + c - 'A' + 1`，由于`c - 'A'`在26的范围内，再加上1可能会超过26，从而在得到`num2`时可能会实际值大一，故应该先减去1，再取余并除26。
+* 在$26$进制字符串转$10$进制时，每次都需要乘$26$并加上字符值并加$1$，`num1 = num2 * 26 + c - 'A' + 1`，由于`c - 'A'`在$26$的范围内，再加上$1$可能会超过$26$，从而在得到`num2`时可能会实际值大一，故应该先减去$1$，再取余并除$26$。
 
 ```java
 class Solution {

@@ -4,7 +4,7 @@ Given two non-negative integers `num1` and `num2` represented as strings, return
 
 
 
-Note:
+**Note**:
 
 * The length of both `num1` and `num2` is < 110.
 * Both `num1` and `num2` contain only digits `0-9`.

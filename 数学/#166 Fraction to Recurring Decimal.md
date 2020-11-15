@@ -20,22 +20,19 @@ class Solution {
 
 ## 程序设计
 
-* 整数部分可以通过整形除法直接得到，此处需要注意负号的判断，因为如果分子小于分母，得到的结果是0，会丢失负号，故需要特别处理；其次需要注意溢出的情况，如果分母是最大值或最小值，由于在小数除法部分需要乘十操作，存在溢出的问题，故需要将整形转为长整形。
-* 最后需要考虑的问题就是对循环除数的判断。可以记录之前的除数，如果重复，说明发生循环，以`4/333`为例，前三个除数分别为4、40、67，第四个除数是4，发生重复。
+* 整数部分可以通过整形除法直接得到，此处需要注意负号的判断，因为如果分子小于分母，得到的结果是$0$，会丢失负号，故需要特别处理；其次需要注意溢出的情况，如果分母是最大值或最小值，由于在小数除法部分需要乘十操作，存在溢出的问题，故需要将整形转为长整形。
+* 最后需要考虑的问题就是对循环除数的判断。可以记录之前的除数，如果重复，说明发生循环，以`4/333`为例，前三个除数分别为$4$、$40$、$67$，第四个除数是$4$，发生重复。
 
 ```java
 class Solution {
     public String fractionToDecimal(int numerator, int denominator) {
-        if(denominator == 0) {
-            return "";
-        }
-        if(numerator == 0) {
-            return "0";
-        }
+        if(denominator == 0) return "";
+        if(numerator == 0) return "0";
+        
         StringBuffer sb = new StringBuffer();
         // 判断负数
-        if(numerator < 0 ^ denominator < 0)
-            sb.append("-"); 
+        if(numerator < 0 ^ denominator < 0) sb.append("-"); 
+        
         // 转化为long，避免溢出
         long remiander = Math.abs(Long.valueOf(numerator));
         long divisor  = Math.abs(Long.valueOf(denominator));
@@ -43,17 +40,16 @@ class Solution {
         sb.append(String.valueOf(remiander / divisor));
         remiander %= divisor;
         // 已被除尽
-        if(remiander == 0) {
-            return sb.toString();
-        }
+        if(remiander == 0) return sb.toString();
+        
         // 插入小数号
         sb.append(".");
         // 记录除数，判断是否有循环产生
         Map<Long, Integer> record = new HashMap<>();
         // 没除尽则一直循环
-        while(remiander != 0) {
+        while (remiander != 0) {
             // 除数字典已包含，表示有循环结果
-            if(record.containsKey(remiander)) {
+            if (record.containsKey(remiander)) {
                 int idx = record.get(remiander);
                 sb.insert(idx, "(");
                 sb.append(")");

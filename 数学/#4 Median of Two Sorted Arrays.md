@@ -45,34 +45,29 @@ class Solution {
 
         // 奇数时，center1、2都是同一中间索引；
         // 偶数时，center1、2分别为中间两个结点的索引。
-        int center1 = (n + m +1) >> 1;
-        int center2 = (n + m +2) >> 1;
+        int center1 = (n + m + 1) >> 1;
+        int center2 = (n + m + 2) >> 1;
         // 对应奇偶数情况
         if(center1 == center2) {
-            return getKth(nums1, 0, n -1, nums2, 0, m - 1, center1);
+            return getKth(nums1, 0, n - 1, nums2, 0, m - 1, center1);
         } else {
             // 乘0.5浮点数化
-            return (getKth(nums1, 0, n -1, nums2, 0, m - 1, center1) + getKth(nums1, 0, n -1, nums2, 0, m - 1, center2)) * 0.5;
+            return (getKth(nums1, 0, n - 1, nums2, 0, m - 1, center1) + getKth(nums1, 0, n - 1, nums2, 0, m - 1, center2)) * 0.5;
         }
     }
 
     private int getKth(int[] nums1, int start1, int end1, int[] nums2, int start2, int end2, int k) {
         int len1 = end1 - start1 + 1;
         int len2 = end2 - start2 + 1;
-        if(len1 > len2) {
-            return getKth(nums2, start2, end2, nums1, start1, end1, k);
-        }
+        if(len1 > len2) return getKth(nums2, start2, end2, nums1, start1, end1, k);
         // 其中一个为空，直接返回
-        if(len1 == 0) {
-            return nums2[start2 + k -1];
-        }
+        if(len1 == 0) return nums2[start2 + k -1];
         // 递归终止条件
-        if(k ==1) {
-            return nums1[start1] < nums2[start2] ? nums1[start1] : nums2[start2];
-        }
+        if(k ==1) return nums1[start1] < nums2[start2] ? nums1[start1] : nums2[start2];
+        
         // 比较第k/2个，如果不满足长度，则比较长度个
-        int index1 = (len1 < k/2 ? len1 : k/2) + start1 - 1;
-        int index2 = (len2 < k/2 ? len2 : k/2) + start2 - 1;
+        int index1 = (len1 < k / 2 ? len1 : k / 2) + start1 - 1;
+        int index2 = (len2 < k / 2 ? len2 : k / 2) + start2 - 1;
 
         // 递归
         if(nums1[index1] < nums2[index2]) {
@@ -102,7 +97,7 @@ class Solution {
 
 如果总长度为偶数，则左半部分等于右半部分：
 $$
-i + j = m - i + j - i\\
+i + j = m - i + n - j\\
 \implies j = \frac{m + n}{2} - i
 $$
 且左半部分的最大值小于等于右半部分的最小值。当总长度是奇数时，如果我们保证左半部分的长度比右半部分大1，则：
@@ -110,7 +105,7 @@ $$
 i + j = m - i + n - j + 1\\
 \implies j = \frac{m + n + 1}{2} - i
 $$
-上述条件可以合并为$j = \frac{m + n + 1}{2} - i$，因为偶数除以2仍然是整数。由于$0 \le j \le n$、$0 \le i \le m$，故$\frac{m + n + 1}{2} - i \ge 0 \implies m \le n$，即要保证$m \le n$。
+上述条件可以合并为$j = \frac{m + n + 1}{2} - i$，因为偶数除以$2$仍然是整数。由于$0 \le j \le n$、$0 \le i \le m$，故$\frac{m + n + 1}{2} - i \ge 0 \implies m \le n$，即要保证$m \le n$。
 
 &emsp;对于中位数左半部分的最大值小于等于右半部分的最小值，即$\max\{A[i-1],B[j-1]\} \le \min\{A[i],B[j]\}$。由于同一数组是有序的，只需保证$B[j-1] \le A[i]$和$A[i - 1] \le B[j]$。首先如果$B[j-1] > A[i]$时，$i$需要增大使得$B[j-1] \le A[i]$；由于初始化时，两半部分是相等的，$i$增加则$j$需要减少，根据公式$j = \frac{m + n + 1}{2} - i$可见$j$随$i$增大而减少。如果$A[i - 1] > B[j]$则$i$需要减少，$j$随着增大。考虑边界情况：
 
@@ -124,12 +119,11 @@ class Solution {
         int m = nums1.length;
         int n = nums2.length;
         // 保证m <= n
-        if(m > n) {
-            return findMedianSortedArrays(nums2, nums1);
-        }
+        if (m > n) return findMedianSortedArrays(nums2, nums1);
+        
         int start1 = 0, end1 = m;
         int i, j;
-        while(start1 <= end1) {
+        while (start1 <= end1) {
             i = (start1 + end1) / 2;
             j = (m + n + 1) / 2 - i;
             // A[i - 1] > B[j]，i需要减少
@@ -169,8 +163,8 @@ class Solution {
                 return (maxLeft + minRight) * 0.5;
             }
         }
-        // 基本不会走到这一步
-        return 0.0;
+        // 不会走到这一步
+        throw null;
     }
 }
 ```

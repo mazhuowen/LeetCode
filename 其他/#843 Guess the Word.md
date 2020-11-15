@@ -12,7 +12,7 @@ Besides the example test case below, there will be 5 additional test cases, each
 
 
 
-Note:  Any solutions that attempt to circumvent the judge will result in disqualification.
+**Note**:  Any solutions that attempt to circumvent the judge will result in disqualification.
 
 
 

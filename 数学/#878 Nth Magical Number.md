@@ -4,10 +4,12 @@ A positive integer is magical if it is divisible by either `A` or `B`.
 
 Return the N-th magical number.  Since the answer may be very large, **return it modulo** $10^9 + 7$.
 
+
+
 **Note:**
 
 * $1 \le N \le 10^9$
-* $2 \le A \le 40000
+* $2 \le A \le 40000$
 * $2 \le B \le 40000$
 
 
@@ -26,7 +28,7 @@ class Solution {
 
 ## 程序设计
 
-* 首先计算两个数的最大公倍数，普遍的算法是欧几里得算法。
+* 首先计算两个数的最大公约数，普遍的算法是欧几里得算法。
 
 ```java
  // 最大公约数，欧几里得法（辗转相余）递归形式
@@ -104,9 +106,9 @@ class Solution {
 
 &emsp;计算余数个神奇数，不超过$M$，由于$M = L/A + L/B - 1 = B*lcm + A*lcm - 1$，时间复杂度为$O(A + B)$，空间复杂度为$O(1)$。
 
-执行用时 :1 ms, 在所有 Java 提交中击败了80.00%的用户
+执行用时 :1ms，在所有java提交中击败了80.00%的用户。
 
-内存消耗 :36.2 MB, 在所有 Java 提交中击败了5.88%的用户
+内存消耗 :36.2MB，在所有java提交中击败了5.88%的用户。
 
 &emsp;区间为$N*\max(A,B)$，二分时间复杂度为$O(\log_2N*\max(A,B))$，空间复杂度为$O(1)$。
 
