@@ -68,11 +68,13 @@ class DiningPhilosophers {
         // 最多只有四个人尝试拿起叉子
         this.count =  new Semaphore(4);
         // 五个叉子锁
-        this.locks = new Lock[]{new ReentrantLock(),
+        this.locks = new Lock[]{
+            	new ReentrantLock(),
                 new ReentrantLock(),
                 new ReentrantLock(),
                 new ReentrantLock(),
-                new ReentrantLock()};
+                new ReentrantLock()
+        	};
     }
 
     // call the run() method of any runnable to execute its code

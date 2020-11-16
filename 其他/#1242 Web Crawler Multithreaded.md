@@ -39,7 +39,7 @@ Below are two examples explaining the functionality of the problem, for custom t
 
 
 
-Constraints:
+**Constraints**:
 
 * $1 \le \text{urls.length} \le 1000$
 * $1 \le \text{urls[i].length} \le 300$
@@ -86,9 +86,9 @@ class Solution {
         Thread thread = new Worker(startUrl, htmlParser, record, lock);
         thread.start();
 
-        try{
+        try {
             thread.join();
-        } catch(InterruptedException e){
+        } catch (InterruptedException e) {
         
         }
 
@@ -135,9 +135,9 @@ class Worker extends Thread {
 
         // 等待子线程结束
         for (Thread thread : threads) {
-            try{
+            try {
                 thread.join();
-            } catch(InterruptedException e){
+            } catch (InterruptedException e) {
 
             }
         }
@@ -148,7 +148,6 @@ class Worker extends Thread {
             url = url.substring(7);
         } else if (url.startsWith("https://")) {
             url = url.substring(8);
-
         } else throw new IllegalArgumentException("invalid param");
         
         int end = url.indexOf("/");

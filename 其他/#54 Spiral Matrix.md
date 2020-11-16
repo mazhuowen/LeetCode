@@ -1,6 +1,6 @@
 [toc]
 
-Given a matrix of $m \times n$ elements (m rows, n columns), return all elements of the matrix in spiral order.
+Given a matrix of $m \times n$ elements ($m$ rows, $n$ columns), return all elements of the matrix in spiral order.
 
 
 

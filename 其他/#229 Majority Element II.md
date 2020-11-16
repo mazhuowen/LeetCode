@@ -4,7 +4,7 @@ Given an integer array of size $n$, find all elements that appear more than $\fr
 
 
 
-Note: The algorithm should run in linear time and in $O(1)$ space.
+**Note**: The algorithm should run in linear time and in $O(1)$ space.
 
 
 

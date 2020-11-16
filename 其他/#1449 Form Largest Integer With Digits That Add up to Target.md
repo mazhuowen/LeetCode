@@ -141,7 +141,6 @@ class Solution {
         // 动态规划记录最大数字字符串
         String[] dp = new String[target + 1];
         dp[0] = "";
-
         
 
         for (int j = 0; j <= target; j++) {

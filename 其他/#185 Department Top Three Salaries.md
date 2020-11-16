@@ -50,7 +50,7 @@ In IT department, Max earns the highest salary, both Randy and Joe earn the seco
 
 ## 程序设计
 
-* 使用自连接查询比当前薪水高的薪水不超过3个的职工。
+* 使用自连接查询比当前薪水高的薪水不超过$3$个的职工。
 
 ```mysql
 SELECT 

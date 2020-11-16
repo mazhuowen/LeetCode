@@ -43,7 +43,7 @@ Each day only have one row record, and the dates are increasing with id increasi
 
 ## 题目解读
 
-&emsp;查询连续三天以上人流量大于100的记录。
+&emsp;查询连续三天以上人流量大于$100$的记录。
 
 ## 程序设计
 

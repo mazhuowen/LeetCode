@@ -8,7 +8,7 @@ Return a class `ExamRoom(int N)` that exposes two functions: `ExamRoom.seat()` r
 
 
 
-Note:
+**Note**:
 
 * $1 \le N \le 10^9$
 * `ExamRoom.seat()` and `ExamRoom.leave()` will be called at most $10^4$ times across all test cases.
@@ -18,7 +18,7 @@ Note:
 
 ## 题目解读
 
-&emsp;设计数据结构，模拟考生选座，优先选择距离相邻考生最远的座位，如果存在多个，选择最考前的座位。
+&emsp;设计数据结构，模拟考生选座，优先选择距离相邻考生最远的座位，如果存在多个，选择最靠前的座位。
 
 ```java
 class ExamRoom {

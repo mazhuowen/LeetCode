@@ -6,7 +6,7 @@ What is the minimum number of moves to transform the board into a "chessboard" -
 
 
 
-Note:
+**Note**:
 
 * `board` will have the same number of rows and columns, a number in the range `[2, 30]`.
 * `board[i][j]` will be only `0`s or `1`s.
@@ -27,7 +27,7 @@ class Solution {
 
 ## 程序设计
 
-* 参考官方解题，首先注意到交换行，类的种数不变，交换列，行的种数不变，而且种数只能是$2$；其此两种类型数目相差之能是一；最后每中组合行或列中$0$、$1$数目相差不超过$1$。
+* 参考官方解题，首先注意到交换行，列的种数不变；交换列，行的种数不变，而且种数只能是$2$；其此两种类型数目相差之能是一；最后每中组合行或列中$0$、$1$数目相差不超过$1$。
 * 交换次数可通过亦或操作获取。
 
 ```java

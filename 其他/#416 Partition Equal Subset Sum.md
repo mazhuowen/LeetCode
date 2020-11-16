@@ -4,7 +4,7 @@ Given a **non-empty** array containing **only positive integers**, find if the a
 
 
 
-Note:
+**Note**:
 
 * Each of the array element will not exceed `100`.
 * The array size will not exceed `200`.
@@ -59,7 +59,7 @@ class Solution {
 }
 ```
 
-> 01背包问题敲好填充满背包的问题变形，初始化时只有`dp(i,0)`为`true`表示可以填满。
+> 01背包问题恰好填充满背包的问题变形，初始化时只有`dp(i,0)`为`true`表示可以填满。
 
 * 优化空间得：
 
@@ -152,36 +152,6 @@ class Solution {
 &emsp;暂无，密切关注。参考社区优化，当前$i$个可以组成$sum$时，不用再继续动态规划，直接返回即可。
 
 ```java
-class Solution {
-    public boolean canPartition(int[] nums) {
-        int sum = 0, n = nums.length;
-        for (int num : nums) sum += num;
-        
-        // 总的和为奇数，不能划分为两个相等的和的子集
-        if (sum % 2 != 0) return false;
-
-        // 转化为前n个数字是否可填满sum容量的包的问题
-        sum /= 2;
-        // 表示前i个数字可构成容量为j的包
-        boolean[] dp = new boolean[sum + 1];
-        // 第一行，也就是背包容量为0初始化为true
-        dp[0] = true;
-
-        for (int i = 1; i <= n; i++) {
-            for (int j = sum; j >= 0; j--) {
-                
-                // 背包剩余容量不足，则最大值等于前i-1个数字构成的最大值
-                // if (nums[i - 1] > j) dp[j] = dp[j]，不变，故略去
-                if (nums[i - 1] <= j) {
-                    // 不加入第j个和加入第j个，取或
-                    dp[j] = dp[j] || dp[j - nums[i - 1]];
-                }
-            }
-        }
-        return false;
-    }
-}
-
 class Solution {
     public boolean canPartition(int[] nums) {
         int sum = 0, n = nums.length;

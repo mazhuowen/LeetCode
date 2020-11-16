@@ -4,7 +4,7 @@ Given a m x n matrix, if an element is 0, set its entire row and column to 0. Do
 
 
 
-Follow up:
+**Follow up**:
 
 * A straight forward solution using $O(mn)$ space is probably a bad idea.
 * A simple improvement uses $O(m + n)$ space, but still not the best solution.
@@ -14,7 +14,7 @@ Follow up:
 
 ## 题目解读
 
-&emsp;将矩形中位置元素为0的行列置为0。
+&emsp;将矩形中位置元素为$0$的行列置为$0$。
 
 ```java
 class Solution {
@@ -26,7 +26,7 @@ class Solution {
 
 ## 程序设计
 
-* 最基本的思路是额外空间保存为0的行列，然后重置。
+* 最基本的思路是额外空间保存为$0$的行列，然后重置。
 
 ```java
 class Solution {

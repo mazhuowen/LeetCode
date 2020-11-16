@@ -6,7 +6,7 @@ Now your task is to find the maximum number of strings that you can form with gi
 
 
 
-Constraints:
+**Constraints**:
 
 * $1 \le \text{strs.length} \le 600$
 * $1 \le \text{strs[i].length} \le 100$

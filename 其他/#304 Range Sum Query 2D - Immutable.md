@@ -4,11 +4,11 @@ Given a 2D matrix matrix, find the sum of the elements inside the rectangle defi
 
 
 
-Note:
+**Note**:
 
 * You may assume that the matrix does not change.
 * There are many calls to sumRegion function.
-* You may assume that row1 ≤ row2 and col1 ≤ col2.
+* You may assume that $\text{row1} \le \text{row2}$ and $\text{col1} \le \text{col2}$.
 
 
 

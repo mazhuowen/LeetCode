@@ -8,7 +8,7 @@ Given an 2D board, count how many battleships are in it. The battleships are rep
 
 
 
-Follow up:
+**Follow up**:
 Could you do it in **one-pass**, using only **$O(1)$ extra memory** and **without modifying** the value of the board?
 
 

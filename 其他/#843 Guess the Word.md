@@ -2,13 +2,13 @@
 
 We are given a word list of unique words, each word is 6 letters long, and one word in this list is chosen as **secret**.
 
-You may call `master.guess(word)` to guess a word.  The guessed word should have type `string` and must be from the original list with 6 lowercase letters.
+You may call `master.guess(word)` to guess a word.  The guessed word should have type `string` and must be from the original list with $6$ lowercase letters.
 
-This function returns an `integer` type, representing the number of exact matches (value and position) of your guess to the secret word.  Also, if your guess is not in the given wordlist, it will return -1 instead.
+This function returns an `integer` type, representing the number of exact matches (value and position) of your guess to the secret word.  Also, if your guess is not in the given wordlist, it will return $-1$ instead.
 
-For each test case, you have 10 guesses to guess the word. At the end of any number of calls, if you have made 10 or less calls to `master.guess` and at least one of these guesses was the **secret**, you pass the testcase.
+For each test case, you have $10$ guesses to guess the word. At the end of any number of calls, if you have made $10$ or less calls to `master.guess` and at least one of these guesses was the **secret**, you pass the testcase.
 
-Besides the example test case below, there will be 5 additional test cases, each with 100 words in the word list.  The letters of each word in those testcases were chosen independently at random from `'a'` to `'z'`, such that every word in the given word lists is unique.
+Besides the example test case below, there will be $5$ additional test cases, each with $100$ words in the word list.  The letters of each word in those testcases were chosen independently at random from `'a'` to `'z'`, such that every word in the given word lists is unique.
 
 
 
@@ -18,7 +18,7 @@ Besides the example test case below, there will be 5 additional test cases, each
 
 ## 题目解读
 
-&emsp;给定字符串数组，需要调用接口找出需要的字符串，题目要求调用次数不能超过10次。
+&emsp;给定字符串数组，需要调用接口找出需要的字符串，题目要求调用次数不能超过$10$次。
 
 ```java
 /**
@@ -38,7 +38,7 @@ class Solution {
 ## 程序设计
 
 * 假设随机取一个字符串`s`，调用接口返回`n`，则表示目标字符串`t`与当前字符串`s`有`n`位是匹配的，可在候选中删除与`s`匹配数不是`n`的字符串，重复这个过程。
-* 由于字符串是6位，假设返回`n`，过滤后最好的情况是只有一个字符串，就是答案；最坏的情况是除了$n$位，其它位置字符与`s`都不相同，有$25 ^ {6 - n}$中候选解，但这其中存在大量字符相等的字符串，其它位置字符各不相同的只有$26 * (6 - n)$类，只需再次进行匹配就可以保留一类，可以大大减少候选，以此类推，直到最后剩余一条。
+* 由于字符串是$6$位，假设返回`n`，过滤后最好的情况是只有一个字符串，就是答案；最坏的情况是除了$n$位，其它位置字符与`s`都不相同，有$25 ^ {6 - n}$种候选解，但这其中存在大量字符相等的字符串，其它位置字符各不相同的只有$26 * (6 - n)$类，只需再次进行匹配就可以保留一类，可以大大减少候选，以此类推，直到最后剩余一条。
 
 ```java
 class Solution {

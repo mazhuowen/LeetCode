@@ -6,7 +6,9 @@ Now you want to find out who the celebrity is or verify that there is not one. T
 
 You are given a helper function `bool knows(a, b)` which tells you whether A knows B. Implement a function `int findCelebrity(n)`. There will be exactly one celebrity if he/she is in the party. Return the celebrity's label if there is a celebrity in the party. If there is no celebrity, return `-1`.
 
-Note:
+
+
+**Note**:
 
 * The directed graph is represented as an adjacency matrix, which is an $n \times n$ matrix where `a[i][j] = 1` means person `i` knows person `j` while `a[i][j] = 0` means the contrary.
 * Remember that you won't have direct access to the adjacency matrix.
