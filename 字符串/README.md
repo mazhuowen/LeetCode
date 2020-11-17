@@ -28,7 +28,7 @@
 
 ### RK（Rabin-Karp）算法
 
-&emsp;通过哈希算法对主串中的$n - m + 1$个子串分别求哈希值，然后逐个与模式串的哈希值比较大小。如果某个子串的哈希值与模式串相等，在不考虑哈希冲突的情况下，说明对应的子串和模式串匹配。RK算法重点在于哈希算法的设计，以全部小写字母组成的字符串为例，把字母映射为数字，小写字母有26个，可以认为是26进制的数字，这样哈希算法就是这段字母表示的数字大小。这样设计的好处还有以$m$长度的窗口滑动时不需要重新遍历计算当前窗口的字母，当前窗口的哈希值与上一窗口有关联。这样总的时间复杂度就是$O(N)$。
+&emsp;通过哈希算法对主串中的$n - m + 1$个子串分别求哈希值，然后逐个与模式串的哈希值比较大小。如果某个子串的哈希值与模式串相等，在不考虑哈希冲突的情况下，说明对应的子串和模式串匹配。RK算法重点在于哈希算法的设计，以全部小写字母组成的字符串为例，把字母映射为数字，小写字母有$26$个，可以认为是26进制的数字，这样哈希算法就是这段字母表示的数字大小。这样设计的好处还有以$m$长度的窗口滑动时不需要重新遍历计算当前窗口的字母，当前窗口的哈希值与上一窗口有关联。这样总的时间复杂度就是$O(N)$。
 
 <img src="../images/字符串2.jpg" style="zoom:50%;" />
 
@@ -160,7 +160,7 @@ public int bm(String source, String pattern) {
 
 <img src="../images/KMP1.jpg" style="zoom: 50%;" />
 
-求解好前缀只需通过模式串本身。类似BM算法中的`bc`、`suffix`、`prefix`数组，KMP算法也可以提前构建一个数组，用来存储模式串中每个前缀的最长可匹配前缀子串的结尾字符下标。把这个数组定义为`next`数组，也叫失效函数（failure function）。数组的下标是候选前缀在模式串中结尾字符下标，数组的值是这个候选前缀作为字符串的最长可以匹配前缀子串的结尾字符下标。如图，模式串`ababacd`的候选前缀`abab`结尾字符在模式串索引为3，而该字符串`ab`是最长后缀子串匹配的最长前缀子串，最长前缀子串为第一个`ab`，结尾索引为$1$。
+求解好前缀只需通过模式串本身。类似BM算法中的`bc`、`suffix`、`prefix`数组，KMP算法也可以提前构建一个数组，用来存储模式串中每个前缀的最长可匹配前缀子串的结尾字符下标。把这个数组定义为`next`数组，也叫失效函数（failure function）。数组的下标是候选前缀在模式串中结尾字符下标，数组的值是这个候选前缀作为字符串的最长可以匹配前缀子串的结尾字符下标。如图，模式串`ababacd`的候选前缀`abab`结尾字符在模式串索引为$3$，而该字符串`ab`是最长后缀子串匹配的最长前缀子串，最长前缀子串为第一个`ab`，结尾索引为$1$。
 
 <img src="../images/KMP2.jpg" style="zoom: 50%;" />
 
@@ -282,7 +282,7 @@ class AC {
     // 构建AC树
     AC(String[] patterns) {
         this.root = new ACNode(' ');
-        for (String pattern : patterns) {
+        for (String pattern : patterns) {Official desktop client for the Telegram messenger
             ACNode temp = root;
             for (char c : pattern.toCharArray()) {
                 if (temp.children[c - 'a'] == null) temp.children[c - 'a'] = new ACNode(c);
@@ -338,7 +338,7 @@ class AC {
             while (p.children[idx] == null && p != root) {
                 p = p.fail;
             }
-            // 迭代
+            // 迭代Official desktop client for the Telegram messenger
             p = p.children[idx];
             // 未找到匹配当前字符的模式串，则重新定位到根结点，下一轮继续比较
             if (p == null) p = root;

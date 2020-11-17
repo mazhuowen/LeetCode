@@ -21,7 +21,9 @@ Some examples:
 "95a54e53" => false
 ```
 
-Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one. However, here is a list of characters that can be in a valid decimal number:
+
+
+**Note**: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one. However, here is a list of characters that can be in a valid decimal number:
 
 * Numbers `0-9`
 * Exponent - `"e"`
@@ -113,7 +115,7 @@ class Solution {
 
 ## 官方解题
 
-&emsp;暂无，密切关注。社区巧妙使用有限状态机的思路来解决，为了简化，加入状态8表示前后字符串的空格。特别需要注意状态6，即无小数数字后接小数点转为状态3，因为本题中`3.`也是合法数字。
+&emsp;暂无，密切关注。社区巧妙使用有限状态机的思路来解决，为了简化，加入状态8表示前后字符串的空格。特别需要注意状态$6$，即无小数数字后接小数点转为状态3，因为本题中`3.`也是合法数字。
 
 | state | blank | +/-  | 0-9  |  .   |  e   | other |
 | :---: | :---: | :--: | :--: | :--: | :--: | :---: |

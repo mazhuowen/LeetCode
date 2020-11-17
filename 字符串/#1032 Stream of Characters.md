@@ -7,7 +7,7 @@ Implement the `StreamChecker` class as follows:
 
 
 
-Note:
+**Note**:
 
 * $1 \le \text{words.length} \le 2000$
 * $1 \le \text{words[i].length} \le 2000$

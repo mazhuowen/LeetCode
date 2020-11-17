@@ -2,7 +2,9 @@
 
 Implement a trie with `insert`, `search`, and `startsWith` methods.
 
-Note:
+
+
+**Note**:
 
 * You may assume that all inputs are consist of lowercase letters `a-z`.
 * All inputs are guaranteed to be non-empty strings.
@@ -48,7 +50,7 @@ class Trie {
 
 ## 程序设计
 
-* 由于题目限定了只考虑小写字符，多叉树的结构实现只需简单的设置为26位数组。对于插入就是遍历添加子节点的过程；对于查询就是遍历判断是否存在子节点的过程。需注意最后一个字符的标识判断。对于前缀判断则是简单的遍历匹配，无需考虑标识。
+* 由于题目限定了只考虑小写字符，多叉树的结构实现只需简单的设置为$26$位数组。对于插入就是遍历添加子节点的过程；对于查询就是遍历判断是否存在子节点的过程。需注意最后一个字符的标识判断。对于前缀判断则是简单的遍历匹配，无需考虑标识。
 
 ```java
 class Trie {

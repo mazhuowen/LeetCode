@@ -6,7 +6,7 @@ Design a class `WordFilter` that supports one function, `WordFilter.f(String pre
 
 
 
-Note:
+**Note**:
 
 * `words` has length in range `[1, 15000]`.
 * For each test case, up to `words.length` queries `WordFilter.f` may be made.

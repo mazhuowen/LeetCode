@@ -12,7 +12,7 @@ All these operations occur simultaneously.  It's guaranteed that there won't be 
 
 
 
-Notes:
+**Notes**:
 
 * $0 \le \text{indexes.length} = \text{sources.length} = \text{targets.length} \le 100$
 * $0 < \text{indexes[i]} < \text{S.length} \le 1000$

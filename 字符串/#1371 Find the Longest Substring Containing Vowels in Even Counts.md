@@ -4,7 +4,7 @@ Given the string `s`, return the size of the longest substring containing each v
 
 
 
-Constraints:
+**Constraints**:
 
 * $1 \le \text{s.length} \le 5 \times 10^5$
 * `s` contains only lowercase English letters.

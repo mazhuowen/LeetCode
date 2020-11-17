@@ -19,10 +19,10 @@ Now, the user wants to input a new sentence. The following function will provide
 
 
 
-Note:
+**Note**:
 
 * The input sentence will always start with a letter and end with `'#'`, and only one blank space will exist between two words.
-* The number of **complete sentences** that to be searched won't exceed 100. The length of each sentence including those in the historical data won't exceed 100.
+* The number of **complete sentences** that to be searched won't exceed 100. The length of each sentence including those in the historical data won't exceed $100$.
 * Please use double-quote instead of single-quote when you write test cases even for a character input.
 * Please remember to **RESET** your class variables declared in class AutocompleteSystem, as static/class variables are **persisted across multiple test cases**. Please see `here` for more details.
 
@@ -289,7 +289,7 @@ class Pair {
 
 ## 官方解题
 
-&emsp;官方提供了哈希表和字典树的思路。事实上上述思路太繁杂，可以讲句子也看做单词，这样将大大简化流程。基础实现如下：
+&emsp;官方提供了哈希表和字典树的思路。事实上上述思路太繁杂，可以将句子也看做单词，大大简化流程。基础实现如下：
 
 ```java
 class AutocompleteSystem {
