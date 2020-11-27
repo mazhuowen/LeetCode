@@ -27,11 +27,11 @@
 * 中等[#435 Non-overlapping Intervals](./#435 Non-overlapping Intervals.md)    根据区间结束值贪婪判断
 * 中等[#452 Minimum Number of Arrows to Burst Balloons](./#452 Minimum Number of Arrows to Burst Balloons)    贪婪发统计区间交集数目
 * $\bigstar$困难[#659 Split Array into Consecutive Subsequences](./#659 Split Array into Consecutive Subsequences.md)    贪婪拼接连续数字
-* $\clubs$中等[#910 Smallest Range II](./#910 Smallest Range II.md)    巧妙地数学规律发现
 * $\bigstar$困难[#630 Course Schedule III](./#630 Course Schedule III.md)    课程时长的贪婪思路
 * 中等[#763 Partition Labels](./#763 Partition Labels.md)    贪婪合并区间
 * $\clubs$中等[#870 Advantage Shuffle](./#870 Advantage Shuffle.md)    排序遍历，贪婪搭配
 * 中等[#881 Boats to Save People](./#881 Boats to Save People.md)    贪婪法选择乘客
+* $\clubs$中等[#910 Smallest Range II](./#910 Smallest Range II.md)    巧妙地数学规律发现
 * 中等[#955 Delete Columns to Make Sorted II](./#955 Delete Columns to Make Sorted II.md)    字符串移除字符使之变为字典序
 * 中等[#1029 Two City Scheduling](./#1029 Two City Scheduling.md)    排序后贪婪划分
 * $\clubs$技巧[#1247 Minimum Swaps to Make Strings Equal](./#1247 Minimum Swaps to Make Strings Equal.md)    不匹配对交换情况贪婪选择

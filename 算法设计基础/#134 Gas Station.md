@@ -1,12 +1,14 @@
 [toc]
 
-There are N gas stations along a circular route, where the amount of gas at station i is `gas[i]`.
+There are $N$ gas stations along a circular route, where the amount of gas at station $i$ is `gas[i]`.
 
-You have a car with an unlimited gas tank and it costs `cost[i]` of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations.
+You have a car with an unlimited gas tank and it costs `cost[i]` of gas to travel from station i to its next station ($i+1$). You begin the journey with an empty tank at one of the gas stations.
 
-Return the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return -1.
+Return the starting gas station's index if you can travel around the circuit once in the clockwise direction, otherwise return $-1$.
 
-Note:
+
+
+**Note**:
 
 * If there exists a solution, it is guaranteed to be unique.
 * Both input arrays are non-empty and have the same length.
@@ -16,7 +18,7 @@ Note:
 
 ## 题目解读
 
-&emsp;给定加油站可加的油，和到达下一个加油站的花费，判断是否存在一个加油站作为起点可以循环，不存在则返回-1，存在则返回起点。
+&emsp;给定加油站可加的油，和到达下一个加油站的花费，判断是否存在一个加油站作为起点可以循环，不存在则返回$-1$，存在则返回起点。
 
 ```java
 class Solution {

@@ -6,14 +6,14 @@ Do NOT use system's `Math.random()`.
 
 
 
-Note:
+**Note**:
 
 * `rand7` is predefined.
 * Each testcase has one argument: $n$, the number of times that `rand10` is called.
 
 
 
-Follow up:
+**Follow up**:
 
 * What is the `expected value` for the number of calls to `rand7()` function?
 * Could you minimize the number of calls to `rand7()`?

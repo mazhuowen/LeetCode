@@ -6,7 +6,7 @@ Given `n` online courses represented by pairs `(t,d)`, your task is to find the 
 
 
 
-Note:
+**Note**:
 
 * The integer $1 \le d, t, n \le 10000$.
 * You can't take two courses simultaneously.

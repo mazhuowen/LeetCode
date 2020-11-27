@@ -4,7 +4,7 @@ Given an array of integers with possible duplicates, randomly output the index o
 
 
 
-Note:
+**Note**:
 The array size can be very large. Solution that uses too much extra space will not pass the judge.
 
 

@@ -2,8 +2,10 @@
 
 Suppose you have a random list of people standing in a queue. Each person is described by a pair of integers `(h, k)`, where `h` is the height of the person and `k` is the number of people in front of this person who have a height greater than or equal to `h`. Write an algorithm to reconstruct the queue.
 
-Note:
-The number of people is less than `1100`.
+
+
+**Note**:
+The number of people is less than $1100$.
 
 
 
@@ -67,9 +69,11 @@ class Solution {
     public int[][] reconstructQueue(int[][] people) {
         if (people == null || people.length == 0) return people;
 
+        // 身高逆序排序
         Arrays.sort(people, (a, b) -> a[0] == b[0] ? a[1] - b[1] : b[0] - a[0]);
 
         List<int[]> temp = new LinkedList<>();
+        // 根据高于当前身高的人的数目插入
         for (int[] p : people) temp.add(p[1], p);
         return temp.toArray(new int[people.length][2]);
     }
