@@ -32,4 +32,5 @@
 * 中等[#1578 Minimum Deletion Cost to Avoid Repeating Letters](./#1578 Minimum Deletion Cost to Avoid Repeating Letters.md)    队列为相等字符的子字符串
 * 中等[#1604 Alert Using Same Key-Card Three or More Times in a One Hour Period](./#1604 Alert Using Same Key-Card Three or More Times in a One Hour Period.md)    排序后滑动窗口判断
 * 中等[#1610 Maximum Number of Visible Points](./#1610 Maximum Number of Visible Points.md)    计算坐标角度，使用双指针滑动区间
+* 中等[#1658 Minimum Operations to Reduce X to Zero](./#1658 Minimum Operations to Reduce X to Zero.md)    滑动窗口记录最大长度
 * 中等[#面试题17.18 Shortest Supersequence LCCI](./#面试题17.18 Shortest Supersequence LCCI.md)    队列左右缩进缩小队列长度
