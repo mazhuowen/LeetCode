@@ -12,6 +12,8 @@ A student attendance record is a string that only contains the following three c
 
 A record is regarded as rewardable if it doesn't contain **more than one 'A' (absent)** or **more than two continuous 'L' (late)**.
 
+
+
 **Note:** The value of **n** won't exceed 100,000.
 
 

@@ -2,7 +2,9 @@
 
 Given a **non-empty** string s and a dictionary `wordDict` containing a list of **non-empty** words, determine if s can be segmented into a space-separated sequence of one or more dictionary words.
 
-Note:
+
+
+**Note**:
 
 * The same word in the dictionary may be reused multiple times in the segmentation.
 * You may assume the dictionary does not contain duplicate words.
@@ -11,7 +13,7 @@ Note:
 
 ## 题目解读
 
-&emsp;定一个**非空**字符串和一个包含**非空**单词列表的字典，判定字符串是否可以被空格拆分为一个或多个在字典中出现的单词。
+&emsp;给定一个**非空**字符串和一个包含**非空**单词列表的字典，判定字符串是否可以被空格拆分为一个或多个在字典中出现的单词。
 
 ```java
 class Solution {

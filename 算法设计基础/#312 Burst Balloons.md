@@ -4,7 +4,9 @@ Given `n` balloons, indexed from `0` to `n-1`. Each balloon is painted with a nu
 
 Find the maximum coins you can collect by bursting the balloons wisely.
 
-Note:
+
+
+**Note**:
 
 * You may imagine `nums[-1] = nums[n] = 1`. They are not real therefore you can not burst them.
 * $0 \le n \le 500$, $0 \le \text{nums[i]} \le 100$
@@ -25,7 +27,7 @@ class Solution {
 
 ## 程序设计
 
-* 如果依次尝试所有组合，最后返回最大收益，则时间复杂度为$O(N!)$，显然对于长度为500的数，计算量太大。换个角度考虑，实际上问题可以转化为一系列子问题，即在区间`(i,j)`戳破气球获得的最大收益等于区间`(i,k)`和`(k,j)`最大收益之和加上最后戳破`k`的收益，`k`是区间内的气球，只需遍历比较使得总体收益最大的`k`。
+* 如果依次尝试所有组合，最后返回最大收益，则时间复杂度为$O(N!)$，显然对于长度为$500$的数，计算量太大。换个角度考虑，实际上问题可以转化为一系列子问题，即在区间`(i,j)`戳破气球获得的最大收益等于区间`(i,k)`和`(k,j)`最大收益之和加上最后戳破`k`的收益，`k`是区间内的气球，只需遍历比较使得总体收益最大的`k`。
 * 由于上述思路会重复计算，可引入数组保存结果。
 
 ```java

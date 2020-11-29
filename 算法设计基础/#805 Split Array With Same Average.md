@@ -6,7 +6,7 @@ Return true if and only if after such a move, it is possible that the average va
 
 
 
-Note:
+**Note**:
 
 * The length of `A` will be in the range `[1, 30]`.
 * `A[i]` will be in the range of `[0, 10000]`.

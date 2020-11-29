@@ -19,7 +19,7 @@ For example, given the dungeon below, the initial health of the knight must be a
 
 
 
-Note:
+**Note**:
 
 * The knight's health has no upper bound.
 * Any room can contain threats or power-ups, even the first room the knight enters and the bottom-right room where the princess is imprisoned.
@@ -28,7 +28,7 @@ Note:
 
 ## 题目解读
 
-&emsp;`K`表示骑士，`P`表示公主，每一格表示骑士的生命变化，某一刻骑士生命低于等于0就会立刻死亡。题目需要给出成功救出公主的最低初始生命。题目规定骑士只能右移和下移。
+&emsp;`K`表示骑士，`P`表示公主，每一格表示骑士的生命变化，某一刻骑士生命低于等于$0$就会立刻死亡。题目需要给出成功救出公主的最低初始生命。题目规定骑士只能右移和下移。
 
 ```java
 class Solution {

@@ -4,7 +4,7 @@ Given an equation, represented by `words` on left side and the `result` on right
 
 You need to check if the equation is solvable under the following rules:
 
-* Each character is decoded as one digit (0 - 9).
+* Each character is decoded as one digit $(0 - 9)$.
 * Every pair of different characters they must map to different digits.
 * Each `words[i]` and `result` are decoded as one number **without** leading zeros.
 * Sum of numbers on left side (`words`) will equal to the number on right side (`result`). 
@@ -13,12 +13,12 @@ Return `True` if the equation is solvable otherwise return `False`.
 
 
 
-Constraints:
+**Constraints**:
 
 * $2 \le \text{words.length} \le 5$
 * $1 \le \text{words[i].length, result.length} \le 7$
 * `words[i]`, `result` contains only upper case English letters.
-* Number of different characters used on the expression is at most 10.
+* Number of different characters used on the expression is at most $10$.
 
 
 
@@ -36,7 +36,7 @@ class Solution {
 
 ## 程序设计
 
-* 基本的思路是统计每个字符的权重，尝试回溯每个字符的可能取值，逐个替换并计算，但是当字符串多于4个后会超时，需要优化终止条件，避免无用试探。
+* 基本的思路是统计每个字符的权重，尝试回溯每个字符的可能取值，逐个替换并计算，但是当字符串多于$4$个后会超时，需要优化终止条件，避免无用试探。
 
 ```java
 class Solution {

@@ -116,14 +116,14 @@ class Solution {
         }
     }
 
-    // 计算从机关到石堆再到其他机关或起始、钟结点的最短距离
+    // 计算从机关到石堆再到其他机关或起始、终结点的最短距离
     private int[][] distance(String[] maze, int[][] startDis) {
         int mNum = M.size();
         // 记录机关到所有其他点的距离，中间计算结果
         int[][][] tmp = new int[mNum][][];
         for (int i = 0; i < mNum; i++) tmp[i] =  bfs(M.get(i)[0], M.get(i)[1], maze);
         
-        // 从机关到石堆再到其他机关或起始、钟结点的最短距离
+        // 从机关到石堆再到其他机关或起始、终结点的最短距离
         int[][] dis = new int[mNum][mNum + 2];
         for (int i = 0; i < mNum; i++) {
             // 到达起始点的最短距离

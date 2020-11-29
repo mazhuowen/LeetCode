@@ -6,7 +6,7 @@ Return the maximum possible length of `s`.
 
 
 
-Constraints:
+**Constraints**:
 
 * $1 \le \text{arr.length} \le 16$
 * $1 \le \text{arr[i].length} \le 26$
@@ -16,7 +16,7 @@ Constraints:
 
 ## 题目解读
 
-&emsp;给定一个字符串数组`arr`，字符串`s`是将`arr`某一子序列字符串连接所得的字符串，如果`s`中的每一个字符都只出现过一次，就是一个可行解。返回所有可行解`s`中最长长度。
+&emsp;给定一个字符串数组`arr`，字符串`s`是将`arr`某一子序列字符串连接所得的字符串，如果`s`中的每一个字符都只出现过一次，就是一个可行解。返回所有可行解`s`中最长的长度。
 
 ```java
 class Solution {

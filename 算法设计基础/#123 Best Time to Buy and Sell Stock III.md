@@ -6,7 +6,7 @@ Design an algorithm to find the maximum profit. You may complete at most **two**
 
 
 
-Note: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
+**Note**: You may not engage in multiple transactions at the same time (i.e., you must sell the stock before you buy again).
 
 
 
@@ -38,7 +38,7 @@ class Solution {
 
         for (int i = 0; i < n; i++) {
             // j为0表示完成数为0，其最大收益也为0，从1开始更新
-            for (int j = 1; j <=2; j++) {
+            for (int j = 1; j <= 2; j++) {
                 // 初始化
                 if (i == 0) {
                     dp[i][j][0] = 0;

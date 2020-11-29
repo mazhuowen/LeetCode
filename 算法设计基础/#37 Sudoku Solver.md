@@ -12,7 +12,7 @@ Empty cells are indicated by the character '.'.
 
 
 
-Note:
+**Note**:
 
 * The given board contain only digits `1-9` and the character `'.'`.
 * You may assume that the given Sudoku puzzle will have a single unique solution.

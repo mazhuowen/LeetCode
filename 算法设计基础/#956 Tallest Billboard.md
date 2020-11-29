@@ -8,7 +8,7 @@ Return the largest possible height of your billboard installation.  If you canno
 
 
 
-Note:
+**Note**:
 
 * $0 \le \text{rods.length} \le 20$
 * $1 \le \text{rods[i]} \le 1000$
@@ -18,7 +18,7 @@ Note:
 
 ## 题目解读
 
-&emsp;广告牌有两个钢制支架，两边各一个，每个钢支架的高度必须相等。给定一堆可以焊接在一起的钢筋，返回广告牌的最大可能安装高度，如果没法安装返回0。
+&emsp;广告牌有两个钢制支架，两边各一个，每个钢支架的高度必须相等。给定一堆可以焊接在一起的钢筋，返回广告牌的最大可能安装高度，如果没法安装返回$0$。
 
 ```java
 class Solution {

@@ -8,7 +8,7 @@ If there is no way to make `arr1` strictly increasing, return `-1`.
 
 
 
-Constraints:
+**Constraints**:
 
 * $1 \le \text{arr1.length, arr2.length} \le 2000$
 * $0 \le \text{arr1[i], arr2[i]} \le 10^9$

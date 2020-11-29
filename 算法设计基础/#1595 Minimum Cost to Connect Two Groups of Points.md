@@ -20,7 +20,7 @@ Return the minimum cost it takes to connect the two groups.
 
 ## 题目解读
 
-&emsp;给定两组点，第一组点大于等于第二组点，现希望每组点都与另一组点相连，求最小权重。
+&emsp;给定两组点，第一组点数目大于等于第二组点，现希望每组点都与另一组点相连，求最小权重。
 
 ```java
 class Solution {
@@ -38,7 +38,7 @@ class Solution {
 class Solution {
     public int connectTwoGroups(List<List<Integer>> cost) {
         int n = cost.size(), m = cost.get(0).size(), stat = 1 << m;
-        // allCost[i][j]表示在i点选择连接状态j所需代价
+        // allCost[i][j]表示在i点选择连接状态j所需的总代价
         int[][] allCost = new int[n][stat];
         for (int i = 0; i < n; i++) {
             for (int j = 1; j < stat; j++) {

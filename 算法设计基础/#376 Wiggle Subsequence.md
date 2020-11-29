@@ -6,6 +6,8 @@ For example, `[1,7,4,9,2,5]` is a wiggle sequence because the differences `(6,-3
 
 Given a sequence of integers, return the length of the longest subsequence that is a wiggle sequence. A subsequence is obtained by deleting some number of elements (eventually, also zero) from the original sequence, leaving the remaining elements in their original order.
 
+
+
 **Follow up:**
 Can you do it in $O(n)$ time?
 
@@ -13,7 +15,7 @@ Can you do it in $O(n)$ time?
 
 ## 题目解读
 
-&emsp;如果一个序列中元素的差呈正负相间，则称之为摆动序列。给定一个数组，判断是否包含改动子序列。
+&emsp;如果一个序列中元素的差呈正负相间，则称之为摆动序列。给定一个数组，判断是否包含摆动子序列。
 
 ```java
 class Solution {

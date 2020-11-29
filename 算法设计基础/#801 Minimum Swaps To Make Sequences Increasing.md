@@ -9,6 +9,8 @@ At the end of some number of swaps, `A` and `B` are both strictly increasing.  (
 Given `A` and `B`, return the minimum number of swaps to make both sequences strictly increasing.  It is guaranteed that the given input always makes it possible.
 
 
+
+
 **Note**:
 
 * `A`, `B` are arrays with the same length, and that length will be in the range $[1, 1000]$.

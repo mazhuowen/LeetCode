@@ -123,7 +123,7 @@ class Solution {
                 for (int k = i; k < j; k += K - 1) {
                     min = Math.min(min, dp[i][k] + dp[k + 1][j]);
                 }
-                // i,j区间和合并为一堆，需要加上移动所需的所有石头数目
+                // i,j区间可合并为一堆，需要加上移动所需的所有石头数目
                 if ((j - i) % (K - 1) == 0) {
                     min += preSum[j + 1] - preSum[i];
                 }

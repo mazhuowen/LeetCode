@@ -67,31 +67,27 @@ class Solution {
 }
 ```
 
-* 根据上述思路可知不相交握手方案必然是嵌套或拼接的，这样问题可分解为$i$个人前$j$个一组的握手方案和剩余人的握手方案之积；特别需要注意嵌套情况，即第一个人与最后一个人握手，其余人一组，仍然是特殊的拼接方案，为了动态实现的方便，用`dp(0)`表示第一个人和最后一个人的握手方案，为1。这样得到动态规划形式：
+* 由于$N$个人站成一个环，以某个人为参照点，假设为图中的$3$，则其可与旁边的$2$或$4$握手，剩余的$N-2$个人仍然围成一个环，有`dp(i) = 2 * dp(i-2)`中方案；除了与旁边划分，$3$还可将人群划分为两块，如图所示，可与$6$、$8$、$10$握手，剩余两群人的握手方案数乘积即可；
+
+<img src="..\images\#1259.jpg" style="zoom: 50%;" />
 
 ```java
 class Solution {
-    int mod = 1_000_000_007;
+    private final int MOD = 1_000_000_007;
 
     public int numberOfWays(int num_people) {
-        if (num_people <= 0 || num_people % 2 != 0) throw new IllegalArgumentException("invalid param");
-
-        // 表示i对人的握手数
-        long[] dp = new long[num_people / 2 + 1];
-        // 初始化，0对人握手数为1，为了动态规划计算设置，代表第一个人和最后一个人握手的方案
-        dp[0] = 1;
-        // 两个人的握手数为1
-        dp[1] = 1;
-
-        for (int i = 2; i <= num_people / 2; i++) {
-            for (int j = 0; j < i; j++) {
-                // 前j对人握手乘剩下的人握手的次数
-                // 特别注意j=0表示第一个人与最后一个人握手，中间剩余的人握手的方案
-                dp[i] += dp[j] * dp[i - j - 1];
-                dp[i] %= mod;
+        // 表示i个人的不相交握手方式
+        long[] dp = new long[num_people + 1];
+        // 初始化（0个人、奇数个人握手方案数为0）
+        dp[2] = 1;
+        for (int i = 4; i <= num_people; i += 2) {
+            dp[i] = 2 * dp[i - 2] % MOD;
+            // 左边划分为j个人，右边则有i-j-2个人（需要除去划分的握手方式所关联的两个人）
+            for (int j = 2; j <= i - 4; j += 2) {
+                dp[i] = (dp[i] + dp[j] * dp[i - j - 2]) % MOD;
             }
         }
-        return (int)dp[num_people / 2];
+        return (int)dp[num_people];
     }
 }
 ```
@@ -100,9 +96,9 @@ class Solution {
 
 &emsp;时间复杂度为$O(N^2)$，空间复杂度为$O(N)$。
 
-执行用时：36ms，在所有java提交中击败了69.74%的用户。
+执行用时：34ms，在所有java提交中击败了80.00%的用户。
 
-内存消耗：36.5MB，在所有java提交中击败了100.00%的用户。
+内存消耗：35.4MB，在所有java提交中击败了74.60%的用户。
 
 ## 官方解题
 

@@ -15,7 +15,9 @@ By listing and labeling all of the permutations in order, we get the following s
 
 Given n and $k$, return the `k`th permutation sequence.
 
-Note:
+
+
+**Note**:
 
 * Given $n$ will be between $1$ and $9$ inclusive.
 * Given $k$ will be between $1$ and $n!$ inclusive.

@@ -4,13 +4,15 @@ Given several boxes with different colors represented by different positive numb
 You may experience several rounds to remove boxes until there is no box left. Each time you can choose some continuous boxes with the same color (composed of k boxes, k >= 1), remove them and get `k*k` points.
 Find the maximum points you can get.
 
+
+
 **Note:** The number of boxes `n` would not exceed 100.
 
 
 
 ## 题目解读
 
-&emsp;给定多个箱子，每个箱子的编号代表一种颜色，移除箱子直到没有箱子为止；每次可以移除颜色相同的连续的箱子，假设有`k`个，可获得`k*k`分。给出可得到的最大分。
+&emsp;给定多个箱子，每个箱子的编号代表一种颜色，移除箱子直到没有箱子为止；每次可以移除颜色相同的连续的箱子，假设有`k`个，可获得`k*k`分。求可得到的最大分。
 
 ```java
 class Solution {
@@ -118,12 +120,12 @@ class Solution {
         }
         // 区间start到end，end后有same个相同值序列，
         // 则先移除start到end之间的盒子，再移除end及之后same个盒子的得分为：
-         record[start][endTemp][sameTemp] = record[start][end][same] = removeBoxes(boxes, record, start, end - 1, 0) + (same + 1) * (same + 1);
+        record[start][endTemp][sameTemp] = record[start][end][same] = removeBoxes(boxes, record, start, end - 1, 0) + (same + 1) * (same + 1);
 
         for (int i = start; i < end; i++) {
             if (boxes[i] != boxes[end]) continue;
             // 在start和end间找到一个和end相同的值i，先移除i+1到end-1间的盒子，然后移除start到i及end和以后same个盒子
-             record[start][endTemp][sameTemp] = record[start][end][same] = Math.max(record[start][end][same],
+            record[start][endTemp][sameTemp] = record[start][end][same] = Math.max(record[start][end][same],
                     removeBoxes(boxes, record, i + 1, end - 1, 0) + removeBoxes(boxes, record, start, i, same + 1));
         }
         return record[start][end][same];

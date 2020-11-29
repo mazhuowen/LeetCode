@@ -2,7 +2,9 @@
 
 Write a function to generate the generalized abbreviations of a word. 
 
-Note: The order of the output does not matter.
+
+
+**Note**: The order of the output does not matter.
 
 
 
@@ -20,7 +22,7 @@ class Solution {
 
 ## 程序设计
 
-* 最基本的思路是回溯所有可能的缩写。存在两个问题，一个是存在重复，需要去重，里有个问题是，缩写中不能有相邻的数字出现。第一个问题用集合来解决；第二个问题使用标识位`flag`来表示上一个是数字缩写，下次不考虑数字缩写。
+* 最基本的思路是回溯所有可能的缩写。存在两个问题，一个是存在重复，需要去重，这里有个问题是，缩写中不能有相邻的数字出现。第一个问题用集合来解决；第二个问题使用标识位`flag`来表示上一个是数字缩写，下次不考虑数字缩写。
 
 ```java
 class Solution {

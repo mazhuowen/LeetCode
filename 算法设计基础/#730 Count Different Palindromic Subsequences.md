@@ -10,7 +10,7 @@ Two sequences `A_1, A_2, ...` and `B_1, B_2, ...` are different if there is some
 
 
 
-Note:
+**Note**:
 
 * The length of `S` will be in the range `[1, 1000]`.
 * Each character `S[i]` will be in the set `{'a', 'b', 'c', 'd'}`.

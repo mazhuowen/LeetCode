@@ -8,7 +8,7 @@ If the frog's last jump was $k$ units, then its next jump must be either $k - 1$
 
 
 
-Note:
+**Note**:
 
 * The number of stones is $\ge 2$ and is $< 1,100$.
 * Each stone's position will be a non-negative integer $< 2^{31}$.
@@ -18,7 +18,7 @@ Note:
 
 ## 题目解读
 
-&emsp;判断青蛙是否可到达最后一个石头，每次青蛙的跳跃距离是上一次距离加一减一或不变。初始跳跃长度为1。
+&emsp;判断青蛙是否可到达最后一个石头，每次青蛙的跳跃距离是上一次距离加一减一或不变。初始跳跃长度为$1$。
 
 ```java
 class Solution {

@@ -6,6 +6,8 @@ We define an inverse pair as following: For `ith` and `jth` element in the array
 
 Since the answer may be very large, the answer should be modulo $10^9 + 7$.
 
+
+
 **Note:**
 
 The integer `n` is in the range `[1, 1000]` and `k` is in the range `[0, 1000]`.

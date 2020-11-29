@@ -35,7 +35,6 @@ class Solution {
         // 检查和是否可分
         int sum = 0;
         for (int num : nums) sum += num;
-
         if (sum % k != 0) return false;
 
         sum /= k;
@@ -69,7 +68,6 @@ class Solution {
         // 检查和是否可分
         int sum = 0;
         for (int num : nums) sum += num;
-
         if (sum % k != 0) return false;
 
         sum /= k;
@@ -77,6 +75,7 @@ class Solution {
         // 排序判断
         Arrays.sort(nums);
         int start = nums.length - 1;
+        // 判断缩小回溯范围
         if (nums[start] > sum) return false;
         while (start >= 0 && nums[start] == sum) {
             start--;
@@ -112,7 +111,7 @@ class Solution {
 
 ## 官方解题
 
-&emsp;官方解题一个重要优化是加入判断桶空的逻辑，由于有$k$个桶，如果不加判断，回溯会有很多重复值，比如同样的组合在第一个桶中不符合要求，放到第二个桶仍任不符合要求；如果第一个桶回溯到0，说明不符合要求，后续桶就不要再回溯，等到第一个桶尝试成功，再尝试后续的桶。这样大大减少尝试次数。
+&emsp;官方解题一个重要优化是加入判断桶空的逻辑，由于有$k$个桶，如果不加判断，回溯会有很多重复值，比如同样的组合在第一个桶中不符合要求，放到第二个桶仍任不符合要求；如果第一个桶回溯到$0$，说明不符合要求，后续桶就不要再回溯，等到第一个桶尝试成功，再尝试后续的桶。这样大大减少尝试次数。
 
 ```java
 class Solution {
@@ -122,7 +121,6 @@ class Solution {
         // 检查和是否可分
         int sum = 0;
         for (int num : nums) sum += num;
-
         if (sum % k != 0) return false;
 
         sum /= k;
