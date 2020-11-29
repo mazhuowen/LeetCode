@@ -56,6 +56,7 @@
 * 中等[#1292 Maximum Side Length of a Square with Sum Less than or Equal to Threshold](./#1292 Maximum Side Length of a Square with Sum Less than or Equal to Threshold.md)    矩形前缀和优化
 * 中等[#1352 Product of the Last K Numbers](./#1352 Product of the Last K Numbers.md)    前缀积变型
 * 简单[#1375 Bulb Switcher III](./#1375 Bulb Switcher III.md)    编号求和比较
+* 中等[#1664 Ways to Make a Fair Array](./#1664 Ways to Make a Fair Array.md)    奇数、偶数索引前缀和
 * $\clubs$困难[#面试题17.24 最大子矩阵](./#面试题17.24 最大子矩阵.md)    列前缀和状态压缩
 
 ## 多线程
