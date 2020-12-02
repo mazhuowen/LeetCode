@@ -55,7 +55,7 @@
 * 困难[#772 Basic Calculator III](./#772 Basic Calculator III.md)    存在负号的计算问题
 * 困难[#1597 Build Binary Expression Tree From Infix Expression](./#1597 Build Binary Expression Tree From Infix Expression.md)    中缀转后缀生成计算树
 
-### 字典序
+### 单调栈
 
 * $\bigstar$困难[#316 Remove Duplicate Letters](./#316 Remove Duplicate Letters.md)    字典序
 * $\clubs$中等[#402 Remove K Digits](./#402 Remove K Digits.md)    栈的贪婪算法
@@ -69,6 +69,7 @@
 * 中等[#1019 Next Greater Node In Linked List](./#1019 Next Greater Node In Linked List.md)    单调栈
 * $\clubs$困难[#1063 Number of Valid Subarrays](./#1063 Number of Valid Subarrays.md)    单调栈
 * 中等[#1081 Smallest Subsequence of Distinct Characters](./#1081 Smallest Subsequence of Distinct Characters.md)    [#316 Remove Duplicate Letters](./#316 Remove Duplicate Letters.md)的变形
+* 中等[#1673 Find the Most Competitive Subsequence](./#1673 Find the Most Competitive Subsequence.md)    单调栈
 
 ### 二叉树
 

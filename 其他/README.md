@@ -45,6 +45,7 @@
 * $\clubs$中等[#238 Product of Array Except Self](./#238 Product of Array Except Self.md)    前缀积
 * 中等[#289 Game of Life](./#289 Game of Life.md)   新增状态巧妙利用空间
 * $\clubs$中等[#304 Range Sum Query 2D - Immutable](./#304 Range Sum Query 2D - Immutable.md)    前缀和思想在二维数组的应用
+* $\clubs$简单[#370 Range Addition](./#370 Range Addition.md)    差分数组
 * 简单[#724 Find Pivot Index](./#724 Find Pivot Index.md)    前缀和
 * 中等[#769 Max Chunks To Make Sorted](./#769 Max Chunks To Make Sorted.md)    连续数组前缀和规律
 * $\clubs$困难[#828 Count Unique Characters of All Substrings of a Given String](./#828 Count Unique Characters of All Substrings of a Given String.md)    计数每个字符不重复区间组合
@@ -57,6 +58,7 @@
 * 中等[#1352 Product of the Last K Numbers](./#1352 Product of the Last K Numbers.md)    前缀积变型
 * 简单[#1375 Bulb Switcher III](./#1375 Bulb Switcher III.md)    编号求和比较
 * 中等[#1664 Ways to Make a Fair Array](./#1664 Ways to Make a Fair Array.md)    奇数、偶数索引前缀和
+* $\clubs$中等[#1674 Minimum Moves to Make Array Complementary](./#1674 Minimum Moves to Make Array Complementary.md)    差分数组
 * $\clubs$困难[#面试题17.24 最大子矩阵](./#面试题17.24 最大子矩阵.md)    列前缀和状态压缩
 
 ## 多线程

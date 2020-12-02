@@ -87,7 +87,9 @@ class Solution {
 
 &emsp;时间复杂度为$O(N\log_2K)$，空间复杂度为$O(K)$。
 
+执行用时：47 ms, 在所有 Java 提交中击败了20.73%的用户。
 
+内存消耗：50.2 MB, 在所有 Java 提交中击败了66.85%的用户。
 
 ## 官方解题
 
@@ -116,3 +118,29 @@ class Solution {
 ```
 
 &emsp;时间复杂度为$O(N)$，空间复杂度为$O(K)$。
+
+执行用时：43 ms, 在所有 Java 提交中击败了32.97%的用户
+
+内存消耗：50.1 MB, 在所有 Java 提交中击败了73.18%的用户。
+
+&emsp;使用数组代替栈，优化得：
+
+```java
+class Solution {
+    public int[] mostCompetitive(int[] nums, int k) {
+        if (nums == null || nums.length < k) throw new IllegalArgumentException("invalid param");
+        int idx = 0;
+        int[] res = new int[k];
+        for (int i = 0; i < nums.length; i++) {
+            int num = nums[i];
+            while (idx > 0 && res[idx - 1] > num && idx + nums.length - i > k) idx--;
+            if (idx < k) res[idx++] = num;
+        }
+        return res;
+    }
+}
+```
+
+执行用时：7 ms, 在所有 Java 提交中击败了97.98%的用户
+
+内存消耗：50.2 MB, 在所有 Java 提交中击败了66.85%的用户。

@@ -85,6 +85,7 @@
 * 中等[#1367 Linked List in Binary Tree](./#1367 Linked List in Binary Tree.md)    [#面试题04.10 Check SubTree LCCI](./#面试题04.10 Check SubTree LCCI.md)的变形
 * 中等[#1372 Longest ZigZag Path in a Binary Tree](./#1372 Longest ZigZag Path in a Binary Tree.md)    前序遍历统计交替路径
 * 简单[#1469 Find All The Lonely Nodes](./#1469 Find All The Lonely Nodes.md)    后序遍历
+* 中等[#1484 Clone Binary Tree With Random Pointer](./#1484 Clone Binary Tree With Random Pointer.md)    哈希表记录映射关系，遍历维护
 * 中等[#1602 Find Nearest Right Node in Binary Tree](./#1602 Find Nearest Right Node in Binary Tree.md)    层次遍历
 * 中等[#1609 Even Odd Tree](./#1609 Even Odd Tree.md)    层次遍历
 * 中等[#1660 Correct a Binary Tree](./#1660 Correct a Binary Tree.md)    层次遍历确定坏节点
