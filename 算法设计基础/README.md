@@ -41,6 +41,7 @@
 * $\clubs$中等[#1536 Minimum Swaps to Arrange a Binary Grid](./#1536 Minimum Swaps to Arrange a Binary Grid.md)    最小交换行的次数使得矩阵为上三角
 * 中等[#1564 Put Boxes Into the Warehouse I](./#1564 Put Boxes Into the Warehouse I.md)    贪婪匹配
 * $\clubs$中等[#1605 Find Valid Matrix Given Row and Column Sums](./#1605 Find Valid Matrix Given Row and Column Sums.md)    贪婪填充矩阵
+* 中等[#1648 Sell Diminishing-Valued Colored Balls](./#1648 Sell Diminishing-Valued Colored Balls.md)    贪婪选择得分最大的球
 
 ## 分治法
 

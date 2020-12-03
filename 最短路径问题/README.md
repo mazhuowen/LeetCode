@@ -38,6 +38,7 @@ for (int i = 0; i < n; i++) {
 ```
 
 * $\clubs$中等[#743 Network Delay Time](./#743 Network Delay Time.md)    经典`Dijkstra`算法应用
+* 中等[#1631 Path With Minimum Effort](./#1631 Path With Minimum Effort.md)    变形的最短路径问题
 
 ### 负权无环图最短路径
 
