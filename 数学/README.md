@@ -30,6 +30,7 @@
 * $\bigstar$困难[#829 Consecutive Numbers Sum](./#829 Consecutive Numbers Sum.md)    质因数分解
 * 简单[#867 Transpose Matrix](./#867 Transpose Matrix.md)    矩阵转置
 * $\bigstar$困难[#878 Nth Magical Number](./#878 Nth Magical Number.md)    数学规律与二分查找结合
+* $\clubs$中等[#963 Minimum Area Rectangle II](./#963 Minimum Area Rectangle II.md)    点构成的矩形面积计算
 * $\bigstar$困难[#972 Equal Rational Numbers](./#972 Equal Rational Numbers.md)    有理数的分数形式表达
 * $\clubs$中等[#1015 Smallest Integer Divisible by K](./#1015 Smallest Integer Divisible by K.md)    数字乘积组合的余数规律
 * $\bigstar$中等[#1071 Greatest Common Divisor of Strings](./#1071 Greatest Common Divisor of Strings.md)    字符串最大公因子
@@ -37,6 +38,7 @@
 * $\clubs$中等[#1201 Ugly Number III](./#1201 Ugly Number III.md)    [#878 Nth Magical Number](./#878 Nth Magical Number.md) 的延续，周期化并二分查找
 * 中等[#1262 Greatest Sum Divisible by Three](./#1262 Greatest Sum Divisible by Three.md)    加法的余数规律
 * $\clubs$困难[#1330 Reverse Subarray To Maximize Array Value](./#1330 Reverse Subarray To Maximize Array Value.md)    绝对值方程的拆分
+* 中等[#1401 Circle and Rectangle Overlapping](./#1401 Circle and Rectangle Overlapping.md)    圆是否与矩形相交
 * 中等[#1497 Check If Array Pairs Are Divisible by k](./#1497 Check If Array Pairs Are Divisible by k.md)    两数相加能被整除的规律
 * $\bigstar$技巧[#1521 Find a Value of a Mysterious Function Closest to Target](./#1521 Find a Value of a Mysterious Function Closest to Target.md)    区间按位与的递减性
 * 中等[#1573 Number of Ways to Split a String](./#1573 Number of Ways to Split a String.md)    排列组合问题

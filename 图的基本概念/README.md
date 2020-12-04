@@ -68,9 +68,10 @@ for (int i = 0; i < N; i++) {
 * 中等[#133 Clone Graph](./#133 Clone Graph.md)    图的遍历拷贝
 * $\clubs$困难[#631 Design Excel Sum Formula](./#631 Design Excel Sum Formula.md)    图的深度优先搜索的应用
 * $\clubs$中等[#785 Is Graph Bipartite?](./#785 Is Graph Bipartite.md)    图遍历的变种，巧妙利用访问标识
+* 中等[#797 All Paths From Source to Target](./#797 All Paths From Source to Target.md)    深度优先搜索遍历路径
 * $\clubs$中等[#802 Find Eventual Safe States](./#802 Find Eventual Safe States.md)    图遍历的变种，巧妙利用访问标识
 * 简单[#841 Keys and Rooms](./#841 Keys and Rooms.md)    图的遍历
-* 中等[#797 All Paths From Source to Target](./#797 All Paths From Source to Target.md)    深度优先搜索遍历路径
+* 中等[#851 Loud and Rich](./#851 Loud and Rich.md)    图的深度优先搜索
 * 中等[#1059 All Paths from Source Lead to Destination](./#1059 All Paths from Source Lead to Destination.md)    图遍历的变种，巧妙利用访问标识
 * $\clubs$中等[#1042 Flower Planting With No Adjacent](./#1042 Flower Planting With No Adjacent.md)    深度遍历变形着色结点
 * 中等[#1236 Web Crawler](./#1236 Web Crawler.md)    从一个节点开始的图的遍历
