@@ -75,6 +75,7 @@ for (int i = 0; i < N; i++) {
 * 中等[#1059 All Paths from Source Lead to Destination](./#1059 All Paths from Source Lead to Destination.md)    图遍历的变种，巧妙利用访问标识
 * $\clubs$中等[#1042 Flower Planting With No Adjacent](./#1042 Flower Planting With No Adjacent.md)    深度遍历变形着色结点
 * 中等[#1236 Web Crawler](./#1236 Web Crawler.md)    从一个节点开始的图的遍历
+* 中等[#1376 Time Needed to Inform All Employees](./#1376 Time Needed to Inform All Employees.md)    树图深度优先搜索
 * 中等[#1466 Reorder Routes to Make All Paths Lead to the City Zero](./#1466 Reorder Routes to Make All Paths Lead to the City Zero.md)    图的遍历搜索
 
 ## 图的搜索在其它领域的应用

@@ -34,6 +34,7 @@
 * $\clubs$中等[#910 Smallest Range II](./#910 Smallest Range II.md)    巧妙地数学规律发现
 * 中等[#955 Delete Columns to Make Sorted II](./#955 Delete Columns to Make Sorted II.md)    字符串移除字符使之变为字典序
 * 中等[#1029 Two City Scheduling](./#1029 Two City Scheduling.md)    排序后贪婪划分
+* 中等[#1058 Minimize Rounding Error to Meet Target](./#1058 Minimize Rounding Error to Meet Target.md)    最小四舍五入误差和
 * $\clubs$技巧[#1247 Minimum Swaps to Make Strings Equal](./#1247 Minimum Swaps to Make Strings Equal.md)    不匹配对交换情况贪婪选择
 * $\clubs$困难[#1326 Minimum Number of Taps to Open to Water a Garden](./#1326 Minimum Number of Taps to Open to Water a Garden.md)    区间嵌套可达的抽象
 * 中等[#1386 Cinema Seat Allocation](./#1386 Cinema Seat Allocation.md)    二进制表示座位状态，贪婪匹配
