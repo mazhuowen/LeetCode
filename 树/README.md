@@ -64,6 +64,7 @@
 * 中等[#662 Maximum Width of Binary Tree](./#662 Maximum Width of Binary Tree.md)    树的数组索引与层次遍历的结合
 * 中等[#663 Equal Tree Partition](./#663 Equal Tree Partition.md)    树的遍历求和
 * 中等[#666 Path Sum IV](./#666 Path Sum IV.md)    树的编号表示
+* 中等[#671 Second Minimum Node In a Binary Tree](./#671 Second Minimum Node In a Binary Tree.md)    后序遍历返回次小值
 * $\clubs$中等[#742 Closest Leaf in a Binary Tree](./#742 Closest Leaf in a Binary Tree.md)    后序遍历记录状态
 * 中等[#863 All Nodes Distance K in Binary Tree](./#863 All Nodes Distance K in Binary Tree.md)    [#742 Closest Leaf in a Binary Tree](./#742 Closest Leaf in a Binary Tree.md)一般化的题目
 * $\clubs$中等[#889 Construct Binary Tree from Preorder and Postorder Traversal](./#889 Construct Binary Tree from Preorder and Postorder Traversal.md)    根据前序序列和后序序列构建一棵树

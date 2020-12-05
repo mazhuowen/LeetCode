@@ -76,6 +76,13 @@
 * $\bigstar$困难[#1157 Online Majority Element In Subarray](./#1157 Online Majority Element In Subarray.md)    保存数字出现索引使用线段树指导统计
 * $\bigstar$困难[#1606 Find Servers That Handled Most Number of Requests](./#1606 Find Servers That Handled Most Number of Requests.md)    线段树保存区间内最小值
 
+## 树状数组
+
+&emsp;todo https://blog.csdn.net/Yaokai_AssultMaster/article/details/79492190
+
+* $\bigstar$困难[#1505 Minimum Possible Integer After at Most K Adjacent Swaps On Digits](./#1505 Minimum Possible Integer After at Most K Adjacent Swaps On Digits.md)    树状数组贪婪法交换数字
+* 困难[#1649 Create Sorted Array through Instructions](./#1649 Create Sorted Array through Instructions.md)    树状数组或线段树
+
 ## B和B+树
 
 &emsp;对于文件和索引系统，减少磁盘访问是关键，B和B+树就是典型代表。
