@@ -44,10 +44,11 @@
 * 中等[#1573 Number of Ways to Split a String](./#1573 Number of Ways to Split a String.md)    排列组合问题
 * 简单[#1588 Sum of All Odd Length Subarrays](./#1588 Sum of All Odd Length Subarrays.md)    排列组合问题
 * $\bigstar$困难[#1611 Minimum One Bit Operations to Make Integers Zero](./#1611 Minimum One Bit Operations to Make Integers Zero.md)    格雷码编解码
-* $\bigstar$繁杂[#面试题16.03 Intersection LCCI](./#面试题16.03 Intersection LCCI.md)    直线或线段的参数方程式表达
 * 简单[#LCP02 Deep Dark Fraction](./#LCP02 Deep Dark Fraction.md)    极简分数规律
+* $\bigstar$困难[#LCP15 游乐园的迷宫](./#LCP15 游乐园的迷宫.md)    向量叉积判断左右，贪婪选择
 * $\bigstar$繁杂[#LCP16 游乐园的游览计划](./#LCP16 游乐园的游览计划.md)    图论无向图有向化及三角形组合的逻辑优化
 * 简单[#LCP22 黑白方格画](./#LCP22 黑白方格画.md)    遍历尝试排列组合问题
+* $\bigstar$繁杂[#面试题16.03 Intersection LCCI](./#面试题16.03 Intersection LCCI.md)    直线或线段的参数方程式表达
 
 ## 规律
 
@@ -110,9 +111,9 @@
 * 繁杂[#1453 Maximum Number of Darts Inside of a Circular Dartboard](./#1453 Maximum Number of Darts Inside of a Circular Dartboard)    圆心的几何学计算
 * 简单[#1518 Water Bottles](./#1518 Water Bottles.md)    模拟
 * $\bigstar$技巧[#1542 Find Longest Awesome Substring](./#1542 Find Longest Awesome Substring.md)    前缀和思想在奇偶状态中的巧妙应用
-* 简单[#面试题16.01 Swap Numbers LCCI](./#面试题16.01 Swap Numbers LCCI.md)    亦或应用
-* 中等[#面试题16.08 English Int LCCI](./#面试题16.08 English Int LCCI.md)    每隔三位转化数字
-* 中等[#面试题17.19 Missing Two LCCI](./#面试题17.19 Missing Two LCCI.md)    [#260 Single Number III](./#260 Single Number III.md)的变形
 * $\clubs$中等[#LCP03 机器人大冒险](./#LCP03 机器人大冒险.md)    利用周期性减少计算
 * 简单[#LCP06 拿硬币](./#LCP06 拿硬币.md)    最少拿取次数
 * 简单[#LCP11 期望个数统计](./#LCP11 期望个数统计.md)    概率期望计算
+* 简单[#面试题16.01 Swap Numbers LCCI](./#面试题16.01 Swap Numbers LCCI.md)    亦或应用
+* 中等[#面试题16.08 English Int LCCI](./#面试题16.08 English Int LCCI.md)    每隔三位转化数字
+* 中等[#面试题17.19 Missing Two LCCI](./#面试题17.19 Missing Two LCCI.md)    [#260 Single Number III](./#260 Single Number III.md)的变形
