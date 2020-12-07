@@ -33,6 +33,7 @@
 * 简单[#921 Minimum Add to Make Parentheses Valid](./#921 Minimum Add to Make Parentheses Valid.md)    括号计数消除
 * 简单[#1021 Remove Outermost Parentheses](./#1021 Remove Outermost Parentheses.md)    通过计数实现栈的思想
 * 中等[#1190 Reverse Substrings Between Each Pair of Parentheses](./#1190 Reverse Substrings Between Each Pair of Parentheses.md)    栈保存括号索引
+* 中等[#1209 Remove All Adjacent Duplicates in String II](./#1209 Remove All Adjacent Duplicates in String II.md)    栈保存计数
 * 中等[#1249 Minimum Remove to Make Valid Parentheses](./#1249 Minimum Remove to Make Valid Parentheses.md)    栈匹配括号对
 * 中等[#1381 Design a Stack With Increment Operation](./#1381 Design a Stack With Increment Operation.md)    栈中数据增量处理懒操作
 * 简单[#1598 Crawler Log Folder](./#1598 Crawler Log Folder.md)    文件层级栈的抽象
