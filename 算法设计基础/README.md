@@ -99,10 +99,11 @@
 * 中等[#516 Longest Palindromic Subsequence](./#516 Longest Palindromic Subsequence.md)    回文子序列
 * $\bigstar$困难[#552 Student Attendance Record II](./#552 Student Attendance Record II.md)    发现递归规律使用动态规划实现（最优算法为状态机）
 * 中等[#562 Longest Line of Consecutive One in Matrix](./#562 Longest Line of Consecutive One in Matrix.md)    记录之前位置的连续序列信息
+* 困难[#568 Maximum Vacation Days](./#568 Maximum Vacation Days.md)    动态规划复杂应用
 * $\clubs$困难[#629 K Inverse Pairs Array](./#629 K Inverse Pairs Array.md)    转移方程的归纳总结
 * 中等[#651 4 Keys Keyboard](./#651 4 Keys Keyboard.md)    数学方式优化
-* 困难[#568 Maximum Vacation Days](./#568 Maximum Vacation Days.md)    动态规划复杂应用
 * 中等[#688 Knight Probability in Chessboard](./#688 Knight Probability in Chessboard.md)    国际象棋马在棋盘内的概率
+* $\clubs$困难[#689 Maximum Sum of 3 Non-Overlapping Subarrays](./#689 Maximum Sum of 3 Non-Overlapping Subarrays.md)    动态规划求解固定数目子数组最大和
 * 中等[#714 Best Time to Buy and Sell Stock with Transaction Fee](./#714 Best Time to Buy and Sell Stock with Transaction Fee.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)扣除手续费
 * $\clubs$中等[#718 Maximum Length of Repeated Subarray](./#718 Maximum Length of Repeated Subarray.md)    动态规划求最大子数组长度（非最优）
 * $\clubs$困难[#730 Count Different Palindromic Subsequences](./#730 Count Different Palindromic Subsequences.md)    不重复的回文子序列
