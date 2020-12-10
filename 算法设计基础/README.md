@@ -149,9 +149,10 @@
 * $\bigstar$困难[#1563 Stone Game V](./#1563 Stone Game V.md)    动态规划的深层优化
 * $\clubs$困难[#1595 Minimum Cost to Connect Two Groups of Points](./#1595 Minimum Cost to Connect Two Groups of Points.md)    状压动态规划
 * 中等[#1626 Best Team With No Conflicts](./#1626 Best Team With No Conflicts.md)    最长递增子序列衍生问题
-* 困难[#面试题08.13 Pile Box LCCI](./#面试题08.13 Pile Box LCCI.md)    排序后动态规划
 * 简单[#LCP07 传递信息](./#LCP07 传递信息.md)    简单动态规划
 * $\clubs$中等[#LCP19 秋叶收藏集](./#LCP19 秋叶收藏集.md)    状态的抽象
+* 困难[#面试题08.13 Pile Box LCCI](./#面试题08.13 Pile Box LCCI.md)    排序后动态规划
+* 中等[#面试题08.14 Boolean Evaluation LCCI](./#面试题08.14 Boolean Evaluation LCCI.md)    布尔表达式组合值
 
 ## 回溯法
 
