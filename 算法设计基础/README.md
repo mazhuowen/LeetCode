@@ -150,6 +150,7 @@
 * $\clubs$困难[#1595 Minimum Cost to Connect Two Groups of Points](./#1595 Minimum Cost to Connect Two Groups of Points.md)    状压动态规划
 * 中等[#1626 Best Team With No Conflicts](./#1626 Best Team With No Conflicts.md)    最长递增子序列衍生问题
 * 中等[#1653 Minimum Deletions to Make String Balanced](./#1653 Minimum Deletions to Make String Balanced.md)    动态规划
+* $\clubs$困难[#1681 Minimum Incompatibility](./#1681 Minimum Incompatibility.md)    状态压缩动态规划
 * 简单[#LCP07 传递信息](./#LCP07 传递信息.md)    简单动态规划
 * $\clubs$中等[#LCP19 秋叶收藏集](./#LCP19 秋叶收藏集.md)    状态的抽象
 * 困难[#面试题08.13 Pile Box LCCI](./#面试题08.13 Pile Box LCCI.md)    排序后动态规划

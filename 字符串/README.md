@@ -256,6 +256,7 @@ class TrieNode {
 * $\bigstar$中等[#745 Prefix and Suffix Search](./#745 Prefix and Suffix Search.md)    将后缀和单词组合为新的字符串
 * 中等[#758 Bold Words in String](./#758 Bold Words in String.md)    与[#616 Add Bold Tag in String](./#616 Add Bold Tag in String.md)完全一致
 * 中等[#820 Short Encoding of Words](./#820 Short Encoding of Words.md)    后缀字典树
+* 中等[#1487 Making File Names Unique](./#1487 Making File Names Unique.md)    字典树判重
 
 ### AC自动机（Aho-Corasick）
 
