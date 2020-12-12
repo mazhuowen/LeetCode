@@ -35,6 +35,7 @@
 * $\bigstar$中等[#457 Circular Array Loop](./#457 Circular Array Loop.md)    快慢指针检测环
 * 中等[#838 Push Dominoes](./#838 Push Dominoes.md)    双指针标记左右指令
 * 简单[#849 Maximize Distance to Closest Person](./#849 Maximize Distance to Closest Person.md)    双指针记录非空位置
+* 简单[#925 Long Pressed Name](./#925 Long Pressed Name.md)    双指针比较字符
 * 中等[#986 Interval List Intersections](./#986 Interval List Intersections.md)    双指针遍历两个数组
 * 简单[#1056 Confusing Number](./#1056 Confusing Number.md)    双指针遍历字符串两端
 * 中等[#1229 Meeting Scheduler](./#1229 Meeting Scheduler.md)    双指针遍历迭代数组
