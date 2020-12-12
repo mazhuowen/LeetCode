@@ -95,6 +95,7 @@
 * 中等[#754 Reach a Number](./#754 Reach a Number.md)    等差数列正反向规律
 * 简单[#836 Rectangle Overlap](./#836 Rectangle Overlap.md)    [#223 Rectangle Area](./#223 Rectangle Area.md)的简化问题
 * 困难[#906 Super Palindromes](./#906 Super Palindromes.md)    遍历可能回文的前半部分
+* 简单[#914 X of a Kind in a Deck of Cards](./#914 X of a Kind in a Deck of Cards.md)    最大公约数判断
 * $\clubs$中等[#957 Prison Cells After N Days](./#957 Prison Cells After N Days.md)    有限状态的周期查找
 * 中等[#1006 Clumsy Factorial](./#1006 Clumsy Factorial.md)    笨阶乘
 * 简单[#1018 Binary Prefix Divisible By 5](./#1018 Binary Prefix Divisible By 5.md)    根据最后一位判断是否被5整除
