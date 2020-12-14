@@ -72,6 +72,7 @@
 * $\clubs$中等[#889 Construct Binary Tree from Preorder and Postorder Traversal](./#889 Construct Binary Tree from Preorder and Postorder Traversal.md)    根据前序序列和后序序列构建一棵树
 * 中等[#919 Complete Binary Tree Inserter](./#919 Complete Binary Tree Inserter.md)    完全二叉树的插入
 * $\clubs$中等[#968 Binary Tree Cameras](./#968 Binary Tree Cameras.md)    前序遍历巧妙返回状态
+* 中等[#971 Flip Binary Tree To Match Preorder Traversal](./#971 Flip Binary Tree To Match Preorder Traversal.md)    前序遍历匹配
 * $\clubs$中等[#979 Distribute Coins in Binary Tree](./#979 Distribute Coins in Binary Tree.md)    后序遍历返回额外信息
 * 中等[#987 Vertical Order Traversal of a Binary Tree](./#987 Vertical Order Traversal of a Binary Tree.md)    [#314 Binary Tree Vertical Order Traversal](./#314 Binary Tree Vertical Order Traversal.md)的进阶，增加同增顺序要求
 * 简单[#993 Cousins in Binary Tree](./#993 Cousins in Binary Tree.md)    层次遍历

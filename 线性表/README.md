@@ -103,6 +103,7 @@ while(A.next != next) {
 * 中等[#725 Split Linked List in Parts](./#725 Split Linked List in Parts.md)    链表的遍历重组
 * $\clubs$技巧[#817 Linked List Components](./#817 Linked List Components.md)    链表连续序列的判断
 * 中等[#901 Online Stock Span](./#901 Online Stock Span.md)    跳跃链表
+* 中等[#1424 Diagonal Traverse II](./#1424 Diagonal Traverse II.md)    对角线遍历
 * 中等[#面试题02.05 Sum Lists LCCI](./#面试题02.05 Sum Lists LCCI.md)    链表遍历求和
 
 ### 链表的插入删除

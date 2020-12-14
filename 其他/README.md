@@ -226,6 +226,15 @@ public class BitMap {
 &emsp;todo
 
 * 困难[#902 Numbers At Most N Given Digit Set](./#902 Numbers At Most N Given Digit Set.md)    简化的数位动态规划
-
 * $\clubs$困难[#1012 Numbers With Repeated Digits](./#1012 Numbers With Repeated Digits.md)    数位动态规划计算非重复数字（非最优）
 * $\bigstar$技巧[#1397 Find All Good Strings](./#1397 Find All Good Strings.md)    状态为`KMP`匹配的数位动态规划
+
+
+## 轮廓线动态规划
+
+&emsp;todo
+
+* 困难[#1349 Maximum Students Taking Exam](./#1349 Maximum Students Taking Exam.md)    轮廓线状态压缩动态规划
+
+* $\clubs$困难[#1659 Maximize Grid Happiness](./#1659 Maximize Grid Happiness.md)    轮廓线状态压缩动态规划
+* $\clubs$困难[#LCP04 覆盖](../图的基本概念/#LCP04 覆盖.md)    轮廓线状态压缩动态规划

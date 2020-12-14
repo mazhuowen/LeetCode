@@ -36,6 +36,7 @@
 * 中等[#1244 Design A Leaderboard](./#1244 Design A Leaderboard.md)    对分数排序
 * 中等[#1288 Remove Covered Intervals](./#1288 Remove Covered Intervals.md)    对区间起始值排序
 * 中等[#1329 Sort the Matrix Diagonally](./#1329 Sort the Matrix Diagonally.md)    矩形对角线快速排序
+* 中等[#1366 Rank Teams by Votes](./#1366 Rank Teams by Votes.md)    根据计数排序
 * $\bigstar$困难[#1585 Check If String Is Transformable With Substring Sort Operations](./#1585 Check If String Is Transformable With Substring Sort Operations.md)    冒泡排序的进阶抽象
 * 中等[#1589 Maximum Sum Obtained of Any Permutation](./#1589 Maximum Sum Obtained of Any Permutation.md)    重叠区间分派较大值
 * $\clubs$简单[#1608 Special Array With X Elements Greater Than or Equal X](./#1608 Special Array With X Elements Greater Than or Equal X.md)    排序比较

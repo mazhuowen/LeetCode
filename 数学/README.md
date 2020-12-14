@@ -23,6 +23,7 @@
 * $\bigstar$困难[#458 Poor Pigs](./#458 Poor Pigs.md)    信息熵与$n$进制应用
 * $\clubs$简单[#461 Hamming Distance](./#461 Hamming Distance.md)    数字异或截取最右侧的$1$
 * $\bigstar$困难[#483 Smallest Good Base](./#483 Smallest Good Base.md)    $k$进制规律
+* $\clubs$中等[#507 Perfect Number](./#507 Perfect Number.md)    欧几里得欧拉定理
 * 中等[#592 Fraction Addition and Subtraction](./#592 Fraction Addition and Subtraction.md)    分数的表示
 * $\clubs$中等[#634 Find the Derangement of An Array](./#634 Find the Derangement of An Array.md)    集合互斥公式
 * $\clubs$中等[#650 2 Keys Keyboard](./#650 2 Keys Keyboard.md)    整数素因子分解

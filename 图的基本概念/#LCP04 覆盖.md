@@ -32,7 +32,7 @@ class Solution {
 
 ## 程序设计
 
-* 骨牌只能放在两个格子上，放置后其他骨牌无法放置；可看作是两个格子配对，问题转化为最大匹配问题，即匈牙利算法。
+* 骨牌只能放在两个格子上，放置后其他骨牌无法放置；可看作是两个格子配对，问题转化为最大匹配问题，即匈牙利算法；
 * 每个格子看作是一个节点，只与相邻的四个格子相连，可知这样的图满足二分图的特性，可以采用匈牙利算法。
 
 ```java
@@ -122,3 +122,51 @@ class Node {
 ## 官方解题
 
 &emsp;暂无，密切关注。社区还有使用动态规划的方法，时间复杂度高且不具通用性。
+
+```java
+class Solution {
+    int n, m, mod;
+    boolean[][] mark;
+    int[][][] dp;
+
+    public int domino(int n, int m, int[][] broken) {
+        this.n = n;
+        this.m = m;
+        this.mod = (1 << (m - 1)) - 1;
+        // 标记损毁的棋盘位置
+        this.mark = new boolean[n][m];
+        for (int[] grid : broken) mark[grid[0]][grid[1]] = true;
+        // 轮廓线动态规划数组，分别表示x、y和之前的m个棋盘位置状态
+        this.dp = new int[n][m][1 << m];
+        return backTracing(0, 0, 0);
+    }
+
+    private int backTracing(int x, int y, int preStat) {
+        if (x == n) return 0;
+        if (y == m) return backTracing(x + 1, 0, preStat);
+        if (dp[x][y][preStat] != 0) return dp[x][y][preStat];
+
+        // 当前位置上方和左侧状态
+        int up = (preStat & (1 << (m - 1))) >> (m - 1), left = preStat & 1;
+        // 当前棋盘不连接
+        int res = backTracing(x, y + 1, (preStat & mod) << 1);
+        // 如果上方可用，连接当前棋盘和上方棋盘
+        if (!mark[x][y] && x > 0 && !mark[x - 1][y] && up == 0) {
+            // 将当前棋盘状态设置为1，上方已出队，不再关注
+            res = Math.max(res, 1 + backTracing(x, y + 1, (preStat & mod) << 1 | 1));
+        }
+        // 如果左侧可用，连接当前和左侧
+        if (!mark[x][y] && y > 0 && !mark[x][y - 1] && left == 0) {
+            // 将当前和左侧设置为1
+            res = Math.max(res, 1 + backTracing(x, y + 1, (preStat & mod) << 1 | 3));
+        }
+        return dp[x][y][preStat] = res;
+    }
+}
+```
+
+&emsp;时间复杂度为$O(MN2^M)$，空间复杂度为$O(MN2^M)$。
+
+执行用时：2 ms, 在所有 Java 提交中击败了72.97%的用户。
+
+内存消耗：38.1 MB, 在所有 Java 提交中击败了33.33%的用户。

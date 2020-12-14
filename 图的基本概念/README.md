@@ -172,4 +172,4 @@ for (int i = 0; i < N; i++) {
 
 ## 二分图最大匹配问题
 
-* $\bigstar$困难[#LCP04 Broken Board Dominoes](./#LCP04 Broken Board Dominoes.md)    匈牙利算法
+* $\bigstar$困难[#LCP04 覆盖](./#LCP04 覆盖.md)    匈牙利算法
