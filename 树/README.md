@@ -96,6 +96,7 @@
 * 中等[#1660 Correct a Binary Tree](./#1660 Correct a Binary Tree.md)    层次遍历确定坏节点
 * $\clubs$中等[#1666 Change the Root of a Binary Tree](./#1666 Change the Root of a Binary Tree.md)    中序遍历转换树结构
 * $\bigstar$困难[#LCP26 导航装置](./#LCP26 导航装置.md)    根据三岔口分配导航
+* 中等[#剑指Offer26 树的子结构](./#剑指Offer26 树的子结构.md)    判断子树结构
 * $\clubs$中等[#面试题04.10 Check SubTree LCCI](./#面试题04.10 Check SubTree LCCI.md)    前序遍历
 * $\clubs$中等[#面试题04.12 Paths with Sum LCCI](./#面试题04.12 Paths with Sum LCCI.md)    数组记录路径和
 

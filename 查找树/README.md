@@ -82,6 +82,7 @@
 
 * $\bigstar$困难[#1505 Minimum Possible Integer After at Most K Adjacent Swaps On Digits](./#1505 Minimum Possible Integer After at Most K Adjacent Swaps On Digits.md)    树状数组贪婪法交换数字
 * 困难[#1649 Create Sorted Array through Instructions](./#1649 Create Sorted Array through Instructions.md)    树状数组或线段树
+* 困难[#剑指Offer51 数组中的逆序对](../排序/#剑指Offer51 数组中的逆序对.md)    离散化树状数组
 
 ## B和B+树
 

@@ -54,6 +54,7 @@
 * $\bigstar$困难[#327 Count of Range Sum](./#327 Count of Range Sum.md)    归并排序前缀和并计算区间值
 * $\bigstar$困难[#493 Reverse Pairs](./#493 Reverse Pairs.md)    [#315 Count of Smaller Numbers After Self](./#315 Count of Smaller Numbers After Self.md)的变形
 * 简单[#977 Squares of a Sorted Array](./#977 Squares of a Sorted Array.md)    合并有序数组
+* 困难[#剑指Offer51 数组中的逆序对](./#剑指Offer51 数组中的逆序对.md)    归并排序查找逆序对
 
 ## 线性排序
 
