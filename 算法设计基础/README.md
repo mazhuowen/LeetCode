@@ -26,6 +26,7 @@
 * $\clubs$中等[#406 Queue Reconstruction by Height](./#406 Queue Reconstruction by Height.md)    身高降序计数增序
 * 中等[#435 Non-overlapping Intervals](./#435 Non-overlapping Intervals.md)    根据区间结束值贪婪判断
 * 中等[#452 Minimum Number of Arrows to Burst Balloons](./#452 Minimum Number of Arrows to Burst Balloons)    贪婪发统计区间交集数目
+* 简单[#605 Can Place Flowers](./#605 Can Place Flowers.md)    遍历判断
 * $\bigstar$困难[#659 Split Array into Consecutive Subsequences](./#659 Split Array into Consecutive Subsequences.md)    贪婪拼接连续数字
 * $\bigstar$困难[#630 Course Schedule III](./#630 Course Schedule III.md)    课程时长的贪婪思路
 * 中等[#763 Partition Labels](./#763 Partition Labels.md)    贪婪合并区间

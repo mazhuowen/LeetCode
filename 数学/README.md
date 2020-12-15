@@ -98,12 +98,14 @@
 * 困难[#906 Super Palindromes](./#906 Super Palindromes.md)    遍历可能回文的前半部分
 * 简单[#914 X of a Kind in a Deck of Cards](./#914 X of a Kind in a Deck of Cards.md)    最大公约数判断
 * $\clubs$中等[#957 Prison Cells After N Days](./#957 Prison Cells After N Days.md)    有限状态的周期查找
+* 简单[#970 Powerful Integers](./#970 Powerful Integers.md)    暴力枚举
 * 中等[#1006 Clumsy Factorial](./#1006 Clumsy Factorial.md)    笨阶乘
 * 简单[#1018 Binary Prefix Divisible By 5](./#1018 Binary Prefix Divisible By 5.md)    根据最后一位判断是否被5整除
 * $\bigstar$困难[#1067 Digit Count in Range](./#1067 Digit Count in Range.md)    [#233 Number of Digit One](./#233 Number of Digit One.md)的进阶
 * 中等[#1093 Statistics from a Large Sample](./#1093 Statistics from a Large Sample.md)    统计中位数
 * 简单[#1103 Distribute Candies to People](./#1103 Distribute Candies to People.md)    糖果等差分派规律
 * 简单[#1185 Day of the Week](./#1185 Day of the Week.md)    计算任意一天的星期
+* 简单[#1232 Check If It Is a Straight Line](./#1232 Check If It Is a Straight Line)    直线的表示
 * 简单[#1275 Find Winner on a Tic Tac Toe Game](./#1275 Find Winner on a Tic Tac Toe Game.md)    使用二进制数表示棋盘状态
 * 中等[#1291 Sequential Digits](./#1291 Sequential Digits.md)    顺次数规律
 * 简单[#1304 Find N Unique Integers Sum up to Zero](./#1304 Find N Unique Integers Sum up to Zero.md)    创建数组其和为0

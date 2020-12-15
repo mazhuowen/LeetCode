@@ -16,6 +16,7 @@
 * 简单[#495 Teemo Attacking](./#495 Teemo Attacking.md)    遍历扩展
 * 中等[#665 Non-decreasing Array](./#665 Non-decreasing Array.md)    遍历判断不符合要求的数据
 * 中等[#900 RLE Iterator](./#900 RLE Iterator.md)    数组计数迭代
+* 简单[#941 Valid Mountain Array](./#941 Valid Mountain Array.md)    线性遍历
 * 简单[#1002 Find Common Characters](./#1002 Find Common Characters.md)    遍历计数
 * $\clubs$中等[#1094 Car Pooling](./#1094 Car Pooling.md)    转化为上下车人数变化数组并遍历
 * 简单[#1576 Replace All 's to Avoid Consecutive Repeating Characters](./#1576 Replace All 's to Avoid Consecutive Repeating Characters.md)    遍历判断
