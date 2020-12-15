@@ -127,6 +127,7 @@ while(A.next != next) {
 * 简单[#206 Reverse Linked List](./#206 Reverse Linked List.md)    反转整个链表，注意递归实现
 * $\clubs$技巧[#234 Palindrome Linked List](./#234 Palindrome Linked List.md)    回文判断，双指针查找中点，反转后半段
 * 中等[#445 Add Two Numbers II](./#445 Add Two Numbers II.md)    链表翻转计算
+* 简单[#面试题02.06 Palindrome Linked List LCCI](./#面试题02.06 Palindrome Linked List LCCI.md)    判断字符串是否是回文
 
 ### 循环链表
 

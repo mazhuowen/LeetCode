@@ -59,6 +59,7 @@
 * $\bigstar$中等[#548 Split Array with Equal Sum](./#548 Split Array with Equal Sum.md)    集合巧妙化简循环
 * 中等[#554 Brick Wall](./#554 Brick Wall.md)    哈希表记录砖缝
 * 中等[#560 Subarray Sum Equals K](./#560 Subarray Sum Equals K.md)    使用哈希表记录前缀和
+* 简单[#594 Longest Harmonious Subsequence](./#594 Longest Harmonious Subsequence.md)    哈希表统计数字计数
 * 中等[#609 Find Duplicate File in System](./#609 Find Duplicate File in System.md)    哈希表记录文件内容及路径
 * 简单[#645 Set Mismatch](./#645 Set Mismatch.md)    哈希表记录缺失数字
 * 简单[#705 Design HashSet](./#705 Design HashSet.md)    设计集合
