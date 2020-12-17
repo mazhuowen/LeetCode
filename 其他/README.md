@@ -18,6 +18,7 @@
 * 中等[#1396 Design Underground System](./#1396 Design Underground System.md)    设计地铁统计系统
 * 中等[#1500 Design a File Sharing System](./#1500 Design a File Sharing System.md)    设计文件共享系统
 * 简单[#1603 Design Parking System](./#1603 Design Parking System.md)    计数停车
+* $\clubs$中等[#剑指Offer59-II 队列的最大值](./#剑指Offer59-II 队列的最大值.md)    递减序列维护队列最大值
 
 ## 逻辑
 
@@ -230,7 +231,7 @@ public class BitMap {
 * $\bigstar$技巧[#1397 Find All Good Strings](./#1397 Find All Good Strings.md)    状态为`KMP`匹配的数位动态规划
 
 
-## 轮廓线动态规划
+### 轮廓线动态规划
 
 &emsp;todo
 
