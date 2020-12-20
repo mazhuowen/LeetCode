@@ -104,6 +104,7 @@
 * $\bigstar$困难[#1067 Digit Count in Range](./#1067 Digit Count in Range.md)    [#233 Number of Digit One](./#233 Number of Digit One.md)的进阶
 * 中等[#1093 Statistics from a Large Sample](./#1093 Statistics from a Large Sample.md)    统计中位数
 * 简单[#1103 Distribute Candies to People](./#1103 Distribute Candies to People.md)    糖果等差分派规律
+* 简单[#1154 Day of the Year](./#1154 Day of the Year.md)    计算任意一天是当年第几天
 * 简单[#1185 Day of the Week](./#1185 Day of the Week.md)    计算任意一天的星期
 * 简单[#1232 Check If It Is a Straight Line](./#1232 Check If It Is a Straight Line)    直线的表示
 * 简单[#1275 Find Winner on a Tic Tac Toe Game](./#1275 Find Winner on a Tic Tac Toe Game.md)    使用二进制数表示棋盘状态

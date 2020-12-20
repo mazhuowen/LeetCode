@@ -111,6 +111,7 @@
 * 中等[#764 Largest Plus Sign](./#764 Largest Plus Sign.md)    矩形遍历有关的动态规划
 * $\clubs$技巧[#788 Rotated Digits](./#788 Rotated Digits.md)    巧妙的动态规划思路
 * $\clubs$中等[#801 Minimum Swaps To Make Sequences Increasing](./#801 Minimum Swaps To Make Sequences Increasing.md)    保持或交换两个动态规划数组
+* 中等[#813 Largest Sum of Averages](./#813 Largest Sum of Averages.md)    动态规划求最大平均值之和
 * $\clubs$中等[#818 Race Car](./#818 Race Car.md)    赛车最短指令
 * $\clubs$中等[#837 New 21 Game](./#837 New 21 Game.md)    概率逆向更新的动态规划
 * $\bigstar$中等[#873 Length of Longest Fibonacci Subsequence](./#873 Length of Longest Fibonacci Subsequence.md)    最长斐波那契子序列
@@ -151,6 +152,7 @@
 * $\clubs$困难[#1595 Minimum Cost to Connect Two Groups of Points](./#1595 Minimum Cost to Connect Two Groups of Points.md)    状压动态规划
 * 中等[#1626 Best Team With No Conflicts](./#1626 Best Team With No Conflicts.md)    最长递增子序列衍生问题
 * 中等[#1653 Minimum Deletions to Make String Balanced](./#1653 Minimum Deletions to Make String Balanced.md)    动态规划
+* 困难[#1671 Minimum Number of Removals to Make Mountain Array](./#1671 Minimum Number of Removals to Make Mountain Array.md)    最长递增子序列变形
 * $\clubs$困难[#1681 Minimum Incompatibility](./#1681 Minimum Incompatibility.md)    状态压缩动态规划
 * 简单[#LCP07 传递信息](./#LCP07 传递信息.md)    简单动态规划
 * $\clubs$中等[#LCP19 秋叶收藏集](./#LCP19 秋叶收藏集.md)    状态的抽象
