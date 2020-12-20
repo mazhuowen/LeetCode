@@ -16,6 +16,7 @@
 * 中等[#582 Kill Process](./#582 Kill Process.md)    树的广度优先搜索
 * 简单[#622 Design Circular Queue](./#622 Design Circular Queue.md)    设计循环队列
 * 中等[#641 Design Circular Deque](./#641 Design Circular Deque.md)    设计双向循环队列
+* 简单[#674 Longest Continuous Increasing Subsequence](./#674 Longest Continuous Increasing Subsequence.md)    滑动窗口
 * $\clubs$困难[#683 K Empty Slots](./#683 K Empty Slots.md)    转化数组线性扫描
 * 中等[#713 Subarray Product Less Than K](./#713 Subarray Product Less Than K.md)    滑动窗口
 * $\bigstar$困难[#862 Shortest Subarray with Sum at Least K](./#862 Shortest Subarray with Sum at Least K.md)    双向队列结合前缀和
