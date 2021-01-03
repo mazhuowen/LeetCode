@@ -70,6 +70,7 @@
 
 * $\bigstar$中等[#307 Range Sum Query - Mutable](./#307 Range Sum Query - Mutable.md)    静态线段树区间和统计
 * $\bigstar$困难[#308 Range Sum Query 2D - Mutable](./#308 Range Sum Query 2D - Mutable.md)    二维数组的线段树区间统计
+* $\bigstar$困难[#327 Count of Range Sum](../排序/#327 Count of Range Sum.md)    树状数组查询区间值
 * $\bigstar$中等[#673 Number of Longest Increasing Subsequence](./#673 Number of Longest Increasing Subsequence.md)    动态线段树
 * $\bigstar$繁杂[#699 Falling Squares](./#699 Falling Squares.md)    动态数组线段树延迟传播
 * $\clubs$困难[#732 My Calendar III](./#732 My Calendar III.md)    动态线段树延迟更新
@@ -80,6 +81,8 @@
 ## 树状数组
 
 &emsp;todo https://blog.csdn.net/Yaokai_AssultMaster/article/details/79492190
+
+* $\bigstar$困难[#327 Count of Range Sum](../排序/#327 Count of Range Sum.md)    树状数组查询区间值
 
 * $\bigstar$困难[#1505 Minimum Possible Integer After at Most K Adjacent Swaps On Digits](./#1505 Minimum Possible Integer After at Most K Adjacent Swaps On Digits.md)    树状数组贪婪法交换数字
 * 困难[#1649 Create Sorted Array through Instructions](./#1649 Create Sorted Array through Instructions.md)    树状数组或线段树

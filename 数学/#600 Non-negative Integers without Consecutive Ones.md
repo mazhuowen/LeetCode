@@ -46,7 +46,7 @@ class Solution {
         boolean pre = false;
         while (bit >= 0) {
             // 当前位为1
-            if ((num & (1 << bit)) == 1) {
+            if ((num & (1 << bit)) != 0) {
                 // (0,100...0)区间内的数目，需要减去0，避免重复计算
                 if (bit > 0) res += f[bit - 1] - 1;
                 // 前一数值为0，还需加上100...0本身

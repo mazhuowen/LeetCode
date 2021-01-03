@@ -1,9 +1,18 @@
+5638. Maximum Number of Eaten Apples
 5631. Jump Game VI
 5629. Reformat Phone Number
 5630. Maximum Erasure Value
+5642. Count Good Meals
+5643. Ways to Split Array Into Three Subarrays
+5644. Minimum Operations to Make a Subsequence
 5632. Checking Existence of Edge Length Limited Paths
 639. Decode Ways II
+1297. Maximum Number of Occurrences of a Substring
 
+5637. Determine if String Halves Are Alike
+5210. Where Will the Ball Fall
+5640. Maximum XOR With an Element From Array
+5210. Where Will the Ball Fall
 面试题 04.01. Route Between Nodes LCCI
 303. Range Sum Query - Immutable
 912. Sort an Array
@@ -13,6 +22,7 @@
 473. Matchsticks to Square
 953. Verifying an Alien Dictionary
 1043. Partition Array for Maximum Sum
+1010. Pairs of Songs With Total Durations Divisible by 60
 1510. Stone Game IV
 1448. Count Good Nodes in Binary Tree
 1215. Stepping Numbers
@@ -36,6 +46,7 @@
 5472. Shuffle String
 5473. Bulb Switcher IV
 剑指 Offer 13. 机器人的运动范围
+面试题 17.14. 最小K个数
 5474. Number of Good Leaf Nodes Pairs
 1650. Lowest Common Ancestor of a Binary Tree III
 254. Factor Combinations
@@ -61,6 +72,7 @@
 5496. Maximum Number of Coins You Can Get
 面试题 08.06. Hanota LCCI
 686. Repeated String Match
+1220. Count Vowels Permutation
 1282. Group the People Given the Group Size They Belong To
 809. Expressive Words
 869. Reordered Power of 2
@@ -87,6 +99,7 @@
 5488. Minimum Operations to Make Array Equal
 5489. Magnetic Force Between Two Balls
 5479. Thousand Separator
+5641. Maximum Units on a Truck
 5480. Minimum Number of Vertices to Reach All Nodes
 5481. Minimum Numbers of Function Calls to Make Target Array
 1637. Widest Vertical Area Between Two Points Containing No Points

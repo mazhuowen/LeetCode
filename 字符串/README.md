@@ -283,7 +283,7 @@ class AC {
     // 构建AC树
     AC(String[] patterns) {
         this.root = new ACNode(' ');
-        for (String pattern : patterns) {Official desktop client for the Telegram messenger
+        for (String pattern : patterns) {
             ACNode temp = root;
             for (char c : pattern.toCharArray()) {
                 if (temp.children[c - 'a'] == null) temp.children[c - 'a'] = new ACNode(c);
@@ -339,7 +339,7 @@ class AC {
             while (p.children[idx] == null && p != root) {
                 p = p.fail;
             }
-            // 迭代Official desktop client for the Telegram messenger
+            // 迭代
             p = p.children[idx];
             // 未找到匹配当前字符的模式串，则重新定位到根结点，下一轮继续比较
             if (p == null) p = root;

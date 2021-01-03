@@ -45,7 +45,7 @@ private void dfs(int start, Node[] graph, boolean[] visited) {
 // 对于图的各个连通分量进行遍历
 Queue<Integer> queue = new LinkedList<>();
 for (int i = 0; i < N; i++) {
-    if(visited[i]) continue;
+    if (visited[i]) continue;
     
     // 对当前连通分量进行遍历
     queue.add(i);

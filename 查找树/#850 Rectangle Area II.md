@@ -4,9 +4,29 @@ We are given a list of (axis-aligned) `rectangles`.  Each `rectangle[i] = [x1, y
 
 Find the total area covered by all `rectangles` in the plane.  Since the answer may be too large, **return it modulo $10^9 + 7$**.
 
-<img src="../images/#850.png" style="zoom: 33%;" />
 
-Note:
+
+**Example 1**:
+
+<img src="../images/#850_exp1.png" style="zoom: 33%;" />
+
+```
+Input: rectangles = [[0,0,2,2],[1,0,2,3],[1,0,3,1]]
+Output: 6
+Explanation: As illustrated in the picture.
+```
+
+**Example 2**:
+
+```
+Input: rectangles = [[0,0,1000000000,1000000000]]
+Output: 49
+Explanation: The answer is 1018 modulo (109 + 7), which is (109)2 = (-7)2 = 49.
+```
+
+
+
+**Note**:
 
 * $1 \le \text{rectangles.length} \le 200$
 * $\text{rectanges[i].length} = 4$
@@ -95,7 +115,7 @@ class Solution {
         int[][] edges = new int[2 * n][];
         int idx = 0;
         for (int[] rectangle : rectangles) {
-            // 分别存放边的高度、底还是高、边的左右坐标
+            // 分别存放边的高度、底边还是顶边、边的左右坐标
             edges[idx++] = new int[]{rectangle[1], 0, rectangle[0], rectangle[2]};
             edges[idx++] = new int[]{rectangle[3], 1, rectangle[0], rectangle[2]};
         }
@@ -162,61 +182,55 @@ class Solution {
 
 ## 官方解题
 
-&emsp;除了上述思路，官方提出线段树的最优解法。官方提供了线段树的实现：
+&emsp;除了上述思路，官方提出线段树的最优解法。线段树返回当前可用的横轴总长度，注意到底边则加入，顶边则删除，故只需保存整段计数，不必懒更新到各个子节点，这是与普通字典树的不同。
 
 ```java
-class Tree {
-    // 区间范围
+class SegmentTree {
     int start, end;
-    // 左右结点
-    Tree left, right;
-    // 坐标数组（由于是动态生成子节点，故需要保存叶节点值）
-    Integer[] axisX;
+    Integer[] relationMap;
 
-    // 计数，当该区间为底边时，大于0；当该区间已计算完成时为0
+    int len;
+    // 已当前区间为底边的数目
     int count;
-    // 当前区间的x轴长度
-    long total;
 
-    Tree(int start, int end, Integer[] axisX) {
+    SegmentTree left, right;
+
+    SegmentTree(int start, int end, Integer[] idx) {
         this.start = start;
         this.end = end;
-        this.axisX = axisX;
+        this.relationMap = idx;
     }
 
-    private int getRangeMid() {
+    private int mid() {
         return start + (end - start) / 2;
     }
 
-    private Tree left() {
-        if(left == null) left = new Tree(start, getRangeMid(), axisX);
-        return left;
+    private SegmentTree left() {
+        if (this.left == null) this.left = new SegmentTree(start, mid(), relationMap);
+        return this.left;
     }
 
-    private Tree right() {
-        if(right == null) right = new Tree(getRangeMid(), end, axisX);
-        return right;
+    private SegmentTree right() {
+        if (this.right == null) this.right = new SegmentTree(mid(), end, relationMap);
+        return this.right;
     }
 
-    public long update(int i, int j, int val) {
-        //区间为点不是线段，x轴长度返回0
-        if(i >= j) return 0;
-        
-        // 找到要更新的区间
-        if(start == i && end == j) {
-            // 底边加入加一，顶边加入减一
-            count += val;
-        } else {
-            // 创建子区间，最小为[x,x+1]单位区间
-            left().update(i, Math.min(getRangeMid(), j), val);
-            right().update(Math.max(getRangeMid(), i), j, val);
+    public int update(int s, int e, int type) {
+        if (s >= e) return 0;
+
+        // 更新区间（不必更新子区间）
+        if (this.start == s && this.end == e) this.count += type;
+        else {
+            this.left().update(s, Math.min(e, mid()), type);
+            this.right().update(Math.max(s, mid()), e, type);
         }
-        // 该区间为底边区间，即未计算完，重新计算该区间的长度（避免被子区间值覆盖）
-        if (count > 0) total = axisX[end] - axisX[start];
-        // count=0（不可能小于0）1、父区间不是完整的底边区间，为子区间之和； 2、区间已经计算完，区间置为子区间之和；对于叶节点区间就是0
-        else total = left().total + right().total;
-        // 返回区间可计算x轴长度
-        return total;
+
+        // 更新当前区间的边的总长
+        if (count > 0) this.len = relationMap[end] - relationMap[start];
+        else if (start + 1 == end) this.len = 0;
+        else this.len = this.left().len + this.right().len;
+
+        return this.len;
     }
 }
 ```
@@ -225,46 +239,51 @@ class Tree {
 
 ```java
 class Solution {
+    // 底边、顶边标识
+    private static final int OPEN = 1, CLOSE = -1;
+    
     public int rectangleArea(int[][] rectangles) {
-        // todo
-        int OPEN = 1, CLOSE = -1;
+        // 记录底边、顶边
         int[][] edges = new int[rectangles.length * 2][];
-        // 记录叶节点
+        // 记录横坐标
         Set<Integer> Xvals = new HashSet();
         int idx = 0;
         for (int[] rec: rectangles) {
+            // 不是矩形
+            if (rec[0] >= rec[2] || rec[1] >= rec[3]) continue;
             edges[idx++] = new int[]{rec[1], OPEN, rec[0], rec[2]};
             edges[idx++] = new int[]{rec[3], CLOSE, rec[0], rec[2]};
             Xvals.add(rec[0]);
             Xvals.add(rec[2]);
         }
         // 根据边的高度排序
-        Arrays.sort(edges, (a, b) -> a[0] - b[0]);
-        // 排序叶节点值
+        Arrays.sort(edges, 0, idx, (a, b) -> a[0] - b[0]);
         Integer[] axisX = Xvals.toArray(new Integer[0]);
         Arrays.sort(axisX);
+
         // 压缩坐标
         Map<Integer, Integer> mapX = new HashMap();
-        for (int i = 0; i < axisX.length; ++i)
-            mapX.put(axisX[i], i);
+        for (int i = 0; i < axisX.length; ++i) mapX.put(axisX[i], i);
+
         // 创建线段树
-        Tree active = new Tree(0, axisX.length - 1, axisX);
-        long area = 0;
-        // x轴长度
-        long lenX = 0;
+        SegmentTree tree = new SegmentTree(0, axisX.length - 1, axisX);
+        // 面积、横轴长度
+        long area = 0, lenX = 0;
+        // 纵轴基值
         int baseY = edges[0][0];
 
         for (int[] edge: edges) {
-            // 计算面积
+            if (edge == null) break;
+            // 计算面积（高度差乘横轴长度）
             area += lenX * (edge[0] - baseY);
-            // 获取下一的x轴长度（关键在于底边还是顶边）
-            lenX = active.update(mapX.get(edge[2]), mapX.get(edge[3]), edge[1]);
+            // 获取下一的横轴长度
+            lenX = tree.update(mapX.get(edge[2]), mapX.get(edge[3]), edge[1]);
             // 更新基准高度
             baseY = edge[0];
         }
 
         area %= 1_000_000_007;
-        return (int) area;
+        return (int)area;
     }
 }
 ```

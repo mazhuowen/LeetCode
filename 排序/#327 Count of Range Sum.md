@@ -139,4 +139,162 @@ class Solution {
 
 ## 官方解题
 
-&emsp;暂无，密切关注。
+&emsp;除了上述思路，官方还提供了基于线段树和树状数组的思路。由于`preSum[j]-preSum[j]`$\in [lower, upper]$，可转化为为统计$[preSum[j] - upper, preSum[j] - lower]$区间内点的数目。
+
+```java
+class Solution {
+    public int countRangeSum(int[] nums, int lower, int upper) {
+        if (nums == null || nums.length == 0) return 0;
+
+        int n = nums.length;
+        long min = Integer.MAX_VALUE, max = Integer.MIN_VALUE;
+        long[] preSum = new long[n + 1];
+        for (int i = 0; i < n; i++) {
+            preSum[i + 1] = preSum[i] + nums[i];
+            min = Math.min(min, preSum[i + 1]);
+            max = Math.max(max, preSum[i + 1]);
+        }
+
+        int res = 0;
+        SegmentTree tree = new SegmentTree(min, max);
+        for (int i = 0; i < n; i++) {
+            if (preSum[i + 1] >= lower && preSum[i + 1] <= upper) res++;
+            res += tree.query(preSum[i + 1] - upper, preSum[i + 1] - lower);
+            tree.update(preSum[i + 1], 1);
+        }
+        return res;
+    }
+}
+
+class SegmentTree {
+    long start, end;
+    int count;
+    SegmentTree left, right;
+
+    SegmentTree(long start, long end) {
+        this.start = start;
+        this.end = end;
+    }
+
+    private long mid() {
+        return start + (end - start) / 2;
+    }
+
+    private SegmentTree left() {
+        if (this.left == null) this.left = new SegmentTree(start, mid());
+        return this.left;
+    }
+
+    private SegmentTree right() {
+        if (this.right == null) this.right = new SegmentTree(mid() + 1, end);
+        return this.right;
+    }
+
+    public int query(long s, long e) {
+        if (s > e || this.start > e || this.end < s) return 0;
+        if (s <= this.start && e >= this.end) return this.count;
+        else return this.left().query(s, e) + this.right().query(s, e);
+    }
+
+    public void update(long idx, int val) {
+        if (this.start > idx || this.end < idx) return;
+        this.count += val;
+        if (this.start == this.end) return;
+        this.left().update(idx, val);
+        this.right().update(idx, val);
+    }
+}
+```
+
+&emsp;时间复杂度为$O(N\log_2N)$，空间复杂度为$O(N)$。
+
+执行用时：16 ms, 在所有 Java 提交中击败了54.62%的用户。
+
+内存消耗：39 MB, 在所有 Java 提交中击败了16.00%的用户。
+
+&emsp;也可使用树状数组实现。
+
+```java
+class Solution {
+    public int countRangeSum(int[] nums, int lower, int upper) {
+        if (nums == null || nums.length == 0) return 0;
+
+        int n = nums.length;
+        long[] preSum = new long[n];
+        preSum[0] = nums[0];
+        for (int i = 1; i < n; i++) preSum[i] = preSum[i - 1] + nums[i];
+
+        // 离散化
+        long[] tmp = Arrays.copyOf(preSum, n);
+        Arrays.sort(tmp);
+        TreeMap<Long, Integer> index = new TreeMap<>();
+        // 编号
+        int idx = 0;
+        for (int i = 0; i < n; i++) {
+            if (!index.containsKey(tmp[i])) index.put(tmp[i], idx++);
+        }
+
+        int res = 0;
+        BinaryIndexedTree bit = new BinaryIndexedTree(idx, false, null);
+        for (int i = 0; i < n; i++) {
+            if (preSum[i] >= lower && preSum[i] <= upper) res++;
+            // 查询左右边界
+            Map.Entry<Long, Integer> left = index.ceilingEntry(preSum[i] - upper), right = index.floorEntry(preSum[i] - lower);
+            // 存在则查询
+            if (left != null && right != null) {
+                res += bit.rangeSum(left.getValue(), right.getValue());
+            }
+            // 更新计数
+            bit.update(index.get(preSum[i]), 1);
+        }
+        return res;
+    }
+}
+
+class BinaryIndexedTree {
+    int[] bitArr;
+
+    BinaryIndexedTree(int size, boolean init, int[] arr) {
+        this.bitArr = new int[size + 1];
+        if (init) {
+            for (int i = 0; i < size; i++) bitArr[i + 1] = arr[i];
+            for (int i = 1; i <= size; i++) {
+                int j = i + lowBit(i);
+                if (j <= size) bitArr[j] += bitArr[i];
+            }
+        }
+    }
+
+    private int lowBit(int num) {
+        return num & -num;
+    }
+
+    public void update(int idx, int val) {
+        idx++;
+        while (idx < bitArr.length) {
+            bitArr[idx] += val;
+            idx += lowBit(idx);
+        }
+    }
+
+    private int prefixSum(int idx) {
+        idx++;
+        int res = 0;
+        while (idx > 0) {
+            res += bitArr[idx];
+            idx -= lowBit(idx);
+        }
+        return res;
+    }
+
+    public int rangeSum(int from, int to) {
+        return prefixSum(to) - prefixSum(from - 1);
+    }
+}
+```
+
+&emsp;时间复杂度为$O(N\log_2N)$，空间复杂度为$O(N)$。
+
+执行用时：33 ms, 在所有 Java 提交中击败了49.22%的用户。
+
+内存消耗：39.4 MB, 在所有 Java 提交中击败了5.79%的用户。

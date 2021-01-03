@@ -125,9 +125,8 @@ class Solution {
 ```java
 class Solution {
     public int countNodes(TreeNode root) {
-        if(root == null) {
-            return 0;
-        }
+        if(root == null) return 0;
+        
         // 最左测的层数
         int left = getLevel(root.left);
         // 根节点后的层数（也就是树的中间结点）
