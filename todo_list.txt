@@ -1,8 +1,11 @@
+741. Cherry Pickup
+664. Strange Printer
 5638. Maximum Number of Eaten Apples
 5631. Jump Game VI
 5629. Reformat Phone Number
 5630. Maximum Erasure Value
 5642. Count Good Meals
+1074. Number of Submatrices That Sum to Target
 5643. Ways to Split Array Into Three Subarrays
 5644. Minimum Operations to Make a Subsequence
 5632. Checking Existence of Edge Length Limited Paths
@@ -17,6 +20,7 @@
 303. Range Sum Query - Immutable
 912. Sort an Array
 1514. Path with Maximum Probability
+740. Delete and Earn
 978. Longest Turbulent Subarray
 1013. Partition Array Into Three Parts With Equal Sum
 473. Matchsticks to Square
@@ -24,6 +28,7 @@
 1043. Partition Array for Maximum Sum
 1010. Pairs of Songs With Total Durations Divisible by 60
 1510. Stone Game IV
+面试题 16.26. Calculator LCCI
 1448. Count Good Nodes in Binary Tree
 1215. Stepping Numbers
 795. Number of Subarrays with Bounded Maximum
@@ -31,6 +36,7 @@
 1387. Sort Integers by The Power Value
 890. Find and Replace Pattern
 1017. Convert to Base -2
+946. Validate Stack Sequences
 259. 3Sum Smaller
 859. Buddy Strings
 433. Minimum Genetic Mutation
