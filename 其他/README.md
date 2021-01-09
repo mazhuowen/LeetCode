@@ -222,6 +222,53 @@ public class BitMap {
 
 
 
+## 公平组合游戏
+
+&emsp;公平组合游戏（Impartial Combinatorial Games，ICG）满足以下条件：
+
+1. 游戏有两个人参加，双方可采取的行动和胜利的目标相同；
+2. 双方均知道游戏的完整信息，二者轮流做出决策；
+3. 游戏可以在有限步数内结束；游戏中的同一个状态不可多次抵达，且游戏不会出现平局；
+4. 任意一个游戏者在某一确定状态可以作出的决策集合只与当前状态有关，而与游戏者无关；
+5. 当有一个人无法做出决策时游戏结束，无法做出决策的人输（或赢）。
+
+可以总结为双人回合制，信息完全公开，无随机因素，必然在有限步数内结束，没有平局。
+
+&emsp;定义失败局面败态为**零级**，则只能变为零级的胜态称为**一级胜态**，可以变为败态也可以变为一级胜态的胜态称为**二级胜态**，依次类推，可以变为败态或$1 \sim n - 1$级胜态的胜态称为**$n$级胜态**。对于胜态的组合，两个一级胜态的组合是败态，因为先手任意选择都将变为一级胜态和败态的组合，后手可将一级胜态转变为败态，从而获胜；一个一级胜态一个二级胜态的组合是胜态，因为先手若将二级胜态变为一级胜态，后手则是败态。其次对于同级胜态，如果先手选择升级胜态，则后手可选择降级胜态，先手仍然输，这样只需分析胜态降级的情况。
+
+&emsp;Sprague-Grundy数是一个从状态映射到非负整数的函数，用来描述级数，其定义为$SG(A) = \text{mex}\{SG(B) \vert A \to B\}$，其中$A$、$B$代表状态，$A \to B$表示$B$是$A$的一个次态，$\text{mex}$是一个定义在集合上的函数，表示不属于集合的最小非负整数。
+
+> 对于一个可以转化为一级、二级胜态、零级的状态，则必然是三级胜态，通过$\text{mex}$可得到正确的级数三级；对于一个可以转化为二级胜态、零级的状态，则是一级胜态升级的结果，此时$\text{mex}$可得到正确的级数一级。
+
+&emsp;仅考虑两个子状态的母状态胜负，两个败态的组合还是败态，两个同级胜态的组合是败态，两个不同级胜态的组合是败态，一个败态和一个胜态的组合是胜态，可看出这个操作是亦或操作，即$SG(A + B) = SG(A) \oplus SG(B)$，归纳证明如下：
+$$
+SG(A + B) = \text{mex}\{SG(X) \vert (A + B) \to X\}
+$$
+假设$A \to C$，$B \to D$，则$X$必然可以拆分为$C + B$或$A + D$，则
+$$
+SG(A + B) = \text{mex}(\{SG(C + B) \vert A \to C\} \cup \{SG(A + D) \vert B \to D\})\\
+SG(A + B) = \text{mex}(\{SG(C) \oplus SG(B) \vert A \to C\} \cup \{SG(A) \oplus SG(D) \vert B \to D\})
+$$
+为了简化，设$\alpha = SG(A)$，$\beta = SG(B)$，$\alpha^\prime = SG(C)$，$\beta^\prime = SG(D)$，则
+$$
+SG(A + B) = \text{mex}(\{\alpha^\prime \oplus \beta \vert \alpha > \alpha^\prime\} \cup \{\alpha \oplus \beta^\prime \vert \beta > \beta^\prime\})\\
+SG(A) \oplus SG(B) = \alpha \oplus \beta
+$$
+对于$\forall\gamma < \alpha \oplus \beta$，设$\xi = \alpha \oplus \beta \oplus \gamma$，则必然存在$\alpha > \xi \oplus \alpha = \beta \oplus \gamma$或$\beta > \xi \oplus \beta = \alpha \oplus \gamma$，因为$\xi$的最高位的$1$必然是来自$\alpha$、$\beta$之一（因为$\alpha \oplus \beta > \gamma$，故数字$\alpha \oplus \beta$此位必然是$1$），为了方便讨论，假设$\alpha > \beta$，则$\alpha$此位必然是$1$，此时$\alpha > \alpha \oplus \xi$必然成立；若$\alpha^\prime = \alpha \oplus \xi = \beta \oplus \gamma$，则
+$$
+\text{mex}(\{\alpha^\prime \oplus \beta \vert \alpha > \alpha^\prime\} \cup \{\alpha \oplus \beta^\prime \vert \beta > \beta^\prime\}) = \text{mex}(\gamma \cup \{\alpha \oplus \beta^\prime \vert \beta > \beta^\prime\}) > \gamma\\
+\alpha \oplus \beta > \gamma
+$$
+由于$\forall \gamma < \alpha \oplus\beta$，而$\{\alpha \oplus\beta^\prime\}$必然不包含$\alpha \oplus \beta$，故
+$$
+SG(A + B) = \text{mex}(\{\alpha^\prime \oplus \beta \vert \alpha > \alpha^\prime\} \cup \{\alpha \oplus \beta^\prime \vert \beta > \beta^\prime\})\\
+ = \alpha \oplus \beta = SG(A) \oplus SG(B)
+$$
+
+* 简单[#292 Nim Game](./#292 Nim Game.md)    `Nim`游戏
+* 简单[#293 Flip Game](./#293 Flip Game.md)    翻转游戏子状态获取
+* 
+
 ### 数位动态规划
 
 &emsp;todo
