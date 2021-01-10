@@ -117,6 +117,8 @@
 * 繁杂[#1453 Maximum Number of Darts Inside of a Circular Dartboard](./#1453 Maximum Number of Darts Inside of a Circular Dartboard)    圆心的几何学计算
 * 简单[#1518 Water Bottles](./#1518 Water Bottles.md)    模拟
 * $\bigstar$技巧[#1542 Find Longest Awesome Substring](./#1542 Find Longest Awesome Substring.md)    前缀和思想在奇偶状态中的巧妙应用
+* 简单[#1688 Count of Matches in Tournament](./#1688 Count of Matches in Tournament.md)    比赛数目
+* 简单[#1689 Partitioning Into Minimum Number Of Deci-Binary Numbers](./#1689 Partitioning Into Minimum Number Of Deci-Binary Numbers.md)    十-二进制的最小数目
 * $\clubs$中等[#LCP03 机器人大冒险](./#LCP03 机器人大冒险.md)    利用周期性减少计算
 * 简单[#LCP06 拿硬币](./#LCP06 拿硬币.md)    最少拿取次数
 * 简单[#LCP11 期望个数统计](./#LCP11 期望个数统计.md)    概率期望计算

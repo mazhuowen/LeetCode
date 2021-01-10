@@ -63,7 +63,7 @@ class Solution {
 class Solution {
     public int stoneGameVII(int[] stones) {
         int n = stones.length;
-        // 表示i~j区间先手的最小、最大差值
+        // 表示i~j区间先手的最小差值
         int[][] min = new int[n][n];
         int[] preSum = new int[n + 1];
         for (int i = 0; i < n; i++) preSum[i + 1] = preSum[i] + stones[i];
@@ -86,14 +86,10 @@ class Solution {
 
 &emsp;时间复杂度为$O(N^2)$，空间复杂度为$O(N^2)$。
 
+执行用时：46 ms, 在所有 Java 提交中击败了82.53%的用户。
 
+内存消耗：46.3 MB, 在所有 Java 提交中击败了89.45%的用户。
 
 ## 官方解题
 
-&emsp;
-
-```java
-
-```
-
-&emsp;时间复杂度为$O()$，空间复杂度为$O()$。
+&emsp;暂无，密切关注。

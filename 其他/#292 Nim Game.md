@@ -30,7 +30,7 @@ class Solution {
 }
 ```
 
-> 原生的`Nim`游戏涉及博弈论和拓扑排序，有多种扩展，但是本题较简单，纯属规律发现。首先当石头数目为$0$表示败态$0$，假设每次能拿$m$个石头，则$SG(m) = m$，若有$m + 1$个石头，则$SG(m + 1) = SG(1) \oplus SG(2) \oplus \cdots \oplus SG(m) = 1 \oplus 2 \oplus \cdots \oplus m$，$SG(m + 2) = SG(m + 1) \oplus SG(1) \oplus SG(m + 1)$，每次都是出队之前的数值，入队当前的数值，即对于任意$n$，$SG(n) = SG(n - 1) \oplus SG(n - m -1) \oplus SG(n - 1)$，由于本题中$m = 4$，而对于连续数值的亦或，每隔$4$次就是一次循环，即$\forall n % 4 == 0$，$SG(n) = 0$，从而优化为取模判断。
+> 原生的`Nim`游戏涉及博弈论和拓扑排序，有多种扩展，但是本题较简单，纯属规律发现。首先当石头数目为$0$表示败态$0$，假设每次能拿$m$个石头，则$SG(m) = m$，若有$m + 1$个石头，则$SG(m + 1) = SG(1) \oplus SG(2) \oplus \cdots \oplus SG(m) = 1 \oplus 2 \oplus \cdots \oplus m$，$SG(m + 2) = SG(m + 1) \oplus SG(1) \oplus SG(m + 1)$，每次都是出队之前的数值，入队当前的数值，即对于任意$n$，$SG(n) = SG(n - 1) \oplus SG(n - m -1) \oplus SG(n - 1) = SG(n - m - 1)$，可见以$m$为周期循环，由于我们只关注是否胜利，则只需当前$SG(n) \% m = n \% m \ne 0$即可。
 
 ## 性能分析
 

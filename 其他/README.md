@@ -222,7 +222,7 @@ public class BitMap {
 
 
 
-## 公平组合游戏
+### 公平组合游戏
 
 &emsp;公平组合游戏（Impartial Combinatorial Games，ICG）满足以下条件：
 
@@ -267,7 +267,7 @@ $$
 
 * 简单[#292 Nim Game](./#292 Nim Game.md)    `Nim`游戏
 * 简单[#293 Flip Game](./#293 Flip Game.md)    翻转游戏子状态获取
-* 
+* $\bigstar$中等[#294 Flip Game II](./#294 Flip Game II.md)    ICG经典解决方案
 
 ### 数位动态规划
 
