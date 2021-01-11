@@ -152,6 +152,7 @@
 * $\clubs$困难[#1595 Minimum Cost to Connect Two Groups of Points](./#1595 Minimum Cost to Connect Two Groups of Points.md)    状压动态规划
 * 中等[#1626 Best Team With No Conflicts](./#1626 Best Team With No Conflicts.md)    最长递增子序列衍生问题
 * 中等[#1653 Minimum Deletions to Make String Balanced](./#1653 Minimum Deletions to Make String Balanced.md)    动态规划
+* $\clubs$困难[#1655 Distribute Repeating Integers](./#1655 Distribute Repeating Integers.md)    预处理数字，使用状态压缩动态规划
 * 困难[#1671 Minimum Number of Removals to Make Mountain Array](./#1671 Minimum Number of Removals to Make Mountain Array.md)    最长递增子序列变形
 * $\clubs$困难[#1681 Minimum Incompatibility](./#1681 Minimum Incompatibility.md)    状态压缩动态规划
 * 中等[#1690 Stone Game VII](./#1690 Stone Game VII.md)    区间动态规划
