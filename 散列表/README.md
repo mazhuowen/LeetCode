@@ -50,6 +50,7 @@
 * 简单[#383 Ransom Note](./#383 Ransom Note.md)    散列表统计计数
 * 简单[#387 First Unique Character in a String](./#387 First Unique Character in a String.md)    哈希表字符计数
 * $\clubs$中等[#442 Find All Duplicates in an Array](./#442 Find All Duplicates in an Array.md)    数组下标作为键值
+* 中等[#447 Number of Boomerangs](./#447 Number of Boomerangs.md)    哈希表记录遍历值，简化时间复杂度
 * 中等[#448 Find All Numbers Disappeared in an Array](./#448 Find All Numbers Disappeared in an Array.md)    [#442 Find All Duplicates in an Array](./#442 Find All Duplicates in an Array.md)的延续
 * 中等[#454 4Sum II](./#454 4Sum II.md)    哈希表记录和和计数
 * $\clubs$繁杂[#460 LFU Cache](./#460 LFU Cache.md)    最近最少使用策略实现

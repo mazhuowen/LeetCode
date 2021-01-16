@@ -103,6 +103,7 @@
 * 困难[#568 Maximum Vacation Days](./#568 Maximum Vacation Days.md)    动态规划复杂应用
 * $\clubs$困难[#629 K Inverse Pairs Array](./#629 K Inverse Pairs Array.md)    转移方程的归纳总结
 * 中等[#651 4 Keys Keyboard](./#651 4 Keys Keyboard.md)    数学方式优化
+* $\clubs$困难[#656 Coin Path](./#656 Coin Path.md)    从后往前动态规划
 * 中等[#688 Knight Probability in Chessboard](./#688 Knight Probability in Chessboard.md)    国际象棋马在棋盘内的概率
 * $\clubs$困难[#689 Maximum Sum of 3 Non-Overlapping Subarrays](./#689 Maximum Sum of 3 Non-Overlapping Subarrays.md)    动态规划求解固定数目子数组最大和
 * 中等[#714 Best Time to Buy and Sell Stock with Transaction Fee](./#714 Best Time to Buy and Sell Stock with Transaction Fee.md)    [#123 Best Time to Buy and Sell Stock III](./#123 Best Time to Buy and Sell Stock III.md)扣除手续费
@@ -148,6 +149,7 @@
 * $\bigstar$困难[#1494 Parallel Courses II](./#1494 Parallel Courses II.md)    状态压缩与位运算结合的动态规划
 * $\bigstar$困难[#1531 String Compression II](./#1531 String Compression II.md)    最多删除$k$个字符后的最短压缩编码
 * 中等[#1547 Minimum Cost to Cut a Stick](./#1547 Minimum Cost to Cut a Stick.md)    区间动态规划
+* $\bigstar$困难[#1548 The Most Similar Path in a Graph](./#1548 The Most Similar Path in a Graph.md)    图的动态规划
 * $\bigstar$困难[#1563 Stone Game V](./#1563 Stone Game V.md)    动态规划的深层优化
 * $\clubs$困难[#1595 Minimum Cost to Connect Two Groups of Points](./#1595 Minimum Cost to Connect Two Groups of Points.md)    状压动态规划
 * 中等[#1626 Best Team With No Conflicts](./#1626 Best Team With No Conflicts.md)    最长递增子序列衍生问题

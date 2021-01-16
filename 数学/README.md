@@ -27,6 +27,7 @@
 * 中等[#592 Fraction Addition and Subtraction](./#592 Fraction Addition and Subtraction.md)    分数的表示
 * $\clubs$中等[#634 Find the Derangement of An Array](./#634 Find the Derangement of An Array.md)    集合互斥公式
 * $\clubs$中等[#650 2 Keys Keyboard](./#650 2 Keys Keyboard.md)    整数素因子分解
+* 中等[#660 Remove 9](./#660 Remove 9.md)    九进制
 * $\clubs$中等[#810 Chalkboard XOR Game](./#810 Chalkboard XOR Game.md)    偶数长数组异或性质
 * $\bigstar$困难[#829 Consecutive Numbers Sum](./#829 Consecutive Numbers Sum.md)    质因数分解
 * 简单[#867 Transpose Matrix](./#867 Transpose Matrix.md)    矩阵转置

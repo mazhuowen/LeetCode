@@ -1,37 +1,43 @@
 [toc]
 
-Given an array A (index starts at 1) consisting of N integers: A1, A2, ..., AN and an integer B. The integer B denotes that from any place (suppose the index is i) in the array A, you can jump to any one of the place in the array A indexed i+1, i+2, …, i+B if this place can be jumped to. Also, if you step on the index i, you have to pay Ai coins. If Ai is -1, it means you can’t jump to the place indexed i in the array.
+Given an array `A` (index starts at $1$) consisting of $N$ integers: `A1, A2, ..., AN` and an integer `B`. The integer `B` denotes that from any place (suppose the index is i) in the array `A`, you can jump to any one of the place in the array `A` indexed `i+1, i+2, …, i+B` if this place can be jumped to. Also, if you step on the index $i$, you have to pay `Ai` coins. If `Ai` is $-1$, it means you can’t jump to the place indexed $i$ in the array.
 
-Now, you start from the place indexed 1 in the array A, and your aim is to reach the place indexed N using the minimum coins. You need to return the path of indexes (starting from 1 to N) in the array you should take to get to the place indexed N using minimum coins.
+Now, you start from the place indexed $1$ in the array `A`, and your aim is to reach the place indexed $N$ using the minimum coins. You need to return the path of indexes (starting from $1$ to $N$) in the array you should take to get to the place indexed $N$ using minimum coins.
 
 If there are multiple paths with the same cost, return the lexicographically smallest such path.
 
-If it's not possible to reach the place indexed N then you need to return an empty array.
+If it's not possible to reach the place indexed $N$ then you need to return an empty array.
 
-Example 1:
 
+
+**Example 1**:
+
+```
 Input: [1,2,4,-1,2], 2
 Output: [1,3,5]
+```
 
+**Example 2**:
 
-Example 2:
-
+```
 Input: [1,2,4,-1,2], 1
 Output: []
+```
 
 
-Note:
 
-Path Pa1, Pa2, ..., Pan is lexicographically smaller than Pb1, Pb2, ..., Pbm, if and only if at the first i where Pai and Pbi differ, Pai < Pbi; when no such i exists, then n < m.
-A1 >= 0. A2, ..., AN (if exist) will in the range of [-1, 100].
-Length of A is in the range of [1, 1000].
-B is in the range of [1, 100].
+**Note**:
+
+* Path `Pa1, Pa2, ..., Pan` is lexicographically smaller than `Pb1, Pb2, ..., Pbm`, if and only if at the first $i$ where `Pai` and `Pbi` differ, `Pai < Pbi`; when no such $i$ exists, then $n < m$.
+* $A_1 \ge 0$. `A2, ..., AN` (if exist) will in the range of $[-1, 100]$.
+* Length of `A` is in the range of $[1, 1000]$.
+* `B` is in the range of $[1, 100]$.
 
 
 
 ## 题目解读
 
-&emsp;
+&emsp;找到到达终点的花费最小的路径，如果存在多条路径，则返回字典序最小的。
 
 ```java
 class Solution {
@@ -43,7 +49,8 @@ class Solution {
 
 ## 程序设计
 
-* 
+* 初步思路是使用动态规划`dp(i)`，表示到达$i$的最小代价，则路径就是最后根据花费的回溯；这个思路有个问题，假设得到的路径是`[1, 3, 5]`，而$1 \sim 3$的索引间存在值为$0$的点，这个点显然是可加入路径的，且字典序更小；
+* 该思路问题之二是在生成路径时，比如`[1, 3, 5]`而不是`[1, 2, 4, 5]`，但是字典序显然是后一个更小；这个问题可使用回溯生成所有的路径，进行对比得到。
 
 ```java
 class Solution {
@@ -111,13 +118,15 @@ class Solution {
 
 ## 性能分析
 
-&emsp;时间复杂度为$O()$，空间复杂度为$O()$。
+&emsp;时间复杂度为$O(NB)$，空间复杂度为$O(N)$。
 
+执行用时：8 ms, 在所有 Java 提交中击败了16.00%的用户。
 
+内存消耗：38.8 MB, 在所有 Java 提交中击败了24.00%的用户。
 
 ## 官方解题
 
-&emsp;
+&emsp;官方采用从后往前迭代的动态规划，从而省去遍历所有路径的花销。
 
 ```java
 class Solution {
@@ -157,8 +166,8 @@ class Solution {
 }
 ```
 
-&emsp;时间复杂度为$O()$，空间复杂度为$O()$。
+&emsp;时间复杂度为$O(NB)$，空间复杂度为$O(N)$。
 
-执行用时：4 ms, 在所有 Java 提交中击败了100.00%的用户
+执行用时：4 ms, 在所有 Java 提交中击败了100.00%的用户。
 
-内存消耗：38.5 MB, 在所有 Java 提交中击败了75.00%的用户
+内存消耗：38.5 MB, 在所有 Java 提交中击败了75.00%的用户。
