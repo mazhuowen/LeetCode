@@ -8,7 +8,6 @@
 1074. Number of Submatrices That Sum to Target
 5643. Ways to Split Array Into Three Subarrays
 5644. Minimum Operations to Make a Subsequence
-5632. Checking Existence of Edge Length Limited Paths
 639. Decode Ways II
 1297. Maximum Number of Occurrences of a Substring
 

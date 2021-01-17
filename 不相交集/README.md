@@ -33,4 +33,6 @@
 * 中等[#1267 Count Servers that Communicate](./#1267 Count Servers that Communicate.md)    巧妙使用不相交集统行列关联信息
 * 困难[#1568 Minimum Number of Days to Disconnect Island](./#1568 Minimum Number of Days to Disconnect Island.md)    不相交集联合岛屿
 * $\clubs$困难[#1632 Rank Transform of a Matrix](./#1632 Rank Transform of a Matrix.md)    不相交集维护行列相等的值
-
+* $\bigstar$困难[#1697 Checking Existence of Edge Length Limited Paths](./#1697 Checking Existence of Edge Length Limited Paths.md)    路径中不超过限定值的图的连通性
+* $\clubs$中等[#1722 Minimize Hamming Distance After Swap Operations](./#1722 Minimize Hamming Distance After Swap Operations.md)    不相交集各集合统计
+* 困难[#1724 Checking Existence of Edge Length Limited Paths II](./#1724 Checking Existence of Edge Length Limited Paths II.md)    todo

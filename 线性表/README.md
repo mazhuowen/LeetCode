@@ -143,6 +143,7 @@ while(A.next != next) {
 * 中等[#143 Reorder List](./#143 Reorder List.md)    双指针定位中间结点，反转后半段并合并
 * 简单[#369 Plus One Linked List](./#369 Plus One Linked List.md)    递归或双指针确定子链表进行加一操作
 * 简单[#876 Middle of the Linked List](./#876 Middle of the Linked List.md)    快慢指针查找中点
+* $\clubs$中等[#1721 Swapping Nodes in a Linked List](./#1721 Swapping Nodes in a Linked List.md)    链表快慢指针
 
 ### 交叉领域
 

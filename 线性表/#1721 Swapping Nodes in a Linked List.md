@@ -1,45 +1,61 @@
 [toc]
 
-You are given the head of a linked list, and an integer k.
+You are given the `head` of a linked list, and an integer $k$.
 
-Return the head of the linked list after swapping the values of the kth node from the beginning and the kth node from the end (the list is 1-indexed).
+Return the head of the linked list after **swapping** the values of the `kth` node from the beginning and the `kth` node from the end (the list is **1-indexed**).
 
  
 
-Example 1:
+**Example 1**:
 
+<img src="../images/#1721_exp1.jpg" style="zoom:80%;" />
 
+```
 Input: head = [1,2,3,4,5], k = 2
 Output: [1,4,3,2,5]
-Example 2:
+```
 
+**Example 2**:
+
+```
 Input: head = [7,9,6,6,7,8,3,0,9,5], k = 5
 Output: [7,9,6,6,8,7,3,0,9,5]
-Example 3:
+```
 
+**Example 3**:
+
+```
 Input: head = [1], k = 1
 Output: [1]
-Example 4:
+```
 
+**Example 4**:
+
+```
 Input: head = [1,2], k = 1
 Output: [2,1]
-Example 5:
+```
 
+**Example 5**:
+
+```
 Input: head = [1,2,3], k = 2
 Output: [1,2,3]
+```
 
 
-Constraints:
 
-The number of nodes in the list is n.
-1 <= k <= n <= 105
-0 <= Node.val <= 100
+**Constraints**:
+
+* The number of nodes in the list is $n$.
+* $1 \le k \le n \le 10^5$
+* $0 \le \text{Node.val} \le 100$
 
 
 
 ## 题目解读
 
-&emsp;
+&emsp;删除第$k$和倒数第$k$个节点。
 
 ```java
 /**
@@ -61,7 +77,7 @@ class Solution {
 
 ## 程序设计
 
-* 
+* 最基本的思路首先得到链表长度，然后可得到倒数节点的顺数编号，从头遍历即可。
 
 ```java
 class Solution {
@@ -101,7 +117,7 @@ class Solution {
 }
 ```
 
-
+* 实际上可与快慢指针结合，巧妙的得到第$k$个和倒数第$k$个节点。
 
 ```java
 class Solution {
@@ -127,16 +143,12 @@ class Solution {
 
 ## 性能分析
 
-&emsp;时间复杂度为$O()$，空间复杂度为$O()$。
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(1)$。
 
+执行用时：2 ms, 在所有 Java 提交中击败了100.00%的用户。
 
+内存消耗：63.8 MB, 在所有 Java 提交中击败了63.30%的用户。
 
 ## 官方解题
 
-&emsp;
-
-```java
-
-```
-
-&emsp;时间复杂度为$O()$，空间复杂度为$O()$。
+&emsp;暂无，密切关注。

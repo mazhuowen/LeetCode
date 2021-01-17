@@ -159,6 +159,7 @@
 * $\clubs$困难[#1681 Minimum Incompatibility](./#1681 Minimum Incompatibility.md)    状态压缩动态规划
 * 中等[#1690 Stone Game VII](./#1690 Stone Game VII.md)    区间动态规划
 * $\clubs$困难[#1691 Maximum Height by Stacking Cuboids](./#1691 Maximum Height by Stacking Cuboids.md)    立方体堆叠
+* $\bigstar$困难[#1723 Find Minimum Time to Finish All Jobs](./#1723 Find Minimum Time to Finish All Jobs.md)    状态压缩动态规划
 * 简单[#LCP07 传递信息](./#LCP07 传递信息.md)    简单动态规划
 * $\clubs$中等[#LCP19 秋叶收藏集](./#LCP19 秋叶收藏集.md)    状态的抽象
 * 困难[#面试题08.13 Pile Box LCCI](./#面试题08.13 Pile Box LCCI.md)    排序后动态规划

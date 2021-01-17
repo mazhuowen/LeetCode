@@ -52,7 +52,7 @@ Output: 0
 
 ## 题目解读
 
-&emsp;
+&emsp;给定两个等长数组及可交换的索引对，求任意次交换后可得的最小汉明距离，串汉明距离定义为相等索引处数字不相等的数目。
 
 ```java
 class Solution {
@@ -64,7 +64,7 @@ class Solution {
 
 ## 程序设计
 
-* 
+* 核心点在于交换对组成的一个集合内的所有索引两两之间都是可以交换的，这样就可以使用不相交集得到每个集合，然后在每个集合判断相等的数字和不等的数字即可。
 
 ```java
 class Solution {
@@ -133,18 +133,78 @@ class DisJoint {
 }
 ```
 
+* 进行性能优化，将不相交集中的哈希表操作分离开来。
+
+```java
+class Solution {
+    public int minimumHammingDistance(int[] source, int[] target, int[][] allowedSwaps) {
+        int n = source.length;
+        DisJoint disJoint = new DisJoint(n);
+        for (int[] swap : allowedSwaps) disJoint.union(disJoint.find(swap[0]), disJoint.find(swap[1]));
+
+        // 统计每个不相交集内source的数字计数
+        Map<Integer, Map<Integer, Integer>> record = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            int root = disJoint.find(i);
+            if (!record.containsKey(root)) record.put(root, new HashMap<>());
+            Map<Integer, Integer> counter = record.get(root);
+            counter.put(source[i], counter.getOrDefault(source[i], 0) + 1);
+            counter.put(target[i], counter.getOrDefault(target[i], 0) - 1);
+        }
+
+        // 统计差值
+        int res = 0;
+        for (Map<Integer, Integer> counter : record.values()) {
+            for (int num : counter.values()) {
+                if (num > 0) res += num;
+            }
+        }
+        return res;
+    }
+}
+
+class DisJoint {
+    private int[] parent;
+    
+    DisJoint(int size) {
+        this.parent = new int[size];
+        Arrays.fill(parent, -1);
+    }
+    
+    public void union(int r1, int r2) {
+        if (parent[r1] >= 0 || parent[r2] >= 0) throw new IllegalArgumentException("invalid param");
+        if (r1 == r2) return;
+        
+        if (parent[r1] <= parent[r2]) {
+            parent[r1] += parent[r2];
+            parent[r2] = r1;
+        } else {
+            parent[r2] += parent[r1];
+            parent[r1] = r2;
+        }
+    }
+    
+    public int find(int idx) {
+        if (parent[idx] < 0) return idx;
+        return parent[idx] = find(parent[idx]);
+    }
+}
+```
+
 ## 性能分析
 
-&emsp;时间复杂度为$O()$，空间复杂度为$O()$。
+&emsp;时间复杂度为$O(N)$，空间复杂度为$O(N)$。
 
+执行用时：163 ms, 在所有 Java 提交中击败了9.06%的用户。
 
+内存消耗：87.7 MB, 在所有 Java 提交中击败了13.57%的用户。
+
+&emsp;优化后：
+
+执行用时：74 ms, 在所有 Java 提交中击败了50.30%的用户。
+
+内存消耗：76.8 MB, 在所有 Java 提交中击败了69.18%的用户。
 
 ## 官方解题
 
-&emsp;
-
-```java
-
-```
-
-&emsp;时间复杂度为$O()$，空间复杂度为$O()$。
+&emsp;暂无，密切关注。
