@@ -29,6 +29,7 @@
 * 简单[#605 Can Place Flowers](./#605 Can Place Flowers.md)    遍历判断
 * $\bigstar$困难[#659 Split Array into Consecutive Subsequences](./#659 Split Array into Consecutive Subsequences.md)    贪婪拼接连续数字
 * $\bigstar$困难[#630 Course Schedule III](./#630 Course Schedule III.md)    课程时长的贪婪思路
+* 中等[#649 Dota2 Senate](./#649 Dota2 Senate.md)    贪婪删除其后的元素
 * 中等[#763 Partition Labels](./#763 Partition Labels.md)    贪婪合并区间
 * $\clubs$中等[#870 Advantage Shuffle](./#870 Advantage Shuffle.md)    排序遍历，贪婪搭配
 * 中等[#881 Boats to Save People](./#881 Boats to Save People.md)    贪婪法选择乘客
