@@ -32,6 +32,7 @@
 * $\bigstar$困难[#829 Consecutive Numbers Sum](./#829 Consecutive Numbers Sum.md)    质因数分解
 * 简单[#867 Transpose Matrix](./#867 Transpose Matrix.md)    矩阵转置
 * $\bigstar$困难[#878 Nth Magical Number](./#878 Nth Magical Number.md)    数学规律与二分查找结合
+* $\bigstar$困难[#913 Cat and Mouse](./#913 Cat and Mouse.md)    博弈论
 * $\clubs$中等[#963 Minimum Area Rectangle II](./#963 Minimum Area Rectangle II.md)    点构成的矩形面积计算
 * $\bigstar$困难[#972 Equal Rational Numbers](./#972 Equal Rational Numbers.md)    有理数的分数形式表达
 * $\clubs$中等[#1015 Smallest Integer Divisible by K](./#1015 Smallest Integer Divisible by K.md)    数字乘积组合的余数规律

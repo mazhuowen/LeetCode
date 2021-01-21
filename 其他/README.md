@@ -105,6 +105,7 @@
 * 中等[#1468 Calculate Salaries](./#1468 Calculate Salaries.md)    统计部门最大薪资并计算税率
 * 中等[#1555 Bank Account Summary](./#1555 Bank Account Summary.md)    UNION ALL合并并统计
 * 简单[#1607 Sellers With No Sales](./#1607 Sellers With No Sales.md)    LEFT JOIN的使用
+* 简单[#1729 Find Followers Count](./#1729 Find Followers Count.md)    GROUP BY统计
 
 ## SHELL
 

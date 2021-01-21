@@ -198,6 +198,7 @@
 * $\clubs$中等[#351 Android Unlock Patterns](./#351 Android Unlock Patterns.md)    矩形回溯遍历的变形
 * $\clubs$中等[#386 Lexicographical Numbers](./#386 Lexicographical Numbers.md)    经典回溯题目
 * 繁杂[#411 Minimum Unique Word Abbreviation](./#411 Minimum Unique Word Abbreviation.md)    [#320 Generalized Abbreviation](./#320 Generalized Abbreviation.md)  和[#408 Valid Word Abbreviation](../字符串/#408 Valid Word Abbreviation.md)的结合
+* $\clubs$困难[##425 Word Squares](./#425 Word Squares.md)    字典树加速回溯速度
 * 中等[#464 Can I Win](./#464 Can I Win.md)    状态压缩记忆化回溯
 * 困难[#465 Optimal Account Balancing](./#465 Optimal Account Balancing.md)    NP难问题，回溯暴力尝试
 * $\clubs$困难[#488 Zuma Game](./#488 Zuma Game.md)    NP难问题，暴力回溯

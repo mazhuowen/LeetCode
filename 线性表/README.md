@@ -12,9 +12,11 @@
 * 简单[#228 Summary Ranges](./#228 Summary Ranges.md)    连续数值区间判断
 * 简单[#243 Shortest Word Distance](./#243 Shortest Word Distance.md)    数组遍历比较
 * 中等[#245 Shortest Word Distance III](./#245 Shortest Word Distance III.md)    [#243 Shortest Word Distance](./#243 Shortest Word Distance.md)进阶
+* 简单[#422 Valid Word Square](./#422 Valid Word Square.md)    数组对角线对称位置
 * 简单[#485 Max Consecutive Ones](./#485 Max Consecutive Ones.md)    遍历判断前驱
 * 简单[#495 Teemo Attacking](./#495 Teemo Attacking.md)    遍历扩展
 * 中等[#665 Non-decreasing Array](./#665 Non-decreasing Array.md)    遍历判断不符合要求的数据
+* 中等[#861 Score After Flipping Matrix](./#861 Score After Flipping Matrix.md)    二维数组先列遍历
 * 中等[#900 RLE Iterator](./#900 RLE Iterator.md)    数组计数迭代
 * 简单[#941 Valid Mountain Array](./#941 Valid Mountain Array.md)    线性遍历
 * 简单[#1002 Find Common Characters](./#1002 Find Common Characters.md)    遍历计数
