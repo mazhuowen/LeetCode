@@ -19,11 +19,14 @@
 * 中等[#861 Score After Flipping Matrix](./#861 Score After Flipping Matrix.md)    二维数组先列遍历
 * 中等[#900 RLE Iterator](./#900 RLE Iterator.md)    数组计数迭代
 * 简单[#941 Valid Mountain Array](./#941 Valid Mountain Array.md)    线性遍历
+* 中等[#945 Minimum Increment to Make Array Unique](./#945 Minimum Increment to Make Array Unique.md)    计数并遍历分配
 * 简单[#1002 Find Common Characters](./#1002 Find Common Characters.md)    遍历计数
 * $\clubs$中等[#1094 Car Pooling](./#1094 Car Pooling.md)    转化为上下车人数变化数组并遍历
 * 简单[#1576 Replace All 's to Avoid Consecutive Repeating Characters](./#1576 Replace All 's to Avoid Consecutive Repeating Characters.md)    遍历判断
 * 简单[#1572 Matrix Diagonal Sum](./#1572 Matrix Diagonal Sum.md)    二维数组遍历
 * 简单[#1582 Special Positions in a Binary Matrix](./#1582 Special Positions in a Binary Matrix.md)    二维数组遍历
+* 简单[#1725 Number Of Rectangles That Can Form The Largest Square](./#1725 Number Of Rectangles That Can Form The Largest Square.md)    遍历判断
+* $\clubs$中等[#1727 Largest Submatrix With Rearrangements](./#1727 Largest Submatrix With Rearrangements.md)    矩形统计列中连续值的长度
 * 简单[#LCP17 速算机器人](./#LCP17 速算机器人.md)    简单遍历计算
 * $\clubs$中等[#LCP23 魔术排列](./#LCP23 魔术排列.md)    模拟洗牌过程
 

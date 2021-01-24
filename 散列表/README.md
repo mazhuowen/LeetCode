@@ -75,5 +75,6 @@
 * $\clubs$中等[#1583 Count Unhappy Friends](./#1583 Count Unhappy Friends.md)    数组哈希表维护关系亲密度
 * $\clubs$中等[#1590 Make Sum Divisible by P](./#1590 Make Sum Divisible by P.md)    哈希表保存数组取余值
 * 中等[#1657 Determine if Two Strings Are Close](./#1657 Determine if Two Strings Are Close.md)    数组哈希表保存计数值
+* 中等[#1726 Tuple with Same Product](./#1726 Tuple with Same Product.md)    哈希表记录乘积
 * 中等[#面试题17.05 Find Longest Subarray LCCI](./#面试题17.05 Find Longest Subarray LCCI.md)    哈希表记录前缀差值
 * 困难[#面试题17.26 Sparse Similarity LCCI](./#面试题17.26 Sparse Similarity LCCI.md)    哈希表记录单词与文档关系
