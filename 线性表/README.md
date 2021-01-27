@@ -29,6 +29,7 @@
 * $\clubs$中等[#1727 Largest Submatrix With Rearrangements](./#1727 Largest Submatrix With Rearrangements.md)    矩形统计列中连续值的长度
 * 简单[#LCP17 速算机器人](./#LCP17 速算机器人.md)    简单遍历计算
 * $\clubs$中等[#LCP23 魔术排列](./#LCP23 魔术排列.md)    模拟洗牌过程
+* 中等[#面试题16.04 Tic-Tac-Toe LCCI](./#面试题16.04 Tic-Tac-Toe LCCI.md)    遍历记录棋局
 
 ### 双指针
 

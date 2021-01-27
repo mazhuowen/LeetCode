@@ -47,6 +47,7 @@
 * 中等[#1573 Number of Ways to Split a String](./#1573 Number of Ways to Split a String.md)    排列组合问题
 * 简单[#1588 Sum of All Odd Length Subarrays](./#1588 Sum of All Odd Length Subarrays.md)    排列组合问题
 * $\bigstar$困难[#1611 Minimum One Bit Operations to Make Integers Zero](./#1611 Minimum One Bit Operations to Make Integers Zero.md)    格雷码编解码
+* $\clubs$中等[#1703 Minimum Adjacent Swaps for K Consecutive Ones](./#1703 Minimum Adjacent Swaps for K Consecutive Ones.md)    绝对值之差的和与中位数的关系
 * 简单[#LCP02 Deep Dark Fraction](./#LCP02 Deep Dark Fraction.md)    极简分数规律
 * $\bigstar$困难[#LCP15 游乐园的迷宫](./#LCP15 游乐园的迷宫.md)    向量叉积判断左右，贪婪选择
 * $\bigstar$繁杂[#LCP16 游乐园的游览计划](./#LCP16 游乐园的游览计划.md)    图论无向图有向化及三角形组合的逻辑优化
