@@ -12,6 +12,7 @@
 * 简单[#228 Summary Ranges](./#228 Summary Ranges.md)    连续数值区间判断
 * 简单[#243 Shortest Word Distance](./#243 Shortest Word Distance.md)    数组遍历比较
 * 中等[#245 Shortest Word Distance III](./#245 Shortest Word Distance III.md)    [#243 Shortest Word Distance](./#243 Shortest Word Distance.md)进阶
+* 中等[#361 Bomb Enemy](./#361 Bomb Enemy.md)    遍历统计
 * 简单[#422 Valid Word Square](./#422 Valid Word Square.md)    数组对角线对称位置
 * 简单[#485 Max Consecutive Ones](./#485 Max Consecutive Ones.md)    遍历判断前驱
 * 简单[#495 Teemo Attacking](./#495 Teemo Attacking.md)    遍历扩展

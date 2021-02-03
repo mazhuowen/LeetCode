@@ -128,6 +128,7 @@
 * $\clubs$中等[#1027 Longest Arithmetic Subsequence](./#1027 Longest Arithmetic Subsequence.md)    最大等差子序列
 * 中等[#1035 Uncrossed Lines](./#1035 Uncrossed Lines.md)    最长公共子序列的应用
 * $\clubs$中等[#1039 Minimum Score Triangulation of Polygon](./#1039 Minimum Score Triangulation of Polygon.md)    几何规律
+* 中等[#1066 Campus Bikes II](./#1066 Campus Bikes II.md)    状态压缩动态规划
 * 困难[#1092 Shortest Common Supersequence](./#1092 Shortest Common Supersequence.md)    最长公共子序列的应用
 * 困难[#1125 Smallest Sufficient Team](./#1125 Smallest Sufficient Team)    路径动态规划与倒推
 * 中等[#1139 Largest 1-Bordered Square](./#1139 Largest 1-Bordered Square.md)    存储记录连续的左侧和上方结点数目
