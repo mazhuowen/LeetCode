@@ -31,6 +31,7 @@
 * 简单[#1180 Count Substrings with Only One Distinct Letter](./#1180 Count Substrings with Only One Distinct Letter.md)    滑动窗口统计字符串
 * 中等[#1234 Replace the Substring for Balanced String](./#1234 Replace the Substring for Balanced String.md)    滑动窗口统计包含特定数目字符的队列
 * 中等[#1358 Number of Substrings Containing All Three Characters](./#1358 Number of Substrings Containing All Three Characters.md)    每个位置结尾的最短子串
+* 中等[#1423 Maximum Points You Can Obtain from Cards](./#1423 Maximum Points You Can Obtain from Cards.md)    滑动窗口
 * 中等[#1567 Maximum Length of Subarray With Positive Product](./#1567 Maximum Length of Subarray With Positive Product.md)    队列统计负数个数
 * 中等[#1578 Minimum Deletion Cost to Avoid Repeating Letters](./#1578 Minimum Deletion Cost to Avoid Repeating Letters.md)    队列为相等字符的子字符串
 * 中等[#1604 Alert Using Same Key-Card Three or More Times in a One Hour Period](./#1604 Alert Using Same Key-Card Three or More Times in a One Hour Period.md)    排序后滑动窗口判断
