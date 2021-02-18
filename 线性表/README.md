@@ -17,6 +17,7 @@
 * 简单[#485 Max Consecutive Ones](./#485 Max Consecutive Ones.md)    遍历判断前驱
 * 简单[#495 Teemo Attacking](./#495 Teemo Attacking.md)    遍历扩展
 * 中等[#665 Non-decreasing Array](./#665 Non-decreasing Array.md)    遍历判断不符合要求的数据
+* $\clubs$中等[#835 Image Overlap](./#835 Image Overlap.md)    带偏移的矩形遍历
 * 中等[#861 Score After Flipping Matrix](./#861 Score After Flipping Matrix.md)    二维数组先列遍历
 * 中等[#900 RLE Iterator](./#900 RLE Iterator.md)    数组计数迭代
 * 简单[#941 Valid Mountain Array](./#941 Valid Mountain Array.md)    线性遍历
